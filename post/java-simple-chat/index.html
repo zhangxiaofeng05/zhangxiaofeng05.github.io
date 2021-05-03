@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.64.0 with theme even" />
+<meta name="generator" content="Hugo 0.83.1 with theme even" />
 
 
 <link rel="canonical" href="https://lionng.github.io/post/java-simple-chat/" />
@@ -42,17 +42,14 @@
 <meta property="og:title" content="TCP、UDP简单聊天" />
 <meta property="og:description" content="TCP 客户端套接字：Socket 服务端套接字：ServerSocket TCP（传输控制协议）一种基于连接的通信协议。可靠传输 Server 1 2 3 4 5 6 7 8 9" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://lionng.github.io/post/java-simple-chat/" />
-<meta property="article:published_time" content="2019-07-30T16:10:55+08:00" />
-<meta property="article:modified_time" content="2019-07-30T16:10:55+08:00" />
+<meta property="og:url" content="https://lionng.github.io/post/java-simple-chat/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2019-07-30T16:10:55&#43;08:00" />
+<meta property="article:modified_time" content="2019-07-30T16:10:55&#43;08:00" />
+
 <meta itemprop="name" content="TCP、UDP简单聊天">
-<meta itemprop="description" content="TCP 客户端套接字：Socket 服务端套接字：ServerSocket TCP（传输控制协议）一种基于连接的通信协议。可靠传输 Server 1 2 3 4 5 6 7 8 9">
-<meta itemprop="datePublished" content="2019-07-30T16:10:55&#43;08:00" />
+<meta itemprop="description" content="TCP 客户端套接字：Socket 服务端套接字：ServerSocket TCP（传输控制协议）一种基于连接的通信协议。可靠传输 Server 1 2 3 4 5 6 7 8 9"><meta itemprop="datePublished" content="2019-07-30T16:10:55&#43;08:00" />
 <meta itemprop="dateModified" content="2019-07-30T16:10:55&#43;08:00" />
 <meta itemprop="wordCount" content="1695">
-
-
-
 <meta itemprop="keywords" content="TCP,UDP," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="TCP、UDP简单聊天"/>
 <meta name="twitter:description" content="TCP 客户端套接字：Socket 服务端套接字：ServerSocket TCP（传输控制协议）一种基于连接的通信协议。可靠传输 Server 1 2 3 4 5 6 7 8 9"/>
@@ -233,38 +230,38 @@ TCP（传输控制协议）一种基于连接的通信协议。可靠传输</p>
 </span><span class="cm"> * 服务器端
 </span><span class="cm"> */</span>
 <span class="nx">public</span> <span class="nx">class</span> <span class="nx">Server</span> <span class="p">{</span>
-    <span class="nx">public</span> <span class="nx">static</span> <span class="nx">void</span> <span class="nf">main</span><span class="p">(</span><span class="nx">String</span><span class="p">[</span><span class="p">]</span> <span class="nx">args</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">public</span> <span class="nx">static</span> <span class="nx">void</span> <span class="nf">main</span><span class="p">(</span><span class="nx">String</span><span class="p">[]</span> <span class="nx">args</span><span class="p">)</span> <span class="p">{</span>
         <span class="nx">ServerSocket</span> <span class="nx">serverSocket</span> <span class="p">=</span> <span class="nx">null</span><span class="p">;</span>
         <span class="nx">try</span> <span class="p">{</span>
-            <span class="nx">serverSocket</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">ServerSocket</span><span class="p">(</span><span class="mi">12345</span><span class="p">)</span><span class="p">;</span>
-            <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;服务启动：&#34;</span><span class="o">+</span><span class="nx">serverSocket</span><span class="p">.</span><span class="nf">getInetAddress</span><span class="p">(</span><span class="p">)</span><span class="p">.</span><span class="nf">getHostAddress</span><span class="p">(</span><span class="p">)</span><span class="o">+</span><span class="s">&#34;:&#34;</span><span class="o">+</span><span class="nx">serverSocket</span><span class="p">.</span><span class="nf">getLocalPort</span><span class="p">(</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
-            <span class="nx">Socket</span> <span class="nx">accept</span> <span class="p">=</span> <span class="nx">serverSocket</span><span class="p">.</span><span class="nf">accept</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
-            <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;客户端：&#34;</span><span class="o">+</span><span class="nx">accept</span><span class="p">.</span><span class="nf">getInetAddress</span><span class="p">(</span><span class="p">)</span><span class="p">.</span><span class="nf">getHostAddress</span><span class="p">(</span><span class="p">)</span><span class="o">+</span><span class="s">&#34;:&#34;</span><span class="o">+</span><span class="nx">accept</span><span class="p">.</span><span class="nf">getLocalPort</span><span class="p">(</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
-            <span class="nx">BufferedReader</span> <span class="nx">sis</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">BufferedReader</span><span class="p">(</span><span class="nx">new</span> <span class="nf">InputStreamReader</span><span class="p">(</span><span class="nx">System</span><span class="p">.</span><span class="nx">in</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
-            <span class="nx">BufferedReader</span> <span class="nx">is</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">BufferedReader</span><span class="p">(</span><span class="nx">new</span> <span class="nf">InputStreamReader</span><span class="p">(</span><span class="nx">accept</span><span class="p">.</span><span class="nf">getInputStream</span><span class="p">(</span><span class="p">)</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
-            <span class="nx">PrintWriter</span> <span class="nx">os</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">PrintWriter</span><span class="p">(</span><span class="nx">new</span> <span class="nf">OutputStreamWriter</span><span class="p">(</span><span class="nx">accept</span><span class="p">.</span><span class="nf">getOutputStream</span><span class="p">(</span><span class="p">)</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
-            <span class="nf">while</span> <span class="p">(</span><span class="kc">true</span><span class="p">)</span><span class="p">{</span>
+            <span class="nx">serverSocket</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">ServerSocket</span><span class="p">(</span><span class="mi">12345</span><span class="p">);</span>
+            <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;服务启动：&#34;</span><span class="o">+</span><span class="nx">serverSocket</span><span class="p">.</span><span class="nf">getInetAddress</span><span class="p">().</span><span class="nf">getHostAddress</span><span class="p">()</span><span class="o">+</span><span class="s">&#34;:&#34;</span><span class="o">+</span><span class="nx">serverSocket</span><span class="p">.</span><span class="nf">getLocalPort</span><span class="p">());</span>
+            <span class="nx">Socket</span> <span class="nx">accept</span> <span class="p">=</span> <span class="nx">serverSocket</span><span class="p">.</span><span class="nf">accept</span><span class="p">();</span>
+            <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;客户端：&#34;</span><span class="o">+</span><span class="nx">accept</span><span class="p">.</span><span class="nf">getInetAddress</span><span class="p">().</span><span class="nf">getHostAddress</span><span class="p">()</span><span class="o">+</span><span class="s">&#34;:&#34;</span><span class="o">+</span><span class="nx">accept</span><span class="p">.</span><span class="nf">getLocalPort</span><span class="p">());</span>
+            <span class="nx">BufferedReader</span> <span class="nx">sis</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">BufferedReader</span><span class="p">(</span><span class="nx">new</span> <span class="nf">InputStreamReader</span><span class="p">(</span><span class="nx">System</span><span class="p">.</span><span class="nx">in</span><span class="p">));</span>
+            <span class="nx">BufferedReader</span> <span class="nx">is</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">BufferedReader</span><span class="p">(</span><span class="nx">new</span> <span class="nf">InputStreamReader</span><span class="p">(</span><span class="nx">accept</span><span class="p">.</span><span class="nf">getInputStream</span><span class="p">()));</span>
+            <span class="nx">PrintWriter</span> <span class="nx">os</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">PrintWriter</span><span class="p">(</span><span class="nx">new</span> <span class="nf">OutputStreamWriter</span><span class="p">(</span><span class="nx">accept</span><span class="p">.</span><span class="nf">getOutputStream</span><span class="p">()));</span>
+            <span class="nf">while</span> <span class="p">(</span><span class="kc">true</span><span class="p">){</span>
                 <span class="nx">String</span> <span class="nx">line</span><span class="p">;</span>
-                <span class="k">if</span> <span class="p">(</span><span class="p">(</span><span class="nx">line</span><span class="p">=</span><span class="nx">is</span><span class="p">.</span><span class="nf">readLine</span><span class="p">(</span><span class="p">)</span><span class="p">)</span><span class="o">!=</span><span class="nx">null</span><span class="p">)</span><span class="p">{</span>
-                    <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;收到客户端：&#34;</span><span class="o">+</span><span class="nx">line</span><span class="p">)</span><span class="p">;</span>
-                    <span class="k">if</span> <span class="p">(</span><span class="nx">line</span><span class="p">.</span><span class="nf">equals</span><span class="p">(</span><span class="s">&#34;bye&#34;</span><span class="p">)</span><span class="p">)</span><span class="p">{</span>
+                <span class="k">if</span> <span class="p">((</span><span class="nx">line</span><span class="p">=</span><span class="nx">is</span><span class="p">.</span><span class="nf">readLine</span><span class="p">())</span><span class="o">!=</span><span class="nx">null</span><span class="p">){</span>
+                    <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;收到客户端：&#34;</span><span class="o">+</span><span class="nx">line</span><span class="p">);</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="nx">line</span><span class="p">.</span><span class="nf">equals</span><span class="p">(</span><span class="s">&#34;bye&#34;</span><span class="p">)){</span>
                         <span class="k">break</span><span class="p">;</span>
                     <span class="p">}</span><span class="k">else</span> <span class="p">{</span>
-                        <span class="nx">os</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">sis</span><span class="p">.</span><span class="nf">readLine</span><span class="p">(</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
-                        <span class="nx">os</span><span class="p">.</span><span class="nf">flush</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
+                        <span class="nx">os</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">sis</span><span class="p">.</span><span class="nf">readLine</span><span class="p">());</span>
+                        <span class="nx">os</span><span class="p">.</span><span class="nf">flush</span><span class="p">();</span>
                     <span class="p">}</span>
                 <span class="p">}</span>
             <span class="p">}</span>
-            <span class="nx">is</span><span class="p">.</span><span class="nb">close</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
-            <span class="nx">os</span><span class="p">.</span><span class="nb">close</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
-            <span class="nx">accept</span><span class="p">.</span><span class="nb">close</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
+            <span class="nx">is</span><span class="p">.</span><span class="nb">close</span><span class="p">();</span>
+            <span class="nx">os</span><span class="p">.</span><span class="nb">close</span><span class="p">();</span>
+            <span class="nx">accept</span><span class="p">.</span><span class="nb">close</span><span class="p">();</span>
         <span class="p">}</span> <span class="nf">catch</span> <span class="p">(</span><span class="nx">IOException</span> <span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
-            <span class="nx">e</span><span class="p">.</span><span class="nf">printStackTrace</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
+            <span class="nx">e</span><span class="p">.</span><span class="nf">printStackTrace</span><span class="p">();</span>
         <span class="p">}</span><span class="nx">finally</span> <span class="p">{</span>
             <span class="nx">try</span> <span class="p">{</span>
-                <span class="nx">serverSocket</span><span class="p">.</span><span class="nb">close</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
+                <span class="nx">serverSocket</span><span class="p">.</span><span class="nb">close</span><span class="p">();</span>
             <span class="p">}</span> <span class="nf">catch</span> <span class="p">(</span><span class="nx">IOException</span> <span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
-                <span class="nx">e</span><span class="p">.</span><span class="nf">printStackTrace</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
+                <span class="nx">e</span><span class="p">.</span><span class="nf">printStackTrace</span><span class="p">();</span>
             <span class="p">}</span>
         <span class="p">}</span>
     <span class="p">}</span>
@@ -317,26 +314,26 @@ TCP（传输控制协议）一种基于连接的通信协议。可靠传输</p>
 </span><span class="cm"> * 客户端
 </span><span class="cm"> */</span>
 <span class="nx">public</span> <span class="nx">class</span> <span class="nx">Client</span> <span class="p">{</span>
-    <span class="nx">public</span> <span class="nx">static</span> <span class="nx">void</span> <span class="nf">main</span><span class="p">(</span><span class="nx">String</span><span class="p">[</span><span class="p">]</span> <span class="nx">args</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">public</span> <span class="nx">static</span> <span class="nx">void</span> <span class="nf">main</span><span class="p">(</span><span class="nx">String</span><span class="p">[]</span> <span class="nx">args</span><span class="p">)</span> <span class="p">{</span>
         <span class="nx">try</span> <span class="p">{</span>
-            <span class="nx">Socket</span> <span class="nx">socket</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">Socket</span><span class="p">(</span><span class="s">&#34;127.0.0.1&#34;</span><span class="p">,</span><span class="mi">12345</span><span class="p">)</span><span class="p">;</span>
-            <span class="nx">BufferedReader</span> <span class="nx">sis</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">BufferedReader</span><span class="p">(</span><span class="nx">new</span> <span class="nf">InputStreamReader</span><span class="p">(</span><span class="nx">System</span><span class="p">.</span><span class="nx">in</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
-            <span class="nx">BufferedReader</span> <span class="nx">is</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">BufferedReader</span><span class="p">(</span><span class="nx">new</span> <span class="nf">InputStreamReader</span><span class="p">(</span><span class="nx">socket</span><span class="p">.</span><span class="nf">getInputStream</span><span class="p">(</span><span class="p">)</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
-            <span class="nx">PrintWriter</span> <span class="nx">os</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">PrintWriter</span><span class="p">(</span><span class="nx">new</span> <span class="nf">OutputStreamWriter</span><span class="p">(</span><span class="nx">socket</span><span class="p">.</span><span class="nf">getOutputStream</span><span class="p">(</span><span class="p">)</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
+            <span class="nx">Socket</span> <span class="nx">socket</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">Socket</span><span class="p">(</span><span class="s">&#34;127.0.0.1&#34;</span><span class="p">,</span><span class="mi">12345</span><span class="p">);</span>
+            <span class="nx">BufferedReader</span> <span class="nx">sis</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">BufferedReader</span><span class="p">(</span><span class="nx">new</span> <span class="nf">InputStreamReader</span><span class="p">(</span><span class="nx">System</span><span class="p">.</span><span class="nx">in</span><span class="p">));</span>
+            <span class="nx">BufferedReader</span> <span class="nx">is</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">BufferedReader</span><span class="p">(</span><span class="nx">new</span> <span class="nf">InputStreamReader</span><span class="p">(</span><span class="nx">socket</span><span class="p">.</span><span class="nf">getInputStream</span><span class="p">()));</span>
+            <span class="nx">PrintWriter</span> <span class="nx">os</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">PrintWriter</span><span class="p">(</span><span class="nx">new</span> <span class="nf">OutputStreamWriter</span><span class="p">(</span><span class="nx">socket</span><span class="p">.</span><span class="nf">getOutputStream</span><span class="p">()));</span>
             <span class="nx">String</span> <span class="nx">line</span><span class="p">;</span>
-            <span class="nf">while</span> <span class="p">(</span><span class="kc">true</span><span class="p">)</span><span class="p">{</span>
-                <span class="k">if</span> <span class="p">(</span><span class="p">(</span><span class="nx">line</span><span class="p">=</span><span class="nx">sis</span><span class="p">.</span><span class="nf">readLine</span><span class="p">(</span><span class="p">)</span><span class="p">)</span><span class="o">!=</span><span class="nx">null</span><span class="p">)</span><span class="p">{</span>
-                    <span class="k">if</span> <span class="p">(</span><span class="s">&#34;bye&#34;</span><span class="p">.</span><span class="nf">equals</span><span class="p">(</span><span class="nx">line</span><span class="p">)</span><span class="p">)</span><span class="p">{</span>
-                        <span class="nx">System</span><span class="p">.</span><span class="nf">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="p">;</span>
+            <span class="nf">while</span> <span class="p">(</span><span class="kc">true</span><span class="p">){</span>
+                <span class="k">if</span> <span class="p">((</span><span class="nx">line</span><span class="p">=</span><span class="nx">sis</span><span class="p">.</span><span class="nf">readLine</span><span class="p">())</span><span class="o">!=</span><span class="nx">null</span><span class="p">){</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="s">&#34;bye&#34;</span><span class="p">.</span><span class="nf">equals</span><span class="p">(</span><span class="nx">line</span><span class="p">)){</span>
+                        <span class="nx">System</span><span class="p">.</span><span class="nf">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
                     <span class="p">}</span>
-                    <span class="nx">os</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">line</span><span class="p">)</span><span class="p">;</span>
-                    <span class="nx">os</span><span class="p">.</span><span class="nf">flush</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
+                    <span class="nx">os</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">line</span><span class="p">);</span>
+                    <span class="nx">os</span><span class="p">.</span><span class="nf">flush</span><span class="p">();</span>
                 <span class="p">}</span>
-                <span class="nx">String</span> <span class="nx">readLine</span> <span class="p">=</span> <span class="nx">is</span><span class="p">.</span><span class="nf">readLine</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
-                <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;收到服务端：&#34;</span><span class="o">+</span><span class="nx">readLine</span><span class="p">)</span><span class="p">;</span>
+                <span class="nx">String</span> <span class="nx">readLine</span> <span class="p">=</span> <span class="nx">is</span><span class="p">.</span><span class="nf">readLine</span><span class="p">();</span>
+                <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;收到服务端：&#34;</span><span class="o">+</span><span class="nx">readLine</span><span class="p">);</span>
             <span class="p">}</span>
         <span class="p">}</span> <span class="nf">catch</span> <span class="p">(</span><span class="nx">IOException</span> <span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
-            <span class="nx">e</span><span class="p">.</span><span class="nf">printStackTrace</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
+            <span class="nx">e</span><span class="p">.</span><span class="nf">printStackTrace</span><span class="p">();</span>
         <span class="p">}</span>
     <span class="p">}</span>
 <span class="p">}</span>
@@ -382,22 +379,22 @@ TCP（传输控制协议）一种基于连接的通信协议。可靠传输</p>
 <span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">net</span><span class="p">.</span><span class="nx">DatagramSocket</span><span class="p">;</span>
 
 <span class="nx">public</span> <span class="nx">class</span> <span class="nx">Server</span> <span class="p">{</span>
-    <span class="nx">public</span> <span class="nx">static</span> <span class="nx">void</span> <span class="nf">main</span><span class="p">(</span><span class="nx">String</span><span class="p">[</span><span class="p">]</span> <span class="nx">args</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">public</span> <span class="nx">static</span> <span class="nx">void</span> <span class="nf">main</span><span class="p">(</span><span class="nx">String</span><span class="p">[]</span> <span class="nx">args</span><span class="p">)</span> <span class="p">{</span>
         <span class="nx">try</span> <span class="p">{</span>
-            <span class="nx">DatagramSocket</span> <span class="nx">socket</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">DatagramSocket</span><span class="p">(</span><span class="mi">12345</span><span class="p">)</span><span class="p">;</span>
-            <span class="kt">byte</span><span class="p">[</span><span class="p">]</span> <span class="nx">bytes</span> <span class="p">=</span> <span class="nx">new</span> <span class="kt">byte</span><span class="p">[</span><span class="mi">1024</span><span class="p">]</span><span class="p">;</span>
-            <span class="nx">DatagramPacket</span> <span class="nx">receivePacket</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">DatagramPacket</span><span class="p">(</span><span class="nx">bytes</span><span class="p">,</span> <span class="nx">bytes</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span><span class="p">;</span>
-            <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;开始接收包。。。&#34;</span><span class="p">)</span><span class="p">;</span>
+            <span class="nx">DatagramSocket</span> <span class="nx">socket</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">DatagramSocket</span><span class="p">(</span><span class="mi">12345</span><span class="p">);</span>
+            <span class="kt">byte</span><span class="p">[]</span> <span class="nx">bytes</span> <span class="p">=</span> <span class="nx">new</span> <span class="kt">byte</span><span class="p">[</span><span class="mi">1024</span><span class="p">];</span>
+            <span class="nx">DatagramPacket</span> <span class="nx">receivePacket</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">DatagramPacket</span><span class="p">(</span><span class="nx">bytes</span><span class="p">,</span> <span class="nx">bytes</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
+            <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;开始接收包。。。&#34;</span><span class="p">);</span>
 
-            <span class="nf">while</span> <span class="p">(</span><span class="kc">true</span><span class="p">)</span><span class="p">{</span>
-                <span class="nx">socket</span><span class="p">.</span><span class="nf">receive</span><span class="p">(</span><span class="nx">receivePacket</span><span class="p">)</span><span class="p">;</span>
-                <span class="nx">String</span> <span class="nx">name</span> <span class="p">=</span> <span class="nx">receivePacket</span><span class="p">.</span><span class="nf">getAddress</span><span class="p">(</span><span class="p">)</span><span class="p">.</span><span class="nf">toString</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
-                <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;来自主机：&#34;</span><span class="o">+</span><span class="nx">name</span><span class="o">+</span><span class="s">&#34;\n端口：&#34;</span><span class="o">+</span><span class="nx">receivePacket</span><span class="p">.</span><span class="nf">getPort</span><span class="p">(</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
-                <span class="nx">String</span> <span class="nx">s</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">String</span><span class="p">(</span><span class="nx">receivePacket</span><span class="p">.</span><span class="nf">getData</span><span class="p">(</span><span class="p">)</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="nx">receivePacket</span><span class="p">.</span><span class="nf">getLength</span><span class="p">(</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
-                <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;接收到数据：&#34;</span><span class="o">+</span><span class="nx">s</span><span class="p">)</span><span class="p">;</span>
+            <span class="nf">while</span> <span class="p">(</span><span class="kc">true</span><span class="p">){</span>
+                <span class="nx">socket</span><span class="p">.</span><span class="nf">receive</span><span class="p">(</span><span class="nx">receivePacket</span><span class="p">);</span>
+                <span class="nx">String</span> <span class="nx">name</span> <span class="p">=</span> <span class="nx">receivePacket</span><span class="p">.</span><span class="nf">getAddress</span><span class="p">().</span><span class="nf">toString</span><span class="p">();</span>
+                <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;来自主机：&#34;</span><span class="o">+</span><span class="nx">name</span><span class="o">+</span><span class="s">&#34;\n端口：&#34;</span><span class="o">+</span><span class="nx">receivePacket</span><span class="p">.</span><span class="nf">getPort</span><span class="p">());</span>
+                <span class="nx">String</span> <span class="nx">s</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">String</span><span class="p">(</span><span class="nx">receivePacket</span><span class="p">.</span><span class="nf">getData</span><span class="p">(),</span><span class="mi">0</span><span class="p">,</span><span class="nx">receivePacket</span><span class="p">.</span><span class="nf">getLength</span><span class="p">());</span>
+                <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;接收到数据：&#34;</span><span class="o">+</span><span class="nx">s</span><span class="p">);</span>
             <span class="p">}</span>
-        <span class="p">}</span><span class="nf">catch</span> <span class="p">(</span><span class="nx">Exception</span> <span class="nx">e</span><span class="p">)</span><span class="p">{</span>
-            <span class="nx">e</span><span class="p">.</span><span class="nf">printStackTrace</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
+        <span class="p">}</span><span class="nf">catch</span> <span class="p">(</span><span class="nx">Exception</span> <span class="nx">e</span><span class="p">){</span>
+            <span class="nx">e</span><span class="p">.</span><span class="nf">printStackTrace</span><span class="p">();</span>
         <span class="p">}</span>
     <span class="p">}</span>
 <span class="p">}</span>
@@ -436,17 +433,17 @@ TCP（传输控制协议）一种基于连接的通信协议。可靠传输</p>
 <span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">net</span><span class="p">.</span><span class="nx">InetAddress</span><span class="p">;</span>
 
 <span class="nx">public</span> <span class="nx">class</span> <span class="nx">Client</span> <span class="p">{</span>
-    <span class="nx">public</span> <span class="nx">static</span> <span class="nx">void</span> <span class="nf">main</span><span class="p">(</span><span class="nx">String</span><span class="p">[</span><span class="p">]</span> <span class="nx">args</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">public</span> <span class="nx">static</span> <span class="nx">void</span> <span class="nf">main</span><span class="p">(</span><span class="nx">String</span><span class="p">[]</span> <span class="nx">args</span><span class="p">)</span> <span class="p">{</span>
         <span class="nx">try</span> <span class="p">{</span>
-            <span class="nx">DatagramSocket</span> <span class="nx">socket</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">DatagramSocket</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
+            <span class="nx">DatagramSocket</span> <span class="nx">socket</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">DatagramSocket</span><span class="p">();</span>
 
-            <span class="nx">InetAddress</span> <span class="nx">host</span> <span class="p">=</span> <span class="nx">InetAddress</span><span class="p">.</span><span class="nf">getByName</span><span class="p">(</span><span class="s">&#34;localhost&#34;</span><span class="p">)</span><span class="p">;</span>
+            <span class="nx">InetAddress</span> <span class="nx">host</span> <span class="p">=</span> <span class="nx">InetAddress</span><span class="p">.</span><span class="nf">getByName</span><span class="p">(</span><span class="s">&#34;localhost&#34;</span><span class="p">);</span>
             <span class="nx">String</span> <span class="nx">msg</span> <span class="p">=</span> <span class="s">&#34;hello, I&#39;m client&#34;</span><span class="p">;</span>
-            <span class="nx">DatagramPacket</span> <span class="nx">sendPacket</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">DatagramPacket</span><span class="p">(</span><span class="nx">msg</span><span class="p">.</span><span class="nf">getBytes</span><span class="p">(</span><span class="p">)</span><span class="p">,</span><span class="nx">msg</span><span class="p">.</span><span class="nf">length</span><span class="p">(</span><span class="p">)</span><span class="p">,</span><span class="nx">host</span><span class="p">,</span><span class="mi">12345</span><span class="p">)</span><span class="p">;</span>
-            <span class="nx">socket</span><span class="p">.</span><span class="nf">send</span><span class="p">(</span><span class="nx">sendPacket</span><span class="p">)</span><span class="p">;</span>
+            <span class="nx">DatagramPacket</span> <span class="nx">sendPacket</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">DatagramPacket</span><span class="p">(</span><span class="nx">msg</span><span class="p">.</span><span class="nf">getBytes</span><span class="p">(),</span><span class="nx">msg</span><span class="p">.</span><span class="nf">length</span><span class="p">(),</span><span class="nx">host</span><span class="p">,</span><span class="mi">12345</span><span class="p">);</span>
+            <span class="nx">socket</span><span class="p">.</span><span class="nf">send</span><span class="p">(</span><span class="nx">sendPacket</span><span class="p">);</span>
 
-        <span class="p">}</span><span class="nf">catch</span> <span class="p">(</span><span class="nx">Exception</span> <span class="nx">e</span><span class="p">)</span><span class="p">{</span>
-            <span class="nx">e</span><span class="p">.</span><span class="nf">printStackTrace</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
+        <span class="p">}</span><span class="nf">catch</span> <span class="p">(</span><span class="nx">Exception</span> <span class="nx">e</span><span class="p">){</span>
+            <span class="nx">e</span><span class="p">.</span><span class="nf">printStackTrace</span><span class="p">();</span>
         <span class="p">}</span>
     <span class="p">}</span>
 <span class="p">}</span>
@@ -495,26 +492,26 @@ TCP（传输控制协议）一种基于连接的通信协议。可靠传输</p>
 <span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">net</span><span class="p">.</span><span class="nx">MulticastSocket</span><span class="p">;</span>
 
 <span class="nx">public</span> <span class="nx">class</span> <span class="nx">MultiServer</span> <span class="p">{</span>
-    <span class="nx">public</span> <span class="nx">static</span> <span class="nx">void</span> <span class="nf">main</span><span class="p">(</span><span class="nx">String</span><span class="p">[</span><span class="p">]</span> <span class="nx">args</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">public</span> <span class="nx">static</span> <span class="nx">void</span> <span class="nf">main</span><span class="p">(</span><span class="nx">String</span><span class="p">[]</span> <span class="nx">args</span><span class="p">)</span> <span class="p">{</span>
         <span class="nx">try</span> <span class="p">{</span>
-            <span class="nx">MulticastSocket</span> <span class="nx">socket</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">MulticastSocket</span><span class="p">(</span><span class="mi">12345</span><span class="p">)</span><span class="p">;</span>
-            <span class="nx">InetAddress</span> <span class="nx">group</span> <span class="p">=</span> <span class="nx">InetAddress</span><span class="p">.</span><span class="nf">getByName</span><span class="p">(</span><span class="s">&#34;231.0.0.0&#34;</span><span class="p">)</span><span class="p">;</span>
-            <span class="nx">socket</span><span class="p">.</span><span class="nf">joinGroup</span><span class="p">(</span><span class="nx">group</span><span class="p">)</span><span class="p">;</span>
+            <span class="nx">MulticastSocket</span> <span class="nx">socket</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">MulticastSocket</span><span class="p">(</span><span class="mi">12345</span><span class="p">);</span>
+            <span class="nx">InetAddress</span> <span class="nx">group</span> <span class="p">=</span> <span class="nx">InetAddress</span><span class="p">.</span><span class="nf">getByName</span><span class="p">(</span><span class="s">&#34;231.0.0.0&#34;</span><span class="p">);</span>
+            <span class="nx">socket</span><span class="p">.</span><span class="nf">joinGroup</span><span class="p">(</span><span class="nx">group</span><span class="p">);</span>
             <span class="c1">//接收数据报
-</span><span class="c1"></span>            <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="nx">i</span><span class="p">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="p">&lt;</span><span class="mi">100</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="p">{</span>
-                <span class="kt">byte</span><span class="p">[</span><span class="p">]</span> <span class="nx">bytes</span> <span class="p">=</span> <span class="nx">new</span> <span class="kt">byte</span><span class="p">[</span><span class="mi">256</span><span class="p">]</span><span class="p">;</span>
-                <span class="nx">DatagramPacket</span> <span class="nx">receivePacket</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">DatagramPacket</span><span class="p">(</span><span class="nx">bytes</span><span class="p">,</span> <span class="nx">bytes</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span><span class="p">;</span>
-                <span class="nx">socket</span><span class="p">.</span><span class="nf">receive</span><span class="p">(</span><span class="nx">receivePacket</span><span class="p">)</span><span class="p">;</span>
+</span><span class="c1"></span>            <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="nx">i</span><span class="p">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="p">&lt;</span><span class="mi">100</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+                <span class="kt">byte</span><span class="p">[]</span> <span class="nx">bytes</span> <span class="p">=</span> <span class="nx">new</span> <span class="kt">byte</span><span class="p">[</span><span class="mi">256</span><span class="p">];</span>
+                <span class="nx">DatagramPacket</span> <span class="nx">receivePacket</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">DatagramPacket</span><span class="p">(</span><span class="nx">bytes</span><span class="p">,</span> <span class="nx">bytes</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
+                <span class="nx">socket</span><span class="p">.</span><span class="nf">receive</span><span class="p">(</span><span class="nx">receivePacket</span><span class="p">);</span>
 
-                <span class="kt">byte</span><span class="p">[</span><span class="p">]</span> <span class="nx">bytes1</span> <span class="p">=</span> <span class="nx">new</span> <span class="kt">byte</span><span class="p">[</span><span class="nx">receivePacket</span><span class="p">.</span><span class="nf">getLength</span><span class="p">(</span><span class="p">)</span><span class="p">]</span><span class="p">;</span>
-                <span class="nx">System</span><span class="p">.</span><span class="nf">arraycopy</span><span class="p">(</span><span class="nx">receivePacket</span><span class="p">.</span><span class="nf">getData</span><span class="p">(</span><span class="p">)</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="nx">bytes1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="nx">receivePacket</span><span class="p">.</span><span class="nf">getLength</span><span class="p">(</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
-                <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">new</span> <span class="nf">String</span><span class="p">(</span><span class="nx">bytes1</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
+                <span class="kt">byte</span><span class="p">[]</span> <span class="nx">bytes1</span> <span class="p">=</span> <span class="nx">new</span> <span class="kt">byte</span><span class="p">[</span><span class="nx">receivePacket</span><span class="p">.</span><span class="nf">getLength</span><span class="p">()];</span>
+                <span class="nx">System</span><span class="p">.</span><span class="nf">arraycopy</span><span class="p">(</span><span class="nx">receivePacket</span><span class="p">.</span><span class="nf">getData</span><span class="p">(),</span><span class="mi">0</span><span class="p">,</span><span class="nx">bytes1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="nx">receivePacket</span><span class="p">.</span><span class="nf">getLength</span><span class="p">());</span>
+                <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">new</span> <span class="nf">String</span><span class="p">(</span><span class="nx">bytes1</span><span class="p">));</span>
             <span class="p">}</span>
 
-            <span class="nx">socket</span><span class="p">.</span><span class="nf">leaveGroup</span><span class="p">(</span><span class="nx">group</span><span class="p">)</span><span class="p">;</span>
-            <span class="nx">socket</span><span class="p">.</span><span class="nb">close</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
-        <span class="p">}</span><span class="nf">catch</span> <span class="p">(</span><span class="nx">Exception</span> <span class="nx">e</span><span class="p">)</span><span class="p">{</span>
-            <span class="nx">e</span><span class="p">.</span><span class="nf">printStackTrace</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
+            <span class="nx">socket</span><span class="p">.</span><span class="nf">leaveGroup</span><span class="p">(</span><span class="nx">group</span><span class="p">);</span>
+            <span class="nx">socket</span><span class="p">.</span><span class="nb">close</span><span class="p">();</span>
+        <span class="p">}</span><span class="nf">catch</span> <span class="p">(</span><span class="nx">Exception</span> <span class="nx">e</span><span class="p">){</span>
+            <span class="nx">e</span><span class="p">.</span><span class="nf">printStackTrace</span><span class="p">();</span>
         <span class="p">}</span>
     <span class="p">}</span>
 <span class="p">}</span>
@@ -559,23 +556,23 @@ TCP（传输控制协议）一种基于连接的通信协议。可靠传输</p>
 <span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">net</span><span class="p">.</span><span class="nx">MulticastSocket</span><span class="p">;</span>
 
 <span class="nx">public</span> <span class="nx">class</span> <span class="nx">MultiClient</span> <span class="p">{</span>
-    <span class="nx">public</span> <span class="nx">static</span> <span class="nx">void</span> <span class="nf">main</span><span class="p">(</span><span class="nx">String</span><span class="p">[</span><span class="p">]</span> <span class="nx">args</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">public</span> <span class="nx">static</span> <span class="nx">void</span> <span class="nf">main</span><span class="p">(</span><span class="nx">String</span><span class="p">[]</span> <span class="nx">args</span><span class="p">)</span> <span class="p">{</span>
         <span class="nx">try</span> <span class="p">{</span>
-            <span class="nx">MulticastSocket</span> <span class="nx">socket</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">MulticastSocket</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
-            <span class="nx">InetAddress</span> <span class="nx">group</span> <span class="p">=</span> <span class="nx">InetAddress</span><span class="p">.</span><span class="nf">getByName</span><span class="p">(</span><span class="s">&#34;231.0.0.0&#34;</span><span class="p">)</span><span class="p">;</span>
+            <span class="nx">MulticastSocket</span> <span class="nx">socket</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">MulticastSocket</span><span class="p">();</span>
+            <span class="nx">InetAddress</span> <span class="nx">group</span> <span class="p">=</span> <span class="nx">InetAddress</span><span class="p">.</span><span class="nf">getByName</span><span class="p">(</span><span class="s">&#34;231.0.0.0&#34;</span><span class="p">);</span>
 
-            <span class="kt">byte</span><span class="p">[</span><span class="p">]</span> <span class="nx">bytes</span> <span class="p">=</span> <span class="nx">new</span> <span class="kt">byte</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="p">;</span>
-            <span class="nx">DatagramPacket</span> <span class="nx">sendPacket</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">DatagramPacket</span><span class="p">(</span><span class="nx">bytes</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">group</span><span class="p">,</span> <span class="mi">12345</span><span class="p">)</span><span class="p">;</span>
-            <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="nx">i</span><span class="p">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="p">&lt;</span><span class="mi">5</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="p">{</span>
-                <span class="kt">byte</span><span class="p">[</span><span class="p">]</span> <span class="nx">bytes1</span> <span class="p">=</span> <span class="p">(</span><span class="s">&#34;Data line &#34;</span><span class="o">+</span><span class="nx">i</span><span class="p">)</span><span class="p">.</span><span class="nf">getBytes</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
-                <span class="nx">sendPacket</span><span class="p">.</span><span class="nf">setData</span><span class="p">(</span><span class="nx">bytes1</span><span class="p">)</span><span class="p">;</span>
-                <span class="nx">sendPacket</span><span class="p">.</span><span class="nf">setLength</span><span class="p">(</span><span class="nx">bytes1</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span><span class="p">;</span>
-                <span class="nx">socket</span><span class="p">.</span><span class="nf">send</span><span class="p">(</span><span class="nx">sendPacket</span><span class="p">)</span><span class="p">;</span>
+            <span class="kt">byte</span><span class="p">[]</span> <span class="nx">bytes</span> <span class="p">=</span> <span class="nx">new</span> <span class="kt">byte</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+            <span class="nx">DatagramPacket</span> <span class="nx">sendPacket</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">DatagramPacket</span><span class="p">(</span><span class="nx">bytes</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">group</span><span class="p">,</span> <span class="mi">12345</span><span class="p">);</span>
+            <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="nx">i</span><span class="p">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="p">&lt;</span><span class="mi">5</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+                <span class="kt">byte</span><span class="p">[]</span> <span class="nx">bytes1</span> <span class="p">=</span> <span class="p">(</span><span class="s">&#34;Data line &#34;</span><span class="o">+</span><span class="nx">i</span><span class="p">).</span><span class="nf">getBytes</span><span class="p">();</span>
+                <span class="nx">sendPacket</span><span class="p">.</span><span class="nf">setData</span><span class="p">(</span><span class="nx">bytes1</span><span class="p">);</span>
+                <span class="nx">sendPacket</span><span class="p">.</span><span class="nf">setLength</span><span class="p">(</span><span class="nx">bytes1</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
+                <span class="nx">socket</span><span class="p">.</span><span class="nf">send</span><span class="p">(</span><span class="nx">sendPacket</span><span class="p">);</span>
             <span class="p">}</span>
-            <span class="nx">socket</span><span class="p">.</span><span class="nb">close</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
+            <span class="nx">socket</span><span class="p">.</span><span class="nb">close</span><span class="p">();</span>
 
-        <span class="p">}</span><span class="nf">catch</span> <span class="p">(</span><span class="nx">Exception</span> <span class="nx">e</span><span class="p">)</span><span class="p">{</span>
-            <span class="nx">e</span><span class="p">.</span><span class="nf">printStackTrace</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
+        <span class="p">}</span><span class="nf">catch</span> <span class="p">(</span><span class="nx">Exception</span> <span class="nx">e</span><span class="p">){</span>
+            <span class="nx">e</span><span class="p">.</span><span class="nf">printStackTrace</span><span class="p">();</span>
         <span class="p">}</span>
     <span class="p">}</span>
 <span class="p">}</span>
@@ -688,7 +685,7 @@ TCP（传输控制协议）一种基于连接的通信协议。可靠传输</p>
 
 
 
-<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
 
 
 

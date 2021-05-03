@@ -6,11 +6,7 @@
     <description>Recent content in lrzsz on Welcome</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 07 Jan 2020 00:05:37 +0800</lastBuildDate>
-    
-	<atom:link href="https://lionng.github.io/tags/lrzsz/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 07 Jan 2020 00:05:37 +0800</lastBuildDate><atom:link href="https://lionng.github.io/tags/lrzsz/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lrzsz用于小文件的上传下载</title>
       <link>https://lionng.github.io/post/lrzsz/</link>

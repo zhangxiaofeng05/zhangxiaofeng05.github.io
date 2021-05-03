@@ -6,11 +6,7 @@
     <description>Recent content in JPA on Welcome</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 17 Jul 2019 23:09:21 +0800</lastBuildDate>
-    
-	<atom:link href="https://lionng.github.io/tags/jpa/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 17 Jul 2019 23:09:21 +0800</lastBuildDate><atom:link href="https://lionng.github.io/tags/jpa/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>悲观锁和乐观锁</title>
       <link>https://lionng.github.io/post/pessimistic-lock-and-optimistic-lock/</link>

@@ -6,11 +6,7 @@
     <description>Recent content in ftp on Welcome</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 01 Dec 2019 00:09:14 +0800</lastBuildDate>
-    
-	<atom:link href="https://lionng.github.io/tags/ftp/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 01 Dec 2019 00:09:14 +0800</lastBuildDate><atom:link href="https://lionng.github.io/tags/ftp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ftp服务器</title>
       <link>https://lionng.github.io/post/ftp-server/</link>

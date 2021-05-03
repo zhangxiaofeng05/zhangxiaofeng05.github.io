@@ -6,11 +6,7 @@
     <description>Recent content in Calendar on Welcome</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 24 Jul 2019 17:14:47 +0800</lastBuildDate>
-    
-	<atom:link href="https://lionng.github.io/tags/calendar/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 24 Jul 2019 17:14:47 +0800</lastBuildDate><atom:link href="https://lionng.github.io/tags/calendar/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Java中Date、SimpleDateFormat、Calendar</title>
       <link>https://lionng.github.io/post/java-date-calender/</link>

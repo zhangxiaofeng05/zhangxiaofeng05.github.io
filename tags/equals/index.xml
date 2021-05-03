@@ -6,11 +6,7 @@
     <description>Recent content in equals on Welcome</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 28 Jul 2019 14:06:50 +0800</lastBuildDate>
-    
-	<atom:link href="https://lionng.github.io/tags/equals/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 28 Jul 2019 14:06:50 +0800</lastBuildDate><atom:link href="https://lionng.github.io/tags/equals/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>==和equals和hashCode</title>
       <link>https://lionng.github.io/post/equals-hashcode/</link>

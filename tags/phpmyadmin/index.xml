@@ -6,11 +6,7 @@
     <description>Recent content in phpmyadmin on Welcome</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 29 Dec 2019 11:14:39 +0800</lastBuildDate>
-    
-	<atom:link href="https://lionng.github.io/tags/phpmyadmin/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 29 Dec 2019 11:14:39 +0800</lastBuildDate><atom:link href="https://lionng.github.io/tags/phpmyadmin/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>linux安装mariadb并配置phpmyadmin</title>
       <link>https://lionng.github.io/post/linux_install_phpmyadmin/</link>

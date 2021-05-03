@@ -6,11 +6,7 @@
     <description>Recent content in Mail on Welcome</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 19 Jul 2019 14:59:20 +0800</lastBuildDate>
-    
-	<atom:link href="https://lionng.github.io/tags/mail/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 19 Jul 2019 14:59:20 +0800</lastBuildDate><atom:link href="https://lionng.github.io/tags/mail/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Spring Boot发送邮件</title>
       <link>https://lionng.github.io/post/spring-boot-mail/</link>

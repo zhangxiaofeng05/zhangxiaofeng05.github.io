@@ -6,11 +6,7 @@
     <description>Recent content in TCP on Welcome</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 30 Jul 2019 16:10:55 +0800</lastBuildDate>
-    
-	<atom:link href="https://lionng.github.io/tags/tcp/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 30 Jul 2019 16:10:55 +0800</lastBuildDate><atom:link href="https://lionng.github.io/tags/tcp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TCP、UDP简单聊天</title>
       <link>https://lionng.github.io/post/java-simple-chat/</link>

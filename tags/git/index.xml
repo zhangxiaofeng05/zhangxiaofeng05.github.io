@@ -6,11 +6,7 @@
     <description>Recent content in git on Welcome</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 01 Jun 2020 21:01:18 +0800</lastBuildDate>
-    
-	<atom:link href="https://lionng.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 01 Jun 2020 21:01:18 +0800</lastBuildDate><atom:link href="https://lionng.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>配置git代理</title>
       <link>https://lionng.github.io/post/git-proxy/</link>

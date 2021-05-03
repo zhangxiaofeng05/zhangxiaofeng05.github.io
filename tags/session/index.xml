@@ -6,11 +6,7 @@
     <description>Recent content in session on Welcome</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 19 Jul 2019 11:11:47 +0800</lastBuildDate>
-    
-	<atom:link href="https://lionng.github.io/tags/session/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 19 Jul 2019 11:11:47 +0800</lastBuildDate><atom:link href="https://lionng.github.io/tags/session/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>request和Session</title>
       <link>https://lionng.github.io/post/requestandsession/</link>

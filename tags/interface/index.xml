@@ -6,11 +6,7 @@
     <description>Recent content in interface on Welcome</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 17 Aug 2019 23:20:11 +0800</lastBuildDate>
-    
-	<atom:link href="https://lionng.github.io/tags/interface/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 17 Aug 2019 23:20:11 +0800</lastBuildDate><atom:link href="https://lionng.github.io/tags/interface/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>java接口回调</title>
       <link>https://lionng.github.io/post/interface-callback/</link>

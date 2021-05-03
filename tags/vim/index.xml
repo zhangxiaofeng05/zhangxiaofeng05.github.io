@@ -6,11 +6,7 @@
     <description>Recent content in vim on Welcome</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 02 Jan 2020 23:51:51 +0800</lastBuildDate>
-    
-	<atom:link href="https://lionng.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 02 Jan 2020 23:51:51 +0800</lastBuildDate><atom:link href="https://lionng.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>vim安装插件</title>
       <link>https://lionng.github.io/post/vim-plugin/</link>

@@ -6,11 +6,7 @@
     <description>Recent content in v2ray on Welcome</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 04 Jan 2020 16:22:37 +0800</lastBuildDate>
-    
-	<atom:link href="https://lionng.github.io/tags/v2ray/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 04 Jan 2020 16:22:37 +0800</lastBuildDate><atom:link href="https://lionng.github.io/tags/v2ray/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>linux使用v2ray作为客户端</title>
       <link>https://lionng.github.io/post/linux-v2ray-client/</link>
