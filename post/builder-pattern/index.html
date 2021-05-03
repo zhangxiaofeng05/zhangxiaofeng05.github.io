@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>创建型模式-建造者模式 - Welcome</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="lion" /><meta name="description" content="维基百科 生成器模式 生成器模式（英：Builder Pattern）是一种设计模式，又名：建造模式，是一种对象构建模式。它可以将复杂对象的建造过" /><meta name="keywords" content="hugo" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.64.0 with theme even" />
+
+
+<link rel="canonical" href="https://lionng.github.io/post/builder-pattern/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.c7bc1becf36bcf6a9ebd25d2947e43a2eb745ddb0c9a32b43126fd7fa460c351.css" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+
+<meta property="og:title" content="创建型模式-建造者模式" />
+<meta property="og:description" content="维基百科 生成器模式 生成器模式（英：Builder Pattern）是一种设计模式，又名：建造模式，是一种对象构建模式。它可以将复杂对象的建造过" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://lionng.github.io/post/builder-pattern/" />
+<meta property="article:published_time" content="2019-08-23T16:48:38+08:00" />
+<meta property="article:modified_time" content="2019-08-23T16:48:38+08:00" />
+<meta itemprop="name" content="创建型模式-建造者模式">
+<meta itemprop="description" content="维基百科 生成器模式 生成器模式（英：Builder Pattern）是一种设计模式，又名：建造模式，是一种对象构建模式。它可以将复杂对象的建造过">
+<meta itemprop="datePublished" content="2019-08-23T16:48:38&#43;08:00" />
+<meta itemprop="dateModified" content="2019-08-23T16:48:38&#43;08:00" />
+<meta itemprop="wordCount" content="1138">
+
+
+
+<meta itemprop="keywords" content="pattern," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="创建型模式-建造者模式"/>
+<meta name="twitter:description" content="维基百科 生成器模式 生成器模式（英：Builder Pattern）是一种设计模式，又名：建造模式，是一种对象构建模式。它可以将复杂对象的建造过"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">MakeYourself</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/lion/">
+        <li class="mobile-menu-item">lion</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">MakeYourself</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/lion/">lion</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">创建型模式-建造者模式</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-08-23 </span>
+        <div class="post-category">
+            <a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"> 设计模式 </a>
+            </div>
+          <span class="more-meta"> 约 1138 字 </span>
+          <span class="more-meta"> 预计阅读 3 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#生成器模式">生成器模式</a></li>
+    <li><a href="#适用性">适用性</a></li>
+    <li><a href="#参与者">参与者</a></li>
+    <li><a href="#协作">协作</a></li>
+    <li><a href="#范例">范例</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="维基百科">维基百科</h1>
+<h2 id="生成器模式">生成器模式</h2>
+<p>生成器模式（英：Builder Pattern）是一种设计模式，又名：建造模式，是一种对象构建模式。它可以将复杂对象的建造过程抽象出来（抽象类别），使这个抽象过程的不同实现方法可以构造出不同表现（属性）的对象。</p>
+<h2 id="适用性">适用性</h2>
+<p>在以下情况使用生成器模式：</p>
+<ul>
+<li>当创建复杂对象的算法应该独立于该对象的组成部分以及它们的装配方式时；</li>
+<li>当构造过程必须允许被构造的对象有不同的表示时。</li>
+</ul>
+<h2 id="参与者">参与者</h2>
+<ul>
+<li>Builder</li>
+</ul>
+<p>为创建一个Product对象的各个部件指定抽象接口。</p>
+<ul>
+<li>ConcreteBuilder</li>
+</ul>
+<p>实现Builder的接口以构造和装配该产品的各个部件。</p>
+<p>定义并明确它所创建的表示。</p>
+<p>提供一个检索产品的接口</p>
+<ul>
+<li>Director</li>
+</ul>
+<p>构造一个使用Builder接口的对象。</p>
+<ul>
+<li>Product</li>
+</ul>
+<p>表示被构造的复杂对象。ConcreateBuilder创建该产品的内部表示并定义它的装配过程。</p>
+<p>包含定义组成部件的类，包括将这些部件装配成最终产品的接口。</p>
+<h2 id="协作">协作</h2>
+<p>客户创建Director对象，并用它所想要的Builder对象进行配置。</p>
+<ul>
+<li>一旦产品部件被生成，导向器就会通知生成器。</li>
+<li>生成器处理导向器的请求，并将部件添加到该产品中。</li>
+<li>客户从生成器中检索产品。</li>
+</ul>
+<h2 id="范例">范例</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">/** &#34;Product&#34; */
+class Pizza {
+  private String dough = &#34;&#34;;
+  private String sauce = &#34;&#34;;
+  private String topping = &#34;&#34;;
+
+  public void setDough (String dough)     { this.dough = dough; }
+  public void setSauce (String sauce)     { this.sauce = sauce; }
+  public void setTopping (String topping) { this.topping = topping; }
+}
+
+
+&#39;&#39;/** &#34;Abstract Builder&#34; */&#39;&#39;
+abstract class PizzaBuilder {
+  protected Pizza pizza;
+
+  public Pizza getPizza() { return pizza; }
+  public void createNewPizzaProduct() { pizza = new Pizza(); }
+
+  public abstract void buildDough();
+  public abstract void buildSauce();
+  public abstract void buildTopping();
+}
+
+/** &#34;ConcreteBuilder&#34; */
+class HawaiianPizzaBuilder extends PizzaBuilder {
+  public void buildDough()   { pizza.setDough(&#34;cross&#34;); }
+  public void buildSauce()   { pizza.setSauce(&#34;mild&#34;); }
+  public void buildTopping() { pizza.setTopping(&#34;ham+pineapple&#34;); }
+}
+
+/** &#34;ConcreteBuilder&#34; */
+class SpicyPizzaBuilder extends PizzaBuilder {
+  public void buildDough()   { pizza.setDough(&#34;pan baked&#34;); }
+  public void buildSauce()   { pizza.setSauce(&#34;hot&#34;); }
+  public void buildTopping() { pizza.setTopping(&#34;pepperoni+salami&#34;); }
+}
+
+
+&#39;&#39;/** &#34;Director&#34; */&#39;&#39;
+class Waiter {
+  private PizzaBuilder pizzaBuilder;
+
+  public void setPizzaBuilder (PizzaBuilder pb) { pizzaBuilder = pb; }
+  public Pizza getPizza() { return pizzaBuilder.getPizza(); }
+
+  public void constructPizza() {
+    pizzaBuilder.createNewPizzaProduct();
+    pizzaBuilder.buildDough();
+    pizzaBuilder.buildSauce();
+    pizzaBuilder.buildTopping();
+  }
+}
+
+/** A customer ordering a pizza. */
+class BuilderExample {
+  public static void main(String[] args) {
+    Waiter waiter = new Waiter();
+    PizzaBuilder hawaiian_pizzabuilder = new HawaiianPizzaBuilder();
+    PizzaBuilder spicy_pizzabuilder = new SpicyPizzaBuilder();
+
+    waiter.setPizzaBuilder ( hawaiian_pizzabuilder );
+    waiter.constructPizza();
+
+    Pizza pizza = waiter.getPizza();
+  }
+}
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="例子">例子</h1>
+<p>Product</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">public class Person {
+    private String head;
+    private String body;
+    private String foot;
+
+    public String getHead() {
+        return head;
+    }
+
+    public void setHead(String head) {
+        this.head = head;
+    }
+
+    public String getBody() {
+        return body;
+    }
+
+    public void setBody(String body) {
+        this.body = body;
+    }
+
+    public String getFoot() {
+        return foot;
+    }
+
+    public void setFoot(String foot) {
+        this.foot = foot;
+    }
+}
+</code></pre></td></tr></table>
+</div>
+</div><p>Builder</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">public interface PersonBuilder {
+    void buildHead();
+
+    void buildBody();
+
+    void buildFoot();
+
+    Person buildPerson();
+
+}
+</code></pre></td></tr></table>
+</div>
+</div><p>Builder的实现类</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">public class ManBuilder implements PersonBuilder{
+    Person person;
+
+    public ManBuilder() {
+        person = new Person();
+    }
+
+    @Override
+    public void buildHead() {
+        person.setHead(&#34;建造男人的头&#34;);
+    }
+
+    @Override
+    public void buildBody() {
+        person.setBody(&#34;建造男人的身体&#34;);
+    }
+
+    @Override
+    public void buildFoot() {
+        person.setFoot(&#34;建造男人的脚&#34;);
+    }
+
+    @Override
+    public Person buildPerson() {
+        return person;
+    }
+}
+</code></pre></td></tr></table>
+</div>
+</div><p>Director</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">public class PersonDirector {
+    public Person constructPerson(PersonBuilder pb) {
+        pb.buildHead();
+        pb.buildBody();
+        pb.buildFoot();
+        return pb.buildPerson();
+    }
+}
+</code></pre></td></tr></table>
+</div>
+</div><p>Test</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">public class Test {
+    public static void main(String[] args) {
+        PersonDirector pd = new PersonDirector();
+        Person person = pd.constructPerson(new ManBuilder());
+        System.out.println(person.getHead());
+        System.out.println(person.getBody());
+        System.out.println(person.getFoot());
+    }
+}
+</code></pre></td></tr></table>
+</div>
+</div><p>运行结果</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">建造男人的头
+建造男人的身体
+建造男人的脚
+</code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">lion</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2019-08-23
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/pattern/">pattern</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/single-case-pattern/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">创建型模式-单例模式</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/abstract-factory/">
+            <span class="next-text nav-default">创建型模式-抽象工厂</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+  <div id="vcomments"></div>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <script type="text/javascript">
+    new Valine({
+        el: '#vcomments' ,
+        appId: '0YCg3ojWSOQdWPJfdfU2nxbv-gzGzoHsz',
+        appKey: '4VhmvGzlLgfQVD9OPTUofpru',
+        notify:  true ,
+        verify:  false ,
+        avatar:'mm',
+        placeholder: '说点什么吧...',
+        visitor:  false 
+    });
+  </script>
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:154704230@qq.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/lionng" class="iconfont icon-github" title="github"></a>
+  <a href="https://lionng.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2021<span class="heart"><i class="iconfont icon-heart"></i></span><span>lion</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  <script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+
+
+
+<script id="baidu_push">
+  (function(){
+    if (window.location.hostname === 'localhost') return;
+    var bp = document.createElement('script'); bp.async = true;
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+      bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+      bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+  })();
+</script>
+
+
+
+
+</body>
+</html>

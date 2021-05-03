@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on Welcome</title>
+    <link>https://lionng.github.io/tags/git/</link>
+    <description>Recent content in git on Welcome</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 01 Jun 2020 21:01:18 +0800</lastBuildDate>
+    
+	<atom:link href="https://lionng.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>配置git代理</title>
+      <link>https://lionng.github.io/post/git-proxy/</link>
+      <pubDate>Mon, 01 Jun 2020 21:01:18 +0800</pubDate>
+      
+      <guid>https://lionng.github.io/post/git-proxy/</guid>
+      <description>访问GitHub慢，下载慢的解决办法。 ssh-socket代理 创建config文件 1 2 vi ~/.ssh/config # 当然你也可以手动在 C:\Users\Username\.ssh 下创建 config 文件 文件写入如下内容</description>
+    </item>
+    
+  </channel>
+</rss>

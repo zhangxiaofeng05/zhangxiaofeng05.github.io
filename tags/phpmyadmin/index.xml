@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>phpmyadmin on Welcome</title>
+    <link>https://lionng.github.io/tags/phpmyadmin/</link>
+    <description>Recent content in phpmyadmin on Welcome</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 29 Dec 2019 11:14:39 +0800</lastBuildDate>
+    
+	<atom:link href="https://lionng.github.io/tags/phpmyadmin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>linux安装mariadb并配置phpmyadmin</title>
+      <link>https://lionng.github.io/post/linux_install_phpmyadmin/</link>
+      <pubDate>Sun, 29 Dec 2019 11:14:39 +0800</pubDate>
+      
+      <guid>https://lionng.github.io/post/linux_install_phpmyadmin/</guid>
+      <description>mariadb 维基百科 MariaDB是MySQL关系数据库管理系统的一个复刻，由社区开发，有商业支持，旨在继续保持在GNU GPL下开源。MariaDB的</description>
+    </item>
+    
+  </channel>
+</rss>

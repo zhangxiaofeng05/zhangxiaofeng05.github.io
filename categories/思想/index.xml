@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>思想 on Welcome</title>
+    <link>https://lionng.github.io/categories/%E6%80%9D%E6%83%B3/</link>
+    <description>Recent content in 思想 on Welcome</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 15 Jul 2019 21:29:10 +0800</lastBuildDate>
+    
+	<atom:link href="https://lionng.github.io/categories/%E6%80%9D%E6%83%B3/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>什么是面向接口编程</title>
+      <link>https://lionng.github.io/post/interface-oriented-programming/</link>
+      <pubDate>Mon, 15 Jul 2019 21:29:10 +0800</pubDate>
+      
+      <guid>https://lionng.github.io/post/interface-oriented-programming/</guid>
+      <description>面向接口编程 要正确地使用Java语言进行面向对象的编程，从而提高程序的复用性，增加程序的可维护性、可扩展性，就必须是面向接口的编程。面向接口</description>
+    </item>
+    
+  </channel>
+</rss>

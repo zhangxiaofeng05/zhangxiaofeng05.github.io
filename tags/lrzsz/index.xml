@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>lrzsz on Welcome</title>
+    <link>https://lionng.github.io/tags/lrzsz/</link>
+    <description>Recent content in lrzsz on Welcome</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 07 Jan 2020 00:05:37 +0800</lastBuildDate>
+    
+	<atom:link href="https://lionng.github.io/tags/lrzsz/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lrzsz用于小文件的上传下载</title>
+      <link>https://lionng.github.io/post/lrzsz/</link>
+      <pubDate>Tue, 07 Jan 2020 00:05:37 +0800</pubDate>
+      
+      <guid>https://lionng.github.io/post/lrzsz/</guid>
+      <description>百度百科 lrzsz是一款在linux里可代替ftp上传和下载的程序。 使用方法 centos服务器，可直接yum -y install lrzsz 程序会自动安装好，然后如你</description>
+    </item>
+    
+  </channel>
+</rss>

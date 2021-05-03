@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SLF4J on Welcome</title>
+    <link>https://lionng.github.io/tags/slf4j/</link>
+    <description>Recent content in SLF4J on Welcome</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 20 Jul 2019 14:32:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://lionng.github.io/tags/slf4j/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Spring Boot打印日志</title>
+      <link>https://lionng.github.io/post/spring-boot-logback/</link>
+      <pubDate>Sat, 20 Jul 2019 14:32:00 +0800</pubDate>
+      
+      <guid>https://lionng.github.io/post/spring-boot-logback/</guid>
+      <description>本文环境 jdk 1.8 maven 3.6.1 Spring Boot 2.1.6 SLF4J 为什么要介绍SLF4J？ SLF4J是一个接口，log4j和logback是它的实现。 SLF4J官网：https://</description>
+    </item>
+    
+  </channel>
+</rss>

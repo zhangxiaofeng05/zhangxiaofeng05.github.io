@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>transaction on Welcome</title>
+    <link>https://lionng.github.io/tags/transaction/</link>
+    <description>Recent content in transaction on Welcome</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 18 Jul 2019 12:56:44 +0800</lastBuildDate>
+    
+	<atom:link href="https://lionng.github.io/tags/transaction/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>数据库隔离级别和传播行为</title>
+      <link>https://lionng.github.io/post/transaction-spring/</link>
+      <pubDate>Thu, 18 Jul 2019 12:56:44 +0800</pubDate>
+      
+      <guid>https://lionng.github.io/post/transaction-spring/</guid>
+      <description>事务五个隔离级别 DEFAULT 使用数据库设置的隔离级别 ( 默认 ) ，由 DBA 默认的设置来决定隔离级别 . READ_UNCOMMITTED 会出现脏读、不可重复读、幻读 ( 隔离级别最低，并发性能高 )</description>
+    </item>
+    
+  </channel>
+</rss>

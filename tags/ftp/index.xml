@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ftp on Welcome</title>
+    <link>https://lionng.github.io/tags/ftp/</link>
+    <description>Recent content in ftp on Welcome</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 01 Dec 2019 00:09:14 +0800</lastBuildDate>
+    
+	<atom:link href="https://lionng.github.io/tags/ftp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ftp服务器</title>
+      <link>https://lionng.github.io/post/ftp-server/</link>
+      <pubDate>Sun, 01 Dec 2019 00:09:14 +0800</pubDate>
+      
+      <guid>https://lionng.github.io/post/ftp-server/</guid>
+      <description>linux环境 1 2 3 4 5 LSB Version: :core-4.1-amd64:core-4.1-noarch Distributor ID: CentOS Description: CentOS Linux release 7.3.1611 (Core) Release: 7.3.1611 Codename: Core 安装 1 2 3 4 5 6 yum install vsftpd systemctl restart vsftpd.service # 重启vsftpd systemctl stop vsftpd.service # 停止vsftpd systemctl start vsftpd.service # 启动v</description>
+    </item>
+    
+  </channel>
+</rss>

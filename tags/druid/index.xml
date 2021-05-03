@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Druid on Welcome</title>
+    <link>https://lionng.github.io/tags/druid/</link>
+    <description>Recent content in Druid on Welcome</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 18 Jul 2019 15:33:15 +0800</lastBuildDate>
+    
+	<atom:link href="https://lionng.github.io/tags/druid/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Druid数据库连接池</title>
+      <link>https://lionng.github.io/post/druid-database-connection-pool/</link>
+      <pubDate>Thu, 18 Jul 2019 15:33:15 +0800</pubDate>
+      
+      <guid>https://lionng.github.io/post/druid-database-connection-pool/</guid>
+      <description>阿里巴巴数据库事业部出品，为监控而生的数据库连接池。 托管于GitHub,项目地址 https://github.com/alibaba/druid Druid是一个JDBC组件库，包括数据库连接池、SQL P</description>
+    </item>
+    
+  </channel>
+</rss>

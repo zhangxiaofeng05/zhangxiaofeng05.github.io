@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>代理 on Welcome</title>
+    <link>https://lionng.github.io/categories/%E4%BB%A3%E7%90%86/</link>
+    <description>Recent content in 代理 on Welcome</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 01 Jun 2020 21:01:18 +0800</lastBuildDate>
+    
+	<atom:link href="https://lionng.github.io/categories/%E4%BB%A3%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>配置git代理</title>
+      <link>https://lionng.github.io/post/git-proxy/</link>
+      <pubDate>Mon, 01 Jun 2020 21:01:18 +0800</pubDate>
+      
+      <guid>https://lionng.github.io/post/git-proxy/</guid>
+      <description>访问GitHub慢，下载慢的解决办法。 ssh-socket代理 创建config文件 1 2 vi ~/.ssh/config # 当然你也可以手动在 C:\Users\Username\.ssh 下创建 config 文件 文件写入如下内容</description>
+    </item>
+    
+    <item>
+      <title>使用SwitchyOmega</title>
+      <link>https://lionng.github.io/post/use-switchyomega/</link>
+      <pubDate>Sun, 28 Apr 2019 17:36:55 +0800</pubDate>
+      
+      <guid>https://lionng.github.io/post/use-switchyomega/</guid>
+      <description>这个插件这是一个工具，常见代理有shadowsocks、Goflyway switchyomega的获取 代码在GitHub上维护:https:</description>
+    </item>
+    
+    <item>
+      <title>终端使用socks5代理</title>
+      <link>https://lionng.github.io/post/terminal-use-socks5-proxy/</link>
+      <pubDate>Thu, 16 Aug 2018 10:07:27 +0800</pubDate>
+      
+      <guid>https://lionng.github.io/post/terminal-use-socks5-proxy/</guid>
+      <description>安装proxychains 简单粗暴的方式： 1 $ sudo apt-get install proxychains 如果想要使用最新版，也可以自己手动编译源码 1 2 3 4 5 6 # 安装 git clone https://github.com/rofl0r/proxychains-ng.git ./configure --prefix=/usr --sysconfdir=/etc make sudo make install sudo make install-config</description>
+    </item>
+    
+  </channel>
+</rss>

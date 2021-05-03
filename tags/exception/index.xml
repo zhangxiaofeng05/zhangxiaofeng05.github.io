@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exception on Welcome</title>
+    <link>https://lionng.github.io/tags/exception/</link>
+    <description>Recent content in Exception on Welcome</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 25 Jul 2019 14:34:21 +0800</lastBuildDate>
+    
+	<atom:link href="https://lionng.github.io/tags/exception/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>java异常</title>
+      <link>https://lionng.github.io/post/java-exception/</link>
+      <pubDate>Thu, 25 Jul 2019 14:34:21 +0800</pubDate>
+      
+      <guid>https://lionng.github.io/post/java-exception/</guid>
+      <description>异常类型 检查性异常 最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要打开一个不存在文件时，一个异常就发生了，这些异</description>
+    </item>
+    
+  </channel>
+</rss>

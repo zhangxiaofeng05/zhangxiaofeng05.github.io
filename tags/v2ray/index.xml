@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>v2ray on Welcome</title>
+    <link>https://lionng.github.io/tags/v2ray/</link>
+    <description>Recent content in v2ray on Welcome</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 04 Jan 2020 16:22:37 +0800</lastBuildDate>
+    
+	<atom:link href="https://lionng.github.io/tags/v2ray/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>linux使用v2ray作为客户端</title>
+      <link>https://lionng.github.io/post/linux-v2ray-client/</link>
+      <pubDate>Sat, 04 Jan 2020 16:22:37 +0800</pubDate>
+      
+      <guid>https://lionng.github.io/post/linux-v2ray-client/</guid>
+      <description>安装v2ray 官网：https://www.v2ray.com/ (被墙,如果可以，不明白的多看官网) github地址：https://git</description>
+    </item>
+    
+  </channel>
+</rss>
