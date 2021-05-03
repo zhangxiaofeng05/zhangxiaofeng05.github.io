@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://lionng.github.io/sitemap.xml
