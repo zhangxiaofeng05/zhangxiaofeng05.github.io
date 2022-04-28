@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.83.1 with theme even" />
+<meta name="generator" content="Hugo 0.97.3 with theme even" />
 
 
 <link rel="canonical" href="https://lionng.github.io/post/state-pattern/" />
@@ -35,7 +35,7 @@
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-<link href="/sass/main.min.c7bc1becf36bcf6a9ebd25d2947e43a2eb745ddb0c9a32b43126fd7fa460c351.css" rel="stylesheet">
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
 <link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
 
 
@@ -43,12 +43,12 @@
 <meta property="og:description" content="百度百科 状态模式 (State Pattern)是设计模式的一种，属于行为模式。 允许一个对象在其内部状态改变时改变它的行为。对象看起来似乎修改了它的类 定义" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://lionng.github.io/post/state-pattern/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2019-08-29T06:30:46&#43;08:00" />
-<meta property="article:modified_time" content="2019-08-29T06:30:46&#43;08:00" />
+<meta property="article:published_time" content="2019-08-29T06:30:46+08:00" />
+<meta property="article:modified_time" content="2019-08-29T06:30:46+08:00" />
 
 <meta itemprop="name" content="行为型模式-状态模式">
-<meta itemprop="description" content="百度百科 状态模式 (State Pattern)是设计模式的一种，属于行为模式。 允许一个对象在其内部状态改变时改变它的行为。对象看起来似乎修改了它的类 定义"><meta itemprop="datePublished" content="2019-08-29T06:30:46&#43;08:00" />
-<meta itemprop="dateModified" content="2019-08-29T06:30:46&#43;08:00" />
+<meta itemprop="description" content="百度百科 状态模式 (State Pattern)是设计模式的一种，属于行为模式。 允许一个对象在其内部状态改变时改变它的行为。对象看起来似乎修改了它的类 定义"><meta itemprop="datePublished" content="2019-08-29T06:30:46+08:00" />
+<meta itemprop="dateModified" content="2019-08-29T06:30:46+08:00" />
 <meta itemprop="wordCount" content="573">
 <meta itemprop="keywords" content="pattern," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="行为型模式-状态模式"/>
@@ -179,22 +179,22 @@
 定义一个接口以封装与Context的一个特定状态相关的行为。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">public interface Weather {
-    String getWeather();
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">public interface Weather {
+</span></span><span class="line"><span class="cl">    String getWeather();
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Context
 定义客户感兴趣的接口。
 维护一个ConcreteState子类的实例，这个实例定义当前状态。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -211,28 +211,28 @@
 </span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">public class Context {
-    private Weather weather;
-
-    public Weather getWeather() {
-        return weather;
-    }
-
-    public void setWeather(Weather weather) {
-        this.weather = weather;
-    }
-
-    public String weatherMessage(){
-        return weather.getWeather();
-    }
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">public class Context {
+</span></span><span class="line"><span class="cl">    private Weather weather;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    public Weather getWeather() {
+</span></span><span class="line"><span class="cl">        return weather;
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    public void setWeather(Weather weather) {
+</span></span><span class="line"><span class="cl">        this.weather = weather;
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    public String weatherMessage(){
+</span></span><span class="line"><span class="cl">        return weather.getWeather();
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>ConcreteStatesubclasses
 每一子类实现一个与Context的一个状态相关的行为。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -240,17 +240,17 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">public class Rain implements Weather {
-    @Override
-    public String getWeather() {
-        return &#34;下雨&#34;;
-    }
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">public class Rain implements Weather {
+</span></span><span class="line"><span class="cl">    @Override
+</span></span><span class="line"><span class="cl">    public String getWeather() {
+</span></span><span class="line"><span class="cl">        return &#34;下雨&#34;;
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -258,18 +258,18 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">public class Sunshine implements Weather {
-    @Override
-    public String getWeather() {
-        return &#34;阳光&#34;;
-    }
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">public class Sunshine implements Weather {
+</span></span><span class="line"><span class="cl">    @Override
+</span></span><span class="line"><span class="cl">    public String getWeather() {
+</span></span><span class="line"><span class="cl">        return &#34;阳光&#34;;
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Test</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -284,33 +284,33 @@
 </span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">public class Test {
-    public static void main(String[] args) {
-        Context ctx1 = new Context();
-        ctx1.setWeather(new Sunshine());
-        System.out.println(ctx1.weatherMessage());
-
-        System.out.println(&#34;=================&#34;);
-
-        Context ctx2 = new Context();
-        ctx2.setWeather(new Rain());
-        System.out.println(ctx2.weatherMessage());
-    }
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">public class Test {
+</span></span><span class="line"><span class="cl">    public static void main(String[] args) {
+</span></span><span class="line"><span class="cl">        Context ctx1 = new Context();
+</span></span><span class="line"><span class="cl">        ctx1.setWeather(new Sunshine());
+</span></span><span class="line"><span class="cl">        System.out.println(ctx1.weatherMessage());
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        System.out.println(&#34;=================&#34;);
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        Context ctx2 = new Context();
+</span></span><span class="line"><span class="cl">        ctx2.setWeather(new Rain());
+</span></span><span class="line"><span class="cl">        System.out.println(ctx2.weatherMessage());
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>运行结果：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">阳光
-=================
-下雨
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">阳光
+</span></span><span class="line"><span class="cl">=================
+</span></span><span class="line"><span class="cl">下雨
+</span></span></code></pre></td></tr></table>
 </div>
 </div>
     </div>
@@ -399,7 +399,7 @@
   <span class="copyright-year">
     &copy; 
     2017 - 
-    2021<span class="heart"><i class="iconfont icon-heart"></i></span><span>lion</span>
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>lion</span>
   </span>
 </div>
 
@@ -415,7 +415,7 @@
 
 
 
-<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+<script type="text/javascript" src="/js/main.min.64437849d125a2d603b3e71d6de5225d641a32d17168a58106e0b61852079683.js"></script>
 
 
 

@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.83.1 with theme even" />
+<meta name="generator" content="Hugo 0.97.3 with theme even" />
 
 
 <link rel="canonical" href="https://lionng.github.io/post/facade-pattern/" />
@@ -35,7 +35,7 @@
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-<link href="/sass/main.min.c7bc1becf36bcf6a9ebd25d2947e43a2eb745ddb0c9a32b43126fd7fa460c351.css" rel="stylesheet">
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
 <link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
 
 
@@ -43,12 +43,12 @@
 <meta property="og:description" content="维基百科 外观模式 外观模式（Facade pattern），是软件工程中常用的一种软件设计模式，它为子系统中的一组接口提供一个统一的高层接口，使" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://lionng.github.io/post/facade-pattern/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2019-08-25T10:20:54&#43;08:00" />
-<meta property="article:modified_time" content="2019-08-25T10:20:54&#43;08:00" />
+<meta property="article:published_time" content="2019-08-25T10:20:54+08:00" />
+<meta property="article:modified_time" content="2019-08-25T10:20:54+08:00" />
 
 <meta itemprop="name" content="结构型模式-外观模式">
-<meta itemprop="description" content="维基百科 外观模式 外观模式（Facade pattern），是软件工程中常用的一种软件设计模式，它为子系统中的一组接口提供一个统一的高层接口，使"><meta itemprop="datePublished" content="2019-08-25T10:20:54&#43;08:00" />
-<meta itemprop="dateModified" content="2019-08-25T10:20:54&#43;08:00" />
+<meta itemprop="description" content="维基百科 外观模式 外观模式（Facade pattern），是软件工程中常用的一种软件设计模式，它为子系统中的一组接口提供一个统一的高层接口，使"><meta itemprop="datePublished" content="2019-08-25T10:20:54+08:00" />
+<meta itemprop="dateModified" content="2019-08-25T10:20:54+08:00" />
 <meta itemprop="wordCount" content="637">
 <meta itemprop="keywords" content="pattern," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="结构型模式-外观模式"/>
@@ -165,7 +165,7 @@
 <p>这是一个抽象的示例。一个客户“you”通过外观接口“computer”获取计算机内部复杂的系统信息。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -206,89 +206,89 @@
 </span><span class="lnt">39
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">/* Complex parts */
-
-class CPU {
-	public void freeze() { ... }
-	public void jump(long position) { ... }
-	public void execute() { ... }
-}
-
-class Memory {
-	public void load(long position, byte[] data) {
-		...
-	}
-}
-
-class HardDrive {
-	public byte[] read(long lba, int size) {
-		...
-	}
-}
-
-/* Façade */
-
-class Computer {
-	public void startComputer() {
-		cpu.freeze();
-		memory.load(BOOT_ADDRESS, hardDrive.read(BOOT_SECTOR, SECTOR_SIZE));
-		cpu.jump(BOOT_ADDRESS);
-		cpu.execute();
-	}
-}
-
-/* Client */
-
-class You {
-	public static void main(String[] args) {
-		Computer facade = new Computer();
-		facade.startComputer();
-	}
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/* Complex parts */
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">class CPU {
+</span></span><span class="line"><span class="cl">	public void freeze() { ... }
+</span></span><span class="line"><span class="cl">	public void jump(long position) { ... }
+</span></span><span class="line"><span class="cl">	public void execute() { ... }
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">class Memory {
+</span></span><span class="line"><span class="cl">	public void load(long position, byte[] data) {
+</span></span><span class="line"><span class="cl">		...
+</span></span><span class="line"><span class="cl">	}
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">class HardDrive {
+</span></span><span class="line"><span class="cl">	public byte[] read(long lba, int size) {
+</span></span><span class="line"><span class="cl">		...
+</span></span><span class="line"><span class="cl">	}
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">/* Façade */
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">class Computer {
+</span></span><span class="line"><span class="cl">	public void startComputer() {
+</span></span><span class="line"><span class="cl">		cpu.freeze();
+</span></span><span class="line"><span class="cl">		memory.load(BOOT_ADDRESS, hardDrive.read(BOOT_SECTOR, SECTOR_SIZE));
+</span></span><span class="line"><span class="cl">		cpu.jump(BOOT_ADDRESS);
+</span></span><span class="line"><span class="cl">		cpu.execute();
+</span></span><span class="line"><span class="cl">	}
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">/* Client */
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">class You {
+</span></span><span class="line"><span class="cl">	public static void main(String[] args) {
+</span></span><span class="line"><span class="cl">		Computer facade = new Computer();
+</span></span><span class="line"><span class="cl">		facade.startComputer();
+</span></span><span class="line"><span class="cl">	}
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="例子">例子</h1>
 <p>抽象类</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">public interface ServiceA {
-    public void methodA();
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">public interface ServiceA {
+</span></span><span class="line"><span class="cl">    public void methodA();
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">public interface ServiceB {
-    public void methodB();
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">public interface ServiceB {
+</span></span><span class="line"><span class="cl">    public void methodB();
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">public interface ServiceC {
-    public void methodC();
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">public interface ServiceC {
+</span></span><span class="line"><span class="cl">    public void methodC();
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>实现类</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -296,17 +296,17 @@ class You {
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">public class ServiceAImpl implements ServiceA {
-    @Override
-    public void methodA() {
-        System.out.println(&#34;这是服务A&#34;);
-    }
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">public class ServiceAImpl implements ServiceA {
+</span></span><span class="line"><span class="cl">    @Override
+</span></span><span class="line"><span class="cl">    public void methodA() {
+</span></span><span class="line"><span class="cl">        System.out.println(&#34;这是服务A&#34;);
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -314,17 +314,17 @@ class You {
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">public class ServiceBImpl implements ServiceB {
-    @Override
-    public void methodB() {
-        System.out.println(&#34;这是服务B&#34;);
-    }
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">public class ServiceBImpl implements ServiceB {
+</span></span><span class="line"><span class="cl">    @Override
+</span></span><span class="line"><span class="cl">    public void methodB() {
+</span></span><span class="line"><span class="cl">        System.out.println(&#34;这是服务B&#34;);
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -332,18 +332,18 @@ class You {
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">public class ServiceCImpl implements ServiceC {
-    @Override
-    public void methodC() {
-        System.out.println(&#34;这是服务C&#34;);
-    }
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">public class ServiceCImpl implements ServiceC {
+</span></span><span class="line"><span class="cl">    @Override
+</span></span><span class="line"><span class="cl">    public void methodC() {
+</span></span><span class="line"><span class="cl">        System.out.println(&#34;这是服务C&#34;);
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>外观类</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -371,38 +371,38 @@ class You {
 </span><span class="lnt">26
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">public class Facade {
-    ServiceA sa;
-    ServiceB sb;
-    ServiceC sc;
-
-    public Facade() {
-        sa = new ServiceAImpl();
-        sb = new ServiceBImpl();
-        sc = new ServiceCImpl();
-    }
-
-    public void methodA(){
-        sa.methodA();
-        sb.methodB();
-    }
-
-    public void methodB(){
-        sb.methodB();
-        sc.methodC();
-    }
-
-    public void methodC(){
-        sc.methodC();
-        sa.methodA();
-    }
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">public class Facade {
+</span></span><span class="line"><span class="cl">    ServiceA sa;
+</span></span><span class="line"><span class="cl">    ServiceB sb;
+</span></span><span class="line"><span class="cl">    ServiceC sc;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    public Facade() {
+</span></span><span class="line"><span class="cl">        sa = new ServiceAImpl();
+</span></span><span class="line"><span class="cl">        sb = new ServiceBImpl();
+</span></span><span class="line"><span class="cl">        sc = new ServiceCImpl();
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    public void methodA(){
+</span></span><span class="line"><span class="cl">        sa.methodA();
+</span></span><span class="line"><span class="cl">        sb.methodB();
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    public void methodB(){
+</span></span><span class="line"><span class="cl">        sb.methodB();
+</span></span><span class="line"><span class="cl">        sc.methodC();
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    public void methodC(){
+</span></span><span class="line"><span class="cl">        sc.methodC();
+</span></span><span class="line"><span class="cl">        sa.methodA();
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Test</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -418,26 +418,26 @@ class You {
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">public class Test {
-    public static void main(String[] args) {
-        ServiceA sa = new ServiceAImpl();
-        ServiceB sb = new ServiceBImpl();
-
-        sa.methodA();
-        sb.methodB();
-        System.out.println(&#34;=========&#34;);
-        //facade
-        Facade facade = new Facade();
-        facade.methodA();
-        facade.methodB();
-    }
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">public class Test {
+</span></span><span class="line"><span class="cl">    public static void main(String[] args) {
+</span></span><span class="line"><span class="cl">        ServiceA sa = new ServiceAImpl();
+</span></span><span class="line"><span class="cl">        ServiceB sb = new ServiceBImpl();
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        sa.methodA();
+</span></span><span class="line"><span class="cl">        sb.methodB();
+</span></span><span class="line"><span class="cl">        System.out.println(&#34;=========&#34;);
+</span></span><span class="line"><span class="cl">        //facade
+</span></span><span class="line"><span class="cl">        Facade facade = new Facade();
+</span></span><span class="line"><span class="cl">        facade.methodA();
+</span></span><span class="line"><span class="cl">        facade.methodB();
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>运行结果：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -446,14 +446,14 @@ class You {
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">这是服务A
-这是服务B
-=========
-这是服务A
-这是服务B
-这是服务B
-这是服务C
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">这是服务A
+</span></span><span class="line"><span class="cl">这是服务B
+</span></span><span class="line"><span class="cl">=========
+</span></span><span class="line"><span class="cl">这是服务A
+</span></span><span class="line"><span class="cl">这是服务B
+</span></span><span class="line"><span class="cl">这是服务B
+</span></span><span class="line"><span class="cl">这是服务C
+</span></span></code></pre></td></tr></table>
 </div>
 </div>
     </div>
@@ -542,7 +542,7 @@ class You {
   <span class="copyright-year">
     &copy; 
     2017 - 
-    2021<span class="heart"><i class="iconfont icon-heart"></i></span><span>lion</span>
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>lion</span>
   </span>
 </div>
 
@@ -558,7 +558,7 @@ class You {
 
 
 
-<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+<script type="text/javascript" src="/js/main.min.64437849d125a2d603b3e71d6de5225d641a32d17168a58106e0b61852079683.js"></script>
 
 
 

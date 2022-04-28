@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.83.1 with theme even" />
+<meta name="generator" content="Hugo 0.97.3 with theme even" />
 
 
 <link rel="canonical" href="https://lionng.github.io/post/ftp-server/" />
@@ -35,7 +35,7 @@
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-<link href="/sass/main.min.c7bc1becf36bcf6a9ebd25d2947e43a2eb745ddb0c9a32b43126fd7fa460c351.css" rel="stylesheet">
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
 <link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
 
 
@@ -43,12 +43,12 @@
 <meta property="og:description" content="linux环境 1 2 3 4 5 LSB Version: :core-4.1-amd64:core-4.1-noarch Distributor ID: CentOS Description: CentOS Linux release 7.3.1611 (Core) Release: 7.3.1611 Codename: Core 安装 1 2 3 4 5 6 yum install vsftpd systemctl restart vsftpd.service # 重启vsftpd systemctl stop vsftpd.service # 停止vsftpd systemctl start vsftpd.service # 启动v" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://lionng.github.io/post/ftp-server/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2019-12-01T00:09:14&#43;08:00" />
-<meta property="article:modified_time" content="2019-12-01T00:09:14&#43;08:00" />
+<meta property="article:published_time" content="2019-12-01T00:09:14+08:00" />
+<meta property="article:modified_time" content="2019-12-01T00:09:14+08:00" />
 
 <meta itemprop="name" content="ftp服务器">
-<meta itemprop="description" content="linux环境 1 2 3 4 5 LSB Version: :core-4.1-amd64:core-4.1-noarch Distributor ID: CentOS Description: CentOS Linux release 7.3.1611 (Core) Release: 7.3.1611 Codename: Core 安装 1 2 3 4 5 6 yum install vsftpd systemctl restart vsftpd.service # 重启vsftpd systemctl stop vsftpd.service # 停止vsftpd systemctl start vsftpd.service # 启动v"><meta itemprop="datePublished" content="2019-12-01T00:09:14&#43;08:00" />
-<meta itemprop="dateModified" content="2019-12-01T00:09:14&#43;08:00" />
+<meta itemprop="description" content="linux环境 1 2 3 4 5 LSB Version: :core-4.1-amd64:core-4.1-noarch Distributor ID: CentOS Description: CentOS Linux release 7.3.1611 (Core) Release: 7.3.1611 Codename: Core 安装 1 2 3 4 5 6 yum install vsftpd systemctl restart vsftpd.service # 重启vsftpd systemctl stop vsftpd.service # 停止vsftpd systemctl start vsftpd.service # 启动v"><meta itemprop="datePublished" content="2019-12-01T00:09:14+08:00" />
+<meta itemprop="dateModified" content="2019-12-01T00:09:14+08:00" />
 <meta itemprop="wordCount" content="1285">
 <meta itemprop="keywords" content="ftp," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="ftp服务器"/>
@@ -184,24 +184,24 @@
       <h2 id="linux环境">linux环境</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">LSB Version:    :core-4.1-amd64:core-4.1-noarch
-Distributor ID: CentOS
-Description:    CentOS Linux release 7.3.1611 (Core) 
-Release:    7.3.1611
-Codename:   Core
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">LSB Version:    :core-4.1-amd64:core-4.1-noarch
+</span></span><span class="line"><span class="cl">Distributor ID: CentOS
+</span></span><span class="line"><span class="cl">Description:    CentOS Linux release 7.3.1611 (Core) 
+</span></span><span class="line"><span class="cl">Release:    7.3.1611
+</span></span><span class="line"><span class="cl">Codename:   Core
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="安装">安装</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -209,13 +209,13 @@ Codename:   Core
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">yum install vsftpd
-
-systemctl restart vsftpd.service   # 重启vsftpd
-systemctl stop vsftpd.service      # 停止vsftpd
-systemctl start vsftpd.service     # 启动vsftpd
-systemctl status vsftpd.service    # 查看vsftpd的状态
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">yum install vsftpd
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">systemctl restart vsftpd.service   # 重启vsftpd
+</span></span><span class="line"><span class="cl">systemctl stop vsftpd.service      # 停止vsftpd
+</span></span><span class="line"><span class="cl">systemctl start vsftpd.service     # 启动vsftpd
+</span></span><span class="line"><span class="cl">systemctl status vsftpd.service    # 查看vsftpd的状态
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="匿名配置">匿名配置</h2>
 <h3 id="服务器配置文件">服务器配置文件</h3>
@@ -226,7 +226,7 @@ systemctl status vsftpd.service    # 查看vsftpd的状态
 <h3 id="匿名设置配置文件内容">匿名设置：配置文件内容</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -246,25 +246,25 @@ systemctl status vsftpd.service    # 查看vsftpd的状态
 </span><span class="lnt">18
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">anonymous_enable=YES    #允许匿名登录
-local_enable=YES
-write_enable=YES
-local_umask=022         #匿名上传的默认权限，匿名不能修改生效，只能上传删除     
-anon_upload_enable=YES      #允许匿名上传
-anon_mkdir_write_enable=YES
-anon_other_write_enable=YES
-dirmessage_enable=YES
-xferlog_enable=YES
-connect_from_port_20=YES
-xferlog_file=/var/log/xferlog
-xferlog_std_format=YES
-listen=YES
-listen_ipv6=NO
-
-pam_service_name=vsftpd
-userlist_enable=YES
-tcp_wrappers=YES
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">anonymous_enable=YES    #允许匿名登录
+</span></span><span class="line"><span class="cl">local_enable=YES
+</span></span><span class="line"><span class="cl">write_enable=YES
+</span></span><span class="line"><span class="cl">local_umask=022         #匿名上传的默认权限，匿名不能修改生效，只能上传删除     
+</span></span><span class="line"><span class="cl">anon_upload_enable=YES      #允许匿名上传
+</span></span><span class="line"><span class="cl">anon_mkdir_write_enable=YES
+</span></span><span class="line"><span class="cl">anon_other_write_enable=YES
+</span></span><span class="line"><span class="cl">dirmessage_enable=YES
+</span></span><span class="line"><span class="cl">xferlog_enable=YES
+</span></span><span class="line"><span class="cl">connect_from_port_20=YES
+</span></span><span class="line"><span class="cl">xferlog_file=/var/log/xferlog
+</span></span><span class="line"><span class="cl">xferlog_std_format=YES
+</span></span><span class="line"><span class="cl">listen=YES
+</span></span><span class="line"><span class="cl">listen_ipv6=NO
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">pam_service_name=vsftpd
+</span></span><span class="line"><span class="cl">userlist_enable=YES
+</span></span><span class="line"><span class="cl">tcp_wrappers=YES
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>匿名用户的默认根目录：/var/ftp/pub<br>
 需要更改权限：<code>chmod -R 755 /var/ftp/pub</code></p>
@@ -272,27 +272,27 @@ tcp_wrappers=YES
 <p>安装：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">sudo apt-get install vsftpd
-sudo apt-get install lftp
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo apt-get install vsftpd
+</span></span><span class="line"><span class="cl">sudo apt-get install lftp
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="匿名连接ftp服务器">匿名连接ftp服务器</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">lftp IP
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">lftp IP
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="常用命令">常用命令</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -307,20 +307,20 @@ sudo apt-get install lftp
 </span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">lpwd 当地目录
-pwd 远程目录
-lcd 本地切换目录
-cd 远程切换目录
-mput hello.c aaa.txt 上传多个文件
---------------------------------
-put 上传单个文件
-mput 上传多个文件
-get 下载单个文件
-mget 下载多个文件
-mirror 下载整个目录及其子目录
-mirror -R 上传整个目录及其子目录
-退出 bye、quit、exit
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">lpwd 当地目录
+</span></span><span class="line"><span class="cl">pwd 远程目录
+</span></span><span class="line"><span class="cl">lcd 本地切换目录
+</span></span><span class="line"><span class="cl">cd 远程切换目录
+</span></span><span class="line"><span class="cl">mput hello.c aaa.txt 上传多个文件
+</span></span><span class="line"><span class="cl">--------------------------------
+</span></span><span class="line"><span class="cl">put 上传单个文件
+</span></span><span class="line"><span class="cl">mput 上传多个文件
+</span></span><span class="line"><span class="cl">get 下载单个文件
+</span></span><span class="line"><span class="cl">mget 下载多个文件
+</span></span><span class="line"><span class="cl">mirror 下载整个目录及其子目录
+</span></span><span class="line"><span class="cl">mirror -R 上传整个目录及其子目录
+</span></span><span class="line"><span class="cl">退出 bye、quit、exit
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>详细请谷歌、百度，<code>help</code>一下<br>
 至此，匿名用户可以用终端上传下载文件!!!</p>
@@ -340,15 +340,15 @@ mirror -R 上传整个目录及其子目录
 <h3 id="创建用户">创建用户</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">sudo adduser ftpuser              # 创建用户
-sudo passwd ftpuser               # 为此用户设置密码
-sudo usermod -a -G ftp ftpuser    # 将创建的ftpuser用户添加到ftp组
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo adduser ftpuser              # 创建用户
+</span></span><span class="line"><span class="cl">sudo passwd ftpuser               # 为此用户设置密码
+</span></span><span class="line"><span class="cl">sudo usermod -a -G ftp ftpuser    # 将创建的ftpuser用户添加到ftp组
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="服务器配置文件-1">服务器配置文件</h3>
 <p>位置：<code>/etc/vsftpd/vsftpd.conf</code></p>
@@ -356,7 +356,7 @@ sudo usermod -a -G ftp ftpuser    # 将创建的ftpuser用户添加到ftp组
 <p>匿名关闭，强制实行实名</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -373,31 +373,31 @@ sudo usermod -a -G ftp ftpuser    # 将创建的ftpuser用户添加到ftp组
 </span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">anonymous_enable=NO
-local_enable=YES
-write_enable=YES
-local_umask=755
-dirmessage_enable=YES
-xferlog_enable=YES
-connect_from_port_20=YES
-xferlog_file=/var/log/xferlog
-xferlog_std_format=YES
-listen=YES
-listen_ipv6=NO
-
-pam_service_name=vsftpd
-userlist_enable=YES
-tcp_wrappers=YES
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">anonymous_enable=NO
+</span></span><span class="line"><span class="cl">local_enable=YES
+</span></span><span class="line"><span class="cl">write_enable=YES
+</span></span><span class="line"><span class="cl">local_umask=755
+</span></span><span class="line"><span class="cl">dirmessage_enable=YES
+</span></span><span class="line"><span class="cl">xferlog_enable=YES
+</span></span><span class="line"><span class="cl">connect_from_port_20=YES
+</span></span><span class="line"><span class="cl">xferlog_file=/var/log/xferlog
+</span></span><span class="line"><span class="cl">xferlog_std_format=YES
+</span></span><span class="line"><span class="cl">listen=YES
+</span></span><span class="line"><span class="cl">listen_ipv6=NO
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">pam_service_name=vsftpd
+</span></span><span class="line"><span class="cl">userlist_enable=YES
+</span></span><span class="line"><span class="cl">tcp_wrappers=YES
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="用户名登录">用户名登录</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">lftp 用户名:密码@ftp地址:传送端口（默认21）
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">lftp 用户名:密码@ftp地址:传送端口（默认21）
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>用户的默认路径：<code>/home/ftpuser</code><br>
 上传和下载不再赘述</p>
@@ -505,7 +505,7 @@ tcp_wrappers=YES
   <span class="copyright-year">
     &copy; 
     2017 - 
-    2021<span class="heart"><i class="iconfont icon-heart"></i></span><span>lion</span>
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>lion</span>
   </span>
 </div>
 
@@ -521,7 +521,7 @@ tcp_wrappers=YES
 
 
 
-<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+<script type="text/javascript" src="/js/main.min.64437849d125a2d603b3e71d6de5225d641a32d17168a58106e0b61852079683.js"></script>
 
 
 

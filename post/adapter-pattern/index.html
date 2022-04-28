@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.83.1 with theme even" />
+<meta name="generator" content="Hugo 0.97.3 with theme even" />
 
 
 <link rel="canonical" href="https://lionng.github.io/post/adapter-pattern/" />
@@ -35,7 +35,7 @@
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-<link href="/sass/main.min.c7bc1becf36bcf6a9ebd25d2947e43a2eb745ddb0c9a32b43126fd7fa460c351.css" rel="stylesheet">
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
 <link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
 
 
@@ -43,12 +43,12 @@
 <meta property="og:description" content="维基百科 适配器模式 在设计模式中，适配器模式（英语：adapter pattern）有时候也称包装样式或者包装(wrapper)。将一个类的接口" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://lionng.github.io/post/adapter-pattern/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2019-08-24T21:12:02&#43;08:00" />
-<meta property="article:modified_time" content="2019-08-24T21:12:02&#43;08:00" />
+<meta property="article:published_time" content="2019-08-24T21:12:02+08:00" />
+<meta property="article:modified_time" content="2019-08-24T21:12:02+08:00" />
 
 <meta itemprop="name" content="结构型模式-适配器模式">
-<meta itemprop="description" content="维基百科 适配器模式 在设计模式中，适配器模式（英语：adapter pattern）有时候也称包装样式或者包装(wrapper)。将一个类的接口"><meta itemprop="datePublished" content="2019-08-24T21:12:02&#43;08:00" />
-<meta itemprop="dateModified" content="2019-08-24T21:12:02&#43;08:00" />
+<meta itemprop="description" content="维基百科 适配器模式 在设计模式中，适配器模式（英语：adapter pattern）有时候也称包装样式或者包装(wrapper)。将一个类的接口"><meta itemprop="datePublished" content="2019-08-24T21:12:02+08:00" />
+<meta itemprop="dateModified" content="2019-08-24T21:12:02+08:00" />
 <meta itemprop="wordCount" content="440">
 <meta itemprop="keywords" content="pattern," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="结构型模式-适配器模式"/>
@@ -178,17 +178,17 @@
 <p>定义Client使用的与特定领域相关的接口。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">public interface Target {
-    void adapteeMethod();
-    void adapterMethod();
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">public interface Target {
+</span></span><span class="line"><span class="cl">    void adapteeMethod();
+</span></span><span class="line"><span class="cl">    void adapterMethod();
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li>Adaptee</li>
@@ -196,19 +196,19 @@
 <p>定义一个已经存在的接口，这个接口需要适配。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">public class Adaptee {
-    public void adapteeMethod(){
-        System.out.println(&#34;Adaptee method&#34;);
-    }
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">public class Adaptee {
+</span></span><span class="line"><span class="cl">    public void adapteeMethod(){
+</span></span><span class="line"><span class="cl">        System.out.println(&#34;Adaptee method&#34;);
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li>Adapter</li>
@@ -216,7 +216,7 @@
 <p>对Adaptee的接口与Target接口进行适配</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -236,25 +236,25 @@
 </span><span class="lnt">18
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">public class Adapter implements Target{
-
-    private Adaptee adaptee;
-
-    public Adapter(Adaptee adaptee){
-        this.adaptee=adaptee;
-    }
-
-    @Override
-    public void adapteeMethod() {
-        adaptee.adapteeMethod();
-    }
-
-    @Override
-    public void adapterMethod() {
-        System.out.println(&#34;Adapter method&#34;);
-    }
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">public class Adapter implements Target{
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    private Adaptee adaptee;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    public Adapter(Adaptee adaptee){
+</span></span><span class="line"><span class="cl">        this.adaptee=adaptee;
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    @Override
+</span></span><span class="line"><span class="cl">    public void adapteeMethod() {
+</span></span><span class="line"><span class="cl">        adaptee.adapteeMethod();
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    @Override
+</span></span><span class="line"><span class="cl">    public void adapterMethod() {
+</span></span><span class="line"><span class="cl">        System.out.println(&#34;Adapter method&#34;);
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li>Client</li>
@@ -262,7 +262,7 @@
 <p>与符合Target接口的对象协同。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -271,25 +271,25 @@
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">public class Test {
-    public static void main(String[] args) {
-        Target target = new Adapter(new Adaptee());
-        target.adapteeMethod();
-        target.adapterMethod();
-    }
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">public class Test {
+</span></span><span class="line"><span class="cl">    public static void main(String[] args) {
+</span></span><span class="line"><span class="cl">        Target target = new Adapter(new Adaptee());
+</span></span><span class="line"><span class="cl">        target.adapteeMethod();
+</span></span><span class="line"><span class="cl">        target.adapterMethod();
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>运行结果：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">Adaptee method
-Adapter method
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Adaptee method
+</span></span><span class="line"><span class="cl">Adapter method
+</span></span></code></pre></td></tr></table>
 </div>
 </div>
     </div>
@@ -378,7 +378,7 @@ Adapter method
   <span class="copyright-year">
     &copy; 
     2017 - 
-    2021<span class="heart"><i class="iconfont icon-heart"></i></span><span>lion</span>
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>lion</span>
   </span>
 </div>
 
@@ -394,7 +394,7 @@ Adapter method
 
 
 
-<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+<script type="text/javascript" src="/js/main.min.64437849d125a2d603b3e71d6de5225d641a32d17168a58106e0b61852079683.js"></script>
 
 
 

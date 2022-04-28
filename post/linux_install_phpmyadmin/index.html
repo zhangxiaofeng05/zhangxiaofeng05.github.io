@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.83.1 with theme even" />
+<meta name="generator" content="Hugo 0.97.3 with theme even" />
 
 
 <link rel="canonical" href="https://lionng.github.io/post/linux_install_phpmyadmin/" />
@@ -35,7 +35,7 @@
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-<link href="/sass/main.min.c7bc1becf36bcf6a9ebd25d2947e43a2eb745ddb0c9a32b43126fd7fa460c351.css" rel="stylesheet">
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
 <link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
 
 
@@ -43,13 +43,13 @@
 <meta property="og:description" content="mariadb 维基百科 MariaDB是MySQL关系数据库管理系统的一个复刻，由社区开发，有商业支持，旨在继续保持在GNU GPL下开源。MariaDB的" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://lionng.github.io/post/linux_install_phpmyadmin/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2019-12-29T11:14:39&#43;08:00" />
-<meta property="article:modified_time" content="2019-12-29T11:14:39&#43;08:00" />
+<meta property="article:published_time" content="2019-12-29T11:14:39+08:00" />
+<meta property="article:modified_time" content="2019-12-29T11:14:39+08:00" />
 
 <meta itemprop="name" content="linux安装mariadb并配置phpmyadmin">
-<meta itemprop="description" content="mariadb 维基百科 MariaDB是MySQL关系数据库管理系统的一个复刻，由社区开发，有商业支持，旨在继续保持在GNU GPL下开源。MariaDB的"><meta itemprop="datePublished" content="2019-12-29T11:14:39&#43;08:00" />
-<meta itemprop="dateModified" content="2019-12-29T11:14:39&#43;08:00" />
-<meta itemprop="wordCount" content="2073">
+<meta itemprop="description" content="mariadb 维基百科 MariaDB是MySQL关系数据库管理系统的一个复刻，由社区开发，有商业支持，旨在继续保持在GNU GPL下开源。MariaDB的"><meta itemprop="datePublished" content="2019-12-29T11:14:39+08:00" />
+<meta itemprop="dateModified" content="2019-12-29T11:14:39+08:00" />
+<meta itemprop="wordCount" content="2039">
 <meta itemprop="keywords" content="mysql,mariadb,phpmyadmin," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="linux安装mariadb并配置phpmyadmin"/>
 <meta name="twitter:description" content="mariadb 维基百科 MariaDB是MySQL关系数据库管理系统的一个复刻，由社区开发，有商业支持，旨在继续保持在GNU GPL下开源。MariaDB的"/>
@@ -140,7 +140,7 @@
         <div class="post-category">
             <a href="/categories/%E5%B7%A5%E5%85%B7/"> 工具 </a>
             </div>
-          <span class="more-meta"> 约 2073 字 </span>
+          <span class="more-meta"> 约 2039 字 </span>
           <span class="more-meta"> 预计阅读 5 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -181,7 +181,7 @@
 <p>以root身份输入mariadb，进入mariadb</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -192,25 +192,25 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback"># mariadb
-&gt; use mysql;                                                           # 进入mysql数据库
-mysql&gt; CREATE USER &#39;zhang&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;123456&#39;;         # zhang是用户名,123456是密码
-mysql&gt; GRANT ALL PRIVILEGES ON *.* TO &#39;zhang&#39;@&#39;localhost&#39; WITH GRANT OPTION;   # 授权
-mysql&gt; FLUSH PRIVILEGES;
-或者(推荐下边的，可以登录，上边只能本地登录)
-mysql&gt; CREATE USER &#39;zhang&#39;@&#39;%&#39; IDENTIFIED BY &#39;123456&#39;;
-mysql&gt; GRANT ALL PRIVILEGES ON *.* TO &#39;zhang&#39;@&#39;%&#39; WITH GRANT OPTION;
-mysql&gt; FLUSH PRIVILEGES;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># mariadb
+</span></span><span class="line"><span class="cl">&gt; use mysql;                                                           # 进入mysql数据库
+</span></span><span class="line"><span class="cl">mysql&gt; CREATE USER &#39;zhang&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;123456&#39;;         # zhang是用户名,123456是密码
+</span></span><span class="line"><span class="cl">mysql&gt; GRANT ALL PRIVILEGES ON *.* TO &#39;zhang&#39;@&#39;localhost&#39; WITH GRANT OPTION;   # 授权
+</span></span><span class="line"><span class="cl">mysql&gt; FLUSH PRIVILEGES;
+</span></span><span class="line"><span class="cl">或者(推荐下边的，可以登录，上边只能本地登录)
+</span></span><span class="line"><span class="cl">mysql&gt; CREATE USER &#39;zhang&#39;@&#39;%&#39; IDENTIFIED BY &#39;123456&#39;;
+</span></span><span class="line"><span class="cl">mysql&gt; GRANT ALL PRIVILEGES ON *.* TO &#39;zhang&#39;@&#39;%&#39; WITH GRANT OPTION;
+</span></span><span class="line"><span class="cl">mysql&gt; FLUSH PRIVILEGES;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>查看user信息</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">&gt; select user,host,password from user;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&gt; select user,host,password from user;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>至此，可以用新建的用户登录了。</p>
 <h2 id="phpmyadmin">phpmyadmin</h2>
@@ -220,18 +220,18 @@ mysql&gt; FLUSH PRIVILEGES;
 <p>安装</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">yum install phpMyAdmin
-yum install php php-fpm php-mysql php-mbstring -y
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">yum install phpMyAdmin
+</span></span><span class="line"><span class="cl">yum install php php-fpm php-mysql php-mbstring -y
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>/etc/nginx/conf.d/phpMyAdmin.conf</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -277,56 +277,56 @@ yum install php php-fpm php-mysql php-mbstring -y
 </span><span class="lnt">44
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">server {
-    listen       6060;
-    server_name  localhost;
-
-    #charset koi8-r;
-    #access_log  /var/log/nginx/host.access.log  main;
-
-    location / {
-        root   /usr/share/phpMyAdmin;
-        index  index.php index.html index.htm;
-    }
-
-    #error_page  404              /404.html;
-
-    # redirect server error pages to the static page /50x.html
-    #
-    error_page   500 502 503 504  /50x.html;
-    location = /50x.html {
-        root   /usr/share/nginx/html;
-    }
-
-    # proxy the PHP scripts to Apache listening on 127.0.0.1:80
-    #
-    #location ~ \.php$ {
-    #    proxy_pass   http://127.0.0.1;
-    #}
-
-    # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
-    #
-    location ~ \.php$ {
-        root           phpMyAdmin;
-        fastcgi_pass   127.0.0.1:9000;
-        fastcgi_index  index.php;
-        fastcgi_param  SCRIPT_FILENAME  /usr/share/phpMyAdmin$fastcgi_script_name;
-        include        fastcgi_params;
-    }
-
-    # deny access to .htaccess files, if Apache&#39;s document root
-    # concurs with nginx&#39;s one
-    #
-    #location ~ /\.ht {
-    #    deny  all;
-    #}
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">server {
+</span></span><span class="line"><span class="cl">    listen       6060;
+</span></span><span class="line"><span class="cl">    server_name  localhost;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    #charset koi8-r;
+</span></span><span class="line"><span class="cl">    #access_log  /var/log/nginx/host.access.log  main;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    location / {
+</span></span><span class="line"><span class="cl">        root   /usr/share/phpMyAdmin;
+</span></span><span class="line"><span class="cl">        index  index.php index.html index.htm;
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    #error_page  404              /404.html;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    # redirect server error pages to the static page /50x.html
+</span></span><span class="line"><span class="cl">    #
+</span></span><span class="line"><span class="cl">    error_page   500 502 503 504  /50x.html;
+</span></span><span class="line"><span class="cl">    location = /50x.html {
+</span></span><span class="line"><span class="cl">        root   /usr/share/nginx/html;
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    # proxy the PHP scripts to Apache listening on 127.0.0.1:80
+</span></span><span class="line"><span class="cl">    #
+</span></span><span class="line"><span class="cl">    #location ~ \.php$ {
+</span></span><span class="line"><span class="cl">    #    proxy_pass   http://127.0.0.1;
+</span></span><span class="line"><span class="cl">    #}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+</span></span><span class="line"><span class="cl">    #
+</span></span><span class="line"><span class="cl">    location ~ \.php$ {
+</span></span><span class="line"><span class="cl">        root           phpMyAdmin;
+</span></span><span class="line"><span class="cl">        fastcgi_pass   127.0.0.1:9000;
+</span></span><span class="line"><span class="cl">        fastcgi_index  index.php;
+</span></span><span class="line"><span class="cl">        fastcgi_param  SCRIPT_FILENAME  /usr/share/phpMyAdmin$fastcgi_script_name;
+</span></span><span class="line"><span class="cl">        include        fastcgi_params;
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    # deny access to .htaccess files, if Apache&#39;s document root
+</span></span><span class="line"><span class="cl">    # concurs with nginx&#39;s one
+</span></span><span class="line"><span class="cl">    #
+</span></span><span class="line"><span class="cl">    #location ~ /\.ht {
+</span></span><span class="line"><span class="cl">    #    deny  all;
+</span></span><span class="line"><span class="cl">    #}
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>/etc/phpMyAdmin/config.inc.php</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">  1
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
 </span><span class="lnt">  2
 </span><span class="lnt">  3
 </span><span class="lnt">  4
@@ -449,139 +449,139 @@ yum install php php-fpm php-mysql php-mbstring -y
 </span><span class="lnt">121
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">&lt;?php
-/**
- * phpMyAdmin configuration file, you can use it as base for the manual
- * configuration. For easier setup you can use &#34;setup/&#34;.
- *
- * All directives are explained in Documentation.html and on phpMyAdmin
- * wiki &lt;http://wiki.phpmyadmin.net&gt;.
- */
-
-/*
- * This is needed for cookie based authentication to encrypt password in
- * cookie
- */
-$cfg[&#39;blowfish_secret&#39;] = &#39;au1LXERWlgCnpaE7fS008WLYs4Xbgny0&#39;; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
-
-/**
- * Server(s) configuration
- */
-$i = 0;
-
-// The $cfg[&#39;Servers&#39;] array starts with $cfg[&#39;Servers&#39;][1].  Do not use
-// $cfg[&#39;Servers&#39;][0]. You can disable a server config entry by setting host
-// to &#39;&#39;. If you want more than one server, just copy following section
-// (including $i incrementation) serveral times. There is no need to define
-// full server array, just define values you need to change.
-$i++;
-/*
-$cfg[&#39;Servers&#39;][$i][&#39;host&#39;]          = &#39;localhost&#39;; // MySQL hostname or IP address
-$cfg[&#39;Servers&#39;][$i][&#39;port&#39;]          = &#39;&#39;;          // MySQL port - leave blank for default port
-$cfg[&#39;Servers&#39;][$i][&#39;socket&#39;]        = &#39;&#39;;          // Path to the socket - leave blank for default socket
-$cfg[&#39;Servers&#39;][$i][&#39;connect_type&#39;]  = &#39;tcp&#39;;       // How to connect to MySQL server (&#39;tcp&#39; or &#39;socket&#39;)
-$cfg[&#39;Servers&#39;][$i][&#39;extension&#39;]     = &#39;mysqli&#39;;    // The php MySQL extension to use (&#39;mysql&#39; or &#39;mysqli&#39;)
-$cfg[&#39;Servers&#39;][$i][&#39;compress&#39;]      = FALSE;       // Use compressed protocol for the MySQL connection
-                                                    // (requires PHP &gt;= 4.3.0)
-$cfg[&#39;Servers&#39;][$i][&#39;controluser&#39;]   = &#39;&#39;;          // MySQL control user settings
-                                                    // (this user must have read-only
-$cfg[&#39;Servers&#39;][$i][&#39;controlpass&#39;]   = &#39;&#39;;          // access to the &#34;mysql/user&#34;
-                                                    // and &#34;mysql/db&#34; tables).
-                                                    // The controluser is also
-                                                    // used for all relational
-                                                    // features (pmadb)
-$cfg[&#39;Servers&#39;][$i][&#39;auth_type&#39;]     = &#39;cookie&#39;;    // Authentication method (config, http or cookie based)?
-$cfg[&#39;Servers&#39;][$i][&#39;user&#39;]          = &#39;&#39;;          // MySQL user
-$cfg[&#39;Servers&#39;][$i][&#39;password&#39;]      = &#39;&#39;;          // MySQL password (only needed
-                                                    // with &#39;config&#39; auth_type)
-$cfg[&#39;Servers&#39;][$i][&#39;only_db&#39;]       = &#39;&#39;;          // If set to a db-name, only
-                                                    // this db is displayed in left frame
-                                                    // It may also be an array of db-names, where sorting order is relevant.
-$cfg[&#39;Servers&#39;][$i][&#39;hide_db&#39;]       = &#39;&#39;;          // Database name to be hidden from listings
-$cfg[&#39;Servers&#39;][$i][&#39;verbose&#39;]       = &#39;&#39;;          // Verbose name for this host - leave blank to show the hostname
-
-$cfg[&#39;Servers&#39;][$i][&#39;pmadb&#39;]         = &#39;&#39;;          // Database used for Relation, Bookmark and PDF Features
-                                                    // (see scripts/create_tables.sql)
-                                                    //   - leave blank for no support
-                                                    //     DEFAULT: &#39;phpmyadmin&#39;
-$cfg[&#39;Servers&#39;][$i][&#39;bookmarktable&#39;] = &#39;&#39;;          // Bookmark table
-                                                    //   - leave blank for no bookmark support
-                                                    //     DEFAULT: &#39;pma_bookmark&#39;
-$cfg[&#39;Servers&#39;][$i][&#39;relation&#39;]      = &#39;&#39;;          // table to describe the relation between links (see doc)
-                                                    //   - leave blank for no relation-links support
-                                                    //     DEFAULT: &#39;pma_relation&#39;
-$cfg[&#39;Servers&#39;][$i][&#39;table_info&#39;]    = &#39;&#39;;          // table to describe the display fields
-                                                    //   - leave blank for no display fields support
-                                                    //     DEFAULT: &#39;pma_table_info&#39;
-$cfg[&#39;Servers&#39;][$i][&#39;table_coords&#39;]  = &#39;&#39;;          // table to describe the tables position for the PDF schema
-                                                    //   - leave blank for no PDF schema support
-                                                    //     DEFAULT: &#39;pma_table_coords&#39;
-$cfg[&#39;Servers&#39;][$i][&#39;pdf_pages&#39;]     = &#39;&#39;;          // table to describe pages of relationpdf
-                                                    //   - leave blank if you don&#39;t want to use this
-                                                    //     DEFAULT: &#39;pma_pdf_pages&#39;
-$cfg[&#39;Servers&#39;][$i][&#39;column_info&#39;]   = &#39;&#39;;          // table to store column information
-                                                    //   - leave blank for no column comments/mime types
-                                                    //     DEFAULT: &#39;pma_column_info&#39;
-$cfg[&#39;Servers&#39;][$i][&#39;history&#39;]       = &#39;&#39;;          // table to store SQL history
-                                                    //   - leave blank for no SQL query history
-                                                    //     DEFAULT: &#39;pma_history&#39;
-$cfg[&#39;Servers&#39;][$i][&#39;verbose_check&#39;] = TRUE;        // set to FALSE if you know that your pma_* tables
-                                                    // are up to date. This prevents compatibility
-                                                    // checks and thereby increases performance.
-$cfg[&#39;Servers&#39;][$i][&#39;AllowRoot&#39;]     = TRUE;        // whether to allow root login
-$cfg[&#39;Servers&#39;][$i][&#39;AllowDeny&#39;][&#39;order&#39;]           // Host authentication order, leave blank to not use
-                                     = &#39;&#39;;
-$cfg[&#39;Servers&#39;][$i][&#39;AllowDeny&#39;][&#39;rules&#39;]           // Host authentication rules, leave blank for defaults
-                                     = array();
-$cfg[&#39;Servers&#39;][$i][&#39;AllowNoPassword&#39;]              // Allow logins without a password. Do not change the FALSE
-                                     = FALSE;       // default unless you&#39;re running a passwordless MySQL server
-$cfg[&#39;Servers&#39;][$i][&#39;designer_coords&#39;]              // Leave blank (default) for no Designer support, otherwise
-                                     = &#39;&#39;;          // set to suggested &#39;pma_designer_coords&#39; if really needed
-$cfg[&#39;Servers&#39;][$i][&#39;bs_garbage_threshold&#39;]         // Blobstreaming: Recommented default value from upstream
-                                     = 50;          //   DEFAULT: &#39;50&#39;
-$cfg[&#39;Servers&#39;][$i][&#39;bs_repository_threshold&#39;]      // Blobstreaming: Recommented default value from upstream
-                                     = &#39;32M&#39;;       //   DEFAULT: &#39;32M&#39;
-$cfg[&#39;Servers&#39;][$i][&#39;bs_temp_blob_timeout&#39;]         // Blobstreaming: Recommented default value from upstream
-                                     = 600;         //   DEFAULT: &#39;600&#39;
-$cfg[&#39;Servers&#39;][$i][&#39;bs_temp_log_threshold&#39;]        // Blobstreaming: Recommented default value from upstream
-                                     = &#39;32M&#39;;       //   DEFAULT: &#39;32M&#39;
-*/
-/*
- * End of servers configuration
- */
-
-/*
- * Directories for saving/loading files from server
- */
-$cfg[&#39;UploadDir&#39;] = &#39;/var/lib/phpMyAdmin/upload&#39;;
-$cfg[&#39;SaveDir&#39;]   = &#39;/var/lib/phpMyAdmin/save&#39;;
-
-/*
- * Disable the default warning that is displayed on the DB Details Structure
- * page if any of the required Tables for the relation features is not found
- */
-$cfg[&#39;PmaNoRelation_DisableWarning&#39;] = TRUE;
-
-/*
- * phpMyAdmin 4.4.x is no longer maintained by upstream, but security fixes
- * are still backported by downstream.
- */
-$cfg[&#39;VersionCheck&#39;] = FALSE;
-
-$cfg[&#39;AllowArbitraryServer&#39;] = true; /* 允许自定义服务器，默认为false */
-?&gt;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-zed" data-lang="zed"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="n">php</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * phpMyAdmin configuration file, you can use it as base for the manual
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * configuration. For easier setup you can use &#34;setup/&#34;.
+</span></span></span><span class="line"><span class="cl"><span class="cm"> *
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * All directives are explained in Documentation.html and on phpMyAdmin
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * wiki &lt;http://wiki.phpmyadmin.net&gt;.
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="cm">/*
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * This is needed for cookie based authentication to encrypt password in
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * cookie
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">$</span><span class="n">cfg</span><span class="p">[</span><span class="err">&#39;</span><span class="n">blowfish_secret</span><span class="err">&#39;</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">&#39;</span><span class="n">au1LXERWlgCnpaE7fS008WLYs4Xbgny0</span><span class="err">&#39;</span><span class="p">;</span><span class="w"> </span><span class="cm">/* YOU MUST FILL IN THIS FOR COOKIE AUTH! */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * Server(s) configuration
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">$</span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">0</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// The $cfg[&#39;Servers&#39;] array starts with $cfg[&#39;Servers&#39;][1].  Do not use
+</span></span></span><span class="line"><span class="cl"><span class="c1">// $cfg[&#39;Servers&#39;][0]. You can disable a server config entry by setting host
+</span></span></span><span class="line"><span class="cl"><span class="c1">// to &#39;&#39;. If you want more than one server, just copy following section
+</span></span></span><span class="line"><span class="cl"><span class="c1">// (including $i incrementation) serveral times. There is no need to define
+</span></span></span><span class="line"><span class="cl"><span class="c1">// full server array, just define values you need to change.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="err">$</span><span class="n">i</span><span class="o">++</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="cm">/*
+</span></span></span><span class="line"><span class="cl"><span class="cm">$cfg[&#39;Servers&#39;][$i][&#39;host&#39;]          = &#39;localhost&#39;; // MySQL hostname or IP address
+</span></span></span><span class="line"><span class="cl"><span class="cm">$cfg[&#39;Servers&#39;][$i][&#39;port&#39;]          = &#39;&#39;;          // MySQL port - leave blank for default port
+</span></span></span><span class="line"><span class="cl"><span class="cm">$cfg[&#39;Servers&#39;][$i][&#39;socket&#39;]        = &#39;&#39;;          // Path to the socket - leave blank for default socket
+</span></span></span><span class="line"><span class="cl"><span class="cm">$cfg[&#39;Servers&#39;][$i][&#39;connect_type&#39;]  = &#39;tcp&#39;;       // How to connect to MySQL server (&#39;tcp&#39; or &#39;socket&#39;)
+</span></span></span><span class="line"><span class="cl"><span class="cm">$cfg[&#39;Servers&#39;][$i][&#39;extension&#39;]     = &#39;mysqli&#39;;    // The php MySQL extension to use (&#39;mysql&#39; or &#39;mysqli&#39;)
+</span></span></span><span class="line"><span class="cl"><span class="cm">$cfg[&#39;Servers&#39;][$i][&#39;compress&#39;]      = FALSE;       // Use compressed protocol for the MySQL connection
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                                    // (requires PHP &gt;= 4.3.0)
+</span></span></span><span class="line"><span class="cl"><span class="cm">$cfg[&#39;Servers&#39;][$i][&#39;controluser&#39;]   = &#39;&#39;;          // MySQL control user settings
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                                    // (this user must have read-only
+</span></span></span><span class="line"><span class="cl"><span class="cm">$cfg[&#39;Servers&#39;][$i][&#39;controlpass&#39;]   = &#39;&#39;;          // access to the &#34;mysql/user&#34;
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                                    // and &#34;mysql/db&#34; tables).
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                                    // The controluser is also
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                                    // used for all relational
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                                    // features (pmadb)
+</span></span></span><span class="line"><span class="cl"><span class="cm">$cfg[&#39;Servers&#39;][$i][&#39;auth_type&#39;]     = &#39;cookie&#39;;    // Authentication method (config, http or cookie based)?
+</span></span></span><span class="line"><span class="cl"><span class="cm">$cfg[&#39;Servers&#39;][$i][&#39;user&#39;]          = &#39;&#39;;          // MySQL user
+</span></span></span><span class="line"><span class="cl"><span class="cm">$cfg[&#39;Servers&#39;][$i][&#39;password&#39;]      = &#39;&#39;;          // MySQL password (only needed
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                                    // with &#39;config&#39; auth_type)
+</span></span></span><span class="line"><span class="cl"><span class="cm">$cfg[&#39;Servers&#39;][$i][&#39;only_db&#39;]       = &#39;&#39;;          // If set to a db-name, only
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                                    // this db is displayed in left frame
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                                    // It may also be an array of db-names, where sorting order is relevant.
+</span></span></span><span class="line"><span class="cl"><span class="cm">$cfg[&#39;Servers&#39;][$i][&#39;hide_db&#39;]       = &#39;&#39;;          // Database name to be hidden from listings
+</span></span></span><span class="line"><span class="cl"><span class="cm">$cfg[&#39;Servers&#39;][$i][&#39;verbose&#39;]       = &#39;&#39;;          // Verbose name for this host - leave blank to show the hostname
+</span></span></span><span class="line"><span class="cl"><span class="cm">
+</span></span></span><span class="line"><span class="cl"><span class="cm">$cfg[&#39;Servers&#39;][$i][&#39;pmadb&#39;]         = &#39;&#39;;          // Database used for Relation, Bookmark and PDF Features
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                                    // (see scripts/create_tables.sql)
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                                    //   - leave blank for no support
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                                    //     DEFAULT: &#39;phpmyadmin&#39;
+</span></span></span><span class="line"><span class="cl"><span class="cm">$cfg[&#39;Servers&#39;][$i][&#39;bookmarktable&#39;] = &#39;&#39;;          // Bookmark table
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                                    //   - leave blank for no bookmark support
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                                    //     DEFAULT: &#39;pma_bookmark&#39;
+</span></span></span><span class="line"><span class="cl"><span class="cm">$cfg[&#39;Servers&#39;][$i][&#39;relation&#39;]      = &#39;&#39;;          // table to describe the relation between links (see doc)
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                                    //   - leave blank for no relation-links support
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                                    //     DEFAULT: &#39;pma_relation&#39;
+</span></span></span><span class="line"><span class="cl"><span class="cm">$cfg[&#39;Servers&#39;][$i][&#39;table_info&#39;]    = &#39;&#39;;          // table to describe the display fields
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                                    //   - leave blank for no display fields support
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                                    //     DEFAULT: &#39;pma_table_info&#39;
+</span></span></span><span class="line"><span class="cl"><span class="cm">$cfg[&#39;Servers&#39;][$i][&#39;table_coords&#39;]  = &#39;&#39;;          // table to describe the tables position for the PDF schema
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                                    //   - leave blank for no PDF schema support
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                                    //     DEFAULT: &#39;pma_table_coords&#39;
+</span></span></span><span class="line"><span class="cl"><span class="cm">$cfg[&#39;Servers&#39;][$i][&#39;pdf_pages&#39;]     = &#39;&#39;;          // table to describe pages of relationpdf
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                                    //   - leave blank if you don&#39;t want to use this
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                                    //     DEFAULT: &#39;pma_pdf_pages&#39;
+</span></span></span><span class="line"><span class="cl"><span class="cm">$cfg[&#39;Servers&#39;][$i][&#39;column_info&#39;]   = &#39;&#39;;          // table to store column information
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                                    //   - leave blank for no column comments/mime types
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                                    //     DEFAULT: &#39;pma_column_info&#39;
+</span></span></span><span class="line"><span class="cl"><span class="cm">$cfg[&#39;Servers&#39;][$i][&#39;history&#39;]       = &#39;&#39;;          // table to store SQL history
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                                    //   - leave blank for no SQL query history
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                                    //     DEFAULT: &#39;pma_history&#39;
+</span></span></span><span class="line"><span class="cl"><span class="cm">$cfg[&#39;Servers&#39;][$i][&#39;verbose_check&#39;] = TRUE;        // set to FALSE if you know that your pma_* tables
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                                    // are up to date. This prevents compatibility
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                                    // checks and thereby increases performance.
+</span></span></span><span class="line"><span class="cl"><span class="cm">$cfg[&#39;Servers&#39;][$i][&#39;AllowRoot&#39;]     = TRUE;        // whether to allow root login
+</span></span></span><span class="line"><span class="cl"><span class="cm">$cfg[&#39;Servers&#39;][$i][&#39;AllowDeny&#39;][&#39;order&#39;]           // Host authentication order, leave blank to not use
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                     = &#39;&#39;;
+</span></span></span><span class="line"><span class="cl"><span class="cm">$cfg[&#39;Servers&#39;][$i][&#39;AllowDeny&#39;][&#39;rules&#39;]           // Host authentication rules, leave blank for defaults
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                     = array();
+</span></span></span><span class="line"><span class="cl"><span class="cm">$cfg[&#39;Servers&#39;][$i][&#39;AllowNoPassword&#39;]              // Allow logins without a password. Do not change the FALSE
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                     = FALSE;       // default unless you&#39;re running a passwordless MySQL server
+</span></span></span><span class="line"><span class="cl"><span class="cm">$cfg[&#39;Servers&#39;][$i][&#39;designer_coords&#39;]              // Leave blank (default) for no Designer support, otherwise
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                     = &#39;&#39;;          // set to suggested &#39;pma_designer_coords&#39; if really needed
+</span></span></span><span class="line"><span class="cl"><span class="cm">$cfg[&#39;Servers&#39;][$i][&#39;bs_garbage_threshold&#39;]         // Blobstreaming: Recommented default value from upstream
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                     = 50;          //   DEFAULT: &#39;50&#39;
+</span></span></span><span class="line"><span class="cl"><span class="cm">$cfg[&#39;Servers&#39;][$i][&#39;bs_repository_threshold&#39;]      // Blobstreaming: Recommented default value from upstream
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                     = &#39;32M&#39;;       //   DEFAULT: &#39;32M&#39;
+</span></span></span><span class="line"><span class="cl"><span class="cm">$cfg[&#39;Servers&#39;][$i][&#39;bs_temp_blob_timeout&#39;]         // Blobstreaming: Recommented default value from upstream
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                     = 600;         //   DEFAULT: &#39;600&#39;
+</span></span></span><span class="line"><span class="cl"><span class="cm">$cfg[&#39;Servers&#39;][$i][&#39;bs_temp_log_threshold&#39;]        // Blobstreaming: Recommented default value from upstream
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                     = &#39;32M&#39;;       //   DEFAULT: &#39;32M&#39;
+</span></span></span><span class="line"><span class="cl"><span class="cm">*/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="cm">/*
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * End of servers configuration
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="cm">/*
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * Directories for saving/loading files from server
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">$</span><span class="n">cfg</span><span class="p">[</span><span class="err">&#39;</span><span class="n">UploadDir</span><span class="err">&#39;</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">&#39;</span><span class="o">/</span><span class="nn">var/lib/phpMyAdmin/</span><span class="n">upload</span><span class="err">&#39;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">$</span><span class="n">cfg</span><span class="p">[</span><span class="err">&#39;</span><span class="n">SaveDir</span><span class="err">&#39;</span><span class="p">]</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="err">&#39;</span><span class="o">/</span><span class="nn">var/lib/phpMyAdmin/</span><span class="n">save</span><span class="err">&#39;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="cm">/*
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * Disable the default warning that is displayed on the DB Details Structure
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * page if any of the required Tables for the relation features is not found
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">$</span><span class="n">cfg</span><span class="p">[</span><span class="err">&#39;</span><span class="n">PmaNoRelation_DisableWarning</span><span class="err">&#39;</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TRUE</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="cm">/*
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * phpMyAdmin 4.4.x is no longer maintained by upstream, but security fixes
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * are still backported by downstream.
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">$</span><span class="n">cfg</span><span class="p">[</span><span class="err">&#39;</span><span class="n">VersionCheck</span><span class="err">&#39;</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FALSE</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">$</span><span class="n">cfg</span><span class="p">[</span><span class="err">&#39;</span><span class="n">AllowArbitraryServer</span><span class="err">&#39;</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">true</span><span class="p">;</span><span class="w"> </span><span class="cm">/* 允许自定义服务器，默认为false */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">?&gt;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>命令</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">systemctl restart php-fpm.service
-systemctl restart nginx.service
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">systemctl restart php-fpm.service
+</span></span><span class="line"><span class="cl">systemctl restart nginx.service
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="deepin安装phpmyadminapache2">deepin安装phpmyadmin+apache2</h3>
 <p>$ sudo apt-get install apache2<br>
@@ -606,7 +606,7 @@ $ sudo vi /etc/phpmyadmin/config.inc.php<br>
 修改version_check.php</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -628,33 +628,31 @@ $ sudo vi /etc/phpmyadmin/config.inc.php<br>
 </span><span class="lnt">20
 </span><span class="lnt">21
 </span><span class="lnt">22
-</span><span class="lnt">23
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">echo json_encode(array());//添加这一行，下边的注释掉
-/*
-if (empty($versionDetails)) {
-    echo json_encode(array());
-} else {
-    $latestCompatible = $versionInformation-&gt;getLatestCompatibleVersion(
-        $versionDetails-&gt;releases
-    );
-    $version = &#39;&#39;;
-    $date = &#39;&#39;;
-    if ($latestCompatible != null) {
-        $version = $latestCompatible[&#39;version&#39;];
-        $date = $latestCompatible[&#39;date&#39;];
-    }
-    echo json_encode(
-        array(
-            &#39;version&#39; =&gt; (! empty($version) ? $version : &#39;&#39;),
-            &#39;date&#39; =&gt; (! empty($date) ? $date : &#39;&#39;),
-        )
-    );
-}
- */
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">echo json_encode(array());//添加这一行，下边的注释掉
+</span></span><span class="line"><span class="cl">/*
+</span></span><span class="line"><span class="cl">if (empty($versionDetails)) {
+</span></span><span class="line"><span class="cl">    echo json_encode(array());
+</span></span><span class="line"><span class="cl">} else {
+</span></span><span class="line"><span class="cl">    $latestCompatible = $versionInformation-&gt;getLatestCompatibleVersion(
+</span></span><span class="line"><span class="cl">        $versionDetails-&gt;releases
+</span></span><span class="line"><span class="cl">    );
+</span></span><span class="line"><span class="cl">    $version = &#39;&#39;;
+</span></span><span class="line"><span class="cl">    $date = &#39;&#39;;
+</span></span><span class="line"><span class="cl">    if ($latestCompatible != null) {
+</span></span><span class="line"><span class="cl">        $version = $latestCompatible[&#39;version&#39;];
+</span></span><span class="line"><span class="cl">        $date = $latestCompatible[&#39;date&#39;];
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">    echo json_encode(
+</span></span><span class="line"><span class="cl">        array(
+</span></span><span class="line"><span class="cl">            &#39;version&#39; =&gt; (! empty($version) ? $version : &#39;&#39;),
+</span></span><span class="line"><span class="cl">            &#39;date&#39; =&gt; (! empty($date) ? $date : &#39;&#39;),
+</span></span><span class="line"><span class="cl">        )
+</span></span><span class="line"><span class="cl">    );
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl"> */
+</span></span></code></pre></td></tr></table>
 </div>
 </div><hr>
 <p>参考地址<br>
@@ -748,7 +746,7 @@ if (empty($versionDetails)) {
   <span class="copyright-year">
     &copy; 
     2017 - 
-    2021<span class="heart"><i class="iconfont icon-heart"></i></span><span>lion</span>
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>lion</span>
   </span>
 </div>
 
@@ -764,7 +762,7 @@ if (empty($versionDetails)) {
 
 
 
-<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+<script type="text/javascript" src="/js/main.min.64437849d125a2d603b3e71d6de5225d641a32d17168a58106e0b61852079683.js"></script>
 
 
 

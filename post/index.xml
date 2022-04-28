@@ -373,7 +373,7 @@
       <pubDate>Sat, 17 Aug 2019 09:31:27 +0800</pubDate>
       
       <guid>https://lionng.github.io/post/mysql-sort/</guid>
-      <description>表和数据 1 2 3 4 5 6 7 8 9 10 CREATE TABLE `sqltest` ( `id` int(11) NOT NULL, `name` varchar(45) NOT NULL, `age` int(11) NOT NULL, `score` int(11) NOT NULL, PRIMARY KEY (`id`), UNIQUE KEY `id_UNIQUE` (`id`) ) ENGINE=InnoDB DEFAULT CHARSET=utf8; INSERT INTO `sqltest` VALUES (1,&amp;#39;土豆&amp;#39;,18,10</description>
+      <description>表和数据 1 2 3 4 5 6 7 8 9 10 CREATETABLE`sqltest`(`id`int(11)NOTNULL,`name`varchar(45</description>
     </item>
     
     <item>

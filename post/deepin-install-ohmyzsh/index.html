@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.83.1 with theme even" />
+<meta name="generator" content="Hugo 0.97.3 with theme even" />
 
 
 <link rel="canonical" href="https://lionng.github.io/post/deepin-install-ohmyzsh/" />
@@ -35,7 +35,7 @@
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-<link href="/sass/main.min.c7bc1becf36bcf6a9ebd25d2947e43a2eb745ddb0c9a32b43126fd7fa460c351.css" rel="stylesheet">
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
 <link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
 
 
@@ -43,12 +43,12 @@
 <meta property="og:description" content="安装Oh My Zsh github地址：https://github.com/ohmyzsh/ohmyzsh 1 2 3 4 5 6 7 8 9 sudo apt install zsh sh -c &#34;$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&#34; # 将 Zsh" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://lionng.github.io/post/deepin-install-ohmyzsh/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2020-01-10T00:27:17&#43;08:00" />
-<meta property="article:modified_time" content="2020-01-10T00:27:17&#43;08:00" />
+<meta property="article:published_time" content="2020-01-10T00:27:17+08:00" />
+<meta property="article:modified_time" content="2020-01-10T00:27:17+08:00" />
 
 <meta itemprop="name" content="deepin安装使用Oh My Zsh">
-<meta itemprop="description" content="安装Oh My Zsh github地址：https://github.com/ohmyzsh/ohmyzsh 1 2 3 4 5 6 7 8 9 sudo apt install zsh sh -c &#34;$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&#34; # 将 Zsh"><meta itemprop="datePublished" content="2020-01-10T00:27:17&#43;08:00" />
-<meta itemprop="dateModified" content="2020-01-10T00:27:17&#43;08:00" />
+<meta itemprop="description" content="安装Oh My Zsh github地址：https://github.com/ohmyzsh/ohmyzsh 1 2 3 4 5 6 7 8 9 sudo apt install zsh sh -c &#34;$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&#34; # 将 Zsh"><meta itemprop="datePublished" content="2020-01-10T00:27:17+08:00" />
+<meta itemprop="dateModified" content="2020-01-10T00:27:17+08:00" />
 <meta itemprop="wordCount" content="393">
 <meta itemprop="keywords" content="linux,terminal," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="deepin安装使用Oh My Zsh"/>
@@ -163,7 +163,7 @@
 <p>github地址：https://github.com/ohmyzsh/ohmyzsh</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -174,23 +174,23 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">sudo apt install zsh
-sh -c &#34;$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&#34;
-
-# 将 Zsh 设置为默认 Shell
-chsh -s /bin/zsh
-#  查看当前所用的 Shell
-echo $SHELL
-# 查看系统内已安装的 Shell
-cat /etc/shells
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo apt install zsh
+</span></span><span class="line"><span class="cl">sh -c &#34;$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&#34;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># 将 Zsh 设置为默认 Shell
+</span></span><span class="line"><span class="cl">chsh -s /bin/zsh
+</span></span><span class="line"><span class="cl">#  查看当前所用的 Shell
+</span></span><span class="line"><span class="cl">echo $SHELL
+</span></span><span class="line"><span class="cl"># 查看系统内已安装的 Shell
+</span></span><span class="line"><span class="cl">cat /etc/shells
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>ps:root执行此脚本只能root使用Oh My Zsh，其他用户使用需要在那个用户下执行此安装脚本
 <img src="/mypng/8.png" alt="8"></p>
 <h2 id="更换主题">更换主题</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -201,16 +201,16 @@ cat /etc/shells
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">vi ~/.zshrc
-
-#ZSH_THEME=&#34;robbyrussell&#34;
-ZSH_THEME=&#34;agnoster&#34;
-#ZSH_THEME=&#34;amuse&#34;
-#ZSH_THEME=&#34;fishy&#34;
-#ZSH_THEME=&#34;ys&#34;
-
-source ~/.zshrc
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">vi ~/.zshrc
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">#ZSH_THEME=&#34;robbyrussell&#34;
+</span></span><span class="line"><span class="cl">ZSH_THEME=&#34;agnoster&#34;
+</span></span><span class="line"><span class="cl">#ZSH_THEME=&#34;amuse&#34;
+</span></span><span class="line"><span class="cl">#ZSH_THEME=&#34;fishy&#34;
+</span></span><span class="line"><span class="cl">#ZSH_THEME=&#34;ys&#34;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">source ~/.zshrc
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="agnoster主题箭头无法正常显示">agnoster主题箭头无法正常显示</h2>
 <ol>
@@ -311,7 +311,7 @@ PowerlineSymbols,DejaVu Sans Mono</li>
   <span class="copyright-year">
     &copy; 
     2017 - 
-    2021<span class="heart"><i class="iconfont icon-heart"></i></span><span>lion</span>
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>lion</span>
   </span>
 </div>
 
@@ -327,7 +327,7 @@ PowerlineSymbols,DejaVu Sans Mono</li>
 
 
 
-<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+<script type="text/javascript" src="/js/main.min.64437849d125a2d603b3e71d6de5225d641a32d17168a58106e0b61852079683.js"></script>
 
 
 

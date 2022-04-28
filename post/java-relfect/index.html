@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.83.1 with theme even" />
+<meta name="generator" content="Hugo 0.97.3 with theme even" />
 
 
 <link rel="canonical" href="https://lionng.github.io/post/java-relfect/" />
@@ -35,7 +35,7 @@
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-<link href="/sass/main.min.c7bc1becf36bcf6a9ebd25d2947e43a2eb745ddb0c9a32b43126fd7fa460c351.css" rel="stylesheet">
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
 <link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
 
 
@@ -43,12 +43,12 @@
 <meta property="og:description" content="java.lang.Class 创建一个类，通过编译(javac.exe),生成对应的.class文件。之后使用java.exe加载(JVM的类加载器完成)， 此.clas" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://lionng.github.io/post/java-relfect/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2019-07-28T21:36:31&#43;08:00" />
-<meta property="article:modified_time" content="2019-07-28T21:36:31&#43;08:00" />
+<meta property="article:published_time" content="2019-07-28T21:36:31+08:00" />
+<meta property="article:modified_time" content="2019-07-28T21:36:31+08:00" />
 
 <meta itemprop="name" content="反射">
-<meta itemprop="description" content="java.lang.Class 创建一个类，通过编译(javac.exe),生成对应的.class文件。之后使用java.exe加载(JVM的类加载器完成)， 此.clas"><meta itemprop="datePublished" content="2019-07-28T21:36:31&#43;08:00" />
-<meta itemprop="dateModified" content="2019-07-28T21:36:31&#43;08:00" />
+<meta itemprop="description" content="java.lang.Class 创建一个类，通过编译(javac.exe),生成对应的.class文件。之后使用java.exe加载(JVM的类加载器完成)， 此.clas"><meta itemprop="datePublished" content="2019-07-28T21:36:31+08:00" />
+<meta itemprop="dateModified" content="2019-07-28T21:36:31+08:00" />
 <meta itemprop="wordCount" content="2606">
 <meta itemprop="keywords" content="Relect," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="反射"/>
@@ -170,7 +170,7 @@
 <h2 id="举例">举例</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -240,81 +240,81 @@
 </span><span class="lnt">68
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-
-public class RelfectTest{
-    public static void main(String[] args) throws IllegalAccessException, InstantiationException, NoSuchFieldException, NoSuchMethodException, InvocationTargetException {
-        Class&lt;Person&gt; personClass = Person.class;
-        //通过反射创建对象
-        Person person = personClass.newInstance();
-        System.out.println(person);
-        //通过反射赋值-------public属性
-        Field name = personClass.getField(&#34;name&#34;);
-        name.set(person,&#34;土豆&#34;);
-        System.out.println(person);
-        //通过反射赋值------private或者默认(不写)属性
-        Field age = personClass.getDeclaredField(&#34;age&#34;);
-        age.setAccessible(true);
-        age.set(person,18);
-        System.out.println(person);
-        //通过反射调用指定方法--没有参数
-        Method show = personClass.getMethod(&#34;show&#34;);
-        show.invoke(person);
-        //通过反射调用指定方法--有参数
-        Method say = personClass.getMethod(&#34;say&#34;, String.class);
-        say.invoke(person,&#34;welcome&#34;);
-    }
-}
-class Person{
-    public String name;
-    private int age;
-
-    public Person() {
-    }
-
-    public Person(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-
-    @Override
-    public String toString() {
-        return name+&#34;----&#34;+age;
-    }
-
-    public void show(){
-        System.out.println(&#34;Person类的show...&#34;);
-    }
-
-    public void say(String word){
-        System.out.println(name+&#34; &#34;+word);
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">import java.lang.reflect.Field;
+</span></span><span class="line"><span class="cl">import java.lang.reflect.InvocationTargetException;
+</span></span><span class="line"><span class="cl">import java.lang.reflect.Method;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">public class RelfectTest{
+</span></span><span class="line"><span class="cl">    public static void main(String[] args) throws IllegalAccessException, InstantiationException, NoSuchFieldException, NoSuchMethodException, InvocationTargetException {
+</span></span><span class="line"><span class="cl">        Class&lt;Person&gt; personClass = Person.class;
+</span></span><span class="line"><span class="cl">        //通过反射创建对象
+</span></span><span class="line"><span class="cl">        Person person = personClass.newInstance();
+</span></span><span class="line"><span class="cl">        System.out.println(person);
+</span></span><span class="line"><span class="cl">        //通过反射赋值-------public属性
+</span></span><span class="line"><span class="cl">        Field name = personClass.getField(&#34;name&#34;);
+</span></span><span class="line"><span class="cl">        name.set(person,&#34;土豆&#34;);
+</span></span><span class="line"><span class="cl">        System.out.println(person);
+</span></span><span class="line"><span class="cl">        //通过反射赋值------private或者默认(不写)属性
+</span></span><span class="line"><span class="cl">        Field age = personClass.getDeclaredField(&#34;age&#34;);
+</span></span><span class="line"><span class="cl">        age.setAccessible(true);
+</span></span><span class="line"><span class="cl">        age.set(person,18);
+</span></span><span class="line"><span class="cl">        System.out.println(person);
+</span></span><span class="line"><span class="cl">        //通过反射调用指定方法--没有参数
+</span></span><span class="line"><span class="cl">        Method show = personClass.getMethod(&#34;show&#34;);
+</span></span><span class="line"><span class="cl">        show.invoke(person);
+</span></span><span class="line"><span class="cl">        //通过反射调用指定方法--有参数
+</span></span><span class="line"><span class="cl">        Method say = personClass.getMethod(&#34;say&#34;, String.class);
+</span></span><span class="line"><span class="cl">        say.invoke(person,&#34;welcome&#34;);
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">class Person{
+</span></span><span class="line"><span class="cl">    public String name;
+</span></span><span class="line"><span class="cl">    private int age;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    public Person() {
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    public Person(String name, int age) {
+</span></span><span class="line"><span class="cl">        this.name = name;
+</span></span><span class="line"><span class="cl">        this.age = age;
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    @Override
+</span></span><span class="line"><span class="cl">    public String toString() {
+</span></span><span class="line"><span class="cl">        return name+&#34;----&#34;+age;
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    public void show(){
+</span></span><span class="line"><span class="cl">        System.out.println(&#34;Person类的show...&#34;);
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    public void say(String word){
+</span></span><span class="line"><span class="cl">        System.out.println(name+&#34; &#34;+word);
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    public String getName() {
+</span></span><span class="line"><span class="cl">        return name;
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    public void setName(String name) {
+</span></span><span class="line"><span class="cl">        this.name = name;
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    public int getAge() {
+</span></span><span class="line"><span class="cl">        return age;
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    public void setAge(int age) {
+</span></span><span class="line"><span class="cl">        this.age = age;
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="拓展">拓展</h2>
 <p>Person类</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -360,67 +360,67 @@ class Person{
 </span><span class="lnt">44
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-go" data-lang="go"><span class="kn">package</span> <span class="nx">com</span><span class="p">.</span><span class="nx">cherry</span><span class="p">;</span>
-
-<span class="nx">public</span> <span class="nx">class</span> <span class="nx">Person</span><span class="p">{</span>
-    <span class="nx">public</span> <span class="nx">String</span> <span class="nx">name</span><span class="p">;</span>
-    <span class="nx">private</span> <span class="kt">int</span> <span class="nx">age</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="nx">id</span><span class="p">;</span>
-
-    <span class="nx">public</span> <span class="nf">Person</span><span class="p">()</span> <span class="p">{</span>
-    <span class="p">}</span>
-
-    <span class="nx">public</span> <span class="nf">Person</span><span class="p">(</span><span class="nx">String</span> <span class="nx">name</span><span class="p">,</span> <span class="kt">int</span> <span class="nx">age</span><span class="p">)</span> <span class="p">{</span>
-        <span class="nx">this</span><span class="p">.</span><span class="nx">name</span> <span class="p">=</span> <span class="nx">name</span><span class="p">;</span>
-        <span class="nx">this</span><span class="p">.</span><span class="nx">age</span> <span class="p">=</span> <span class="nx">age</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="err">@</span><span class="nx">Override</span>
-    <span class="nx">public</span> <span class="nx">String</span> <span class="nf">toString</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="nx">name</span><span class="o">+</span><span class="s">&#34;----&#34;</span><span class="o">+</span><span class="nx">age</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">show</span><span class="p">()</span> <span class="nx">throws</span> <span class="nx">Exception</span><span class="p">{</span>
-        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;Person类的show...&#34;</span><span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">say</span><span class="p">(</span><span class="nx">String</span> <span class="nx">word</span><span class="p">){</span>
-        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">name</span><span class="o">+</span><span class="s">&#34; &#34;</span><span class="o">+</span><span class="nx">word</span><span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="nx">public</span> <span class="nx">String</span> <span class="nf">getName</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="nx">name</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">setName</span><span class="p">(</span><span class="nx">String</span> <span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
-        <span class="nx">this</span><span class="p">.</span><span class="nx">name</span> <span class="p">=</span> <span class="nx">name</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="nx">public</span> <span class="kt">int</span> <span class="nf">getAge</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="nx">age</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">setAge</span><span class="p">(</span><span class="kt">int</span> <span class="nx">age</span><span class="p">)</span> <span class="p">{</span>
-        <span class="nx">this</span><span class="p">.</span><span class="nx">age</span> <span class="p">=</span> <span class="nx">age</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nx">com</span><span class="p">.</span><span class="nx">cherry</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">public</span> <span class="nx">class</span> <span class="nx">Person</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">public</span> <span class="nx">String</span> <span class="nx">name</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">private</span> <span class="kt">int</span> <span class="nx">age</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="nx">id</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">public</span> <span class="nf">Person</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">public</span> <span class="nf">Person</span><span class="p">(</span><span class="nx">String</span> <span class="nx">name</span><span class="p">,</span> <span class="kt">int</span> <span class="nx">age</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">this</span><span class="p">.</span><span class="nx">name</span> <span class="p">=</span> <span class="nx">name</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">this</span><span class="p">.</span><span class="nx">age</span> <span class="p">=</span> <span class="nx">age</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="err">@</span><span class="nx">Override</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">public</span> <span class="nx">String</span> <span class="nf">toString</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nx">name</span><span class="o">+</span><span class="s">&#34;----&#34;</span><span class="o">+</span><span class="nx">age</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">show</span><span class="p">()</span> <span class="nx">throws</span> <span class="nx">Exception</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;Person类的show...&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">say</span><span class="p">(</span><span class="nx">String</span> <span class="nx">word</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">name</span><span class="o">+</span><span class="s">&#34; &#34;</span><span class="o">+</span><span class="nx">word</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">public</span> <span class="nx">String</span> <span class="nf">getName</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nx">name</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">setName</span><span class="p">(</span><span class="nx">String</span> <span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">this</span><span class="p">.</span><span class="nx">name</span> <span class="p">=</span> <span class="nx">name</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">public</span> <span class="kt">int</span> <span class="nf">getAge</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nx">age</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">setAge</span><span class="p">(</span><span class="kt">int</span> <span class="nx">age</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">this</span><span class="p">.</span><span class="nx">age</span> <span class="p">=</span> <span class="nx">age</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>jdbc.properties</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">username=root
-password=1234
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">username=root
+</span></span><span class="line"><span class="cl">password=1234
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>测试类</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">  1
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
 </span><span class="lnt">  2
 </span><span class="lnt">  3
 </span><span class="lnt">  4
@@ -587,178 +587,178 @@ password=1234
 </span><span class="lnt">165
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-go" data-lang="go"><span class="kn">package</span> <span class="nx">com</span><span class="p">.</span><span class="nx">cherry</span><span class="p">;</span>
-
-<span class="kn">import</span> <span class="nx">org</span><span class="p">.</span><span class="nx">junit</span><span class="p">.</span><span class="nx">Test</span><span class="p">;</span>
-
-<span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">io</span><span class="p">.</span><span class="nx">IOException</span><span class="p">;</span>
-<span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">io</span><span class="p">.</span><span class="nx">InputStream</span><span class="p">;</span>
-<span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">lang</span><span class="p">.</span><span class="nx">annotation</span><span class="p">.</span><span class="nx">Annotation</span><span class="p">;</span>
-<span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">lang</span><span class="p">.</span><span class="nx">reflect</span><span class="p">.</span><span class="o">*</span><span class="p">;</span>
-<span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">util</span><span class="p">.</span><span class="nx">Arrays</span><span class="p">;</span>
-<span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">util</span><span class="p">.</span><span class="nx">Properties</span><span class="p">;</span>
-
-<span class="nx">public</span> <span class="nx">class</span> <span class="nx">RelfectionTest</span> <span class="p">{</span>
-    <span class="cm">/**
-</span><span class="cm">     * 类加载器，加载配置文件
-</span><span class="cm">     */</span>
-    <span class="err">@</span><span class="nx">Test</span>
-    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">test1</span><span class="p">()</span> <span class="nx">throws</span> <span class="nx">IOException</span> <span class="p">{</span>
-        <span class="nx">ClassLoader</span> <span class="nx">classLoader</span> <span class="p">=</span> <span class="nx">this</span><span class="p">.</span><span class="nf">getClass</span><span class="p">().</span><span class="nf">getClassLoader</span><span class="p">();</span>
-        <span class="nx">InputStream</span> <span class="nx">inputStream</span> <span class="p">=</span> <span class="nx">classLoader</span><span class="p">.</span><span class="nf">getResourceAsStream</span><span class="p">(</span><span class="s">&#34;com\\cherry\\jdbc.properties&#34;</span><span class="p">);</span>
-        <span class="nx">Properties</span> <span class="nx">properties</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">Properties</span><span class="p">();</span>
-        <span class="nx">properties</span><span class="p">.</span><span class="nf">load</span><span class="p">(</span><span class="nx">inputStream</span><span class="p">);</span>
-        <span class="nx">String</span> <span class="nx">username</span> <span class="p">=</span> <span class="nx">properties</span><span class="p">.</span><span class="nf">getProperty</span><span class="p">(</span><span class="s">&#34;username&#34;</span><span class="p">);</span>
-        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;username=&#34;</span><span class="o">+</span><span class="nx">username</span><span class="p">);</span>
-        <span class="nx">String</span> <span class="nx">password</span> <span class="p">=</span> <span class="nx">properties</span><span class="p">.</span><span class="nf">getProperty</span><span class="p">(</span><span class="s">&#34;password&#34;</span><span class="p">);</span>
-        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;password=&#34;</span><span class="o">+</span><span class="nx">password</span><span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="cm">/**
-</span><span class="cm">     * 测试同一个实例
-</span><span class="cm">     */</span>
-    <span class="err">@</span><span class="nx">Test</span>
-    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">test2</span><span class="p">()</span> <span class="nx">throws</span> <span class="nx">ClassNotFoundException</span><span class="p">,</span> <span class="nx">IllegalAccessException</span><span class="p">,</span> <span class="nx">InstantiationException</span> <span class="p">{</span>
-        <span class="nx">Class</span><span class="p">&lt;</span><span class="nx">Person</span><span class="p">&gt;</span> <span class="nx">personClass1</span> <span class="p">=</span> <span class="nx">Person</span><span class="p">.</span><span class="nx">class</span><span class="p">;</span>
-
-        <span class="nx">String</span> <span class="nx">className</span><span class="p">=</span><span class="s">&#34;com.cherry.Person&#34;</span><span class="p">;</span>
-        <span class="nx">Class</span><span class="p">&lt;</span><span class="err">?</span><span class="p">&gt;</span> <span class="nx">personClass2</span> <span class="p">=</span> <span class="nx">Class</span><span class="p">.</span><span class="nf">forName</span><span class="p">(</span><span class="nx">className</span><span class="p">);</span>
-
-        <span class="nx">ClassLoader</span> <span class="nx">classLoader</span> <span class="p">=</span> <span class="nx">this</span><span class="p">.</span><span class="nf">getClass</span><span class="p">().</span><span class="nf">getClassLoader</span><span class="p">();</span>
-        <span class="nx">Class</span><span class="p">&lt;</span><span class="err">?</span><span class="p">&gt;</span> <span class="nx">personClass3</span> <span class="p">=</span> <span class="nx">classLoader</span><span class="p">.</span><span class="nf">loadClass</span><span class="p">(</span><span class="nx">className</span><span class="p">);</span>
-        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">personClass1</span><span class="o">==</span><span class="nx">personClass2</span><span class="p">);</span> <span class="c1">//true
-</span><span class="c1"></span>        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">personClass1</span><span class="o">==</span><span class="nx">personClass3</span><span class="p">);</span> <span class="c1">//true
-</span><span class="c1"></span>
-        <span class="nx">Person</span> <span class="nx">person1</span> <span class="p">=</span> <span class="nx">personClass1</span><span class="p">.</span><span class="nf">newInstance</span><span class="p">();</span>
-        <span class="nx">Person</span> <span class="nx">person2</span> <span class="p">=</span> <span class="p">(</span><span class="nx">Person</span><span class="p">)</span> <span class="nx">personClass2</span><span class="p">.</span><span class="nf">newInstance</span><span class="p">();</span>
-        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">person1</span><span class="o">==</span><span class="nx">person2</span><span class="p">);</span> <span class="c1">//false
-</span><span class="c1"></span>
-    <span class="p">}</span>
-
-    <span class="cm">/**
-</span><span class="cm">     * newInstance()是调用了无参构造
-</span><span class="cm">     * @throws ClassNotFoundException
-</span><span class="cm">     * @throws IllegalAccessException
-</span><span class="cm">     * @throws InstantiationException
-</span><span class="cm">     */</span>
-    <span class="err">@</span><span class="nx">Test</span>
-    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">test3</span><span class="p">()</span> <span class="nx">throws</span> <span class="nx">ClassNotFoundException</span><span class="p">,</span> <span class="nx">IllegalAccessException</span><span class="p">,</span> <span class="nx">InstantiationException</span> <span class="p">{</span>
-        <span class="nx">String</span> <span class="nx">className</span><span class="p">=</span><span class="s">&#34;com.cherry.Person&#34;</span><span class="p">;</span>
-        <span class="nx">Class</span><span class="p">&lt;</span><span class="err">?</span><span class="p">&gt;</span> <span class="nx">personClass</span> <span class="p">=</span> <span class="nx">Class</span><span class="p">.</span><span class="nf">forName</span><span class="p">(</span><span class="nx">className</span><span class="p">);</span>
-        <span class="nx">Object</span> <span class="nx">o</span> <span class="p">=</span> <span class="nx">personClass</span><span class="p">.</span><span class="nf">newInstance</span><span class="p">();</span>
-        <span class="nx">Person</span> <span class="nx">person</span> <span class="p">=</span> <span class="p">(</span><span class="nx">Person</span><span class="p">)</span> <span class="nx">o</span><span class="p">;</span>
-        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">person</span><span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="err">@</span><span class="nx">Test</span>
-    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">test4</span><span class="p">(){</span>
-        <span class="nx">Class</span><span class="p">&lt;</span><span class="nx">Person</span><span class="p">&gt;</span> <span class="nx">personClass</span> <span class="p">=</span> <span class="nx">Person</span><span class="p">.</span><span class="nx">class</span><span class="p">;</span>
-        <span class="c1">//getFields---获取此类和父类的public属性
-</span><span class="c1"></span>        <span class="nx">Field</span><span class="p">[]</span> <span class="nx">fields</span> <span class="p">=</span> <span class="nx">personClass</span><span class="p">.</span><span class="nf">getFields</span><span class="p">();</span>
-        <span class="k">for</span><span class="p">(</span><span class="nx">Field</span> <span class="nx">f</span><span class="p">:</span> <span class="nx">fields</span><span class="p">){</span>
-            <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">f</span><span class="p">.</span><span class="nf">getName</span><span class="p">());</span>
-        <span class="p">}</span>
-        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;----------&#34;</span><span class="p">);</span>
-        <span class="c1">//getDeclaredFields---获取此类声明的属性
-</span><span class="c1"></span>        <span class="nx">Field</span><span class="p">[]</span> <span class="nx">fields1</span> <span class="p">=</span> <span class="nx">personClass</span><span class="p">.</span><span class="nf">getDeclaredFields</span><span class="p">();</span>
-        <span class="k">for</span><span class="p">(</span><span class="nx">Field</span> <span class="nx">f</span><span class="p">:</span> <span class="nx">fields1</span><span class="p">){</span>
-            <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">f</span><span class="p">.</span><span class="nf">getName</span><span class="p">());</span>
-        <span class="p">}</span>
-        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;-----------&#34;</span><span class="p">);</span>
-        <span class="cm">/**
-</span><span class="cm">         * 权限修饰符  变量类型  变量名
-</span><span class="cm">         */</span>
-        <span class="nx">Field</span><span class="p">[]</span> <span class="nx">fields2</span> <span class="p">=</span> <span class="nx">personClass</span><span class="p">.</span><span class="nf">getDeclaredFields</span><span class="p">();</span>
-        <span class="k">for</span><span class="p">(</span><span class="nx">Field</span> <span class="nx">f</span><span class="p">:</span> <span class="nx">fields2</span><span class="p">){</span>
-            <span class="kt">int</span> <span class="nx">modifiers</span> <span class="p">=</span> <span class="nx">f</span><span class="p">.</span><span class="nf">getModifiers</span><span class="p">();</span>
-            <span class="nx">String</span> <span class="nx">s</span> <span class="p">=</span> <span class="nx">Modifier</span><span class="p">.</span><span class="nf">toString</span><span class="p">(</span><span class="nx">modifiers</span><span class="p">);</span>
-            <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">print</span><span class="p">(</span><span class="nx">s</span><span class="o">+</span><span class="s">&#34;--&#34;</span><span class="p">);</span>
-            <span class="nx">Class</span><span class="p">&lt;</span><span class="err">?</span><span class="p">&gt;</span> <span class="kd">type</span> <span class="p">=</span> <span class="nx">f</span><span class="p">.</span><span class="nf">getType</span><span class="p">();</span>
-            <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">print</span><span class="p">(</span><span class="kd">type</span><span class="p">.</span><span class="nf">getName</span><span class="p">()</span><span class="o">+</span><span class="s">&#34;--&#34;</span><span class="p">);</span>
-            <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">f</span><span class="p">.</span><span class="nf">getName</span><span class="p">());</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-
-    <span class="cm">/**
-</span><span class="cm">     * 注解 权限修饰符 返回值类型 方法名 形参列表 异常
-</span><span class="cm">     */</span>
-    <span class="err">@</span><span class="nx">Test</span>
-    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">test5</span><span class="p">(){</span>
-        <span class="nx">Class</span><span class="p">&lt;</span><span class="nx">Person</span><span class="p">&gt;</span> <span class="nx">personClass</span> <span class="p">=</span> <span class="nx">Person</span><span class="p">.</span><span class="nx">class</span><span class="p">;</span>
-        <span class="nx">Method</span><span class="p">[]</span> <span class="nx">declaredMethods</span> <span class="p">=</span> <span class="nx">personClass</span><span class="p">.</span><span class="nf">getDeclaredMethods</span><span class="p">();</span>
-        <span class="k">for</span><span class="p">(</span><span class="nx">Method</span> <span class="nx">m</span><span class="p">:</span><span class="nx">declaredMethods</span><span class="p">){</span>
-            <span class="c1">//1.注解
-</span><span class="c1"></span>            <span class="nx">Annotation</span><span class="p">[]</span> <span class="nx">annotations</span> <span class="p">=</span> <span class="nx">m</span><span class="p">.</span><span class="nf">getAnnotations</span><span class="p">();</span>
-            <span class="k">for</span><span class="p">(</span><span class="nx">Annotation</span> <span class="nx">a</span><span class="p">:</span><span class="nx">annotations</span><span class="p">){</span>
-                <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">a</span><span class="p">);</span>
-            <span class="p">}</span>
-            <span class="c1">//2.权限修饰符
-</span><span class="c1"></span>            <span class="kt">int</span> <span class="nx">modifiers</span> <span class="p">=</span> <span class="nx">m</span><span class="p">.</span><span class="nf">getModifiers</span><span class="p">();</span>
-            <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">print</span><span class="p">(</span><span class="nx">Modifier</span><span class="p">.</span><span class="nf">toString</span><span class="p">(</span><span class="nx">modifiers</span><span class="p">)</span><span class="o">+</span><span class="s">&#34;--&#34;</span><span class="p">);</span>
-            <span class="c1">//3.返回值类型
-</span><span class="c1"></span>            <span class="nx">Class</span><span class="p">&lt;</span><span class="err">?</span><span class="p">&gt;</span> <span class="nx">returnType</span> <span class="p">=</span> <span class="nx">m</span><span class="p">.</span><span class="nf">getReturnType</span><span class="p">();</span>
-            <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">print</span><span class="p">(</span><span class="nx">returnType</span><span class="p">.</span><span class="nf">getName</span><span class="p">()</span><span class="o">+</span><span class="s">&#34;--&#34;</span><span class="p">);</span>
-            <span class="c1">//4.方法名
-</span><span class="c1"></span>            <span class="nx">String</span> <span class="nx">name</span> <span class="p">=</span> <span class="nx">m</span><span class="p">.</span><span class="nf">getName</span><span class="p">();</span>
-            <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">print</span><span class="p">(</span><span class="nx">name</span><span class="o">+</span><span class="s">&#34;--&#34;</span><span class="p">);</span>
-            <span class="c1">//5.形参列表
-</span><span class="c1"></span>            <span class="nx">Parameter</span><span class="p">[]</span> <span class="nx">parameters</span> <span class="p">=</span> <span class="nx">m</span><span class="p">.</span><span class="nf">getParameters</span><span class="p">();</span>
-            <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">print</span><span class="p">(</span><span class="nx">Arrays</span><span class="p">.</span><span class="nf">asList</span><span class="p">(</span><span class="nx">parameters</span><span class="p">)</span><span class="o">+</span><span class="s">&#34;--&#34;</span><span class="p">);</span>
-            <span class="c1">//6.异常
-</span><span class="c1"></span>            <span class="nx">Class</span><span class="p">&lt;</span><span class="err">?</span><span class="p">&gt;[]</span> <span class="nx">exceptionTypes</span> <span class="p">=</span> <span class="nx">m</span><span class="p">.</span><span class="nf">getExceptionTypes</span><span class="p">();</span>
-            <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">print</span><span class="p">(</span><span class="nx">Arrays</span><span class="p">.</span><span class="nf">asList</span><span class="p">(</span><span class="nx">exceptionTypes</span><span class="p">));</span>
-            <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;-----------&#34;</span><span class="p">);</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-
-    <span class="err">@</span><span class="nx">Test</span>
-    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">test6</span><span class="p">(){</span>
-        <span class="nx">Class</span><span class="p">&lt;</span><span class="nx">Person</span><span class="p">&gt;</span> <span class="nx">personClass</span> <span class="p">=</span> <span class="nx">Person</span><span class="p">.</span><span class="nx">class</span><span class="p">;</span>
-        <span class="c1">//获取运行时类的构造器
-</span><span class="c1"></span>        <span class="nx">Constructor</span><span class="p">&lt;</span><span class="err">?</span><span class="p">&gt;[]</span> <span class="nx">declaredConstructors</span> <span class="p">=</span> <span class="nx">personClass</span><span class="p">.</span><span class="nf">getDeclaredConstructors</span><span class="p">();</span>
-        <span class="k">for</span><span class="p">(</span><span class="nx">Constructor</span> <span class="nx">c</span><span class="p">:</span><span class="nx">declaredConstructors</span><span class="p">){</span>
-            <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">c</span><span class="p">);</span>
-        <span class="p">}</span>
-        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;------------&#34;</span><span class="p">);</span>
-        <span class="c1">//获取运行是类的父类
-</span><span class="c1"></span>        <span class="nx">Class</span><span class="p">&lt;</span><span class="err">?</span> <span class="nx">super</span> <span class="nx">Person</span><span class="p">&gt;</span> <span class="nx">superclass</span> <span class="p">=</span> <span class="nx">personClass</span><span class="p">.</span><span class="nf">getSuperclass</span><span class="p">();</span>
-        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">superclass</span><span class="p">);</span>
-        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;--------------&#34;</span><span class="p">);</span>
-        <span class="c1">//获取带泛型的父类
-</span><span class="c1"></span>        <span class="nx">Type</span> <span class="nx">genericSuperclass</span> <span class="p">=</span> <span class="nx">personClass</span><span class="p">.</span><span class="nf">getGenericSuperclass</span><span class="p">();</span>
-        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">genericSuperclass</span><span class="p">);</span>
-        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;------------&#34;</span><span class="p">);</span>
-        <span class="c1">//获取父类的泛型
-</span><span class="c1">//        ParameterizedType parm = (ParameterizedType) genericSuperclass;
-</span><span class="c1">//        Type[] ars = parm.getActualTypeArguments();
-</span><span class="c1">//        System.out.println(Arrays.asList(ars));
-</span><span class="c1"></span>    <span class="p">}</span>
-
-    <span class="err">@</span><span class="nx">Test</span>
-    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">test7</span><span class="p">(){</span>
-        <span class="c1">//获取所在的包
-</span><span class="c1"></span>        <span class="nx">Class</span><span class="p">&lt;</span><span class="nx">Person</span><span class="p">&gt;</span> <span class="nx">personClass</span> <span class="p">=</span> <span class="nx">Person</span><span class="p">.</span><span class="nx">class</span><span class="p">;</span>
-        <span class="nx">Package</span> <span class="nx">aPackage</span> <span class="p">=</span> <span class="nx">personClass</span><span class="p">.</span><span class="nf">getPackage</span><span class="p">();</span>
-        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">aPackage</span><span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="err">@</span><span class="nx">Test</span>
-    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">test8</span><span class="p">()</span> <span class="nx">throws</span> <span class="nx">ClassNotFoundException</span><span class="p">,</span> <span class="nx">NoSuchMethodException</span><span class="p">,</span> <span class="nx">IllegalAccessException</span><span class="p">,</span> <span class="nx">InstantiationException</span><span class="p">,</span> <span class="nx">InvocationTargetException</span> <span class="p">{</span>
-        <span class="nx">String</span> <span class="nx">className</span><span class="p">=</span><span class="s">&#34;com.cherry.Person&#34;</span><span class="p">;</span>
-        <span class="nx">Class</span><span class="p">&lt;</span><span class="err">?</span><span class="p">&gt;</span> <span class="nx">personClass</span> <span class="p">=</span> <span class="nx">Class</span><span class="p">.</span><span class="nf">forName</span><span class="p">(</span><span class="nx">className</span><span class="p">);</span>
-        <span class="nx">Constructor</span><span class="p">&lt;</span><span class="err">?</span><span class="p">&gt;</span> <span class="nx">constructor</span> <span class="p">=</span> <span class="nx">personClass</span><span class="p">.</span><span class="nf">getDeclaredConstructor</span><span class="p">(</span><span class="nx">String</span><span class="p">.</span><span class="nx">class</span><span class="p">,</span> <span class="kt">int</span><span class="p">.</span><span class="nx">class</span><span class="p">);</span>
-        <span class="nx">Object</span> <span class="nx">o</span> <span class="p">=</span> <span class="nx">constructor</span><span class="p">.</span><span class="nf">newInstance</span><span class="p">(</span><span class="s">&#34;地瓜&#34;</span><span class="p">,</span> <span class="mi">18</span><span class="p">);</span>
-        <span class="nx">Person</span> <span class="nx">person</span> <span class="p">=</span> <span class="p">(</span><span class="nx">Person</span><span class="p">)</span> <span class="nx">o</span><span class="p">;</span>
-        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">person</span><span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nx">com</span><span class="p">.</span><span class="nx">cherry</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nx">org</span><span class="p">.</span><span class="nx">junit</span><span class="p">.</span><span class="nx">Test</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">io</span><span class="p">.</span><span class="nx">IOException</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">io</span><span class="p">.</span><span class="nx">InputStream</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">lang</span><span class="p">.</span><span class="nx">annotation</span><span class="p">.</span><span class="nx">Annotation</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">lang</span><span class="p">.</span><span class="nx">reflect</span><span class="p">.</span><span class="o">*</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">util</span><span class="p">.</span><span class="nx">Arrays</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">util</span><span class="p">.</span><span class="nx">Properties</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">public</span> <span class="nx">class</span> <span class="nx">RelfectionTest</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * 类加载器，加载配置文件
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="err">@</span><span class="nx">Test</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">test1</span><span class="p">()</span> <span class="nx">throws</span> <span class="nx">IOException</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">ClassLoader</span> <span class="nx">classLoader</span> <span class="p">=</span> <span class="nx">this</span><span class="p">.</span><span class="nf">getClass</span><span class="p">().</span><span class="nf">getClassLoader</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">InputStream</span> <span class="nx">inputStream</span> <span class="p">=</span> <span class="nx">classLoader</span><span class="p">.</span><span class="nf">getResourceAsStream</span><span class="p">(</span><span class="s">&#34;com\\cherry\\jdbc.properties&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">Properties</span> <span class="nx">properties</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">Properties</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">properties</span><span class="p">.</span><span class="nf">load</span><span class="p">(</span><span class="nx">inputStream</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">String</span> <span class="nx">username</span> <span class="p">=</span> <span class="nx">properties</span><span class="p">.</span><span class="nf">getProperty</span><span class="p">(</span><span class="s">&#34;username&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;username=&#34;</span><span class="o">+</span><span class="nx">username</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">String</span> <span class="nx">password</span> <span class="p">=</span> <span class="nx">properties</span><span class="p">.</span><span class="nf">getProperty</span><span class="p">(</span><span class="s">&#34;password&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;password=&#34;</span><span class="o">+</span><span class="nx">password</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * 测试同一个实例
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="err">@</span><span class="nx">Test</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">test2</span><span class="p">()</span> <span class="nx">throws</span> <span class="nx">ClassNotFoundException</span><span class="p">,</span> <span class="nx">IllegalAccessException</span><span class="p">,</span> <span class="nx">InstantiationException</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">Class</span><span class="p">&lt;</span><span class="nx">Person</span><span class="p">&gt;</span> <span class="nx">personClass1</span> <span class="p">=</span> <span class="nx">Person</span><span class="p">.</span><span class="nx">class</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="nx">String</span> <span class="nx">className</span><span class="p">=</span><span class="s">&#34;com.cherry.Person&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">Class</span><span class="p">&lt;</span><span class="err">?</span><span class="p">&gt;</span> <span class="nx">personClass2</span> <span class="p">=</span> <span class="nx">Class</span><span class="p">.</span><span class="nf">forName</span><span class="p">(</span><span class="nx">className</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="nx">ClassLoader</span> <span class="nx">classLoader</span> <span class="p">=</span> <span class="nx">this</span><span class="p">.</span><span class="nf">getClass</span><span class="p">().</span><span class="nf">getClassLoader</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">Class</span><span class="p">&lt;</span><span class="err">?</span><span class="p">&gt;</span> <span class="nx">personClass3</span> <span class="p">=</span> <span class="nx">classLoader</span><span class="p">.</span><span class="nf">loadClass</span><span class="p">(</span><span class="nx">className</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">personClass1</span><span class="o">==</span><span class="nx">personClass2</span><span class="p">);</span> <span class="c1">//true
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">personClass1</span><span class="o">==</span><span class="nx">personClass3</span><span class="p">);</span> <span class="c1">//true
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">        <span class="nx">Person</span> <span class="nx">person1</span> <span class="p">=</span> <span class="nx">personClass1</span><span class="p">.</span><span class="nf">newInstance</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">Person</span> <span class="nx">person2</span> <span class="p">=</span> <span class="p">(</span><span class="nx">Person</span><span class="p">)</span> <span class="nx">personClass2</span><span class="p">.</span><span class="nf">newInstance</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">person1</span><span class="o">==</span><span class="nx">person2</span><span class="p">);</span> <span class="c1">//false
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * newInstance()是调用了无参构造
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @throws ClassNotFoundException
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @throws IllegalAccessException
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * @throws InstantiationException
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="err">@</span><span class="nx">Test</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">test3</span><span class="p">()</span> <span class="nx">throws</span> <span class="nx">ClassNotFoundException</span><span class="p">,</span> <span class="nx">IllegalAccessException</span><span class="p">,</span> <span class="nx">InstantiationException</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">String</span> <span class="nx">className</span><span class="p">=</span><span class="s">&#34;com.cherry.Person&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">Class</span><span class="p">&lt;</span><span class="err">?</span><span class="p">&gt;</span> <span class="nx">personClass</span> <span class="p">=</span> <span class="nx">Class</span><span class="p">.</span><span class="nf">forName</span><span class="p">(</span><span class="nx">className</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">Object</span> <span class="nx">o</span> <span class="p">=</span> <span class="nx">personClass</span><span class="p">.</span><span class="nf">newInstance</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">Person</span> <span class="nx">person</span> <span class="p">=</span> <span class="p">(</span><span class="nx">Person</span><span class="p">)</span> <span class="nx">o</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">person</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="err">@</span><span class="nx">Test</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">test4</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">Class</span><span class="p">&lt;</span><span class="nx">Person</span><span class="p">&gt;</span> <span class="nx">personClass</span> <span class="p">=</span> <span class="nx">Person</span><span class="p">.</span><span class="nx">class</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//getFields---获取此类和父类的public属性
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">Field</span><span class="p">[]</span> <span class="nx">fields</span> <span class="p">=</span> <span class="nx">personClass</span><span class="p">.</span><span class="nf">getFields</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span><span class="p">(</span><span class="nx">Field</span> <span class="nx">f</span><span class="p">:</span> <span class="nx">fields</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">f</span><span class="p">.</span><span class="nf">getName</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;----------&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//getDeclaredFields---获取此类声明的属性
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">Field</span><span class="p">[]</span> <span class="nx">fields1</span> <span class="p">=</span> <span class="nx">personClass</span><span class="p">.</span><span class="nf">getDeclaredFields</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span><span class="p">(</span><span class="nx">Field</span> <span class="nx">f</span><span class="p">:</span> <span class="nx">fields1</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">f</span><span class="p">.</span><span class="nf">getName</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;-----------&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">         * 权限修饰符  变量类型  变量名
+</span></span></span><span class="line"><span class="cl"><span class="cm">         */</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">Field</span><span class="p">[]</span> <span class="nx">fields2</span> <span class="p">=</span> <span class="nx">personClass</span><span class="p">.</span><span class="nf">getDeclaredFields</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span><span class="p">(</span><span class="nx">Field</span> <span class="nx">f</span><span class="p">:</span> <span class="nx">fields2</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span> <span class="nx">modifiers</span> <span class="p">=</span> <span class="nx">f</span><span class="p">.</span><span class="nf">getModifiers</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">String</span> <span class="nx">s</span> <span class="p">=</span> <span class="nx">Modifier</span><span class="p">.</span><span class="nf">toString</span><span class="p">(</span><span class="nx">modifiers</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">print</span><span class="p">(</span><span class="nx">s</span><span class="o">+</span><span class="s">&#34;--&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">Class</span><span class="p">&lt;</span><span class="err">?</span><span class="p">&gt;</span> <span class="kd">type</span> <span class="p">=</span> <span class="nx">f</span><span class="p">.</span><span class="nf">getType</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">print</span><span class="p">(</span><span class="kd">type</span><span class="p">.</span><span class="nf">getName</span><span class="p">()</span><span class="o">+</span><span class="s">&#34;--&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">f</span><span class="p">.</span><span class="nf">getName</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * 注解 权限修饰符 返回值类型 方法名 形参列表 异常
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="err">@</span><span class="nx">Test</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">test5</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">Class</span><span class="p">&lt;</span><span class="nx">Person</span><span class="p">&gt;</span> <span class="nx">personClass</span> <span class="p">=</span> <span class="nx">Person</span><span class="p">.</span><span class="nx">class</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">Method</span><span class="p">[]</span> <span class="nx">declaredMethods</span> <span class="p">=</span> <span class="nx">personClass</span><span class="p">.</span><span class="nf">getDeclaredMethods</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span><span class="p">(</span><span class="nx">Method</span> <span class="nx">m</span><span class="p">:</span><span class="nx">declaredMethods</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//1.注解
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="nx">Annotation</span><span class="p">[]</span> <span class="nx">annotations</span> <span class="p">=</span> <span class="nx">m</span><span class="p">.</span><span class="nf">getAnnotations</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span><span class="p">(</span><span class="nx">Annotation</span> <span class="nx">a</span><span class="p">:</span><span class="nx">annotations</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">a</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//2.权限修饰符
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="kt">int</span> <span class="nx">modifiers</span> <span class="p">=</span> <span class="nx">m</span><span class="p">.</span><span class="nf">getModifiers</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">print</span><span class="p">(</span><span class="nx">Modifier</span><span class="p">.</span><span class="nf">toString</span><span class="p">(</span><span class="nx">modifiers</span><span class="p">)</span><span class="o">+</span><span class="s">&#34;--&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//3.返回值类型
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="nx">Class</span><span class="p">&lt;</span><span class="err">?</span><span class="p">&gt;</span> <span class="nx">returnType</span> <span class="p">=</span> <span class="nx">m</span><span class="p">.</span><span class="nf">getReturnType</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">print</span><span class="p">(</span><span class="nx">returnType</span><span class="p">.</span><span class="nf">getName</span><span class="p">()</span><span class="o">+</span><span class="s">&#34;--&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//4.方法名
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="nx">String</span> <span class="nx">name</span> <span class="p">=</span> <span class="nx">m</span><span class="p">.</span><span class="nf">getName</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">print</span><span class="p">(</span><span class="nx">name</span><span class="o">+</span><span class="s">&#34;--&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//5.形参列表
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="nx">Parameter</span><span class="p">[]</span> <span class="nx">parameters</span> <span class="p">=</span> <span class="nx">m</span><span class="p">.</span><span class="nf">getParameters</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">print</span><span class="p">(</span><span class="nx">Arrays</span><span class="p">.</span><span class="nf">asList</span><span class="p">(</span><span class="nx">parameters</span><span class="p">)</span><span class="o">+</span><span class="s">&#34;--&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//6.异常
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="nx">Class</span><span class="p">&lt;</span><span class="err">?</span><span class="p">&gt;[]</span> <span class="nx">exceptionTypes</span> <span class="p">=</span> <span class="nx">m</span><span class="p">.</span><span class="nf">getExceptionTypes</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">print</span><span class="p">(</span><span class="nx">Arrays</span><span class="p">.</span><span class="nf">asList</span><span class="p">(</span><span class="nx">exceptionTypes</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;-----------&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="err">@</span><span class="nx">Test</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">test6</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">Class</span><span class="p">&lt;</span><span class="nx">Person</span><span class="p">&gt;</span> <span class="nx">personClass</span> <span class="p">=</span> <span class="nx">Person</span><span class="p">.</span><span class="nx">class</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//获取运行时类的构造器
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">Constructor</span><span class="p">&lt;</span><span class="err">?</span><span class="p">&gt;[]</span> <span class="nx">declaredConstructors</span> <span class="p">=</span> <span class="nx">personClass</span><span class="p">.</span><span class="nf">getDeclaredConstructors</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span><span class="p">(</span><span class="nx">Constructor</span> <span class="nx">c</span><span class="p">:</span><span class="nx">declaredConstructors</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">c</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;------------&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//获取运行是类的父类
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">Class</span><span class="p">&lt;</span><span class="err">?</span> <span class="nx">super</span> <span class="nx">Person</span><span class="p">&gt;</span> <span class="nx">superclass</span> <span class="p">=</span> <span class="nx">personClass</span><span class="p">.</span><span class="nf">getSuperclass</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">superclass</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;--------------&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//获取带泛型的父类
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">Type</span> <span class="nx">genericSuperclass</span> <span class="p">=</span> <span class="nx">personClass</span><span class="p">.</span><span class="nf">getGenericSuperclass</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">genericSuperclass</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;------------&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//获取父类的泛型
+</span></span></span><span class="line"><span class="cl"><span class="c1">//        ParameterizedType parm = (ParameterizedType) genericSuperclass;
+</span></span></span><span class="line"><span class="cl"><span class="c1">//        Type[] ars = parm.getActualTypeArguments();
+</span></span></span><span class="line"><span class="cl"><span class="c1">//        System.out.println(Arrays.asList(ars));
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="err">@</span><span class="nx">Test</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">test7</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//获取所在的包
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">Class</span><span class="p">&lt;</span><span class="nx">Person</span><span class="p">&gt;</span> <span class="nx">personClass</span> <span class="p">=</span> <span class="nx">Person</span><span class="p">.</span><span class="nx">class</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">Package</span> <span class="nx">aPackage</span> <span class="p">=</span> <span class="nx">personClass</span><span class="p">.</span><span class="nf">getPackage</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">aPackage</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="err">@</span><span class="nx">Test</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">test8</span><span class="p">()</span> <span class="nx">throws</span> <span class="nx">ClassNotFoundException</span><span class="p">,</span> <span class="nx">NoSuchMethodException</span><span class="p">,</span> <span class="nx">IllegalAccessException</span><span class="p">,</span> <span class="nx">InstantiationException</span><span class="p">,</span> <span class="nx">InvocationTargetException</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">String</span> <span class="nx">className</span><span class="p">=</span><span class="s">&#34;com.cherry.Person&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">Class</span><span class="p">&lt;</span><span class="err">?</span><span class="p">&gt;</span> <span class="nx">personClass</span> <span class="p">=</span> <span class="nx">Class</span><span class="p">.</span><span class="nf">forName</span><span class="p">(</span><span class="nx">className</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">Constructor</span><span class="p">&lt;</span><span class="err">?</span><span class="p">&gt;</span> <span class="nx">constructor</span> <span class="p">=</span> <span class="nx">personClass</span><span class="p">.</span><span class="nf">getDeclaredConstructor</span><span class="p">(</span><span class="nx">String</span><span class="p">.</span><span class="nx">class</span><span class="p">,</span> <span class="kt">int</span><span class="p">.</span><span class="nx">class</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">Object</span> <span class="nx">o</span> <span class="p">=</span> <span class="nx">constructor</span><span class="p">.</span><span class="nf">newInstance</span><span class="p">(</span><span class="s">&#34;地瓜&#34;</span><span class="p">,</span> <span class="mi">18</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">Person</span> <span class="nx">person</span> <span class="p">=</span> <span class="p">(</span><span class="nx">Person</span><span class="p">)</span> <span class="nx">o</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="nx">person</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="代理">代理</h1>
 <h2 id="静态代理">静态代理</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -798,50 +798,50 @@ password=1234
 </span><span class="lnt">38
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-go" data-lang="go"><span class="kn">package</span> <span class="nx">com</span><span class="p">.</span><span class="nx">proxy</span><span class="p">;</span>
-<span class="c1">//静态代理模式
-</span><span class="c1">//接口
-</span><span class="c1"></span><span class="kd">interface</span> <span class="nx">ClothFactory</span><span class="p">{</span>
-    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">productCloth</span><span class="p">();</span>
-<span class="p">}</span>
-<span class="c1">//被代理类
-</span><span class="c1"></span><span class="nx">class</span> <span class="nx">NickClothFactory</span> <span class="nx">implements</span> <span class="nx">ClothFactory</span><span class="p">{</span>
-
-    <span class="err">@</span><span class="nx">Override</span>
-    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">productCloth</span><span class="p">()</span> <span class="p">{</span>
-        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;Nick在生产衣服&#34;</span><span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-<span class="c1">//代理类
-</span><span class="c1"></span><span class="nx">class</span> <span class="nx">ProxyFactory</span> <span class="nx">implements</span> <span class="nx">ClothFactory</span><span class="p">{</span>
-
-    <span class="nx">ClothFactory</span> <span class="nx">clothFactory</span><span class="p">;</span>
-
-    <span class="nx">public</span> <span class="nf">ProxyFactory</span><span class="p">(</span><span class="nx">ClothFactory</span> <span class="nx">clothFactory</span><span class="p">)</span> <span class="p">{</span>
-        <span class="nx">this</span><span class="p">.</span><span class="nx">clothFactory</span> <span class="p">=</span> <span class="nx">clothFactory</span><span class="p">;</span>
-    <span class="p">}</span>
-
-
-    <span class="err">@</span><span class="nx">Override</span>
-    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">productCloth</span><span class="p">()</span> <span class="p">{</span>
-        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;代理类执行了。。。&#34;</span><span class="p">);</span>
-        <span class="nx">clothFactory</span><span class="p">.</span><span class="nf">productCloth</span><span class="p">();</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-
-<span class="nx">public</span> <span class="nx">class</span> <span class="nx">StaticProxy</span> <span class="p">{</span>
-    <span class="nx">public</span> <span class="nx">static</span> <span class="nx">void</span> <span class="nf">main</span><span class="p">(</span><span class="nx">String</span><span class="p">[]</span> <span class="nx">args</span><span class="p">)</span> <span class="p">{</span>
-        <span class="nx">NickClothFactory</span> <span class="nx">nick</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">NickClothFactory</span><span class="p">();</span><span class="c1">//创建被代理类的对象
-</span><span class="c1"></span>        <span class="nx">ProxyFactory</span> <span class="nx">proxy</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">ProxyFactory</span><span class="p">(</span><span class="nx">nick</span><span class="p">);</span><span class="c1">//创建代理类的对象
-</span><span class="c1"></span>        <span class="nx">proxy</span><span class="p">.</span><span class="nf">productCloth</span><span class="p">();</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nx">com</span><span class="p">.</span><span class="nx">proxy</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">//静态代理模式
+</span></span></span><span class="line"><span class="cl"><span class="c1">//接口
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">interface</span> <span class="nx">ClothFactory</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">productCloth</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">//被代理类
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">class</span> <span class="nx">NickClothFactory</span> <span class="nx">implements</span> <span class="nx">ClothFactory</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="err">@</span><span class="nx">Override</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">productCloth</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;Nick在生产衣服&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">//代理类
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">class</span> <span class="nx">ProxyFactory</span> <span class="nx">implements</span> <span class="nx">ClothFactory</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">ClothFactory</span> <span class="nx">clothFactory</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">public</span> <span class="nf">ProxyFactory</span><span class="p">(</span><span class="nx">ClothFactory</span> <span class="nx">clothFactory</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">this</span><span class="p">.</span><span class="nx">clothFactory</span> <span class="p">=</span> <span class="nx">clothFactory</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="err">@</span><span class="nx">Override</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">productCloth</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;代理类执行了。。。&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">clothFactory</span><span class="p">.</span><span class="nf">productCloth</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">public</span> <span class="nx">class</span> <span class="nx">StaticProxy</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">public</span> <span class="nx">static</span> <span class="nx">void</span> <span class="nf">main</span><span class="p">(</span><span class="nx">String</span><span class="p">[]</span> <span class="nx">args</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">NickClothFactory</span> <span class="nx">nick</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">NickClothFactory</span><span class="p">();</span><span class="c1">//创建被代理类的对象
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">ProxyFactory</span> <span class="nx">proxy</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">ProxyFactory</span><span class="p">(</span><span class="nx">nick</span><span class="p">);</span><span class="c1">//创建代理类的对象
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">proxy</span><span class="p">.</span><span class="nf">productCloth</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="动态代理">动态代理</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -894,63 +894,63 @@ password=1234
 </span><span class="lnt">51
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-go" data-lang="go"><span class="kn">package</span> <span class="nx">com</span><span class="p">.</span><span class="nx">proxy</span><span class="p">;</span>
-
-<span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">lang</span><span class="p">.</span><span class="nx">reflect</span><span class="p">.</span><span class="nx">InvocationHandler</span><span class="p">;</span>
-<span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">lang</span><span class="p">.</span><span class="nx">reflect</span><span class="p">.</span><span class="nx">Method</span><span class="p">;</span>
-<span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">lang</span><span class="p">.</span><span class="nx">reflect</span><span class="p">.</span><span class="nx">Proxy</span><span class="p">;</span>
-
-<span class="cm">/**
-</span><span class="cm"> * 动态代理的使用
-</span><span class="cm"> */</span>
-<span class="kd">interface</span> <span class="nx">Subject</span><span class="p">{</span>
-    <span class="nx">void</span> <span class="nf">action</span><span class="p">();</span>
-<span class="p">}</span>
-<span class="c1">//被代理类
-</span><span class="c1"></span><span class="nx">class</span> <span class="nx">RealSubject</span> <span class="nx">implements</span> <span class="nx">Subject</span><span class="p">{</span>
-
-    <span class="err">@</span><span class="nx">Override</span>
-    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">action</span><span class="p">()</span> <span class="p">{</span>
-        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;被代理类的action。。。&#34;</span><span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-<span class="nx">class</span> <span class="nx">MyInvocationHandler</span> <span class="nx">implements</span> <span class="nx">InvocationHandler</span><span class="p">{</span>
-    <span class="nx">Object</span> <span class="nx">obj</span><span class="p">;</span><span class="c1">//实现了接口的被代理类的对象的声明
-</span><span class="c1"></span>    <span class="c1">//1.给被代理的对象实例化2.返回一个代理类的对象
-</span><span class="c1"></span>    <span class="nx">public</span> <span class="nx">Object</span> <span class="nf">blind</span><span class="p">(</span><span class="nx">Object</span> <span class="nx">obj</span><span class="p">){</span>
-        <span class="nx">this</span><span class="p">.</span><span class="nx">obj</span><span class="p">=</span><span class="nx">obj</span><span class="p">;</span>
-        <span class="k">return</span> <span class="nx">Proxy</span><span class="p">.</span><span class="nf">newProxyInstance</span><span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nf">getClass</span><span class="p">().</span><span class="nf">getClassLoader</span><span class="p">(),</span><span class="nx">obj</span><span class="p">.</span><span class="nf">getClass</span><span class="p">().</span><span class="nf">getInterfaces</span><span class="p">(),</span><span class="nx">this</span><span class="p">);</span>
-    <span class="p">}</span>
-    <span class="c1">//当通过代理类的对象发起对被重写的方法的调用时，都会转换为对如下的invoke方法的调用
-</span><span class="c1"></span>    <span class="err">@</span><span class="nx">Override</span>
-    <span class="nx">public</span> <span class="nx">Object</span> <span class="nf">invoke</span><span class="p">(</span><span class="nx">Object</span> <span class="nx">proxy</span><span class="p">,</span> <span class="nx">Method</span> <span class="nx">method</span><span class="p">,</span> <span class="nx">Object</span><span class="p">[]</span> <span class="nx">args</span><span class="p">)</span> <span class="nx">throws</span> <span class="nx">Throwable</span> <span class="p">{</span>
-        <span class="nx">Object</span> <span class="nx">invoke</span> <span class="p">=</span> <span class="nx">method</span><span class="p">.</span><span class="nf">invoke</span><span class="p">(</span><span class="nx">obj</span><span class="p">,</span> <span class="nx">args</span><span class="p">);</span>
-        <span class="k">return</span> <span class="nx">invoke</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-<span class="nx">public</span> <span class="nx">class</span> <span class="nx">MovingProxy</span> <span class="p">{</span>
-    <span class="nx">public</span> <span class="nx">static</span> <span class="nx">void</span> <span class="nf">main</span><span class="p">(</span><span class="nx">String</span><span class="p">[]</span> <span class="nx">args</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">//1.被代理类的对象
-</span><span class="c1"></span>        <span class="nx">RealSubject</span> <span class="nx">real</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">RealSubject</span><span class="p">();</span>
-        <span class="c1">//2.创建一个实现了InvocationHandler接口的类的对象
-</span><span class="c1"></span>        <span class="nx">MyInvocationHandler</span> <span class="nx">handler</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">MyInvocationHandler</span><span class="p">();</span>
-        <span class="c1">//3.调用blind()方法，动态的返回一个同样实现了real所在类实现的接口的代理类的对象
-</span><span class="c1"></span>        <span class="nx">Object</span> <span class="nx">blind</span> <span class="p">=</span> <span class="nx">handler</span><span class="p">.</span><span class="nf">blind</span><span class="p">(</span><span class="nx">real</span><span class="p">);</span>
-        <span class="nx">Subject</span> <span class="nx">sub</span> <span class="p">=</span> <span class="p">(</span><span class="nx">Subject</span><span class="p">)</span><span class="nx">blind</span><span class="p">;</span>
-
-        <span class="nx">sub</span><span class="p">.</span><span class="nf">action</span><span class="p">();</span><span class="c1">//转到对InvocationHandler接口的实现类的invoke()方法的调用
-</span><span class="c1"></span>
-        <span class="nx">NickClothFactory</span> <span class="nx">nick</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">NickClothFactory</span><span class="p">();</span>
-        <span class="nx">ClothFactory</span> <span class="nx">clothFactory</span> <span class="p">=</span> <span class="p">(</span><span class="nx">ClothFactory</span><span class="p">)</span> <span class="nx">handler</span><span class="p">.</span><span class="nf">blind</span><span class="p">(</span><span class="nx">nick</span><span class="p">);</span>
-        <span class="nx">clothFactory</span><span class="p">.</span><span class="nf">productCloth</span><span class="p">();</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nx">com</span><span class="p">.</span><span class="nx">proxy</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">lang</span><span class="p">.</span><span class="nx">reflect</span><span class="p">.</span><span class="nx">InvocationHandler</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">lang</span><span class="p">.</span><span class="nx">reflect</span><span class="p">.</span><span class="nx">Method</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">lang</span><span class="p">.</span><span class="nx">reflect</span><span class="p">.</span><span class="nx">Proxy</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * 动态代理的使用
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl"><span class="kd">interface</span> <span class="nx">Subject</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">void</span> <span class="nf">action</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">//被代理类
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">class</span> <span class="nx">RealSubject</span> <span class="nx">implements</span> <span class="nx">Subject</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="err">@</span><span class="nx">Override</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">action</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;被代理类的action。。。&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nx">class</span> <span class="nx">MyInvocationHandler</span> <span class="nx">implements</span> <span class="nx">InvocationHandler</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">Object</span> <span class="nx">obj</span><span class="p">;</span><span class="c1">//实现了接口的被代理类的对象的声明
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">//1.给被代理的对象实例化2.返回一个代理类的对象
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">public</span> <span class="nx">Object</span> <span class="nf">blind</span><span class="p">(</span><span class="nx">Object</span> <span class="nx">obj</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">this</span><span class="p">.</span><span class="nx">obj</span><span class="p">=</span><span class="nx">obj</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nx">Proxy</span><span class="p">.</span><span class="nf">newProxyInstance</span><span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nf">getClass</span><span class="p">().</span><span class="nf">getClassLoader</span><span class="p">(),</span><span class="nx">obj</span><span class="p">.</span><span class="nf">getClass</span><span class="p">().</span><span class="nf">getInterfaces</span><span class="p">(),</span><span class="nx">this</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//当通过代理类的对象发起对被重写的方法的调用时，都会转换为对如下的invoke方法的调用
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="err">@</span><span class="nx">Override</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">public</span> <span class="nx">Object</span> <span class="nf">invoke</span><span class="p">(</span><span class="nx">Object</span> <span class="nx">proxy</span><span class="p">,</span> <span class="nx">Method</span> <span class="nx">method</span><span class="p">,</span> <span class="nx">Object</span><span class="p">[]</span> <span class="nx">args</span><span class="p">)</span> <span class="nx">throws</span> <span class="nx">Throwable</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">Object</span> <span class="nx">invoke</span> <span class="p">=</span> <span class="nx">method</span><span class="p">.</span><span class="nf">invoke</span><span class="p">(</span><span class="nx">obj</span><span class="p">,</span> <span class="nx">args</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nx">invoke</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nx">public</span> <span class="nx">class</span> <span class="nx">MovingProxy</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">public</span> <span class="nx">static</span> <span class="nx">void</span> <span class="nf">main</span><span class="p">(</span><span class="nx">String</span><span class="p">[]</span> <span class="nx">args</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//1.被代理类的对象
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">RealSubject</span> <span class="nx">real</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">RealSubject</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//2.创建一个实现了InvocationHandler接口的类的对象
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">MyInvocationHandler</span> <span class="nx">handler</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">MyInvocationHandler</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//3.调用blind()方法，动态的返回一个同样实现了real所在类实现的接口的代理类的对象
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">Object</span> <span class="nx">blind</span> <span class="p">=</span> <span class="nx">handler</span><span class="p">.</span><span class="nf">blind</span><span class="p">(</span><span class="nx">real</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">Subject</span> <span class="nx">sub</span> <span class="p">=</span> <span class="p">(</span><span class="nx">Subject</span><span class="p">)</span><span class="nx">blind</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="nx">sub</span><span class="p">.</span><span class="nf">action</span><span class="p">();</span><span class="c1">//转到对InvocationHandler接口的实现类的invoke()方法的调用
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">        <span class="nx">NickClothFactory</span> <span class="nx">nick</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">NickClothFactory</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">ClothFactory</span> <span class="nx">clothFactory</span> <span class="p">=</span> <span class="p">(</span><span class="nx">ClothFactory</span><span class="p">)</span> <span class="nx">handler</span><span class="p">.</span><span class="nf">blind</span><span class="p">(</span><span class="nx">nick</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">clothFactory</span><span class="p">.</span><span class="nf">productCloth</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="动态代理和aop">动态代理和aop</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -1021,81 +1021,81 @@ password=1234
 </span><span class="lnt">69
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-go" data-lang="go"><span class="kn">package</span> <span class="nx">com</span><span class="p">.</span><span class="nx">aop</span><span class="p">;</span>
-
-<span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">lang</span><span class="p">.</span><span class="nx">reflect</span><span class="p">.</span><span class="nx">InvocationHandler</span><span class="p">;</span>
-<span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">lang</span><span class="p">.</span><span class="nx">reflect</span><span class="p">.</span><span class="nx">Method</span><span class="p">;</span>
-<span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">lang</span><span class="p">.</span><span class="nx">reflect</span><span class="p">.</span><span class="nx">Proxy</span><span class="p">;</span>
-
-<span class="kd">interface</span> <span class="nx">Human</span><span class="p">{</span>
-    <span class="nx">void</span> <span class="nf">info</span><span class="p">();</span>
-    <span class="nx">void</span> <span class="nf">fly</span><span class="p">();</span>
-<span class="p">}</span>
-<span class="c1">//被代理类
-</span><span class="c1"></span><span class="nx">class</span> <span class="nx">SuperMan</span> <span class="nx">implements</span> <span class="nx">Human</span><span class="p">{</span>
-
-    <span class="err">@</span><span class="nx">Override</span>
-    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">info</span><span class="p">()</span> <span class="p">{</span>
-        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;SuperMan---info...&#34;</span><span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="err">@</span><span class="nx">Override</span>
-    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">fly</span><span class="p">()</span> <span class="p">{</span>
-        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;SuperMan---fly...&#34;</span><span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-<span class="nx">class</span> <span class="nx">HumanUtil</span><span class="p">{</span>
-    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">method1</span><span class="p">(){</span>
-        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;=======方法一========&#34;</span><span class="p">);</span>
-    <span class="p">}</span>
-    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">method2</span><span class="p">(){</span>
-        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;=======方法二========&#34;</span><span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-
-<span class="nx">class</span> <span class="nx">MyInvocationHandler</span> <span class="nx">implements</span> <span class="nx">InvocationHandler</span><span class="p">{</span>
-    <span class="nx">Object</span> <span class="nx">obj</span><span class="p">;</span>
-
-    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">setObject</span><span class="p">(</span><span class="nx">Object</span> <span class="nx">obj</span><span class="p">){</span>
-        <span class="nx">this</span><span class="p">.</span><span class="nx">obj</span><span class="p">=</span><span class="nx">obj</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="err">@</span><span class="nx">Override</span>
-    <span class="nx">public</span> <span class="nx">Object</span> <span class="nf">invoke</span><span class="p">(</span><span class="nx">Object</span> <span class="nx">proxy</span><span class="p">,</span> <span class="nx">Method</span> <span class="nx">method</span><span class="p">,</span> <span class="nx">Object</span><span class="p">[]</span> <span class="nx">args</span><span class="p">)</span> <span class="nx">throws</span> <span class="nx">Throwable</span> <span class="p">{</span>
-        <span class="nx">HumanUtil</span> <span class="nx">h</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">HumanUtil</span><span class="p">();</span>
-
-        <span class="nx">h</span><span class="p">.</span><span class="nf">method1</span><span class="p">();</span>
-        <span class="nx">Object</span> <span class="nx">invoke</span> <span class="p">=</span> <span class="nx">method</span><span class="p">.</span><span class="nf">invoke</span><span class="p">(</span><span class="nx">obj</span><span class="p">,</span> <span class="nx">args</span><span class="p">);</span>
-        <span class="nx">h</span><span class="p">.</span><span class="nf">method2</span><span class="p">();</span>
-
-        <span class="k">return</span> <span class="nx">invoke</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-<span class="nx">class</span> <span class="nx">MyProxy</span><span class="p">{</span>
-    <span class="c1">//动态的创建一个代理类的对象
-</span><span class="c1"></span>    <span class="nx">public</span> <span class="nx">static</span> <span class="nx">Object</span> <span class="nf">getProjectInstance</span><span class="p">(</span><span class="nx">Object</span> <span class="nx">obj</span><span class="p">){</span>
-        <span class="nx">MyInvocationHandler</span> <span class="nx">handler</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">MyInvocationHandler</span><span class="p">();</span>
-        <span class="nx">handler</span><span class="p">.</span><span class="nf">setObject</span><span class="p">(</span><span class="nx">obj</span><span class="p">);</span>
-        <span class="k">return</span> <span class="nx">Proxy</span><span class="p">.</span><span class="nf">newProxyInstance</span><span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nf">getClass</span><span class="p">().</span><span class="nf">getClassLoader</span><span class="p">(),</span><span class="nx">obj</span><span class="p">.</span><span class="nf">getClass</span><span class="p">().</span><span class="nf">getInterfaces</span><span class="p">(),</span><span class="nx">handler</span><span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-<span class="nx">public</span> <span class="nx">class</span> <span class="nx">AopTest</span> <span class="p">{</span>
-    <span class="nx">public</span> <span class="nx">static</span> <span class="nx">void</span> <span class="nf">main</span><span class="p">(</span><span class="nx">String</span><span class="p">[]</span> <span class="nx">args</span><span class="p">)</span> <span class="p">{</span>
-        <span class="nx">SuperMan</span> <span class="nx">superMan</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">SuperMan</span><span class="p">();</span>
-        <span class="nx">Object</span> <span class="nx">o</span> <span class="p">=</span> <span class="nx">MyProxy</span><span class="p">.</span><span class="nf">getProjectInstance</span><span class="p">(</span><span class="nx">superMan</span><span class="p">);</span>
-        <span class="nx">Human</span> <span class="nx">human</span> <span class="p">=</span> <span class="p">(</span><span class="nx">Human</span><span class="p">)</span> <span class="nx">o</span><span class="p">;</span>
-
-        <span class="nx">human</span><span class="p">.</span><span class="nf">info</span><span class="p">();</span>
-        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">();</span>
-        <span class="nx">human</span><span class="p">.</span><span class="nf">fly</span><span class="p">();</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nx">com</span><span class="p">.</span><span class="nx">aop</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">lang</span><span class="p">.</span><span class="nx">reflect</span><span class="p">.</span><span class="nx">InvocationHandler</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">lang</span><span class="p">.</span><span class="nx">reflect</span><span class="p">.</span><span class="nx">Method</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nx">java</span><span class="p">.</span><span class="nx">lang</span><span class="p">.</span><span class="nx">reflect</span><span class="p">.</span><span class="nx">Proxy</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">interface</span> <span class="nx">Human</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">void</span> <span class="nf">info</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">void</span> <span class="nf">fly</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">//被代理类
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">class</span> <span class="nx">SuperMan</span> <span class="nx">implements</span> <span class="nx">Human</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="err">@</span><span class="nx">Override</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">info</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;SuperMan---info...&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="err">@</span><span class="nx">Override</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">fly</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;SuperMan---fly...&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nx">class</span> <span class="nx">HumanUtil</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">method1</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;=======方法一========&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">method2</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">(</span><span class="s">&#34;=======方法二========&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">class</span> <span class="nx">MyInvocationHandler</span> <span class="nx">implements</span> <span class="nx">InvocationHandler</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">Object</span> <span class="nx">obj</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">public</span> <span class="nx">void</span> <span class="nf">setObject</span><span class="p">(</span><span class="nx">Object</span> <span class="nx">obj</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">this</span><span class="p">.</span><span class="nx">obj</span><span class="p">=</span><span class="nx">obj</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="err">@</span><span class="nx">Override</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">public</span> <span class="nx">Object</span> <span class="nf">invoke</span><span class="p">(</span><span class="nx">Object</span> <span class="nx">proxy</span><span class="p">,</span> <span class="nx">Method</span> <span class="nx">method</span><span class="p">,</span> <span class="nx">Object</span><span class="p">[]</span> <span class="nx">args</span><span class="p">)</span> <span class="nx">throws</span> <span class="nx">Throwable</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">HumanUtil</span> <span class="nx">h</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">HumanUtil</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="nx">h</span><span class="p">.</span><span class="nf">method1</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">Object</span> <span class="nx">invoke</span> <span class="p">=</span> <span class="nx">method</span><span class="p">.</span><span class="nf">invoke</span><span class="p">(</span><span class="nx">obj</span><span class="p">,</span> <span class="nx">args</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">h</span><span class="p">.</span><span class="nf">method2</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nx">invoke</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nx">class</span> <span class="nx">MyProxy</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//动态的创建一个代理类的对象
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">public</span> <span class="nx">static</span> <span class="nx">Object</span> <span class="nf">getProjectInstance</span><span class="p">(</span><span class="nx">Object</span> <span class="nx">obj</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">MyInvocationHandler</span> <span class="nx">handler</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">MyInvocationHandler</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">handler</span><span class="p">.</span><span class="nf">setObject</span><span class="p">(</span><span class="nx">obj</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nx">Proxy</span><span class="p">.</span><span class="nf">newProxyInstance</span><span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nf">getClass</span><span class="p">().</span><span class="nf">getClassLoader</span><span class="p">(),</span><span class="nx">obj</span><span class="p">.</span><span class="nf">getClass</span><span class="p">().</span><span class="nf">getInterfaces</span><span class="p">(),</span><span class="nx">handler</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nx">public</span> <span class="nx">class</span> <span class="nx">AopTest</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">public</span> <span class="nx">static</span> <span class="nx">void</span> <span class="nf">main</span><span class="p">(</span><span class="nx">String</span><span class="p">[]</span> <span class="nx">args</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">SuperMan</span> <span class="nx">superMan</span> <span class="p">=</span> <span class="nx">new</span> <span class="nf">SuperMan</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">Object</span> <span class="nx">o</span> <span class="p">=</span> <span class="nx">MyProxy</span><span class="p">.</span><span class="nf">getProjectInstance</span><span class="p">(</span><span class="nx">superMan</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">Human</span> <span class="nx">human</span> <span class="p">=</span> <span class="p">(</span><span class="nx">Human</span><span class="p">)</span> <span class="nx">o</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="nx">human</span><span class="p">.</span><span class="nf">info</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nb">println</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">human</span><span class="p">.</span><span class="nf">fly</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>运行结果：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -1104,14 +1104,14 @@ password=1234
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">=======方法一========
-SuperMan---info...
-=======方法二========
-
-=======方法一========
-SuperMan---fly...
-=======方法二========
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">=======方法一========
+</span></span><span class="line"><span class="cl">SuperMan---info...
+</span></span><span class="line"><span class="cl">=======方法二========
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">=======方法一========
+</span></span><span class="line"><span class="cl">SuperMan---fly...
+</span></span><span class="line"><span class="cl">=======方法二========
+</span></span></code></pre></td></tr></table>
 </div>
 </div>
     </div>
@@ -1200,7 +1200,7 @@ SuperMan---fly...
   <span class="copyright-year">
     &copy; 
     2017 - 
-    2021<span class="heart"><i class="iconfont icon-heart"></i></span><span>lion</span>
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>lion</span>
   </span>
 </div>
 
@@ -1216,7 +1216,7 @@ SuperMan---fly...
 
 
 
-<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+<script type="text/javascript" src="/js/main.min.64437849d125a2d603b3e71d6de5225d641a32d17168a58106e0b61852079683.js"></script>
 
 
 
