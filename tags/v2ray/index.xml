@@ -1,20 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>v2ray on Welcome</title>
-    <link>https://lionng.github.io/tags/v2ray/</link>
-    <description>Recent content in v2ray on Welcome</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 04 Jan 2020 16:22:37 +0800</lastBuildDate><atom:link href="https://lionng.github.io/tags/v2ray/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>linux使用v2ray作为客户端</title>
-      <link>https://lionng.github.io/post/linux-v2ray-client/</link>
-      <pubDate>Sat, 04 Jan 2020 16:22:37 +0800</pubDate>
-      
-      <guid>https://lionng.github.io/post/linux-v2ray-client/</guid>
-      <description>安装v2ray 官网：https://www.v2ray.com/ (被墙,如果可以，不明白的多看官网) github地址：https://git</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>v2ray - Tag - 风吹过的烟花</title>
+        <link>https://zhangxiaofeng05.github.io/tags/v2ray/</link>
+        <description>v2ray - Tag - 风吹过的烟花</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
+            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Sat, 04 Jan 2020 16:22:37 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/v2ray/" rel="self" type="application/rss+xml" /><item>
+    <title>linux使用v2ray作为客户端</title>
+    <link>https://zhangxiaofeng05.github.io/linux-v2ray-client/</link>
+    <pubDate>Sat, 04 Jan 2020 16:22:37 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://zhangxiaofeng05.github.io/linux-v2ray-client/</guid>
+    <description><![CDATA[安装v2ray 官网：https://www.v2ray.com/ (被墙,如果可以，不明白的多看官网) github地址：https://git]]></description>
+</item>
+</channel>
 </rss>

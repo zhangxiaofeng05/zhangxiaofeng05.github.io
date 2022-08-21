@@ -1,20 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>terminal on Welcome</title>
-    <link>https://lionng.github.io/tags/terminal/</link>
-    <description>Recent content in terminal on Welcome</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Fri, 10 Jan 2020 00:27:17 +0800</lastBuildDate><atom:link href="https://lionng.github.io/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>deepin安装使用Oh My Zsh</title>
-      <link>https://lionng.github.io/post/deepin-install-ohmyzsh/</link>
-      <pubDate>Fri, 10 Jan 2020 00:27:17 +0800</pubDate>
-      
-      <guid>https://lionng.github.io/post/deepin-install-ohmyzsh/</guid>
-      <description>安装Oh My Zsh github地址：https://github.com/ohmyzsh/ohmyzsh 1 2 3 4 5 6 7 8 9 sudo apt install zsh sh -c &amp;#34;$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34; # 将 Zsh</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>terminal - Tag - 风吹过的烟花</title>
+        <link>https://zhangxiaofeng05.github.io/tags/terminal/</link>
+        <description>terminal - Tag - 风吹过的烟花</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
+            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Fri, 10 Jan 2020 00:27:17 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/terminal/" rel="self" type="application/rss+xml" /><item>
+    <title>deepin安装使用Oh My Zsh</title>
+    <link>https://zhangxiaofeng05.github.io/deepin-install-ohmyzsh/</link>
+    <pubDate>Fri, 10 Jan 2020 00:27:17 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://zhangxiaofeng05.github.io/deepin-install-ohmyzsh/</guid>
+    <description><![CDATA[安装Oh My Zsh github地址：https://github.com/ohmyzsh/ohmyzsh 1 2 3 4 5 6 7 8 9 sudo apt install zsh sh -c &#34;$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&#34; # 将 Zsh]]></description>
+</item>
+</channel>
 </rss>

@@ -1,20 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>equals on Welcome</title>
-    <link>https://lionng.github.io/tags/equals/</link>
-    <description>Recent content in equals on Welcome</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 28 Jul 2019 14:06:50 +0800</lastBuildDate><atom:link href="https://lionng.github.io/tags/equals/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>==和equals和hashCode</title>
-      <link>https://lionng.github.io/post/equals-hashcode/</link>
-      <pubDate>Sun, 28 Jul 2019 14:06:50 +0800</pubDate>
-      
-      <guid>https://lionng.github.io/post/equals-hashcode/</guid>
-      <description>==和equals == 基本类型：比较的是值是否相同； 引用类型：比较的是内存地址是否相同(是否是同一对象)； equals Object类中的equals方法</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>equals - Tag - 风吹过的烟花</title>
+        <link>https://zhangxiaofeng05.github.io/tags/equals/</link>
+        <description>equals - Tag - 风吹过的烟花</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
+            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Sun, 28 Jul 2019 14:06:50 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/equals/" rel="self" type="application/rss+xml" /><item>
+    <title>==和equals和hashCode</title>
+    <link>https://zhangxiaofeng05.github.io/equals-hashcode/</link>
+    <pubDate>Sun, 28 Jul 2019 14:06:50 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://zhangxiaofeng05.github.io/equals-hashcode/</guid>
+    <description><![CDATA[==和equals == 基本类型：比较的是值是否相同； 引用类型：比较的是内存地址是否相同(是否是同一对象)； equals Object类中的equals方法]]></description>
+</item>
+</channel>
 </rss>

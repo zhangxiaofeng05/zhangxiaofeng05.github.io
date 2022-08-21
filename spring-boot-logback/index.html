@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Spring Boot打印日志 - 风吹过的烟花</title><meta name="Description" content="zhangxiaofeng05&#39;s hugo blog"><meta property="og:title" content="Spring Boot打印日志" />
+<meta property="og:description" content="本文环境 jdk 1.8 maven 3.6.1 Spring Boot 2.1.6 SLF4J 为什么要介绍SLF4J？ SLF4J是一个接口，log4j和logback是它的实现。 SLF4J官网：https://" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zhangxiaofeng05.github.io/spring-boot-logback/" /><meta property="og:image" content="https://zhangxiaofeng05.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2019-07-20T14:32:00+08:00" />
+<meta property="article:modified_time" content="2022-08-21T23:44:18+08:00" /><meta property="og:site_name" content="make yourself" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://zhangxiaofeng05.github.io/logo.png"/>
+
+<meta name="twitter:title" content="Spring Boot打印日志"/>
+<meta name="twitter:description" content="本文环境 jdk 1.8 maven 3.6.1 Spring Boot 2.1.6 SLF4J 为什么要介绍SLF4J？ SLF4J是一个接口，log4j和logback是它的实现。 SLF4J官网：https://"/>
+<meta name="application-name" content="风吹过的烟花">
+<meta name="apple-mobile-web-app-title" content="风吹过的烟花"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://zhangxiaofeng05.github.io/spring-boot-logback/" /><link rel="prev" href="https://zhangxiaofeng05.github.io/spring-boot-mail/" /><link rel="next" href="https://zhangxiaofeng05.github.io/java-thread/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Spring Boot打印日志",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/zhangxiaofeng05.github.io\/spring-boot-logback\/"
+        },"genre": "posts","keywords": "SLF4J, Spring Boot","wordcount":  1061 ,
+        "url": "https:\/\/zhangxiaofeng05.github.io\/spring-boot-logback\/","datePublished": "2019-07-20T14:32:00+08:00","dateModified": "2022-08-21T23:44:18+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "zhangxiaofeng05"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="风吹过的烟花"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/logo.png"
+        data-srcset="/logo.png, /logo.png 1.5x, /logo.png 2x"
+        data-sizes="auto"
+        alt="/logo.png"
+        title="/logo.png" /></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/firefly/"> 萤火虫 </a><a class="menu-item" href="/about/"> 关于 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="风吹过的烟花"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/logo.png"
+        data-srcset="/logo.png, /logo.png 1.5x, /logo.png 2x"
+        data-sizes="auto"
+        alt="/logo.png"
+        title="/logo.png" /></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/firefly/" title="">萤火虫</a><a class="menu-item" href="/about/" title="">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Spring Boot打印日志</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>zhangxiaofeng05</a></span>&nbsp;<span class="post-category">included in <a href="/categories/spring-boot/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Spring Boot</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2019-07-20">2019-07-20</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1061 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#为什么要介绍slf4j">为什么要介绍SLF4J？</a></li>
+    <li><a href="#官网示例">官网示例</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#编写测试类">编写测试类</a></li>
+    <li><a href="#设置日志的格式">设置日志的格式</a></li>
+    <li><a href="#配置文件的加载顺序">配置文件的加载顺序</a></li>
+    <li><a href="#application基本配置">application基本配置</a></li>
+    <li><a href="#官网日志配置详情">官网日志配置详情</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><blockquote>
+<p>本文环境
+jdk 1.8
+maven 3.6.1
+Spring Boot 2.1.6</p>
+</blockquote>
+<h1 id="slf4j">SLF4J</h1>
+<h2 id="为什么要介绍slf4j">为什么要介绍SLF4J？</h2>
+<p>SLF4J是一个接口，log4j和logback是它的实现。
+SLF4J官网：https://www.slf4j.org</p>
+<h2 id="官网示例">官网示例</h2>
+<ul>
+<li>引入jar包
+slf4j-api-1.7.26.jar
+slf4j-simple-1.7.26.jar</li>
+<li>编写测试类(Java Project)</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">import org.slf4j.Logger;
+</span></span><span class="line"><span class="cl">import org.slf4j.LoggerFactory;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">public class HelloWorld {
+</span></span><span class="line"><span class="cl">  public static void main(String[] args) {
+</span></span><span class="line"><span class="cl">    Logger logger = LoggerFactory.getLogger(HelloWorld.class);
+</span></span><span class="line"><span class="cl">    logger.info(&#34;Hello World&#34;);
+</span></span><span class="line"><span class="cl">  }
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>有什么问题，去官网查看示例！</p>
+<h1 id="spring-boot中使用日志logback">Spring Boot中使用日志(logback)</h1>
+<h2 id="编写测试类">编写测试类</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">import org.junit.Test;
+</span></span><span class="line"><span class="cl">import org.junit.runner.RunWith;
+</span></span><span class="line"><span class="cl">import org.slf4j.Logger;
+</span></span><span class="line"><span class="cl">import org.slf4j.LoggerFactory;
+</span></span><span class="line"><span class="cl">import org.springframework.boot.test.context.SpringBootTest;
+</span></span><span class="line"><span class="cl">import org.springframework.test.context.junit4.SpringRunner;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">@RunWith(SpringRunner.class)
+</span></span><span class="line"><span class="cl">@SpringBootTest
+</span></span><span class="line"><span class="cl">public class LogbackTest {
+</span></span><span class="line"><span class="cl">	//记录器
+</span></span><span class="line"><span class="cl">	Logger logger = LoggerFactory.getLogger(getClass());
+</span></span><span class="line"><span class="cl">	
+</span></span><span class="line"><span class="cl">	@Test
+</span></span><span class="line"><span class="cl">	public void logTest() {
+</span></span><span class="line"><span class="cl">		//日志的级别
+</span></span><span class="line"><span class="cl">		//从上到下---由低到高
+</span></span><span class="line"><span class="cl">		//日志会在设置的级别和高级别生效，Spring Boot默认info
+</span></span><span class="line"><span class="cl">		logger.trace(&#34;这是trace日志...&#34;);
+</span></span><span class="line"><span class="cl">		logger.debug(&#34;这是debug日志...&#34;);
+</span></span><span class="line"><span class="cl">		//可以在logback-spring.xml或者在application.xml配置日志级别
+</span></span><span class="line"><span class="cl">		logger.info(&#34;这是info日志...&#34;);
+</span></span><span class="line"><span class="cl">		logger.warn(&#34;这是warn日志...&#34;);
+</span></span><span class="line"><span class="cl">		logger.error(&#34;这是error日志...&#34;);
+</span></span><span class="line"><span class="cl">	}
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="设置日志的格式">设置日志的格式</h2>
+<ul>
+<li>resources/logback-spring.xml</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;
+</span></span><span class="line"><span class="cl">&lt;configuration debug=&#34;false&#34; scan=&#34;true&#34; scanPeriod=&#34;60 seconds&#34;&gt;
+</span></span><span class="line"><span class="cl">   
+</span></span><span class="line"><span class="cl">	&lt;!--定义日志文件的存储地址 勿在 LogBack 的配置中使用相对路径 --&gt;
+</span></span><span class="line"><span class="cl">	&lt;!-- 
+</span></span><span class="line"><span class="cl">	&lt;property name=&#34;LOG_PATH&#34; value=&#34;/data/log/process/springboot-demo&#34; /&gt;
+</span></span><span class="line"><span class="cl">	 --&gt;
+</span></span><span class="line"><span class="cl">	&lt;springProperty name=&#34;LOG_PATH&#34; source=&#34;logging.path&#34;  defaultValue=&#34;../logs&#34; /&gt;
+</span></span><span class="line"><span class="cl">	&lt;!-- 控制台输出 --&gt;
+</span></span><span class="line"><span class="cl">	&lt;appender name=&#34;STDOUT&#34; class=&#34;ch.qos.logback.core.ConsoleAppender&#34;&gt;
+</span></span><span class="line"><span class="cl">		&lt;encoder class=&#34;ch.qos.logback.classic.encoder.PatternLayoutEncoder&#34;&gt;
+</span></span><span class="line"><span class="cl">			&lt;!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 --&gt;
+</span></span><span class="line"><span class="cl">			&lt;pattern&gt;%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n&lt;/pattern&gt;
+</span></span><span class="line"><span class="cl">		&lt;/encoder&gt;
+</span></span><span class="line"><span class="cl">	&lt;/appender&gt;
+</span></span><span class="line"><span class="cl">	
+</span></span><span class="line"><span class="cl">	&lt;!-- 按照每天生成日志文件 --&gt;
+</span></span><span class="line"><span class="cl">	&lt;appender name=&#34;FILE&#34; class=&#34;ch.qos.logback.core.rolling.RollingFileAppender&#34;&gt;
+</span></span><span class="line"><span class="cl">		&lt;rollingPolicy class=&#34;ch.qos.logback.core.rolling.TimeBasedRollingPolicy&#34;&gt;
+</span></span><span class="line"><span class="cl">			&lt;!--日志文件输出的文件名 --&gt;
+</span></span><span class="line"><span class="cl">			&lt;FileNamePattern&gt;${LOG_PATH}/log.log.%d{yyyy-MM-dd}&lt;/FileNamePattern&gt;
+</span></span><span class="line"><span class="cl">			&lt;!--日志文件保留天数 --&gt;
+</span></span><span class="line"><span class="cl">			&lt;!-- &lt;MaxHistory&gt;30&lt;/MaxHistory&gt; --&gt;
+</span></span><span class="line"><span class="cl">		&lt;/rollingPolicy&gt;
+</span></span><span class="line"><span class="cl">		&lt;encoder class=&#34;ch.qos.logback.classic.encoder.PatternLayoutEncoder&#34;&gt;
+</span></span><span class="line"><span class="cl">			&lt;!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 --&gt;
+</span></span><span class="line"><span class="cl">			&lt;pattern&gt;%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n&lt;/pattern&gt;
+</span></span><span class="line"><span class="cl">		&lt;/encoder&gt;
+</span></span><span class="line"><span class="cl">	&lt;/appender&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	&lt;!-- 日志输出级别 --&gt;
+</span></span><span class="line"><span class="cl">	&lt;root level=&#34;INFO&#34;&gt;
+</span></span><span class="line"><span class="cl">		&lt;appender-ref ref=&#34;FILE&#34; /&gt;
+</span></span><span class="line"><span class="cl">		&lt;appender-ref ref=&#34;STDOUT&#34; /&gt;
+</span></span><span class="line"><span class="cl">	&lt;/root&gt;
+</span></span><span class="line"><span class="cl">&lt;/configuration&gt;  
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="配置文件的加载顺序">配置文件的加载顺序</h2>
+<p>application.properties或者application.yml文件作为Spring Boot的默认配置文件</p>
+<ul>
+<li>file：.config/</li>
+<li>file: ./</li>
+<li>classpath: /config/</li>
+<li>classpath: /
+以上是按照<code>优先级从高到低</code>的顺序，所有位置的文件都会被加载，高优先级配置内容会覆盖低优先级配置内容
+可以通过配置spring.config.location来改变默认配置</li>
+</ul>
+<h2 id="application基本配置">application基本配置</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">#log
+</span></span><span class="line"><span class="cl">logging.config=classpath:logback-spring.xml
+</span></span><span class="line"><span class="cl">logging.path=D:/log
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="官网日志配置详情">官网日志配置详情</h2>
+<p><a href="https://docs.spring.io/spring-boot/docs/2.1.6.RELEASE/reference/html/boot-features-logging.html" target="_blank" rel="noopener noreffer ">https://docs.spring.io/spring-boot/docs/2.1.6.RELEASE/reference/html/boot-features-logging.html</a></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-08-21</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/spring-boot-logback/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://zhangxiaofeng05.github.io/spring-boot-logback/" data-title="Spring Boot打印日志" data-hashtags="SLF4J,Spring Boot"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://zhangxiaofeng05.github.io/spring-boot-logback/" data-hashtag="SLF4J"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://zhangxiaofeng05.github.io/spring-boot-logback/" data-title="Spring Boot打印日志"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://zhangxiaofeng05.github.io/spring-boot-logback/" data-title="Spring Boot打印日志"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://zhangxiaofeng05.github.io/spring-boot-logback/" data-title="Spring Boot打印日志"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/slf4j/">SLF4J</a>,&nbsp;<a href="/tags/spring-boot/">Spring Boot</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/spring-boot-mail/" class="prev" rel="prev" title="Spring Boot发送邮件"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Spring Boot发送邮件</a>
+            <a href="/java-thread/" class="next" rel="next" title="Java中的线程">Java中的线程<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.101.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2017 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">zhangxiaofeng05</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/mhchem.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":50,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

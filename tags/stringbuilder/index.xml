@@ -1,20 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>StringBuilder on Welcome</title>
-    <link>https://lionng.github.io/tags/stringbuilder/</link>
-    <description>Recent content in StringBuilder on Welcome</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Wed, 24 Jul 2019 15:38:18 +0800</lastBuildDate><atom:link href="https://lionng.github.io/tags/stringbuilder/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>String、StringBuffer、StringBuilder的区别</title>
-      <link>https://lionng.github.io/post/string-stringbuffer-stringbuilder/</link>
-      <pubDate>Wed, 24 Jul 2019 15:38:18 +0800</pubDate>
-      
-      <guid>https://lionng.github.io/post/string-stringbuffer-stringbuilder/</guid>
-      <description>长度是否可变 String 是被 final 修饰的，他的长度是不可变的，就算调用 String 的concat 方法，那也是把字符串拼接起来并重新创建一个对象，把拼接后的 String 的值赋给</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>StringBuilder - Tag - 风吹过的烟花</title>
+        <link>https://zhangxiaofeng05.github.io/tags/stringbuilder/</link>
+        <description>StringBuilder - Tag - 风吹过的烟花</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
+            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Wed, 24 Jul 2019 15:38:18 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/stringbuilder/" rel="self" type="application/rss+xml" /><item>
+    <title>String、StringBuffer、StringBuilder的区别</title>
+    <link>https://zhangxiaofeng05.github.io/string-stringbuffer-stringbuilder/</link>
+    <pubDate>Wed, 24 Jul 2019 15:38:18 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://zhangxiaofeng05.github.io/string-stringbuffer-stringbuilder/</guid>
+    <description><![CDATA[长度是否可变 String 是被 final 修饰的，他的长度是不可变的，就算调用 String 的concat 方法，那也是把字符串拼接起来并重新创建一个对象，把拼接后的 String 的值赋给]]></description>
+</item>
+</channel>
 </rss>

@@ -1,20 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>JPA on Welcome</title>
-    <link>https://lionng.github.io/tags/jpa/</link>
-    <description>Recent content in JPA on Welcome</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Wed, 17 Jul 2019 23:09:21 +0800</lastBuildDate><atom:link href="https://lionng.github.io/tags/jpa/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>悲观锁和乐观锁</title>
-      <link>https://lionng.github.io/post/pessimistic-lock-and-optimistic-lock/</link>
-      <pubDate>Wed, 17 Jul 2019 23:09:21 +0800</pubDate>
-      
-      <guid>https://lionng.github.io/post/pessimistic-lock-and-optimistic-lock/</guid>
-      <description>悲观锁和乐观锁：处理的是同一张表的同一行记录 悲观锁 如果使用了(加了一个行锁)，如果事务没有被释放，就会造成其他事务处于等待。 使用数据库提供的</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>JPA - Tag - 风吹过的烟花</title>
+        <link>https://zhangxiaofeng05.github.io/tags/jpa/</link>
+        <description>JPA - Tag - 风吹过的烟花</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
+            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Wed, 17 Jul 2019 23:09:21 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/jpa/" rel="self" type="application/rss+xml" /><item>
+    <title>悲观锁和乐观锁</title>
+    <link>https://zhangxiaofeng05.github.io/pessimistic-lock-and-optimistic-lock/</link>
+    <pubDate>Wed, 17 Jul 2019 23:09:21 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://zhangxiaofeng05.github.io/pessimistic-lock-and-optimistic-lock/</guid>
+    <description><![CDATA[悲观锁和乐观锁：处理的是同一张表的同一行记录 悲观锁 如果使用了(加了一个行锁)，如果事务没有被释放，就会造成其他事务处于等待。 使用数据库提供的]]></description>
+</item>
+</channel>
 </rss>

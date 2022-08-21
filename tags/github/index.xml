@@ -1,20 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>github on Welcome</title>
-    <link>https://lionng.github.io/tags/github/</link>
-    <description>Recent content in github on Welcome</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 21 Oct 2019 23:37:48 +0800</lastBuildDate><atom:link href="https://lionng.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>hugo搭建博客，部署到GitHub</title>
-      <link>https://lionng.github.io/post/hugo_blog/</link>
-      <pubDate>Mon, 21 Oct 2019 23:37:48 +0800</pubDate>
-      
-      <guid>https://lionng.github.io/post/hugo_blog/</guid>
-      <description>hugo站点 hugo官网：https://gohugo.io/ 安装和使用，先参考官网 安装：使用命令或者从GitHub下载 https://github.com/gohugoio/hugo 检查安装：$ hugo version 生</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>github - Tag - 风吹过的烟花</title>
+        <link>https://zhangxiaofeng05.github.io/tags/github/</link>
+        <description>github - Tag - 风吹过的烟花</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
+            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Mon, 21 Oct 2019 23:37:48 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/github/" rel="self" type="application/rss+xml" /><item>
+    <title>hugo搭建博客，部署到GitHub</title>
+    <link>https://zhangxiaofeng05.github.io/hugo_blog/</link>
+    <pubDate>Mon, 21 Oct 2019 23:37:48 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://zhangxiaofeng05.github.io/hugo_blog/</guid>
+    <description><![CDATA[hugo站点 hugo官网：https://gohugo.io/ 安装和使用，先参考官网 安装：使用命令或者从GitHub下载 https://github.com/gohugoio/hugo 检查安装：$ hugo version 生]]></description>
+</item>
+</channel>
 </rss>

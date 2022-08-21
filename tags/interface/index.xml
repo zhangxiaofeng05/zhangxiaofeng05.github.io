@@ -1,29 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>interface on Welcome</title>
-    <link>https://lionng.github.io/tags/interface/</link>
-    <description>Recent content in interface on Welcome</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 17 Aug 2019 23:20:11 +0800</lastBuildDate><atom:link href="https://lionng.github.io/tags/interface/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>java接口回调</title>
-      <link>https://lionng.github.io/post/interface-callback/</link>
-      <pubDate>Sat, 17 Aug 2019 23:20:11 +0800</pubDate>
-      
-      <guid>https://lionng.github.io/post/interface-callback/</guid>
-      <description>回调一般用于层间协作，上层将本层函数安装在下层，这个函数就是回调，而下层在一定条件下触发回调。例如作为一个驱动，是一个底层，他在收到一个数据</description>
-    </item>
-    
-    <item>
-      <title>什么是面向接口编程</title>
-      <link>https://lionng.github.io/post/interface-oriented-programming/</link>
-      <pubDate>Mon, 15 Jul 2019 21:29:10 +0800</pubDate>
-      
-      <guid>https://lionng.github.io/post/interface-oriented-programming/</guid>
-      <description>面向接口编程 要正确地使用Java语言进行面向对象的编程，从而提高程序的复用性，增加程序的可维护性、可扩展性，就必须是面向接口的编程。面向接口</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>interface - Tag - 风吹过的烟花</title>
+        <link>https://zhangxiaofeng05.github.io/tags/interface/</link>
+        <description>interface - Tag - 风吹过的烟花</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
+            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Sat, 17 Aug 2019 23:20:11 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/interface/" rel="self" type="application/rss+xml" /><item>
+    <title>java接口回调</title>
+    <link>https://zhangxiaofeng05.github.io/interface-callback/</link>
+    <pubDate>Sat, 17 Aug 2019 23:20:11 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://zhangxiaofeng05.github.io/interface-callback/</guid>
+    <description><![CDATA[回调一般用于层间协作，上层将本层函数安装在下层，这个函数就是回调，而下层在一定条件下触发回调。例如作为一个驱动，是一个底层，他在收到一个数据]]></description>
+</item>
+<item>
+    <title>什么是面向接口编程</title>
+    <link>https://zhangxiaofeng05.github.io/interface-oriented-programming/</link>
+    <pubDate>Mon, 15 Jul 2019 21:29:10 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://zhangxiaofeng05.github.io/interface-oriented-programming/</guid>
+    <description><![CDATA[面向接口编程 要正确地使用Java语言进行面向对象的编程，从而提高程序的复用性，增加程序的可维护性、可扩展性，就必须是面向接口的编程。面向接口]]></description>
+</item>
+</channel>
 </rss>

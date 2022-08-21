@@ -1,29 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Spring Boot on Welcome</title>
-    <link>https://lionng.github.io/tags/spring-boot/</link>
-    <description>Recent content in Spring Boot on Welcome</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 20 Jul 2019 14:32:00 +0800</lastBuildDate><atom:link href="https://lionng.github.io/tags/spring-boot/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Spring Boot打印日志</title>
-      <link>https://lionng.github.io/post/spring-boot-logback/</link>
-      <pubDate>Sat, 20 Jul 2019 14:32:00 +0800</pubDate>
-      
-      <guid>https://lionng.github.io/post/spring-boot-logback/</guid>
-      <description>本文环境 jdk 1.8 maven 3.6.1 Spring Boot 2.1.6 SLF4J 为什么要介绍SLF4J？ SLF4J是一个接口，log4j和logback是它的实现。 SLF4J官网：https://</description>
-    </item>
-    
-    <item>
-      <title>Spring Boot发送邮件</title>
-      <link>https://lionng.github.io/post/spring-boot-mail/</link>
-      <pubDate>Fri, 19 Jul 2019 14:59:20 +0800</pubDate>
-      
-      <guid>https://lionng.github.io/post/spring-boot-mail/</guid>
-      <description>本文环境 jdk 1.8 maven 3.6.1 Spring Boot 2.1.6 引入依赖 pom.xml 1 2 3 4 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;spring-boot-starter-mail&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt; 在application.properties中添加邮件配置(以QQ邮箱为例) 1 2 3 4 5 6 7</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Spring Boot - Tag - 风吹过的烟花</title>
+        <link>https://zhangxiaofeng05.github.io/tags/spring-boot/</link>
+        <description>Spring Boot - Tag - 风吹过的烟花</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
+            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Sat, 20 Jul 2019 14:32:00 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/spring-boot/" rel="self" type="application/rss+xml" /><item>
+    <title>Spring Boot打印日志</title>
+    <link>https://zhangxiaofeng05.github.io/spring-boot-logback/</link>
+    <pubDate>Sat, 20 Jul 2019 14:32:00 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://zhangxiaofeng05.github.io/spring-boot-logback/</guid>
+    <description><![CDATA[本文环境 jdk 1.8 maven 3.6.1 Spring Boot 2.1.6 SLF4J 为什么要介绍SLF4J？ SLF4J是一个接口，log4j和logback是它的实现。 SLF4J官网：https://]]></description>
+</item>
+<item>
+    <title>Spring Boot发送邮件</title>
+    <link>https://zhangxiaofeng05.github.io/spring-boot-mail/</link>
+    <pubDate>Fri, 19 Jul 2019 14:59:20 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://zhangxiaofeng05.github.io/spring-boot-mail/</guid>
+    <description><![CDATA[本文环境 jdk 1.8 maven 3.6.1 Spring Boot 2.1.6 引入依赖 pom.xml 1 2 3 4 &lt;dependency&gt; &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt; &lt;artifactId&gt;spring-boot-starter-mail&lt;/artifactId&gt; &lt;/dependency&gt; 在application.properties中添加邮件配置(以QQ邮箱为例) 1 2 3 4 5 6 7]]></description>
+</item>
+</channel>
 </rss>

@@ -1,20 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>SimpleDateFormat on Welcome</title>
-    <link>https://lionng.github.io/tags/simpledateformat/</link>
-    <description>Recent content in SimpleDateFormat on Welcome</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Wed, 24 Jul 2019 17:14:47 +0800</lastBuildDate><atom:link href="https://lionng.github.io/tags/simpledateformat/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Java中Date、SimpleDateFormat、Calendar</title>
-      <link>https://lionng.github.io/post/java-date-calender/</link>
-      <pubDate>Wed, 24 Jul 2019 17:14:47 +0800</pubDate>
-      
-      <guid>https://lionng.github.io/post/java-date-calender/</guid>
-      <description>jdk1.8 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 import java.text.ParseException; import java.text.SimpleDateFormat; import java.util.Calendar; import java.util.Date; /** * Java 语言的Date(日期)，Cale</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>SimpleDateFormat - Tag - 风吹过的烟花</title>
+        <link>https://zhangxiaofeng05.github.io/tags/simpledateformat/</link>
+        <description>SimpleDateFormat - Tag - 风吹过的烟花</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
+            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Wed, 24 Jul 2019 17:14:47 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/simpledateformat/" rel="self" type="application/rss+xml" /><item>
+    <title>Java中Date、SimpleDateFormat、Calendar</title>
+    <link>https://zhangxiaofeng05.github.io/java-date-calender/</link>
+    <pubDate>Wed, 24 Jul 2019 17:14:47 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://zhangxiaofeng05.github.io/java-date-calender/</guid>
+    <description><![CDATA[jdk1.8 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 import java.text.ParseException; import java.text.SimpleDateFormat; import java.util.Calendar; import java.util.Date; /** * Java 语言的Date(日期)，Cale]]></description>
+</item>
+</channel>
 </rss>

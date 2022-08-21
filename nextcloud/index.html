@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Nextcloud云盘 - 风吹过的烟花</title><meta name="Description" content="zhangxiaofeng05&#39;s hugo blog"><meta property="og:title" content="Nextcloud云盘" />
+<meta property="og:description" content="维基百科 Nextcloud Nextcloud是一套用于创建网络硬盘的客户端－服务器软件。其功能与Dropbox相近，但Nextcloud是自由及开放源代码软" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zhangxiaofeng05.github.io/nextcloud/" /><meta property="og:image" content="https://zhangxiaofeng05.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-04-04T18:06:00+08:00" />
+<meta property="article:modified_time" content="2022-08-21T23:44:18+08:00" /><meta property="og:site_name" content="make yourself" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://zhangxiaofeng05.github.io/logo.png"/>
+
+<meta name="twitter:title" content="Nextcloud云盘"/>
+<meta name="twitter:description" content="维基百科 Nextcloud Nextcloud是一套用于创建网络硬盘的客户端－服务器软件。其功能与Dropbox相近，但Nextcloud是自由及开放源代码软"/>
+<meta name="application-name" content="风吹过的烟花">
+<meta name="apple-mobile-web-app-title" content="风吹过的烟花"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://zhangxiaofeng05.github.io/nextcloud/" /><link rel="prev" href="https://zhangxiaofeng05.github.io/deepin-install-python3.6/" /><link rel="next" href="https://zhangxiaofeng05.github.io/git-proxy/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Nextcloud云盘",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/zhangxiaofeng05.github.io\/nextcloud\/"
+        },"genre": "posts","keywords": "nextcloud","wordcount":  1843 ,
+        "url": "https:\/\/zhangxiaofeng05.github.io\/nextcloud\/","datePublished": "2020-04-04T18:06:00+08:00","dateModified": "2022-08-21T23:44:18+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "zhangxiaofeng05"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="风吹过的烟花"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/logo.png"
+        data-srcset="/logo.png, /logo.png 1.5x, /logo.png 2x"
+        data-sizes="auto"
+        alt="/logo.png"
+        title="/logo.png" /></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/firefly/"> 萤火虫 </a><a class="menu-item" href="/about/"> 关于 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="风吹过的烟花"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/logo.png"
+        data-srcset="/logo.png, /logo.png 1.5x, /logo.png 2x"
+        data-sizes="auto"
+        alt="/logo.png"
+        title="/logo.png" /></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/firefly/" title="">萤火虫</a><a class="menu-item" href="/about/" title="">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Nextcloud云盘</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>zhangxiaofeng05</a></span>&nbsp;<span class="post-category">included in <a href="/categories/%E5%B7%A5%E5%85%B7/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>工具</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2020-04-04">2020-04-04</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1843 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#维基百科">维基百科</a>
+      <ul>
+        <li><a href="#nextcloud">Nextcloud</a></li>
+        <li><a href="#特性">特性</a></li>
+        <li><a href="#架构">架构</a></li>
+      </ul>
+    </li>
+    <li><a href="#centos7安装">centos7安装</a>
+      <ul>
+        <li><a href="#环境">环境</a></li>
+        <li><a href="#安装httpdapachephpphp-fpmmariadb">安装httpd(apache),php,php-fpm,MariaDB</a></li>
+        <li><a href="#下载nextcloud">下载nextcloud</a></li>
+        <li><a href="#配置httpd">配置httpd</a></li>
+        <li><a href="#离线安装nextcloud应用">离线安装Nextcloud应用</a></li>
+      </ul>
+    </li>
+    <li><a href="#客户端">客户端</a>
+      <ul>
+        <li><a href="#linux资源管理器挂载nextcloud">linux资源管理器挂载nextcloud</a></li>
+        <li><a href="#win10挂载nextcloud">win10挂载nextcloud</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="维基百科">维基百科</h2>
+<h3 id="nextcloud">Nextcloud</h3>
+<p>Nextcloud是一套用于创建网络硬盘的客户端－服务器软件。其功能与Dropbox相近，但Nextcloud是自由及开放源代码软件，每个人都可以在私人服务器上安装并运行它。</p>
+<p>与Dropbox等专有服务相比，Nextcloud的开放架构让用户可以利用应用程序的方式在服务器上新增额外的功能，并让用户可以完全掌控自己的数据。</p>
+<p>ownCloud原先的开发者弗兰克·卡利切创建了ownCloud的分支——Nextcloud，继而让卡利切与其他原先的ownCloud团队成员持续积极地开发。</p>
+<h3 id="特性">特性</h3>
+<p>Nextcloud的文件存储在一般的目录结构中，并可透过WebDAV访问。用户的文件会在传输时加密。Nextcloud可与在Windows（Windows XP、Vista、7与8）、macOS（10.6或更新版本）或是多种Linux散布版上运行的客户端同步。</p>
+<p>Nextcloud用户可以管理日历（使用CalDAV）、联系人（CardDAV）、计划工作与流媒体（Ampache）。</p>
+<p>从管理的角度来看，Nextcloud允许用户与组群管理（透过OpenID或LDAP）。透过用户间与／或组群间的读／写权限调整达到分享文件的目的。另外，Nextcloud的用户可以创建公开的URL来分享文件。也可以记录与文件相关的动作，以及利用文件访问规则来禁止对特定文件的访问。</p>
+<p>此外，用户也可以透过浏览器使用Nextcloud的文本编辑器、书签服务、缩略网址服务、相册、RSS阅读器与文件查看器。因为有良好的扩展性，Nextcloud可以透过鼠标点一下即可完成安装的应用程序强化其功能，并可连线至Dropbox、Google云端硬盘与Amazon S3。</p>
+<h3 id="架构">架构</h3>
+<p>为了让个人电脑与Nextcloud服务器同步，Windows、macOS、FreeBSD或Linux上都有客户端可以使用。行动客户端则在iOS与Android设备上提供。也可以使用浏览器访问、管理与上传任何文件与数据。任何在设置好同步的文件系统上的变更都会推送到所有链接到该用户账号的电脑与移动设备上。</p>
+<p>Nextcloud服务器是以PHP与JavaScript脚本语言撰写。对于远程访问，它采用的是SabreDAV，其为一开放源代码的WebDAV服务器。Nextcloud可与多种数据库管理系统一同运作，包含了SQLite、MariaDB、MySQL、Oracle数据库与PostgreSQL。</p>
+<h2 id="centos7安装">centos7安装</h2>
+<p>官方安装指南: <a href="https://docs.nextcloud.com/server/latest/admin_manual/installation/source_installation.html" target="_blank" rel="noopener noreffer ">https://docs.nextcloud.com/server/latest/admin_manual/installation/source_installation.html</a></p>
+<h3 id="环境">环境</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">LSB Version:	:core-4.1-amd64:core-4.1-noarch
+</span></span><span class="line"><span class="cl">Distributor ID:	CentOS
+</span></span><span class="line"><span class="cl">Description:	CentOS Linux release 7.7.1908 (Core)
+</span></span><span class="line"><span class="cl">Release:	7.7.1908
+</span></span><span class="line"><span class="cl">Codename:	Core
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">PHP 7.2.27 (cli) (built: Jan 26 2020 15:49:49) ( NTS )
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Server version: 5.5.64-MariaDB MariaDB Server
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Nextcloud 17.0.5
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Nextcloud官网: <a href="https://nextcloud.com/" target="_blank" rel="noopener noreffer ">https://nextcloud.com/</a></p>
+<h3 id="安装httpdapachephpphp-fpmmariadb">安装httpd(apache),php,php-fpm,MariaDB</h3>
+<p>自行百度,谷歌.如果服务器上还有nginx,建议apache更改默认端口<br>
+/etc/httpd/conf/httpd.conf(我的改为7000)<br>
+php-fpm默认端口9000<br>
+ps:安装php-fpm需要注意版本是否支持要安装nextcloud版本</p>
+<h3 id="下载nextcloud">下载nextcloud</h3>
+<p><a href="https://nextcloud.com/changelog/" target="_blank" rel="noopener noreffer ">https://nextcloud.com/changelog/</a><br>
+下载nextcloud-17.0.5.zip,解压至/var/www<br>
+/var/www/nextcloud是根目录,有index.php,在此目录下新建目录data</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd /var/www/nextcloud/
+</span></span><span class="line"><span class="cl">mkdir data
+</span></span><span class="line"><span class="cl">cd /var/www
+</span></span><span class="line"><span class="cl">chmod -R 755 nextcloud/
+</span></span><span class="line"><span class="cl">chown -R apache:apache nextcloud/
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="配置httpd">配置httpd</h3>
+<p><code>vim /etc/httpd/conf.d/nextcloud.conf</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Alias /nextcloud &#34;/var/www/nextcloud/&#34;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;Directory /var/www/nextcloud/&gt;
+</span></span><span class="line"><span class="cl">  Require all granted
+</span></span><span class="line"><span class="cl">  AllowOverride All
+</span></span><span class="line"><span class="cl">  Options FollowSymLinks MultiViews
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  &lt;IfModule mod_dav.c&gt;
+</span></span><span class="line"><span class="cl">    Dav off
+</span></span><span class="line"><span class="cl">  &lt;/IfModule&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;/Directory&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>重启httpd,php-fpm,访问,http://服务器地址:7000/nextcloud<br>
+安装完成,自动进入登录界面</p>
+<h3 id="离线安装nextcloud应用">离线安装Nextcloud应用</h3>
+<p>参考文章: <a href="https://www.himstudy.net/%E6%89%8B%E5%8A%A8%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85nextcloud%E5%BA%94%E7%94%A8/" target="_blank" rel="noopener noreffer ">https://www.himstudy.net/%E6%89%8B%E5%8A%A8%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85nextcloud%E5%BA%94%E7%94%A8/</a><br>
+应用官网: <a href="https://apps.nextcloud.com/" target="_blank" rel="noopener noreffer ">https://apps.nextcloud.com/</a><br>
+主要操作:将对应版本的应用下载,解压到nextcloud根目录下的apps下边,然后在设置中启用.</p>
+<h2 id="客户端">客户端</h2>
+<p>官网有对应版本的客户端,下载使用即可.<br>
+多平台挂载WebDAV方法的文章： <a href="https://www.leeyiding.com/archives/47/" target="_blank" rel="noopener noreffer ">https://www.leeyiding.com/archives/47/</a></p>
+<h3 id="linux资源管理器挂载nextcloud">linux资源管理器挂载nextcloud</h3>
+<p>nextcloud支持WebDAV<br>
+官网指南: <a href="https://docs.nextcloud.com/server/17/user_manual/files/access_webdav.html" target="_blank" rel="noopener noreffer ">https://docs.nextcloud.com/server/17/user_manual/files/access_webdav.html</a><br>
+本人用的是linux(deepin)<br>
+需要的操作:安装Nautilus,davfs2<br>
+<code>dav://39.107.227.122:7000/nextcloud/remote.php/dav/files/admin/</code><br>
+在nextcloud中可以获取地址,仔细看Nautilus连接到服务器使用的前缀换成对的前缀,输入nextcloud的用户名和密码就ok了.操作完成同步网盘,误删文件可以在回收站中恢复.<br>
+参考： <a href="https://www.moerats.com/archives/317/" target="_blank" rel="noopener noreffer ">https://www.moerats.com/archives/317/</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo apt-get install davfs2
+</span></span><span class="line"><span class="cl">sudo mkdir /mnt/webdav
+</span></span><span class="line"><span class="cl">sudo mount -t davfs http://39.107.227.122:7000/nextcloud/remote.php/webdav /mnt/webdav
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="win10挂载nextcloud">win10挂载nextcloud</h3>
+<p>依旧使用WebDAV<br>
+需要安装RaiDrive,官网： <a href="https://www.raidrive.com/" target="_blank" rel="noopener noreffer ">https://www.raidrive.com/</a><br>
+配置网页地址，用户名，密码就可以挂载到本地盘符了。<br>
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/mypng/10.png"
+        data-srcset="/mypng/10.png, /mypng/10.png 1.5x, /mypng/10.png 2x"
+        data-sizes="auto"
+        alt="/mypng/10.png"
+        title="/mypng/10.png" /></p>
+<p>参考文章: <a href="https://www.wangzhengzhen.com/?p=1003" target="_blank" rel="noopener noreffer ">https://www.wangzhengzhen.com/?p=1003</a></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-08-21</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/nextcloud/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://zhangxiaofeng05.github.io/nextcloud/" data-title="Nextcloud云盘" data-hashtags="nextcloud"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://zhangxiaofeng05.github.io/nextcloud/" data-hashtag="nextcloud"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://zhangxiaofeng05.github.io/nextcloud/" data-title="Nextcloud云盘"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://zhangxiaofeng05.github.io/nextcloud/" data-title="Nextcloud云盘"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://zhangxiaofeng05.github.io/nextcloud/" data-title="Nextcloud云盘"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/nextcloud/">nextcloud</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/deepin-install-python3.6/" class="prev" rel="prev" title="deepin编译安装Python3.6"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>deepin编译安装Python3.6</a>
+            <a href="/git-proxy/" class="next" rel="next" title="配置git代理">配置git代理<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.101.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2017 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">zhangxiaofeng05</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/mhchem.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":50,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
