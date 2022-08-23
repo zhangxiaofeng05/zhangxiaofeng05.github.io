@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>lrzsz - Tag - 风吹过的烟花</title>
+        <title>lrzsz - 标签 - 风吹过的烟花</title>
         <link>https://zhangxiaofeng05.github.io/tags/lrzsz/</link>
-        <description>lrzsz - Tag - 风吹过的烟花</description>
+        <description>lrzsz - 标签 - 风吹过的烟花</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
             <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Tue, 07 Jan 2020 00:05:37 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/lrzsz/" rel="self" type="application/rss+xml" /><item>
     <title>Lrzsz用于小文件的上传下载</title>
     <link>https://zhangxiaofeng05.github.io/lrzsz/</link>
     <pubDate>Tue, 07 Jan 2020 00:05:37 &#43;0800</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://zhangxiaofeng05.github.io/lrzsz/</guid>
     <description><![CDATA[百度百科 lrzsz是一款在linux里可代替ftp上传和下载的程序。 使用方法 centos服务器，可直接yum -y install lrzsz 程序会自动安装好，然后如你]]></description>
 </item>

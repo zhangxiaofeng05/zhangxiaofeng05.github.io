@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>equals - Tag - 风吹过的烟花</title>
+        <title>equals - 标签 - 风吹过的烟花</title>
         <link>https://zhangxiaofeng05.github.io/tags/equals/</link>
-        <description>equals - Tag - 风吹过的烟花</description>
+        <description>equals - 标签 - 风吹过的烟花</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
             <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Sun, 28 Jul 2019 14:06:50 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/equals/" rel="self" type="application/rss+xml" /><item>
     <title>==和equals和hashCode</title>
     <link>https://zhangxiaofeng05.github.io/equals-hashcode/</link>
     <pubDate>Sun, 28 Jul 2019 14:06:50 &#43;0800</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://zhangxiaofeng05.github.io/equals-hashcode/</guid>
     <description><![CDATA[==和equals == 基本类型：比较的是值是否相同； 引用类型：比较的是内存地址是否相同(是否是同一对象)； equals Object类中的equals方法]]></description>
 </item>

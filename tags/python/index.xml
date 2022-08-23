@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>python - Tag - 风吹过的烟花</title>
+        <title>python - 标签 - 风吹过的烟花</title>
         <link>https://zhangxiaofeng05.github.io/tags/python/</link>
-        <description>python - Tag - 风吹过的烟花</description>
+        <description>python - 标签 - 风吹过的烟花</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
             <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Sat, 18 Jan 2020 01:16:31 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/python/" rel="self" type="application/rss+xml" /><item>
     <title>deepin编译安装Python3.6</title>
     <link>https://zhangxiaofeng05.github.io/deepin-install-python3.6/</link>
     <pubDate>Sat, 18 Jan 2020 01:16:31 &#43;0800</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://zhangxiaofeng05.github.io/deepin-install-python3.6/</guid>
     <description><![CDATA[官网下载源码 官网：https://www.python.org/downloads/source/ 1 2 3 4 5 6 7 8 9 cd /opt/python/ sudo wget https://www.python.org/ftp/python/3.6.10/Python-3.6.10.tar.xz sudo xz -d Python-3.6.10.tar.xz sudo tar xvf]]></description>
 </item>
@@ -16,7 +16,7 @@
     <title>SimpleHTTPServerWithUpload</title>
     <link>https://zhangxiaofeng05.github.io/simplehttpserverwithupload/</link>
     <pubDate>Sat, 04 Jan 2020 19:47:00 &#43;0800</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://zhangxiaofeng05.github.io/simplehttpserverwithupload/</guid>
     <description><![CDATA[简介 SimpleHTTPServerWithUpload.py是简单的上传下载的脚本 python2 github地址 https://gist.github.com/UniIsland/3346170 使用方法 方法一 1 2 python SimpleHTTPServerWithUpload.py 8050 8050为端]]></description>
 </item>

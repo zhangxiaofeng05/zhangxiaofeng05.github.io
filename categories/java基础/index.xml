@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>JAVA基础 - Category - 风吹过的烟花</title>
+        <title>JAVA基础 - 分类 - 风吹过的烟花</title>
         <link>https://zhangxiaofeng05.github.io/categories/java%E5%9F%BA%E7%A1%80/</link>
-        <description>JAVA基础 - Category - 风吹过的烟花</description>
+        <description>JAVA基础 - 分类 - 风吹过的烟花</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
             <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Sat, 17 Aug 2019 23:20:11 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/categories/java%E5%9F%BA%E7%A1%80/" rel="self" type="application/rss+xml" /><item>
     <title>java接口回调</title>
     <link>https://zhangxiaofeng05.github.io/interface-callback/</link>
     <pubDate>Sat, 17 Aug 2019 23:20:11 &#43;0800</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://zhangxiaofeng05.github.io/interface-callback/</guid>
     <description><![CDATA[回调一般用于层间协作，上层将本层函数安装在下层，这个函数就是回调，而下层在一定条件下触发回调。例如作为一个驱动，是一个底层，他在收到一个数据]]></description>
 </item>
@@ -16,7 +16,7 @@
     <title>TCP、UDP简单聊天</title>
     <link>https://zhangxiaofeng05.github.io/java-simple-chat/</link>
     <pubDate>Tue, 30 Jul 2019 16:10:55 &#43;0800</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://zhangxiaofeng05.github.io/java-simple-chat/</guid>
     <description><![CDATA[TCP 客户端套接字：Socket 服务端套接字：ServerSocket TCP（传输控制协议）一种基于连接的通信协议。可靠传输 Server 1 2 3 4 5 6 7 8 9]]></description>
 </item>
@@ -24,7 +24,7 @@
     <title>反射</title>
     <link>https://zhangxiaofeng05.github.io/java-relfect/</link>
     <pubDate>Sun, 28 Jul 2019 21:36:31 &#43;0800</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://zhangxiaofeng05.github.io/java-relfect/</guid>
     <description><![CDATA[java.lang.Class 创建一个类，通过编译(javac.exe),生成对应的.class文件。之后使用java.exe加载(JVM的类加载器完成)， 此.clas]]></description>
 </item>
@@ -32,7 +32,7 @@
     <title>==和equals和hashCode</title>
     <link>https://zhangxiaofeng05.github.io/equals-hashcode/</link>
     <pubDate>Sun, 28 Jul 2019 14:06:50 &#43;0800</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://zhangxiaofeng05.github.io/equals-hashcode/</guid>
     <description><![CDATA[==和equals == 基本类型：比较的是值是否相同； 引用类型：比较的是内存地址是否相同(是否是同一对象)； equals Object类中的equals方法]]></description>
 </item>
@@ -40,7 +40,7 @@
     <title>java IO流</title>
     <link>https://zhangxiaofeng05.github.io/java-io/</link>
     <pubDate>Thu, 25 Jul 2019 15:38:45 &#43;0800</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://zhangxiaofeng05.github.io/java-io/</guid>
     <description><![CDATA[从控制台输入输出 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 import java.util.Scanner; public class IoTest { public static void main(String args[]){ Scanner sc = new Scanner(System.in); int n = sc.nextInt(); System.out.println(n); String s = sc.next(); System.out.println(s); String line = sc.nextLine(); System.out.printl]]></description>
 </item>
@@ -48,7 +48,7 @@
     <title>java异常</title>
     <link>https://zhangxiaofeng05.github.io/java-exception/</link>
     <pubDate>Thu, 25 Jul 2019 14:34:21 &#43;0800</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://zhangxiaofeng05.github.io/java-exception/</guid>
     <description><![CDATA[异常类型 检查性异常 最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要打开一个不存在文件时，一个异常就发生了，这些异]]></description>
 </item>
@@ -56,7 +56,7 @@
     <title>Java中Date、SimpleDateFormat、Calendar</title>
     <link>https://zhangxiaofeng05.github.io/java-date-calender/</link>
     <pubDate>Wed, 24 Jul 2019 17:14:47 &#43;0800</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://zhangxiaofeng05.github.io/java-date-calender/</guid>
     <description><![CDATA[jdk1.8 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 import java.text.ParseException; import java.text.SimpleDateFormat; import java.util.Calendar; import java.util.Date; /** * Java 语言的Date(日期)，Cale]]></description>
 </item>
@@ -64,7 +64,7 @@
     <title>String、StringBuffer、StringBuilder的区别</title>
     <link>https://zhangxiaofeng05.github.io/string-stringbuffer-stringbuilder/</link>
     <pubDate>Wed, 24 Jul 2019 15:38:18 &#43;0800</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://zhangxiaofeng05.github.io/string-stringbuffer-stringbuilder/</guid>
     <description><![CDATA[长度是否可变 String 是被 final 修饰的，他的长度是不可变的，就算调用 String 的concat 方法，那也是把字符串拼接起来并重新创建一个对象，把拼接后的 String 的值赋给]]></description>
 </item>
@@ -72,7 +72,7 @@
     <title>Java中的线程</title>
     <link>https://zhangxiaofeng05.github.io/java-thread/</link>
     <pubDate>Wed, 24 Jul 2019 11:40:48 &#43;0800</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://zhangxiaofeng05.github.io/java-thread/</guid>
     <description><![CDATA[进程和线程概念 进程(Process)是计算机中的程序关于某数据集合上的一次运行活动，是系统进行资源分配和调度的基本单位，是操作系统结构的基础]]></description>
 </item>
@@ -80,7 +80,7 @@
     <title>Object类</title>
     <link>https://zhangxiaofeng05.github.io/object/</link>
     <pubDate>Thu, 18 Jul 2019 13:42:14 &#43;0800</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://zhangxiaofeng05.github.io/object/</guid>
     <description><![CDATA[特点 是Java中唯一一个没有父类的类 java中所有的类不是object类的直接子类，就是其间接子类 定义在object类中的所有方法，在任何类]]></description>
 </item>

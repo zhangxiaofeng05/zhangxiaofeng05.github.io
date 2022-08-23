@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>nginx - Tag - 风吹过的烟花</title>
+        <title>nginx - 标签 - 风吹过的烟花</title>
         <link>https://zhangxiaofeng05.github.io/tags/nginx/</link>
-        <description>nginx - Tag - 风吹过的烟花</description>
+        <description>nginx - 标签 - 风吹过的烟花</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
             <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Sun, 05 Jan 2020 21:25:56 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/nginx/" rel="self" type="application/rss+xml" /><item>
     <title>linux安装并配置nginx</title>
     <link>https://zhangxiaofeng05.github.io/linux-nginx/</link>
     <pubDate>Sun, 05 Jan 2020 21:25:56 &#43;0800</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://zhangxiaofeng05.github.io/linux-nginx/</guid>
     <description><![CDATA[维基百科 Nginx是异步框架的网页服务器，也可以用作反向代理、负载平衡器和HTTP缓存。 安装 官网：https://www.nginx.com]]></description>
 </item>

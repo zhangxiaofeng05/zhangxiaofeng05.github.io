@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>工具 - Category - 风吹过的烟花</title>
+        <title>工具 - 分类 - 风吹过的烟花</title>
         <link>https://zhangxiaofeng05.github.io/categories/%E5%B7%A5%E5%85%B7/</link>
-        <description>工具 - Category - 风吹过的烟花</description>
+        <description>工具 - 分类 - 风吹过的烟花</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
             <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Sat, 04 Apr 2020 18:06:00 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/categories/%E5%B7%A5%E5%85%B7/" rel="self" type="application/rss+xml" /><item>
     <title>Nextcloud云盘</title>
     <link>https://zhangxiaofeng05.github.io/nextcloud/</link>
     <pubDate>Sat, 04 Apr 2020 18:06:00 &#43;0800</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://zhangxiaofeng05.github.io/nextcloud/</guid>
     <description><![CDATA[维基百科 Nextcloud Nextcloud是一套用于创建网络硬盘的客户端－服务器软件。其功能与Dropbox相近，但Nextcloud是自由及开放源代码软]]></description>
 </item>
@@ -16,7 +16,7 @@
     <title>SimpleHTTPServerWithUpload</title>
     <link>https://zhangxiaofeng05.github.io/simplehttpserverwithupload/</link>
     <pubDate>Sat, 04 Jan 2020 19:47:00 &#43;0800</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://zhangxiaofeng05.github.io/simplehttpserverwithupload/</guid>
     <description><![CDATA[简介 SimpleHTTPServerWithUpload.py是简单的上传下载的脚本 python2 github地址 https://gist.github.com/UniIsland/3346170 使用方法 方法一 1 2 python SimpleHTTPServerWithUpload.py 8050 8050为端]]></description>
 </item>
@@ -24,7 +24,7 @@
     <title>linux安装mariadb并配置phpmyadmin</title>
     <link>https://zhangxiaofeng05.github.io/linux_install_phpmyadmin/</link>
     <pubDate>Sun, 29 Dec 2019 11:14:39 &#43;0800</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://zhangxiaofeng05.github.io/linux_install_phpmyadmin/</guid>
     <description><![CDATA[mariadb 维基百科 MariaDB是MySQL关系数据库管理系统的一个复刻，由社区开发，有商业支持，旨在继续保持在GNU GPL下开源。MariaDB的]]></description>
 </item>
@@ -32,7 +32,7 @@
     <title>ftp服务器</title>
     <link>https://zhangxiaofeng05.github.io/ftp-server/</link>
     <pubDate>Sun, 01 Dec 2019 00:09:14 &#43;0800</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://zhangxiaofeng05.github.io/ftp-server/</guid>
     <description><![CDATA[linux环境 1 2 3 4 5 LSB Version: :core-4.1-amd64:core-4.1-noarch Distributor ID: CentOS Description: CentOS Linux release 7.3.1611 (Core) Release: 7.3.1611 Codename: Core 安装 1 2 3 4 5 6 yum install vsftpd systemctl restart vsftpd.service # 重启vsftpd systemctl stop vsftpd.service # 停止vsftpd systemctl start vsftpd.service # 启动v]]></description>
 </item>
@@ -40,7 +40,7 @@
     <title>hugo搭建博客，部署到GitHub</title>
     <link>https://zhangxiaofeng05.github.io/hugo_blog/</link>
     <pubDate>Mon, 21 Oct 2019 23:37:48 &#43;0800</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://zhangxiaofeng05.github.io/hugo_blog/</guid>
     <description><![CDATA[hugo站点 hugo官网：https://gohugo.io/ 安装和使用，先参考官网 安装：使用命令或者从GitHub下载 https://github.com/gohugoio/hugo 检查安装：$ hugo version 生]]></description>
 </item>

@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>思想 - Category - 风吹过的烟花</title>
+        <title>思想 - 分类 - 风吹过的烟花</title>
         <link>https://zhangxiaofeng05.github.io/categories/%E6%80%9D%E6%83%B3/</link>
-        <description>思想 - Category - 风吹过的烟花</description>
+        <description>思想 - 分类 - 风吹过的烟花</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
             <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Mon, 15 Jul 2019 21:29:10 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/categories/%E6%80%9D%E6%83%B3/" rel="self" type="application/rss+xml" /><item>
     <title>什么是面向接口编程</title>
     <link>https://zhangxiaofeng05.github.io/interface-oriented-programming/</link>
     <pubDate>Mon, 15 Jul 2019 21:29:10 &#43;0800</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://zhangxiaofeng05.github.io/interface-oriented-programming/</guid>
     <description><![CDATA[面向接口编程 要正确地使用Java语言进行面向对象的编程，从而提高程序的复用性，增加程序的可维护性、可扩展性，就必须是面向接口的编程。面向接口]]></description>
 </item>

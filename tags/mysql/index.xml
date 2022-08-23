@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>mysql - Tag - 风吹过的烟花</title>
+        <title>mysql - 标签 - 风吹过的烟花</title>
         <link>https://zhangxiaofeng05.github.io/tags/mysql/</link>
-        <description>mysql - Tag - 风吹过的烟花</description>
+        <description>mysql - 标签 - 风吹过的烟花</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
             <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Sun, 29 Dec 2019 11:14:39 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/mysql/" rel="self" type="application/rss+xml" /><item>
     <title>linux安装mariadb并配置phpmyadmin</title>
     <link>https://zhangxiaofeng05.github.io/linux_install_phpmyadmin/</link>
     <pubDate>Sun, 29 Dec 2019 11:14:39 &#43;0800</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://zhangxiaofeng05.github.io/linux_install_phpmyadmin/</guid>
     <description><![CDATA[mariadb 维基百科 MariaDB是MySQL关系数据库管理系统的一个复刻，由社区开发，有商业支持，旨在继续保持在GNU GPL下开源。MariaDB的]]></description>
 </item>
@@ -16,7 +16,7 @@
     <title>mysql高级排序</title>
     <link>https://zhangxiaofeng05.github.io/mysql-sort/</link>
     <pubDate>Sat, 17 Aug 2019 09:31:27 &#43;0800</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://zhangxiaofeng05.github.io/mysql-sort/</guid>
     <description><![CDATA[表和数据 1 2 3 4 5 6 7 8 9 10 CREATE TABLE `sqltest` ( `id` int(11) NOT NULL, `name` varchar(45) NOT NULL, `age` int(11) NOT NULL, `score` int(11) NOT NULL, PRIMARY KEY (`id`), UNIQUE KEY `id_UNIQUE` (`id`) ) ENGINE=InnoDB DEFAULT CHARSET=utf8; INSERT INTO `sqltest` VALUES (1,&#39;土豆&#39;,18,10]]></description>
 </item>

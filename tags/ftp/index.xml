@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>ftp - Tag - 风吹过的烟花</title>
+        <title>ftp - 标签 - 风吹过的烟花</title>
         <link>https://zhangxiaofeng05.github.io/tags/ftp/</link>
-        <description>ftp - Tag - 风吹过的烟花</description>
+        <description>ftp - 标签 - 风吹过的烟花</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
             <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Sun, 01 Dec 2019 00:09:14 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/ftp/" rel="self" type="application/rss+xml" /><item>
     <title>ftp服务器</title>
     <link>https://zhangxiaofeng05.github.io/ftp-server/</link>
     <pubDate>Sun, 01 Dec 2019 00:09:14 &#43;0800</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://zhangxiaofeng05.github.io/ftp-server/</guid>
     <description><![CDATA[linux环境 1 2 3 4 5 LSB Version: :core-4.1-amd64:core-4.1-noarch Distributor ID: CentOS Description: CentOS Linux release 7.3.1611 (Core) Release: 7.3.1611 Codename: Core 安装 1 2 3 4 5 6 yum install vsftpd systemctl restart vsftpd.service # 重启vsftpd systemctl stop vsftpd.service # 停止vsftpd systemctl start vsftpd.service # 启动v]]></description>
 </item>
