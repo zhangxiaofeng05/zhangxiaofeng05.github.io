@@ -9,7 +9,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://zhangxiaofeng05.github.io/terminal-use-socks5-proxy/" /><meta property="og:image" content="https://zhangxiaofeng05.github.io/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2018-08-16T10:07:27+08:00" />
-<meta property="article:modified_time" content="2022-08-21T23:44:18+08:00" /><meta property="og:site_name" content="风吹过的烟花" />
+<meta property="article:modified_time" content="2022-08-30T13:00:14+08:00" /><meta property="og:site_name" content="风吹过的烟花" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://zhangxiaofeng05.github.io/logo.png"/>
@@ -30,8 +30,8 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/zhangxiaofeng05.github.io\/terminal-use-socks5-proxy\/"
-        },"genre": "posts","keywords": "proxy","wordcount":  235 ,
-        "url": "https:\/\/zhangxiaofeng05.github.io\/terminal-use-socks5-proxy\/","datePublished": "2018-08-16T10:07:27+08:00","dateModified": "2022-08-21T23:44:18+08:00","publisher": {
+        },"genre": "posts","keywords": "proxy","wordcount":  380 ,
+        "url": "https:\/\/zhangxiaofeng05.github.io\/terminal-use-socks5-proxy\/","datePublished": "2018-08-16T10:07:27+08:00","dateModified": "2022-08-30T13:00:14+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
@@ -118,15 +118,23 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">终端使用socks5代理</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>zhangxiaofeng05</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E4%BB%A3%E7%90%86/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>代理</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2018-08-16">2018-08-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 235 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2018-08-16">2018-08-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 380 字&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
                     <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
                 </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
-            </div><div class="content" id="content"><h1 id="安装proxychains">安装proxychains</h1>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#安装proxychains">安装proxychains</a></li>
+    <li><a href="#配置">配置</a></li>
+    <li><a href="#验证">验证</a></li>
+    <li><a href="#shell函数unixlinux">shell函数(unix&amp;linux)</a></li>
+    <li><a href="#参考">参考</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="安装proxychains">安装proxychains</h2>
 <p>简单粗暴的方式：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -155,14 +163,14 @@
 </span></span><span class="line"><span class="cl">sudo make install-config
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="配置">配置</h1>
+</div><h2 id="配置">配置</h2>
 <p>在安装完成之后，一般在 /etc/proxychains.conf 处会有默认配置文件，编辑该文件</p>
 <pre><code>sudo vim /etc/proxychains.conf
 </code></pre>
 <p>然后在文件末修改成自己设置的shadowsocks设置的端口，如下</p>
 <pre><code>socks5 127.0.0.1 1080
 </code></pre>
-<h1 id="验证">验证</h1>
+<h2 id="验证">验证</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -182,16 +190,49 @@
 </div>
 </div><p>这个就是你的代理了</p>
 <p>在配置完 proxychains 之后，在终端如果任何命令无法连接成功时，在其前加上 proxychains 就可以走代理方式来执行该命令。</p>
-<h1 id="参考">参考</h1>
+<h2 id="shell函数unixlinux">shell函数(unix&amp;linux)</h2>
+<p>如果系统不支持proxychains，可以考虑设置函数。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># .zshrc</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">function</span> proxy_on<span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">export</span> <span class="nv">http_proxy</span><span class="o">=</span>http://127.0.0.1:1080
+</span></span><span class="line"><span class="cl">    <span class="nb">export</span> <span class="nv">https_proxy</span><span class="o">=</span><span class="nv">$http_proxy</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> -e <span class="s2">&#34;终端代理已开启。&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">function</span> proxy_off<span class="o">(){</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">unset</span> http_proxy https_proxy
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> -e <span class="s2">&#34;终端代理已关闭。&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="参考">参考</h2>
 <ul>
 <li><a href="http://einverne.github.io/post/2017/02/terminal-sock5-proxy.html" target="_blank" rel="noopener noreffer ">终端使用 sock5 代理 终端 terminal socks5 shadowsocks 代理 proxy</a></li>
+<li><a href="https://segmentfault.com/a/1190000039686752" target="_blank" rel="noopener noreffer ">终端使用代理加速的正确方式(Shadowsocks)</a></li>
 </ul>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2022-08-21&nbsp;<a class="git-hash" href="https://github.com/zhangxiaofeng05/hugoBlog/commit/8a04eabe64b5e56035bccc51685a7a8dc9d7da2e" target="_blank" title="commit by zhangxiaofeng05(zhangxiaofeng05@foxmail.com) 8a04eabe64b5e56035bccc51685a7a8dc9d7da2e: feat: 🎸 使用LoveIt主题">
-                                    <i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>8a04eab</a></span>
+                <span>更新于 2022-08-30&nbsp;<a class="git-hash" href="https://github.com/zhangxiaofeng05/hugoBlog/commit/ddfd6b7809447f14bf4635a36f20603d6e00f026" target="_blank" title="commit by zhangxiaofeng05(zhangxiaofeng05@foxmail.com) ddfd6b7809447f14bf4635a36f20603d6e00f026: shell proxy">
+                                    <i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>ddfd6b7</a></span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"><span>
