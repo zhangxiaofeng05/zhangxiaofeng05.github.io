@@ -1,5 +1,6 @@
 # vim安装插件
 
+> 注意：推荐参考：[https://github.com/zhangxiaofeng05/dotfiles](https://github.com/zhangxiaofeng05/dotfiles)
 ## 插件管理器(Vundle.vim)
 ### 安装
 github地址：https://github.com/VundleVim/Vundle.vim  (`仔细看README.md`)

@@ -1,5 +1,6 @@
 # vim基础配置
 
+> 注意：推荐参考：[https://github.com/zhangxiaofeng05/dotfiles](https://github.com/zhangxiaofeng05/dotfiles)
 
 ## 我的配置
 系统的vim的配置文件在  
