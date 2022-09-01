@@ -1,5 +1,14 @@
 # 小工具
 
+## 书
+### 纸质书
+1. [鸟哥的linux私房菜](https://item.jd.com/10064429.html)
+
+### 在线文档
+1. [LeetCode Cookbook](https://books.halfrost.com/leetcode)
+2. [Go语言设计与实现](https://draveness.me/golang)
+3. [设计模式](https://refactoringguru.cn/design-patterns)
+
 ## 工具
  - Linux命令大全  
 https://man.linuxde.net/  
@@ -51,4 +60,5 @@ https://chrome.google.com/webstore/detail/video-speed-controls/fhopdeieenmhhikja
 ## 喜欢的句子
  - 根本没有什么岁月静好，只是有人替你负重前行.
  - 代码会告诉你怎么做,注释会告诉你为何如此.
+ - 知识学会了，终身都是自己的，没有学会，那些知识都是身外之物。
 
