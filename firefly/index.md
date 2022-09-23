@@ -11,7 +11,8 @@
 
 ## 工具
  - Linux命令大全  
-https://man.linuxde.net/  
+https://man.niaoge.com/  
+`重点：grep awk sed`  
  - git-tips  
 git技巧: https://github.com/jaywcjlove/git-tips
  - you-get  
