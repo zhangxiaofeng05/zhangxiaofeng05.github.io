@@ -25,31 +25,43 @@ git忽略文件的编写: https://github.com/github/gitignore
 
 
 ## 谷歌插件
-Chrome插件英雄榜: https://github.com/zhaoolee/ChromeAppHeroes  
-
-**国内网址离线安装谷歌浏览器插件**  
-1. https://www.extfans.com/  
-2. 知乎: https://zhuanlan.zhihu.com/p/80305764
-
-**tampermonkey**或者**暴力猴**  
-
- - 懒人专用，全网VIP视频免费破解去广告、全网音乐直接下载、百度网盘直接下载、知乎视频下载等多合一
- - AC-baidu:重定向优化百度搜狗谷歌搜索_去广告_favicon_双列
-
- - SwitchyOmega  
-切换代理: https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif  
- - AHA Music  
-识别音乐: https://chrome.google.com/webstore/detail/aha-music-music-identifie/dpacanjfikmhoddligfbehkpomnbgblf  
- - Convert  
-pdf,图片,world...相互转换: https://chrome.google.com/webstore/detail/smart-pdf-files-converter/benjmhnicaokfjhdoolkkjiiccceigdm  
- - 二维码生成、解码  
-https://chrome.google.com/webstore/detail/%E8%8D%89%E6%96%99%E4%BA%8C%E7%BB%B4%E7%A0%81/moombeodfomdpjnpocobemoiaemednkg?hl=zh-CN  
- - json-viewer  
-响应的json数据格式化显示: https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh
+ - Proxy SwitchyOmega  
+ 切换代理: https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif  
+ - Bitwarden - 免费密码管理器
+ https://chrome.google.com/webstore/detail/bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb  
  - Infinity 新标签页  
-https://chrome.google.com/webstore/detail/infinity-new-tab-producti/dbfmnekepjoapopniengjbcpnbljalfg/related?utm_source=chrome-ntp-icon
+ https://chrome.google.com/webstore/detail/infinity-new-tab/dbfmnekepjoapopniengjbcpnbljalfg  
+ - 暴力猴  
+ https://chrome.google.com/webstore/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag  
+ 或者选择tampermonkey
+   - 文本选中复制  
+   https://greasyfork.org/zh-CN/scripts/405130-%E6%96%87%E6%9C%AC%E9%80%89%E4%B8%AD%E5%A4%8D%E5%88%B6  
+ - AdBlock — 最佳广告拦截工具  
+ https://chrome.google.com/webstore/detail/adblock-%E2%80%94-best-ad-blocker/gighmmpiobklfepjocnamgkkbiglidom  
+ - FeHelper(前端助手)
+ https://chrome.google.com/webstore/detail/fehelper%E5%89%8D%E7%AB%AF%E5%8A%A9%E6%89%8B/pkgccpejnmalmdinmhkkfafefagiiiad  
+ - Google 翻译  
+ https://chrome.google.com/webstore/detail/google-translate/aapbdbdomjkkjkaonfhkkikfgjllcleb  
+
+ `不常用`  
+ - AHA Music  
+ 识别音乐: https://chrome.google.com/webstore/detail/aha-music-music-identifie/dpacanjfikmhoddligfbehkpomnbgblf  
+ - 草料二维码-快速生码和解码工具  
+ https://chrome.google.com/webstore/detail/%E8%8D%89%E6%96%99%E4%BA%8C%E7%BB%B4%E7%A0%81/moombeodfomdpjnpocobemoiaemednkg  
  - Video Speed Controls  
-https://chrome.google.com/webstore/detail/video-speed-controls/fhopdeieenmhhikjaffpchplgofhjbcd
+ https://chrome.google.com/webstore/detail/video-speed-controller/iihlkfggcbggmbgdkklanmfallibkhio  
+ - Elasticvue
+ https://chrome.google.com/webstore/detail/elasticvue/hkedbapjpblbodpgbajblpnlpenaebaa  
+ - Octotree - GitHub code tree  
+ https://chrome.google.com/webstore/detail/octotree-github-code-tree/bkhaagjahfmjljalopjnoealnfndnagc  
+ - OneTab  
+ https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall  
+
+国内网址离线安装谷歌浏览器插件参考： 
+1. https://www.extfans.com/  
+2. 知乎: https://zhuanlan.zhihu.com/p/80305764  
+
+Chrome插件英雄榜: https://github.com/zhaoolee/ChromeAppHeroes  
 
 
 <!-- 1. qq音乐获取歌曲源链接地址   -->
