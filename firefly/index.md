@@ -12,6 +12,7 @@
 4. [精通比特币 第二版](/book/《精通比特币》第二版%20by%20wizardforcel%20(z-lib.org).pdf)
 5. [货币未来：从金本位到区块链](/book/%E8%B4%A7%E5%B8%81%E6%9C%AA%E6%9D%A5%EF%BC%9A%E4%BB%8E%E9%87%91%E6%9C%AC%E4%BD%8D%E5%88%B0%E5%8C%BA%E5%9D%97%E9%93%BE.epub)
 6. [区块链编程2020](/book/%E5%8C%BA%E5%9D%97%E9%93%BE%E7%BC%96%E7%A8%8B%202020%20%28%E3%80%90%E7%BE%8E%E3%80%91%E5%90%89%E7%B1%B3%C2%B7%E5%AE%8B%EF%BC%88Jimmy%20Song%EF%BC%89%29%20%28z-lib.org%29.epub)
+7. [Grokking Bitcoin](/book/Grokking%20Bitcoin%20%28Kalle%20Rosenbaum%29%20%28z-lib.org%29.pdf)
 
 ## 工具
  - Linux命令大全  
