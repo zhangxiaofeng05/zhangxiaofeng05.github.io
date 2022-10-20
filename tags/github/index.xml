@@ -4,7 +4,15 @@
         <link>https://zhangxiaofeng05.github.io/tags/github/</link>
         <description>github - 标签 - 风吹过的烟花</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Mon, 21 Oct 2019 23:37:48 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/github/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Thu, 20 Oct 2022 23:09:19 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/github/" rel="self" type="application/rss+xml" /><item>
+    <title>代码管理</title>
+    <link>https://zhangxiaofeng05.github.io/code_manage/</link>
+    <pubDate>Thu, 20 Oct 2022 23:09:19 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://zhangxiaofeng05.github.io/code_manage/</guid>
+    <description><![CDATA[git 每个仓库设置Git用户名 1 2 git config --global user.name &#34;username&#34; git config --global user.email &#34;email address&#34; 一个仓库设置Git用户名 1 2 git config user.name &#34;username&#34; git config user.email &#34;email address&#34; https://docs.github.com/cn/get-started/getting-started-with-git/setting-your-username-in-git 1 2 3 4 # 生成ssh-key ssh-keygen -t rsa -C &#34;email address&#34;]]></description>
+</item>
+<item>
     <title>hugo搭建博客，部署到GitHub</title>
     <link>https://zhangxiaofeng05.github.io/hugo_blog/</link>
     <pubDate>Mon, 21 Oct 2019 23:37:48 &#43;0800</pubDate>
