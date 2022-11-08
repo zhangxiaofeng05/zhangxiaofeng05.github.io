@@ -31,3 +31,15 @@ docker run --name myadmin -d -e PMA_ARBITRARY=1 -p 6060:80 phpmyadmin/phpmyadmin
 ```
 此命令安装，登录任意服务器地址端口，空格为分割  
 ![phpmyadmin](/mypng/6.png)
+
+## pull代理
+
+使用`docker pull`命令，下载镜像慢，设置代理
+
+### mac
+
+Dashboard -> Settings -> Resources -> Proxies  
+即可使用http代理
+```
+127.0.0.1:1080
+```
