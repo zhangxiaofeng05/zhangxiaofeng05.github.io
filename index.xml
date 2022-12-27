@@ -4,9 +4,17 @@
         <link>https://zhangxiaofeng05.github.io/</link>
         <description>zhangxiaofeng05&#39;s hugo blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Thu, 20 Oct 2022 23:09:19 &#43;0800</lastBuildDate>
+            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Tue, 27 Dec 2022 23:30:00 &#43;0800</lastBuildDate>
             <atom:link href="https://zhangxiaofeng05.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Hack Jetbrains</title>
+    <link>https://zhangxiaofeng05.github.io/hack-jetbrains/</link>
+    <pubDate>Tue, 27 Dec 2022 23:30:00 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://zhangxiaofeng05.github.io/hack-jetbrains/</guid>
+    <description><![CDATA[Jetbrains全家桶 https://3.jetbra.in jetbra.zip-readme.txt 1 2 3 4 5 1. add -javaagent:/path/to/ja-netfilter.jar=jetbrains to your vmoptions (manual or auto) 2. log out of the jb account in the &#39;Licenses&#39; window 3. use key on page https://jetbra.in/5d84466e31722979266057664941a71893322460 4. plugin &#39;mymap&#39; has been deprecated since version 2022.1 5. don&#39;t care about the activation time, it is a fallback license and will not expire]]></description>
+</item>
+<item>
     <title>代码管理</title>
     <link>https://zhangxiaofeng05.github.io/code_manage/</link>
     <pubDate>Thu, 20 Oct 2022 23:09:19 &#43;0800</pubDate>
@@ -77,14 +85,6 @@
     <author>作者</author>
     <guid>https://zhangxiaofeng05.github.io/linux-nginx/</guid>
     <description><![CDATA[维基百科 Nginx是异步框架的网页服务器，也可以用作反向代理、负载平衡器和HTTP缓存。 安装 官网：https://www.nginx.com]]></description>
-</item>
-<item>
-    <title>SimpleHTTPServerWithUpload</title>
-    <link>https://zhangxiaofeng05.github.io/simplehttpserverwithupload/</link>
-    <pubDate>Sat, 04 Jan 2020 19:47:00 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/simplehttpserverwithupload/</guid>
-    <description><![CDATA[简介 SimpleHTTPServerWithUpload.py是简单的上传下载的脚本 python2 github地址 https://gist.github.com/UniIsland/3346170 使用方法 方法一 1 2 python SimpleHTTPServerWithUpload.py 8050 8050为端]]></description>
 </item>
 </channel>
 </rss>
