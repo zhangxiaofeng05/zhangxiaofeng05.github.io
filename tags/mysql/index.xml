@@ -4,7 +4,15 @@
         <link>https://zhangxiaofeng05.github.io/tags/mysql/</link>
         <description>mysql - 标签 - 风吹过的烟花</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Sun, 29 Dec 2019 11:14:39 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/mysql/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Wed, 31 May 2023 18:38:29 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/mysql/" rel="self" type="application/rss+xml" /><item>
+    <title>Connect Mysql8 Error</title>
+    <link>https://zhangxiaofeng05.github.io/connect-mysql8-error/</link>
+    <pubDate>Wed, 31 May 2023 18:38:29 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://zhangxiaofeng05.github.io/connect-mysql8-error/</guid>
+    <description><![CDATA[服务以前连接mysql5.7,现在连接mysql8报错 1 2 3 4 code: &#39;ER_NOT_SUPPORTED_AUTH_MODE&#39;, errno: 1251, sqlState: &#39;08004&#39;, sqlMessage: &#39;Client does not support authentication protocol requested by server; consider upgrading MySQL client&#39; 原因： mysql5.7 认证默认是mysql_nati]]></description>
+</item>
+<item>
     <title>linux安装mariadb并配置phpmyadmin</title>
     <link>https://zhangxiaofeng05.github.io/linux_install_phpmyadmin/</link>
     <pubDate>Sun, 29 Dec 2019 11:14:39 &#43;0800</pubDate>

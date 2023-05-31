@@ -4,7 +4,15 @@
         <link>https://zhangxiaofeng05.github.io/posts/</link>
         <description>所有文章 | 风吹过的烟花</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Tue, 27 Dec 2022 23:30:00 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Wed, 31 May 2023 18:38:29 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Connect Mysql8 Error</title>
+    <link>https://zhangxiaofeng05.github.io/connect-mysql8-error/</link>
+    <pubDate>Wed, 31 May 2023 18:38:29 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://zhangxiaofeng05.github.io/connect-mysql8-error/</guid>
+    <description><![CDATA[服务以前连接mysql5.7,现在连接mysql8报错 1 2 3 4 code: &#39;ER_NOT_SUPPORTED_AUTH_MODE&#39;, errno: 1251, sqlState: &#39;08004&#39;, sqlMessage: &#39;Client does not support authentication protocol requested by server; consider upgrading MySQL client&#39; 原因： mysql5.7 认证默认是mysql_nati]]></description>
+</item>
+<item>
     <title>Hack Jetbrains</title>
     <link>https://zhangxiaofeng05.github.io/hack-jetbrains/</link>
     <pubDate>Tue, 27 Dec 2022 23:30:00 &#43;0800</pubDate>
@@ -75,14 +83,6 @@
     <author>作者</author>
     <guid>https://zhangxiaofeng05.github.io/lrzsz/</guid>
     <description><![CDATA[百度百科 lrzsz是一款在linux里可代替ftp上传和下载的程序。 使用方法 centos服务器，可直接yum -y install lrzsz 程序会自动安装好，然后如你]]></description>
-</item>
-<item>
-    <title>linux安装并配置nginx</title>
-    <link>https://zhangxiaofeng05.github.io/linux-nginx/</link>
-    <pubDate>Sun, 05 Jan 2020 21:25:56 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/linux-nginx/</guid>
-    <description><![CDATA[维基百科 Nginx是异步框架的网页服务器，也可以用作反向代理、负载平衡器和HTTP缓存。 安装 官网：https://www.nginx.com]]></description>
 </item>
 </channel>
 </rss>
