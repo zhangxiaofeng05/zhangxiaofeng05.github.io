@@ -41,5 +41,10 @@ docker run --name myadmin -d -e PMA_ARBITRARY=1 -p 6060:80 phpmyadmin/phpmyadmin
 Dashboard -> Settings -> Resources -> Proxies  
 即可使用http代理
 ```
-127.0.0.1:1080
+Web Server(HTTP)
+http://127.0.0.1:1081
+
+Secure Web Server(HTTPS)
+http://127.0.0.1:1081
 ```
+
