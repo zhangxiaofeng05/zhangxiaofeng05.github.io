@@ -1,8 +1,22 @@
-# 配置git代理
+# git 配置
 
-访问GitHub慢，下载慢的解决办法。  
+## github git
+https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent  
+
+`vim ~/.ssh/config`
+```
+Host github.com
+User git
+Hostname ssh.github.com
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/id_ed25519
+Port 443
+```
+测试连接`ssh -T git@github.com`   
+https://stackoverflow.com/questions/15589682/ssh-connect-to-host-github-com-port-22-connection-timed-out
 
 ## ssh-socket代理
+访问GitHub慢，下载慢的解决办法。  
 创建`config`文件  
 ```
 vi ~/.ssh/config

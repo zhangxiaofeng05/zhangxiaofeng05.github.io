@@ -13,12 +13,12 @@
     <description><![CDATA[git 每个仓库设置Git用户名 1 2 git config --global user.name &#34;username&#34; git config --global user.email &#34;email address&#34; 一个仓库设置Git用户名 1 2 git config user.name &#34;username&#34; git config user.email &#34;email address&#34; https://docs.github.com/cn/get-started/getting-started-with-git/setting-your-username-in-git 1 2 3 4 # 生成ssh-key ssh-keygen -t rsa -C &#34;email address&#34;]]></description>
 </item>
 <item>
-    <title>配置git代理</title>
-    <link>https://zhangxiaofeng05.github.io/git-proxy/</link>
+    <title>git 配置</title>
+    <link>https://zhangxiaofeng05.github.io/git/</link>
     <pubDate>Mon, 01 Jun 2020 21:01:18 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/git-proxy/</guid>
-    <description><![CDATA[访问GitHub慢，下载慢的解决办法。 ssh-socket代理 创建config文件 1 2 vi ~/.ssh/config # 当然你也可以手动在 C:\Users\Username\.ssh 下创建 config 文件 文件写入如下内容]]></description>
+    <guid>https://zhangxiaofeng05.github.io/git/</guid>
+    <description><![CDATA[github git https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent vim ~/.ssh/config 1 2 3 4 5 6 Host github.com User git Hostname ssh.github.com PreferredAuthentications publickey IdentityFile ~/.ssh/id_ed25519 Port 443 测试连接ssh -T git@github.com https://stackoverflow.com/questions/15589682/ssh-connect-to-host-github-com-port-22-connection-timed-out ssh-socket代理 访问GitHub慢，下载慢的解决办法。 创建conf]]></description>
 </item>
 </channel>
 </rss>

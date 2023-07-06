@@ -39,12 +39,12 @@
     <description><![CDATA[首先在阿里云购买域名，申请域名证书，可以免费申请一年 nginx配置https过程 https://yq.aliyun.com/articles/672835 示例 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27]]></description>
 </item>
 <item>
-    <title>配置git代理</title>
-    <link>https://zhangxiaofeng05.github.io/git-proxy/</link>
+    <title>git 配置</title>
+    <link>https://zhangxiaofeng05.github.io/git/</link>
     <pubDate>Mon, 01 Jun 2020 21:01:18 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/git-proxy/</guid>
-    <description><![CDATA[访问GitHub慢，下载慢的解决办法。 ssh-socket代理 创建config文件 1 2 vi ~/.ssh/config # 当然你也可以手动在 C:\Users\Username\.ssh 下创建 config 文件 文件写入如下内容]]></description>
+    <guid>https://zhangxiaofeng05.github.io/git/</guid>
+    <description><![CDATA[github git https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent vim ~/.ssh/config 1 2 3 4 5 6 Host github.com User git Hostname ssh.github.com PreferredAuthentications publickey IdentityFile ~/.ssh/id_ed25519 Port 443 测试连接ssh -T git@github.com https://stackoverflow.com/questions/15589682/ssh-connect-to-host-github-com-port-22-connection-timed-out ssh-socket代理 访问GitHub慢，下载慢的解决办法。 创建conf]]></description>
 </item>
 <item>
     <title>Nextcloud云盘</title>
