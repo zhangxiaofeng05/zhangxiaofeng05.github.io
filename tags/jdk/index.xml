@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>jdk - 标签 - 风吹过的烟花</title>
+        <title>Jdk - 标签 - 风吹过的烟花</title>
         <link>https://zhangxiaofeng05.github.io/tags/jdk/</link>
-        <description>jdk - 标签 - 风吹过的烟花</description>
+        <description>Jdk - 标签 - 风吹过的烟花</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
             <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Thu, 23 Aug 2018 14:10:41 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/jdk/" rel="self" type="application/rss+xml" /><item>
     <title>安装jdk</title>

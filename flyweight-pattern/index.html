@@ -7,13 +7,12 @@
         <title>结构型模式-享元模式 - 风吹过的烟花</title><meta name="Description" content="zhangxiaofeng05&#39;s hugo blog"><meta property="og:title" content="结构型模式-享元模式" />
 <meta property="og:description" content="维基百科 享元模式 享元模式（英语：Flyweight Pattern）是一种软件设计模式。它使用共享物件，用来尽可能减少内存使用量以及分享资讯给" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://zhangxiaofeng05.github.io/flyweight-pattern/" /><meta property="og:image" content="https://zhangxiaofeng05.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://zhangxiaofeng05.github.io/flyweight-pattern/" /><meta property="og:image" content="https://zhangxiaofeng05.github.io/logo.png" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2019-08-25T10:51:19+08:00" />
 <meta property="article:modified_time" content="2022-08-21T23:44:18+08:00" /><meta property="og:site_name" content="风吹过的烟花" />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://zhangxiaofeng05.github.io/logo.png"/>
 
-<meta name="twitter:title" content="结构型模式-享元模式"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://zhangxiaofeng05.github.io/logo.png" /><meta name="twitter:title" content="结构型模式-享元模式"/>
 <meta name="twitter:description" content="维基百科 享元模式 享元模式（英语：Flyweight Pattern）是一种软件设计模式。它使用共享物件，用来尽可能减少内存使用量以及分享资讯给"/>
 <meta name="application-name" content="风吹过的烟花">
 <meta name="apple-mobile-web-app-title" content="风吹过的烟花"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
@@ -206,72 +205,72 @@
 </span><span class="lnt">66
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">public enum FontEffect {
-</span></span><span class="line"><span class="cl">    BOLD, ITALIC, SUPERSCRIPT, SUBSCRIPT, STRIKETHROUGH
-</span></span><span class="line"><span class="cl">}
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">public</span> <span class="k">enum</span> <span class="n">FontEffect</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">BOLD</span><span class="p">,</span> <span class="n">ITALIC</span><span class="p">,</span> <span class="n">SUPERSCRIPT</span><span class="p">,</span> <span class="n">SUBSCRIPT</span><span class="p">,</span> <span class="n">STRIKETHROUGH</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">public final class FontData {
-</span></span><span class="line"><span class="cl">    /**
-</span></span><span class="line"><span class="cl">     * A weak hash map will drop unused references to FontData.
-</span></span><span class="line"><span class="cl">     * Values have to be wrapped in WeakReferences,
-</span></span><span class="line"><span class="cl">     * because value objects in weak hash map are held by strong references.
-</span></span><span class="line"><span class="cl">     */
-</span></span><span class="line"><span class="cl">    private static final WeakHashMap&lt;FontData, WeakReference&lt;FontData&gt;&gt; FLY_WEIGHT_DATA =
-</span></span><span class="line"><span class="cl">        new WeakHashMap&lt;FontData, WeakReference&lt;FontData&gt;&gt;();
-</span></span><span class="line"><span class="cl">    private final int pointSize;
-</span></span><span class="line"><span class="cl">    private final String fontFace;
-</span></span><span class="line"><span class="cl">    private final Color color;
-</span></span><span class="line"><span class="cl">    private final Set&lt;FontEffect&gt; effects;
+</span></span><span class="line"><span class="cl"><span class="n">public</span> <span class="n">final</span> <span class="k">class</span> <span class="n">FontData</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="o">/**</span>
+</span></span><span class="line"><span class="cl">     <span class="o">*</span> <span class="n">A</span> <span class="n">weak</span> <span class="nb">hash</span> <span class="n">map</span> <span class="n">will</span> <span class="n">drop</span> <span class="n">unused</span> <span class="n">references</span> <span class="n">to</span> <span class="n">FontData</span><span class="o">.</span>
+</span></span><span class="line"><span class="cl">     <span class="o">*</span> <span class="n">Values</span> <span class="n">have</span> <span class="n">to</span> <span class="n">be</span> <span class="n">wrapped</span> <span class="ow">in</span> <span class="n">WeakReferences</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">     <span class="o">*</span> <span class="n">because</span> <span class="n">value</span> <span class="n">objects</span> <span class="ow">in</span> <span class="n">weak</span> <span class="nb">hash</span> <span class="n">map</span> <span class="n">are</span> <span class="n">held</span> <span class="n">by</span> <span class="n">strong</span> <span class="n">references</span><span class="o">.</span>
+</span></span><span class="line"><span class="cl">     <span class="o">*/</span>
+</span></span><span class="line"><span class="cl">    <span class="n">private</span> <span class="k">static</span> <span class="n">final</span> <span class="n">WeakHashMap</span><span class="o">&lt;</span><span class="n">FontData</span><span class="p">,</span> <span class="n">WeakReference</span><span class="o">&lt;</span><span class="n">FontData</span><span class="o">&gt;&gt;</span> <span class="n">FLY_WEIGHT_DATA</span> <span class="o">=</span>
+</span></span><span class="line"><span class="cl">        <span class="n">new</span> <span class="n">WeakHashMap</span><span class="o">&lt;</span><span class="n">FontData</span><span class="p">,</span> <span class="n">WeakReference</span><span class="o">&lt;</span><span class="n">FontData</span><span class="o">&gt;&gt;</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="n">private</span> <span class="n">final</span> <span class="ne">int</span> <span class="n">pointSize</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">private</span> <span class="n">final</span> <span class="ne">String</span> <span class="n">fontFace</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">private</span> <span class="n">final</span> <span class="ne">Color</span> <span class="n">color</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">private</span> <span class="n">final</span> <span class="n">Set</span><span class="o">&lt;</span><span class="n">FontEffect</span><span class="o">&gt;</span> <span class="n">effects</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    private FontData(int pointSize, String fontFace, Color color, EnumSet&lt;FontEffect&gt; effects) {
-</span></span><span class="line"><span class="cl">        this.pointSize = pointSize;
-</span></span><span class="line"><span class="cl">        this.fontFace = fontFace;
-</span></span><span class="line"><span class="cl">        this.color = color;
-</span></span><span class="line"><span class="cl">        this.effects = Collections.unmodifiableSet(effects);
-</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">    <span class="n">private</span> <span class="n">FontData</span><span class="p">(</span><span class="ne">int</span> <span class="n">pointSize</span><span class="p">,</span> <span class="ne">String</span> <span class="n">fontFace</span><span class="p">,</span> <span class="ne">Color</span> <span class="n">color</span><span class="p">,</span> <span class="n">EnumSet</span><span class="o">&lt;</span><span class="n">FontEffect</span><span class="o">&gt;</span> <span class="n">effects</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">this</span><span class="o">.</span><span class="n">pointSize</span> <span class="o">=</span> <span class="n">pointSize</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">this</span><span class="o">.</span><span class="n">fontFace</span> <span class="o">=</span> <span class="n">fontFace</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">this</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="n">color</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">this</span><span class="o">.</span><span class="n">effects</span> <span class="o">=</span> <span class="n">Collections</span><span class="o">.</span><span class="n">unmodifiableSet</span><span class="p">(</span><span class="n">effects</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    public static FontData create(int pointSize, String fontFace, Color color,
-</span></span><span class="line"><span class="cl">        FontEffect... effects) {
-</span></span><span class="line"><span class="cl">        EnumSet&lt;FontEffect&gt; effectsSet = EnumSet.noneOf(FontEffect.class);
-</span></span><span class="line"><span class="cl">        for (FontEffect fontEffect : effects) {
-</span></span><span class="line"><span class="cl">            effectsSet.add(fontEffect);
-</span></span><span class="line"><span class="cl">        }
-</span></span><span class="line"><span class="cl">        // We are unconcerned with object creation cost, we are reducing overall memory consumption
-</span></span><span class="line"><span class="cl">        FontData data = new FontData(pointSize, fontFace, color, effectsSet);
+</span></span><span class="line"><span class="cl">    <span class="n">public</span> <span class="k">static</span> <span class="n">FontData</span> <span class="n">create</span><span class="p">(</span><span class="ne">int</span> <span class="n">pointSize</span><span class="p">,</span> <span class="ne">String</span> <span class="n">fontFace</span><span class="p">,</span> <span class="ne">Color</span> <span class="n">color</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">FontEffect</span><span class="o">...</span> <span class="n">effects</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">EnumSet</span><span class="o">&lt;</span><span class="n">FontEffect</span><span class="o">&gt;</span> <span class="n">effectsSet</span> <span class="o">=</span> <span class="n">EnumSet</span><span class="o">.</span><span class="n">noneOf</span><span class="p">(</span><span class="n">FontEffect</span><span class="o">.</span><span class="k">class</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="p">(</span><span class="n">FontEffect</span> <span class="n">fontEffect</span> <span class="p">:</span> <span class="n">effects</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">effectsSet</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">fontEffect</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="o">//</span> <span class="n">We</span> <span class="n">are</span> <span class="n">unconcerned</span> <span class="n">with</span> <span class="n">object</span> <span class="n">creation</span> <span class="n">cost</span><span class="p">,</span> <span class="n">we</span> <span class="n">are</span> <span class="n">reducing</span> <span class="n">overall</span> <span class="n">memory</span> <span class="n">consumption</span>
+</span></span><span class="line"><span class="cl">        <span class="n">FontData</span> <span class="n">data</span> <span class="o">=</span> <span class="n">new</span> <span class="n">FontData</span><span class="p">(</span><span class="n">pointSize</span><span class="p">,</span> <span class="n">fontFace</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">effectsSet</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        // Retrieve previously created instance with the given values if it (still) exists
-</span></span><span class="line"><span class="cl">        WeakReference&lt;FontData&gt; ref = FLY_WEIGHT_DATA.get(data);
-</span></span><span class="line"><span class="cl">        FontData result = (ref != null) ? ref.get() : null;
+</span></span><span class="line"><span class="cl">        <span class="o">//</span> <span class="n">Retrieve</span> <span class="n">previously</span> <span class="n">created</span> <span class="n">instance</span> <span class="n">with</span> <span class="n">the</span> <span class="n">given</span> <span class="n">values</span> <span class="k">if</span> <span class="n">it</span> <span class="p">(</span><span class="n">still</span><span class="p">)</span> <span class="n">exists</span>
+</span></span><span class="line"><span class="cl">        <span class="n">WeakReference</span><span class="o">&lt;</span><span class="n">FontData</span><span class="o">&gt;</span> <span class="n">ref</span> <span class="o">=</span> <span class="n">FLY_WEIGHT_DATA</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">data</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">FontData</span> <span class="n">result</span> <span class="o">=</span> <span class="p">(</span><span class="n">ref</span> <span class="o">!=</span> <span class="n">null</span><span class="p">)</span> <span class="err">?</span> <span class="n">ref</span><span class="o">.</span><span class="n">get</span><span class="p">()</span> <span class="p">:</span> <span class="n">null</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        // Store new font data instance if no matching instance exists
-</span></span><span class="line"><span class="cl">        if (result == null) {
-</span></span><span class="line"><span class="cl">            FLY_WEIGHT_DATA.put(data, new WeakReference&lt;FontData&gt; (data));
-</span></span><span class="line"><span class="cl">            result = data;
-</span></span><span class="line"><span class="cl">        }
-</span></span><span class="line"><span class="cl">        // return the single immutable copy with the given values
-</span></span><span class="line"><span class="cl">        return result;
-</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">        <span class="o">//</span> <span class="n">Store</span> <span class="n">new</span> <span class="n">font</span> <span class="n">data</span> <span class="n">instance</span> <span class="k">if</span> <span class="n">no</span> <span class="n">matching</span> <span class="n">instance</span> <span class="n">exists</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">result</span> <span class="o">==</span> <span class="n">null</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">FLY_WEIGHT_DATA</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">new</span> <span class="n">WeakReference</span><span class="o">&lt;</span><span class="n">FontData</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">data</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">            <span class="n">result</span> <span class="o">=</span> <span class="n">data</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="o">//</span> <span class="k">return</span> <span class="n">the</span> <span class="n">single</span> <span class="n">immutable</span> <span class="n">copy</span> <span class="n">with</span> <span class="n">the</span> <span class="n">given</span> <span class="n">values</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    @Override
-</span></span><span class="line"><span class="cl">    public boolean equals(Object obj) {
-</span></span><span class="line"><span class="cl">        if (obj instanceof FontData) {
-</span></span><span class="line"><span class="cl">            if (obj == this) {
-</span></span><span class="line"><span class="cl">                return true;
-</span></span><span class="line"><span class="cl">            }
-</span></span><span class="line"><span class="cl">            FontData other = (FontData) obj;
-</span></span><span class="line"><span class="cl">            return other.pointSize == pointSize &amp;&amp; other.fontFace.equals(fontFace)
-</span></span><span class="line"><span class="cl">                &amp;&amp; other.color.equals(color) &amp;&amp; other.effects.equals(effects);
-</span></span><span class="line"><span class="cl">        }
-</span></span><span class="line"><span class="cl">        return false;
-</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">    <span class="err">@</span><span class="n">Override</span>
+</span></span><span class="line"><span class="cl">    <span class="n">public</span> <span class="n">boolean</span> <span class="n">equals</span><span class="p">(</span><span class="ne">Object</span> <span class="n">obj</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">obj</span> <span class="n">instanceof</span> <span class="n">FontData</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">obj</span> <span class="o">==</span> <span class="n">this</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="bp">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="n">FontData</span> <span class="n">other</span> <span class="o">=</span> <span class="p">(</span><span class="n">FontData</span><span class="p">)</span> <span class="n">obj</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">other</span><span class="o">.</span><span class="n">pointSize</span> <span class="o">==</span> <span class="n">pointSize</span> <span class="o">&amp;&amp;</span> <span class="n">other</span><span class="o">.</span><span class="n">fontFace</span><span class="o">.</span><span class="n">equals</span><span class="p">(</span><span class="n">fontFace</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="o">&amp;&amp;</span> <span class="n">other</span><span class="o">.</span><span class="n">color</span><span class="o">.</span><span class="n">equals</span><span class="p">(</span><span class="n">color</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="n">other</span><span class="o">.</span><span class="n">effects</span><span class="o">.</span><span class="n">equals</span><span class="p">(</span><span class="n">effects</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="bp">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    @Override
-</span></span><span class="line"><span class="cl">    public int hashCode() {
-</span></span><span class="line"><span class="cl">        return (pointSize * 37 + effects.hashCode() * 13) * fontFace.hashCode();
-</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">    <span class="err">@</span><span class="n">Override</span>
+</span></span><span class="line"><span class="cl">    <span class="n">public</span> <span class="ne">int</span> <span class="n">hashCode</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="p">(</span><span class="n">pointSize</span> <span class="o">*</span> <span class="mi">37</span> <span class="o">+</span> <span class="n">effects</span><span class="o">.</span><span class="n">hashCode</span><span class="p">()</span> <span class="o">*</span> <span class="mi">13</span><span class="p">)</span> <span class="o">*</span> <span class="n">fontFace</span><span class="o">.</span><span class="n">hashCode</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    // Getters for the font data, but no setters. FontData is immutable.
-</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">    <span class="o">//</span> <span class="n">Getters</span> <span class="k">for</span> <span class="n">the</span> <span class="n">font</span> <span class="n">data</span><span class="p">,</span> <span class="n">but</span> <span class="n">no</span> <span class="n">setters</span><span class="o">.</span> <span class="n">FontData</span> <span class="n">is</span> <span class="n">immutable</span><span class="o">.</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="例子">例子</h1>
@@ -440,7 +439,7 @@
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/pattern/">pattern</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/pattern/">Pattern</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
         </section>
@@ -451,8 +450,8 @@
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.115.1">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
-                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2017 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">zhangxiaofeng05</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.123.8">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2017 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">zhangxiaofeng05</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
 
@@ -461,5 +460,5 @@
             </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
                 <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
             </a>
-        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.stemmer.support.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.zh.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.stemmer.support.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.zh.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":100},"comment":{},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
 </html>

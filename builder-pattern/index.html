@@ -7,13 +7,12 @@
         <title>创建型模式-建造者模式 - 风吹过的烟花</title><meta name="Description" content="zhangxiaofeng05&#39;s hugo blog"><meta property="og:title" content="创建型模式-建造者模式" />
 <meta property="og:description" content="维基百科 生成器模式 生成器模式（英：Builder Pattern）是一种设计模式，又名：建造模式，是一种对象构建模式。它可以将复杂对象的建造过" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://zhangxiaofeng05.github.io/builder-pattern/" /><meta property="og:image" content="https://zhangxiaofeng05.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://zhangxiaofeng05.github.io/builder-pattern/" /><meta property="og:image" content="https://zhangxiaofeng05.github.io/logo.png" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2019-08-23T16:48:38+08:00" />
 <meta property="article:modified_time" content="2022-08-21T23:44:18+08:00" /><meta property="og:site_name" content="风吹过的烟花" />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://zhangxiaofeng05.github.io/logo.png"/>
 
-<meta name="twitter:title" content="创建型模式-建造者模式"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://zhangxiaofeng05.github.io/logo.png" /><meta name="twitter:title" content="创建型模式-建造者模式"/>
 <meta name="twitter:description" content="维基百科 生成器模式 生成器模式（英：Builder Pattern）是一种设计模式，又名：建造模式，是一种对象构建模式。它可以将复杂对象的建造过"/>
 <meta name="application-name" content="风吹过的烟花">
 <meta name="apple-mobile-web-app-title" content="风吹过的烟花"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
@@ -241,73 +240,73 @@
 </span><span class="lnt">67
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/** &#34;Product&#34; */
-</span></span><span class="line"><span class="cl">class Pizza {
-</span></span><span class="line"><span class="cl">  private String dough = &#34;&#34;;
-</span></span><span class="line"><span class="cl">  private String sauce = &#34;&#34;;
-</span></span><span class="line"><span class="cl">  private String topping = &#34;&#34;;
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="o">/**</span> <span class="s2">&#34;Product&#34;</span> <span class="o">*/</span>
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="n">Pizza</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">private</span> <span class="ne">String</span> <span class="n">dough</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">private</span> <span class="ne">String</span> <span class="n">sauce</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">private</span> <span class="ne">String</span> <span class="n">topping</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  public void setDough (String dough)     { this.dough = dough; }
-</span></span><span class="line"><span class="cl">  public void setSauce (String sauce)     { this.sauce = sauce; }
-</span></span><span class="line"><span class="cl">  public void setTopping (String topping) { this.topping = topping; }
-</span></span><span class="line"><span class="cl">}
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&#39;&#39;/** &#34;Abstract Builder&#34; */&#39;&#39;
-</span></span><span class="line"><span class="cl">abstract class PizzaBuilder {
-</span></span><span class="line"><span class="cl">  protected Pizza pizza;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  public Pizza getPizza() { return pizza; }
-</span></span><span class="line"><span class="cl">  public void createNewPizzaProduct() { pizza = new Pizza(); }
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  public abstract void buildDough();
-</span></span><span class="line"><span class="cl">  public abstract void buildSauce();
-</span></span><span class="line"><span class="cl">  public abstract void buildTopping();
-</span></span><span class="line"><span class="cl">}
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">/** &#34;ConcreteBuilder&#34; */
-</span></span><span class="line"><span class="cl">class HawaiianPizzaBuilder extends PizzaBuilder {
-</span></span><span class="line"><span class="cl">  public void buildDough()   { pizza.setDough(&#34;cross&#34;); }
-</span></span><span class="line"><span class="cl">  public void buildSauce()   { pizza.setSauce(&#34;mild&#34;); }
-</span></span><span class="line"><span class="cl">  public void buildTopping() { pizza.setTopping(&#34;ham+pineapple&#34;); }
-</span></span><span class="line"><span class="cl">}
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">/** &#34;ConcreteBuilder&#34; */
-</span></span><span class="line"><span class="cl">class SpicyPizzaBuilder extends PizzaBuilder {
-</span></span><span class="line"><span class="cl">  public void buildDough()   { pizza.setDough(&#34;pan baked&#34;); }
-</span></span><span class="line"><span class="cl">  public void buildSauce()   { pizza.setSauce(&#34;hot&#34;); }
-</span></span><span class="line"><span class="cl">  public void buildTopping() { pizza.setTopping(&#34;pepperoni+salami&#34;); }
-</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">  <span class="n">public</span> <span class="n">void</span> <span class="n">setDough</span> <span class="p">(</span><span class="ne">String</span> <span class="n">dough</span><span class="p">)</span>     <span class="p">{</span> <span class="n">this</span><span class="o">.</span><span class="n">dough</span> <span class="o">=</span> <span class="n">dough</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="n">public</span> <span class="n">void</span> <span class="n">setSauce</span> <span class="p">(</span><span class="ne">String</span> <span class="n">sauce</span><span class="p">)</span>     <span class="p">{</span> <span class="n">this</span><span class="o">.</span><span class="n">sauce</span> <span class="o">=</span> <span class="n">sauce</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="n">public</span> <span class="n">void</span> <span class="n">setTopping</span> <span class="p">(</span><span class="ne">String</span> <span class="n">topping</span><span class="p">)</span> <span class="p">{</span> <span class="n">this</span><span class="o">.</span><span class="n">topping</span> <span class="o">=</span> <span class="n">topping</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&#39;&#39;/** &#34;Director&#34; */&#39;&#39;
-</span></span><span class="line"><span class="cl">class Waiter {
-</span></span><span class="line"><span class="cl">  private PizzaBuilder pizzaBuilder;
+</span></span><span class="line"><span class="cl"><span class="s1">&#39;&#39;</span><span class="o">/**</span> <span class="s2">&#34;Abstract Builder&#34;</span> <span class="o">*/</span><span class="s1">&#39;&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">abstract</span> <span class="k">class</span> <span class="n">PizzaBuilder</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">protected</span> <span class="n">Pizza</span> <span class="n">pizza</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  public void setPizzaBuilder (PizzaBuilder pb) { pizzaBuilder = pb; }
-</span></span><span class="line"><span class="cl">  public Pizza getPizza() { return pizzaBuilder.getPizza(); }
+</span></span><span class="line"><span class="cl">  <span class="n">public</span> <span class="n">Pizza</span> <span class="n">getPizza</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="n">pizza</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="n">public</span> <span class="n">void</span> <span class="n">createNewPizzaProduct</span><span class="p">()</span> <span class="p">{</span> <span class="n">pizza</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Pizza</span><span class="p">();</span> <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  public void constructPizza() {
-</span></span><span class="line"><span class="cl">    pizzaBuilder.createNewPizzaProduct();
-</span></span><span class="line"><span class="cl">    pizzaBuilder.buildDough();
-</span></span><span class="line"><span class="cl">    pizzaBuilder.buildSauce();
-</span></span><span class="line"><span class="cl">    pizzaBuilder.buildTopping();
-</span></span><span class="line"><span class="cl">  }
-</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">  <span class="n">public</span> <span class="n">abstract</span> <span class="n">void</span> <span class="n">buildDough</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="n">public</span> <span class="n">abstract</span> <span class="n">void</span> <span class="n">buildSauce</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="n">public</span> <span class="n">abstract</span> <span class="n">void</span> <span class="n">buildTopping</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">/** A customer ordering a pizza. */
-</span></span><span class="line"><span class="cl">class BuilderExample {
-</span></span><span class="line"><span class="cl">  public static void main(String[] args) {
-</span></span><span class="line"><span class="cl">    Waiter waiter = new Waiter();
-</span></span><span class="line"><span class="cl">    PizzaBuilder hawaiian_pizzabuilder = new HawaiianPizzaBuilder();
-</span></span><span class="line"><span class="cl">    PizzaBuilder spicy_pizzabuilder = new SpicyPizzaBuilder();
+</span></span><span class="line"><span class="cl"><span class="o">/**</span> <span class="s2">&#34;ConcreteBuilder&#34;</span> <span class="o">*/</span>
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="n">HawaiianPizzaBuilder</span> <span class="k">extends</span> <span class="n">PizzaBuilder</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">public</span> <span class="n">void</span> <span class="n">buildDough</span><span class="p">()</span>   <span class="p">{</span> <span class="n">pizza</span><span class="o">.</span><span class="n">setDough</span><span class="p">(</span><span class="s2">&#34;cross&#34;</span><span class="p">);</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="n">public</span> <span class="n">void</span> <span class="n">buildSauce</span><span class="p">()</span>   <span class="p">{</span> <span class="n">pizza</span><span class="o">.</span><span class="n">setSauce</span><span class="p">(</span><span class="s2">&#34;mild&#34;</span><span class="p">);</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="n">public</span> <span class="n">void</span> <span class="n">buildTopping</span><span class="p">()</span> <span class="p">{</span> <span class="n">pizza</span><span class="o">.</span><span class="n">setTopping</span><span class="p">(</span><span class="s2">&#34;ham+pineapple&#34;</span><span class="p">);</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    waiter.setPizzaBuilder ( hawaiian_pizzabuilder );
-</span></span><span class="line"><span class="cl">    waiter.constructPizza();
+</span></span><span class="line"><span class="cl"><span class="o">/**</span> <span class="s2">&#34;ConcreteBuilder&#34;</span> <span class="o">*/</span>
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="n">SpicyPizzaBuilder</span> <span class="k">extends</span> <span class="n">PizzaBuilder</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">public</span> <span class="n">void</span> <span class="n">buildDough</span><span class="p">()</span>   <span class="p">{</span> <span class="n">pizza</span><span class="o">.</span><span class="n">setDough</span><span class="p">(</span><span class="s2">&#34;pan baked&#34;</span><span class="p">);</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="n">public</span> <span class="n">void</span> <span class="n">buildSauce</span><span class="p">()</span>   <span class="p">{</span> <span class="n">pizza</span><span class="o">.</span><span class="n">setSauce</span><span class="p">(</span><span class="s2">&#34;hot&#34;</span><span class="p">);</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="n">public</span> <span class="n">void</span> <span class="n">buildTopping</span><span class="p">()</span> <span class="p">{</span> <span class="n">pizza</span><span class="o">.</span><span class="n">setTopping</span><span class="p">(</span><span class="s2">&#34;pepperoni+salami&#34;</span><span class="p">);</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    Pizza pizza = waiter.getPizza();
-</span></span><span class="line"><span class="cl">  }
-</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="s1">&#39;&#39;</span><span class="o">/**</span> <span class="s2">&#34;Director&#34;</span> <span class="o">*/</span><span class="s1">&#39;&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="n">Waiter</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">private</span> <span class="n">PizzaBuilder</span> <span class="n">pizzaBuilder</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">public</span> <span class="n">void</span> <span class="n">setPizzaBuilder</span> <span class="p">(</span><span class="n">PizzaBuilder</span> <span class="n">pb</span><span class="p">)</span> <span class="p">{</span> <span class="n">pizzaBuilder</span> <span class="o">=</span> <span class="n">pb</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="n">public</span> <span class="n">Pizza</span> <span class="n">getPizza</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="n">pizzaBuilder</span><span class="o">.</span><span class="n">getPizza</span><span class="p">();</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">public</span> <span class="n">void</span> <span class="n">constructPizza</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">pizzaBuilder</span><span class="o">.</span><span class="n">createNewPizzaProduct</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="n">pizzaBuilder</span><span class="o">.</span><span class="n">buildDough</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="n">pizzaBuilder</span><span class="o">.</span><span class="n">buildSauce</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="n">pizzaBuilder</span><span class="o">.</span><span class="n">buildTopping</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">/**</span> <span class="n">A</span> <span class="n">customer</span> <span class="n">ordering</span> <span class="n">a</span> <span class="n">pizza</span><span class="o">.</span> <span class="o">*/</span>
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="n">BuilderExample</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">public</span> <span class="k">static</span> <span class="n">void</span> <span class="n">main</span><span class="p">(</span><span class="ne">String</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Waiter</span> <span class="n">waiter</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Waiter</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="n">PizzaBuilder</span> <span class="n">hawaiian_pizzabuilder</span> <span class="o">=</span> <span class="n">new</span> <span class="n">HawaiianPizzaBuilder</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="n">PizzaBuilder</span> <span class="n">spicy_pizzabuilder</span> <span class="o">=</span> <span class="n">new</span> <span class="n">SpicyPizzaBuilder</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">waiter</span><span class="o">.</span><span class="n">setPizzaBuilder</span> <span class="p">(</span> <span class="n">hawaiian_pizzabuilder</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">waiter</span><span class="o">.</span><span class="n">constructPizza</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">Pizza</span> <span class="n">pizza</span> <span class="o">=</span> <span class="n">waiter</span><span class="o">.</span><span class="n">getPizza</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="例子">例子</h1>
@@ -477,14 +476,14 @@
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">public class PersonDirector {
-</span></span><span class="line"><span class="cl">    public Person constructPerson(PersonBuilder pb) {
-</span></span><span class="line"><span class="cl">        pb.buildHead();
-</span></span><span class="line"><span class="cl">        pb.buildBody();
-</span></span><span class="line"><span class="cl">        pb.buildFoot();
-</span></span><span class="line"><span class="cl">        return pb.buildPerson();
-</span></span><span class="line"><span class="cl">    }
-</span></span><span class="line"><span class="cl">}
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">public</span> <span class="k">class</span> <span class="n">PersonDirector</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">public</span> <span class="n">Person</span> <span class="n">constructPerson</span><span class="p">(</span><span class="n">PersonBuilder</span> <span class="n">pb</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pb</span><span class="o">.</span><span class="n">buildHead</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pb</span><span class="o">.</span><span class="n">buildBody</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pb</span><span class="o">.</span><span class="n">buildFoot</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">pb</span><span class="o">.</span><span class="n">buildPerson</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>Test</p>
@@ -501,15 +500,15 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">public class Test {
-</span></span><span class="line"><span class="cl">    public static void main(String[] args) {
-</span></span><span class="line"><span class="cl">        PersonDirector pd = new PersonDirector();
-</span></span><span class="line"><span class="cl">        Person person = pd.constructPerson(new ManBuilder());
-</span></span><span class="line"><span class="cl">        System.out.println(person.getHead());
-</span></span><span class="line"><span class="cl">        System.out.println(person.getBody());
-</span></span><span class="line"><span class="cl">        System.out.println(person.getFoot());
-</span></span><span class="line"><span class="cl">    }
-</span></span><span class="line"><span class="cl">}
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">public</span> <span class="k">class</span> <span class="n">Test</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">public</span> <span class="k">static</span> <span class="n">void</span> <span class="n">main</span><span class="p">(</span><span class="ne">String</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">PersonDirector</span> <span class="n">pd</span> <span class="o">=</span> <span class="n">new</span> <span class="n">PersonDirector</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Person</span> <span class="n">person</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">constructPerson</span><span class="p">(</span><span class="n">new</span> <span class="n">ManBuilder</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="n">out</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="n">person</span><span class="o">.</span><span class="n">getHead</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="n">out</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="n">person</span><span class="o">.</span><span class="n">getBody</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="n">out</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="n">person</span><span class="o">.</span><span class="n">getFoot</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>运行结果</p>
@@ -543,7 +542,7 @@
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/pattern/">pattern</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/pattern/">Pattern</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
         </section>
@@ -554,8 +553,8 @@
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.115.1">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
-                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2017 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">zhangxiaofeng05</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.123.8">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2017 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">zhangxiaofeng05</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
 
@@ -564,5 +563,5 @@
             </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
                 <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
             </a>
-        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.stemmer.support.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.zh.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.stemmer.support.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.zh.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":100},"comment":{},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
 </html>

@@ -7,13 +7,12 @@
         <title>ftp服务器 - 风吹过的烟花</title><meta name="Description" content="zhangxiaofeng05&#39;s hugo blog"><meta property="og:title" content="ftp服务器" />
 <meta property="og:description" content="linux环境 1 2 3 4 5 LSB Version: :core-4.1-amd64:core-4.1-noarch Distributor ID: CentOS Description: CentOS Linux release 7.3.1611 (Core) Release: 7.3.1611 Codename: Core 安装 1 2 3 4 5 6 yum install vsftpd systemctl restart vsftpd.service # 重启vsftpd systemctl stop vsftpd.service # 停止vsftpd systemctl start vsftpd.service # 启动v" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://zhangxiaofeng05.github.io/ftp-server/" /><meta property="og:image" content="https://zhangxiaofeng05.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://zhangxiaofeng05.github.io/ftp-server/" /><meta property="og:image" content="https://zhangxiaofeng05.github.io/logo.png" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2019-12-01T00:09:14+08:00" />
 <meta property="article:modified_time" content="2022-08-21T23:44:18+08:00" /><meta property="og:site_name" content="风吹过的烟花" />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://zhangxiaofeng05.github.io/logo.png"/>
 
-<meta name="twitter:title" content="ftp服务器"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://zhangxiaofeng05.github.io/logo.png" /><meta name="twitter:title" content="ftp服务器"/>
 <meta name="twitter:description" content="linux环境 1 2 3 4 5 LSB Version: :core-4.1-amd64:core-4.1-noarch Distributor ID: CentOS Description: CentOS Linux release 7.3.1611 (Core) Release: 7.3.1611 Codename: Core 安装 1 2 3 4 5 6 yum install vsftpd systemctl restart vsftpd.service # 重启vsftpd systemctl stop vsftpd.service # 停止vsftpd systemctl start vsftpd.service # 启动v"/>
 <meta name="application-name" content="风吹过的烟花">
 <meta name="apple-mobile-web-app-title" content="风吹过的烟花"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
@@ -218,24 +217,24 @@
 </span><span class="lnt">18
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">anonymous_enable=YES    #允许匿名登录
-</span></span><span class="line"><span class="cl">local_enable=YES
-</span></span><span class="line"><span class="cl">write_enable=YES
-</span></span><span class="line"><span class="cl">local_umask=022         #匿名上传的默认权限，匿名不能修改生效，只能上传删除     
-</span></span><span class="line"><span class="cl">anon_upload_enable=YES      #允许匿名上传
-</span></span><span class="line"><span class="cl">anon_mkdir_write_enable=YES
-</span></span><span class="line"><span class="cl">anon_other_write_enable=YES
-</span></span><span class="line"><span class="cl">dirmessage_enable=YES
-</span></span><span class="line"><span class="cl">xferlog_enable=YES
-</span></span><span class="line"><span class="cl">connect_from_port_20=YES
-</span></span><span class="line"><span class="cl">xferlog_file=/var/log/xferlog
-</span></span><span class="line"><span class="cl">xferlog_std_format=YES
-</span></span><span class="line"><span class="cl">listen=YES
-</span></span><span class="line"><span class="cl">listen_ipv6=NO
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">anonymous_enable</span><span class="o">=</span><span class="n">YES</span>    <span class="c1">#允许匿名登录</span>
+</span></span><span class="line"><span class="cl"><span class="n">local_enable</span><span class="o">=</span><span class="n">YES</span>
+</span></span><span class="line"><span class="cl"><span class="n">write_enable</span><span class="o">=</span><span class="n">YES</span>
+</span></span><span class="line"><span class="cl"><span class="n">local_umask</span><span class="o">=</span><span class="mi">022</span>         <span class="c1">#匿名上传的默认权限，匿名不能修改生效，只能上传删除     </span>
+</span></span><span class="line"><span class="cl"><span class="n">anon_upload_enable</span><span class="o">=</span><span class="n">YES</span>      <span class="c1">#允许匿名上传</span>
+</span></span><span class="line"><span class="cl"><span class="n">anon_mkdir_write_enable</span><span class="o">=</span><span class="n">YES</span>
+</span></span><span class="line"><span class="cl"><span class="n">anon_other_write_enable</span><span class="o">=</span><span class="n">YES</span>
+</span></span><span class="line"><span class="cl"><span class="n">dirmessage_enable</span><span class="o">=</span><span class="n">YES</span>
+</span></span><span class="line"><span class="cl"><span class="n">xferlog_enable</span><span class="o">=</span><span class="n">YES</span>
+</span></span><span class="line"><span class="cl"><span class="n">connect_from_port_20</span><span class="o">=</span><span class="n">YES</span>
+</span></span><span class="line"><span class="cl"><span class="n">xferlog_file</span><span class="o">=/</span><span class="k">var</span><span class="o">/</span><span class="nb">log</span><span class="o">/</span><span class="n">xferlog</span>
+</span></span><span class="line"><span class="cl"><span class="n">xferlog_std_format</span><span class="o">=</span><span class="n">YES</span>
+</span></span><span class="line"><span class="cl"><span class="n">listen</span><span class="o">=</span><span class="n">YES</span>
+</span></span><span class="line"><span class="cl"><span class="n">listen_ipv6</span><span class="o">=</span><span class="n">NO</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">pam_service_name=vsftpd
-</span></span><span class="line"><span class="cl">userlist_enable=YES
-</span></span><span class="line"><span class="cl">tcp_wrappers=YES
+</span></span><span class="line"><span class="cl"><span class="n">pam_service_name</span><span class="o">=</span><span class="n">vsftpd</span>
+</span></span><span class="line"><span class="cl"><span class="n">userlist_enable</span><span class="o">=</span><span class="n">YES</span>
+</span></span><span class="line"><span class="cl"><span class="n">tcp_wrappers</span><span class="o">=</span><span class="n">YES</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>匿名用户的默认根目录：/var/ftp/pub<br>
@@ -345,21 +344,21 @@
 </span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">anonymous_enable=NO
-</span></span><span class="line"><span class="cl">local_enable=YES
-</span></span><span class="line"><span class="cl">write_enable=YES
-</span></span><span class="line"><span class="cl">local_umask=755
-</span></span><span class="line"><span class="cl">dirmessage_enable=YES
-</span></span><span class="line"><span class="cl">xferlog_enable=YES
-</span></span><span class="line"><span class="cl">connect_from_port_20=YES
-</span></span><span class="line"><span class="cl">xferlog_file=/var/log/xferlog
-</span></span><span class="line"><span class="cl">xferlog_std_format=YES
-</span></span><span class="line"><span class="cl">listen=YES
-</span></span><span class="line"><span class="cl">listen_ipv6=NO
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">anonymous_enable</span><span class="o">=</span><span class="n">NO</span>
+</span></span><span class="line"><span class="cl"><span class="n">local_enable</span><span class="o">=</span><span class="n">YES</span>
+</span></span><span class="line"><span class="cl"><span class="n">write_enable</span><span class="o">=</span><span class="n">YES</span>
+</span></span><span class="line"><span class="cl"><span class="n">local_umask</span><span class="o">=</span><span class="mi">755</span>
+</span></span><span class="line"><span class="cl"><span class="n">dirmessage_enable</span><span class="o">=</span><span class="n">YES</span>
+</span></span><span class="line"><span class="cl"><span class="n">xferlog_enable</span><span class="o">=</span><span class="n">YES</span>
+</span></span><span class="line"><span class="cl"><span class="n">connect_from_port_20</span><span class="o">=</span><span class="n">YES</span>
+</span></span><span class="line"><span class="cl"><span class="n">xferlog_file</span><span class="o">=/</span><span class="k">var</span><span class="o">/</span><span class="nb">log</span><span class="o">/</span><span class="n">xferlog</span>
+</span></span><span class="line"><span class="cl"><span class="n">xferlog_std_format</span><span class="o">=</span><span class="n">YES</span>
+</span></span><span class="line"><span class="cl"><span class="n">listen</span><span class="o">=</span><span class="n">YES</span>
+</span></span><span class="line"><span class="cl"><span class="n">listen_ipv6</span><span class="o">=</span><span class="n">NO</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">pam_service_name=vsftpd
-</span></span><span class="line"><span class="cl">userlist_enable=YES
-</span></span><span class="line"><span class="cl">tcp_wrappers=YES
+</span></span><span class="line"><span class="cl"><span class="n">pam_service_name</span><span class="o">=</span><span class="n">vsftpd</span>
+</span></span><span class="line"><span class="cl"><span class="n">userlist_enable</span><span class="o">=</span><span class="n">YES</span>
+</span></span><span class="line"><span class="cl"><span class="n">tcp_wrappers</span><span class="o">=</span><span class="n">YES</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="用户名登录">用户名登录</h3>
@@ -408,7 +407,7 @@
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ftp/">ftp</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ftp/">Ftp</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
         </section>
@@ -419,8 +418,8 @@
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.115.1">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
-                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2017 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">zhangxiaofeng05</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.123.8">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2017 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">zhangxiaofeng05</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
 
@@ -429,5 +428,5 @@
             </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
                 <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
             </a>
-        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.stemmer.support.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.zh.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.stemmer.support.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.zh.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":100},"comment":{},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
 </html>

@@ -4,8 +4,32 @@
         <link>https://zhangxiaofeng05.github.io/tags/</link>
         <description>Tags - 标签 - 风吹过的烟花</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Wed, 31 May 2023 18:38:29 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/" rel="self" type="application/rss+xml" /><item>
-    <title>mysql</title>
+            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Sat, 09 Mar 2024 21:13:49 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>ByteArray</title>
+    <link>https://zhangxiaofeng05.github.io/tags/bytearray/</link>
+    <pubDate>Sat, 09 Mar 2024 21:13:49 &#43;0800</pubDate>
+    <author>zhangxiaofeng05</author>
+    <guid>https://zhangxiaofeng05.github.io/tags/bytearray/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Golang</title>
+    <link>https://zhangxiaofeng05.github.io/tags/golang/</link>
+    <pubDate>Sat, 09 Mar 2024 21:13:49 &#43;0800</pubDate>
+    <author>zhangxiaofeng05</author>
+    <guid>https://zhangxiaofeng05.github.io/tags/golang/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Json</title>
+    <link>https://zhangxiaofeng05.github.io/tags/json/</link>
+    <pubDate>Sat, 09 Mar 2024 21:13:49 &#43;0800</pubDate>
+    <author>zhangxiaofeng05</author>
+    <guid>https://zhangxiaofeng05.github.io/tags/json/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>MySQL</title>
     <link>https://zhangxiaofeng05.github.io/tags/mysql/</link>
     <pubDate>Wed, 31 May 2023 18:38:29 &#43;0800</pubDate>
     <author>zhangxiaofeng05</author>
@@ -13,7 +37,7 @@
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>hack</title>
+    <title>Hack</title>
     <link>https://zhangxiaofeng05.github.io/tags/hack/</link>
     <pubDate>Tue, 27 Dec 2022 23:30:00 &#43;0800</pubDate>
     <author>zhangxiaofeng05</author>
@@ -29,7 +53,7 @@
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>git</title>
+    <title>Git</title>
     <link>https://zhangxiaofeng05.github.io/tags/git/</link>
     <pubDate>Thu, 20 Oct 2022 23:09:19 &#43;0800</pubDate>
     <author>zhangxiaofeng05</author>
@@ -37,7 +61,7 @@
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>github</title>
+    <title>Github</title>
     <link>https://zhangxiaofeng05.github.io/tags/github/</link>
     <pubDate>Thu, 20 Oct 2022 23:09:19 &#43;0800</pubDate>
     <author>zhangxiaofeng05</author>
@@ -45,7 +69,7 @@
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>linux</title>
+    <title>Linux</title>
     <link>https://zhangxiaofeng05.github.io/tags/linux/</link>
     <pubDate>Sun, 10 Jan 2021 21:27:41 &#43;0800</pubDate>
     <author>zhangxiaofeng05</author>
@@ -53,35 +77,11 @@
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>proxy</title>
+    <title>Proxy</title>
     <link>https://zhangxiaofeng05.github.io/tags/proxy/</link>
     <pubDate>Mon, 01 Jun 2020 21:01:18 &#43;0800</pubDate>
     <author>zhangxiaofeng05</author>
     <guid>https://zhangxiaofeng05.github.io/tags/proxy/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>windows</title>
-    <link>https://zhangxiaofeng05.github.io/tags/windows/</link>
-    <pubDate>Mon, 01 Jun 2020 21:01:18 &#43;0800</pubDate>
-    <author>zhangxiaofeng05</author>
-    <guid>https://zhangxiaofeng05.github.io/tags/windows/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>nextcloud</title>
-    <link>https://zhangxiaofeng05.github.io/tags/nextcloud/</link>
-    <pubDate>Sat, 04 Apr 2020 18:06:00 &#43;0800</pubDate>
-    <author>zhangxiaofeng05</author>
-    <guid>https://zhangxiaofeng05.github.io/tags/nextcloud/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>python</title>
-    <link>https://zhangxiaofeng05.github.io/tags/python/</link>
-    <pubDate>Sat, 18 Jan 2020 01:16:31 &#43;0800</pubDate>
-    <author>zhangxiaofeng05</author>
-    <guid>https://zhangxiaofeng05.github.io/tags/python/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

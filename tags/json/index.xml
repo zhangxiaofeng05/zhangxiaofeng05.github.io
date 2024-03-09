@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Json - 标签 - 风吹过的烟花</title>
+        <link>https://zhangxiaofeng05.github.io/tags/json/</link>
+        <description>Json - 标签 - 风吹过的烟花</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
+            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Sat, 09 Mar 2024 21:13:49 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/json/" rel="self" type="application/rss+xml" /><item>
+    <title>golang的json中的byte数组编码</title>
+    <link>https://zhangxiaofeng05.github.io/marshal_bytearray_as_json_array_in_go/</link>
+    <pubDate>Sat, 09 Mar 2024 21:13:49 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://zhangxiaofeng05.github.io/marshal_bytearray_as_json_array_in_go/</guid>
+    <description><![CDATA[golang的中json，marshal byte数组会默认对byte数组进行base64编码，编码成string，重写MarshalJSON]]></description>
+</item>
+</channel>
+</rss>

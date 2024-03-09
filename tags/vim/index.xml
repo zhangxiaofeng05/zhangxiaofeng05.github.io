@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>vim - 标签 - 风吹过的烟花</title>
+        <title>Vim - 标签 - 风吹过的烟花</title>
         <link>https://zhangxiaofeng05.github.io/tags/vim/</link>
-        <description>vim - 标签 - 风吹过的烟花</description>
+        <description>Vim - 标签 - 风吹过的烟花</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
             <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Thu, 02 Jan 2020 23:51:51 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/vim/" rel="self" type="application/rss+xml" /><item>
     <title>vim安装插件</title>
