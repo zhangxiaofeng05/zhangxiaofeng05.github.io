@@ -15,7 +15,7 @@ import (
 	"strings"
 )
 
-type JSONableSlice []uint8
+type JSONableSlice []byte
 
 func (u JSONableSlice) MarshalJSON() ([]byte, error) {
 	var result string
@@ -68,6 +68,15 @@ func main() {
 	contentBase64 := base64.StdEncoding.EncodeToString(content)
 	log.Printf("contentBase64: %s", contentBase64)
 
+	log.Println("json中的byte数组 默认json解码")
+	var r1Decode Param1
+	err = json.Unmarshal(rr1, &r1Decode)
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Printf("r1Decode: %+v", r1Decode)
+	log.Printf(string(r1Decode.Content))
+
 	log.Println(strings.Repeat("-", 50))
 
 	log.Println("json中的byte数组 自定义byte数组编码的json编码,保留byte数组原始数据")
@@ -81,6 +90,15 @@ func main() {
 		log.Fatal(err)
 	}
 	log.Printf("rr2: %s", string(rr2))
+
+	log.Printf("json中的byte数组 自定义byte数组编码解码的json解码,使用byte数组原始数据赋值到结构体")
+	var r2Decode Param2
+	err = json.Unmarshal(rr2, &r2Decode)
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Printf("r2Decode: %+v", r2Decode)
+	log.Printf(string(r2Decode.Content))
 }
 ```
 
@@ -93,9 +111,15 @@ main.go:48: --------------------------------------------------
 main.go:59: json中的byte数组 默认json编码
 main.go:60: rr1: {"content":"ZmlyZWZseQ==","public":"pp","sig":"ss"}
 main.go:62: contentBase64: ZmlyZWZseQ==
-main.go:64: --------------------------------------------------
-main.go:66: json中的byte数组 自定义byte数组编码的json编码,保留byte数组原始数据
-main.go:76: rr2: {"content":[102,105,114,101,102,108,121],"public":"pp","sig":"ss"}
+main.go:64: json中的byte数组 默认json解码
+main.go:70: r1Decode: {Content:[102 105 114 101 102 108 121] Public:pp Sig:ss}
+main.go:71: firefly
+main.go:73: --------------------------------------------------
+main.go:75: json中的byte数组 自定义byte数组编码的json编码,保留byte数组原始数据
+main.go:85: rr2: {"content":[102,105,114,101,102,108,121],"public":"pp","sig":"ss"}
+main.go:87: json中的byte数组 自定义byte数组编码解码的json解码,使用byte数组原始数据赋值到结构体
+main.go:93: r2Decode: {Content:[102 105 114 101 102 108 121] Public:pp Sig:ss}
+main.go:94: firefly
 ```
 
 
