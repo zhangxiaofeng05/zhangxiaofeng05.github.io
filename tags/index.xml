@@ -4,7 +4,15 @@
         <link>https://zhangxiaofeng05.github.io/tags/</link>
         <description>Tags - 标签 - 风吹过的烟花</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Sat, 09 Mar 2024 21:13:49 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Tue, 11 Jun 2024 21:50:41 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Mac</title>
+    <link>https://zhangxiaofeng05.github.io/tags/mac/</link>
+    <pubDate>Tue, 11 Jun 2024 21:50:41 &#43;0800</pubDate>
+    <author>zhangxiaofeng05</author>
+    <guid>https://zhangxiaofeng05.github.io/tags/mac/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>ByteArray</title>
     <link>https://zhangxiaofeng05.github.io/tags/bytearray/</link>
     <pubDate>Sat, 09 Mar 2024 21:13:49 &#43;0800</pubDate>
@@ -74,14 +82,6 @@
     <pubDate>Sun, 10 Jan 2021 21:27:41 &#43;0800</pubDate>
     <author>zhangxiaofeng05</author>
     <guid>https://zhangxiaofeng05.github.io/tags/linux/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Proxy</title>
-    <link>https://zhangxiaofeng05.github.io/tags/proxy/</link>
-    <pubDate>Mon, 01 Jun 2020 21:01:18 &#43;0800</pubDate>
-    <author>zhangxiaofeng05</author>
-    <guid>https://zhangxiaofeng05.github.io/tags/proxy/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>
