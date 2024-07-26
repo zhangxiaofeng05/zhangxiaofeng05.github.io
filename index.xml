@@ -4,9 +4,17 @@
         <link>https://zhangxiaofeng05.github.io/</link>
         <description>zhangxiaofeng05&#39;s hugo blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Tue, 11 Jun 2024 21:50:41 &#43;0800</lastBuildDate>
+            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Fri, 26 Jul 2024 09:11:13 &#43;0800</lastBuildDate>
             <atom:link href="https://zhangxiaofeng05.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>ssh免密码登录</title>
+    <link>https://zhangxiaofeng05.github.io/ssh_nopassword_login/</link>
+    <pubDate>Fri, 26 Jul 2024 09:11:13 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://zhangxiaofeng05.github.io/ssh_nopassword_login/</guid>
+    <description><![CDATA[chatgpt回答，无问题 配置SSH无密码登录涉及使用SSH密钥对进行身份验证。以下是步骤： 1. 生成SSH密钥对 在客户端机器上（即你要登录的机]]></description>
+</item>
+<item>
     <title>mac m芯片在/根目录下创建文件报Read-only file system</title>
     <link>https://zhangxiaofeng05.github.io/mac_root_create_file/</link>
     <pubDate>Tue, 11 Jun 2024 21:50:41 &#43;0800</pubDate>
@@ -77,14 +85,6 @@
     <author>作者</author>
     <guid>https://zhangxiaofeng05.github.io/deepin-install-python3.6/</guid>
     <description><![CDATA[官网下载源码 官网：https://www.python.org/downloads/source/ 1 2 3 4 5 6 7 8 9 cd /opt/python/ sudo wget https://www.python.org/ftp/python/3.6.10/Python-3.6.10.tar.xz sudo xz -d Python-3.6.10.tar.xz sudo tar xvf]]></description>
-</item>
-<item>
-    <title>deepin安装使用Oh My Zsh</title>
-    <link>https://zhangxiaofeng05.github.io/deepin-install-ohmyzsh/</link>
-    <pubDate>Fri, 10 Jan 2020 00:27:17 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/deepin-install-ohmyzsh/</guid>
-    <description><![CDATA[安装Oh My Zsh github地址：https://github.com/ohmyzsh/ohmyzsh 1 2 3 4 5 6 7 8 9 sudo apt install zsh sh -c &#34;$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&#34; # 将 Zsh]]></description>
 </item>
 </channel>
 </rss>

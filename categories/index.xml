@@ -4,7 +4,15 @@
         <link>https://zhangxiaofeng05.github.io/categories/</link>
         <description>Categories - 分类 - 风吹过的烟花</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Tue, 11 Jun 2024 21:50:41 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/categories/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Fri, 26 Jul 2024 09:11:13 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>Ssh</title>
+    <link>https://zhangxiaofeng05.github.io/categories/ssh/</link>
+    <pubDate>Fri, 26 Jul 2024 09:11:13 &#43;0800</pubDate>
+    <author>zhangxiaofeng05</author>
+    <guid>https://zhangxiaofeng05.github.io/categories/ssh/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>Mac</title>
     <link>https://zhangxiaofeng05.github.io/categories/mac/</link>
     <pubDate>Tue, 11 Jun 2024 21:50:41 &#43;0800</pubDate>
@@ -74,14 +82,6 @@
     <pubDate>Sat, 17 Aug 2019 23:20:11 &#43;0800</pubDate>
     <author>zhangxiaofeng05</author>
     <guid>https://zhangxiaofeng05.github.io/categories/java%E5%9F%BA%E7%A1%80/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>数据库</title>
-    <link>https://zhangxiaofeng05.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
-    <pubDate>Sat, 17 Aug 2019 09:31:27 &#43;0800</pubDate>
-    <author>zhangxiaofeng05</author>
-    <guid>https://zhangxiaofeng05.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

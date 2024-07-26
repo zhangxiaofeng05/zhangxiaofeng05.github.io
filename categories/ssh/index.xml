@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Ssh - 分类 - 风吹过的烟花</title>
+        <link>https://zhangxiaofeng05.github.io/categories/ssh/</link>
+        <description>Ssh - 分类 - 风吹过的烟花</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
+            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Fri, 26 Jul 2024 09:11:13 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/categories/ssh/" rel="self" type="application/rss+xml" /><item>
+    <title>ssh免密码登录</title>
+    <link>https://zhangxiaofeng05.github.io/ssh_nopassword_login/</link>
+    <pubDate>Fri, 26 Jul 2024 09:11:13 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://zhangxiaofeng05.github.io/ssh_nopassword_login/</guid>
+    <description><![CDATA[chatgpt回答，无问题 配置SSH无密码登录涉及使用SSH密钥对进行身份验证。以下是步骤： 1. 生成SSH密钥对 在客户端机器上（即你要登录的机]]></description>
+</item>
+</channel>
+</rss>
