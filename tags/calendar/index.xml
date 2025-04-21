@@ -1,16 +1,67 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Calendar - 标签 - 风吹过的烟花</title>
-        <link>https://zhangxiaofeng05.github.io/tags/calendar/</link>
-        <description>Calendar - 标签 - 风吹过的烟花</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Wed, 24 Jul 2019 17:14:47 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/calendar/" rel="self" type="application/rss+xml" /><item>
-    <title>Java中Date、SimpleDateFormat、Calendar</title>
-    <link>https://zhangxiaofeng05.github.io/java-date-calender/</link>
-    <pubDate>Wed, 24 Jul 2019 17:14:47 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/java-date-calender/</guid>
-    <description><![CDATA[jdk1.8 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 import java.text.ParseException; import java.text.SimpleDateFormat; import java.util.Calendar; import java.util.Date; /** * Java 语言的Date(日期)，Cale]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Calendar on 风吹过的烟花</title>
+    <link>https://zhangxiaofeng05.github.io/tags/calendar/</link>
+    <description>Recent content in Calendar on 风吹过的烟花</description>
+    <image>
+      <title>风吹过的烟花</title>
+      <url>https://zhangxiaofeng05.github.io/images/papermod-cover.png</url>
+      <link>https://zhangxiaofeng05.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 24 Jul 2019 17:14:47 +0800</lastBuildDate>
+    <atom:link href="https://zhangxiaofeng05.github.io/tags/calendar/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java中Date、SimpleDateFormat、Calendar</title>
+      <link>https://zhangxiaofeng05.github.io/posts/java-date-calender/</link>
+      <pubDate>Wed, 24 Jul 2019 17:14:47 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/java-date-calender/</guid>
+      <description>&lt;h2 id=&#34;jdk18&#34;&gt;jdk1.8&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+/**
+ * Java 语言的Date(日期)，Calendar(日历)，DateFormat(日期格式)组成了Java标准的一个基本但是非常重要的部分。
+ */
+public class StringTest {
+    public static void main(String[] args) throws ParseException {
+        Date currentTime = new Date();
+        System.out.println(currentTime);
+        //设置时间格式
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(&amp;#34;yyyy-MM-dd HH:mm:ss&amp;#34;);
+        System.out.println(simpleDateFormat.format(currentTime));
+
+        SimpleDateFormat year = new SimpleDateFormat(&amp;#34;yyyy&amp;#34;);//获取年----其它类似
+        System.out.println(year.format(currentTime));
+
+        Date date = simpleDateFormat.parse(&amp;#34;2019-1-23 12:00:00&amp;#34;);//把字符串转换成日期
+        System.out.println(simpleDateFormat.format(date));
+
+        //计算时间差currentTime-date相差多少天
+        Long days = (currentTime.getTime()-date.getTime())/(1000*60*60*24);//参数--毫秒
+        System.out.println(days);
+
+        System.out.println(&amp;#34;---------------------------利用Calendar获取时间值比较方便&amp;#34;);
+//        Calendar转化为Date
+        Calendar cal=Calendar.getInstance();
+        Date date1=cal.getTime();
+
+//        Date转化为Calendar
+        Calendar cal2=Calendar.getInstance();
+        cal2.setTime(date);
+        //计算某个日期是那一年的第几天
+        int d = cal2.get(Calendar.DAY_OF_YEAR);
+        System.out.println(d);
+
+        //一年的第几周等。。
+
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
 </rss>

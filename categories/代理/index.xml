@@ -1,24 +1,81 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>代理 - 分类 - 风吹过的烟花</title>
-        <link>https://zhangxiaofeng05.github.io/categories/%E4%BB%A3%E7%90%86/</link>
-        <description>代理 - 分类 - 风吹过的烟花</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Sun, 28 Apr 2019 17:36:55 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/categories/%E4%BB%A3%E7%90%86/" rel="self" type="application/rss+xml" /><item>
-    <title>使用SwitchyOmega</title>
-    <link>https://zhangxiaofeng05.github.io/use-switchyomega/</link>
-    <pubDate>Sun, 28 Apr 2019 17:36:55 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/use-switchyomega/</guid>
-    <description><![CDATA[这个插件这是一个工具，常见代理有shadowsocks、Goflyway switchyomega的获取 代码在GitHub上维护:https:]]></description>
-</item>
-<item>
-    <title>终端使用socks5代理</title>
-    <link>https://zhangxiaofeng05.github.io/terminal-use-socks5-proxy/</link>
-    <pubDate>Thu, 16 Aug 2018 10:07:27 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/terminal-use-socks5-proxy/</guid>
-    <description><![CDATA[安装proxychains 简单粗暴的方式： 1 $ sudo apt-get install proxychains 如果想要使用最新版，也可以自己手动编译源码 1 2 3 4 5 6 # 安装 git clone https://github.com/rofl0r/proxychains-ng.git ./configure --prefix=/usr --sysconfdir=/etc make sudo make install sudo make install-config]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>代理 on 风吹过的烟花</title>
+    <link>https://zhangxiaofeng05.github.io/categories/%E4%BB%A3%E7%90%86/</link>
+    <description>Recent content in 代理 on 风吹过的烟花</description>
+    <image>
+      <title>风吹过的烟花</title>
+      <url>https://zhangxiaofeng05.github.io/images/papermod-cover.png</url>
+      <link>https://zhangxiaofeng05.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 28 Apr 2019 17:36:55 +0800</lastBuildDate>
+    <atom:link href="https://zhangxiaofeng05.github.io/categories/%E4%BB%A3%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用SwitchyOmega</title>
+      <link>https://zhangxiaofeng05.github.io/posts/use-switchyomega/</link>
+      <pubDate>Sun, 28 Apr 2019 17:36:55 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/use-switchyomega/</guid>
+      <description>&lt;p&gt;这个插件这是一个工具，常见代理有shadowsocks、Goflyway&lt;/p&gt;
+&lt;h1 id=&#34;switchyomega的获取&#34;&gt;switchyomega的获取&lt;/h1&gt;
+&lt;p&gt;代码在GitHub上维护:https://github.com/FelisCatus/SwitchyOmega&lt;/p&gt;
+&lt;h1 id=&#34;switchyomega的配置&#34;&gt;switchyomega的配置&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;配置auto switch
+规则列表地址：https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;代理设置&#34;&gt;代理设置&lt;/h1&gt;
+&lt;p&gt;参考：https://github.com/Alvin9999/new-pac&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>终端使用socks5代理</title>
+      <link>https://zhangxiaofeng05.github.io/posts/terminal-use-socks5-proxy/</link>
+      <pubDate>Thu, 16 Aug 2018 10:07:27 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/terminal-use-socks5-proxy/</guid>
+      <description>&lt;h2 id=&#34;安装proxychains&#34;&gt;安装proxychains&lt;/h2&gt;
+&lt;p&gt;简单粗暴的方式：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ sudo apt-get install proxychains
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果想要使用最新版，也可以自己手动编译源码&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 安装&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone https://github.com/rofl0r/proxychains-ng.git
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./configure --prefix&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/usr --sysconfdir&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/etc
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;make
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo make install
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo make install-config
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;配置&#34;&gt;配置&lt;/h2&gt;
+&lt;p&gt;在安装完成之后，一般在 /etc/proxychains.conf 处会有默认配置文件，编辑该文件&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo vim /etc/proxychains.conf
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;然后在文件末修改成自己设置的shadowsocks设置的端口，如下&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;socks5 127.0.0.1 1080
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;验证&#34;&gt;验证&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ curl ip.gs
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这个显示的ip是没有被代理的&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ proxychains curl ip.gs
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这个就是你的代理了&lt;/p&gt;
+&lt;p&gt;在配置完 proxychains 之后，在终端如果任何命令无法连接成功时，在其前加上 proxychains 就可以走代理方式来执行该命令。&lt;/p&gt;
+&lt;h2 id=&#34;shell函数unixlinux&#34;&gt;shell函数(unix&amp;amp;linux)&lt;/h2&gt;
+&lt;p&gt;如果系统不支持proxychains，可以考虑设置函数。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# .zshrc&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;function&lt;/span&gt; proxy_on&lt;span class=&#34;o&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;http_proxy&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;http://127.0.0.1:1080
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;https_proxy&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$http_proxy&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; -e &lt;span class=&#34;s2&#34;&gt;&amp;#34;终端代理已开启。&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;function&lt;/span&gt; proxy_off&lt;span class=&#34;o&#34;&gt;(){&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;unset&lt;/span&gt; http_proxy https_proxy
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; -e &lt;span class=&#34;s2&#34;&gt;&amp;#34;终端代理已关闭。&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://einverne.github.io/post/2017/02/terminal-sock5-proxy.html&#34;&gt;终端使用 sock5 代理 终端 terminal socks5 shadowsocks 代理 proxy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://segmentfault.com/a/1190000039686752&#34;&gt;终端使用代理加速的正确方式(Shadowsocks)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+  </channel>
 </rss>

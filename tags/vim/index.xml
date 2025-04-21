@@ -1,32 +1,137 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Vim - 标签 - 风吹过的烟花</title>
-        <link>https://zhangxiaofeng05.github.io/tags/vim/</link>
-        <description>Vim - 标签 - 风吹过的烟花</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Thu, 02 Jan 2020 23:51:51 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/vim/" rel="self" type="application/rss+xml" /><item>
-    <title>vim安装插件</title>
-    <link>https://zhangxiaofeng05.github.io/vim-plugin/</link>
-    <pubDate>Thu, 02 Jan 2020 23:51:51 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/vim-plugin/</guid>
-    <description><![CDATA[注意：推荐参考：https://github.com/zhangxiaofeng05/dotfiles 插件管理器(Vundle.vim) 安装]]></description>
-</item>
-<item>
-    <title>解决vim粘贴错乱问题</title>
-    <link>https://zhangxiaofeng05.github.io/vim_paste/</link>
-    <pubDate>Thu, 28 Nov 2019 22:58:59 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/vim_paste/</guid>
-    <description><![CDATA[vim打开文件后 1、在视图模式下输入 1 :set paste 2、按i进入编辑模式 3、粘贴((win)Ctrl+v | Shift+Insert(linux)) 4、关闭粘贴 1 :set nopaste]]></description>
-</item>
-<item>
-    <title>vim基础配置</title>
-    <link>https://zhangxiaofeng05.github.io/vim-basic-configuration/</link>
-    <pubDate>Sat, 25 Aug 2018 19:07:11 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/vim-basic-configuration/</guid>
-    <description><![CDATA[注意：推荐参考：https://github.com/zhangxiaofeng05/dotfiles 我的配置 系统的vim的配置文件在 /etc/vim/vimrc 当前]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Vim on 风吹过的烟花</title>
+    <link>https://zhangxiaofeng05.github.io/tags/vim/</link>
+    <description>Recent content in Vim on 风吹过的烟花</description>
+    <image>
+      <title>风吹过的烟花</title>
+      <url>https://zhangxiaofeng05.github.io/images/papermod-cover.png</url>
+      <link>https://zhangxiaofeng05.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 02 Jan 2020 23:51:51 +0800</lastBuildDate>
+    <atom:link href="https://zhangxiaofeng05.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>vim安装插件</title>
+      <link>https://zhangxiaofeng05.github.io/posts/vim-plugin/</link>
+      <pubDate>Thu, 02 Jan 2020 23:51:51 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/vim-plugin/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;注意：推荐参考：&lt;a href=&#34;https://github.com/zhangxiaofeng05/dotfiles&#34;&gt;https://github.com/zhangxiaofeng05/dotfiles&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;插件管理器vundlevim&#34;&gt;插件管理器(Vundle.vim)&lt;/h2&gt;
+&lt;h3 id=&#34;安装&#34;&gt;安装&lt;/h3&gt;
+&lt;p&gt;github地址：https://github.com/VundleVim/Vundle.vim  (&lt;code&gt;仔细看README.md&lt;/code&gt;)&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;clone&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;修改配置文件&lt;br&gt;
+&lt;code&gt;vim ~/.vimrc&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;set nocompatible              &amp;#34; be iMproved, required
+filetype off                  &amp;#34; required
+
+&amp;#34; set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+&amp;#34; alternatively, pass a path where Vundle should install plugins
+&amp;#34;call vundle#begin(&amp;#39;~/some/path/here&amp;#39;)
+
+&amp;#34; let Vundle manage Vundle, required
+Plugin &amp;#39;VundleVim/Vundle.vim&amp;#39;
+
+&amp;#34;plugin------------------------&amp;#34;
+“Plugin &amp;#39;插件名&amp;#39;  
+&amp;#34;看作者的README.md，有示例
+
+&amp;#34;plugin------------------------&amp;#34;
+
+&amp;#34; All of your Plugins must be added before the following line
+call vundle#end()            &amp;#34; required
+filetype plugin indent on    &amp;#34; required
+&amp;#34; To ignore plugin indent changes, instead use:
+&amp;#34;filetype plugin on
+&amp;#34;
+&amp;#34; Brief help
+&amp;#34; :PluginList       - lists configured plugins
+&amp;#34; :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+&amp;#34; :PluginSearch foo - searches for foo; append `!` to refresh local cache
+&amp;#34; :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+&amp;#34;
+&amp;#34; see :h vundle for more details or wiki for FAQ
+&amp;#34; Put your non-Plugin stuff after this line
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;install-plugins&#34;&gt;Install Plugins&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Launch &lt;code&gt;vim&lt;/code&gt; and run &lt;code&gt;:PluginInstall&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;To install from command line: &lt;code&gt;vim +PluginInstall +qall&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;安装nerdtree&#34;&gt;安装NERDTree&lt;/h2&gt;
+&lt;h3 id=&#34;安装此插件需要安装插件管理器&#34;&gt;安装此插件需要安装插件管理器&lt;/h3&gt;
+&lt;p&gt;github地址：https://github.com/preservim/nerdtree  (&lt;code&gt;仔细看README.md&lt;/code&gt;)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>解决vim粘贴错乱问题</title>
+      <link>https://zhangxiaofeng05.github.io/posts/vim_paste/</link>
+      <pubDate>Thu, 28 Nov 2019 22:58:59 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/vim_paste/</guid>
+      <description>&lt;p&gt;vim打开文件后&lt;br&gt;
+1、在视图模式下输入&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;:set paste
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2、按i进入编辑模式&lt;br&gt;
+3、粘贴((win)Ctrl+v | Shift+Insert(linux))&lt;br&gt;
+4、关闭粘贴&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;:set nopaste
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>vim基础配置</title>
+      <link>https://zhangxiaofeng05.github.io/posts/vim-basic-configuration/</link>
+      <pubDate>Sat, 25 Aug 2018 19:07:11 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/vim-basic-configuration/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;注意：推荐参考：&lt;a href=&#34;https://github.com/zhangxiaofeng05/dotfiles&#34;&gt;https://github.com/zhangxiaofeng05/dotfiles&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;我的配置&#34;&gt;我的配置&lt;/h2&gt;
+&lt;p&gt;系统的vim的配置文件在&lt;br&gt;
+&lt;code&gt;/etc/vim/vimrc&lt;/code&gt;&lt;br&gt;
+当前用户的vim配置文件&lt;br&gt;
+&lt;code&gt;~/.vimrc&lt;/code&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;#34; --------------zhangxiaofeng----------------
+&amp;#34; 显示行号 或者 set number
+set nu
+&amp;#34; 语法高亮,自动识别代码,使用多种颜色显示
+syntax on
+&amp;#34; 不与vi兼容,采用vim自己的操作命令
+set nocompatible
+&amp;#34; 不支持鼠标,如果想支持把-去掉
+set mouse-=a
+&amp;#34; 使用utf-8编码
+set encoding=utf-8
+&amp;#34; 高亮度搜寻
+set hlsearch
+&amp;#34; 输入搜索模式时，每输入一个字符，就自动跳到第一个匹配的结果
+set incsearch
+&amp;#34; 设置主题
+&amp;#34; colorscheme molokai
+colorscheme desert
+ 
+&amp;#34; 高亮显示当前行/列
+set cursorline                                                                                                                          
+set cursorcolumn
+&amp;#34; 修改行/列线的外观
+&amp;#34; highlight CursorLine   cterm=NONE ctermbg=black ctermfg=green guibg=NONE guifg=NONE
+highlight CursorColumn cterm=NONE ctermbg=black ctermfg=green guibg=NONE guifg=NONE
+&amp;#34; 按下回车键后，下一行的缩进会自动跟上一行的缩进保持一致
+set autoindent
+&amp;#34; 按下 Tab 键时，Vim 显示的空格数
+set tabstop=4
+&amp;#34; 在文本上按下&amp;gt;&amp;gt; &amp;lt;&amp;lt;等缩进,每一级的字符数
+set shiftwidth=4
+&amp;#34; 光标遇到括号,自动高亮对应的括号
+set showmatch
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
 </rss>

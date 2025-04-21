@@ -1,16 +1,54 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Ssh - 分类 - 风吹过的烟花</title>
-        <link>https://zhangxiaofeng05.github.io/categories/ssh/</link>
-        <description>Ssh - 分类 - 风吹过的烟花</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Fri, 26 Jul 2024 09:11:13 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/categories/ssh/" rel="self" type="application/rss+xml" /><item>
-    <title>ssh免密码登录</title>
-    <link>https://zhangxiaofeng05.github.io/ssh_nopassword_login/</link>
-    <pubDate>Fri, 26 Jul 2024 09:11:13 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/ssh_nopassword_login/</guid>
-    <description><![CDATA[chatgpt回答，无问题 配置SSH无密码登录涉及使用SSH密钥对进行身份验证。以下是步骤： 1. 生成SSH密钥对 在客户端机器上（即你要登录的机]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Ssh on 风吹过的烟花</title>
+    <link>https://zhangxiaofeng05.github.io/categories/ssh/</link>
+    <description>Recent content in Ssh on 风吹过的烟花</description>
+    <image>
+      <title>风吹过的烟花</title>
+      <url>https://zhangxiaofeng05.github.io/images/papermod-cover.png</url>
+      <link>https://zhangxiaofeng05.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 26 Jul 2024 09:11:13 +0800</lastBuildDate>
+    <atom:link href="https://zhangxiaofeng05.github.io/categories/ssh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ssh免密码登录</title>
+      <link>https://zhangxiaofeng05.github.io/posts/ssh_nopassword_login/</link>
+      <pubDate>Fri, 26 Jul 2024 09:11:13 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/ssh_nopassword_login/</guid>
+      <description>&lt;p&gt;chatgpt回答，无问题&lt;/p&gt;
+&lt;p&gt;配置SSH无密码登录涉及使用SSH密钥对进行身份验证。以下是步骤：&lt;/p&gt;
+&lt;h2 id=&#34;1-生成ssh密钥对&#34;&gt;1. 生成SSH密钥对&lt;/h2&gt;
+&lt;p&gt;在客户端机器上（即你要登录的机器），使用以下命令生成SSH密钥对：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ssh-keygen -t rsa
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;你会被提示输入文件保存位置（默认是~/.ssh/id_rsa）和密码短语（可以留空以便无密码登录）。&lt;/p&gt;
+&lt;h2 id=&#34;2-复制公钥到远程主机&#34;&gt;2. 复制公钥到远程主机&lt;/h2&gt;
+&lt;p&gt;使用ssh-copy-id命令将公钥复制到远程主机上：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ssh-copy-id username@remote_host
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;替换username为远程主机上的用户名，remote_host为远程主机的IP地址或域名。此命令会将公钥添加到远程主机上的~/.ssh/authorized_keys文件中。&lt;/p&gt;
+&lt;p&gt;如果没有ssh-copy-id，可以手动复制公钥：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cat ~/.ssh/id_rsa.pub | ssh username@remote_host &amp;#39;mkdir -p ~/.ssh &amp;amp;&amp;amp; cat &amp;gt;&amp;gt; ~/.ssh/authorized_keys&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;也可以将~/.ssh/id_rsa.pub内容复制到服务器上的~/.ssh/authorized_keys&lt;/p&gt;
+&lt;h2 id=&#34;3-确保权限设置正确&#34;&gt;3. 确保权限设置正确&lt;/h2&gt;
+&lt;p&gt;确保远程主机上的~/.ssh目录和~/.ssh/authorized_keys文件的权限设置正确：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ssh username@remote_host
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/authorized_keys
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;4-测试无密码登录&#34;&gt;4. 测试无密码登录&lt;/h2&gt;
+&lt;p&gt;现在你可以测试无密码登录：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ssh username@remote_host
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;如果一切正常，你应该能够无密码登录到远程主机。&lt;/p&gt;
+&lt;h2 id=&#34;5-其他配置可选&#34;&gt;5. 其他配置（可选）&lt;/h2&gt;
+&lt;p&gt;为了更好地管理SSH连接，可以在~/.ssh/config文件中添加配置：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Host remote_host
+    HostName remote_host
+    User username
+    IdentityFile ~/.ssh/id_rsa
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这样你可以通过以下命令登录：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ssh remote_host
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;替换 remote_host 为远程主机的别名。这样可以避免每次都输入完整的用户名和主机名。&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

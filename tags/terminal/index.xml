@@ -1,16 +1,57 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Terminal - 标签 - 风吹过的烟花</title>
-        <link>https://zhangxiaofeng05.github.io/tags/terminal/</link>
-        <description>Terminal - 标签 - 风吹过的烟花</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Fri, 10 Jan 2020 00:27:17 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/terminal/" rel="self" type="application/rss+xml" /><item>
-    <title>deepin安装使用Oh My Zsh</title>
-    <link>https://zhangxiaofeng05.github.io/deepin-install-ohmyzsh/</link>
-    <pubDate>Fri, 10 Jan 2020 00:27:17 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/deepin-install-ohmyzsh/</guid>
-    <description><![CDATA[安装Oh My Zsh github地址：https://github.com/ohmyzsh/ohmyzsh 1 2 3 4 5 6 7 8 9 sudo apt install zsh sh -c &#34;$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&#34; # 将 Zsh]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Terminal on 风吹过的烟花</title>
+    <link>https://zhangxiaofeng05.github.io/tags/terminal/</link>
+    <description>Recent content in Terminal on 风吹过的烟花</description>
+    <image>
+      <title>风吹过的烟花</title>
+      <url>https://zhangxiaofeng05.github.io/images/papermod-cover.png</url>
+      <link>https://zhangxiaofeng05.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 10 Jan 2020 00:27:17 +0800</lastBuildDate>
+    <atom:link href="https://zhangxiaofeng05.github.io/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>deepin安装使用Oh My Zsh</title>
+      <link>https://zhangxiaofeng05.github.io/posts/deepin-install-ohmyzsh/</link>
+      <pubDate>Fri, 10 Jan 2020 00:27:17 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/deepin-install-ohmyzsh/</guid>
+      <description>&lt;h2 id=&#34;安装oh-my-zsh&#34;&gt;安装Oh My Zsh&lt;/h2&gt;
+&lt;p&gt;github地址：https://github.com/ohmyzsh/ohmyzsh&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt install zsh
+sh -c &amp;#34;$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34;
+
+# 将 Zsh 设置为默认 Shell
+chsh -s /bin/zsh
+#  查看当前所用的 Shell
+echo $SHELL
+# 查看系统内已安装的 Shell
+cat /etc/shells
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;ps:root执行此脚本只能root使用Oh My Zsh，其他用户使用需要在那个用户下执行此安装脚本
+&lt;img alt=&#34;8&#34; loading=&#34;lazy&#34; src=&#34;https://zhangxiaofeng05.github.io/mypng/8.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;更换主题&#34;&gt;更换主题&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;vi ~/.zshrc
+
+#ZSH_THEME=&amp;#34;robbyrussell&amp;#34;
+ZSH_THEME=&amp;#34;agnoster&amp;#34;
+#ZSH_THEME=&amp;#34;amuse&amp;#34;
+#ZSH_THEME=&amp;#34;fishy&amp;#34;
+#ZSH_THEME=&amp;#34;ys&amp;#34;
+
+source ~/.zshrc
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;agnoster主题箭头无法正常显示&#34;&gt;agnoster主题箭头无法正常显示&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;检查是否安装PowerlineSymbols字体&lt;br&gt;
+如果没有安装,官方安装文档https://powerline.readthedocs.io/en/latest/installation.html&lt;/li&gt;
+&lt;li&gt;在终端选择能够正常显示箭头的字体&lt;br&gt;
+PowerlineSymbols,DejaVu Sans Mono&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;安装字体参考： &lt;a href=&#34;https://github.com/powerline/fonts&#34;&gt;https://github.com/powerline/fonts&lt;/a&gt;&lt;br&gt;
+比如： &lt;code&gt;sudo apt-get install fonts-powerline&lt;/code&gt;，以GitHub为准。&lt;/p&gt;
+&lt;p&gt;deepin 15.11为例,系统已经装好字体了,但是没有正常显示箭头,在终端尝试哪个字体能够正常显示.
+&lt;img alt=&#34;9&#34; loading=&#34;lazy&#34; src=&#34;https://zhangxiaofeng05.github.io/mypng/9.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

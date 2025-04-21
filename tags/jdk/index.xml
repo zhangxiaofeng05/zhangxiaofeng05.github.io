@@ -1,16 +1,66 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Jdk - 标签 - 风吹过的烟花</title>
-        <link>https://zhangxiaofeng05.github.io/tags/jdk/</link>
-        <description>Jdk - 标签 - 风吹过的烟花</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Thu, 23 Aug 2018 14:10:41 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/jdk/" rel="self" type="application/rss+xml" /><item>
-    <title>安装jdk</title>
-    <link>https://zhangxiaofeng05.github.io/install-jdk/</link>
-    <pubDate>Thu, 23 Aug 2018 14:10:41 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/install-jdk/</guid>
-    <description><![CDATA[Linux 下载 官网：https://www.oracle.com/technetwork/java/javase/downloads/index.h]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Jdk on 风吹过的烟花</title>
+    <link>https://zhangxiaofeng05.github.io/tags/jdk/</link>
+    <description>Recent content in Jdk on 风吹过的烟花</description>
+    <image>
+      <title>风吹过的烟花</title>
+      <url>https://zhangxiaofeng05.github.io/images/papermod-cover.png</url>
+      <link>https://zhangxiaofeng05.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 23 Aug 2018 14:10:41 +0800</lastBuildDate>
+    <atom:link href="https://zhangxiaofeng05.github.io/tags/jdk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>安装jdk</title>
+      <link>https://zhangxiaofeng05.github.io/posts/install-jdk/</link>
+      <pubDate>Thu, 23 Aug 2018 14:10:41 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/install-jdk/</guid>
+      <description>&lt;h1 id=&#34;linux&#34;&gt;Linux&lt;/h1&gt;
+&lt;h2 id=&#34;下载&#34;&gt;下载&lt;/h2&gt;
+&lt;p&gt;官网：https://www.oracle.com/technetwork/java/javase/downloads/index.html&lt;/p&gt;
+&lt;h2 id=&#34;配置环境&#34;&gt;配置环境&lt;/h2&gt;
+&lt;p&gt;解压到/opt&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo tar -zxf jdk-8u211-linux-x64.tar.gz -C /opt/
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;修改/etc/profile文件&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo vi /etc/profile
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;把下面的添加到文件的末尾&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;export JAVA_HOME=/opt/jdk1.8.0_211
+export JRE_HOME=/opt/jdk1.8.0_211/jre
+export CLASSPATH=.:$JAVA_HOME/lib:$JRE_HOME/lib:$CLASSPATH
+export PATH=$JAVA_HOME/bin:$JRE_HOME/bin:$PATH
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;使修改后的文件生效&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;source&lt;/span&gt; /etc/profile
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;windows&#34;&gt;Windows&lt;/h1&gt;
+&lt;h2 id=&#34;下载-1&#34;&gt;下载&lt;/h2&gt;
+&lt;p&gt;官网：http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html&lt;/p&gt;
+&lt;h2 id=&#34;安装&#34;&gt;安装&lt;/h2&gt;
+&lt;p&gt;我选择默认安装&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;C:\Program Files\Java\jdk1.8.0_211
+C:\Program Files\Java\jre1.8.0_211
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;配置环境-1&#34;&gt;配置环境&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;新建系统变量JAVA_HOME&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;变量名：JAVA_HOME
+变量值：C:\Program Files\Java\jdk1.8.0_211
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;新建系统变量CLASSPATH&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;变量名：CLASSPATH
+变量值：.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;在系统变量Path中添加&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;%JAVA_HOME%\bin
+%JAVA_HOME%\jre\bin
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;测试是否成功&#34;&gt;测试是否成功&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;java -version
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;java
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;javac
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+  </channel>
 </rss>

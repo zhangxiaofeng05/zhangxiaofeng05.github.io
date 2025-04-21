@@ -1,16 +1,57 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Equals - 标签 - 风吹过的烟花</title>
-        <link>https://zhangxiaofeng05.github.io/tags/equals/</link>
-        <description>Equals - 标签 - 风吹过的烟花</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Sun, 28 Jul 2019 14:06:50 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/equals/" rel="self" type="application/rss+xml" /><item>
-    <title>==和equals和hashCode</title>
-    <link>https://zhangxiaofeng05.github.io/equals-hashcode/</link>
-    <pubDate>Sun, 28 Jul 2019 14:06:50 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/equals-hashcode/</guid>
-    <description><![CDATA[==和equals == 基本类型：比较的是值是否相同； 引用类型：比较的是内存地址是否相同(是否是同一对象)； equals Object类中的equals方法]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Equals on 风吹过的烟花</title>
+    <link>https://zhangxiaofeng05.github.io/tags/equals/</link>
+    <description>Recent content in Equals on 风吹过的烟花</description>
+    <image>
+      <title>风吹过的烟花</title>
+      <url>https://zhangxiaofeng05.github.io/images/papermod-cover.png</url>
+      <link>https://zhangxiaofeng05.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 28 Jul 2019 14:06:50 +0800</lastBuildDate>
+    <atom:link href="https://zhangxiaofeng05.github.io/tags/equals/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>==和equals和hashCode</title>
+      <link>https://zhangxiaofeng05.github.io/posts/equals-hashcode/</link>
+      <pubDate>Sun, 28 Jul 2019 14:06:50 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/equals-hashcode/</guid>
+      <description>&lt;h1 id=&#34;和equals&#34;&gt;==和equals&lt;/h1&gt;
+&lt;h2 id=&#34;heading&#34;&gt;==&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;基本类型：比较的是值是否相同；&lt;/li&gt;
+&lt;li&gt;引用类型：比较的是内存地址是否相同(是否是同一对象)；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;equals&#34;&gt;equals&lt;/h2&gt;
+&lt;p&gt;Object类中的equals方法&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public boolean equals(Object obj) {
+    return (this == obj);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;String类重写了equals方法&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public boolean equals(Object anObject) {
+    if (this == anObject) {
+        return true;
+    }
+    if (anObject instanceof String) {
+        String anotherString = (String)anObject;
+        int n = value.length;
+        if (n == anotherString.value.length) {
+            char v1[] = value;
+            char v2[] = anotherString.value;
+            int i = 0;
+            while (n-- != 0) {
+                if (v1[i] != v2[i])
+                    return false;
+                i++;
+            }
+            return true;
+        }
+    }
+    return false;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;举例：&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

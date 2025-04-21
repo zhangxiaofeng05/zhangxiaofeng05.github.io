@@ -1,16 +1,35 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>JPA - 标签 - 风吹过的烟花</title>
-        <link>https://zhangxiaofeng05.github.io/tags/jpa/</link>
-        <description>JPA - 标签 - 风吹过的烟花</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Wed, 17 Jul 2019 23:09:21 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/jpa/" rel="self" type="application/rss+xml" /><item>
-    <title>悲观锁和乐观锁</title>
-    <link>https://zhangxiaofeng05.github.io/pessimistic-lock-and-optimistic-lock/</link>
-    <pubDate>Wed, 17 Jul 2019 23:09:21 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/pessimistic-lock-and-optimistic-lock/</guid>
-    <description><![CDATA[悲观锁和乐观锁：处理的是同一张表的同一行记录 悲观锁 如果使用了(加了一个行锁)，如果事务没有被释放，就会造成其他事务处于等待。 使用数据库提供的]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>JPA on 风吹过的烟花</title>
+    <link>https://zhangxiaofeng05.github.io/tags/jpa/</link>
+    <description>Recent content in JPA on 风吹过的烟花</description>
+    <image>
+      <title>风吹过的烟花</title>
+      <url>https://zhangxiaofeng05.github.io/images/papermod-cover.png</url>
+      <link>https://zhangxiaofeng05.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 17 Jul 2019 23:09:21 +0800</lastBuildDate>
+    <atom:link href="https://zhangxiaofeng05.github.io/tags/jpa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>悲观锁和乐观锁</title>
+      <link>https://zhangxiaofeng05.github.io/posts/pessimistic-lock-and-optimistic-lock/</link>
+      <pubDate>Wed, 17 Jul 2019 23:09:21 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/pessimistic-lock-and-optimistic-lock/</guid>
+      <description>&lt;p&gt;悲观锁和乐观锁：处理的是同一张表的同一行记录&lt;/p&gt;
+&lt;h1 id=&#34;悲观锁&#34;&gt;悲观锁&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;如果使用了(加了一个行锁)，如果事务没有被释放，就会造成其他事务处于等待。&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;使用数据库提供的锁机制实现悲观锁。&lt;/p&gt;
+&lt;p&gt;如果数据库不支持设置的锁机制，JPA会使用该数据库提供的合适的锁机制来完成，而不会报错。&lt;/p&gt;
+&lt;p&gt;使用entityManage.find(class,id,LockModeType);加悲观锁，相当于发送SELECT &amp;hellip; FOR UPDATE&lt;/p&gt;
+&lt;p&gt;使用entityManage.lock(object,LockModeType);加悲观锁，相当于发送SELECT id FROM &amp;hellip; FOR UPDATE&lt;/p&gt;
+&lt;h1 id=&#34;乐观锁性能好&#34;&gt;乐观锁(性能好)&lt;/h1&gt;
+&lt;p&gt;添加一个私有字段version，不由程序员维护，由JPA自己维护&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;@Version
+private long version;
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
 </rss>

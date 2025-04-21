@@ -1,16 +1,74 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Transaction - 标签 - 风吹过的烟花</title>
-        <link>https://zhangxiaofeng05.github.io/tags/transaction/</link>
-        <description>Transaction - 标签 - 风吹过的烟花</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Thu, 18 Jul 2019 12:56:44 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/transaction/" rel="self" type="application/rss+xml" /><item>
-    <title>数据库隔离级别和传播行为</title>
-    <link>https://zhangxiaofeng05.github.io/transaction-spring/</link>
-    <pubDate>Thu, 18 Jul 2019 12:56:44 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/transaction-spring/</guid>
-    <description><![CDATA[事务五个隔离级别 DEFAULT 使用数据库设置的隔离级别 ( 默认 ) ，由 DBA 默认的设置来决定隔离级别 . READ_UNCOMMITTED 会出现脏读、不可重复读、幻读 ( 隔离级别最低，并发性能高 )]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Transaction on 风吹过的烟花</title>
+    <link>https://zhangxiaofeng05.github.io/tags/transaction/</link>
+    <description>Recent content in Transaction on 风吹过的烟花</description>
+    <image>
+      <title>风吹过的烟花</title>
+      <url>https://zhangxiaofeng05.github.io/images/papermod-cover.png</url>
+      <link>https://zhangxiaofeng05.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 18 Jul 2019 12:56:44 +0800</lastBuildDate>
+    <atom:link href="https://zhangxiaofeng05.github.io/tags/transaction/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>数据库隔离级别和传播行为</title>
+      <link>https://zhangxiaofeng05.github.io/posts/transaction-spring/</link>
+      <pubDate>Thu, 18 Jul 2019 12:56:44 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/transaction-spring/</guid>
+      <description>&lt;h1 id=&#34;事务五个隔离级别&#34;&gt;事务五个隔离级别&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;DEFAULT&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;使用数据库设置的隔离级别 ( 默认 ) ，由 DBA 默认的设置来决定隔离级别 .&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;READ_UNCOMMITTED&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;会出现脏读、不可重复读、幻读 ( 隔离级别最低，并发性能高 )&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;READ_COMMITTED&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;会出现不可重复读、幻读问题（锁定正在读取的行）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;REPEATABLE_READ&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;会出幻读（锁定所读取的所有行）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SERIALIZABLE&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;保证所有的情况不会发生（锁表）&lt;/p&gt;
+&lt;h1 id=&#34;spring中七个事务传播行为&#34;&gt;spring中七个事务传播行为&lt;/h1&gt;
+&lt;p&gt;在TransactionDefinition接口中定义了七个事务传播行为。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PROPAGATION_REQUIRED(默认的spring事务传播级别)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如果存在一个事务，则支持当前事务。如果没有事务则开启一个新的事务。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PROPAGATION_SUPPORTS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如果存在一个事务，支持当前事务。如果没有事务，则非事务的执行。但是对于事务同步的事务管理器，PROPAGATION_SUPPORTS与不使用事务有少许不同。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PROPAGATION_MANDATORY&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如果已经存在一个事务，支持当前事务。如果没有一个活动的事务，则抛出异常。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PROPAGATION_REQUIRES_NEW&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;总是开启一个新的事务。如果一个事务已经存在，则将这个存在的事务挂起。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PROPAGATION_NOT_SUPPORTED&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;总是非事务地执行，并挂起任何存在的事务。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PROPAGATION_NEVER&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;总是非事务地执行，如果存在一个活动事务，则抛出异常&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PROPAGATION_NESTED&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如果一个活动的事务存在，则运行在一个嵌套的事务中. 如果没有活动事务, 则按TransactionDefinition.PROPAGATION_REQUIRED 属性执行&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

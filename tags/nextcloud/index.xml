@@ -1,16 +1,67 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Nextcloud - 标签 - 风吹过的烟花</title>
-        <link>https://zhangxiaofeng05.github.io/tags/nextcloud/</link>
-        <description>Nextcloud - 标签 - 风吹过的烟花</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Sat, 04 Apr 2020 18:06:00 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/nextcloud/" rel="self" type="application/rss+xml" /><item>
-    <title>Nextcloud云盘</title>
-    <link>https://zhangxiaofeng05.github.io/nextcloud/</link>
-    <pubDate>Sat, 04 Apr 2020 18:06:00 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/nextcloud/</guid>
-    <description><![CDATA[维基百科 Nextcloud Nextcloud是一套用于创建网络硬盘的客户端－服务器软件。其功能与Dropbox相近，但Nextcloud是自由及开放源代码软]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Nextcloud on 风吹过的烟花</title>
+    <link>https://zhangxiaofeng05.github.io/tags/nextcloud/</link>
+    <description>Recent content in Nextcloud on 风吹过的烟花</description>
+    <image>
+      <title>风吹过的烟花</title>
+      <url>https://zhangxiaofeng05.github.io/images/papermod-cover.png</url>
+      <link>https://zhangxiaofeng05.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 04 Apr 2020 18:06:00 +0800</lastBuildDate>
+    <atom:link href="https://zhangxiaofeng05.github.io/tags/nextcloud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nextcloud云盘</title>
+      <link>https://zhangxiaofeng05.github.io/posts/nextcloud/</link>
+      <pubDate>Sat, 04 Apr 2020 18:06:00 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/nextcloud/</guid>
+      <description>&lt;h2 id=&#34;维基百科&#34;&gt;维基百科&lt;/h2&gt;
+&lt;h3 id=&#34;nextcloud&#34;&gt;Nextcloud&lt;/h3&gt;
+&lt;p&gt;Nextcloud是一套用于创建网络硬盘的客户端－服务器软件。其功能与Dropbox相近，但Nextcloud是自由及开放源代码软件，每个人都可以在私人服务器上安装并运行它。&lt;/p&gt;
+&lt;p&gt;与Dropbox等专有服务相比，Nextcloud的开放架构让用户可以利用应用程序的方式在服务器上新增额外的功能，并让用户可以完全掌控自己的数据。&lt;/p&gt;
+&lt;p&gt;ownCloud原先的开发者弗兰克·卡利切创建了ownCloud的分支——Nextcloud，继而让卡利切与其他原先的ownCloud团队成员持续积极地开发。&lt;/p&gt;
+&lt;h3 id=&#34;特性&#34;&gt;特性&lt;/h3&gt;
+&lt;p&gt;Nextcloud的文件存储在一般的目录结构中，并可透过WebDAV访问。用户的文件会在传输时加密。Nextcloud可与在Windows（Windows XP、Vista、7与8）、macOS（10.6或更新版本）或是多种Linux散布版上运行的客户端同步。&lt;/p&gt;
+&lt;p&gt;Nextcloud用户可以管理日历（使用CalDAV）、联系人（CardDAV）、计划工作与流媒体（Ampache）。&lt;/p&gt;
+&lt;p&gt;从管理的角度来看，Nextcloud允许用户与组群管理（透过OpenID或LDAP）。透过用户间与／或组群间的读／写权限调整达到分享文件的目的。另外，Nextcloud的用户可以创建公开的URL来分享文件。也可以记录与文件相关的动作，以及利用文件访问规则来禁止对特定文件的访问。&lt;/p&gt;
+&lt;p&gt;此外，用户也可以透过浏览器使用Nextcloud的文本编辑器、书签服务、缩略网址服务、相册、RSS阅读器与文件查看器。因为有良好的扩展性，Nextcloud可以透过鼠标点一下即可完成安装的应用程序强化其功能，并可连线至Dropbox、Google云端硬盘与Amazon S3。&lt;/p&gt;
+&lt;h3 id=&#34;架构&#34;&gt;架构&lt;/h3&gt;
+&lt;p&gt;为了让个人电脑与Nextcloud服务器同步，Windows、macOS、FreeBSD或Linux上都有客户端可以使用。行动客户端则在iOS与Android设备上提供。也可以使用浏览器访问、管理与上传任何文件与数据。任何在设置好同步的文件系统上的变更都会推送到所有链接到该用户账号的电脑与移动设备上。&lt;/p&gt;
+&lt;p&gt;Nextcloud服务器是以PHP与JavaScript脚本语言撰写。对于远程访问，它采用的是SabreDAV，其为一开放源代码的WebDAV服务器。Nextcloud可与多种数据库管理系统一同运作，包含了SQLite、MariaDB、MySQL、Oracle数据库与PostgreSQL。&lt;/p&gt;
+&lt;h2 id=&#34;centos7安装&#34;&gt;centos7安装&lt;/h2&gt;
+&lt;p&gt;官方安装指南: &lt;a href=&#34;https://docs.nextcloud.com/server/latest/admin_manual/installation/source_installation.html&#34;&gt;https://docs.nextcloud.com/server/latest/admin_manual/installation/source_installation.html&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;环境&#34;&gt;环境&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;LSB Version:	:core-4.1-amd64:core-4.1-noarch
+Distributor ID:	CentOS
+Description:	CentOS Linux release 7.7.1908 (Core)
+Release:	7.7.1908
+Codename:	Core
+
+PHP 7.2.27 (cli) (built: Jan 26 2020 15:49:49) ( NTS )
+
+Server version: 5.5.64-MariaDB MariaDB Server
+
+Nextcloud 17.0.5
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Nextcloud官网: &lt;a href=&#34;https://nextcloud.com/&#34;&gt;https://nextcloud.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;安装httpdapachephpphp-fpmmariadb&#34;&gt;安装httpd(apache),php,php-fpm,MariaDB&lt;/h3&gt;
+&lt;p&gt;自行百度,谷歌.如果服务器上还有nginx,建议apache更改默认端口&lt;br&gt;
+/etc/httpd/conf/httpd.conf(我的改为7000)&lt;br&gt;
+php-fpm默认端口9000&lt;br&gt;
+ps:安装php-fpm需要注意版本是否支持要安装nextcloud版本&lt;/p&gt;
+&lt;h3 id=&#34;下载nextcloud&#34;&gt;下载nextcloud&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://nextcloud.com/changelog/&#34;&gt;https://nextcloud.com/changelog/&lt;/a&gt;&lt;br&gt;
+下载nextcloud-17.0.5.zip,解压至/var/www&lt;br&gt;
+/var/www/nextcloud是根目录,有index.php,在此目录下新建目录data&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cd /var/www/nextcloud/
+mkdir data
+cd /var/www
+chmod -R 755 nextcloud/
+chown -R apache:apache nextcloud/
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;配置httpd&#34;&gt;配置httpd&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;vim /etc/httpd/conf.d/nextcloud.conf&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

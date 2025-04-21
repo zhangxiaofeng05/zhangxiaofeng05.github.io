@@ -1,16 +1,119 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>SLF4J - 标签 - 风吹过的烟花</title>
-        <link>https://zhangxiaofeng05.github.io/tags/slf4j/</link>
-        <description>SLF4J - 标签 - 风吹过的烟花</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Sat, 20 Jul 2019 14:32:00 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/slf4j/" rel="self" type="application/rss+xml" /><item>
-    <title>Spring Boot打印日志</title>
-    <link>https://zhangxiaofeng05.github.io/spring-boot-logback/</link>
-    <pubDate>Sat, 20 Jul 2019 14:32:00 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/spring-boot-logback/</guid>
-    <description><![CDATA[本文环境 jdk 1.8 maven 3.6.1 Spring Boot 2.1.6 SLF4J 为什么要介绍SLF4J？ SLF4J是一个接口，log4j和logback是它的实现。 SLF4J官网：https://]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>SLF4J on 风吹过的烟花</title>
+    <link>https://zhangxiaofeng05.github.io/tags/slf4j/</link>
+    <description>Recent content in SLF4J on 风吹过的烟花</description>
+    <image>
+      <title>风吹过的烟花</title>
+      <url>https://zhangxiaofeng05.github.io/images/papermod-cover.png</url>
+      <link>https://zhangxiaofeng05.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 20 Jul 2019 14:32:00 +0800</lastBuildDate>
+    <atom:link href="https://zhangxiaofeng05.github.io/tags/slf4j/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spring Boot打印日志</title>
+      <link>https://zhangxiaofeng05.github.io/posts/spring-boot-logback/</link>
+      <pubDate>Sat, 20 Jul 2019 14:32:00 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/spring-boot-logback/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;本文环境
+jdk 1.8
+maven 3.6.1
+Spring Boot 2.1.6&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h1 id=&#34;slf4j&#34;&gt;SLF4J&lt;/h1&gt;
+&lt;h2 id=&#34;为什么要介绍slf4j&#34;&gt;为什么要介绍SLF4J？&lt;/h2&gt;
+&lt;p&gt;SLF4J是一个接口，log4j和logback是它的实现。
+SLF4J官网：https://www.slf4j.org&lt;/p&gt;
+&lt;h2 id=&#34;官网示例&#34;&gt;官网示例&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;引入jar包
+slf4j-api-1.7.26.jar
+slf4j-simple-1.7.26.jar&lt;/li&gt;
+&lt;li&gt;编写测试类(Java Project)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class HelloWorld {
+  public static void main(String[] args) {
+    Logger logger = LoggerFactory.getLogger(HelloWorld.class);
+    logger.info(&amp;#34;Hello World&amp;#34;);
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;有什么问题，去官网查看示例！&lt;/p&gt;
+&lt;h1 id=&#34;spring-boot中使用日志logback&#34;&gt;Spring Boot中使用日志(logback)&lt;/h1&gt;
+&lt;h2 id=&#34;编写测试类&#34;&gt;编写测试类&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
+
+@RunWith(SpringRunner.class)
+@SpringBootTest
+public class LogbackTest {
+	//记录器
+	Logger logger = LoggerFactory.getLogger(getClass());
+	
+	@Test
+	public void logTest() {
+		//日志的级别
+		//从上到下---由低到高
+		//日志会在设置的级别和高级别生效，Spring Boot默认info
+		logger.trace(&amp;#34;这是trace日志...&amp;#34;);
+		logger.debug(&amp;#34;这是debug日志...&amp;#34;);
+		//可以在logback-spring.xml或者在application.xml配置日志级别
+		logger.info(&amp;#34;这是info日志...&amp;#34;);
+		logger.warn(&amp;#34;这是warn日志...&amp;#34;);
+		logger.error(&amp;#34;这是error日志...&amp;#34;);
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;设置日志的格式&#34;&gt;设置日志的格式&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;resources/logback-spring.xml&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt;
+&amp;lt;configuration debug=&amp;#34;false&amp;#34; scan=&amp;#34;true&amp;#34; scanPeriod=&amp;#34;60 seconds&amp;#34;&amp;gt;
+   
+	&amp;lt;!--定义日志文件的存储地址 勿在 LogBack 的配置中使用相对路径 --&amp;gt;
+	&amp;lt;!-- 
+	&amp;lt;property name=&amp;#34;LOG_PATH&amp;#34; value=&amp;#34;/data/log/process/springboot-demo&amp;#34; /&amp;gt;
+	 --&amp;gt;
+	&amp;lt;springProperty name=&amp;#34;LOG_PATH&amp;#34; source=&amp;#34;logging.path&amp;#34;  defaultValue=&amp;#34;../logs&amp;#34; /&amp;gt;
+	&amp;lt;!-- 控制台输出 --&amp;gt;
+	&amp;lt;appender name=&amp;#34;STDOUT&amp;#34; class=&amp;#34;ch.qos.logback.core.ConsoleAppender&amp;#34;&amp;gt;
+		&amp;lt;encoder class=&amp;#34;ch.qos.logback.classic.encoder.PatternLayoutEncoder&amp;#34;&amp;gt;
+			&amp;lt;!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 --&amp;gt;
+			&amp;lt;pattern&amp;gt;%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n&amp;lt;/pattern&amp;gt;
+		&amp;lt;/encoder&amp;gt;
+	&amp;lt;/appender&amp;gt;
+	
+	&amp;lt;!-- 按照每天生成日志文件 --&amp;gt;
+	&amp;lt;appender name=&amp;#34;FILE&amp;#34; class=&amp;#34;ch.qos.logback.core.rolling.RollingFileAppender&amp;#34;&amp;gt;
+		&amp;lt;rollingPolicy class=&amp;#34;ch.qos.logback.core.rolling.TimeBasedRollingPolicy&amp;#34;&amp;gt;
+			&amp;lt;!--日志文件输出的文件名 --&amp;gt;
+			&amp;lt;FileNamePattern&amp;gt;${LOG_PATH}/log.log.%d{yyyy-MM-dd}&amp;lt;/FileNamePattern&amp;gt;
+			&amp;lt;!--日志文件保留天数 --&amp;gt;
+			&amp;lt;!-- &amp;lt;MaxHistory&amp;gt;30&amp;lt;/MaxHistory&amp;gt; --&amp;gt;
+		&amp;lt;/rollingPolicy&amp;gt;
+		&amp;lt;encoder class=&amp;#34;ch.qos.logback.classic.encoder.PatternLayoutEncoder&amp;#34;&amp;gt;
+			&amp;lt;!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 --&amp;gt;
+			&amp;lt;pattern&amp;gt;%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n&amp;lt;/pattern&amp;gt;
+		&amp;lt;/encoder&amp;gt;
+	&amp;lt;/appender&amp;gt;
+
+	&amp;lt;!-- 日志输出级别 --&amp;gt;
+	&amp;lt;root level=&amp;#34;INFO&amp;#34;&amp;gt;
+		&amp;lt;appender-ref ref=&amp;#34;FILE&amp;#34; /&amp;gt;
+		&amp;lt;appender-ref ref=&amp;#34;STDOUT&amp;#34; /&amp;gt;
+	&amp;lt;/root&amp;gt;
+&amp;lt;/configuration&amp;gt;  
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;配置文件的加载顺序&#34;&gt;配置文件的加载顺序&lt;/h2&gt;
+&lt;p&gt;application.properties或者application.yml文件作为Spring Boot的默认配置文件&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

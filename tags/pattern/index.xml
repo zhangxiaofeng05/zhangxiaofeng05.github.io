@@ -1,88 +1,1875 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Pattern - 标签 - 风吹过的烟花</title>
-        <link>https://zhangxiaofeng05.github.io/tags/pattern/</link>
-        <description>Pattern - 标签 - 风吹过的烟花</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Fri, 30 Aug 2019 07:15:38 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/pattern/" rel="self" type="application/rss+xml" /><item>
-    <title>行为型模式-备忘录模式</title>
-    <link>https://zhangxiaofeng05.github.io/memento-pattern/</link>
-    <pubDate>Fri, 30 Aug 2019 07:15:38 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/memento-pattern/</guid>
-    <description><![CDATA[百度百科 备忘录模式 备忘录模式是一种软件设计模式：在不破坏封闭的前提下，捕获一个对象的内部状态，并在该对象之外保存这个状态。这样以后就可将该对]]></description>
-</item>
-<item>
-    <title>行为型模式-解释器模式</title>
-    <link>https://zhangxiaofeng05.github.io/interpreter-pattern/</link>
-    <pubDate>Thu, 29 Aug 2019 22:45:54 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/interpreter-pattern/</guid>
-    <description><![CDATA[百度百科 Interpreter模式 Interpreter(解释器)模式是一种特殊的设计模式，它建立一个解释器（Interpreter），对于]]></description>
-</item>
-<item>
-    <title>结构型模式-组合模式</title>
-    <link>https://zhangxiaofeng05.github.io/composite-pattern/</link>
-    <pubDate>Thu, 29 Aug 2019 22:04:46 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/composite-pattern/</guid>
-    <description><![CDATA[百度百科 组合模式 组合模式，将对象组合成树形结构以表示“部分-整体”的层次结构，组合模式使得用户对单个对象和组合对象的使用具有一致性。掌握组合]]></description>
-</item>
-<item>
-    <title>行为型模式-访问者模式</title>
-    <link>https://zhangxiaofeng05.github.io/visitor-pattern/</link>
-    <pubDate>Thu, 29 Aug 2019 10:33:48 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/visitor-pattern/</guid>
-    <description><![CDATA[维基百科 访问者模式 访问者模式是一种将算法与对象结构分离的软件设计模式。 这个模式的基本想法如下：首先我们拥有一个由许多对象构成的对象结构，这些]]></description>
-</item>
-<item>
-    <title>行为型模式-模板方法</title>
-    <link>https://zhangxiaofeng05.github.io/template-method-pattern/</link>
-    <pubDate>Thu, 29 Aug 2019 10:13:54 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/template-method-pattern/</guid>
-    <description><![CDATA[维基百科 模板方法 模板方法模型是一种行为设计模型。模板方法是一个定义在父类别的方法，在模板方法中会呼叫多个定义在父类别的其他方法，而这些方法有]]></description>
-</item>
-<item>
-    <title>行为型模式-策略模式</title>
-    <link>https://zhangxiaofeng05.github.io/strategy-pattern/</link>
-    <pubDate>Thu, 29 Aug 2019 06:55:54 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/strategy-pattern/</guid>
-    <description><![CDATA[维基百科 策略模式 策略模式作为一种软件设计模式，指对象有某个行为，但是在不同的场景中，该行为有不同的实现算法。比如每个人都要“交个人所得税”，]]></description>
-</item>
-<item>
-    <title>行为型模式-状态模式</title>
-    <link>https://zhangxiaofeng05.github.io/state-pattern/</link>
-    <pubDate>Thu, 29 Aug 2019 06:30:46 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/state-pattern/</guid>
-    <description><![CDATA[百度百科 状态模式 (State Pattern)是设计模式的一种，属于行为模式。 允许一个对象在其内部状态改变时改变它的行为。对象看起来似乎修改了它的类 定义]]></description>
-</item>
-<item>
-    <title>行为型模式-观察者模式</title>
-    <link>https://zhangxiaofeng05.github.io/observer-pattern/</link>
-    <pubDate>Tue, 27 Aug 2019 08:55:07 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/observer-pattern/</guid>
-    <description><![CDATA[维基百科 观察者模式 观察者模式是软件设计模式的一种。在此种模式中，一个目标对象管理所有相依于它的观察者对象，并且在它本身的状态改变时主动发出通]]></description>
-</item>
-<item>
-    <title>行为型模式-中介者模式</title>
-    <link>https://zhangxiaofeng05.github.io/mediator-pattern/</link>
-    <pubDate>Mon, 26 Aug 2019 23:28:40 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/mediator-pattern/</guid>
-    <description><![CDATA[维基百科 中介者模式 在软件工程领域，中介者模式定义了一个中介者对象，该对象封装了系统中对象间的交互方式。 由于它可以在运行时改变程序的行为，这种]]></description>
-</item>
-<item>
-    <title>行为型模式-迭代器模式</title>
-    <link>https://zhangxiaofeng05.github.io/iterator-pattern/</link>
-    <pubDate>Mon, 26 Aug 2019 15:47:11 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/iterator-pattern/</guid>
-    <description><![CDATA[维基百科 迭代器模式 在 面向对象编程里，迭代器模式是一种设计模式，是一种最简单也最常见的设计模式。它可以让用户透过特定的接口巡访容器中的每一个元]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Pattern on 风吹过的烟花</title>
+    <link>https://zhangxiaofeng05.github.io/tags/pattern/</link>
+    <description>Recent content in Pattern on 风吹过的烟花</description>
+    <image>
+      <title>风吹过的烟花</title>
+      <url>https://zhangxiaofeng05.github.io/images/papermod-cover.png</url>
+      <link>https://zhangxiaofeng05.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 30 Aug 2019 07:15:38 +0800</lastBuildDate>
+    <atom:link href="https://zhangxiaofeng05.github.io/tags/pattern/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>行为型模式-备忘录模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/memento-pattern/</link>
+      <pubDate>Fri, 30 Aug 2019 07:15:38 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/memento-pattern/</guid>
+      <description>&lt;h1 id=&#34;百度百科&#34;&gt;百度百科&lt;/h1&gt;
+&lt;h2 id=&#34;备忘录模式&#34;&gt;备忘录模式&lt;/h2&gt;
+&lt;p&gt;备忘录模式是一种软件设计模式：在不破坏封闭的前提下，捕获一个对象的内部状态，并在该对象之外保存这个状态。这样以后就可将该对象恢复到原先保存的状态。&lt;/p&gt;
+&lt;h2 id=&#34;基本介绍&#34;&gt;基本介绍&lt;/h2&gt;
+&lt;p&gt;备忘录模式（Memento Pattern）又叫做快照模式（Snapshot Pattern）或Token模式，是GoF的23种设计模式之一，属于行为模式。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;定义&lt;/code&gt;：在不破坏封闭的前提下，捕获一个对象的内部状态，并在该对象之外保存这个状态。这样以后就可将该对象恢复到原先保存的状态。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;涉及角色：&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Originator(发起人)：负责创建一个备忘录Memento，用以记录当前时刻自身的内部状态，并可使用备忘录恢复内部状态。Originator可以根据需要决定Memento存储自己的哪些内部状态。&lt;/li&gt;
+&lt;li&gt;Memento(备忘录)：负责存储Originator对象的内部状态，并可以防止Originator以外的其他对象访问备忘录。备忘录有两个接口：Caretaker只能看到备忘录的窄接口，他只能将备忘录传递给其他对象。Originator却可看到备忘录的宽接口，允许它访问返回到先前状态所需要的所有数据。&lt;/li&gt;
+&lt;li&gt;Caretaker(管理者):负责备忘录Memento，不能对Memento的内容进行访问或者操作。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;备忘录模式的优点和缺点&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;一、 备忘录模式的优点&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;有时一些发起人对象的内部信息必须保存在发起人对象以外的地方，但是必须要由发起人对象自己读取，这时，
+使用备忘录模式可以把复杂的发起人内部信息对其他的对象屏蔽起来，从而可以恰当地保持封装的边界。&lt;/li&gt;
+&lt;li&gt;本模式简化了发起人类。发起人不再需要管理和保存其内部状态的一个个版本，客户端可以自行管理他们所需
+要的这些状态的版本。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;二、 备忘录模式的缺点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;如果发起人角色的状态需要完整地存储到备忘录对象中，那么在资源消耗上面备忘录对象会很昂贵。&lt;/li&gt;
+&lt;li&gt;当负责人角色将一个备忘录 存储起来的时候，负责人可能并不知道这个状态会占用多大的存储空间，从而无法提醒用户一个操作是否很昂贵。&lt;/li&gt;
+&lt;li&gt;当发起人角色的状态改变的时候，有可能这个协议无效。如果状态改变的成功率不高的话，不如采取“假如”协议模式。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;例子&#34;&gt;例子&lt;/h1&gt;
+&lt;p&gt;Memento
+备忘录存储原发器对象的内部状态。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class Memento {
+    private String state;
+
+    public Memento(String state) {
+        this.state = state;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Originator
+原发器创建一个备忘录,用以记录当前时刻的内部状态。
+使用备忘录恢复内部状态&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class Originator {
+    private String state;
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public Memento createMemento(){
+        return new Memento(state);
+    }
+    public void setMemento(Memento memento){
+        state=memento.getState();
+    }
+    public void showState(){
+        System.out.println(state);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Caretaker
+负责保存好备忘录。
+不能对备忘录的内部进行操作或检查。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>行为型模式-解释器模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/interpreter-pattern/</link>
+      <pubDate>Thu, 29 Aug 2019 22:45:54 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/interpreter-pattern/</guid>
+      <description>&lt;h1 id=&#34;百度百科&#34;&gt;百度百科&lt;/h1&gt;
+&lt;h2 id=&#34;interpreter模式&#34;&gt;Interpreter模式&lt;/h2&gt;
+&lt;p&gt;Interpreter(解释器)模式是一种特殊的设计模式，它建立一个解释器（Interpreter），对于特定的计算机程序设计语言，用来解释预先定义的文法。简单地说，Interpreter模式是一种简单的语法解释器构架。&lt;/p&gt;
+&lt;p&gt;Interpreter模式，即解释器模式。&lt;/p&gt;
+&lt;p&gt;解释器模式属于行为模式，Gof是这样定义的：给定一个语言，定义它的文法的一种表示，并定义一个解释器，这个解释器使用该表示来解释语言中的句子。&lt;/p&gt;
+&lt;p&gt;解释器模式需要解决的是，如果一种特定类型的问题发生的频率足够高，那么可能就值得将该问题的各个实例表述为一个简单语言中的句子。这样就可以构建一个解释器，该解释器通过解释这些句子来解决该问题。&lt;/p&gt;
+&lt;p&gt;实例应用：正则表达式&lt;/p&gt;
+&lt;h1 id=&#34;例子&#34;&gt;例子&lt;/h1&gt;
+&lt;p&gt;AbstractExpression(抽象表达式)
+声明一个抽象的解释操作，这个接口为抽象语法树中所有的节点所共享。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public abstract class Expression {
+    abstract void interpret(Context ctx);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;TerminalExpression(终结符表达式)
+实现与文法中的终结符相关联的解释操作。
+一个句子中的每个终结符需要该类的一个实例。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class SimpleExpression extends Expression {
+    @Override
+    void interpret(Context ctx) {
+        System.out.println(&amp;#34;这是普通解析器&amp;#34;);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;NonterminalExpression(非终结符表达式)
+为文法中的非终结符实现解释(Interpret)操作。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class AdvanceExpression extends Expression {
+    @Override
+    void interpret(Context ctx) {
+        System.out.println(&amp;#34;这是高级解析器&amp;#34;);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Context（上下文）
+包含解释器之外的一些全局信息。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.util.ArrayList;
+import java.util.List;
+
+public class Context {
+    private String content;
+    private List list = new ArrayList();
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public void add(Expression eps){
+        list.add(eps);
+    }
+    public List getList(){
+        return list;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Client（客户）
+构建(或被给定)表示该文法定义的语言中某个特定的句子的抽象语法树。
+该抽象语法树由NonterminalExpression和TerminalExpression的实例装配而成。调用解释操作。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>结构型模式-组合模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/composite-pattern/</link>
+      <pubDate>Thu, 29 Aug 2019 22:04:46 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/composite-pattern/</guid>
+      <description>&lt;h1 id=&#34;百度百科&#34;&gt;百度百科&lt;/h1&gt;
+&lt;h2 id=&#34;组合模式&#34;&gt;组合模式&lt;/h2&gt;
+&lt;p&gt;组合模式，将对象组合成树形结构以表示“部分-整体”的层次结构，组合模式使得用户对单个对象和组合对象的使用具有一致性。掌握组合模式的重点是要理解清楚 “部分/整体” 还有 ”单个对象“ 与 &amp;ldquo;组合对象&amp;rdquo; 的含义。&lt;/p&gt;
+&lt;p&gt;组合模式可以让客户端像修改配置文件一样简单的完成本来需要流程控制语句来完成的功能。&lt;/p&gt;
+&lt;p&gt;经典案例：系统目录结构，网站导航结构等。&lt;/p&gt;
+&lt;h2 id=&#34;组合模式概述&#34;&gt;组合模式概述&lt;/h2&gt;
+&lt;p&gt;组合模式(Composite Pattern)&lt;/p&gt;
+&lt;p&gt;组合模式，将对象组合成树形结构以表示“部分-整体”的层次结构，组合模式使得用户对单个对象和组合对象的使用具有一致性。&lt;/p&gt;
+&lt;p&gt;有时候又叫做部分-整体模式，它使我们树型结构的问题中，模糊了简单元素和复杂元素的概念，客户程序可以像处理简单元素一样来处理复杂元素,从而使得客户程序与复杂元素的内部结构解耦。&lt;/p&gt;
+&lt;p&gt;组合模式让你可以优化处理递归或分级数据结构。有许多关于分级数据结构的例子，使得组合模式非常有用武之地。关于分级数据结构的一个普遍性的例子是你每次使用电脑时所遇到的:文件系统。文件系统由目录和文件组成。每个目录都可以装内容。目录的内容可以是文件，也可以是目录。按照这种方式，计算机的文件系统就是以递归结构来组织的。如果你想要描述这样的数据结构，那么你可以使用组合模式Composite。&lt;/p&gt;
+&lt;p&gt;定义&lt;/p&gt;
+&lt;p&gt;(GoF《设计模式》)：将对象组合成树形结构以表示“部分整体”的层次结构。组合模式使得用户对单个对象和组合对象的使用具有一致性。&lt;/p&gt;
+&lt;p&gt;涉及角色：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Component 是组合中的对象声明接口，在适当的情况下，实现所有类共有接口的默认行为。声明一个接口用于访问和管理Component子部件。&lt;/li&gt;
+&lt;li&gt;Leaf 在组合中表示叶子结点对象，叶子结点没有子结点。&lt;/li&gt;
+&lt;li&gt;Composite 定义有枝节点行为，用来存储子部件，在Component接口中实现与子部件有关操作，如增加(add)和删除(remove)等。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;适用性&lt;/p&gt;
+&lt;p&gt;以下情况下适用Composite模式：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;你想表示对象的部分-整体层次结构&lt;/li&gt;
+&lt;li&gt;你希望用户忽略组合对象与单个对象的不同，用户将统一地使用组合结构中的所有对象。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;
+&lt;p&gt;组合模式解耦了客户程序与复杂元素内部结构，从而使客户程序可以像处理简单元素一样来处理复杂元素。&lt;/p&gt;
+&lt;p&gt;如果你想要创建层次结构，并可以在其中以相同的方式对待所有元素，那么组合模式就是最理想的选择。本章使用了一个文件系统的例子来举例说明了组合模式的用途。在这个例子中，文件和目录都执行相同的接口，这是组合模式的关键。通过执行相同的接口，你就可以用相同的方式对待文件和目录，从而实现将文件或者目录储存为目录的子级元素。&lt;/p&gt;
+&lt;h1 id=&#34;例子&#34;&gt;例子&lt;/h1&gt;
+&lt;p&gt;Component
+为组合中的对象声明接口。
+在适当的情况下，实现所有类共有接口的缺省行为。
+声明一个接口用于访问和管理Component的子组件。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.util.List;
+
+public abstract class Employer {
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public abstract void add(Employer employer);
+
+    public abstract void delete(Employer employer);
+
+    public List employers;
+
+    public void printInfo(){
+        System.out.println(name);
+    }
+    public List getEmployers(){
+        return this.employers;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Leaf
+在组合中表示叶节点对象，叶节点没有子节点。
+在组合中定义节点对象的行为。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>行为型模式-访问者模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/visitor-pattern/</link>
+      <pubDate>Thu, 29 Aug 2019 10:33:48 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/visitor-pattern/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;访问者模式&#34;&gt;访问者模式&lt;/h2&gt;
+&lt;p&gt;访问者模式是一种将算法与对象结构分离的软件设计模式。&lt;/p&gt;
+&lt;p&gt;这个模式的基本想法如下：首先我们拥有一个由许多对象构成的对象结构，这些对象的类都拥有一个accept方法用来接受访问者对象；访问者是一个接口，它拥有一个visit方法，这个方法对访问到的对象结构中不同类型的元素作出不同的反应；在对象结构的一次访问过程中，我们遍历整个对象结构，对每一个元素都实施accept方法，在每一个元素的accept方法中回调访问者的visit方法，从而使访问者得以处理对象结构的每一个元素。我们可以针对对象结构设计不同的实在的访问者类来完成不同的操作。&lt;/p&gt;
+&lt;p&gt;访问者模式使得我们可以在传统的单分派语言（如Smalltalk、Java和C++）中模拟双分派技术。对于支持多分派的语言（如CLOS），访问者模式已经内置于语言特性之中了，从而不再重要。&lt;/p&gt;
+&lt;h2 id=&#34;java&#34;&gt;Java&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;interface Visitor {
+    void visit(Wheel wheel);
+    void visit(Engine engine);
+    void visit(Body body);
+    void visit(Car car);
+}
+
+class Wheel {
+    private String name;
+    Wheel(String name) {
+        this.name = name;
+    }
+    String getName() {
+        return this.name;
+    }
+    void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+}
+
+class Engine {
+    void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+}
+
+class Body {
+    void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+}
+
+class Car {
+    private Engine  engine = new Engine();
+    private Body    body   = new Body();
+    private Wheel[] wheels
+        = { new Wheel(&amp;#34;front left&amp;#34;), new Wheel(&amp;#34;front right&amp;#34;),
+            new Wheel(&amp;#34;back left&amp;#34;) , new Wheel(&amp;#34;back right&amp;#34;)  };
+    void accept(Visitor visitor) {
+        visitor.visit(this);
+        engine.accept(visitor);
+        body.accept(visitor);
+        for (int i = 0; i &amp;lt; wheels.length; ++ i)
+            wheels[i].accept(visitor);
+    }
+}
+
+class PrintVisitor implements Visitor {
+    public void visit(Wheel wheel) {
+        System.out.println(&amp;#34;Visiting &amp;#34; + wheel.getName()
+                            + &amp;#34; wheel&amp;#34;);
+    }
+    public void visit(Engine engine) {
+        System.out.println(&amp;#34;Visiting engine&amp;#34;);
+    }
+    public void visit(Body body) {
+        System.out.println(&amp;#34;Visiting body&amp;#34;);
+    }
+    public void visit(Car car) {
+        System.out.println(&amp;#34;Visiting car&amp;#34;);
+    }
+}
+
+public class VisitorDemo {
+    static public void main(String[] args) {
+        Car car = new Car();
+        Visitor visitor = new PrintVisitor();
+        car.accept(visitor);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;运行结果：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>行为型模式-模板方法</title>
+      <link>https://zhangxiaofeng05.github.io/posts/template-method-pattern/</link>
+      <pubDate>Thu, 29 Aug 2019 10:13:54 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/template-method-pattern/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;模板方法&#34;&gt;模板方法&lt;/h2&gt;
+&lt;p&gt;模板方法模型是一种行为设计模型。模板方法是一个定义在父类别的方法，在模板方法中会呼叫多个定义在父类别的其他方法，而这些方法有可能只是抽象方法并没有实作，模板方法仅决定这些抽象方法的执行顺序，这些抽象方法的实作由子类别负责，并且子类别不允许覆写模板方法。&lt;/p&gt;
+&lt;h2 id=&#34;用法&#34;&gt;用法&lt;/h2&gt;
+&lt;p&gt;模板方法模式多用在：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;某些类别的算法中，实做了相同的方法，造成程式码的重复。&lt;/li&gt;
+&lt;li&gt;控制子类别必须遵守的一些事项。&lt;/li&gt;
+&lt;li&gt;&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;java&#34;&gt;Java&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/**
+  * An abstract class that is common to several games in
+  * which players play against the others, but only one is
+  * playing at a given time.
+  */
+
+ abstract class Game {
+
+     private int playersCount;
+
+     abstract void initializeGame();
+
+     abstract void makePlay(int player);
+
+     abstract boolean endOfGame();
+
+     abstract void printWinner();
+
+     /* A template method : */
+     final void playOneGame(int playersCount) {
+         this.playersCount = playersCount;
+         initializeGame();
+         int j = 0;
+         while (!endOfGame()){
+             makePlay(j);
+             j = (j + 1) % playersCount;
+         }
+         printWinner();
+     }
+ }
+
+//Now we can extend this class in order to implement actual games:
+
+ class Monopoly extends Game {
+
+     /* Implementation of necessary concrete methods */
+
+     void initializeGame() {
+         // ...
+     }
+
+     void makePlay(int player) {
+         // ...
+     }
+
+     boolean endOfGame() {
+         // ...
+     }
+
+     void printWinner() {
+         // ...
+     }
+
+     /* Specific declarations for the Monopoly game. */
+
+     // ...
+
+ }
+
+ class Chess extends Game {
+
+     /* Implementation of necessary concrete methods */
+
+     void initializeGame() {
+         // ...
+     }
+
+     void makePlay(int player) {
+         // ...
+     }
+
+     boolean endOfGame() {
+         // ...
+     }
+
+     void printWinner() {
+         // ...
+     }
+
+     /* Specific declarations for the chess game. */
+
+     // ...
+
+ }
+
+ public class Player {
+     public static void main(String[] args) {
+         Game chessGame = new Chess();
+         chessGame.initializeGame();
+         chessGame.playOneGame(1); //call template method
+     }
+ }
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;例子&#34;&gt;例子&lt;/h1&gt;
+&lt;p&gt;AbstractClass
+定义抽象的原语操作（primitiveoperation），具体的子类将重定义它们以实现一个算法的各步骤。
+实现一个模板方法,定义一个算法的骨架。
+该模板方法不仅调用原语操作，也调用定义在AbstractClass或其他对象中的操作。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>行为型模式-策略模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/strategy-pattern/</link>
+      <pubDate>Thu, 29 Aug 2019 06:55:54 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/strategy-pattern/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;策略模式&#34;&gt;策略模式&lt;/h2&gt;
+&lt;p&gt;策略模式作为一种软件设计模式，指对象有某个行为，但是在不同的场景中，该行为有不同的实现算法。比如每个人都要“交个人所得税”，但是“在美国交个人所得税”和“在中国交个人所得税”就有不同的算税方法。&lt;/p&gt;
+&lt;p&gt;策略模式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;定义了一族算法（业务规则）；&lt;/li&gt;
+&lt;li&gt;封装了每个算法；&lt;/li&gt;
+&lt;li&gt;这族的算法可互换代替（interchangeable）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;java&#34;&gt;Java&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;//StrategyExample test application
+
+class StrategyExample {
+
+    public static void main(String[] args) {
+
+        Context context;
+
+        // Three contexts following different strategies
+        context = new Context(new FirstStrategy());
+        context.execute();
+
+        context = new Context(new SecondStrategy());
+        context.execute();
+
+        context = new Context(new ThirdStrategy());
+        context.execute();
+
+    }
+
+}
+
+// The classes that implement a concrete strategy should implement this
+
+// The context class uses this to call the concrete strategy
+interface Strategy {
+
+    void execute();
+
+}
+
+// Implements the algorithm using the strategy interface
+class FirstStrategy implements Strategy {
+
+    public void execute() {
+        System.out.println(&amp;#34;Called FirstStrategy.execute()&amp;#34;);
+    }
+
+}
+
+class SecondStrategy implements Strategy {
+
+    public void execute() {
+        System.out.println(&amp;#34;Called SecondStrategy.execute()&amp;#34;);
+    }
+
+}
+
+class ThirdStrategy implements Strategy {
+
+    public void execute() {
+        System.out.println(&amp;#34;Called ThirdStrategy.execute()&amp;#34;);
+    }
+
+}
+
+// Configured with a ConcreteStrategy object and maintains a reference to a Strategy object
+class Context {
+
+    Strategy strategy;
+
+    // Constructor
+    public Context(Strategy strategy) {
+        this.strategy = strategy;
+    }
+
+    public void execute() {
+        this.strategy.execute();
+    }
+
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;运行结果：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>行为型模式-状态模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/state-pattern/</link>
+      <pubDate>Thu, 29 Aug 2019 06:30:46 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/state-pattern/</guid>
+      <description>&lt;h1 id=&#34;百度百科&#34;&gt;百度百科&lt;/h1&gt;
+&lt;h2 id=&#34;状态模式&#34;&gt;状态模式&lt;/h2&gt;
+&lt;p&gt;(State Pattern)是设计模式的一种，属于行为模式。
+允许一个对象在其内部状态改变时改变它的行为。对象看起来似乎修改了它的类&lt;/p&gt;
+&lt;h2 id=&#34;定义&#34;&gt;定义&lt;/h2&gt;
+&lt;p&gt;(源于Design Pattern)：当一个对象的内在状态改变时允许改变其行为，这个对象看起来像是改变了其类。&lt;/p&gt;
+&lt;p&gt;状态模式主要解决的是当控制一个对象状态的条件表达式过于复杂时的情况。把状态的判断逻辑转移到表示不同状态的一系列类中，可以把复杂的判断逻辑简化。&lt;/p&gt;
+&lt;h2 id=&#34;意图&#34;&gt;意图&lt;/h2&gt;
+&lt;p&gt;允许一个对象在其内部状态改变时改变它的行为&lt;/p&gt;
+&lt;h2 id=&#34;适用场景&#34;&gt;适用场景&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;一个对象的行为取决于它的状态，并且它必须在运行时刻根据状态改变它的行为。&lt;/li&gt;
+&lt;li&gt;一个操作中含有庞大的多分支结构，并且这些分支决定于对象的状态。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;例子&#34;&gt;例子&lt;/h1&gt;
+&lt;p&gt;State
+定义一个接口以封装与Context的一个特定状态相关的行为。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public interface Weather {
+    String getWeather();
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Context
+定义客户感兴趣的接口。
+维护一个ConcreteState子类的实例，这个实例定义当前状态。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class Context {
+    private Weather weather;
+
+    public Weather getWeather() {
+        return weather;
+    }
+
+    public void setWeather(Weather weather) {
+        this.weather = weather;
+    }
+
+    public String weatherMessage(){
+        return weather.getWeather();
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;ConcreteStatesubclasses
+每一子类实现一个与Context的一个状态相关的行为。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class Rain implements Weather {
+    @Override
+    public String getWeather() {
+        return &amp;#34;下雨&amp;#34;;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class Sunshine implements Weather {
+    @Override
+    public String getWeather() {
+        return &amp;#34;阳光&amp;#34;;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Test&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>行为型模式-观察者模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/observer-pattern/</link>
+      <pubDate>Tue, 27 Aug 2019 08:55:07 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/observer-pattern/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;观察者模式&#34;&gt;观察者模式&lt;/h2&gt;
+&lt;p&gt;观察者模式是软件设计模式的一种。在此种模式中，一个目标对象管理所有相依于它的观察者对象，并且在它本身的状态改变时主动发出通知。这通常透过呼叫各观察者所提供的方法来实现。此种模式通常被用来实时事件处理系统。&lt;/p&gt;
+&lt;h2 id=&#34;参与类别&#34;&gt;参与类别&lt;/h2&gt;
+&lt;p&gt;参与本模式的各类别列出如下。成员函式以模拟的方式列出。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;抽象目标类别&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;此抽象类别提供一个界面让观察者进行添附与解附作业。此类别内有个不公开的观察者串炼，并透过下列函式(方法)进行作业&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;添附(Attach)：新增观察者到串炼内，以追踪目标对象的变化。&lt;/li&gt;
+&lt;li&gt;解附(Detach)：将已经存在的观察者从串炼中移除。&lt;/li&gt;
+&lt;li&gt;通知(Notify)：利用观察者所提供的更新函式来通知此目标已经产生变化。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;添附函式包涵了一个观察者对象参数。也许是观察者类别的虚拟函式(即更新函式)，或是在非面向对象的设定中所使用的函式指标(更广泛来讲，函式子或是函式对象)。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;目标类别&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;此类别提供了观察者欲追踪的状态。也利用其源类别(例如前述的抽象目标类别)所提供的方法,来通知所有的观察者其状态已经更新。此类别拥有以下函式&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;取得状态(GetState)：回传该目标对象的状态。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;抽象观察者界面&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;抽象观察者类别是一个必须被实做的抽象类别。这个类别定义了所有观察者都拥有的更新用界面，此界面是用来接收目标类别所发出的更新通知。此类别含有以下函式&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;更新(Update)：会被实做的一个抽象(虚拟)函式。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;观察者类别&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这个类别含有指向目标类别的参考(reference)，以接收来自目标类别的更新状态。此类别含有以下函式&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;更新(Update)：是前述抽象函式的实做。当这个函式被目标对象呼叫时，观察者对象将会呼叫目标对象的取得状态函式，来其所拥有的更新目标对象资讯。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;每个观察者类别都要实做它自己的更新函式，以应对状态更新的情形。&lt;/p&gt;
+&lt;p&gt;当目标对象改变时，会通过呼叫它自己的通知函式来将通知送给每一个观察者对象，这个通知函式则会去呼叫已经添附在串炼内的观察者更新函式。通知与更新函式可能会有一些参数，好指明是目前目标对象内的何种改变。这么作将可增进观察者的效率(只更新那些改变部分的状态)。&lt;/p&gt;
+&lt;h2 id=&#34;用途&#34;&gt;用途&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;当抽象个体有两个互相依赖的层面时。封装这些层面在单独的对象内将可允许程序员单独地去变更与重复使用这些对象，而不会产生两者之间交互的问题。&lt;/li&gt;
+&lt;li&gt;当其中一个对象的变更会影响其他对象，却又不知道多少对象必须被同时变更时。&lt;/li&gt;
+&lt;li&gt;当对象应该有能力通知其他对象，又不应该知道其他对象的实做细节时。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;观察者模式通常与 MVC 范式有关系。在 MVC 中，观察者模式被用来降低 model 与 view 的耦合程度。一般而言， model 的改变会触发通知其他身为观察者的 model 。而这些 model 实际上是 view 。 Java Swing 就是个范例，示意了 model 预期会透过 PropertyChangeNotification 架构以送出改变的通知给其他 view 。 Model 类别是 Java bean 类别的一员，并拥有与上述目标类别同样的行为。 View 类别则系结了一些 GUI 中的可视元素，并拥有与上述观察者类别同样的行为。当应用程序在执行时。使用者将因 view 做出相应的更新而看见 model 所产生的变更。&lt;/p&gt;
+&lt;h1 id=&#34;例子&#34;&gt;例子&lt;/h1&gt;
+&lt;p&gt;Subject（目标）
+目标知道它的观察者。可以有任意多个观察者观察同一个目标。
+提供注册和删除观察者对象的接口。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.util.ArrayList;
+import java.util.List;
+
+public abstract class Citizen {
+    List pols;
+    private String help = &amp;#34;normal&amp;#34;;
+
+    public String getHelp() {
+        return help;
+    }
+
+    public void setHelp(String help) {
+        this.help = help;
+    }
+    abstract void sendMessage(String help);
+
+    public void setPoliceman(){
+        this.pols = new ArrayList();
+    }
+    public void register(Policeman pol){
+        this.pols.add(pol);
+    }
+    public void unRegister(Policeman pol){
+        this.pols.remove(pol);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Observer（观察者）
+为那些在目标发生改变时需获得通知的对象定义一个更新接口。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>行为型模式-中介者模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/mediator-pattern/</link>
+      <pubDate>Mon, 26 Aug 2019 23:28:40 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/mediator-pattern/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;中介者模式&#34;&gt;中介者模式&lt;/h2&gt;
+&lt;p&gt;在软件工程领域，中介者模式定义了一个中介者对象，该对象封装了系统中对象间的交互方式。 由于它可以在运行时改变程序的行为，这种模式是一种行为型模式 。&lt;/p&gt;
+&lt;p&gt;通常程序由大量的类组成，这些类中包含程序的逻辑和运算。 然而，当开发者将更多的类加入到程序中之后，类间交互关系可能变得更为复杂，这会使得代码变得更加难以阅读和维护，尤其是在重构的时候。 此外，程序将会变得难以修改，因为对其所做的任何修改都有可能影响到其它几个类中的代码。&lt;/p&gt;
+&lt;p&gt;在中介者模式中，对象间的通信过程被封装在一个中介者（调解人）对象之中。 对象之间不再直接交互，而是通过调解人进行交互。 这么做可以减少可交互对象间的依赖，从而降低耦合。&lt;/p&gt;
+&lt;h2 id=&#34;概述&#34;&gt;概述&lt;/h2&gt;
+&lt;p&gt;中介者模式是23个周知模式（ 即GoF设计模式）中的一个，GoF设计模式旨在提供重复出现的设计问题的解决方案，以编写灵活和可复用的面向对象软件。也就是说，使对象更加易于实现、修改、测试和复用。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;中介者设计模式可以解决什么问题？&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;避免一组相互交互的对象之间出现紧耦合。&lt;/li&gt;
+&lt;li&gt;能够独立地改变一组对象之间的交互关系而不影响其他对象。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;使用直接逐个访问并更新彼此的方式进行对象间的交互灵活性低，因为这种方式使对象彼此间紧密耦合，导致不可能单独修改类间交互关系本身，而不影响关系中进行交互的类。并且这种方式会令对象变得无法复用，并且难以测试。&lt;/p&gt;
+&lt;p&gt;由于紧耦合的对象过多了解其他对象的内部细节，这种对象难以实现、修改、测试以及复用。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;中介者模式如何解决上述问题？&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;定义一个独立的中介者(调解员)的对象，封装一组对象之间的交互关系。&lt;/li&gt;
+&lt;li&gt;对象将自己的交互委托给中介者执行，避免直接与其他对象进行交互。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;对象利用中介者对象与其他对象进行间接交互，中介者对象负责控制和协调交互关系，这么做可使得对象间松耦合。这些对象只访问中介者，不了解其他对象的细节。&lt;/p&gt;
+&lt;h2 id=&#34;定义&#34;&gt;定义&lt;/h2&gt;
+&lt;p&gt;中介者模式是为了“定义一个封装了对象间交互关系的对象”。这种方式避免了显式调用其他类，促进了类间的松耦合，并且使得类间交互关系本身可以单独修改。客户类可以使用中介者向其他客户类发送信息，并且通过中介者引发的事件收到信息。&lt;/p&gt;
+&lt;h2 id=&#34;java&#34;&gt;Java&lt;/h2&gt;
+&lt;p&gt;在以下示例中，一个中介者对象控制了三个互相交互的按钮的状态，为此它有设置状态的三个方法：book(), view() 和 search()。 当相应的按钮被激活时，对应的方法通过execute()方法被调用。&lt;/p&gt;
+&lt;p&gt;于是这里在交互中每个交互的参与者（本例中即按钮）将自己的行为提交给中介者并且由中介者将这些行为转给对应的参与者。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+//Colleague interface
+interface Command {
+    void execute();
+}
+
+//Abstract Mediator
+interface Mediator {
+    void book();
+    void view();
+    void search();
+    void registerView(BtnView v);
+    void registerSearch(BtnSearch s);
+    void registerBook(BtnBook b);
+    void registerDisplay(LblDisplay d);
+}
+
+//Concrete mediator
+class ParticipantMediator implements Mediator {
+
+    BtnView btnView;
+    BtnSearch btnSearch;
+    BtnBook btnBook;
+    LblDisplay show;
+
+    //....
+    public void registerView(BtnView v) {
+        btnView = v;
+    }
+
+    public void registerSearch(BtnSearch s) {
+        btnSearch = s;
+    }
+
+    public void registerBook(BtnBook b) {
+        btnBook = b;
+    }
+
+    public void registerDisplay(LblDisplay d) {
+        show = d;
+    }
+
+    public void book() {
+        btnBook.setEnabled(false);
+        btnView.setEnabled(true);
+        btnSearch.setEnabled(true);
+        show.setText(&amp;#34;booking...&amp;#34;);
+    }
+
+    public void view() {
+        btnView.setEnabled(false);
+        btnSearch.setEnabled(true);
+        btnBook.setEnabled(true);
+        show.setText(&amp;#34;viewing...&amp;#34;);
+    }
+
+    public void search() {
+        btnSearch.setEnabled(false);
+        btnView.setEnabled(true);
+        btnBook.setEnabled(true);
+        show.setText(&amp;#34;searching...&amp;#34;);
+    }
+
+}
+
+//A concrete colleague
+class BtnView extends JButton implements Command {
+
+    Mediator med;
+
+    BtnView(ActionListener al, Mediator m) {
+        super(&amp;#34;View&amp;#34;);
+        addActionListener(al);
+        med = m;
+        med.registerView(this);
+    }
+
+    public void execute() {
+        med.view();
+    }
+
+}
+
+//A concrete colleague
+class BtnSearch extends JButton implements Command {
+
+    Mediator med;
+
+    BtnSearch(ActionListener al, Mediator m) {
+        super(&amp;#34;Search&amp;#34;);
+        addActionListener(al);
+        med = m;
+        med.registerSearch(this);
+    }
+
+    public void execute() {
+        med.search();
+    }
+
+}
+
+//A concrete colleague
+class BtnBook extends JButton implements Command {
+
+    Mediator med;
+
+    BtnBook(ActionListener al, Mediator m) {
+        super(&amp;#34;Book&amp;#34;);
+        addActionListener(al);
+        med = m;
+        med.registerBook(this);
+    }
+
+    public void execute() {
+        med.book();
+    }
+
+}
+
+class LblDisplay extends JLabel {
+
+    Mediator med;
+
+    LblDisplay(Mediator m) {
+        super(&amp;#34;Just start...&amp;#34;);
+        med = m;
+        med.registerDisplay(this);
+        setFont(new Font(&amp;#34;Arial&amp;#34;, Font.BOLD, 24));
+    }
+
+}
+
+class MediatorDemo extends JFrame implements ActionListener {
+
+    Mediator med = new ParticipantMediator();
+
+    MediatorDemo() {
+        JPanel p = new JPanel();
+        p.add(new BtnView(this, med));
+        p.add(new BtnBook(this, med));
+        p.add(new BtnSearch(this, med));
+        getContentPane().add(new LblDisplay(med), &amp;#34;North&amp;#34;);
+        getContentPane().add(p, &amp;#34;South&amp;#34;);
+        setSize(400, 200);
+        setVisible(true);
+    }
+
+    public void actionPerformed(ActionEvent ae) {
+        Command comd = (Command) ae.getSource();
+        comd.execute();
+    }
+
+    public static void main(String[] args) {
+        new MediatorDemo();
+    }
+
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;例子&#34;&gt;例子&lt;/h1&gt;
+&lt;p&gt;Colleagueclass&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>行为型模式-迭代器模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/iterator-pattern/</link>
+      <pubDate>Mon, 26 Aug 2019 15:47:11 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/iterator-pattern/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;迭代器模式&#34;&gt;迭代器模式&lt;/h2&gt;
+&lt;p&gt;在 面向对象编程里，迭代器模式是一种设计模式，是一种最简单也最常见的设计模式。它可以让用户透过特定的接口巡访容器中的每一个元素而不用了解底层的实现。&lt;/p&gt;
+&lt;p&gt;此外，也可以实现特定目的版本的迭代器。&lt;/p&gt;
+&lt;h2 id=&#34;接口&#34;&gt;接口&lt;/h2&gt;
+&lt;p&gt;《设计模式》建议合理的接口该要有：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public interface Iterator
+{
+    public Object First();
+    public Object Next();
+    public boolean isDone();
+    public Object CurrentItem();
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;java&#34;&gt;Java&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;interface Iterator{
+    Object First();
+    Object Next();
+    boolean IsDone();
+    Object CurrentItem();
+}
+
+abstract class Aggregate{
+    abstract Iterator CreateIterator();
+}
+
+class ConcreteIterator implements Iterator{
+    private List&amp;lt;Object&amp;gt; list = new ArrayList&amp;lt;Object&amp;gt;();
+    private int curr=0;
+    public ConcreteIterator(List&amp;lt;Object&amp;gt; list){
+        this.list = list;
+    }
+
+    public Object First(){
+        return list.get(0);
+    }
+
+    public Object Next(){
+        Object ret = null;
+        curr++;
+        if(curr &amp;lt; list.size()){
+            ret = list.get(curr);
+        }
+        return ret;
+    }
+
+    public boolean IsDone(){
+        return curr&amp;gt;=list.size()?true:false;
+    }
+
+    public Object CurrentItem(){
+        return list.get(curr);
+    }
+}
+
+class ConcreteAggregate extends Aggregate{
+    private List&amp;lt;Object&amp;gt; list = new ArrayList&amp;lt;Object&amp;gt;();
+    public ConcreteAggregate(List&amp;lt;Object&amp;gt; list){
+        this.list = list;
+    }
+    public Iterator CreateIterator(){
+        return new ConcreteIterator(list);
+    }
+}
+
+class client{
+    public static void main(String[] args){
+    List&amp;lt;Object&amp;gt; list = new ArrayList&amp;lt;Object&amp;gt;();
+    list.add(&amp;#34;miner&amp;#34;);
+    list.add(&amp;#34;any&amp;#34;);
+    Aggregate agg = new ConcreteAggregate(list);
+    Iterator iterator = agg.CreateIterator();
+    iterator.First();
+    while(!iterator.IsDone()){
+        System.out.println(iterator.CurrentItem());
+        iterator.Next();
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;例子&#34;&gt;例子&lt;/h1&gt;
+&lt;p&gt;Aggregate
+聚合定义创建相应迭代器对象的接口。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>行为型模式-命令模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/command-pattern/</link>
+      <pubDate>Mon, 26 Aug 2019 11:33:26 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/command-pattern/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;命令模式&#34;&gt;命令模式&lt;/h2&gt;
+&lt;p&gt;在面向对象编程的范畴中，命令模式（英语：Command pattern）是一种设计模式，它尝试以对象来代表实际行动。命令对象可以把行动(action) 及其参数封装起来，于是这些行动可以被：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;重复多次&lt;/li&gt;
+&lt;li&gt;取消（如果该对象有实现的话）&lt;/li&gt;
+&lt;li&gt;取消后又再重做&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这些都是现代大型应用程序所必须的功能，即“撤销”及“重复”。除此之外，可以用命令模式来实现的功能例子还有：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;交易行为&lt;/li&gt;
+&lt;li&gt;进度列&lt;/li&gt;
+&lt;li&gt;向导&lt;/li&gt;
+&lt;li&gt;用户界面按钮及功能表项目&lt;/li&gt;
+&lt;li&gt;线程 pool&lt;/li&gt;
+&lt;li&gt;宏收录&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;java&#34;&gt;Java&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.util.List;
+import java.util.ArrayList;
+
+/* The Command interface */
+public interface Command {
+   void execute();
+}
+
+/* The Invoker class */
+public class Switch {
+   private List&amp;lt;Command&amp;gt; history = new ArrayList&amp;lt;Command&amp;gt;();
+
+   public Switch() {
+   }
+
+   public void storeAndExecute(Command cmd) {
+      this.history.add(cmd); // optional
+      cmd.execute();        
+   }
+}
+
+/* The Receiver class */
+public class Light {
+   public Light() {
+   }
+
+   public void turnOn() {
+      System.out.println(&amp;#34;The light is on&amp;#34;);
+   }
+
+   public void turnOff() {
+      System.out.println(&amp;#34;The light is off&amp;#34;);
+   }
+}
+
+/* The Command for turning on the light - ConcreteCommand #1 */
+public class FlipUpCommand implements Command {
+   private Light theLight;
+
+   public FlipUpCommand(Light light) {
+      this.theLight = light;
+   }
+
+   public void execute(){
+      theLight.turnOn();
+   }
+}
+
+/* The Command for turning off the light - ConcreteCommand #2 */
+public class FlipDownCommand implements Command {
+   private Light theLight;
+
+   public FlipDownCommand(Light light) {
+      this.theLight = light;
+   }
+
+   public void execute() {
+      theLight.turnOff();
+   }
+}
+
+/* The test class or client */
+public class PressSwitch {
+   public static void main(String[] args){
+      Light lamp = new Light();
+      Command switchUp = new FlipUpCommand(lamp);
+      Command switchDown = new FlipDownCommand(lamp);
+
+      Switch mySwitch = new Switch();
+
+      try {
+         if (&amp;#34;ON&amp;#34;.equalsIgnoreCase(args[0])) {
+            mySwitch.storeAndExecute(switchUp);
+         }
+         else if (&amp;#34;OFF&amp;#34;.equalsIgnoreCase(args[0])) {
+            mySwitch.storeAndExecute(switchDown);
+         }
+         else {
+            System.out.println(&amp;#34;Argument \&amp;#34;ON\&amp;#34; or \&amp;#34;OFF\&amp;#34; is required.&amp;#34;);
+         }
+      } catch (Exception e) {
+         System.out.println(&amp;#34;Arguments required.&amp;#34;);
+      }
+   }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;例子&#34;&gt;例子&lt;/h1&gt;
+&lt;p&gt;Receiver
+知道如何实现与执行一个请求相关的操作。任何类都可能作为一个接收者。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>行为型模式-责任链模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/responsibility-chain-pattern/</link>
+      <pubDate>Mon, 26 Aug 2019 08:54:49 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/responsibility-chain-pattern/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;责任链模式&#34;&gt;责任链模式&lt;/h2&gt;
+&lt;p&gt;责任链模式在面向对象程式设计里是一种软件设计模式，它包含了一些命令对象和一系列的处理对象。每一个处理对象决定它能处理哪些命令对象，它也知道如何将它不能处理的命令对象传递给该链中的下一个处理对象。该模式还描述了往该处理链的末尾添加新的处理对象的方法。&lt;/p&gt;
+&lt;h2 id=&#34;java&#34;&gt;Java&lt;/h2&gt;
+&lt;p&gt;以下的日志类(logging)例子演示了该模式。 每一个logging handler首先决定是否需要在该层做处理，然后将控制传递到下一个logging handler。程序的输出是:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Writing to debug output: Entering function y.
+Writing to debug output: Step1 completed.
+Sending via e-mail:      Step1 completed.
+Writing to debug output: An error has occurred.
+Sending via e-mail:      An error has occurred.
+Writing to stderr:       An error has occurred.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;注意：该例子不是日志类的推荐实现方式。&lt;/p&gt;
+&lt;p&gt;同时，需要注意的是，通常在责任链模式的实现中，如果在某一层已经处理了这个logger，那么这个logger就不会传递下去。在我们这个例子中，消息会一直传递到最底层不管它是否已经被处理。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;abstract class Logger
+{
+    public static int ERR = 3;
+    public static int NOTICE = 5;
+    public static int DEBUG = 7;
+    protected int mask;
+
+    // The next element in the chain of responsibility
+    protected Logger next;
+    public Logger setNext( Logger l)
+    {
+        next = l;
+        return this;
+    }
+
+    public final void message( String msg, int priority )
+    {
+        if ( priority &amp;lt;= mask )
+        {
+            writeMessage( msg );
+            if ( next != null )
+            {
+                next.message( msg, priority );
+            }
+        }
+    }
+
+    protected abstract void writeMessage( String msg );
+
+}
+
+class StdoutLogger extends Logger
+{
+
+    public StdoutLogger( int mask ) { this.mask = mask; }
+
+    protected void writeMessage( String msg )
+    {
+        System.out.println( &amp;#34;Writting to stdout: &amp;#34; + msg );
+    }
+}
+
+
+class EmailLogger extends Logger
+{
+
+    public EmailLogger( int mask ) { this.mask = mask; }
+
+    protected void writeMessage( String msg )
+    {
+        System.out.println( &amp;#34;Sending via email: &amp;#34; + msg );
+    }
+}
+
+class StderrLogger extends Logger
+{
+
+    public StderrLogger( int mask ) { this.mask = mask; }
+
+    protected void writeMessage( String msg )
+    {
+        System.out.println( &amp;#34;Sending to stderr: &amp;#34; + msg );
+    }
+}
+
+public class ChainOfResponsibilityExample
+{
+    public static void main( String[] args )
+    {
+        // Build the chain of responsibility
+        Logger l = new StdoutLogger( Logger.DEBUG).setNext(
+                            new EmailLogger( Logger.NOTICE ).setNext(
+                            new StderrLogger( Logger.ERR ) ) );
+
+        // Handled by StdoutLogger
+        l.message( &amp;#34;Entering function y.&amp;#34;, Logger.DEBUG );
+
+        // Handled by StdoutLogger and EmailLogger
+        l.message( &amp;#34;Step1 completed.&amp;#34;, Logger.NOTICE );
+
+        // Handled by all three loggers
+        l.message( &amp;#34;An error has occurred.&amp;#34;, Logger.ERR );
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;例子&#34;&gt;例子&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public interface Request {
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class DimissionRequest implements Request {
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class AddMoneyRequest implements Request {
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class LeaveRequest implements Request {
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Handler&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>结构型模式-代理模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/proxy-pattern/</link>
+      <pubDate>Sun, 25 Aug 2019 22:46:31 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/proxy-pattern/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;代理模式&#34;&gt;代理模式&lt;/h2&gt;
+&lt;p&gt;代理模式（英语：Proxy Pattern）是程序设计中的一种设计模式。&lt;/p&gt;
+&lt;p&gt;所谓的代理者是指一个类别可以作为其它东西的接口。代理者可以作任何东西的接口：网络连接、存储器中的大对象、文件或其它昂贵或无法复制的资源。&lt;/p&gt;
+&lt;p&gt;著名的代理模式例子为引用计数（英语：reference counting）指针对象。&lt;/p&gt;
+&lt;p&gt;当一个复杂对象的多份副本须存在时，代理模式可以结合享元模式以减少存储器用量。典型作法是创建一个复杂对象及多个代理者，每个代理者会引用到原本的复杂对象。而作用在代理者的运算会转送到原本对象。一旦所有的代理者都不存在时，复杂对象会被移除。&lt;/p&gt;
+&lt;h2 id=&#34;java&#34;&gt;Java&lt;/h2&gt;
+&lt;p&gt;以下Java示例解释&amp;quot;虚拟代理&amp;quot;模式。ProxyImage 类别用来访问远程方法。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.util.*;
+
+interface Image {
+    public void displayImage();
+}
+
+//on System A
+class RealImage implements Image {
+    private String filename;
+    public RealImage(String filename) {
+        this.filename = filename;
+        loadImageFromDisk();
+    }
+
+    private void loadImageFromDisk() {
+        System.out.println(&amp;#34;Loading   &amp;#34; + filename);
+    }
+
+    public void displayImage() {
+        System.out.println(&amp;#34;Displaying &amp;#34; + filename);
+    }
+}
+
+//on System B
+class ProxyImage implements Image {
+    private String filename;
+    private Image image;
+
+    public ProxyImage(String filename) {
+        this.filename = filename;
+    }
+    public void displayImage() {
+        if(image == null)
+              image = new RealImage(filename);
+        image.displayImage();
+    }
+}
+
+class ProxyExample {
+    public static void main(String[] args) {
+        Image image1 = new ProxyImage(&amp;#34;HiRes_10MB_Photo1&amp;#34;);
+        Image image2 = new ProxyImage(&amp;#34;HiRes_10MB_Photo2&amp;#34;);     
+
+        image1.displayImage(); // loading necessary
+        image2.displayImage(); // loading necessary
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;程序的输出为：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>结构型模式-享元模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/flyweight-pattern/</link>
+      <pubDate>Sun, 25 Aug 2019 10:51:19 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/flyweight-pattern/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;享元模式&#34;&gt;享元模式&lt;/h2&gt;
+&lt;p&gt;享元模式（英语：Flyweight Pattern）是一种软件设计模式。它使用共享物件，用来尽可能减少内存使用量以及分享资讯给尽可能多的相似物件；它适合用于当大量物件只是重复因而导致无法令人接受的使用大量内存。通常物件中的部分状态是可以分享。常见做法是把它们放在外部数据结构，当需要使用时再将它们传递给享元。&lt;/p&gt;
+&lt;p&gt;典型的享元模式的例子为文书处理器中以图形结构来表示字符。一个做法是，每个字形有其字型外观, 字模 metrics, 和其它格式资讯，但这会使每个字符就耗用上千字节。取而代之的是，每个字符参照到一个共享字形物件，此物件会被其它有共同特质的字符所分享；只有每个字符（文件中或页面中）的位置才需要另外储存。&lt;/p&gt;
+&lt;h2 id=&#34;java&#34;&gt;Java&lt;/h2&gt;
+&lt;p&gt;以下程式用来解释上述的文字。这个例子用来解释享元模式利用只加载执行任务时所必需的最少资料，因而减少内存使用量。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public enum FontEffect {
+    BOLD, ITALIC, SUPERSCRIPT, SUBSCRIPT, STRIKETHROUGH
+}
+
+public final class FontData {
+    /**
+     * A weak hash map will drop unused references to FontData.
+     * Values have to be wrapped in WeakReferences,
+     * because value objects in weak hash map are held by strong references.
+     */
+    private static final WeakHashMap&amp;lt;FontData, WeakReference&amp;lt;FontData&amp;gt;&amp;gt; FLY_WEIGHT_DATA =
+        new WeakHashMap&amp;lt;FontData, WeakReference&amp;lt;FontData&amp;gt;&amp;gt;();
+    private final int pointSize;
+    private final String fontFace;
+    private final Color color;
+    private final Set&amp;lt;FontEffect&amp;gt; effects;
+
+    private FontData(int pointSize, String fontFace, Color color, EnumSet&amp;lt;FontEffect&amp;gt; effects) {
+        this.pointSize = pointSize;
+        this.fontFace = fontFace;
+        this.color = color;
+        this.effects = Collections.unmodifiableSet(effects);
+    }
+
+    public static FontData create(int pointSize, String fontFace, Color color,
+        FontEffect... effects) {
+        EnumSet&amp;lt;FontEffect&amp;gt; effectsSet = EnumSet.noneOf(FontEffect.class);
+        for (FontEffect fontEffect : effects) {
+            effectsSet.add(fontEffect);
+        }
+        // We are unconcerned with object creation cost, we are reducing overall memory consumption
+        FontData data = new FontData(pointSize, fontFace, color, effectsSet);
+
+        // Retrieve previously created instance with the given values if it (still) exists
+        WeakReference&amp;lt;FontData&amp;gt; ref = FLY_WEIGHT_DATA.get(data);
+        FontData result = (ref != null) ? ref.get() : null;
+
+        // Store new font data instance if no matching instance exists
+        if (result == null) {
+            FLY_WEIGHT_DATA.put(data, new WeakReference&amp;lt;FontData&amp;gt; (data));
+            result = data;
+        }
+        // return the single immutable copy with the given values
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof FontData) {
+            if (obj == this) {
+                return true;
+            }
+            FontData other = (FontData) obj;
+            return other.pointSize == pointSize &amp;amp;&amp;amp; other.fontFace.equals(fontFace)
+                &amp;amp;&amp;amp; other.color.equals(color) &amp;amp;&amp;amp; other.effects.equals(effects);
+        }
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return (pointSize * 37 + effects.hashCode() * 13) * fontFace.hashCode();
+    }
+
+    // Getters for the font data, but no setters. FontData is immutable.
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;例子&#34;&gt;例子&lt;/h1&gt;
+&lt;p&gt;Flyweight&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>结构型模式-外观模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/facade-pattern/</link>
+      <pubDate>Sun, 25 Aug 2019 10:20:54 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/facade-pattern/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;外观模式&#34;&gt;外观模式&lt;/h2&gt;
+&lt;p&gt;外观模式（Facade pattern），是软件工程中常用的一种软件设计模式，它为子系统中的一组接口提供一个统一的高层接口，使得子系统更容易使用。&lt;/p&gt;
+&lt;h2 id=&#34;java&#34;&gt;Java&lt;/h2&gt;
+&lt;p&gt;这是一个抽象的示例。一个客户“you”通过外观接口“computer”获取计算机内部复杂的系统信息。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/* Complex parts */
+
+class CPU {
+	public void freeze() { ... }
+	public void jump(long position) { ... }
+	public void execute() { ... }
+}
+
+class Memory {
+	public void load(long position, byte[] data) {
+		...
+	}
+}
+
+class HardDrive {
+	public byte[] read(long lba, int size) {
+		...
+	}
+}
+
+/* Façade */
+
+class Computer {
+	public void startComputer() {
+		cpu.freeze();
+		memory.load(BOOT_ADDRESS, hardDrive.read(BOOT_SECTOR, SECTOR_SIZE));
+		cpu.jump(BOOT_ADDRESS);
+		cpu.execute();
+	}
+}
+
+/* Client */
+
+class You {
+	public static void main(String[] args) {
+		Computer facade = new Computer();
+		facade.startComputer();
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;例子&#34;&gt;例子&lt;/h1&gt;
+&lt;p&gt;抽象类&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>结构型模式-装饰模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/decorator-pattern/</link>
+      <pubDate>Sun, 25 Aug 2019 09:31:07 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/decorator-pattern/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;修饰模式&#34;&gt;修饰模式&lt;/h2&gt;
+&lt;p&gt;修饰模式，是面向对象编程领域中，一种动态地往一个类中添加新的行为的设计模式。就功能而言，修饰模式相比生成子类更为灵活，这样可以给某个对象而不是整个类添加一些功能。&lt;/p&gt;
+&lt;h2 id=&#34;介绍&#34;&gt;介绍&lt;/h2&gt;
+&lt;p&gt;通过使用修饰模式，可以在运行时扩充一个类的功能。原理是：增加一个修饰类包裹原来的类，包裹的方式一般是通过在将原来的对象作为修饰类的构造函数的参数。装饰类实现新的功能，但是，在不需要用到新功能的地方，它可以直接调用原来的类中的方法。修饰类必须和原来的类有相同的接口。&lt;/p&gt;
+&lt;p&gt;修饰模式是类继承的另外一种选择。类继承在编译时候增加行为，而装饰模式是在运行时增加行为。&lt;/p&gt;
+&lt;p&gt;当有几个相互独立的功能需要扩充时，这个区别就变得很重要。在有些面向对象的编程语言中，类不能在运行时被创建，通常在设计的时候也不能预测到有哪几种功能组合。这就意味着要为每一种组合创建一个新类。相反，修饰模式是面向运行时候的对象实例的,这样就可以在运行时根据需要进行组合。一个修饰模式的示例是JAVA里的Java I/O Streams的实现。&lt;/p&gt;
+&lt;h2 id=&#34;动机&#34;&gt;动机&lt;/h2&gt;
+&lt;p&gt;例如，一个窗口系统中的窗口，允许这个窗口内容滚动，我们希望给它添加水平或垂直滚动条。假设窗口通过“Window”类实例来表示，并且假设它没有添加滚动条功能。我们可以创建一个子类“ScrollingWindow”来提供，或者我们可以创建一个ScrollingWindowDecorator来为已存在的Window对象添加这个功能。在这点上，只要是解决方案就可以了。 现在我们假设希望选择给我们的窗口添加边框，同样，我们的原始Window类不支持。ScrollingWindow子类现在会造成一个问题，因为它会有效的创建一种新的窗口。如果我们想要给所有窗口添加边框，我们必须创建WindowWithBorder和ScrollingWindowWithBorder子类。显然，这个问题由于被添加类而变得更糟了。对于修饰模式，我们简单的创建一个新类BorderedWindowDecorator，在运行时，我们能够使用ScrollingWindowDecorator或BorderedWindowDecorator或两者结合来修饰已存在的窗口。 一个修饰能够被应用的另一个好例子是当有需要根据某套规则或者几个平行的规则集（不同的用户凭据等）限制访问对象的属性或方法时。&lt;/p&gt;
+&lt;p&gt;一个对象的属性或方法按照某组规则或几个并行规则(不同用户证书等)需要限制访问时，在这种情况下，不是在原始对象中实现访问控制而是在他的使用中不变或不知道任何限制，并且他被包装在一个访问控制修饰对象中，这个对象能够对允许的原始对象的接口子集服务。&lt;/p&gt;
+&lt;h2 id=&#34;应用&#34;&gt;应用&lt;/h2&gt;
+&lt;p&gt;Java IO 流为典型的装饰模式。&lt;/p&gt;
+&lt;h2 id=&#34;java&#34;&gt;Java&lt;/h2&gt;
+&lt;p&gt;这个JAVA示例使用window/scrolling情境。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;// The Window interface class
+public interface Window {
+	public void draw(); // Draws the Window
+	public String getDescription(); // Returns a description of the Window
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;// implementation of a simple Window without any scrollbars
+public class SimpleWindow implements Window {
+	public void draw() {
+		// Draw window
+	}
+
+	public String getDescription() {
+		return &amp;#34;simple window&amp;#34;;
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;以下类包含所有Window类的decorator，以及修饰类本身。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>结构型模式-桥接模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/bridge-pattern/</link>
+      <pubDate>Sat, 24 Aug 2019 21:46:01 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/bridge-pattern/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;桥接模式&#34;&gt;桥接模式&lt;/h2&gt;
+&lt;p&gt;桥接模式是软件设计模式中最复杂的模式之一，它把事物对象和其具体行为、具体特征分离开来，使它们可以各自独立的变化。事物对象仅是一个抽象的概念。如“圆形”、“三角形”归于抽象的“形状”之下，而“画圆”、“画三角”归于实现行为的“画图”类之下，然后由“形状”调用“画图”。&lt;/p&gt;
+&lt;h2 id=&#34;java&#34;&gt;Java&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/** &amp;#34;Implementor&amp;#34; */
+interface DrawingAPI
+{
+    public void drawCircle(double x, double y, double radius);
+}
+
+/** &amp;#34;ConcreteImplementor&amp;#34; 1/2 */
+class DrawingAPI1 implements DrawingAPI
+{
+   public void drawCircle(double x, double y, double radius)
+   {
+        System.out.printf(&amp;#34;API1.circle at %f:%f radius %f\n&amp;#34;, x, y, radius);
+   }
+}
+
+/** &amp;#34;ConcreteImplementor&amp;#34; 2/2 */
+class DrawingAPI2 implements DrawingAPI
+{
+   public void drawCircle(double x, double y, double radius)
+   {
+        System.out.printf(&amp;#34;API2.circle at %f:%f radius %f\n&amp;#34;, x, y, radius);
+   }
+}
+
+/** &amp;#34;Abstraction&amp;#34; */
+interface Shape
+{
+   public void draw();                                            // low-level
+   public void resizeByPercentage(double pct);     // high-level
+}
+
+/** &amp;#34;Refined Abstraction&amp;#34; */
+class CircleShape implements Shape
+{
+   private double x, y, radius;
+   private DrawingAPI drawingAPI;
+   public CircleShape(double x, double y, double radius, DrawingAPI drawingAPI)
+   {
+       this.x = x;  this.y = y;  this.radius = radius;
+       this.drawingAPI = drawingAPI;
+   }
+
+   // low-level i.e. Implementation specific
+   public void draw()
+   {
+        drawingAPI.drawCircle(x, y, radius);
+   }   
+   // high-level i.e. Abstraction specific
+   public void resizeByPercentage(double pct)
+   {
+        radius *= pct;
+   }
+}
+
+/** &amp;#34;Client&amp;#34; */
+class BridgePattern {
+   public static void main(String[] args)
+   {
+       Shape[] shapes = new Shape[2];
+       shapes[0] = new CircleShape(1, 2, 3, new DrawingAPI1());
+       shapes[1] = new CircleShape(5, 7, 11, new DrawingAPI2());
+
+       for (Shape shape : shapes)
+       {
+           shape.resizeByPercentage(2.5);
+           shape.draw();
+       }
+   }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;运行结果：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>结构型模式-适配器模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/adapter-pattern/</link>
+      <pubDate>Sat, 24 Aug 2019 21:12:02 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/adapter-pattern/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;适配器模式&#34;&gt;适配器模式&lt;/h2&gt;
+&lt;p&gt;在设计模式中，适配器模式（英语：adapter pattern）有时候也称包装样式或者包装(wrapper)。将一个类的接口转接成用户所期待的。一个适配使得因接口不兼容而不能在一起工作的类能在一起工作，做法是将类自己的接口包裹在一个已存在的类中。&lt;/p&gt;
+&lt;h2 id=&#34;结构&#34;&gt;结构&lt;/h2&gt;
+&lt;p&gt;有两种类型的适配器模式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;对象适配器模式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在这种适配器模式中，适配器容纳一个它包裹的类的实例。在这种情况下，适配器调用被包裹对象的物理实体。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;类适配器模式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这种适配器模式下，适配器继承自已实现的类（一般多重继承）。&lt;/p&gt;
+&lt;h1 id=&#34;例子&#34;&gt;例子&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Target&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;定义Client使用的与特定领域相关的接口。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public interface Target {
+    void adapteeMethod();
+    void adapterMethod();
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Adaptee&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;定义一个已经存在的接口，这个接口需要适配。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class Adaptee {
+    public void adapteeMethod(){
+        System.out.println(&amp;#34;Adaptee method&amp;#34;);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Adapter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;对Adaptee的接口与Target接口进行适配&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class Adapter implements Target{
+
+    private Adaptee adaptee;
+
+    public Adapter(Adaptee adaptee){
+        this.adaptee=adaptee;
+    }
+
+    @Override
+    public void adapteeMethod() {
+        adaptee.adapteeMethod();
+    }
+
+    @Override
+    public void adapterMethod() {
+        System.out.println(&amp;#34;Adapter method&amp;#34;);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Client&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;与符合Target接口的对象协同。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class Test {
+    public static void main(String[] args) {
+        Target target = new Adapter(new Adaptee());
+        target.adapteeMethod();
+        target.adapterMethod();
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;运行结果：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>创建型模式-原型模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/prototype/</link>
+      <pubDate>Sat, 24 Aug 2019 18:43:05 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/prototype/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;原型模式&#34;&gt;原型模式&lt;/h2&gt;
+&lt;p&gt;原型模式是创建型模式的一种，其特点在于通过“复制”一个已经存在的实例来返回新的实例,而不是新建实例。被复制的实例就是我们所称的“原型”，这个原型是可定制的。&lt;/p&gt;
+&lt;p&gt;原型模式多用于创建复杂的或者耗时的实例，因为这种情况下，复制一个已经存在的实例使程序运行更高效；或者创建值相等，只是命名不一样的同类数据。&lt;/p&gt;
+&lt;h2 id=&#34;java&#34;&gt;Java&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/** Prototype Class **/
+public class Cookie implements Cloneable {
+
+   public Object clone() throws CloneNotSupportedException
+   {
+       //In an actual implementation of this pattern you would now attach references to
+       //the expensive to produce parts from the copies that are held inside the prototype.
+       return (Cookie) super.clone();
+   }
+}
+
+/** Concrete Prototypes to clone **/
+public class CoconutCookie extends Cookie { }
+
+/** Client Class**/
+public class CookieMachine
+{
+
+  private Cookie cookie;//cookie必须是可复制的
+
+    public CookieMachine(Cookie cookie) {
+        this.cookie = cookie;
+    }
+
+   public Cookie makeCookie()
+   {
+       try
+       {
+           return (Cookie) cookie.clone();
+       } catch (CloneNotSupportedException e)
+       {
+           e.printStackTrace();
+       }
+       return null;
+   }
+
+
+    public static void main(String args[]){
+        Cookie tempCookie =  null;
+        Cookie prot = new CoconutCookie();
+        CookieMachine cm = new CookieMachine(prot); //设置原型
+        for(int i=0; i&amp;lt;100; i++)
+            tempCookie = cm.makeCookie();//通过复制原型返回多个cookie
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;例子&#34;&gt;例子&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Prototype&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;声明一个克隆自身的接口&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>创建型模式-单例模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/single-case-pattern/</link>
+      <pubDate>Fri, 23 Aug 2019 17:53:58 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/single-case-pattern/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;单例模式&#34;&gt;单例模式&lt;/h2&gt;
+&lt;p&gt;单例模式，也叫单子模式，是一种常用的软件设计模式。在应用这个模式时，单例对象的类必须保证只有一个实例存在。许多时候整个系统只需要拥有一个的全局对象，这样有利于我们协调系统整体的行为。比如在某个服务器程序中，该服务器的配置信息存放在一个文件中，这些配置数据由一个单例对象统一读取，然后服务进程中的其他对象再通过这个单例对象获取这些配置信息。这种方式简化了在复杂环境下的配置管理。&lt;/p&gt;
+&lt;p&gt;实现单例模式的思路是：一个类能返回对象一个引用(永远是同一个)和一个获得该实例的方法（必须是静态方法，通常使用getInstance这个名称）；当我们调用这个方法时，如果类持有的引用不为空就返回这个引用，如果类保持的引用为空就创建该类的实例并将实例的引用赋予该类保持的引用；同时我们还将该类的构造函数定义为私有方法，这样其他处的代码就无法通过调用该类的构造函数来实例化该类的对象，只有通过该类提供的静态方法来得到该类的唯一实例。&lt;/p&gt;
+&lt;p&gt;单例模式在多线程的应用场合下必须小心使用。如果当唯一实例尚未创建时，有两个线程同时调用创建方法，那么它们同时没有检测到唯一实例的存在，从而同时各自创建了一个实例，这样就有两个实例被构造出来，从而违反了单例模式中实例唯一的原则。 解决这个问题的办法是为指示类是否已经实例化的变量提供一个互斥锁(虽然这样会降低效率)。&lt;/p&gt;
+&lt;h2 id=&#34;构建方式&#34;&gt;构建方式&lt;/h2&gt;
+&lt;p&gt;通常单例模式在Java语言中，有两种构建方式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;懒汉方式。指全局的单例实例在第一次被使用时构建。&lt;/li&gt;
+&lt;li&gt;饿汉方式。指全局的单例实例在类装载时构建。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;java&#34;&gt;Java&lt;/h2&gt;
+&lt;p&gt;在Java语言中，单例模式(饿汉模式)应用的例子如下述代码所示：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class Singleton {
+  private static final Singleton INSTANCE = new Singleton();
+
+  // Private constructor suppresses
+  // default public constructor
+  private Singleton() {};
+
+  public static Singleton getInstance() {
+      return INSTANCE;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;在Java编程语言中，单例模式(懒汉模式)应用的例子如下述代码所示 (此种方法只能用在JDK5及以后版本(注意 INSTANCE 被声明为 volatile)，之前的版本使用“双重检查锁”会发生非预期行为)：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class Singleton {
+    private static volatile Singleton INSTANCE = null;
+
+    // Private constructor suppresses
+    // default public constructor
+    private Singleton() {};
+
+    //Thread safe and performance  promote
+    public static  Singleton getInstance() {
+        if(INSTANCE == null){
+             synchronized(Singleton.class){
+                 // When more than two threads run into the first null check same time,
+                 // to avoid instanced more than one time, it needs to be checked again.
+                 if(INSTANCE == null){
+                     INSTANCE = new Singleton();
+                  }
+              }
+        }
+        return INSTANCE;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;例子&#34;&gt;例子&lt;/h1&gt;
+&lt;p&gt;Singleton&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>创建型模式-建造者模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/builder-pattern/</link>
+      <pubDate>Fri, 23 Aug 2019 16:48:38 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/builder-pattern/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;生成器模式&#34;&gt;生成器模式&lt;/h2&gt;
+&lt;p&gt;生成器模式（英：Builder Pattern）是一种设计模式，又名：建造模式，是一种对象构建模式。它可以将复杂对象的建造过程抽象出来（抽象类别），使这个抽象过程的不同实现方法可以构造出不同表现（属性）的对象。&lt;/p&gt;
+&lt;h2 id=&#34;适用性&#34;&gt;适用性&lt;/h2&gt;
+&lt;p&gt;在以下情况使用生成器模式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;当创建复杂对象的算法应该独立于该对象的组成部分以及它们的装配方式时；&lt;/li&gt;
+&lt;li&gt;当构造过程必须允许被构造的对象有不同的表示时。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;参与者&#34;&gt;参与者&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Builder&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;为创建一个Product对象的各个部件指定抽象接口。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ConcreteBuilder&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;实现Builder的接口以构造和装配该产品的各个部件。&lt;/p&gt;
+&lt;p&gt;定义并明确它所创建的表示。&lt;/p&gt;
+&lt;p&gt;提供一个检索产品的接口&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Director&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;构造一个使用Builder接口的对象。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Product&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;表示被构造的复杂对象。ConcreateBuilder创建该产品的内部表示并定义它的装配过程。&lt;/p&gt;
+&lt;p&gt;包含定义组成部件的类，包括将这些部件装配成最终产品的接口。&lt;/p&gt;
+&lt;h2 id=&#34;协作&#34;&gt;协作&lt;/h2&gt;
+&lt;p&gt;客户创建Director对象，并用它所想要的Builder对象进行配置。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一旦产品部件被生成，导向器就会通知生成器。&lt;/li&gt;
+&lt;li&gt;生成器处理导向器的请求，并将部件添加到该产品中。&lt;/li&gt;
+&lt;li&gt;客户从生成器中检索产品。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;范例&#34;&gt;范例&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/** &amp;#34;Product&amp;#34; */
+class Pizza {
+  private String dough = &amp;#34;&amp;#34;;
+  private String sauce = &amp;#34;&amp;#34;;
+  private String topping = &amp;#34;&amp;#34;;
+
+  public void setDough (String dough)     { this.dough = dough; }
+  public void setSauce (String sauce)     { this.sauce = sauce; }
+  public void setTopping (String topping) { this.topping = topping; }
+}
+
+
+&amp;#39;&amp;#39;/** &amp;#34;Abstract Builder&amp;#34; */&amp;#39;&amp;#39;
+abstract class PizzaBuilder {
+  protected Pizza pizza;
+
+  public Pizza getPizza() { return pizza; }
+  public void createNewPizzaProduct() { pizza = new Pizza(); }
+
+  public abstract void buildDough();
+  public abstract void buildSauce();
+  public abstract void buildTopping();
+}
+
+/** &amp;#34;ConcreteBuilder&amp;#34; */
+class HawaiianPizzaBuilder extends PizzaBuilder {
+  public void buildDough()   { pizza.setDough(&amp;#34;cross&amp;#34;); }
+  public void buildSauce()   { pizza.setSauce(&amp;#34;mild&amp;#34;); }
+  public void buildTopping() { pizza.setTopping(&amp;#34;ham+pineapple&amp;#34;); }
+}
+
+/** &amp;#34;ConcreteBuilder&amp;#34; */
+class SpicyPizzaBuilder extends PizzaBuilder {
+  public void buildDough()   { pizza.setDough(&amp;#34;pan baked&amp;#34;); }
+  public void buildSauce()   { pizza.setSauce(&amp;#34;hot&amp;#34;); }
+  public void buildTopping() { pizza.setTopping(&amp;#34;pepperoni+salami&amp;#34;); }
+}
+
+
+&amp;#39;&amp;#39;/** &amp;#34;Director&amp;#34; */&amp;#39;&amp;#39;
+class Waiter {
+  private PizzaBuilder pizzaBuilder;
+
+  public void setPizzaBuilder (PizzaBuilder pb) { pizzaBuilder = pb; }
+  public Pizza getPizza() { return pizzaBuilder.getPizza(); }
+
+  public void constructPizza() {
+    pizzaBuilder.createNewPizzaProduct();
+    pizzaBuilder.buildDough();
+    pizzaBuilder.buildSauce();
+    pizzaBuilder.buildTopping();
+  }
+}
+
+/** A customer ordering a pizza. */
+class BuilderExample {
+  public static void main(String[] args) {
+    Waiter waiter = new Waiter();
+    PizzaBuilder hawaiian_pizzabuilder = new HawaiianPizzaBuilder();
+    PizzaBuilder spicy_pizzabuilder = new SpicyPizzaBuilder();
+
+    waiter.setPizzaBuilder ( hawaiian_pizzabuilder );
+    waiter.constructPizza();
+
+    Pizza pizza = waiter.getPizza();
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;例子&#34;&gt;例子&lt;/h1&gt;
+&lt;p&gt;Product&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>创建型模式-抽象工厂</title>
+      <link>https://zhangxiaofeng05.github.io/posts/abstract-factory/</link>
+      <pubDate>Mon, 19 Aug 2019 16:02:50 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/abstract-factory/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;抽象工厂&#34;&gt;抽象工厂&lt;/h2&gt;
+&lt;p&gt;抽象工厂模式（英语：Abstract factory pattern）是一种软件开发设计模式。抽象工厂模式提供了一种方式，可以将一组具有同一主题的单独的工厂封装起来。在正常使用中，客户端程序需要创建抽象工厂的具体实现，然后使用抽象工厂作为接口来创建这一主题的具体对象。客户端程序不需要知道（或关心）它从这些内部的工厂方法中获得对象的具体类型，因为客户端程序仅使用这些对象的通用接口。抽象工厂模式将一组对象的实现细节与他们的一般使用分离开来。
+举个例子来说，比如一个抽象工厂类叫做DocumentCreator（文档创建器），此类提供创建若干种产品的接口，包括createLetter()（创建信件）和createResume()（创建简历）。其中，createLetter()返回一个Letter（信件），createResume()返回一个Resume（简历）。系统中还有一些DocumentCreator的具体实现类，包括FancyDocumentCreator和ModernDocumentCreator。这两个类对DocumentCreator的两个方法分别有不同的实现，用来创建不同的“信件”和“简历”（用FancyDocumentCreator的实例可以创建FancyLetter和FancyResume，用ModernDocumentCreator的实例可以创建ModernLetter和ModernResume）。这些具体的“信件”和“简历”类均继承自抽象类，即Letter和Resume类。客户端需要创建“信件”或“简历”时，先要得到一个合适的DocumentCreator实例，然后调用它的方法。一个工厂中创建的每个对象都是同一个主题的（“fancy”或者“modern”）。客户端程序只需要知道得到的对象是“信件”或者“简历”，而不需要知道具体的主题，因此客户端程序从抽象工厂DocumentCreator中得到了Letter或Resume类的引用，而不是具体类的对象引用。
+“工厂”是创建产品（对象）的地方，其目的是将产品的创建与产品的使用分离。抽象工厂模式的目的，是将若干抽象产品的接口与不同主题产品的具体实现分离开。这样就能在增加新的具体工厂的时候，不用修改引用抽象工厂的客户端代码。&lt;/p&gt;
+&lt;p&gt;使用抽象工厂模式，能够在具体工厂变化的时候，不用修改使用工厂的客户端代码，甚至是在运行时。然而，使用这种模式或者相似的设计模式，可能给编写代码带来不必要的复杂性和额外的工作。正确使用设计模式能够抵消这样的“额外工作”&lt;/p&gt;
+&lt;h2 id=&#34;定义&#34;&gt;定义&lt;/h2&gt;
+&lt;p&gt;抽象工厂模式的实质是“提供接口，创建一系列相关或独立的对象，而不指定这些对象的具体类。&lt;/p&gt;
+&lt;h2 id=&#34;使用&#34;&gt;使用&lt;/h2&gt;
+&lt;p&gt;具体的工厂决定了创建对象的具体类型，而且工厂就是对象实际创建的地方（比如在C++中，用“new”操作符创建对象）。然而，抽象工厂只返回一个指向创建的对象的抽象引用（或指针）。
+这样，客户端程序调用抽象工厂引用的方法，由具体工厂完成对象创建，然后客户端程序得到的是抽象产品的引用。如此使客户端代码与对象的创建分离开来。
+因为工厂仅仅返回一个抽象产品的引用（或指针），所以客户端程序不知道（也不会牵绊于）工厂创建对象的具体类型。然而，工厂知道具体对象的类型；例如，工厂可能从配置文件中读取某种类型。这时，客户端没有必要指定具体类型，因为已经在配置文件中指定了。通常，这意味着：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;客户端代码不知道任何具体类型，也就没必要引入任何相关的头文件或类定义。客户端代码仅仅处理抽象类型。工厂确实创建了具体类型的对象，但是客户端代码仅使用这些对象的抽象接口来访问它们。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果要增加一个具体类型，只需要修改客户端代码使用另一个工厂即可，而且这个修改通常只是一个文件中的一行代码。不同的工厂创建不同的具体类型的对象，但是和以前一样返回一个抽象类型的引用（或指针），因此客户端代码的其他部分不需要任何改动。这样比修改客户端代码创建新类型的对象简单多了。如果是后者的话，需要修改代码中每一个创建这种对象的地方（而且需要注意的是，这些地方都知道对象的具体类型，而且需要引入具体类型的头文件或类定义）。如果所有的工厂对象都存储在全局的单例对象中，所有的客户端代码到这个单例中访问需要的工厂，那么，更换工厂就非常简单了，仅仅需要更改这个单例对象即可。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;代码举例&#34;&gt;代码举例&lt;/h2&gt;
+&lt;p&gt;假设我们有两种产品接口 Button 和 Border ，每一种产品都支持多种系列，比如 Mac 系列和 Windows 系列。这样每个系列的产品分别是 MacButton, WinButton, MacBorder, WinBorder 。为了可以在运行时刻创建一个系列的产品族，我们可以为每个系列的产品族创建一个工厂 MacFactory 和 WinFactory 。每个工厂都有两个方法 CreateButton 和 CreateBorder 并返回对应的产品，可以将这两个方法抽象成一个接口 AbstractFactory 。这样在运行时刻我们可以选择创建需要的产品系列。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public interface Button {}
+public interface Border {}
+
+//实现抽象类
+public class MacButton implements Button {}
+public class MacBorder implements Border {}
+
+public class WinButton implements Button {}
+public class WinBorder implements Border {}
+
+//接着实现工厂
+public class MacFactory {
+	public static Button createButton() {
+	    return new MacButton();
+	}
+	public static Border createBorder() {
+	    return new MacBorder();
+	}
+}
+
+public class WinFactory {
+	public static Button createButton() {
+	    return new WinButton();
+	}
+	public static Border createBorder() {
+	    return new WinBorder();
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;适用性&#34;&gt;适用性&lt;/h2&gt;
+&lt;p&gt;在以下情况可以考虑使用抽象工厂模式：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>创建型模式-工厂方法</title>
+      <link>https://zhangxiaofeng05.github.io/posts/factory-method/</link>
+      <pubDate>Mon, 19 Aug 2019 15:56:21 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/factory-method/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;工厂方法&#34;&gt;工厂方法&lt;/h2&gt;
+&lt;p&gt;工厂方法模式（英语：Factory method pattern）是一种实现了“工厂”概念的面向对象设计模式。就像其他创建型模式一样，它也是处理在不指定对象具体类型的情况下创建对象的问题。工厂方法模式的实质是“定义一个创建对象的接口，但让实现这个接口的类来决定实例化哪个类。工厂方法让类的实例化推迟到子类中进行。”
+创建一个对象常常需要复杂的过程，所以不适合包含在一个复合对象中。创建对象可能会导致大量的重复代码，可能会需要复合对象访问不到的信息，也可能提供不了足够级别的抽象，还可能并不是复合对象概念的一部分。工厂方法模式通过定义一个单独的创建对象的方法来解决这些问题。由子类实现这个方法来创建具体类型的对象。
+对象创建中的有些过程包括决定创建哪个对象、管理对象的生命周期，以及管理特定对象的创建和销毁的概念。&lt;/p&gt;
+&lt;h2 id=&#34;工厂&#34;&gt;工厂&lt;/h2&gt;
+&lt;p&gt;在面向对象程序设计中，工厂通常是一个用来创建其他对象的对象。工厂是构造方法的抽象，用来实现不同的分配方案。&lt;/p&gt;
+&lt;p&gt;工厂对象通常包含一个或多个方法，用来创建这个工厂所能创建的各种类型的对象。这些方法可能接收参数，用来指定对象创建的方式，最后返回创建的对象。
+有时，特定类型对象的控制过程比简单地创建一个对象更复杂。在这种情况下，工厂对象就派上用场了。工厂对象可能会动态地创建产品类的对象，或者从对象池中返回一个对象，或者对所创建的对象进行复杂的配置，或者应用其他的操作。
+这些类型的对象很有用。几个不同的设计模式都应用了工厂的概念，并可以使用在很多语言中。例如，在《设计模式》一书中，像工厂方法模式、抽象工厂模式、生成器模式，甚至是单例模式都应用了工厂的概念。&lt;/p&gt;
+&lt;h2 id=&#34;代码举例&#34;&gt;代码举例&lt;/h2&gt;
+&lt;p&gt;例如，有一个Button类表示按钮，另有它的两个子类WinButton和MacButton分别代表Windows和Mac风格的按钮，那么这几个类和用于创建它们的工厂类在Java中可以如下实现&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;//Button
+class Button{/* ...*/}
+class WinButton extends Button{/* ...*/}
+class MacButton extends Button{/* ...*/}
+
+//他们的工厂类
+interface ButtonFactory{
+    abstract Button createButton();
+}
+class WinButtonFactory implements ButtonFactory{
+    Button createButton(){
+        return new WinButton();
+    }
+}
+class MacButtonFactory implements ButtonFactory{
+    Button createButton(){
+        return new MacButton();
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;简单工厂&#34;&gt;简单工厂&lt;/h2&gt;
+&lt;p&gt;普通的工厂方法模式通常伴随着对象的具体类型与工厂具体类型的一一对应，客户端代码根据需要选择合适的具体类型工厂使用。然而，这种选择可能包含复杂的逻辑。这时，可以创建一个单一的工厂类，用以包含这种选择逻辑，根据参数的不同选择实现不同的具体对象。这个工厂类不需要由每个具体产品实现一个自己的具体的工厂类，所以可以将工厂方法设置为静态方法。 而且，工厂方法封装了对象的创建过程。如果创建过程非常复杂（比如依赖于配置文件或用户输入），工厂方法就非常有用了。 比如，一个程序要读取图像文件。程序支持多种图像格式，每种格式都有一个对应的ImageReader类用来读取图像。程序每次读取图像时，需要基于文件信息创建合适类型的ImageReader。这个选择逻辑可以包装在一个简单工厂中：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class ImageReaderFactory {
+    public static ImageReader imageReaderFactoryMethod(InputStream is) {
+        ImageReader product = null;
+
+        int imageType = determineImageType(is);
+        switch (imageType) {
+            case ImageReaderFactory.GIF:
+                product = new GifReader(is);
+            case ImageReaderFactory.JPEG:
+                product = new JpegReader(is);
+            //...
+        }
+        return product;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;适用性&#34;&gt;适用性&lt;/h2&gt;
+&lt;p&gt;下列情况可以考虑使用工厂方法模式：&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

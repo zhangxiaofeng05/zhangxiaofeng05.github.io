@@ -1,16 +1,64 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>浏览器 - 分类 - 风吹过的烟花</title>
-        <link>https://zhangxiaofeng05.github.io/categories/%E6%B5%8F%E8%A7%88%E5%99%A8/</link>
-        <description>浏览器 - 分类 - 风吹过的烟花</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Fri, 19 Jul 2019 11:11:47 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/categories/%E6%B5%8F%E8%A7%88%E5%99%A8/" rel="self" type="application/rss+xml" /><item>
-    <title>request和Session</title>
-    <link>https://zhangxiaofeng05.github.io/requestandsession/</link>
-    <pubDate>Fri, 19 Jul 2019 11:11:47 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/requestandsession/</guid>
-    <description><![CDATA[区别 request session 描述 一次请求(访问一个url) 一次对话(可以访问多个url) 作用 获取信息(表单,查询,cookie等信息) 记录变量(跟踪记录访问者动]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>浏览器 on 风吹过的烟花</title>
+    <link>https://zhangxiaofeng05.github.io/categories/%E6%B5%8F%E8%A7%88%E5%99%A8/</link>
+    <description>Recent content in 浏览器 on 风吹过的烟花</description>
+    <image>
+      <title>风吹过的烟花</title>
+      <url>https://zhangxiaofeng05.github.io/images/papermod-cover.png</url>
+      <link>https://zhangxiaofeng05.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 19 Jul 2019 11:11:47 +0800</lastBuildDate>
+    <atom:link href="https://zhangxiaofeng05.github.io/categories/%E6%B5%8F%E8%A7%88%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>request和Session</title>
+      <link>https://zhangxiaofeng05.github.io/posts/requestandsession/</link>
+      <pubDate>Fri, 19 Jul 2019 11:11:47 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/requestandsession/</guid>
+      <description>&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;区别&lt;/th&gt;
+          &lt;th&gt;request&lt;/th&gt;
+          &lt;th&gt;session&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;描述&lt;/td&gt;
+          &lt;td&gt;一次请求(访问一个url)&lt;/td&gt;
+          &lt;td&gt;一次对话(可以访问多个url)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;作用&lt;/td&gt;
+          &lt;td&gt;获取信息(表单,查询,cookie等信息)&lt;/td&gt;
+          &lt;td&gt;记录变量(跟踪记录访问者动作)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;作用端&lt;/td&gt;
+          &lt;td&gt;浏览器&lt;/td&gt;
+          &lt;td&gt;服务器&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;生命周期&lt;/td&gt;
+          &lt;td&gt;提交以后即释放&lt;/td&gt;
+          &lt;td&gt;关闭浏览器或者超出会话时间限制(&lt;code&gt;maxInactiveIntervalInSeconds&lt;/code&gt;;The session timeout in seconds. By default, it is set to 1800 seconds (30 minutes).)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;占用资源&lt;/td&gt;
+          &lt;td&gt;比较少&lt;/td&gt;
+          &lt;td&gt;相对较大&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;安全性&lt;/td&gt;
+          &lt;td&gt;比较高&lt;/td&gt;
+          &lt;td&gt;稍微低点&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</description>
+    </item>
+  </channel>
 </rss>

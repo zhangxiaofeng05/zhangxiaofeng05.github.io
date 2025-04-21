@@ -1,16 +1,54 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Hugo - 标签 - 风吹过的烟花</title>
-        <link>https://zhangxiaofeng05.github.io/tags/hugo/</link>
-        <description>Hugo - 标签 - 风吹过的烟花</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Mon, 21 Oct 2019 23:37:48 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/hugo/" rel="self" type="application/rss+xml" /><item>
-    <title>hugo搭建博客，部署到GitHub</title>
-    <link>https://zhangxiaofeng05.github.io/hugo_blog/</link>
-    <pubDate>Mon, 21 Oct 2019 23:37:48 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/hugo_blog/</guid>
-    <description><![CDATA[hugo站点 hugo官网：https://gohugo.io/ 安装和使用，先参考官网 安装：使用命令或者从GitHub下载 https://github.com/gohugoio/hugo 检查安装：$ hugo version 生]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Hugo on 风吹过的烟花</title>
+    <link>https://zhangxiaofeng05.github.io/tags/hugo/</link>
+    <description>Recent content in Hugo on 风吹过的烟花</description>
+    <image>
+      <title>风吹过的烟花</title>
+      <url>https://zhangxiaofeng05.github.io/images/papermod-cover.png</url>
+      <link>https://zhangxiaofeng05.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 21 Oct 2019 23:37:48 +0800</lastBuildDate>
+    <atom:link href="https://zhangxiaofeng05.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hugo搭建博客，部署到GitHub</title>
+      <link>https://zhangxiaofeng05.github.io/posts/hugo_blog/</link>
+      <pubDate>Mon, 21 Oct 2019 23:37:48 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/hugo_blog/</guid>
+      <description>&lt;h2 id=&#34;hugo站点&#34;&gt;hugo站点&lt;/h2&gt;
+&lt;p&gt;hugo官网：https://gohugo.io/&lt;br&gt;
+安装和使用，先参考官网&lt;br&gt;
+安装：使用命令或者从GitHub下载 &lt;a href=&#34;https://github.com/gohugoio/hugo&#34;&gt;https://github.com/gohugoio/hugo&lt;/a&gt;&lt;br&gt;
+检查安装：$ hugo version&lt;/p&gt;
+&lt;p&gt;生成站点 $ hugo new site blogHugo&lt;br&gt;
+进入站点 $ cd blogHugo&lt;br&gt;
+使用主题(&lt;a href=&#34;https://github.com/olOwOlo/hugo-theme-even&#34;&gt;https://github.com/olOwOlo/hugo-theme-even&lt;/a&gt;) $ &lt;code&gt;git clone https://github.com/olOwOlo/hugo-theme-even themes/even&lt;/code&gt;&lt;br&gt;
+安装主题上的说明进行配置，注意此主题生成新文件为$ hugo new post/some-content.md&lt;/p&gt;
+&lt;p&gt;本地运行预览博客 $ hugo server -D&lt;br&gt;
+浏览器 $ http://localhost:1313/&lt;/p&gt;
+&lt;h2 id=&#34;部署到github&#34;&gt;部署到GitHub&lt;/h2&gt;
+&lt;p&gt;在GitHub新建仓库 username.github.io&lt;br&gt;
+渲染md文件 $ &lt;code&gt;hugo --theme=even --baseUrl=&amp;quot;https://username.github.io&amp;quot; --buildDrafts&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;此时生成了public目录&lt;br&gt;
+执行命令&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cd public
+git init
+git commit -m &amp;#34;first commit&amp;#34;
+git remote add origin git@github.com:username/blogHugo.git
+git push origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;以后再提交，在站点执行此脚本 $ &lt;code&gt;sh gitHub.sh&lt;/code&gt;&lt;br&gt;
+gitHub.sh&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;hugo --theme=even --baseUrl=&amp;#34;https://username.github.io&amp;#34; --buildDrafts
+cd public
+git add .
+git commit -m &amp;#34;update&amp;#34;
+git push origin master 
+cd ..
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;原文件放入私有仓库&#34;&gt;原文件放入私有仓库&lt;/h2&gt;
+&lt;p&gt;第一次使用，在站点目录下&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

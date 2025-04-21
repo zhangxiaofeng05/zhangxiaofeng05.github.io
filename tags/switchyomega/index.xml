@@ -1,16 +1,33 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>SwitchyOmega - 标签 - 风吹过的烟花</title>
-        <link>https://zhangxiaofeng05.github.io/tags/switchyomega/</link>
-        <description>SwitchyOmega - 标签 - 风吹过的烟花</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Sun, 28 Apr 2019 17:36:55 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/switchyomega/" rel="self" type="application/rss+xml" /><item>
-    <title>使用SwitchyOmega</title>
-    <link>https://zhangxiaofeng05.github.io/use-switchyomega/</link>
-    <pubDate>Sun, 28 Apr 2019 17:36:55 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/use-switchyomega/</guid>
-    <description><![CDATA[这个插件这是一个工具，常见代理有shadowsocks、Goflyway switchyomega的获取 代码在GitHub上维护:https:]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>SwitchyOmega on 风吹过的烟花</title>
+    <link>https://zhangxiaofeng05.github.io/tags/switchyomega/</link>
+    <description>Recent content in SwitchyOmega on 风吹过的烟花</description>
+    <image>
+      <title>风吹过的烟花</title>
+      <url>https://zhangxiaofeng05.github.io/images/papermod-cover.png</url>
+      <link>https://zhangxiaofeng05.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 28 Apr 2019 17:36:55 +0800</lastBuildDate>
+    <atom:link href="https://zhangxiaofeng05.github.io/tags/switchyomega/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用SwitchyOmega</title>
+      <link>https://zhangxiaofeng05.github.io/posts/use-switchyomega/</link>
+      <pubDate>Sun, 28 Apr 2019 17:36:55 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/use-switchyomega/</guid>
+      <description>&lt;p&gt;这个插件这是一个工具，常见代理有shadowsocks、Goflyway&lt;/p&gt;
+&lt;h1 id=&#34;switchyomega的获取&#34;&gt;switchyomega的获取&lt;/h1&gt;
+&lt;p&gt;代码在GitHub上维护:https://github.com/FelisCatus/SwitchyOmega&lt;/p&gt;
+&lt;h1 id=&#34;switchyomega的配置&#34;&gt;switchyomega的配置&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;配置auto switch
+规则列表地址：https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;代理设置&#34;&gt;代理设置&lt;/h1&gt;
+&lt;p&gt;参考：https://github.com/Alvin9999/new-pac&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

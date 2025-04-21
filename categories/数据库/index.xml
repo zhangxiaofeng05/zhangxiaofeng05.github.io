@@ -1,32 +1,135 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>数据库 - 分类 - 风吹过的烟花</title>
-        <link>https://zhangxiaofeng05.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
-        <description>数据库 - 分类 - 风吹过的烟花</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Sat, 17 Aug 2019 09:31:27 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="self" type="application/rss+xml" /><item>
-    <title>mysql高级排序</title>
-    <link>https://zhangxiaofeng05.github.io/mysql-sort/</link>
-    <pubDate>Sat, 17 Aug 2019 09:31:27 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/mysql-sort/</guid>
-    <description><![CDATA[表和数据 1 2 3 4 5 6 7 8 9 10 CREATE TABLE `sqltest` ( `id` int(11) NOT NULL, `name` varchar(45) NOT NULL, `age` int(11) NOT NULL, `score` int(11) NOT NULL, PRIMARY KEY (`id`), UNIQUE KEY `id_UNIQUE` (`id`) ) ENGINE=InnoDB DEFAULT CHARSET=utf8; INSERT INTO `sqltest` VALUES (1,&#39;土豆&#39;,18,10]]></description>
-</item>
-<item>
-    <title>数据库隔离级别和传播行为</title>
-    <link>https://zhangxiaofeng05.github.io/transaction-spring/</link>
-    <pubDate>Thu, 18 Jul 2019 12:56:44 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/transaction-spring/</guid>
-    <description><![CDATA[事务五个隔离级别 DEFAULT 使用数据库设置的隔离级别 ( 默认 ) ，由 DBA 默认的设置来决定隔离级别 . READ_UNCOMMITTED 会出现脏读、不可重复读、幻读 ( 隔离级别最低，并发性能高 )]]></description>
-</item>
-<item>
-    <title>悲观锁和乐观锁</title>
-    <link>https://zhangxiaofeng05.github.io/pessimistic-lock-and-optimistic-lock/</link>
-    <pubDate>Wed, 17 Jul 2019 23:09:21 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/pessimistic-lock-and-optimistic-lock/</guid>
-    <description><![CDATA[悲观锁和乐观锁：处理的是同一张表的同一行记录 悲观锁 如果使用了(加了一个行锁)，如果事务没有被释放，就会造成其他事务处于等待。 使用数据库提供的]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>数据库 on 风吹过的烟花</title>
+    <link>https://zhangxiaofeng05.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
+    <description>Recent content in 数据库 on 风吹过的烟花</description>
+    <image>
+      <title>风吹过的烟花</title>
+      <url>https://zhangxiaofeng05.github.io/images/papermod-cover.png</url>
+      <link>https://zhangxiaofeng05.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 17 Aug 2019 09:31:27 +0800</lastBuildDate>
+    <atom:link href="https://zhangxiaofeng05.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mysql高级排序</title>
+      <link>https://zhangxiaofeng05.github.io/posts/mysql-sort/</link>
+      <pubDate>Sat, 17 Aug 2019 09:31:27 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/mysql-sort/</guid>
+      <description>&lt;h2 id=&#34;表和数据&#34;&gt;表和数据&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;CREATE TABLE `sqltest` (
+  `id` int(11) NOT NULL,
+  `name` varchar(45) NOT NULL,
+  `age` int(11) NOT NULL,
+  `score` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO `sqltest` VALUES (1,&amp;#39;土豆&amp;#39;,18,100),(2,&amp;#39;地瓜&amp;#39;,18,100),(3,&amp;#39;李斯&amp;#39;,20,60),(4,&amp;#39;韩非&amp;#39;,20,60),(5,&amp;#39;荀子&amp;#39;,50,90),(6,&amp;#39;君莫笑&amp;#39;,22,80),(7,&amp;#39;寒烟柔&amp;#39;,21,80),(8,&amp;#39;包子&amp;#39;,26,30),(9,&amp;#39;剑圣&amp;#39;,30,0);
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;排名row_number&#34;&gt;排名(row_number)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;按分数排序，拿到名次(成绩相同排名不并列)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;SQL:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;use sqltest;
+select st.*,(@rownum:=@rownum+1) as rownum 
+from sqltest st,(select @rownum:=0) potato 
+order by score;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;结果：
+&lt;img loading=&#34;lazy&#34; src=&#34;https://zhangxiaofeng05.github.io/mypng/4.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;解释：设置一个伪列@rownum，从1开始计数，依次加1;&lt;code&gt;(select @rownum:=0) potato &lt;/code&gt;,一定要起别名&lt;/p&gt;
+&lt;p&gt;注意：这是从小到大排；如果需要从大到小的话，&lt;code&gt;order by score desc&lt;/code&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;排名rank&#34;&gt;排名(Rank)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;按分数排序，拿到名次(成绩相同排名并列，有跳数,比如2个100，1个99，排名就是1,1,3)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;SQL:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;use sqltest;
+select st.*,@rownum:=@rownum+1 as rownum,
+@curnum:=(case when @prescore=st.score then @curnum else @rownum end) as ScoreRank,
+@prescore:=st.score as prescore
+from sqltest st,(select @rownum:=0,@curnum:=0,@prescore:=null) potato
+order by st.score desc;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;结果：
+&lt;img loading=&#34;lazy&#34; src=&#34;https://zhangxiaofeng05.github.io/mypng/5.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>数据库隔离级别和传播行为</title>
+      <link>https://zhangxiaofeng05.github.io/posts/transaction-spring/</link>
+      <pubDate>Thu, 18 Jul 2019 12:56:44 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/transaction-spring/</guid>
+      <description>&lt;h1 id=&#34;事务五个隔离级别&#34;&gt;事务五个隔离级别&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;DEFAULT&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;使用数据库设置的隔离级别 ( 默认 ) ，由 DBA 默认的设置来决定隔离级别 .&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;READ_UNCOMMITTED&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;会出现脏读、不可重复读、幻读 ( 隔离级别最低，并发性能高 )&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;READ_COMMITTED&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;会出现不可重复读、幻读问题（锁定正在读取的行）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;REPEATABLE_READ&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;会出幻读（锁定所读取的所有行）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SERIALIZABLE&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;保证所有的情况不会发生（锁表）&lt;/p&gt;
+&lt;h1 id=&#34;spring中七个事务传播行为&#34;&gt;spring中七个事务传播行为&lt;/h1&gt;
+&lt;p&gt;在TransactionDefinition接口中定义了七个事务传播行为。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PROPAGATION_REQUIRED(默认的spring事务传播级别)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如果存在一个事务，则支持当前事务。如果没有事务则开启一个新的事务。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PROPAGATION_SUPPORTS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如果存在一个事务，支持当前事务。如果没有事务，则非事务的执行。但是对于事务同步的事务管理器，PROPAGATION_SUPPORTS与不使用事务有少许不同。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PROPAGATION_MANDATORY&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如果已经存在一个事务，支持当前事务。如果没有一个活动的事务，则抛出异常。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PROPAGATION_REQUIRES_NEW&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;总是开启一个新的事务。如果一个事务已经存在，则将这个存在的事务挂起。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PROPAGATION_NOT_SUPPORTED&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;总是非事务地执行，并挂起任何存在的事务。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PROPAGATION_NEVER&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;总是非事务地执行，如果存在一个活动事务，则抛出异常&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PROPAGATION_NESTED&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如果一个活动的事务存在，则运行在一个嵌套的事务中. 如果没有活动事务, 则按TransactionDefinition.PROPAGATION_REQUIRED 属性执行&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>悲观锁和乐观锁</title>
+      <link>https://zhangxiaofeng05.github.io/posts/pessimistic-lock-and-optimistic-lock/</link>
+      <pubDate>Wed, 17 Jul 2019 23:09:21 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/pessimistic-lock-and-optimistic-lock/</guid>
+      <description>&lt;p&gt;悲观锁和乐观锁：处理的是同一张表的同一行记录&lt;/p&gt;
+&lt;h1 id=&#34;悲观锁&#34;&gt;悲观锁&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;如果使用了(加了一个行锁)，如果事务没有被释放，就会造成其他事务处于等待。&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;使用数据库提供的锁机制实现悲观锁。&lt;/p&gt;
+&lt;p&gt;如果数据库不支持设置的锁机制，JPA会使用该数据库提供的合适的锁机制来完成，而不会报错。&lt;/p&gt;
+&lt;p&gt;使用entityManage.find(class,id,LockModeType);加悲观锁，相当于发送SELECT &amp;hellip; FOR UPDATE&lt;/p&gt;
+&lt;p&gt;使用entityManage.lock(object,LockModeType);加悲观锁，相当于发送SELECT id FROM &amp;hellip; FOR UPDATE&lt;/p&gt;
+&lt;h1 id=&#34;乐观锁性能好&#34;&gt;乐观锁(性能好)&lt;/h1&gt;
+&lt;p&gt;添加一个私有字段version，不由程序员维护，由JPA自己维护&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;@Version
+private long version;
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
 </rss>

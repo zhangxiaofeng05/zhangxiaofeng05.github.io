@@ -1,181 +1,506 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="robots" content="noodp" />
-        <title>设计模式 - 分类 - 风吹过的烟花</title><meta name="Description" content="zhangxiaofeng05&#39;s hugo blog"><meta property="og:url" content="https://zhangxiaofeng05.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>设计模式 | 风吹过的烟花</title>
+<meta name="keywords" content="">
+<meta name="description" content="hugo blog">
+<meta name="author" content="zhangxiaofeng05">
+<link rel="canonical" href="https://zhangxiaofeng05.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://zhangxiaofeng05.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://zhangxiaofeng05.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://zhangxiaofeng05.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://zhangxiaofeng05.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://zhangxiaofeng05.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://zhangxiaofeng05.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/index.xml">
+<link rel="alternate" hreflang="en" href="https://zhangxiaofeng05.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="https://zhangxiaofeng05.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
   <meta property="og:site_name" content="风吹过的烟花">
   <meta property="og:title" content="设计模式">
-  <meta property="og:description" content="zhangxiaofeng05&#39;s hugo blog">
-  <meta property="og:locale" content="zh_CN">
+  <meta property="og:description" content="hugo blog">
+  <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
-    <meta property="og:image" content="https://zhangxiaofeng05.github.io/logo.png">
+      <meta property="og:image" content="https://zhangxiaofeng05.github.io/images/papermod-cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://zhangxiaofeng05.github.io/images/papermod-cover.png">
+<meta name="twitter:title" content="设计模式">
+<meta name="twitter:description" content="hugo blog">
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://zhangxiaofeng05.github.io/logo.png">
-  <meta name="twitter:title" content="设计模式">
-  <meta name="twitter:description" content="zhangxiaofeng05&#39;s hugo blog">
-<meta name="application-name" content="风吹过的烟花">
-<meta name="apple-mobile-web-app-title" content="风吹过的烟花"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://zhangxiaofeng05.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" /><link rel="alternate" href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/index.xml" type="application/rss+xml" title="风吹过的烟花">
-    <link rel="feed" href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/index.xml" type="application/rss+xml" title="风吹过的烟花"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript></head>
-    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+</head>
 
-        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
-    <div class="header-wrapper">
-        <div class="header-title">
-            <a href="/" title="风吹过的烟花"><img
-        class="lazyload logo"
-        src="/svg/loading.min.svg"
-        data-src="/logo.png"
-        data-srcset="/logo.png, /logo.png 1.5x, /logo.png 2x"
-        data-sizes="auto"
-        alt="/logo.png"
-        title="/logo.png" /></a>
-        </div>
-        <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/firefly/"> 萤火虫 </a><a class="menu-item" href="/about/"> 关于 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
-                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
-                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
-                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-desktop">
-                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
-                        </span>
-                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
-                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-                </a></div>
-        </div>
-    </div>
-</header><header class="mobile" id="header-mobile">
-    <div class="header-container">
-        <div class="header-wrapper">
-            <div class="header-title">
-                <a href="/" title="风吹过的烟花"><img
-        class="lazyload logo"
-        src="/svg/loading.min.svg"
-        data-src="/logo.png"
-        data-srcset="/logo.png, /logo.png 1.5x, /logo.png 2x"
-        data-sizes="auto"
-        alt="/logo.png"
-        title="/logo.png" /></a>
-            </div>
-            <div class="menu-toggle" id="menu-toggle-mobile">
-                <span></span><span></span><span></span>
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://zhangxiaofeng05.github.io/" accesskey="h" title="风吹过的烟花 (Alt + H)">风吹过的烟花</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><div class="search-wrapper">
-                    <div class="search mobile" id="search-mobile">
-                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
-                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
-                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-mobile">
-                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
-                        取消
-                    </a>
-                </div><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/firefly/" title="">萤火虫</a><a class="menu-item" href="/about/" title="">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
-                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-            </a></div>
-    </div>
-</header><div class="search-dropdown desktop">
-        <div id="search-dropdown-desktop"></div>
-    </div>
-    <div class="search-dropdown mobile">
-        <div id="search-dropdown-mobile"></div>
-    </div><main class="main">
-                <div class="container"><div class="page archive"><h2 class="single-title animate__animated animate__pulse animate__faster"><i class="far fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;设计模式</h2><h3 class="group-title">2019</h3><article class="archive-item">
-                        <a href="/memento-pattern/" class="archive-item-link">行为型模式-备忘录模式</a>
-                        <span class="archive-item-date">08-30</span>
-                    </article><article class="archive-item">
-                        <a href="/interpreter-pattern/" class="archive-item-link">行为型模式-解释器模式</a>
-                        <span class="archive-item-date">08-29</span>
-                    </article><article class="archive-item">
-                        <a href="/composite-pattern/" class="archive-item-link">结构型模式-组合模式</a>
-                        <span class="archive-item-date">08-29</span>
-                    </article><article class="archive-item">
-                        <a href="/visitor-pattern/" class="archive-item-link">行为型模式-访问者模式</a>
-                        <span class="archive-item-date">08-29</span>
-                    </article><article class="archive-item">
-                        <a href="/template-method-pattern/" class="archive-item-link">行为型模式-模板方法</a>
-                        <span class="archive-item-date">08-29</span>
-                    </article><article class="archive-item">
-                        <a href="/strategy-pattern/" class="archive-item-link">行为型模式-策略模式</a>
-                        <span class="archive-item-date">08-29</span>
-                    </article><article class="archive-item">
-                        <a href="/state-pattern/" class="archive-item-link">行为型模式-状态模式</a>
-                        <span class="archive-item-date">08-29</span>
-                    </article><article class="archive-item">
-                        <a href="/observer-pattern/" class="archive-item-link">行为型模式-观察者模式</a>
-                        <span class="archive-item-date">08-27</span>
-                    </article><article class="archive-item">
-                        <a href="/mediator-pattern/" class="archive-item-link">行为型模式-中介者模式</a>
-                        <span class="archive-item-date">08-26</span>
-                    </article><article class="archive-item">
-                        <a href="/iterator-pattern/" class="archive-item-link">行为型模式-迭代器模式</a>
-                        <span class="archive-item-date">08-26</span>
-                    </article><article class="archive-item">
-                        <a href="/command-pattern/" class="archive-item-link">行为型模式-命令模式</a>
-                        <span class="archive-item-date">08-26</span>
-                    </article><article class="archive-item">
-                        <a href="/responsibility-chain-pattern/" class="archive-item-link">行为型模式-责任链模式</a>
-                        <span class="archive-item-date">08-26</span>
-                    </article><article class="archive-item">
-                        <a href="/proxy-pattern/" class="archive-item-link">结构型模式-代理模式</a>
-                        <span class="archive-item-date">08-25</span>
-                    </article><article class="archive-item">
-                        <a href="/flyweight-pattern/" class="archive-item-link">结构型模式-享元模式</a>
-                        <span class="archive-item-date">08-25</span>
-                    </article><article class="archive-item">
-                        <a href="/facade-pattern/" class="archive-item-link">结构型模式-外观模式</a>
-                        <span class="archive-item-date">08-25</span>
-                    </article><article class="archive-item">
-                        <a href="/decorator-pattern/" class="archive-item-link">结构型模式-装饰模式</a>
-                        <span class="archive-item-date">08-25</span>
-                    </article><article class="archive-item">
-                        <a href="/bridge-pattern/" class="archive-item-link">结构型模式-桥接模式</a>
-                        <span class="archive-item-date">08-24</span>
-                    </article><article class="archive-item">
-                        <a href="/adapter-pattern/" class="archive-item-link">结构型模式-适配器模式</a>
-                        <span class="archive-item-date">08-24</span>
-                    </article><article class="archive-item">
-                        <a href="/prototype/" class="archive-item-link">创建型模式-原型模式</a>
-                        <span class="archive-item-date">08-24</span>
-                    </article><article class="archive-item">
-                        <a href="/single-case-pattern/" class="archive-item-link">创建型模式-单例模式</a>
-                        <span class="archive-item-date">08-23</span>
-                    </article><ul class="pagination"><li class="page-item active">
-                    <span class="page-link">
-                        <a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">1</a>
-                    </span>
-                </li><li class="page-item ">
-                    <span class="page-link">
-                        <a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/page/2/">2</a>
-                    </span>
-                </li></ul></div></div>
-            </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.129.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
-                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2017 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">zhangxiaofeng05</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
-        </div>
-    </footer></div>
+        <ul id="menu">
+            <li>
+                <a href="https://zhangxiaofeng05.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://zhangxiaofeng05.github.io/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://zhangxiaofeng05.github.io/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://zhangxiaofeng05.github.io/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://zhangxiaofeng05.github.io/firefly/" title="Firefly">
+                    <span>Firefly</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://zhangxiaofeng05.github.io/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="https://zhangxiaofeng05.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://zhangxiaofeng05.github.io/categories/">Categories</a></div>
+  <h1>
+    设计模式
+    <a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
+</header>
 
-        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
-                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
-            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
-                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
-            </a>
-        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.stemmer.support.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.zh.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":100},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">行为型模式-备忘录模式
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>百度百科 备忘录模式 备忘录模式是一种软件设计模式：在不破坏封闭的前提下，捕获一个对象的内部状态，并在该对象之外保存这个状态。这样以后就可将该对象恢复到原先保存的状态。
+基本介绍 备忘录模式（Memento Pattern）又叫做快照模式（Snapshot Pattern）或Token模式，是GoF的23种设计模式之一，属于行为模式。
+定义：在不破坏封闭的前提下，捕获一个对象的内部状态，并在该对象之外保存这个状态。这样以后就可将该对象恢复到原先保存的状态。
+涉及角色：
+Originator(发起人)：负责创建一个备忘录Memento，用以记录当前时刻自身的内部状态，并可使用备忘录恢复内部状态。Originator可以根据需要决定Memento存储自己的哪些内部状态。 Memento(备忘录)：负责存储Originator对象的内部状态，并可以防止Originator以外的其他对象访问备忘录。备忘录有两个接口：Caretaker只能看到备忘录的窄接口，他只能将备忘录传递给其他对象。Originator却可看到备忘录的宽接口，允许它访问返回到先前状态所需要的所有数据。 Caretaker(管理者):负责备忘录Memento，不能对Memento的内容进行访问或者操作。 备忘录模式的优点和缺点
+一、 备忘录模式的优点
+有时一些发起人对象的内部信息必须保存在发起人对象以外的地方，但是必须要由发起人对象自己读取，这时， 使用备忘录模式可以把复杂的发起人内部信息对其他的对象屏蔽起来，从而可以恰当地保持封装的边界。 本模式简化了发起人类。发起人不再需要管理和保存其内部状态的一个个版本，客户端可以自行管理他们所需 要的这些状态的版本。 二、 备忘录模式的缺点：
+如果发起人角色的状态需要完整地存储到备忘录对象中，那么在资源消耗上面备忘录对象会很昂贵。 当负责人角色将一个备忘录 存储起来的时候，负责人可能并不知道这个状态会占用多大的存储空间，从而无法提醒用户一个操作是否很昂贵。 当发起人角色的状态改变的时候，有可能这个协议无效。如果状态改变的成功率不高的话，不如采取“假如”协议模式。 例子 Memento 备忘录存储原发器对象的内部状态。
+public class Memento { private String state; public Memento(String state) { this.state = state; } public String getState() { return state; } public void setState(String state) { this.state = state; } } Originator 原发器创建一个备忘录,用以记录当前时刻的内部状态。 使用备忘录恢复内部状态
+public class Originator { private String state; public String getState() { return state; } public void setState(String state) { this.state = state; } public Memento createMemento(){ return new Memento(state); } public void setMemento(Memento memento){ state=memento.getState(); } public void showState(){ System.out.println(state); } } Caretaker 负责保存好备忘录。 不能对备忘录的内部进行操作或检查。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-08-30 07:15:38 +0800 +0800'>August 30, 2019</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;zhangxiaofeng05</footer>
+  <a class="entry-link" aria-label="post link to 行为型模式-备忘录模式" href="https://zhangxiaofeng05.github.io/posts/memento-pattern/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">行为型模式-解释器模式
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>百度百科 Interpreter模式 Interpreter(解释器)模式是一种特殊的设计模式，它建立一个解释器（Interpreter），对于特定的计算机程序设计语言，用来解释预先定义的文法。简单地说，Interpreter模式是一种简单的语法解释器构架。
+Interpreter模式，即解释器模式。
+解释器模式属于行为模式，Gof是这样定义的：给定一个语言，定义它的文法的一种表示，并定义一个解释器，这个解释器使用该表示来解释语言中的句子。
+解释器模式需要解决的是，如果一种特定类型的问题发生的频率足够高，那么可能就值得将该问题的各个实例表述为一个简单语言中的句子。这样就可以构建一个解释器，该解释器通过解释这些句子来解决该问题。
+实例应用：正则表达式
+例子 AbstractExpression(抽象表达式) 声明一个抽象的解释操作，这个接口为抽象语法树中所有的节点所共享。
+public abstract class Expression { abstract void interpret(Context ctx); } TerminalExpression(终结符表达式) 实现与文法中的终结符相关联的解释操作。 一个句子中的每个终结符需要该类的一个实例。
+public class SimpleExpression extends Expression { @Override void interpret(Context ctx) { System.out.println(&#34;这是普通解析器&#34;); } } NonterminalExpression(非终结符表达式) 为文法中的非终结符实现解释(Interpret)操作。
+public class AdvanceExpression extends Expression { @Override void interpret(Context ctx) { System.out.println(&#34;这是高级解析器&#34;); } } Context（上下文） 包含解释器之外的一些全局信息。
+import java.util.ArrayList; import java.util.List; public class Context { private String content; private List list = new ArrayList(); public String getContent() { return content; } public void setContent(String content) { this.content = content; } public void add(Expression eps){ list.add(eps); } public List getList(){ return list; } } Client（客户） 构建(或被给定)表示该文法定义的语言中某个特定的句子的抽象语法树。 该抽象语法树由NonterminalExpression和TerminalExpression的实例装配而成。调用解释操作。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-08-29 22:45:54 +0800 +0800'>August 29, 2019</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;zhangxiaofeng05</footer>
+  <a class="entry-link" aria-label="post link to 行为型模式-解释器模式" href="https://zhangxiaofeng05.github.io/posts/interpreter-pattern/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">结构型模式-组合模式
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>百度百科 组合模式 组合模式，将对象组合成树形结构以表示“部分-整体”的层次结构，组合模式使得用户对单个对象和组合对象的使用具有一致性。掌握组合模式的重点是要理解清楚 “部分/整体” 还有 ”单个对象“ 与 “组合对象” 的含义。
+组合模式可以让客户端像修改配置文件一样简单的完成本来需要流程控制语句来完成的功能。
+经典案例：系统目录结构，网站导航结构等。
+组合模式概述 组合模式(Composite Pattern)
+组合模式，将对象组合成树形结构以表示“部分-整体”的层次结构，组合模式使得用户对单个对象和组合对象的使用具有一致性。
+有时候又叫做部分-整体模式，它使我们树型结构的问题中，模糊了简单元素和复杂元素的概念，客户程序可以像处理简单元素一样来处理复杂元素,从而使得客户程序与复杂元素的内部结构解耦。
+组合模式让你可以优化处理递归或分级数据结构。有许多关于分级数据结构的例子，使得组合模式非常有用武之地。关于分级数据结构的一个普遍性的例子是你每次使用电脑时所遇到的:文件系统。文件系统由目录和文件组成。每个目录都可以装内容。目录的内容可以是文件，也可以是目录。按照这种方式，计算机的文件系统就是以递归结构来组织的。如果你想要描述这样的数据结构，那么你可以使用组合模式Composite。
+定义
+(GoF《设计模式》)：将对象组合成树形结构以表示“部分整体”的层次结构。组合模式使得用户对单个对象和组合对象的使用具有一致性。
+涉及角色：
+Component 是组合中的对象声明接口，在适当的情况下，实现所有类共有接口的默认行为。声明一个接口用于访问和管理Component子部件。 Leaf 在组合中表示叶子结点对象，叶子结点没有子结点。 Composite 定义有枝节点行为，用来存储子部件，在Component接口中实现与子部件有关操作，如增加(add)和删除(remove)等。 适用性
+以下情况下适用Composite模式：
+你想表示对象的部分-整体层次结构 你希望用户忽略组合对象与单个对象的不同，用户将统一地使用组合结构中的所有对象。 总结 组合模式解耦了客户程序与复杂元素内部结构，从而使客户程序可以像处理简单元素一样来处理复杂元素。
+如果你想要创建层次结构，并可以在其中以相同的方式对待所有元素，那么组合模式就是最理想的选择。本章使用了一个文件系统的例子来举例说明了组合模式的用途。在这个例子中，文件和目录都执行相同的接口，这是组合模式的关键。通过执行相同的接口，你就可以用相同的方式对待文件和目录，从而实现将文件或者目录储存为目录的子级元素。
+例子 Component 为组合中的对象声明接口。 在适当的情况下，实现所有类共有接口的缺省行为。 声明一个接口用于访问和管理Component的子组件。
+import java.util.List; public abstract class Employer { private String name; public String getName() { return name; } public void setName(String name) { this.name = name; } public abstract void add(Employer employer); public abstract void delete(Employer employer); public List employers; public void printInfo(){ System.out.println(name); } public List getEmployers(){ return this.employers; } } Leaf 在组合中表示叶节点对象，叶节点没有子节点。 在组合中定义节点对象的行为。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-08-29 22:04:46 +0800 +0800'>August 29, 2019</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;zhangxiaofeng05</footer>
+  <a class="entry-link" aria-label="post link to 结构型模式-组合模式" href="https://zhangxiaofeng05.github.io/posts/composite-pattern/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">行为型模式-访问者模式
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>维基百科 访问者模式 访问者模式是一种将算法与对象结构分离的软件设计模式。
+这个模式的基本想法如下：首先我们拥有一个由许多对象构成的对象结构，这些对象的类都拥有一个accept方法用来接受访问者对象；访问者是一个接口，它拥有一个visit方法，这个方法对访问到的对象结构中不同类型的元素作出不同的反应；在对象结构的一次访问过程中，我们遍历整个对象结构，对每一个元素都实施accept方法，在每一个元素的accept方法中回调访问者的visit方法，从而使访问者得以处理对象结构的每一个元素。我们可以针对对象结构设计不同的实在的访问者类来完成不同的操作。
+访问者模式使得我们可以在传统的单分派语言（如Smalltalk、Java和C&#43;&#43;）中模拟双分派技术。对于支持多分派的语言（如CLOS），访问者模式已经内置于语言特性之中了，从而不再重要。
+Java interface Visitor { void visit(Wheel wheel); void visit(Engine engine); void visit(Body body); void visit(Car car); } class Wheel { private String name; Wheel(String name) { this.name = name; } String getName() { return this.name; } void accept(Visitor visitor) { visitor.visit(this); } } class Engine { void accept(Visitor visitor) { visitor.visit(this); } } class Body { void accept(Visitor visitor) { visitor.visit(this); } } class Car { private Engine engine = new Engine(); private Body body = new Body(); private Wheel[] wheels = { new Wheel(&#34;front left&#34;), new Wheel(&#34;front right&#34;), new Wheel(&#34;back left&#34;) , new Wheel(&#34;back right&#34;) }; void accept(Visitor visitor) { visitor.visit(this); engine.accept(visitor); body.accept(visitor); for (int i = 0; i &lt; wheels.length; &#43;&#43; i) wheels[i].accept(visitor); } } class PrintVisitor implements Visitor { public void visit(Wheel wheel) { System.out.println(&#34;Visiting &#34; &#43; wheel.getName() &#43; &#34; wheel&#34;); } public void visit(Engine engine) { System.out.println(&#34;Visiting engine&#34;); } public void visit(Body body) { System.out.println(&#34;Visiting body&#34;); } public void visit(Car car) { System.out.println(&#34;Visiting car&#34;); } } public class VisitorDemo { static public void main(String[] args) { Car car = new Car(); Visitor visitor = new PrintVisitor(); car.accept(visitor); } } 运行结果：
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-08-29 10:33:48 +0800 +0800'>August 29, 2019</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;zhangxiaofeng05</footer>
+  <a class="entry-link" aria-label="post link to 行为型模式-访问者模式" href="https://zhangxiaofeng05.github.io/posts/visitor-pattern/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">行为型模式-模板方法
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>维基百科 模板方法 模板方法模型是一种行为设计模型。模板方法是一个定义在父类别的方法，在模板方法中会呼叫多个定义在父类别的其他方法，而这些方法有可能只是抽象方法并没有实作，模板方法仅决定这些抽象方法的执行顺序，这些抽象方法的实作由子类别负责，并且子类别不允许覆写模板方法。
+用法 模板方法模式多用在：
+某些类别的算法中，实做了相同的方法，造成程式码的重复。 控制子类别必须遵守的一些事项。 … Java /** * An abstract class that is common to several games in * which players play against the others, but only one is * playing at a given time. */ abstract class Game { private int playersCount; abstract void initializeGame(); abstract void makePlay(int player); abstract boolean endOfGame(); abstract void printWinner(); /* A template method : */ final void playOneGame(int playersCount) { this.playersCount = playersCount; initializeGame(); int j = 0; while (!endOfGame()){ makePlay(j); j = (j &#43; 1) % playersCount; } printWinner(); } } //Now we can extend this class in order to implement actual games: class Monopoly extends Game { /* Implementation of necessary concrete methods */ void initializeGame() { // ... } void makePlay(int player) { // ... } boolean endOfGame() { // ... } void printWinner() { // ... } /* Specific declarations for the Monopoly game. */ // ... } class Chess extends Game { /* Implementation of necessary concrete methods */ void initializeGame() { // ... } void makePlay(int player) { // ... } boolean endOfGame() { // ... } void printWinner() { // ... } /* Specific declarations for the chess game. */ // ... } public class Player { public static void main(String[] args) { Game chessGame = new Chess(); chessGame.initializeGame(); chessGame.playOneGame(1); //call template method } } 例子 AbstractClass 定义抽象的原语操作（primitiveoperation），具体的子类将重定义它们以实现一个算法的各步骤。 实现一个模板方法,定义一个算法的骨架。 该模板方法不仅调用原语操作，也调用定义在AbstractClass或其他对象中的操作。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-08-29 10:13:54 +0800 +0800'>August 29, 2019</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;zhangxiaofeng05</footer>
+  <a class="entry-link" aria-label="post link to 行为型模式-模板方法" href="https://zhangxiaofeng05.github.io/posts/template-method-pattern/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">行为型模式-策略模式
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>维基百科 策略模式 策略模式作为一种软件设计模式，指对象有某个行为，但是在不同的场景中，该行为有不同的实现算法。比如每个人都要“交个人所得税”，但是“在美国交个人所得税”和“在中国交个人所得税”就有不同的算税方法。
+策略模式：
+定义了一族算法（业务规则）； 封装了每个算法； 这族的算法可互换代替（interchangeable）。 Java //StrategyExample test application class StrategyExample { public static void main(String[] args) { Context context; // Three contexts following different strategies context = new Context(new FirstStrategy()); context.execute(); context = new Context(new SecondStrategy()); context.execute(); context = new Context(new ThirdStrategy()); context.execute(); } } // The classes that implement a concrete strategy should implement this // The context class uses this to call the concrete strategy interface Strategy { void execute(); } // Implements the algorithm using the strategy interface class FirstStrategy implements Strategy { public void execute() { System.out.println(&#34;Called FirstStrategy.execute()&#34;); } } class SecondStrategy implements Strategy { public void execute() { System.out.println(&#34;Called SecondStrategy.execute()&#34;); } } class ThirdStrategy implements Strategy { public void execute() { System.out.println(&#34;Called ThirdStrategy.execute()&#34;); } } // Configured with a ConcreteStrategy object and maintains a reference to a Strategy object class Context { Strategy strategy; // Constructor public Context(Strategy strategy) { this.strategy = strategy; } public void execute() { this.strategy.execute(); } } 运行结果：
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-08-29 06:55:54 +0800 +0800'>August 29, 2019</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;zhangxiaofeng05</footer>
+  <a class="entry-link" aria-label="post link to 行为型模式-策略模式" href="https://zhangxiaofeng05.github.io/posts/strategy-pattern/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">行为型模式-状态模式
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>百度百科 状态模式 (State Pattern)是设计模式的一种，属于行为模式。 允许一个对象在其内部状态改变时改变它的行为。对象看起来似乎修改了它的类
+定义 (源于Design Pattern)：当一个对象的内在状态改变时允许改变其行为，这个对象看起来像是改变了其类。
+状态模式主要解决的是当控制一个对象状态的条件表达式过于复杂时的情况。把状态的判断逻辑转移到表示不同状态的一系列类中，可以把复杂的判断逻辑简化。
+意图 允许一个对象在其内部状态改变时改变它的行为
+适用场景 一个对象的行为取决于它的状态，并且它必须在运行时刻根据状态改变它的行为。 一个操作中含有庞大的多分支结构，并且这些分支决定于对象的状态。 例子 State 定义一个接口以封装与Context的一个特定状态相关的行为。
+public interface Weather { String getWeather(); } Context 定义客户感兴趣的接口。 维护一个ConcreteState子类的实例，这个实例定义当前状态。
+public class Context { private Weather weather; public Weather getWeather() { return weather; } public void setWeather(Weather weather) { this.weather = weather; } public String weatherMessage(){ return weather.getWeather(); } } ConcreteStatesubclasses 每一子类实现一个与Context的一个状态相关的行为。
+public class Rain implements Weather { @Override public String getWeather() { return &#34;下雨&#34;; } } public class Sunshine implements Weather { @Override public String getWeather() { return &#34;阳光&#34;; } } Test
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-08-29 06:30:46 +0800 +0800'>August 29, 2019</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;zhangxiaofeng05</footer>
+  <a class="entry-link" aria-label="post link to 行为型模式-状态模式" href="https://zhangxiaofeng05.github.io/posts/state-pattern/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">行为型模式-观察者模式
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>维基百科 观察者模式 观察者模式是软件设计模式的一种。在此种模式中，一个目标对象管理所有相依于它的观察者对象，并且在它本身的状态改变时主动发出通知。这通常透过呼叫各观察者所提供的方法来实现。此种模式通常被用来实时事件处理系统。
+参与类别 参与本模式的各类别列出如下。成员函式以模拟的方式列出。
+抽象目标类别
+此抽象类别提供一个界面让观察者进行添附与解附作业。此类别内有个不公开的观察者串炼，并透过下列函式(方法)进行作业
+添附(Attach)：新增观察者到串炼内，以追踪目标对象的变化。 解附(Detach)：将已经存在的观察者从串炼中移除。 通知(Notify)：利用观察者所提供的更新函式来通知此目标已经产生变化。 添附函式包涵了一个观察者对象参数。也许是观察者类别的虚拟函式(即更新函式)，或是在非面向对象的设定中所使用的函式指标(更广泛来讲，函式子或是函式对象)。
+目标类别
+此类别提供了观察者欲追踪的状态。也利用其源类别(例如前述的抽象目标类别)所提供的方法,来通知所有的观察者其状态已经更新。此类别拥有以下函式
+取得状态(GetState)：回传该目标对象的状态。 抽象观察者界面
+抽象观察者类别是一个必须被实做的抽象类别。这个类别定义了所有观察者都拥有的更新用界面，此界面是用来接收目标类别所发出的更新通知。此类别含有以下函式
+更新(Update)：会被实做的一个抽象(虚拟)函式。 观察者类别
+这个类别含有指向目标类别的参考(reference)，以接收来自目标类别的更新状态。此类别含有以下函式
+更新(Update)：是前述抽象函式的实做。当这个函式被目标对象呼叫时，观察者对象将会呼叫目标对象的取得状态函式，来其所拥有的更新目标对象资讯。 每个观察者类别都要实做它自己的更新函式，以应对状态更新的情形。
+当目标对象改变时，会通过呼叫它自己的通知函式来将通知送给每一个观察者对象，这个通知函式则会去呼叫已经添附在串炼内的观察者更新函式。通知与更新函式可能会有一些参数，好指明是目前目标对象内的何种改变。这么作将可增进观察者的效率(只更新那些改变部分的状态)。
+用途 当抽象个体有两个互相依赖的层面时。封装这些层面在单独的对象内将可允许程序员单独地去变更与重复使用这些对象，而不会产生两者之间交互的问题。 当其中一个对象的变更会影响其他对象，却又不知道多少对象必须被同时变更时。 当对象应该有能力通知其他对象，又不应该知道其他对象的实做细节时。 观察者模式通常与 MVC 范式有关系。在 MVC 中，观察者模式被用来降低 model 与 view 的耦合程度。一般而言， model 的改变会触发通知其他身为观察者的 model 。而这些 model 实际上是 view 。 Java Swing 就是个范例，示意了 model 预期会透过 PropertyChangeNotification 架构以送出改变的通知给其他 view 。 Model 类别是 Java bean 类别的一员，并拥有与上述目标类别同样的行为。 View 类别则系结了一些 GUI 中的可视元素，并拥有与上述观察者类别同样的行为。当应用程序在执行时。使用者将因 view 做出相应的更新而看见 model 所产生的变更。
+例子 Subject（目标） 目标知道它的观察者。可以有任意多个观察者观察同一个目标。 提供注册和删除观察者对象的接口。
+import java.util.ArrayList; import java.util.List; public abstract class Citizen { List pols; private String help = &#34;normal&#34;; public String getHelp() { return help; } public void setHelp(String help) { this.help = help; } abstract void sendMessage(String help); public void setPoliceman(){ this.pols = new ArrayList(); } public void register(Policeman pol){ this.pols.add(pol); } public void unRegister(Policeman pol){ this.pols.remove(pol); } } Observer（观察者） 为那些在目标发生改变时需获得通知的对象定义一个更新接口。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-08-27 08:55:07 +0800 +0800'>August 27, 2019</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;zhangxiaofeng05</footer>
+  <a class="entry-link" aria-label="post link to 行为型模式-观察者模式" href="https://zhangxiaofeng05.github.io/posts/observer-pattern/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">行为型模式-中介者模式
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>维基百科 中介者模式 在软件工程领域，中介者模式定义了一个中介者对象，该对象封装了系统中对象间的交互方式。 由于它可以在运行时改变程序的行为，这种模式是一种行为型模式 。
+通常程序由大量的类组成，这些类中包含程序的逻辑和运算。 然而，当开发者将更多的类加入到程序中之后，类间交互关系可能变得更为复杂，这会使得代码变得更加难以阅读和维护，尤其是在重构的时候。 此外，程序将会变得难以修改，因为对其所做的任何修改都有可能影响到其它几个类中的代码。
+在中介者模式中，对象间的通信过程被封装在一个中介者（调解人）对象之中。 对象之间不再直接交互，而是通过调解人进行交互。 这么做可以减少可交互对象间的依赖，从而降低耦合。
+概述 中介者模式是23个周知模式（ 即GoF设计模式）中的一个，GoF设计模式旨在提供重复出现的设计问题的解决方案，以编写灵活和可复用的面向对象软件。也就是说，使对象更加易于实现、修改、测试和复用。
+中介者设计模式可以解决什么问题？
+避免一组相互交互的对象之间出现紧耦合。 能够独立地改变一组对象之间的交互关系而不影响其他对象。 使用直接逐个访问并更新彼此的方式进行对象间的交互灵活性低，因为这种方式使对象彼此间紧密耦合，导致不可能单独修改类间交互关系本身，而不影响关系中进行交互的类。并且这种方式会令对象变得无法复用，并且难以测试。
+由于紧耦合的对象过多了解其他对象的内部细节，这种对象难以实现、修改、测试以及复用。
+中介者模式如何解决上述问题？
+定义一个独立的中介者(调解员)的对象，封装一组对象之间的交互关系。 对象将自己的交互委托给中介者执行，避免直接与其他对象进行交互。 对象利用中介者对象与其他对象进行间接交互，中介者对象负责控制和协调交互关系，这么做可使得对象间松耦合。这些对象只访问中介者，不了解其他对象的细节。
+定义 中介者模式是为了“定义一个封装了对象间交互关系的对象”。这种方式避免了显式调用其他类，促进了类间的松耦合，并且使得类间交互关系本身可以单独修改。客户类可以使用中介者向其他客户类发送信息，并且通过中介者引发的事件收到信息。
+Java 在以下示例中，一个中介者对象控制了三个互相交互的按钮的状态，为此它有设置状态的三个方法：book(), view() 和 search()。 当相应的按钮被激活时，对应的方法通过execute()方法被调用。
+于是这里在交互中每个交互的参与者（本例中即按钮）将自己的行为提交给中介者并且由中介者将这些行为转给对应的参与者。
+import java.awt.Font; import java.awt.event.ActionEvent; import java.awt.event.ActionListener; import javax.swing.JButton; import javax.swing.JFrame; import javax.swing.JLabel; import javax.swing.JPanel; //Colleague interface interface Command { void execute(); } //Abstract Mediator interface Mediator { void book(); void view(); void search(); void registerView(BtnView v); void registerSearch(BtnSearch s); void registerBook(BtnBook b); void registerDisplay(LblDisplay d); } //Concrete mediator class ParticipantMediator implements Mediator { BtnView btnView; BtnSearch btnSearch; BtnBook btnBook; LblDisplay show; //.... public void registerView(BtnView v) { btnView = v; } public void registerSearch(BtnSearch s) { btnSearch = s; } public void registerBook(BtnBook b) { btnBook = b; } public void registerDisplay(LblDisplay d) { show = d; } public void book() { btnBook.setEnabled(false); btnView.setEnabled(true); btnSearch.setEnabled(true); show.setText(&#34;booking...&#34;); } public void view() { btnView.setEnabled(false); btnSearch.setEnabled(true); btnBook.setEnabled(true); show.setText(&#34;viewing...&#34;); } public void search() { btnSearch.setEnabled(false); btnView.setEnabled(true); btnBook.setEnabled(true); show.setText(&#34;searching...&#34;); } } //A concrete colleague class BtnView extends JButton implements Command { Mediator med; BtnView(ActionListener al, Mediator m) { super(&#34;View&#34;); addActionListener(al); med = m; med.registerView(this); } public void execute() { med.view(); } } //A concrete colleague class BtnSearch extends JButton implements Command { Mediator med; BtnSearch(ActionListener al, Mediator m) { super(&#34;Search&#34;); addActionListener(al); med = m; med.registerSearch(this); } public void execute() { med.search(); } } //A concrete colleague class BtnBook extends JButton implements Command { Mediator med; BtnBook(ActionListener al, Mediator m) { super(&#34;Book&#34;); addActionListener(al); med = m; med.registerBook(this); } public void execute() { med.book(); } } class LblDisplay extends JLabel { Mediator med; LblDisplay(Mediator m) { super(&#34;Just start...&#34;); med = m; med.registerDisplay(this); setFont(new Font(&#34;Arial&#34;, Font.BOLD, 24)); } } class MediatorDemo extends JFrame implements ActionListener { Mediator med = new ParticipantMediator(); MediatorDemo() { JPanel p = new JPanel(); p.add(new BtnView(this, med)); p.add(new BtnBook(this, med)); p.add(new BtnSearch(this, med)); getContentPane().add(new LblDisplay(med), &#34;North&#34;); getContentPane().add(p, &#34;South&#34;); setSize(400, 200); setVisible(true); } public void actionPerformed(ActionEvent ae) { Command comd = (Command) ae.getSource(); comd.execute(); } public static void main(String[] args) { new MediatorDemo(); } } 例子 Colleagueclass
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-08-26 23:28:40 +0800 +0800'>August 26, 2019</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;zhangxiaofeng05</footer>
+  <a class="entry-link" aria-label="post link to 行为型模式-中介者模式" href="https://zhangxiaofeng05.github.io/posts/mediator-pattern/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">行为型模式-迭代器模式
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>维基百科 迭代器模式 在 面向对象编程里，迭代器模式是一种设计模式，是一种最简单也最常见的设计模式。它可以让用户透过特定的接口巡访容器中的每一个元素而不用了解底层的实现。
+此外，也可以实现特定目的版本的迭代器。
+接口 《设计模式》建议合理的接口该要有：
+public interface Iterator { public Object First(); public Object Next(); public boolean isDone(); public Object CurrentItem(); } Java interface Iterator{ Object First(); Object Next(); boolean IsDone(); Object CurrentItem(); } abstract class Aggregate{ abstract Iterator CreateIterator(); } class ConcreteIterator implements Iterator{ private List&lt;Object&gt; list = new ArrayList&lt;Object&gt;(); private int curr=0; public ConcreteIterator(List&lt;Object&gt; list){ this.list = list; } public Object First(){ return list.get(0); } public Object Next(){ Object ret = null; curr&#43;&#43;; if(curr &lt; list.size()){ ret = list.get(curr); } return ret; } public boolean IsDone(){ return curr&gt;=list.size()?true:false; } public Object CurrentItem(){ return list.get(curr); } } class ConcreteAggregate extends Aggregate{ private List&lt;Object&gt; list = new ArrayList&lt;Object&gt;(); public ConcreteAggregate(List&lt;Object&gt; list){ this.list = list; } public Iterator CreateIterator(){ return new ConcreteIterator(list); } } class client{ public static void main(String[] args){ List&lt;Object&gt; list = new ArrayList&lt;Object&gt;(); list.add(&#34;miner&#34;); list.add(&#34;any&#34;); Aggregate agg = new ConcreteAggregate(list); Iterator iterator = agg.CreateIterator(); iterator.First(); while(!iterator.IsDone()){ System.out.println(iterator.CurrentItem()); iterator.Next(); } } } 例子 Aggregate 聚合定义创建相应迭代器对象的接口。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-08-26 15:47:11 +0800 +0800'>August 26, 2019</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;zhangxiaofeng05</footer>
+  <a class="entry-link" aria-label="post link to 行为型模式-迭代器模式" href="https://zhangxiaofeng05.github.io/posts/iterator-pattern/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="next" href="https://zhangxiaofeng05.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/page/2/">Next&nbsp;2/3&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://zhangxiaofeng05.github.io/">风吹过的烟花</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
 </html>

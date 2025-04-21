@@ -1,16 +1,69 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Object - 标签 - 风吹过的烟花</title>
-        <link>https://zhangxiaofeng05.github.io/tags/object/</link>
-        <description>Object - 标签 - 风吹过的烟花</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Thu, 18 Jul 2019 13:42:14 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/object/" rel="self" type="application/rss+xml" /><item>
-    <title>Object类</title>
-    <link>https://zhangxiaofeng05.github.io/object/</link>
-    <pubDate>Thu, 18 Jul 2019 13:42:14 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/object/</guid>
-    <description><![CDATA[特点 是Java中唯一一个没有父类的类 java中所有的类不是object类的直接子类，就是其间接子类 定义在object类中的所有方法，在任何类]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Object on 风吹过的烟花</title>
+    <link>https://zhangxiaofeng05.github.io/tags/object/</link>
+    <description>Recent content in Object on 风吹过的烟花</description>
+    <image>
+      <title>风吹过的烟花</title>
+      <url>https://zhangxiaofeng05.github.io/images/papermod-cover.png</url>
+      <link>https://zhangxiaofeng05.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 18 Jul 2019 13:42:14 +0800</lastBuildDate>
+    <atom:link href="https://zhangxiaofeng05.github.io/tags/object/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Object类</title>
+      <link>https://zhangxiaofeng05.github.io/posts/object/</link>
+      <pubDate>Thu, 18 Jul 2019 13:42:14 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/object/</guid>
+      <description>&lt;h1 id=&#34;特点&#34;&gt;特点&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;是Java中唯一一个没有父类的类&lt;/li&gt;
+&lt;li&gt;java中所有的类不是object类的直接子类，就是其间接子类&lt;/li&gt;
+&lt;li&gt;定义在object类中的所有方法，在任何类中都可以直接调用，而不需要声明object类的对象。&lt;/li&gt;
+&lt;li&gt;是java中所有类的超类（基类 ，父类）&lt;/li&gt;
+&lt;li&gt;object类中只有无参构造&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;方法&#34;&gt;方法&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;常用方法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;public boolean equals（object obj）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public boolean equals(Object obj) {
+        return (this == obj);
+    }
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;指示其他某个对象是否与此对象“相等”。
+(ps:==判断是否引用地址相同)
+2. public String tostring（)&lt;br&gt;
+返回对象的字符串表示形式。
+3. public int hashCode()&lt;br&gt;
+返回此对象的一个哈希码值。&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;不常用方法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;protected Object clone()&lt;br&gt;
+创建并返回此对象的一个副本。&lt;/li&gt;
+&lt;li&gt;protected void finalize()&lt;br&gt;
+当垃圾回收器确定不存在对该对象的更多引用时，由对象的垃圾回收器调用此方法。子类重写 finalize 方法，以配置系统资源或执行其他清除。&lt;/li&gt;
+&lt;li&gt;public final Class&lt;?&gt; getClass()&lt;br&gt;
+返回此 Object 的运行时类。&lt;/li&gt;
+&lt;li&gt;public final void notify()&lt;br&gt;
+唤醒在此对象监视器上等待的单个线程。&lt;/li&gt;
+&lt;li&gt;public final void notifyAll()&lt;br&gt;
+唤醒在此对象监视器上等待的所有线程。&lt;/li&gt;
+&lt;li&gt;public final void wait()&lt;br&gt;
+在其他线程调用此对象的 notify() 方法或 notifyAll() 方法前，导致当前线程等待。&lt;/li&gt;
+&lt;li&gt;public final void wait(long timeout)&lt;br&gt;
+在其他线程调用此对象的 notify() 方法或 notifyAll() 方法，或者超过指定的时间量前，导致当前线程等待。&lt;/li&gt;
+&lt;li&gt;public final void wait(long timeout,int nanos)&lt;br&gt;
+在其他线程调用此对象的 notify() 方法或 notifyAll() 方法，或者其他某个线程中断当前线程，或者已超过某个实际时间量前，导致当前线程等待。&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+  </channel>
 </rss>

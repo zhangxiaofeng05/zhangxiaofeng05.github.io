@@ -1,16 +1,136 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Nginx - 标签 - 风吹过的烟花</title>
-        <link>https://zhangxiaofeng05.github.io/tags/nginx/</link>
-        <description>Nginx - 标签 - 风吹过的烟花</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Sun, 05 Jan 2020 21:25:56 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/nginx/" rel="self" type="application/rss+xml" /><item>
-    <title>linux安装并配置nginx</title>
-    <link>https://zhangxiaofeng05.github.io/linux-nginx/</link>
-    <pubDate>Sun, 05 Jan 2020 21:25:56 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/linux-nginx/</guid>
-    <description><![CDATA[维基百科 Nginx是异步框架的网页服务器，也可以用作反向代理、负载平衡器和HTTP缓存。 安装 官网：https://www.nginx.com]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Nginx on 风吹过的烟花</title>
+    <link>https://zhangxiaofeng05.github.io/tags/nginx/</link>
+    <description>Recent content in Nginx on 风吹过的烟花</description>
+    <image>
+      <title>风吹过的烟花</title>
+      <url>https://zhangxiaofeng05.github.io/images/papermod-cover.png</url>
+      <link>https://zhangxiaofeng05.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 05 Jan 2020 21:25:56 +0800</lastBuildDate>
+    <atom:link href="https://zhangxiaofeng05.github.io/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>linux安装并配置nginx</title>
+      <link>https://zhangxiaofeng05.github.io/posts/linux-nginx/</link>
+      <pubDate>Sun, 05 Jan 2020 21:25:56 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/linux-nginx/</guid>
+      <description>&lt;h2 id=&#34;维基百科&#34;&gt;维基百科&lt;/h2&gt;
+&lt;p&gt;Nginx是异步框架的网页服务器，也可以用作反向代理、负载平衡器和HTTP缓存。&lt;/p&gt;
+&lt;h2 id=&#34;安装&#34;&gt;安装&lt;/h2&gt;
+&lt;p&gt;官网：https://www.nginx.com/&lt;br&gt;
+官网安装文档：http://nginx.org/en/docs/install.html&lt;br&gt;
+安装完成：http://127.0.0.1/&lt;/p&gt;
+&lt;h2 id=&#34;管理命令&#34;&gt;管理命令&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;systemctl restart nginx.service    重启
+systemctl status nginx.service     查看运行状态
+systemctl start nginx.service      启动
+systemctl stop nginx.service       关闭
+
+systemctl enable nginx.service     开机自启
+systemctl disable nginx.service    关闭开机自启
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;默认配置文件&#34;&gt;默认配置文件&lt;/h2&gt;
+&lt;p&gt;以CentOS/7.3.1611、 nginx/1.12.2为例：&lt;br&gt;
+默认配置：&lt;code&gt;/etc/nginx/nginx.conf&lt;/code&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# For more information on configuration, see:
+#   * Official English Documentation: http://nginx.org/en/docs/
+#   * Official Russian Documentation: http://nginx.org/ru/docs/
+
+#user nginx;
+user root;
+worker_processes auto;
+error_log /var/log/nginx/error.log;
+pid /run/nginx.pid;
+
+# Load dynamic modules. See /usr/share/nginx/README.dynamic.
+include /usr/share/nginx/modules/*.conf;
+
+events {
+    worker_connections 1024;
+}
+
+http {
+    log_format  main  &amp;#39;$remote_addr - $remote_user [$time_local] &amp;#34;$request&amp;#34; &amp;#39;
+                      &amp;#39;$status $body_bytes_sent &amp;#34;$http_referer&amp;#34; &amp;#39;
+                      &amp;#39;&amp;#34;$http_user_agent&amp;#34; &amp;#34;$http_x_forwarded_for&amp;#34;&amp;#39;;
+
+    access_log  /var/log/nginx/access.log  main;
+
+    sendfile            on;
+    tcp_nopush          on;
+    tcp_nodelay         on;
+    keepalive_timeout   65;
+    types_hash_max_size 2048;
+
+    include             /etc/nginx/mime.types;
+    default_type        application/octet-streamo;
+
+
+    # Load modular configuration files from the /etc/nginx/conf.d directory.
+    # See http://nginx.org/en/docs/ngx_core_module.html#include
+    # for more information.
+    include /etc/nginx/conf.d/*.conf;
+
+    server {
+        listen       80 default_server;
+        listen       [::]:80 default_server;
+        server_name  _;
+        root         /usr/share/nginx/html;
+
+        # Load configuration files for the default server block.
+        include /etc/nginx/default.d/*.conf;
+
+    autoindex on;
+        autoindex_exact_size off;
+        autoindex_localtime on;
+
+        location / {
+        }
+
+        error_page 404 /404.html;
+            location = /40x.html {
+        }
+
+        error_page 500 502 503 504 /50x.html;
+            location = /50x.html {
+        }
+    }
+
+# Settings for a TLS enabled server.
+#
+#    server {
+#        listen       443 ssl http2 default_server;
+#        listen       [::]:443 ssl http2 default_server;
+#        server_name  _;
+#        root         /usr/share/nginx/html;
+#
+#        ssl_certificate &amp;#34;/etc/pki/nginx/server.crt&amp;#34;;
+#        ssl_certificate_key &amp;#34;/etc/pki/nginx/private/server.key&amp;#34;;
+#        ssl_session_cache shared:SSL:1m;
+#        ssl_session_timeout  10m;
+#        ssl_ciphers HIGH:!aNULL:!MD5;
+#        ssl_prefer_server_ciphers on;
+#
+#        # Load configuration files for the default server block.
+#        include /etc/nginx/default.d/*.conf;
+#
+#        location / {
+#        }
+#
+#        error_page 404 /404.html;
+#            location = /40x.html {
+#        }
+#
+#        error_page 500 502 503 504 /50x.html;
+#            location = /50x.html {
+#        }
+#    }
+
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;自己新加的conf可以放在&lt;code&gt;cd /etc/nginx/conf.d&lt;/code&gt;目录下&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

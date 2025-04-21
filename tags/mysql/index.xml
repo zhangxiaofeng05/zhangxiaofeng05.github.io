@@ -1,32 +1,118 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>MySQL - 标签 - 风吹过的烟花</title>
-        <link>https://zhangxiaofeng05.github.io/tags/mysql/</link>
-        <description>MySQL - 标签 - 风吹过的烟花</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Wed, 31 May 2023 18:38:29 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/mysql/" rel="self" type="application/rss+xml" /><item>
-    <title>Connect Mysql8 Error</title>
-    <link>https://zhangxiaofeng05.github.io/connect-mysql8-error/</link>
-    <pubDate>Wed, 31 May 2023 18:38:29 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/connect-mysql8-error/</guid>
-    <description><![CDATA[服务以前连接mysql5.7,现在连接mysql8报错 1 2 3 4 code: &#39;ER_NOT_SUPPORTED_AUTH_MODE&#39;, errno: 1251, sqlState: &#39;08004&#39;, sqlMessage: &#39;Client does not support authentication protocol requested by server; consider upgrading MySQL client&#39; 原因： mysql5.7 认证默认是mysql_nati]]></description>
-</item>
-<item>
-    <title>linux安装mariadb并配置phpmyadmin</title>
-    <link>https://zhangxiaofeng05.github.io/linux_install_phpmyadmin/</link>
-    <pubDate>Sun, 29 Dec 2019 11:14:39 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/linux_install_phpmyadmin/</guid>
-    <description><![CDATA[mariadb 维基百科 MariaDB是MySQL关系数据库管理系统的一个复刻，由社区开发，有商业支持，旨在继续保持在GNU GPL下开源。MariaDB的]]></description>
-</item>
-<item>
-    <title>mysql高级排序</title>
-    <link>https://zhangxiaofeng05.github.io/mysql-sort/</link>
-    <pubDate>Sat, 17 Aug 2019 09:31:27 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/mysql-sort/</guid>
-    <description><![CDATA[表和数据 1 2 3 4 5 6 7 8 9 10 CREATE TABLE `sqltest` ( `id` int(11) NOT NULL, `name` varchar(45) NOT NULL, `age` int(11) NOT NULL, `score` int(11) NOT NULL, PRIMARY KEY (`id`), UNIQUE KEY `id_UNIQUE` (`id`) ) ENGINE=InnoDB DEFAULT CHARSET=utf8; INSERT INTO `sqltest` VALUES (1,&#39;土豆&#39;,18,10]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>MySQL on 风吹过的烟花</title>
+    <link>https://zhangxiaofeng05.github.io/tags/mysql/</link>
+    <description>Recent content in MySQL on 风吹过的烟花</description>
+    <image>
+      <title>风吹过的烟花</title>
+      <url>https://zhangxiaofeng05.github.io/images/papermod-cover.png</url>
+      <link>https://zhangxiaofeng05.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 31 May 2023 18:38:29 +0800</lastBuildDate>
+    <atom:link href="https://zhangxiaofeng05.github.io/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Connect Mysql8 Error</title>
+      <link>https://zhangxiaofeng05.github.io/posts/connect-mysql8-error/</link>
+      <pubDate>Wed, 31 May 2023 18:38:29 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/connect-mysql8-error/</guid>
+      <description>&lt;h4 id=&#34;服务以前连接mysql57现在连接mysql8报错&#34;&gt;服务以前连接mysql5.7,现在连接mysql8报错&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;code: &amp;#39;ER_NOT_SUPPORTED_AUTH_MODE&amp;#39;,
+errno: 1251,
+sqlState: &amp;#39;08004&amp;#39;,
+sqlMessage: &amp;#39;Client does not support authentication protocol requested by server; consider upgrading MySQL client&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;原因&#34;&gt;原因：&lt;/h4&gt;
+&lt;p&gt;mysql5.7 认证默认是&lt;code&gt;mysql_native_password&lt;/code&gt;，mysql8默认是&lt;code&gt;caching_sha2_password&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;解决方式&#34;&gt;解决方式：&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;创建数据库时，指明&lt;code&gt;mysql_native_password&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker run -d --name mysql8 -p 3306:3306 -e &lt;span class=&#34;nv&#34;&gt;MYSQL_ROOT_PASSWORD&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;123456&lt;/span&gt; -v mysql8:/var/lib/mysql mysql:8.0 --default-authentication-plugin&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;mysql_native_password
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;修改数据库，将用户认证的&lt;code&gt;caching_sha2_password&lt;/code&gt;改为&lt;code&gt;mysql_native_password&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;$&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mysql&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;root&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;use&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mysql&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;select&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;host&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;user&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;plugin&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;authentication_string&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;from&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mysql&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;user&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;ALTER&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;USER&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;root&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;@&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;localhost&amp;#39;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;IDENTIFIED&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;WITH&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mysql_native_password&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;BY&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;password&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;...&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;如果还有其他&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;USER&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;，把其他&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;USER&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mysql&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sys&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mysql&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;session&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mysql&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;infoschema&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;也替换&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;flush&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;privileges&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;升级客户端，支持最新的认证&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;reference&#34;&gt;reference:&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://stackoverflow.com/questions/50093144/mysql-8-0-client-does-not-support-authentication-protocol-requested-by-server&#34;&gt;https://stackoverflow.com/questions/50093144/mysql-8-0-client-does-not-support-authentication-protocol-requested-by-server&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>linux安装mariadb并配置phpmyadmin</title>
+      <link>https://zhangxiaofeng05.github.io/posts/linux_install_phpmyadmin/</link>
+      <pubDate>Sun, 29 Dec 2019 11:14:39 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/linux_install_phpmyadmin/</guid>
+      <description>&lt;h2 id=&#34;mariadb&#34;&gt;mariadb&lt;/h2&gt;
+&lt;h3 id=&#34;维基百科&#34;&gt;维基百科&lt;/h3&gt;
+&lt;p&gt;MariaDB是MySQL关系数据库管理系统的一个复刻，由社区开发，有商业支持，旨在继续保持在GNU GPL下开源。MariaDB的开发是由MySQL的一些原始开发者领导的，他们担心甲骨文公司收购MySQL后会有一些隐患。&lt;/p&gt;
+&lt;p&gt;linux现在默认的MySQL是mariadb。&lt;/p&gt;
+&lt;h3 id=&#34;安装mariadb&#34;&gt;安装mariadb&lt;/h3&gt;
+&lt;p&gt;$ sudo apt-get install mariadb-server mariadb-client&lt;/p&gt;
+&lt;h3 id=&#34;新建用户授权&#34;&gt;新建用户授权&lt;/h3&gt;
+&lt;p&gt;以root身份输入mariadb，进入mariadb&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# mariadb
+&amp;gt; use mysql;                                                           # 进入mysql数据库
+mysql&amp;gt; CREATE USER &amp;#39;zhang&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;123456&amp;#39;;         # zhang是用户名,123456是密码
+mysql&amp;gt; GRANT ALL PRIVILEGES ON *.* TO &amp;#39;zhang&amp;#39;@&amp;#39;localhost&amp;#39; WITH GRANT OPTION;   # 授权
+mysql&amp;gt; FLUSH PRIVILEGES;
+或者(推荐下边的，可以登录，上边只能本地登录)
+mysql&amp;gt; CREATE USER &amp;#39;zhang&amp;#39;@&amp;#39;%&amp;#39; IDENTIFIED BY &amp;#39;123456&amp;#39;;
+mysql&amp;gt; GRANT ALL PRIVILEGES ON *.* TO &amp;#39;zhang&amp;#39;@&amp;#39;%&amp;#39; WITH GRANT OPTION;
+mysql&amp;gt; FLUSH PRIVILEGES;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;查看user信息&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; select user,host,password from user;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;至此，可以用新建的用户登录了。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>mysql高级排序</title>
+      <link>https://zhangxiaofeng05.github.io/posts/mysql-sort/</link>
+      <pubDate>Sat, 17 Aug 2019 09:31:27 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/mysql-sort/</guid>
+      <description>&lt;h2 id=&#34;表和数据&#34;&gt;表和数据&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;CREATE TABLE `sqltest` (
+  `id` int(11) NOT NULL,
+  `name` varchar(45) NOT NULL,
+  `age` int(11) NOT NULL,
+  `score` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO `sqltest` VALUES (1,&amp;#39;土豆&amp;#39;,18,100),(2,&amp;#39;地瓜&amp;#39;,18,100),(3,&amp;#39;李斯&amp;#39;,20,60),(4,&amp;#39;韩非&amp;#39;,20,60),(5,&amp;#39;荀子&amp;#39;,50,90),(6,&amp;#39;君莫笑&amp;#39;,22,80),(7,&amp;#39;寒烟柔&amp;#39;,21,80),(8,&amp;#39;包子&amp;#39;,26,30),(9,&amp;#39;剑圣&amp;#39;,30,0);
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;排名row_number&#34;&gt;排名(row_number)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;按分数排序，拿到名次(成绩相同排名不并列)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;SQL:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;use sqltest;
+select st.*,(@rownum:=@rownum+1) as rownum 
+from sqltest st,(select @rownum:=0) potato 
+order by score;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;结果：
+&lt;img loading=&#34;lazy&#34; src=&#34;https://zhangxiaofeng05.github.io/mypng/4.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;解释：设置一个伪列@rownum，从1开始计数，依次加1;&lt;code&gt;(select @rownum:=0) potato &lt;/code&gt;,一定要起别名&lt;/p&gt;
+&lt;p&gt;注意：这是从小到大排；如果需要从大到小的话，&lt;code&gt;order by score desc&lt;/code&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;排名rank&#34;&gt;排名(Rank)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;按分数排序，拿到名次(成绩相同排名并列，有跳数,比如2个100，1个99，排名就是1,1,3)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;SQL:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;use sqltest;
+select st.*,@rownum:=@rownum+1 as rownum,
+@curnum:=(case when @prescore=st.score then @curnum else @rownum end) as ScoreRank,
+@prescore:=st.score as prescore
+from sqltest st,(select @rownum:=0,@curnum:=0,@prescore:=null) potato
+order by st.score desc;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;结果：
+&lt;img loading=&#34;lazy&#34; src=&#34;https://zhangxiaofeng05.github.io/mypng/5.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

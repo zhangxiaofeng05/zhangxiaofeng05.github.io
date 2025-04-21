@@ -1,16 +1,117 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Druid - 标签 - 风吹过的烟花</title>
-        <link>https://zhangxiaofeng05.github.io/tags/druid/</link>
-        <description>Druid - 标签 - 风吹过的烟花</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Thu, 18 Jul 2019 15:33:15 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/druid/" rel="self" type="application/rss+xml" /><item>
-    <title>Druid数据库连接池</title>
-    <link>https://zhangxiaofeng05.github.io/druid-database-connection-pool/</link>
-    <pubDate>Thu, 18 Jul 2019 15:33:15 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/druid-database-connection-pool/</guid>
-    <description><![CDATA[阿里巴巴数据库事业部出品，为监控而生的数据库连接池。 托管于GitHub,项目地址 https://github.com/alibaba/druid Druid是一个JDBC组件库，包括数据库连接池、SQL P]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Druid on 风吹过的烟花</title>
+    <link>https://zhangxiaofeng05.github.io/tags/druid/</link>
+    <description>Recent content in Druid on 风吹过的烟花</description>
+    <image>
+      <title>风吹过的烟花</title>
+      <url>https://zhangxiaofeng05.github.io/images/papermod-cover.png</url>
+      <link>https://zhangxiaofeng05.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 18 Jul 2019 15:33:15 +0800</lastBuildDate>
+    <atom:link href="https://zhangxiaofeng05.github.io/tags/druid/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Druid数据库连接池</title>
+      <link>https://zhangxiaofeng05.github.io/posts/druid-database-connection-pool/</link>
+      <pubDate>Thu, 18 Jul 2019 15:33:15 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/druid-database-connection-pool/</guid>
+      <description>&lt;p&gt;阿里巴巴数据库事业部出品，为监控而生的数据库连接池。
+托管于GitHub,项目地址
+&lt;a href=&#34;https://github.com/alibaba/druid&#34;&gt;https://github.com/alibaba/druid&lt;/a&gt;
+Druid是一个JDBC组件库，包括数据库连接池、SQL Parser等组件。DruidDataSource是最好的数据库连接池。&lt;/p&gt;
+&lt;h1 id=&#34;springboot使用&#34;&gt;Springboot使用&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;最新信息去GitHub&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;maven&#34;&gt;Maven&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;dependency&amp;gt;
+   &amp;lt;groupId&amp;gt;com.alibaba&amp;lt;/groupId&amp;gt;
+   &amp;lt;artifactId&amp;gt;druid-spring-boot-starter&amp;lt;/artifactId&amp;gt;
+   &amp;lt;version&amp;gt;1.1.17&amp;lt;/version&amp;gt;
+&amp;lt;/dependency&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;gradle&#34;&gt;Gradle&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;compile &amp;#39;com.alibaba:druid-spring-boot-starter:1.1.17&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;配置&#34;&gt;配置&lt;/h1&gt;
+&lt;p&gt;Github上有说明，下面是一下常用配置
+application.properties&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#mysql
+spring.datasource.platform=mysql
+spring.datasource.url=jdbc:mysql://localhost:3306/database?serverTimezone=GMT%2B8&amp;amp;useUnicode=true&amp;amp;characterEncoding=utf8
+spring.datasource.username=root
+spring.datasource.password=154704
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+#druid
+spring.datasource.type=com.alibaba.druid.pool.DruidDataSource
+# Advanced configuration...
+spring.datasource.max-active=500
+spring.datasource.min-idle=2
+spring.datasource.initial-size=6
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;开启监测&#34;&gt;开启监测&lt;/h1&gt;
+&lt;p&gt;DruidConfiguration
+监测地址：http://localhost:8080/druid/index.html&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import javax.sql.DataSource;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.web.servlet.ServletRegistrationBean;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.alibaba.druid.pool.DruidDataSource;
+import com.alibaba.druid.support.http.StatViewServlet;
+
+@Configuration
+public class DruidConfiguration {
+
+	@ConfigurationProperties(&amp;#34;spring.datasource&amp;#34;)
+	@Bean
+	public DataSource druidDataSource() {
+		return new DruidDataSource();
+	}
+	
+	 @Bean
+	 public ServletRegistrationBean&amp;lt;StatViewServlet&amp;gt; druidStatViewServlet() {
+	  ServletRegistrationBean&amp;lt;StatViewServlet&amp;gt; registrationBean = new ServletRegistrationBean&amp;lt;&amp;gt;(new StatViewServlet(),  &amp;#34;/druid/*&amp;#34;);
+	  registrationBean.addInitParameter(&amp;#34;allow&amp;#34;, &amp;#34;127.0.0.1&amp;#34;);// IP白名单 (没有配置或者为空，则允许所有访问)
+	  registrationBean.addInitParameter(&amp;#34;deny&amp;#34;, &amp;#34;&amp;#34;);// IP黑名单 (存在共同时，deny优先于allow)
+	  registrationBean.addInitParameter(&amp;#34;loginUsername&amp;#34;, &amp;#34;root&amp;#34;);
+	  registrationBean.addInitParameter(&amp;#34;loginPassword&amp;#34;, &amp;#34;123456&amp;#34;);
+	  registrationBean.addInitParameter(&amp;#34;resetEnable&amp;#34;, &amp;#34;false&amp;#34;);
+	  return registrationBean;
+	 }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;测试类&#34;&gt;测试类&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.sql.Connection;
+
+import javax.sql.DataSource;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
+
+@RunWith(SpringRunner.class)
+@SpringBootTest
+public class SpringbootApplicationTests {
+
+	@Autowired
+	DataSource dataSource;
+	
+	@Test
+	public void contextLoads() {
+	}
+	
+	@Test
+	public void test1() throws Exception {
+		System.out.println(dataSource.getClass());
+		Connection connection = dataSource.getConnection();
+		System.out.println(connection.getClass());
+		connection.close();
+	}
+
+}
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
 </rss>

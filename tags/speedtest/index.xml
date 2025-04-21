@@ -1,16 +1,36 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Speedtest - 标签 - 风吹过的烟花</title>
-        <link>https://zhangxiaofeng05.github.io/tags/speedtest/</link>
-        <description>Speedtest - 标签 - 风吹过的烟花</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Tue, 07 Jan 2020 23:49:29 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/speedtest/" rel="self" type="application/rss+xml" /><item>
-    <title>命令行下测试服务器外网速度speedtest-cli</title>
-    <link>https://zhangxiaofeng05.github.io/speedtest-cli/</link>
-    <pubDate>Tue, 07 Jan 2020 23:49:29 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/speedtest-cli/</guid>
-    <description><![CDATA[speedtest-cli命令 speedtest-cli是一个使用python编写的命令行脚本，通过调用speedtest.net测试上下行]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Speedtest on 风吹过的烟花</title>
+    <link>https://zhangxiaofeng05.github.io/tags/speedtest/</link>
+    <description>Recent content in Speedtest on 风吹过的烟花</description>
+    <image>
+      <title>风吹过的烟花</title>
+      <url>https://zhangxiaofeng05.github.io/images/papermod-cover.png</url>
+      <link>https://zhangxiaofeng05.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 07 Jan 2020 23:49:29 +0800</lastBuildDate>
+    <atom:link href="https://zhangxiaofeng05.github.io/tags/speedtest/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>命令行下测试服务器外网速度speedtest-cli</title>
+      <link>https://zhangxiaofeng05.github.io/posts/speedtest-cli/</link>
+      <pubDate>Tue, 07 Jan 2020 23:49:29 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/speedtest-cli/</guid>
+      <description>&lt;h2 id=&#34;speedtest-cli命令&#34;&gt;speedtest-cli命令&lt;/h2&gt;
+&lt;p&gt;speedtest-cli是一个使用python编写的命令行脚本，通过调用speedtest.net测试上下行的接口来完成速度测试&lt;br&gt;
+linux命令大全：https://man.linuxde.net/speedtest-cli&lt;br&gt;
+github地址：https://github.com/sivel/speedtest-cli&lt;/p&gt;
+&lt;h2 id=&#34;使用方式&#34;&gt;使用方式&lt;/h2&gt;
+&lt;p&gt;自己看作者的&lt;code&gt;README.md&lt;/code&gt;&lt;br&gt;
+此处列一个简单的方法&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;wget -O speedtest-cli https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py
+chmod +x speedtest-cli
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;命令&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;./speedtest-cli -h               打印帮助信息
+./speedtest-cli --share          测速
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
 </rss>

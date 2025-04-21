@@ -1,16 +1,99 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>V2ray - 标签 - 风吹过的烟花</title>
-        <link>https://zhangxiaofeng05.github.io/tags/v2ray/</link>
-        <description>V2ray - 标签 - 风吹过的烟花</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Sat, 04 Jan 2020 16:22:37 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/v2ray/" rel="self" type="application/rss+xml" /><item>
-    <title>linux使用v2ray作为客户端</title>
-    <link>https://zhangxiaofeng05.github.io/linux-v2ray-client/</link>
-    <pubDate>Sat, 04 Jan 2020 16:22:37 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/linux-v2ray-client/</guid>
-    <description><![CDATA[安装v2ray 官网：https://www.v2ray.com/ (被墙,如果可以，不明白的多看官网) github地址：https://git]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>V2ray on 风吹过的烟花</title>
+    <link>https://zhangxiaofeng05.github.io/tags/v2ray/</link>
+    <description>Recent content in V2ray on 风吹过的烟花</description>
+    <image>
+      <title>风吹过的烟花</title>
+      <url>https://zhangxiaofeng05.github.io/images/papermod-cover.png</url>
+      <link>https://zhangxiaofeng05.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 04 Jan 2020 16:22:37 +0800</lastBuildDate>
+    <atom:link href="https://zhangxiaofeng05.github.io/tags/v2ray/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>linux使用v2ray作为客户端</title>
+      <link>https://zhangxiaofeng05.github.io/posts/linux-v2ray-client/</link>
+      <pubDate>Sat, 04 Jan 2020 16:22:37 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/linux-v2ray-client/</guid>
+      <description>&lt;h2 id=&#34;安装v2ray&#34;&gt;安装v2ray&lt;/h2&gt;
+&lt;p&gt;官网：https://www.v2ray.com/  (&lt;code&gt;被墙&lt;/code&gt;,如果可以，&lt;code&gt;不明白的多看官网&lt;/code&gt;)&lt;br&gt;
+github地址：https://github.com/v2ray/v2ray-core&lt;br&gt;
+&lt;code&gt;在root用户环境下运行&lt;/code&gt;&lt;br&gt;
+yum 或 apt-get 安装v2ray&lt;br&gt;
+或者执行安装脚本&lt;code&gt;bash &amp;lt;(curl -L -s https://install.direct/go.sh)&lt;/code&gt;&lt;br&gt;
+此脚本会自动安装以下文件：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;/usr/bin/v2ray/v2ray：V2Ray 程序；&lt;/li&gt;
+&lt;li&gt;/usr/bin/v2ray/v2ctl：V2Ray 工具；&lt;/li&gt;
+&lt;li&gt;/etc/v2ray/config.json：配置文件；&lt;/li&gt;
+&lt;li&gt;/usr/bin/v2ray/geoip.dat：IP 数据文件&lt;/li&gt;
+&lt;li&gt;/usr/bin/v2ray/geosite.dat：域名数据文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;此脚本会配置自动运行脚本。自动运行脚本会在系统重启之后，自动运行 V2Ray。&lt;/p&gt;
+&lt;p&gt;脚本运行完成后，你需要：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;编辑 /etc/v2ray/config.json 文件来配置你需要的代理方式；&lt;br&gt;
+config.json&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
+        &amp;#34;inbound&amp;#34;: {
+            &amp;#34;port&amp;#34;: 1080,
+            &amp;#34;protocol&amp;#34;: &amp;#34;socks&amp;#34;,
+            &amp;#34;domainOverride&amp;#34;: [&amp;#34;tls&amp;#34;,&amp;#34;http&amp;#34;],
+            &amp;#34;settings&amp;#34;: {
+            &amp;#34;auth&amp;#34;: &amp;#34;noauth&amp;#34;
+            }
+        },
+        &amp;#34;outbound&amp;#34;: {
+            &amp;#34;protocol&amp;#34;: &amp;#34;vmess&amp;#34;,
+            &amp;#34;settings&amp;#34;: {
+            &amp;#34;vnext&amp;#34;: [
+                {
+                &amp;#34;address&amp;#34;: &amp;#34;216.244.76.219&amp;#34;,
+                &amp;#34;port&amp;#34;: 54321, 
+                &amp;#34;users&amp;#34;: [
+                    {
+                    &amp;#34;id&amp;#34;: &amp;#34;3cf35a68-ea46-11e9-9cab-003048d37a3c&amp;#34;,
+                    &amp;#34;alterId&amp;#34;: 64,
+                    &amp;#34;security&amp;#34;: &amp;#34;aes-128-gcm&amp;#34;
+                    }
+                ]
+                }
+            ]
+            },
+        &amp;#34;streamSettings&amp;#34;: {
+        &amp;#34;network&amp;#34;: &amp;#34;tcp&amp;#34;,
+        &amp;#34;security&amp;#34;: &amp;#34;aes-128-gcm&amp;#34;
+        }
+
+        }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;运行 &lt;code&gt;service v2ray start&lt;/code&gt; 来启动 V2Ray 进程；&lt;/li&gt;
+&lt;li&gt;之后可以使用 service v2ray start|stop|status|reload|restart|force-reload 控制 V2Ray 的运行。&lt;br&gt;
+或者使用&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;systemctl status v2ray.service
+systemctl start v2ray.service
+systemctl stop v2ray.service
+systemctl restart v2ray.service
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;图形客户端推荐支持订阅&#34;&gt;图形客户端(推荐:支持订阅)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows&lt;br&gt;
+v2rayN(第三方): &lt;a href=&#34;https://github.com/2dust/v2rayN/releases/latest&#34;&gt;https://github.com/2dust/v2rayN/releases/latest&lt;/a&gt;&lt;br&gt;
+下载v2rayN-Core.zip&lt;/li&gt;
+&lt;li&gt;Linux
+Qv2ray(第三方): &lt;a href=&#34;https://github.com/lhy0403/Qv2ray/releases&#34;&gt;https://github.com/lhy0403/Qv2ray/releases&lt;/a&gt;
+下载Qv2ray.v2.4.1.linux-x64.AppImage,添加权限&lt;code&gt;chmod 755 Qv2ray.v2.4.1.linux-x64.AppImage&lt;/code&gt;,双击便可执行&lt;br&gt;
+具体配置参考文章:https://linger.ink/2020/linux-qv2ray-usage&lt;/li&gt;
+&lt;li&gt;Mac
+v2rayX(第三方): &lt;a href=&#34;https://github.com/insisttech/v2rayX-copy/releases&#34;&gt;https://github.com/insisttech/v2rayX-copy/releases&lt;/a&gt;&lt;br&gt;
+v2rayU(第三方): &lt;a href=&#34;https://github.com/yanue/V2rayU/releases&#34;&gt;https://github.com/yanue/V2rayU/releases&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ps:由于是第三方依赖v2ray,需要指定下载的v2ray的路径,v2ray:https://github.com/v2ray/v2ray-core/releases ,下载v2ray-linux-64.zip&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

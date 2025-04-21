@@ -1,16 +1,120 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Json - 标签 - 风吹过的烟花</title>
-        <link>https://zhangxiaofeng05.github.io/tags/json/</link>
-        <description>Json - 标签 - 风吹过的烟花</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Sat, 09 Mar 2024 21:13:49 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/json/" rel="self" type="application/rss+xml" /><item>
-    <title>golang的json中的byte数组编码</title>
-    <link>https://zhangxiaofeng05.github.io/marshal_bytearray_as_json_array_in_go/</link>
-    <pubDate>Sat, 09 Mar 2024 21:13:49 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/marshal_bytearray_as_json_array_in_go/</guid>
-    <description><![CDATA[golang的中json，marshal byte数组会默认对byte数组进行base64编码，编码成string，重写MarshalJSON]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Json on 风吹过的烟花</title>
+    <link>https://zhangxiaofeng05.github.io/tags/json/</link>
+    <description>Recent content in Json on 风吹过的烟花</description>
+    <image>
+      <title>风吹过的烟花</title>
+      <url>https://zhangxiaofeng05.github.io/images/papermod-cover.png</url>
+      <link>https://zhangxiaofeng05.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 09 Mar 2024 21:13:49 +0800</lastBuildDate>
+    <atom:link href="https://zhangxiaofeng05.github.io/tags/json/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>golang的json中的byte数组编码</title>
+      <link>https://zhangxiaofeng05.github.io/posts/marshal_bytearray_as_json_array_in_go/</link>
+      <pubDate>Sat, 09 Mar 2024 21:13:49 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/marshal_bytearray_as_json_array_in_go/</guid>
+      <description>&lt;p&gt;golang的中json，marshal byte数组会默认对byte数组进行base64编码，编码成string，重写MarshalJSON方法保留原始数据&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;package main
+
+import (
+	&amp;#34;encoding/base64&amp;#34;
+	&amp;#34;encoding/json&amp;#34;
+	&amp;#34;fmt&amp;#34;
+	&amp;#34;log&amp;#34;
+	&amp;#34;strings&amp;#34;
+)
+
+type JSONableSlice []byte
+
+func (u JSONableSlice) MarshalJSON() ([]byte, error) {
+	var result string
+	if u == nil {
+		result = &amp;#34;null&amp;#34;
+	} else {
+		result = strings.Join(strings.Fields(fmt.Sprintf(&amp;#34;%d&amp;#34;, u)), &amp;#34;,&amp;#34;)
+	}
+	return []byte(result), nil
+}
+
+type Param1 struct {
+	Content []byte `json:&amp;#34;content&amp;#34;`
+	Public  string `json:&amp;#34;public&amp;#34;`
+	Sig     string `json:&amp;#34;sig&amp;#34;`
+}
+
+type Param2 struct {
+	Content JSONableSlice `json:&amp;#34;content&amp;#34;`
+	Public  string        `json:&amp;#34;public&amp;#34;`
+	Sig     string        `json:&amp;#34;sig&amp;#34;`
+}
+
+func init() {
+	// init log
+	log.SetFlags(log.Lshortfile)
+}
+
+func main() {
+	content := []byte(&amp;#34;firefly&amp;#34;)
+	public := &amp;#34;pp&amp;#34;
+	sig := &amp;#34;ss&amp;#34;
+	log.Printf(&amp;#34;content: %v&amp;#34;, content)
+	log.Printf(&amp;#34;public: %v&amp;#34;, public)
+	log.Printf(&amp;#34;sig: %v&amp;#34;, sig)
+
+	log.Println(strings.Repeat(&amp;#34;-&amp;#34;, 50))
+
+	p1 := Param1{
+		Content: content,
+		Public:  public,
+		Sig:     sig,
+	}
+	rr1, err := json.Marshal(p1)
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Println(&amp;#34;json中的byte数组 默认json编码&amp;#34;)
+	log.Printf(&amp;#34;rr1: %s&amp;#34;, string(rr1)) //content 因为是byte数组，默认用base64编码成string
+	contentBase64 := base64.StdEncoding.EncodeToString(content)
+	log.Printf(&amp;#34;contentBase64: %s&amp;#34;, contentBase64)
+
+	log.Println(&amp;#34;json中的byte数组 默认json解码&amp;#34;)
+	var r1Decode Param1
+	err = json.Unmarshal(rr1, &amp;amp;r1Decode)
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Printf(&amp;#34;r1Decode: %+v&amp;#34;, r1Decode)
+	log.Printf(string(r1Decode.Content))
+
+	log.Println(strings.Repeat(&amp;#34;-&amp;#34;, 50))
+
+	log.Println(&amp;#34;json中的byte数组 自定义byte数组编码的json编码,保留byte数组原始数据&amp;#34;)
+	p2 := Param2{
+		Content: content,
+		Public:  public,
+		Sig:     sig,
+	}
+	rr2, err := json.Marshal(p2)
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Printf(&amp;#34;rr2: %s&amp;#34;, string(rr2))
+
+	log.Printf(&amp;#34;json中的byte数组 自定义byte数组编码解码的json解码,使用byte数组原始数据赋值到结构体&amp;#34;)
+	var r2Decode Param2
+	err = json.Unmarshal(rr2, &amp;amp;r2Decode)
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Printf(&amp;#34;r2Decode: %+v&amp;#34;, r2Decode)
+	log.Printf(string(r2Decode.Content))
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

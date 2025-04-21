@@ -1,88 +1,4417 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>所有文章 - 风吹过的烟花</title>
-        <link>https://zhangxiaofeng05.github.io/posts/</link>
-        <description>所有文章 | 风吹过的烟花</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Fri, 26 Jul 2024 09:11:13 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>ssh免密码登录</title>
-    <link>https://zhangxiaofeng05.github.io/ssh_nopassword_login/</link>
-    <pubDate>Fri, 26 Jul 2024 09:11:13 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/ssh_nopassword_login/</guid>
-    <description><![CDATA[chatgpt回答，无问题 配置SSH无密码登录涉及使用SSH密钥对进行身份验证。以下是步骤： 1. 生成SSH密钥对 在客户端机器上（即你要登录的机]]></description>
-</item>
-<item>
-    <title>mac m芯片在/根目录下创建文件报Read-only file system</title>
-    <link>https://zhangxiaofeng05.github.io/mac_root_create_file/</link>
-    <pubDate>Tue, 11 Jun 2024 21:50:41 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/mac_root_create_file/</guid>
-    <description><![CDATA[关闭SIP以后还是有问题 没有效果 1 2 3 4 5 1. 重启 Mac 并在启动时按住 Command (⌘) + R 进入恢复模式。 2. 在恢复模式中打开终端（从菜单栏选择 Utilities &gt; Termi]]></description>
-</item>
-<item>
-    <title>golang的json中的byte数组编码</title>
-    <link>https://zhangxiaofeng05.github.io/marshal_bytearray_as_json_array_in_go/</link>
-    <pubDate>Sat, 09 Mar 2024 21:13:49 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/marshal_bytearray_as_json_array_in_go/</guid>
-    <description><![CDATA[golang的中json，marshal byte数组会默认对byte数组进行base64编码，编码成string，重写MarshalJSON]]></description>
-</item>
-<item>
-    <title>Connect Mysql8 Error</title>
-    <link>https://zhangxiaofeng05.github.io/connect-mysql8-error/</link>
-    <pubDate>Wed, 31 May 2023 18:38:29 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/connect-mysql8-error/</guid>
-    <description><![CDATA[服务以前连接mysql5.7,现在连接mysql8报错 1 2 3 4 code: &#39;ER_NOT_SUPPORTED_AUTH_MODE&#39;, errno: 1251, sqlState: &#39;08004&#39;, sqlMessage: &#39;Client does not support authentication protocol requested by server; consider upgrading MySQL client&#39; 原因： mysql5.7 认证默认是mysql_nati]]></description>
-</item>
-<item>
-    <title>Hack Jetbrains</title>
-    <link>https://zhangxiaofeng05.github.io/hack-jetbrains/</link>
-    <pubDate>Tue, 27 Dec 2022 23:30:00 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/hack-jetbrains/</guid>
-    <description><![CDATA[Jetbrains全家桶 https://3.jetbra.in jetbra.zip-readme.txt 1 2 3 4 5 1. add -javaagent:/path/to/ja-netfilter.jar=jetbrains to your vmoptions (manual or auto) 2. log out of the jb account in the &#39;Licenses&#39; window 3. use key on page https://jetbra.in/5d84466e31722979266057664941a71893322460 4. plugin &#39;mymap&#39; has been deprecated since version 2022.1 5. don&#39;t care about the activation time, it is a fallback license and will not expire]]></description>
-</item>
-<item>
-    <title>代码管理</title>
-    <link>https://zhangxiaofeng05.github.io/code_manage/</link>
-    <pubDate>Thu, 20 Oct 2022 23:09:19 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/code_manage/</guid>
-    <description><![CDATA[git 每个仓库设置Git用户名 1 2 git config --global user.name &#34;username&#34; git config --global user.email &#34;email address&#34; 一个仓库设置Git用户名 1 2 git config user.name &#34;username&#34; git config user.email &#34;email address&#34; https://docs.github.com/cn/get-started/getting-started-with-git/setting-your-username-in-git 1 2 3 4 # 生成ssh-key ssh-keygen -t rsa -C &#34;email address&#34;]]></description>
-</item>
-<item>
-    <title>Aliyun用nginx配置https</title>
-    <link>https://zhangxiaofeng05.github.io/aliyun_nginx_https/</link>
-    <pubDate>Sun, 10 Jan 2021 21:27:41 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/aliyun_nginx_https/</guid>
-    <description><![CDATA[首先在阿里云购买域名，申请域名证书，可以免费申请一年 nginx配置https过程 https://yq.aliyun.com/articles/672835 示例 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27]]></description>
-</item>
-<item>
-    <title>git 配置</title>
-    <link>https://zhangxiaofeng05.github.io/git/</link>
-    <pubDate>Mon, 01 Jun 2020 21:01:18 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/git/</guid>
-    <description><![CDATA[github git https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent vim ~/.ssh/config 1 2 3 4 5 6 Host github.com User git Hostname ssh.github.com PreferredAuthentications publickey IdentityFile ~/.ssh/id_ed25519 Port 443 测试连接ssh -T git@github.com https://stackoverflow.com/questions/15589682/ssh-connect-to-host-github-com-port-22-connection-timed-out ssh-socket代理 访问GitHub慢，下载慢的解决办法。 创建conf]]></description>
-</item>
-<item>
-    <title>Nextcloud云盘</title>
-    <link>https://zhangxiaofeng05.github.io/nextcloud/</link>
-    <pubDate>Sat, 04 Apr 2020 18:06:00 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/nextcloud/</guid>
-    <description><![CDATA[维基百科 Nextcloud Nextcloud是一套用于创建网络硬盘的客户端－服务器软件。其功能与Dropbox相近，但Nextcloud是自由及开放源代码软]]></description>
-</item>
-<item>
-    <title>deepin编译安装Python3.6</title>
-    <link>https://zhangxiaofeng05.github.io/deepin-install-python3.6/</link>
-    <pubDate>Sat, 18 Jan 2020 01:16:31 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/deepin-install-python3.6/</guid>
-    <description><![CDATA[官网下载源码 官网：https://www.python.org/downloads/source/ 1 2 3 4 5 6 7 8 9 cd /opt/python/ sudo wget https://www.python.org/ftp/python/3.6.10/Python-3.6.10.tar.xz sudo xz -d Python-3.6.10.tar.xz sudo tar xvf]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on 风吹过的烟花</title>
+    <link>https://zhangxiaofeng05.github.io/posts/</link>
+    <description>Recent content in Posts on 风吹过的烟花</description>
+    <image>
+      <title>风吹过的烟花</title>
+      <url>https://zhangxiaofeng05.github.io/images/papermod-cover.png</url>
+      <link>https://zhangxiaofeng05.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 26 Jul 2024 09:11:13 +0800</lastBuildDate>
+    <atom:link href="https://zhangxiaofeng05.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ssh免密码登录</title>
+      <link>https://zhangxiaofeng05.github.io/posts/ssh_nopassword_login/</link>
+      <pubDate>Fri, 26 Jul 2024 09:11:13 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/ssh_nopassword_login/</guid>
+      <description>&lt;p&gt;chatgpt回答，无问题&lt;/p&gt;
+&lt;p&gt;配置SSH无密码登录涉及使用SSH密钥对进行身份验证。以下是步骤：&lt;/p&gt;
+&lt;h2 id=&#34;1-生成ssh密钥对&#34;&gt;1. 生成SSH密钥对&lt;/h2&gt;
+&lt;p&gt;在客户端机器上（即你要登录的机器），使用以下命令生成SSH密钥对：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ssh-keygen -t rsa
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;你会被提示输入文件保存位置（默认是~/.ssh/id_rsa）和密码短语（可以留空以便无密码登录）。&lt;/p&gt;
+&lt;h2 id=&#34;2-复制公钥到远程主机&#34;&gt;2. 复制公钥到远程主机&lt;/h2&gt;
+&lt;p&gt;使用ssh-copy-id命令将公钥复制到远程主机上：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ssh-copy-id username@remote_host
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;替换username为远程主机上的用户名，remote_host为远程主机的IP地址或域名。此命令会将公钥添加到远程主机上的~/.ssh/authorized_keys文件中。&lt;/p&gt;
+&lt;p&gt;如果没有ssh-copy-id，可以手动复制公钥：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cat ~/.ssh/id_rsa.pub | ssh username@remote_host &amp;#39;mkdir -p ~/.ssh &amp;amp;&amp;amp; cat &amp;gt;&amp;gt; ~/.ssh/authorized_keys&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;也可以将~/.ssh/id_rsa.pub内容复制到服务器上的~/.ssh/authorized_keys&lt;/p&gt;
+&lt;h2 id=&#34;3-确保权限设置正确&#34;&gt;3. 确保权限设置正确&lt;/h2&gt;
+&lt;p&gt;确保远程主机上的~/.ssh目录和~/.ssh/authorized_keys文件的权限设置正确：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ssh username@remote_host
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/authorized_keys
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;4-测试无密码登录&#34;&gt;4. 测试无密码登录&lt;/h2&gt;
+&lt;p&gt;现在你可以测试无密码登录：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ssh username@remote_host
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;如果一切正常，你应该能够无密码登录到远程主机。&lt;/p&gt;
+&lt;h2 id=&#34;5-其他配置可选&#34;&gt;5. 其他配置（可选）&lt;/h2&gt;
+&lt;p&gt;为了更好地管理SSH连接，可以在~/.ssh/config文件中添加配置：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Host remote_host
+    HostName remote_host
+    User username
+    IdentityFile ~/.ssh/id_rsa
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这样你可以通过以下命令登录：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ssh remote_host
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;替换 remote_host 为远程主机的别名。这样可以避免每次都输入完整的用户名和主机名。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>mac m芯片在/根目录下创建文件报Read-only file system</title>
+      <link>https://zhangxiaofeng05.github.io/posts/mac_root_create_file/</link>
+      <pubDate>Tue, 11 Jun 2024 21:50:41 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/mac_root_create_file/</guid>
+      <description>&lt;p&gt;&lt;code&gt;关闭SIP以后还是有问题&lt;/code&gt;
+&lt;strong&gt;没有效果&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. 重启 Mac 并在启动时按住 Command (⌘) + R 进入恢复模式。
+2. 在恢复模式中打开终端（从菜单栏选择 Utilities &amp;gt; Terminal）。
+3. 在终端中输入以下命令并按回车键：
+csrutil disable
+4. 重新启动 Mac。
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;解决方法&#34;&gt;解决方法&lt;/h2&gt;
+&lt;p&gt;本质：配置一个文件或文件夹软链到根目录&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;nvim /etc/synthetic.conf
+在文件中添加以下内容&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mydata    /Users/firefly/mydata
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;中间是 tab 键&lt;br&gt;
+&lt;code&gt;千万不要用空格,如果误用，可能需要进入恢复模式删除此文件&lt;/code&gt;&lt;br&gt;
+赋权命令：&lt;code&gt;sudo chmod 777 synthetic.conf&lt;/code&gt;&lt;br&gt;
+重启电脑后，在/根目录就能看到新建的文件或文件夹了&lt;/p&gt;
+&lt;p&gt;参考：&lt;br&gt;
+&lt;a href=&#34;https://blog.csdn.net/weixin_50016308/article/details/118757508&#34;&gt;https://blog.csdn.net/weixin_50016308/article/details/118757508&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://stackoverflow.com/questions/58396821/what-is-the-proper-way-to-create-a-root-sym-link-in-catalina&#34;&gt;https://stackoverflow.com/questions/58396821/what-is-the-proper-way-to-create-a-root-sym-link-in-catalina&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>golang的json中的byte数组编码</title>
+      <link>https://zhangxiaofeng05.github.io/posts/marshal_bytearray_as_json_array_in_go/</link>
+      <pubDate>Sat, 09 Mar 2024 21:13:49 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/marshal_bytearray_as_json_array_in_go/</guid>
+      <description>&lt;p&gt;golang的中json，marshal byte数组会默认对byte数组进行base64编码，编码成string，重写MarshalJSON方法保留原始数据&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;package main
+
+import (
+	&amp;#34;encoding/base64&amp;#34;
+	&amp;#34;encoding/json&amp;#34;
+	&amp;#34;fmt&amp;#34;
+	&amp;#34;log&amp;#34;
+	&amp;#34;strings&amp;#34;
+)
+
+type JSONableSlice []byte
+
+func (u JSONableSlice) MarshalJSON() ([]byte, error) {
+	var result string
+	if u == nil {
+		result = &amp;#34;null&amp;#34;
+	} else {
+		result = strings.Join(strings.Fields(fmt.Sprintf(&amp;#34;%d&amp;#34;, u)), &amp;#34;,&amp;#34;)
+	}
+	return []byte(result), nil
+}
+
+type Param1 struct {
+	Content []byte `json:&amp;#34;content&amp;#34;`
+	Public  string `json:&amp;#34;public&amp;#34;`
+	Sig     string `json:&amp;#34;sig&amp;#34;`
+}
+
+type Param2 struct {
+	Content JSONableSlice `json:&amp;#34;content&amp;#34;`
+	Public  string        `json:&amp;#34;public&amp;#34;`
+	Sig     string        `json:&amp;#34;sig&amp;#34;`
+}
+
+func init() {
+	// init log
+	log.SetFlags(log.Lshortfile)
+}
+
+func main() {
+	content := []byte(&amp;#34;firefly&amp;#34;)
+	public := &amp;#34;pp&amp;#34;
+	sig := &amp;#34;ss&amp;#34;
+	log.Printf(&amp;#34;content: %v&amp;#34;, content)
+	log.Printf(&amp;#34;public: %v&amp;#34;, public)
+	log.Printf(&amp;#34;sig: %v&amp;#34;, sig)
+
+	log.Println(strings.Repeat(&amp;#34;-&amp;#34;, 50))
+
+	p1 := Param1{
+		Content: content,
+		Public:  public,
+		Sig:     sig,
+	}
+	rr1, err := json.Marshal(p1)
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Println(&amp;#34;json中的byte数组 默认json编码&amp;#34;)
+	log.Printf(&amp;#34;rr1: %s&amp;#34;, string(rr1)) //content 因为是byte数组，默认用base64编码成string
+	contentBase64 := base64.StdEncoding.EncodeToString(content)
+	log.Printf(&amp;#34;contentBase64: %s&amp;#34;, contentBase64)
+
+	log.Println(&amp;#34;json中的byte数组 默认json解码&amp;#34;)
+	var r1Decode Param1
+	err = json.Unmarshal(rr1, &amp;amp;r1Decode)
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Printf(&amp;#34;r1Decode: %+v&amp;#34;, r1Decode)
+	log.Printf(string(r1Decode.Content))
+
+	log.Println(strings.Repeat(&amp;#34;-&amp;#34;, 50))
+
+	log.Println(&amp;#34;json中的byte数组 自定义byte数组编码的json编码,保留byte数组原始数据&amp;#34;)
+	p2 := Param2{
+		Content: content,
+		Public:  public,
+		Sig:     sig,
+	}
+	rr2, err := json.Marshal(p2)
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Printf(&amp;#34;rr2: %s&amp;#34;, string(rr2))
+
+	log.Printf(&amp;#34;json中的byte数组 自定义byte数组编码解码的json解码,使用byte数组原始数据赋值到结构体&amp;#34;)
+	var r2Decode Param2
+	err = json.Unmarshal(rr2, &amp;amp;r2Decode)
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Printf(&amp;#34;r2Decode: %+v&amp;#34;, r2Decode)
+	log.Printf(string(r2Decode.Content))
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Connect Mysql8 Error</title>
+      <link>https://zhangxiaofeng05.github.io/posts/connect-mysql8-error/</link>
+      <pubDate>Wed, 31 May 2023 18:38:29 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/connect-mysql8-error/</guid>
+      <description>&lt;h4 id=&#34;服务以前连接mysql57现在连接mysql8报错&#34;&gt;服务以前连接mysql5.7,现在连接mysql8报错&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;code: &amp;#39;ER_NOT_SUPPORTED_AUTH_MODE&amp;#39;,
+errno: 1251,
+sqlState: &amp;#39;08004&amp;#39;,
+sqlMessage: &amp;#39;Client does not support authentication protocol requested by server; consider upgrading MySQL client&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;原因&#34;&gt;原因：&lt;/h4&gt;
+&lt;p&gt;mysql5.7 认证默认是&lt;code&gt;mysql_native_password&lt;/code&gt;，mysql8默认是&lt;code&gt;caching_sha2_password&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;解决方式&#34;&gt;解决方式：&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;创建数据库时，指明&lt;code&gt;mysql_native_password&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker run -d --name mysql8 -p 3306:3306 -e &lt;span class=&#34;nv&#34;&gt;MYSQL_ROOT_PASSWORD&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;123456&lt;/span&gt; -v mysql8:/var/lib/mysql mysql:8.0 --default-authentication-plugin&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;mysql_native_password
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;修改数据库，将用户认证的&lt;code&gt;caching_sha2_password&lt;/code&gt;改为&lt;code&gt;mysql_native_password&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;$&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mysql&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;root&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;use&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mysql&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;select&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;host&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;user&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;plugin&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;authentication_string&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;from&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mysql&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;user&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;ALTER&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;USER&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;root&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;@&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;localhost&amp;#39;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;IDENTIFIED&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;WITH&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mysql_native_password&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;BY&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;password&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;...&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;如果还有其他&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;USER&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;，把其他&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;USER&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mysql&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sys&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mysql&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;session&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mysql&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;infoschema&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;也替换&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;flush&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;privileges&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;升级客户端，支持最新的认证&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;reference&#34;&gt;reference:&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://stackoverflow.com/questions/50093144/mysql-8-0-client-does-not-support-authentication-protocol-requested-by-server&#34;&gt;https://stackoverflow.com/questions/50093144/mysql-8-0-client-does-not-support-authentication-protocol-requested-by-server&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hack Jetbrains</title>
+      <link>https://zhangxiaofeng05.github.io/posts/hack-jetbrains/</link>
+      <pubDate>Tue, 27 Dec 2022 23:30:00 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/hack-jetbrains/</guid>
+      <description>&lt;p&gt;Jetbrains全家桶 &lt;a href=&#34;https://3.jetbra.in&#34;&gt;https://3.jetbra.in&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;jetbra.zip-&lt;code&gt;readme.txt&lt;/code&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. add -javaagent:/path/to/ja-netfilter.jar=jetbrains to your vmoptions (manual or auto)
+2. log out of the jb account in the &amp;#39;Licenses&amp;#39; window
+3. use key on page https://jetbra.in/5d84466e31722979266057664941a71893322460
+4. plugin &amp;#39;mymap&amp;#39; has been deprecated since version 2022.1
+5. don&amp;#39;t care about the activation time, it is a fallback license and will not expire
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Jetbrains Toolbox&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;GoLand -&amp;gt; Settings -&amp;gt; Configuration -&amp;gt; show... -&amp;gt; GoLand.app.vmoptions
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;在vmoptions文件最后增加以下内容&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;-javaagent:/path/jetbra/ja-netfilter.jar=jetbrains
+# jdk17 need
+--add-opens=java.base/jdk.internal.org.objectweb.asm=ALL-UNNAMED
+--add-opens=java.base/jdk.internal.org.objectweb.asm.tree=ALL-UNNAMED
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;获取key，看readme.txt中的url&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;新版本区域选择的坑&lt;/code&gt;
+如果你选择 China Mainland 将会有一个比较坑的地方：激活许可验证走 account.jetbrains.com.cn 这个域名，而不是默认的 account.jetbrains.com&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>代码管理</title>
+      <link>https://zhangxiaofeng05.github.io/posts/code_manage/</link>
+      <pubDate>Thu, 20 Oct 2022 23:09:19 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/code_manage/</guid>
+      <description>&lt;h2 id=&#34;git&#34;&gt;git&lt;/h2&gt;
+&lt;h3 id=&#34;每个仓库设置git用户名&#34;&gt;每个仓库设置Git用户名&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git config --global user.name &lt;span class=&#34;s2&#34;&gt;&amp;#34;username&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git config --global user.email &lt;span class=&#34;s2&#34;&gt;&amp;#34;email address&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;一个仓库设置git用户名&#34;&gt;一个仓库设置Git用户名&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git config user.name &lt;span class=&#34;s2&#34;&gt;&amp;#34;username&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git config user.email &lt;span class=&#34;s2&#34;&gt;&amp;#34;email address&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://docs.github.com/cn/get-started/getting-started-with-git/setting-your-username-in-git&#34;&gt;https://docs.github.com/cn/get-started/getting-started-with-git/setting-your-username-in-git&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 生成ssh-key&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ssh-keygen -t rsa -C &lt;span class=&#34;s2&#34;&gt;&amp;#34;email address&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 测试链接GitHub&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ssh -T git@github.com
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;github&#34;&gt;GitHub&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://cli.github.com/&#34;&gt;https://cli.github.com/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Aliyun用nginx配置https</title>
+      <link>https://zhangxiaofeng05.github.io/posts/aliyun_nginx_https/</link>
+      <pubDate>Sun, 10 Jan 2021 21:27:41 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/aliyun_nginx_https/</guid>
+      <description>&lt;h3 id=&#34;首先在阿里云购买域名申请域名证书可以免费申请一年&#34;&gt;首先在阿里云购买域名，申请域名证书，可以免费申请一年&lt;/h3&gt;
+&lt;h3 id=&#34;nginx配置https过程&#34;&gt;nginx配置https过程&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://yq.aliyun.com/articles/672835&#34;&gt;https://yq.aliyun.com/articles/672835&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;示例&#34;&gt;示例&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;server {
+    listen      444 ssl;
+    server_name zhangxiaofeng.top localhost;
+
+    # ssl证书地址
+    ssl_certificate     /etc/nginx/cert/4879361_zhangxiaofeng.top.pem;  # pem文件的路径
+    ssl_certificate_key  /etc/nginx/cert/4879361_zhangxiaofeng.top.key; # key文件的路径
+    
+    # ssl验证相关配置
+    ssl_session_timeout  5m;    #缓存有效期
+    ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;    #加密算法
+    ssl_protocols TLSv1 TLSv1.1 TLSv1.2;    #安全链接可选的加密协议
+    ssl_prefer_server_ciphers on;   #使用服务器端的首选算法
+
+
+    #charset koi8-r;
+    #access_log  /var/log/nginx/host.access.log  main;
+
+    location / {
+        root   /usr/share/nginx/html;
+        index  index.html index.htm;
+    }
+
+    #error_page  404              /404.html;
+
+    # redirect server error pages to the static page /50x.html
+    #
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+
+    # proxy the PHP scripts to Apache listening on 127.0.0.1:80
+    #
+    #location ~ \.php$ {
+    #    proxy_pass   http://127.0.0.1;
+    #}
+
+    # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+    #
+    #location ~ \.php$ {
+    #    root           html;
+    #    fastcgi_pass   127.0.0.1:9000;
+    #    fastcgi_index  index.php;
+    #    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;
+    #    include        fastcgi_params;
+    #}
+
+    # deny access to .htaccess files, if Apache&amp;#39;s document root
+    # concurs with nginx&amp;#39;s one
+    #
+    #location ~ /\.ht {
+    #    deny  all;
+    #}
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;访问：  &lt;del&gt;&lt;a href=&#34;https://zhangxiaofeng.top:444&#34;&gt;https://zhangxiaofeng.top:444&lt;/a&gt;&lt;/del&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>git 配置</title>
+      <link>https://zhangxiaofeng05.github.io/posts/git/</link>
+      <pubDate>Mon, 01 Jun 2020 21:01:18 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/git/</guid>
+      <description>&lt;h2 id=&#34;github-git&#34;&gt;github git&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent&#34;&gt;https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;vim ~/.ssh/config&lt;/code&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Host github.com
+User git
+Hostname ssh.github.com
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/id_ed25519
+Port 443
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;测试连接&lt;code&gt;ssh -T git@github.com&lt;/code&gt;&lt;br&gt;
+&lt;a href=&#34;https://stackoverflow.com/questions/15589682/ssh-connect-to-host-github-com-port-22-connection-timed-out&#34;&gt;https://stackoverflow.com/questions/15589682/ssh-connect-to-host-github-com-port-22-connection-timed-out&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ssh-socket代理&#34;&gt;ssh-socket代理&lt;/h2&gt;
+&lt;p&gt;访问GitHub慢，下载慢的解决办法。&lt;br&gt;
+创建&lt;code&gt;config&lt;/code&gt;文件&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;vi ~/.ssh/config
+# 当然你也可以手动在 C:\Users\Username\.ssh 下创建 config 文件
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;文件写入如下内容&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# 这里的 -a none 是 NO-AUTH 模式，参见 https://bitbucket.org/gotoh/connect/wiki/Home 中的 More detail 一节
+ProxyCommand connect -S 127.0.0.1:1080 -a none %h %p
+
+Host github.com
+  User git
+  Port 22
+  Hostname github.com
+  # 注意修改路径为你的路径
+  IdentityFile &amp;#34;C:\Users\zhang\.ssh\id_rsa&amp;#34;
+  TCPKeepAlive yes
+
+Host ssh.github.com
+  User git
+  Port 443
+  Hostname ssh.github.com
+  # 注意修改路径为你的路径
+  IdentityFile &amp;#34;C:\Users\zhang\.ssh\id_rsa&amp;#34;
+  TCPKeepAlive yes
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;参考文章： &lt;a href=&#34;https://upupming.site/2019/05/09/git-ssh-socks-proxy/&#34;&gt;https://upupming.site/2019/05/09/git-ssh-socks-proxy/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Nextcloud云盘</title>
+      <link>https://zhangxiaofeng05.github.io/posts/nextcloud/</link>
+      <pubDate>Sat, 04 Apr 2020 18:06:00 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/nextcloud/</guid>
+      <description>&lt;h2 id=&#34;维基百科&#34;&gt;维基百科&lt;/h2&gt;
+&lt;h3 id=&#34;nextcloud&#34;&gt;Nextcloud&lt;/h3&gt;
+&lt;p&gt;Nextcloud是一套用于创建网络硬盘的客户端－服务器软件。其功能与Dropbox相近，但Nextcloud是自由及开放源代码软件，每个人都可以在私人服务器上安装并运行它。&lt;/p&gt;
+&lt;p&gt;与Dropbox等专有服务相比，Nextcloud的开放架构让用户可以利用应用程序的方式在服务器上新增额外的功能，并让用户可以完全掌控自己的数据。&lt;/p&gt;
+&lt;p&gt;ownCloud原先的开发者弗兰克·卡利切创建了ownCloud的分支——Nextcloud，继而让卡利切与其他原先的ownCloud团队成员持续积极地开发。&lt;/p&gt;
+&lt;h3 id=&#34;特性&#34;&gt;特性&lt;/h3&gt;
+&lt;p&gt;Nextcloud的文件存储在一般的目录结构中，并可透过WebDAV访问。用户的文件会在传输时加密。Nextcloud可与在Windows（Windows XP、Vista、7与8）、macOS（10.6或更新版本）或是多种Linux散布版上运行的客户端同步。&lt;/p&gt;
+&lt;p&gt;Nextcloud用户可以管理日历（使用CalDAV）、联系人（CardDAV）、计划工作与流媒体（Ampache）。&lt;/p&gt;
+&lt;p&gt;从管理的角度来看，Nextcloud允许用户与组群管理（透过OpenID或LDAP）。透过用户间与／或组群间的读／写权限调整达到分享文件的目的。另外，Nextcloud的用户可以创建公开的URL来分享文件。也可以记录与文件相关的动作，以及利用文件访问规则来禁止对特定文件的访问。&lt;/p&gt;
+&lt;p&gt;此外，用户也可以透过浏览器使用Nextcloud的文本编辑器、书签服务、缩略网址服务、相册、RSS阅读器与文件查看器。因为有良好的扩展性，Nextcloud可以透过鼠标点一下即可完成安装的应用程序强化其功能，并可连线至Dropbox、Google云端硬盘与Amazon S3。&lt;/p&gt;
+&lt;h3 id=&#34;架构&#34;&gt;架构&lt;/h3&gt;
+&lt;p&gt;为了让个人电脑与Nextcloud服务器同步，Windows、macOS、FreeBSD或Linux上都有客户端可以使用。行动客户端则在iOS与Android设备上提供。也可以使用浏览器访问、管理与上传任何文件与数据。任何在设置好同步的文件系统上的变更都会推送到所有链接到该用户账号的电脑与移动设备上。&lt;/p&gt;
+&lt;p&gt;Nextcloud服务器是以PHP与JavaScript脚本语言撰写。对于远程访问，它采用的是SabreDAV，其为一开放源代码的WebDAV服务器。Nextcloud可与多种数据库管理系统一同运作，包含了SQLite、MariaDB、MySQL、Oracle数据库与PostgreSQL。&lt;/p&gt;
+&lt;h2 id=&#34;centos7安装&#34;&gt;centos7安装&lt;/h2&gt;
+&lt;p&gt;官方安装指南: &lt;a href=&#34;https://docs.nextcloud.com/server/latest/admin_manual/installation/source_installation.html&#34;&gt;https://docs.nextcloud.com/server/latest/admin_manual/installation/source_installation.html&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;环境&#34;&gt;环境&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;LSB Version:	:core-4.1-amd64:core-4.1-noarch
+Distributor ID:	CentOS
+Description:	CentOS Linux release 7.7.1908 (Core)
+Release:	7.7.1908
+Codename:	Core
+
+PHP 7.2.27 (cli) (built: Jan 26 2020 15:49:49) ( NTS )
+
+Server version: 5.5.64-MariaDB MariaDB Server
+
+Nextcloud 17.0.5
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Nextcloud官网: &lt;a href=&#34;https://nextcloud.com/&#34;&gt;https://nextcloud.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;安装httpdapachephpphp-fpmmariadb&#34;&gt;安装httpd(apache),php,php-fpm,MariaDB&lt;/h3&gt;
+&lt;p&gt;自行百度,谷歌.如果服务器上还有nginx,建议apache更改默认端口&lt;br&gt;
+/etc/httpd/conf/httpd.conf(我的改为7000)&lt;br&gt;
+php-fpm默认端口9000&lt;br&gt;
+ps:安装php-fpm需要注意版本是否支持要安装nextcloud版本&lt;/p&gt;
+&lt;h3 id=&#34;下载nextcloud&#34;&gt;下载nextcloud&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://nextcloud.com/changelog/&#34;&gt;https://nextcloud.com/changelog/&lt;/a&gt;&lt;br&gt;
+下载nextcloud-17.0.5.zip,解压至/var/www&lt;br&gt;
+/var/www/nextcloud是根目录,有index.php,在此目录下新建目录data&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cd /var/www/nextcloud/
+mkdir data
+cd /var/www
+chmod -R 755 nextcloud/
+chown -R apache:apache nextcloud/
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;配置httpd&#34;&gt;配置httpd&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;vim /etc/httpd/conf.d/nextcloud.conf&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>deepin编译安装Python3.6</title>
+      <link>https://zhangxiaofeng05.github.io/posts/deepin-install-python3/</link>
+      <pubDate>Sat, 18 Jan 2020 01:16:31 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/deepin-install-python3/</guid>
+      <description>&lt;h2 id=&#34;官网下载源码&#34;&gt;官网下载源码&lt;/h2&gt;
+&lt;p&gt;官网：https://www.python.org/downloads/source/&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cd /opt/python/
+sudo wget https://www.python.org/ftp/python/3.6.10/Python-3.6.10.tar.xz
+sudo xz -d Python-3.6.10.tar.xz
+sudo tar xvf Python-3.6.10.tar
+cd Python-3.6.10/
+sudo ./configure --prefix=/usr/local/python3.6
+sudo make
+sudo make install
+sudo ln -s /usr/local/python3.6/bin/python3 /usr/bin/python3.6
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;虚拟环境&#34;&gt;虚拟环境&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;python3.6 -m venv ./env           #创建虚拟环境
+
+source env/bin/activate           #激活虚拟环境
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;python官方文档&#34;&gt;python官方文档&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.python.org/zh-cn/3/library/venv.html&#34;&gt;https://docs.python.org/zh-cn/3/library/venv.html&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>deepin安装使用Oh My Zsh</title>
+      <link>https://zhangxiaofeng05.github.io/posts/deepin-install-ohmyzsh/</link>
+      <pubDate>Fri, 10 Jan 2020 00:27:17 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/deepin-install-ohmyzsh/</guid>
+      <description>&lt;h2 id=&#34;安装oh-my-zsh&#34;&gt;安装Oh My Zsh&lt;/h2&gt;
+&lt;p&gt;github地址：https://github.com/ohmyzsh/ohmyzsh&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt install zsh
+sh -c &amp;#34;$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34;
+
+# 将 Zsh 设置为默认 Shell
+chsh -s /bin/zsh
+#  查看当前所用的 Shell
+echo $SHELL
+# 查看系统内已安装的 Shell
+cat /etc/shells
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;ps:root执行此脚本只能root使用Oh My Zsh，其他用户使用需要在那个用户下执行此安装脚本
+&lt;img alt=&#34;8&#34; loading=&#34;lazy&#34; src=&#34;https://zhangxiaofeng05.github.io/mypng/8.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;更换主题&#34;&gt;更换主题&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;vi ~/.zshrc
+
+#ZSH_THEME=&amp;#34;robbyrussell&amp;#34;
+ZSH_THEME=&amp;#34;agnoster&amp;#34;
+#ZSH_THEME=&amp;#34;amuse&amp;#34;
+#ZSH_THEME=&amp;#34;fishy&amp;#34;
+#ZSH_THEME=&amp;#34;ys&amp;#34;
+
+source ~/.zshrc
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;agnoster主题箭头无法正常显示&#34;&gt;agnoster主题箭头无法正常显示&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;检查是否安装PowerlineSymbols字体&lt;br&gt;
+如果没有安装,官方安装文档https://powerline.readthedocs.io/en/latest/installation.html&lt;/li&gt;
+&lt;li&gt;在终端选择能够正常显示箭头的字体&lt;br&gt;
+PowerlineSymbols,DejaVu Sans Mono&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;安装字体参考： &lt;a href=&#34;https://github.com/powerline/fonts&#34;&gt;https://github.com/powerline/fonts&lt;/a&gt;&lt;br&gt;
+比如： &lt;code&gt;sudo apt-get install fonts-powerline&lt;/code&gt;，以GitHub为准。&lt;/p&gt;
+&lt;p&gt;deepin 15.11为例,系统已经装好字体了,但是没有正常显示箭头,在终端尝试哪个字体能够正常显示.
+&lt;img alt=&#34;9&#34; loading=&#34;lazy&#34; src=&#34;https://zhangxiaofeng05.github.io/mypng/9.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>命令行下测试服务器外网速度speedtest-cli</title>
+      <link>https://zhangxiaofeng05.github.io/posts/speedtest-cli/</link>
+      <pubDate>Tue, 07 Jan 2020 23:49:29 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/speedtest-cli/</guid>
+      <description>&lt;h2 id=&#34;speedtest-cli命令&#34;&gt;speedtest-cli命令&lt;/h2&gt;
+&lt;p&gt;speedtest-cli是一个使用python编写的命令行脚本，通过调用speedtest.net测试上下行的接口来完成速度测试&lt;br&gt;
+linux命令大全：https://man.linuxde.net/speedtest-cli&lt;br&gt;
+github地址：https://github.com/sivel/speedtest-cli&lt;/p&gt;
+&lt;h2 id=&#34;使用方式&#34;&gt;使用方式&lt;/h2&gt;
+&lt;p&gt;自己看作者的&lt;code&gt;README.md&lt;/code&gt;&lt;br&gt;
+此处列一个简单的方法&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;wget -O speedtest-cli https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py
+chmod +x speedtest-cli
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;命令&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;./speedtest-cli -h               打印帮助信息
+./speedtest-cli --share          测速
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>Lrzsz用于小文件的上传下载</title>
+      <link>https://zhangxiaofeng05.github.io/posts/lrzsz/</link>
+      <pubDate>Tue, 07 Jan 2020 00:05:37 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/lrzsz/</guid>
+      <description>&lt;h2 id=&#34;百度百科&#34;&gt;百度百科&lt;/h2&gt;
+&lt;p&gt;lrzsz是一款在linux里可代替ftp上传和下载的程序。&lt;/p&gt;
+&lt;h2 id=&#34;使用方法&#34;&gt;使用方法&lt;/h2&gt;
+&lt;p&gt;centos服务器，可直接&lt;code&gt;yum -y install lrzsz&lt;/code&gt; 程序会自动安装好，然后如你要下载则sz [找到你要下载的文件] 如果你要上传，则rz 浏览找到你本机要上传的文件。需要注意的事这个命令无法在putty界面使用哦！&lt;/p&gt;
+&lt;h2 id=&#34;注意&#34;&gt;注意&lt;/h2&gt;
+&lt;p&gt;deepin-terminal：使用命令出现乱码，需要用鼠标右击终端然后点击上传文件、下载文件。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>linux安装并配置nginx</title>
+      <link>https://zhangxiaofeng05.github.io/posts/linux-nginx/</link>
+      <pubDate>Sun, 05 Jan 2020 21:25:56 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/linux-nginx/</guid>
+      <description>&lt;h2 id=&#34;维基百科&#34;&gt;维基百科&lt;/h2&gt;
+&lt;p&gt;Nginx是异步框架的网页服务器，也可以用作反向代理、负载平衡器和HTTP缓存。&lt;/p&gt;
+&lt;h2 id=&#34;安装&#34;&gt;安装&lt;/h2&gt;
+&lt;p&gt;官网：https://www.nginx.com/&lt;br&gt;
+官网安装文档：http://nginx.org/en/docs/install.html&lt;br&gt;
+安装完成：http://127.0.0.1/&lt;/p&gt;
+&lt;h2 id=&#34;管理命令&#34;&gt;管理命令&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;systemctl restart nginx.service    重启
+systemctl status nginx.service     查看运行状态
+systemctl start nginx.service      启动
+systemctl stop nginx.service       关闭
+
+systemctl enable nginx.service     开机自启
+systemctl disable nginx.service    关闭开机自启
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;默认配置文件&#34;&gt;默认配置文件&lt;/h2&gt;
+&lt;p&gt;以CentOS/7.3.1611、 nginx/1.12.2为例：&lt;br&gt;
+默认配置：&lt;code&gt;/etc/nginx/nginx.conf&lt;/code&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# For more information on configuration, see:
+#   * Official English Documentation: http://nginx.org/en/docs/
+#   * Official Russian Documentation: http://nginx.org/ru/docs/
+
+#user nginx;
+user root;
+worker_processes auto;
+error_log /var/log/nginx/error.log;
+pid /run/nginx.pid;
+
+# Load dynamic modules. See /usr/share/nginx/README.dynamic.
+include /usr/share/nginx/modules/*.conf;
+
+events {
+    worker_connections 1024;
+}
+
+http {
+    log_format  main  &amp;#39;$remote_addr - $remote_user [$time_local] &amp;#34;$request&amp;#34; &amp;#39;
+                      &amp;#39;$status $body_bytes_sent &amp;#34;$http_referer&amp;#34; &amp;#39;
+                      &amp;#39;&amp;#34;$http_user_agent&amp;#34; &amp;#34;$http_x_forwarded_for&amp;#34;&amp;#39;;
+
+    access_log  /var/log/nginx/access.log  main;
+
+    sendfile            on;
+    tcp_nopush          on;
+    tcp_nodelay         on;
+    keepalive_timeout   65;
+    types_hash_max_size 2048;
+
+    include             /etc/nginx/mime.types;
+    default_type        application/octet-streamo;
+
+
+    # Load modular configuration files from the /etc/nginx/conf.d directory.
+    # See http://nginx.org/en/docs/ngx_core_module.html#include
+    # for more information.
+    include /etc/nginx/conf.d/*.conf;
+
+    server {
+        listen       80 default_server;
+        listen       [::]:80 default_server;
+        server_name  _;
+        root         /usr/share/nginx/html;
+
+        # Load configuration files for the default server block.
+        include /etc/nginx/default.d/*.conf;
+
+    autoindex on;
+        autoindex_exact_size off;
+        autoindex_localtime on;
+
+        location / {
+        }
+
+        error_page 404 /404.html;
+            location = /40x.html {
+        }
+
+        error_page 500 502 503 504 /50x.html;
+            location = /50x.html {
+        }
+    }
+
+# Settings for a TLS enabled server.
+#
+#    server {
+#        listen       443 ssl http2 default_server;
+#        listen       [::]:443 ssl http2 default_server;
+#        server_name  _;
+#        root         /usr/share/nginx/html;
+#
+#        ssl_certificate &amp;#34;/etc/pki/nginx/server.crt&amp;#34;;
+#        ssl_certificate_key &amp;#34;/etc/pki/nginx/private/server.key&amp;#34;;
+#        ssl_session_cache shared:SSL:1m;
+#        ssl_session_timeout  10m;
+#        ssl_ciphers HIGH:!aNULL:!MD5;
+#        ssl_prefer_server_ciphers on;
+#
+#        # Load configuration files for the default server block.
+#        include /etc/nginx/default.d/*.conf;
+#
+#        location / {
+#        }
+#
+#        error_page 404 /404.html;
+#            location = /40x.html {
+#        }
+#
+#        error_page 500 502 503 504 /50x.html;
+#            location = /50x.html {
+#        }
+#    }
+
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;自己新加的conf可以放在&lt;code&gt;cd /etc/nginx/conf.d&lt;/code&gt;目录下&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SimpleHTTPServerWithUpload</title>
+      <link>https://zhangxiaofeng05.github.io/posts/simplehttpserverwithupload/</link>
+      <pubDate>Sat, 04 Jan 2020 19:47:00 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/simplehttpserverwithupload/</guid>
+      <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
+&lt;p&gt;SimpleHTTPServerWithUpload.py是简单的上传下载的脚本&lt;/p&gt;
+&lt;h2 id=&#34;python2&#34;&gt;python2&lt;/h2&gt;
+&lt;h3 id=&#34;github地址&#34;&gt;github地址&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://gist.github.com/UniIsland/3346170&#34;&gt;https://gist.github.com/UniIsland/3346170&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;使用方法&#34;&gt;使用方法&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;方法一&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;python SimpleHTTPServerWithUpload.py 8050
+8050为端口号，不写端口默认为8000
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;方法二&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;python -m SimpleHTTPServerWithUpload 8050
+8050为端口号，不写端口默认为8000
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;访问：http://127.0.0.1:8050/&lt;/p&gt;
+&lt;h2 id=&#34;python3&#34;&gt;python3&lt;/h2&gt;
+&lt;h3 id=&#34;github地址-1&#34;&gt;github地址&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://gist.github.com/touilleMan/eb02ea40b93e52604938&#34;&gt;https://gist.github.com/touilleMan/eb02ea40b93e52604938&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;使用方法-1&#34;&gt;使用方法&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;python SimpleHTTPServerWithUpload.py
+端口为8000
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>linux使用v2ray作为客户端</title>
+      <link>https://zhangxiaofeng05.github.io/posts/linux-v2ray-client/</link>
+      <pubDate>Sat, 04 Jan 2020 16:22:37 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/linux-v2ray-client/</guid>
+      <description>&lt;h2 id=&#34;安装v2ray&#34;&gt;安装v2ray&lt;/h2&gt;
+&lt;p&gt;官网：https://www.v2ray.com/  (&lt;code&gt;被墙&lt;/code&gt;,如果可以，&lt;code&gt;不明白的多看官网&lt;/code&gt;)&lt;br&gt;
+github地址：https://github.com/v2ray/v2ray-core&lt;br&gt;
+&lt;code&gt;在root用户环境下运行&lt;/code&gt;&lt;br&gt;
+yum 或 apt-get 安装v2ray&lt;br&gt;
+或者执行安装脚本&lt;code&gt;bash &amp;lt;(curl -L -s https://install.direct/go.sh)&lt;/code&gt;&lt;br&gt;
+此脚本会自动安装以下文件：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;/usr/bin/v2ray/v2ray：V2Ray 程序；&lt;/li&gt;
+&lt;li&gt;/usr/bin/v2ray/v2ctl：V2Ray 工具；&lt;/li&gt;
+&lt;li&gt;/etc/v2ray/config.json：配置文件；&lt;/li&gt;
+&lt;li&gt;/usr/bin/v2ray/geoip.dat：IP 数据文件&lt;/li&gt;
+&lt;li&gt;/usr/bin/v2ray/geosite.dat：域名数据文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;此脚本会配置自动运行脚本。自动运行脚本会在系统重启之后，自动运行 V2Ray。&lt;/p&gt;
+&lt;p&gt;脚本运行完成后，你需要：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;编辑 /etc/v2ray/config.json 文件来配置你需要的代理方式；&lt;br&gt;
+config.json&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
+        &amp;#34;inbound&amp;#34;: {
+            &amp;#34;port&amp;#34;: 1080,
+            &amp;#34;protocol&amp;#34;: &amp;#34;socks&amp;#34;,
+            &amp;#34;domainOverride&amp;#34;: [&amp;#34;tls&amp;#34;,&amp;#34;http&amp;#34;],
+            &amp;#34;settings&amp;#34;: {
+            &amp;#34;auth&amp;#34;: &amp;#34;noauth&amp;#34;
+            }
+        },
+        &amp;#34;outbound&amp;#34;: {
+            &amp;#34;protocol&amp;#34;: &amp;#34;vmess&amp;#34;,
+            &amp;#34;settings&amp;#34;: {
+            &amp;#34;vnext&amp;#34;: [
+                {
+                &amp;#34;address&amp;#34;: &amp;#34;216.244.76.219&amp;#34;,
+                &amp;#34;port&amp;#34;: 54321, 
+                &amp;#34;users&amp;#34;: [
+                    {
+                    &amp;#34;id&amp;#34;: &amp;#34;3cf35a68-ea46-11e9-9cab-003048d37a3c&amp;#34;,
+                    &amp;#34;alterId&amp;#34;: 64,
+                    &amp;#34;security&amp;#34;: &amp;#34;aes-128-gcm&amp;#34;
+                    }
+                ]
+                }
+            ]
+            },
+        &amp;#34;streamSettings&amp;#34;: {
+        &amp;#34;network&amp;#34;: &amp;#34;tcp&amp;#34;,
+        &amp;#34;security&amp;#34;: &amp;#34;aes-128-gcm&amp;#34;
+        }
+
+        }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;运行 &lt;code&gt;service v2ray start&lt;/code&gt; 来启动 V2Ray 进程；&lt;/li&gt;
+&lt;li&gt;之后可以使用 service v2ray start|stop|status|reload|restart|force-reload 控制 V2Ray 的运行。&lt;br&gt;
+或者使用&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;systemctl status v2ray.service
+systemctl start v2ray.service
+systemctl stop v2ray.service
+systemctl restart v2ray.service
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;图形客户端推荐支持订阅&#34;&gt;图形客户端(推荐:支持订阅)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows&lt;br&gt;
+v2rayN(第三方): &lt;a href=&#34;https://github.com/2dust/v2rayN/releases/latest&#34;&gt;https://github.com/2dust/v2rayN/releases/latest&lt;/a&gt;&lt;br&gt;
+下载v2rayN-Core.zip&lt;/li&gt;
+&lt;li&gt;Linux
+Qv2ray(第三方): &lt;a href=&#34;https://github.com/lhy0403/Qv2ray/releases&#34;&gt;https://github.com/lhy0403/Qv2ray/releases&lt;/a&gt;
+下载Qv2ray.v2.4.1.linux-x64.AppImage,添加权限&lt;code&gt;chmod 755 Qv2ray.v2.4.1.linux-x64.AppImage&lt;/code&gt;,双击便可执行&lt;br&gt;
+具体配置参考文章:https://linger.ink/2020/linux-qv2ray-usage&lt;/li&gt;
+&lt;li&gt;Mac
+v2rayX(第三方): &lt;a href=&#34;https://github.com/insisttech/v2rayX-copy/releases&#34;&gt;https://github.com/insisttech/v2rayX-copy/releases&lt;/a&gt;&lt;br&gt;
+v2rayU(第三方): &lt;a href=&#34;https://github.com/yanue/V2rayU/releases&#34;&gt;https://github.com/yanue/V2rayU/releases&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ps:由于是第三方依赖v2ray,需要指定下载的v2ray的路径,v2ray:https://github.com/v2ray/v2ray-core/releases ,下载v2ray-linux-64.zip&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>vim安装插件</title>
+      <link>https://zhangxiaofeng05.github.io/posts/vim-plugin/</link>
+      <pubDate>Thu, 02 Jan 2020 23:51:51 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/vim-plugin/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;注意：推荐参考：&lt;a href=&#34;https://github.com/zhangxiaofeng05/dotfiles&#34;&gt;https://github.com/zhangxiaofeng05/dotfiles&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;插件管理器vundlevim&#34;&gt;插件管理器(Vundle.vim)&lt;/h2&gt;
+&lt;h3 id=&#34;安装&#34;&gt;安装&lt;/h3&gt;
+&lt;p&gt;github地址：https://github.com/VundleVim/Vundle.vim  (&lt;code&gt;仔细看README.md&lt;/code&gt;)&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;clone&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;修改配置文件&lt;br&gt;
+&lt;code&gt;vim ~/.vimrc&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;set nocompatible              &amp;#34; be iMproved, required
+filetype off                  &amp;#34; required
+
+&amp;#34; set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+&amp;#34; alternatively, pass a path where Vundle should install plugins
+&amp;#34;call vundle#begin(&amp;#39;~/some/path/here&amp;#39;)
+
+&amp;#34; let Vundle manage Vundle, required
+Plugin &amp;#39;VundleVim/Vundle.vim&amp;#39;
+
+&amp;#34;plugin------------------------&amp;#34;
+“Plugin &amp;#39;插件名&amp;#39;  
+&amp;#34;看作者的README.md，有示例
+
+&amp;#34;plugin------------------------&amp;#34;
+
+&amp;#34; All of your Plugins must be added before the following line
+call vundle#end()            &amp;#34; required
+filetype plugin indent on    &amp;#34; required
+&amp;#34; To ignore plugin indent changes, instead use:
+&amp;#34;filetype plugin on
+&amp;#34;
+&amp;#34; Brief help
+&amp;#34; :PluginList       - lists configured plugins
+&amp;#34; :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+&amp;#34; :PluginSearch foo - searches for foo; append `!` to refresh local cache
+&amp;#34; :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+&amp;#34;
+&amp;#34; see :h vundle for more details or wiki for FAQ
+&amp;#34; Put your non-Plugin stuff after this line
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;install-plugins&#34;&gt;Install Plugins&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Launch &lt;code&gt;vim&lt;/code&gt; and run &lt;code&gt;:PluginInstall&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;To install from command line: &lt;code&gt;vim +PluginInstall +qall&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;安装nerdtree&#34;&gt;安装NERDTree&lt;/h2&gt;
+&lt;h3 id=&#34;安装此插件需要安装插件管理器&#34;&gt;安装此插件需要安装插件管理器&lt;/h3&gt;
+&lt;p&gt;github地址：https://github.com/preservim/nerdtree  (&lt;code&gt;仔细看README.md&lt;/code&gt;)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>linux安装mariadb并配置phpmyadmin</title>
+      <link>https://zhangxiaofeng05.github.io/posts/linux_install_phpmyadmin/</link>
+      <pubDate>Sun, 29 Dec 2019 11:14:39 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/linux_install_phpmyadmin/</guid>
+      <description>&lt;h2 id=&#34;mariadb&#34;&gt;mariadb&lt;/h2&gt;
+&lt;h3 id=&#34;维基百科&#34;&gt;维基百科&lt;/h3&gt;
+&lt;p&gt;MariaDB是MySQL关系数据库管理系统的一个复刻，由社区开发，有商业支持，旨在继续保持在GNU GPL下开源。MariaDB的开发是由MySQL的一些原始开发者领导的，他们担心甲骨文公司收购MySQL后会有一些隐患。&lt;/p&gt;
+&lt;p&gt;linux现在默认的MySQL是mariadb。&lt;/p&gt;
+&lt;h3 id=&#34;安装mariadb&#34;&gt;安装mariadb&lt;/h3&gt;
+&lt;p&gt;$ sudo apt-get install mariadb-server mariadb-client&lt;/p&gt;
+&lt;h3 id=&#34;新建用户授权&#34;&gt;新建用户授权&lt;/h3&gt;
+&lt;p&gt;以root身份输入mariadb，进入mariadb&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# mariadb
+&amp;gt; use mysql;                                                           # 进入mysql数据库
+mysql&amp;gt; CREATE USER &amp;#39;zhang&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;123456&amp;#39;;         # zhang是用户名,123456是密码
+mysql&amp;gt; GRANT ALL PRIVILEGES ON *.* TO &amp;#39;zhang&amp;#39;@&amp;#39;localhost&amp;#39; WITH GRANT OPTION;   # 授权
+mysql&amp;gt; FLUSH PRIVILEGES;
+或者(推荐下边的，可以登录，上边只能本地登录)
+mysql&amp;gt; CREATE USER &amp;#39;zhang&amp;#39;@&amp;#39;%&amp;#39; IDENTIFIED BY &amp;#39;123456&amp;#39;;
+mysql&amp;gt; GRANT ALL PRIVILEGES ON *.* TO &amp;#39;zhang&amp;#39;@&amp;#39;%&amp;#39; WITH GRANT OPTION;
+mysql&amp;gt; FLUSH PRIVILEGES;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;查看user信息&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; select user,host,password from user;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;至此，可以用新建的用户登录了。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Docker</title>
+      <link>https://zhangxiaofeng05.github.io/posts/docker/</link>
+      <pubDate>Sun, 08 Dec 2019 22:12:35 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/docker/</guid>
+      <description>&lt;h2 id=&#34;维基百科&#34;&gt;维基百科&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://zh.wikipedia.org/wiki/Docker&#34;&gt;https://zh.wikipedia.org/wiki/Docker&lt;/a&gt;&lt;br&gt;
+Docker是一个开放源代码软件项目，让应用程序部署在软件货柜下的工作可以自动化进行，借此在Linux操作系统上，提供一个额外的软件抽象层，以及操作系统层虚拟化的自动管理机制。&lt;/p&gt;
+&lt;h2 id=&#34;docker官网&#34;&gt;docker官网&lt;/h2&gt;
+&lt;p&gt;官网：https://www.docker.com/&lt;br&gt;
+官网安装指南：https://docs.docker.com/install/&lt;br&gt;
+docker安装软件比较简单，很适合学习，避免了linux的各种版本安装软件的繁琐。&lt;/p&gt;
+&lt;h2 id=&#34;docker-hub&#34;&gt;Docker Hub&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://hub.docker.com/&#34;&gt;https://hub.docker.com/&lt;/a&gt;&lt;br&gt;
+Docker Hub是一个由Docker公司负责维护的公共注册中心，它包含了超过15,000个可用来下载和构建容器的镜像，并且还提供认证、工作组结构、工作流工具（比如webhooks）、构建触发器以及私有工具（比如私有仓库可用于存储你并不想公开分享的镜像）。&lt;/p&gt;
+&lt;h3 id=&#34;举例docker安装mysql&#34;&gt;举例：docker安装MySQL&lt;/h3&gt;
+&lt;p&gt;官网安装指南：https://hub.docker.com/_/mysql&lt;br&gt;
+举例：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;docker pull mysql:5.7.28
+docker run -p 3306:3306 --name mysql5.7 -e MYSQL_ROOT_PASSWORD=password -d mysql:5.7.28
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;具参数查看官网!!!&lt;/p&gt;
+&lt;h3 id=&#34;举例docker安装phpmyadmin&#34;&gt;举例：docker安装phpmyadmin&lt;/h3&gt;
+&lt;p&gt;官网安装指南：https://hub.docker.com/r/phpmyadmin/phpmyadmin&lt;br&gt;
+举例：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;docker pull phpmyadmin/phpmyadmin
+docker run --name myadmin -d -e PMA_ARBITRARY=1 -p 6060:80 phpmyadmin/phpmyadmin
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;此命令安装，登录任意服务器地址端口，空格为分割&lt;br&gt;
+&lt;img alt=&#34;phpmyadmin&#34; loading=&#34;lazy&#34; src=&#34;https://zhangxiaofeng05.github.io/mypng/6.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;pull代理&#34;&gt;pull代理&lt;/h2&gt;
+&lt;p&gt;使用&lt;code&gt;docker pull&lt;/code&gt;命令，下载镜像慢，设置代理&lt;/p&gt;
+&lt;h3 id=&#34;mac&#34;&gt;mac&lt;/h3&gt;
+&lt;p&gt;Dashboard -&amp;gt; Settings -&amp;gt; Resources -&amp;gt; Proxies&lt;br&gt;
+即可使用http代理&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Web Server(HTTP)
+http://127.0.0.1:1081
+
+Secure Web Server(HTTPS)
+http://127.0.0.1:1081
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>ftp服务器</title>
+      <link>https://zhangxiaofeng05.github.io/posts/ftp-server/</link>
+      <pubDate>Sun, 01 Dec 2019 00:09:14 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/ftp-server/</guid>
+      <description>&lt;h2 id=&#34;linux环境&#34;&gt;linux环境&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;LSB Version:    :core-4.1-amd64:core-4.1-noarch
+Distributor ID: CentOS
+Description:    CentOS Linux release 7.3.1611 (Core) 
+Release:    7.3.1611
+Codename:   Core
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;安装&#34;&gt;安装&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;yum install vsftpd
+
+systemctl restart vsftpd.service   # 重启vsftpd
+systemctl stop vsftpd.service      # 停止vsftpd
+systemctl start vsftpd.service     # 启动vsftpd
+systemctl status vsftpd.service    # 查看vsftpd的状态
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;匿名配置&#34;&gt;匿名配置&lt;/h2&gt;
+&lt;h3 id=&#34;服务器配置文件&#34;&gt;服务器配置文件&lt;/h3&gt;
+&lt;p&gt;位置：&lt;code&gt;/etc/vsftpd/vsftpd.conf&lt;/code&gt;&lt;br&gt;
+坑：&lt;code&gt;从网上购买的服务器(阿里云)要从控制台开放ftp的端口，建议放开全部端口，如果有需要限制，再限制&lt;/code&gt;，否则会出现登录失败的问题&lt;br&gt;
+防火墙：&lt;code&gt;开放所需端口&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;匿名设置配置文件内容&#34;&gt;匿名设置：配置文件内容&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;anonymous_enable=YES    #允许匿名登录
+local_enable=YES
+write_enable=YES
+local_umask=022         #匿名上传的默认权限，匿名不能修改生效，只能上传删除     
+anon_upload_enable=YES      #允许匿名上传
+anon_mkdir_write_enable=YES
+anon_other_write_enable=YES
+dirmessage_enable=YES
+xferlog_enable=YES
+connect_from_port_20=YES
+xferlog_file=/var/log/xferlog
+xferlog_std_format=YES
+listen=YES
+listen_ipv6=NO
+
+pam_service_name=vsftpd
+userlist_enable=YES
+tcp_wrappers=YES
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;匿名用户的默认根目录：/var/ftp/pub&lt;br&gt;
+需要更改权限：&lt;code&gt;chmod -R 755 /var/ftp/pub&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;客户端deepin&#34;&gt;客户端(deepin)&lt;/h3&gt;
+&lt;p&gt;安装：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>解决vim粘贴错乱问题</title>
+      <link>https://zhangxiaofeng05.github.io/posts/vim_paste/</link>
+      <pubDate>Thu, 28 Nov 2019 22:58:59 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/vim_paste/</guid>
+      <description>&lt;p&gt;vim打开文件后&lt;br&gt;
+1、在视图模式下输入&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;:set paste
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2、按i进入编辑模式&lt;br&gt;
+3、粘贴((win)Ctrl+v | Shift+Insert(linux))&lt;br&gt;
+4、关闭粘贴&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;:set nopaste
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>hugo搭建博客，部署到GitHub</title>
+      <link>https://zhangxiaofeng05.github.io/posts/hugo_blog/</link>
+      <pubDate>Mon, 21 Oct 2019 23:37:48 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/hugo_blog/</guid>
+      <description>&lt;h2 id=&#34;hugo站点&#34;&gt;hugo站点&lt;/h2&gt;
+&lt;p&gt;hugo官网：https://gohugo.io/&lt;br&gt;
+安装和使用，先参考官网&lt;br&gt;
+安装：使用命令或者从GitHub下载 &lt;a href=&#34;https://github.com/gohugoio/hugo&#34;&gt;https://github.com/gohugoio/hugo&lt;/a&gt;&lt;br&gt;
+检查安装：$ hugo version&lt;/p&gt;
+&lt;p&gt;生成站点 $ hugo new site blogHugo&lt;br&gt;
+进入站点 $ cd blogHugo&lt;br&gt;
+使用主题(&lt;a href=&#34;https://github.com/olOwOlo/hugo-theme-even&#34;&gt;https://github.com/olOwOlo/hugo-theme-even&lt;/a&gt;) $ &lt;code&gt;git clone https://github.com/olOwOlo/hugo-theme-even themes/even&lt;/code&gt;&lt;br&gt;
+安装主题上的说明进行配置，注意此主题生成新文件为$ hugo new post/some-content.md&lt;/p&gt;
+&lt;p&gt;本地运行预览博客 $ hugo server -D&lt;br&gt;
+浏览器 $ http://localhost:1313/&lt;/p&gt;
+&lt;h2 id=&#34;部署到github&#34;&gt;部署到GitHub&lt;/h2&gt;
+&lt;p&gt;在GitHub新建仓库 username.github.io&lt;br&gt;
+渲染md文件 $ &lt;code&gt;hugo --theme=even --baseUrl=&amp;quot;https://username.github.io&amp;quot; --buildDrafts&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;此时生成了public目录&lt;br&gt;
+执行命令&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cd public
+git init
+git commit -m &amp;#34;first commit&amp;#34;
+git remote add origin git@github.com:username/blogHugo.git
+git push origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;以后再提交，在站点执行此脚本 $ &lt;code&gt;sh gitHub.sh&lt;/code&gt;&lt;br&gt;
+gitHub.sh&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;hugo --theme=even --baseUrl=&amp;#34;https://username.github.io&amp;#34; --buildDrafts
+cd public
+git add .
+git commit -m &amp;#34;update&amp;#34;
+git push origin master 
+cd ..
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;原文件放入私有仓库&#34;&gt;原文件放入私有仓库&lt;/h2&gt;
+&lt;p&gt;第一次使用，在站点目录下&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>行为型模式-备忘录模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/memento-pattern/</link>
+      <pubDate>Fri, 30 Aug 2019 07:15:38 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/memento-pattern/</guid>
+      <description>&lt;h1 id=&#34;百度百科&#34;&gt;百度百科&lt;/h1&gt;
+&lt;h2 id=&#34;备忘录模式&#34;&gt;备忘录模式&lt;/h2&gt;
+&lt;p&gt;备忘录模式是一种软件设计模式：在不破坏封闭的前提下，捕获一个对象的内部状态，并在该对象之外保存这个状态。这样以后就可将该对象恢复到原先保存的状态。&lt;/p&gt;
+&lt;h2 id=&#34;基本介绍&#34;&gt;基本介绍&lt;/h2&gt;
+&lt;p&gt;备忘录模式（Memento Pattern）又叫做快照模式（Snapshot Pattern）或Token模式，是GoF的23种设计模式之一，属于行为模式。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;定义&lt;/code&gt;：在不破坏封闭的前提下，捕获一个对象的内部状态，并在该对象之外保存这个状态。这样以后就可将该对象恢复到原先保存的状态。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;涉及角色：&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Originator(发起人)：负责创建一个备忘录Memento，用以记录当前时刻自身的内部状态，并可使用备忘录恢复内部状态。Originator可以根据需要决定Memento存储自己的哪些内部状态。&lt;/li&gt;
+&lt;li&gt;Memento(备忘录)：负责存储Originator对象的内部状态，并可以防止Originator以外的其他对象访问备忘录。备忘录有两个接口：Caretaker只能看到备忘录的窄接口，他只能将备忘录传递给其他对象。Originator却可看到备忘录的宽接口，允许它访问返回到先前状态所需要的所有数据。&lt;/li&gt;
+&lt;li&gt;Caretaker(管理者):负责备忘录Memento，不能对Memento的内容进行访问或者操作。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;备忘录模式的优点和缺点&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;一、 备忘录模式的优点&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;有时一些发起人对象的内部信息必须保存在发起人对象以外的地方，但是必须要由发起人对象自己读取，这时，
+使用备忘录模式可以把复杂的发起人内部信息对其他的对象屏蔽起来，从而可以恰当地保持封装的边界。&lt;/li&gt;
+&lt;li&gt;本模式简化了发起人类。发起人不再需要管理和保存其内部状态的一个个版本，客户端可以自行管理他们所需
+要的这些状态的版本。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;二、 备忘录模式的缺点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;如果发起人角色的状态需要完整地存储到备忘录对象中，那么在资源消耗上面备忘录对象会很昂贵。&lt;/li&gt;
+&lt;li&gt;当负责人角色将一个备忘录 存储起来的时候，负责人可能并不知道这个状态会占用多大的存储空间，从而无法提醒用户一个操作是否很昂贵。&lt;/li&gt;
+&lt;li&gt;当发起人角色的状态改变的时候，有可能这个协议无效。如果状态改变的成功率不高的话，不如采取“假如”协议模式。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;例子&#34;&gt;例子&lt;/h1&gt;
+&lt;p&gt;Memento
+备忘录存储原发器对象的内部状态。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class Memento {
+    private String state;
+
+    public Memento(String state) {
+        this.state = state;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Originator
+原发器创建一个备忘录,用以记录当前时刻的内部状态。
+使用备忘录恢复内部状态&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class Originator {
+    private String state;
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public Memento createMemento(){
+        return new Memento(state);
+    }
+    public void setMemento(Memento memento){
+        state=memento.getState();
+    }
+    public void showState(){
+        System.out.println(state);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Caretaker
+负责保存好备忘录。
+不能对备忘录的内部进行操作或检查。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>行为型模式-解释器模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/interpreter-pattern/</link>
+      <pubDate>Thu, 29 Aug 2019 22:45:54 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/interpreter-pattern/</guid>
+      <description>&lt;h1 id=&#34;百度百科&#34;&gt;百度百科&lt;/h1&gt;
+&lt;h2 id=&#34;interpreter模式&#34;&gt;Interpreter模式&lt;/h2&gt;
+&lt;p&gt;Interpreter(解释器)模式是一种特殊的设计模式，它建立一个解释器（Interpreter），对于特定的计算机程序设计语言，用来解释预先定义的文法。简单地说，Interpreter模式是一种简单的语法解释器构架。&lt;/p&gt;
+&lt;p&gt;Interpreter模式，即解释器模式。&lt;/p&gt;
+&lt;p&gt;解释器模式属于行为模式，Gof是这样定义的：给定一个语言，定义它的文法的一种表示，并定义一个解释器，这个解释器使用该表示来解释语言中的句子。&lt;/p&gt;
+&lt;p&gt;解释器模式需要解决的是，如果一种特定类型的问题发生的频率足够高，那么可能就值得将该问题的各个实例表述为一个简单语言中的句子。这样就可以构建一个解释器，该解释器通过解释这些句子来解决该问题。&lt;/p&gt;
+&lt;p&gt;实例应用：正则表达式&lt;/p&gt;
+&lt;h1 id=&#34;例子&#34;&gt;例子&lt;/h1&gt;
+&lt;p&gt;AbstractExpression(抽象表达式)
+声明一个抽象的解释操作，这个接口为抽象语法树中所有的节点所共享。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public abstract class Expression {
+    abstract void interpret(Context ctx);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;TerminalExpression(终结符表达式)
+实现与文法中的终结符相关联的解释操作。
+一个句子中的每个终结符需要该类的一个实例。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class SimpleExpression extends Expression {
+    @Override
+    void interpret(Context ctx) {
+        System.out.println(&amp;#34;这是普通解析器&amp;#34;);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;NonterminalExpression(非终结符表达式)
+为文法中的非终结符实现解释(Interpret)操作。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class AdvanceExpression extends Expression {
+    @Override
+    void interpret(Context ctx) {
+        System.out.println(&amp;#34;这是高级解析器&amp;#34;);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Context（上下文）
+包含解释器之外的一些全局信息。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.util.ArrayList;
+import java.util.List;
+
+public class Context {
+    private String content;
+    private List list = new ArrayList();
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public void add(Expression eps){
+        list.add(eps);
+    }
+    public List getList(){
+        return list;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Client（客户）
+构建(或被给定)表示该文法定义的语言中某个特定的句子的抽象语法树。
+该抽象语法树由NonterminalExpression和TerminalExpression的实例装配而成。调用解释操作。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>结构型模式-组合模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/composite-pattern/</link>
+      <pubDate>Thu, 29 Aug 2019 22:04:46 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/composite-pattern/</guid>
+      <description>&lt;h1 id=&#34;百度百科&#34;&gt;百度百科&lt;/h1&gt;
+&lt;h2 id=&#34;组合模式&#34;&gt;组合模式&lt;/h2&gt;
+&lt;p&gt;组合模式，将对象组合成树形结构以表示“部分-整体”的层次结构，组合模式使得用户对单个对象和组合对象的使用具有一致性。掌握组合模式的重点是要理解清楚 “部分/整体” 还有 ”单个对象“ 与 &amp;ldquo;组合对象&amp;rdquo; 的含义。&lt;/p&gt;
+&lt;p&gt;组合模式可以让客户端像修改配置文件一样简单的完成本来需要流程控制语句来完成的功能。&lt;/p&gt;
+&lt;p&gt;经典案例：系统目录结构，网站导航结构等。&lt;/p&gt;
+&lt;h2 id=&#34;组合模式概述&#34;&gt;组合模式概述&lt;/h2&gt;
+&lt;p&gt;组合模式(Composite Pattern)&lt;/p&gt;
+&lt;p&gt;组合模式，将对象组合成树形结构以表示“部分-整体”的层次结构，组合模式使得用户对单个对象和组合对象的使用具有一致性。&lt;/p&gt;
+&lt;p&gt;有时候又叫做部分-整体模式，它使我们树型结构的问题中，模糊了简单元素和复杂元素的概念，客户程序可以像处理简单元素一样来处理复杂元素,从而使得客户程序与复杂元素的内部结构解耦。&lt;/p&gt;
+&lt;p&gt;组合模式让你可以优化处理递归或分级数据结构。有许多关于分级数据结构的例子，使得组合模式非常有用武之地。关于分级数据结构的一个普遍性的例子是你每次使用电脑时所遇到的:文件系统。文件系统由目录和文件组成。每个目录都可以装内容。目录的内容可以是文件，也可以是目录。按照这种方式，计算机的文件系统就是以递归结构来组织的。如果你想要描述这样的数据结构，那么你可以使用组合模式Composite。&lt;/p&gt;
+&lt;p&gt;定义&lt;/p&gt;
+&lt;p&gt;(GoF《设计模式》)：将对象组合成树形结构以表示“部分整体”的层次结构。组合模式使得用户对单个对象和组合对象的使用具有一致性。&lt;/p&gt;
+&lt;p&gt;涉及角色：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Component 是组合中的对象声明接口，在适当的情况下，实现所有类共有接口的默认行为。声明一个接口用于访问和管理Component子部件。&lt;/li&gt;
+&lt;li&gt;Leaf 在组合中表示叶子结点对象，叶子结点没有子结点。&lt;/li&gt;
+&lt;li&gt;Composite 定义有枝节点行为，用来存储子部件，在Component接口中实现与子部件有关操作，如增加(add)和删除(remove)等。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;适用性&lt;/p&gt;
+&lt;p&gt;以下情况下适用Composite模式：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;你想表示对象的部分-整体层次结构&lt;/li&gt;
+&lt;li&gt;你希望用户忽略组合对象与单个对象的不同，用户将统一地使用组合结构中的所有对象。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;
+&lt;p&gt;组合模式解耦了客户程序与复杂元素内部结构，从而使客户程序可以像处理简单元素一样来处理复杂元素。&lt;/p&gt;
+&lt;p&gt;如果你想要创建层次结构，并可以在其中以相同的方式对待所有元素，那么组合模式就是最理想的选择。本章使用了一个文件系统的例子来举例说明了组合模式的用途。在这个例子中，文件和目录都执行相同的接口，这是组合模式的关键。通过执行相同的接口，你就可以用相同的方式对待文件和目录，从而实现将文件或者目录储存为目录的子级元素。&lt;/p&gt;
+&lt;h1 id=&#34;例子&#34;&gt;例子&lt;/h1&gt;
+&lt;p&gt;Component
+为组合中的对象声明接口。
+在适当的情况下，实现所有类共有接口的缺省行为。
+声明一个接口用于访问和管理Component的子组件。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.util.List;
+
+public abstract class Employer {
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public abstract void add(Employer employer);
+
+    public abstract void delete(Employer employer);
+
+    public List employers;
+
+    public void printInfo(){
+        System.out.println(name);
+    }
+    public List getEmployers(){
+        return this.employers;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Leaf
+在组合中表示叶节点对象，叶节点没有子节点。
+在组合中定义节点对象的行为。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>行为型模式-访问者模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/visitor-pattern/</link>
+      <pubDate>Thu, 29 Aug 2019 10:33:48 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/visitor-pattern/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;访问者模式&#34;&gt;访问者模式&lt;/h2&gt;
+&lt;p&gt;访问者模式是一种将算法与对象结构分离的软件设计模式。&lt;/p&gt;
+&lt;p&gt;这个模式的基本想法如下：首先我们拥有一个由许多对象构成的对象结构，这些对象的类都拥有一个accept方法用来接受访问者对象；访问者是一个接口，它拥有一个visit方法，这个方法对访问到的对象结构中不同类型的元素作出不同的反应；在对象结构的一次访问过程中，我们遍历整个对象结构，对每一个元素都实施accept方法，在每一个元素的accept方法中回调访问者的visit方法，从而使访问者得以处理对象结构的每一个元素。我们可以针对对象结构设计不同的实在的访问者类来完成不同的操作。&lt;/p&gt;
+&lt;p&gt;访问者模式使得我们可以在传统的单分派语言（如Smalltalk、Java和C++）中模拟双分派技术。对于支持多分派的语言（如CLOS），访问者模式已经内置于语言特性之中了，从而不再重要。&lt;/p&gt;
+&lt;h2 id=&#34;java&#34;&gt;Java&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;interface Visitor {
+    void visit(Wheel wheel);
+    void visit(Engine engine);
+    void visit(Body body);
+    void visit(Car car);
+}
+
+class Wheel {
+    private String name;
+    Wheel(String name) {
+        this.name = name;
+    }
+    String getName() {
+        return this.name;
+    }
+    void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+}
+
+class Engine {
+    void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+}
+
+class Body {
+    void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+}
+
+class Car {
+    private Engine  engine = new Engine();
+    private Body    body   = new Body();
+    private Wheel[] wheels
+        = { new Wheel(&amp;#34;front left&amp;#34;), new Wheel(&amp;#34;front right&amp;#34;),
+            new Wheel(&amp;#34;back left&amp;#34;) , new Wheel(&amp;#34;back right&amp;#34;)  };
+    void accept(Visitor visitor) {
+        visitor.visit(this);
+        engine.accept(visitor);
+        body.accept(visitor);
+        for (int i = 0; i &amp;lt; wheels.length; ++ i)
+            wheels[i].accept(visitor);
+    }
+}
+
+class PrintVisitor implements Visitor {
+    public void visit(Wheel wheel) {
+        System.out.println(&amp;#34;Visiting &amp;#34; + wheel.getName()
+                            + &amp;#34; wheel&amp;#34;);
+    }
+    public void visit(Engine engine) {
+        System.out.println(&amp;#34;Visiting engine&amp;#34;);
+    }
+    public void visit(Body body) {
+        System.out.println(&amp;#34;Visiting body&amp;#34;);
+    }
+    public void visit(Car car) {
+        System.out.println(&amp;#34;Visiting car&amp;#34;);
+    }
+}
+
+public class VisitorDemo {
+    static public void main(String[] args) {
+        Car car = new Car();
+        Visitor visitor = new PrintVisitor();
+        car.accept(visitor);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;运行结果：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>行为型模式-模板方法</title>
+      <link>https://zhangxiaofeng05.github.io/posts/template-method-pattern/</link>
+      <pubDate>Thu, 29 Aug 2019 10:13:54 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/template-method-pattern/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;模板方法&#34;&gt;模板方法&lt;/h2&gt;
+&lt;p&gt;模板方法模型是一种行为设计模型。模板方法是一个定义在父类别的方法，在模板方法中会呼叫多个定义在父类别的其他方法，而这些方法有可能只是抽象方法并没有实作，模板方法仅决定这些抽象方法的执行顺序，这些抽象方法的实作由子类别负责，并且子类别不允许覆写模板方法。&lt;/p&gt;
+&lt;h2 id=&#34;用法&#34;&gt;用法&lt;/h2&gt;
+&lt;p&gt;模板方法模式多用在：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;某些类别的算法中，实做了相同的方法，造成程式码的重复。&lt;/li&gt;
+&lt;li&gt;控制子类别必须遵守的一些事项。&lt;/li&gt;
+&lt;li&gt;&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;java&#34;&gt;Java&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/**
+  * An abstract class that is common to several games in
+  * which players play against the others, but only one is
+  * playing at a given time.
+  */
+
+ abstract class Game {
+
+     private int playersCount;
+
+     abstract void initializeGame();
+
+     abstract void makePlay(int player);
+
+     abstract boolean endOfGame();
+
+     abstract void printWinner();
+
+     /* A template method : */
+     final void playOneGame(int playersCount) {
+         this.playersCount = playersCount;
+         initializeGame();
+         int j = 0;
+         while (!endOfGame()){
+             makePlay(j);
+             j = (j + 1) % playersCount;
+         }
+         printWinner();
+     }
+ }
+
+//Now we can extend this class in order to implement actual games:
+
+ class Monopoly extends Game {
+
+     /* Implementation of necessary concrete methods */
+
+     void initializeGame() {
+         // ...
+     }
+
+     void makePlay(int player) {
+         // ...
+     }
+
+     boolean endOfGame() {
+         // ...
+     }
+
+     void printWinner() {
+         // ...
+     }
+
+     /* Specific declarations for the Monopoly game. */
+
+     // ...
+
+ }
+
+ class Chess extends Game {
+
+     /* Implementation of necessary concrete methods */
+
+     void initializeGame() {
+         // ...
+     }
+
+     void makePlay(int player) {
+         // ...
+     }
+
+     boolean endOfGame() {
+         // ...
+     }
+
+     void printWinner() {
+         // ...
+     }
+
+     /* Specific declarations for the chess game. */
+
+     // ...
+
+ }
+
+ public class Player {
+     public static void main(String[] args) {
+         Game chessGame = new Chess();
+         chessGame.initializeGame();
+         chessGame.playOneGame(1); //call template method
+     }
+ }
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;例子&#34;&gt;例子&lt;/h1&gt;
+&lt;p&gt;AbstractClass
+定义抽象的原语操作（primitiveoperation），具体的子类将重定义它们以实现一个算法的各步骤。
+实现一个模板方法,定义一个算法的骨架。
+该模板方法不仅调用原语操作，也调用定义在AbstractClass或其他对象中的操作。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>行为型模式-策略模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/strategy-pattern/</link>
+      <pubDate>Thu, 29 Aug 2019 06:55:54 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/strategy-pattern/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;策略模式&#34;&gt;策略模式&lt;/h2&gt;
+&lt;p&gt;策略模式作为一种软件设计模式，指对象有某个行为，但是在不同的场景中，该行为有不同的实现算法。比如每个人都要“交个人所得税”，但是“在美国交个人所得税”和“在中国交个人所得税”就有不同的算税方法。&lt;/p&gt;
+&lt;p&gt;策略模式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;定义了一族算法（业务规则）；&lt;/li&gt;
+&lt;li&gt;封装了每个算法；&lt;/li&gt;
+&lt;li&gt;这族的算法可互换代替（interchangeable）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;java&#34;&gt;Java&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;//StrategyExample test application
+
+class StrategyExample {
+
+    public static void main(String[] args) {
+
+        Context context;
+
+        // Three contexts following different strategies
+        context = new Context(new FirstStrategy());
+        context.execute();
+
+        context = new Context(new SecondStrategy());
+        context.execute();
+
+        context = new Context(new ThirdStrategy());
+        context.execute();
+
+    }
+
+}
+
+// The classes that implement a concrete strategy should implement this
+
+// The context class uses this to call the concrete strategy
+interface Strategy {
+
+    void execute();
+
+}
+
+// Implements the algorithm using the strategy interface
+class FirstStrategy implements Strategy {
+
+    public void execute() {
+        System.out.println(&amp;#34;Called FirstStrategy.execute()&amp;#34;);
+    }
+
+}
+
+class SecondStrategy implements Strategy {
+
+    public void execute() {
+        System.out.println(&amp;#34;Called SecondStrategy.execute()&amp;#34;);
+    }
+
+}
+
+class ThirdStrategy implements Strategy {
+
+    public void execute() {
+        System.out.println(&amp;#34;Called ThirdStrategy.execute()&amp;#34;);
+    }
+
+}
+
+// Configured with a ConcreteStrategy object and maintains a reference to a Strategy object
+class Context {
+
+    Strategy strategy;
+
+    // Constructor
+    public Context(Strategy strategy) {
+        this.strategy = strategy;
+    }
+
+    public void execute() {
+        this.strategy.execute();
+    }
+
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;运行结果：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>行为型模式-状态模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/state-pattern/</link>
+      <pubDate>Thu, 29 Aug 2019 06:30:46 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/state-pattern/</guid>
+      <description>&lt;h1 id=&#34;百度百科&#34;&gt;百度百科&lt;/h1&gt;
+&lt;h2 id=&#34;状态模式&#34;&gt;状态模式&lt;/h2&gt;
+&lt;p&gt;(State Pattern)是设计模式的一种，属于行为模式。
+允许一个对象在其内部状态改变时改变它的行为。对象看起来似乎修改了它的类&lt;/p&gt;
+&lt;h2 id=&#34;定义&#34;&gt;定义&lt;/h2&gt;
+&lt;p&gt;(源于Design Pattern)：当一个对象的内在状态改变时允许改变其行为，这个对象看起来像是改变了其类。&lt;/p&gt;
+&lt;p&gt;状态模式主要解决的是当控制一个对象状态的条件表达式过于复杂时的情况。把状态的判断逻辑转移到表示不同状态的一系列类中，可以把复杂的判断逻辑简化。&lt;/p&gt;
+&lt;h2 id=&#34;意图&#34;&gt;意图&lt;/h2&gt;
+&lt;p&gt;允许一个对象在其内部状态改变时改变它的行为&lt;/p&gt;
+&lt;h2 id=&#34;适用场景&#34;&gt;适用场景&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;一个对象的行为取决于它的状态，并且它必须在运行时刻根据状态改变它的行为。&lt;/li&gt;
+&lt;li&gt;一个操作中含有庞大的多分支结构，并且这些分支决定于对象的状态。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;例子&#34;&gt;例子&lt;/h1&gt;
+&lt;p&gt;State
+定义一个接口以封装与Context的一个特定状态相关的行为。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public interface Weather {
+    String getWeather();
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Context
+定义客户感兴趣的接口。
+维护一个ConcreteState子类的实例，这个实例定义当前状态。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class Context {
+    private Weather weather;
+
+    public Weather getWeather() {
+        return weather;
+    }
+
+    public void setWeather(Weather weather) {
+        this.weather = weather;
+    }
+
+    public String weatherMessage(){
+        return weather.getWeather();
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;ConcreteStatesubclasses
+每一子类实现一个与Context的一个状态相关的行为。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class Rain implements Weather {
+    @Override
+    public String getWeather() {
+        return &amp;#34;下雨&amp;#34;;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class Sunshine implements Weather {
+    @Override
+    public String getWeather() {
+        return &amp;#34;阳光&amp;#34;;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Test&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>行为型模式-观察者模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/observer-pattern/</link>
+      <pubDate>Tue, 27 Aug 2019 08:55:07 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/observer-pattern/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;观察者模式&#34;&gt;观察者模式&lt;/h2&gt;
+&lt;p&gt;观察者模式是软件设计模式的一种。在此种模式中，一个目标对象管理所有相依于它的观察者对象，并且在它本身的状态改变时主动发出通知。这通常透过呼叫各观察者所提供的方法来实现。此种模式通常被用来实时事件处理系统。&lt;/p&gt;
+&lt;h2 id=&#34;参与类别&#34;&gt;参与类别&lt;/h2&gt;
+&lt;p&gt;参与本模式的各类别列出如下。成员函式以模拟的方式列出。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;抽象目标类别&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;此抽象类别提供一个界面让观察者进行添附与解附作业。此类别内有个不公开的观察者串炼，并透过下列函式(方法)进行作业&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;添附(Attach)：新增观察者到串炼内，以追踪目标对象的变化。&lt;/li&gt;
+&lt;li&gt;解附(Detach)：将已经存在的观察者从串炼中移除。&lt;/li&gt;
+&lt;li&gt;通知(Notify)：利用观察者所提供的更新函式来通知此目标已经产生变化。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;添附函式包涵了一个观察者对象参数。也许是观察者类别的虚拟函式(即更新函式)，或是在非面向对象的设定中所使用的函式指标(更广泛来讲，函式子或是函式对象)。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;目标类别&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;此类别提供了观察者欲追踪的状态。也利用其源类别(例如前述的抽象目标类别)所提供的方法,来通知所有的观察者其状态已经更新。此类别拥有以下函式&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;取得状态(GetState)：回传该目标对象的状态。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;抽象观察者界面&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;抽象观察者类别是一个必须被实做的抽象类别。这个类别定义了所有观察者都拥有的更新用界面，此界面是用来接收目标类别所发出的更新通知。此类别含有以下函式&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;更新(Update)：会被实做的一个抽象(虚拟)函式。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;观察者类别&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这个类别含有指向目标类别的参考(reference)，以接收来自目标类别的更新状态。此类别含有以下函式&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;更新(Update)：是前述抽象函式的实做。当这个函式被目标对象呼叫时，观察者对象将会呼叫目标对象的取得状态函式，来其所拥有的更新目标对象资讯。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;每个观察者类别都要实做它自己的更新函式，以应对状态更新的情形。&lt;/p&gt;
+&lt;p&gt;当目标对象改变时，会通过呼叫它自己的通知函式来将通知送给每一个观察者对象，这个通知函式则会去呼叫已经添附在串炼内的观察者更新函式。通知与更新函式可能会有一些参数，好指明是目前目标对象内的何种改变。这么作将可增进观察者的效率(只更新那些改变部分的状态)。&lt;/p&gt;
+&lt;h2 id=&#34;用途&#34;&gt;用途&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;当抽象个体有两个互相依赖的层面时。封装这些层面在单独的对象内将可允许程序员单独地去变更与重复使用这些对象，而不会产生两者之间交互的问题。&lt;/li&gt;
+&lt;li&gt;当其中一个对象的变更会影响其他对象，却又不知道多少对象必须被同时变更时。&lt;/li&gt;
+&lt;li&gt;当对象应该有能力通知其他对象，又不应该知道其他对象的实做细节时。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;观察者模式通常与 MVC 范式有关系。在 MVC 中，观察者模式被用来降低 model 与 view 的耦合程度。一般而言， model 的改变会触发通知其他身为观察者的 model 。而这些 model 实际上是 view 。 Java Swing 就是个范例，示意了 model 预期会透过 PropertyChangeNotification 架构以送出改变的通知给其他 view 。 Model 类别是 Java bean 类别的一员，并拥有与上述目标类别同样的行为。 View 类别则系结了一些 GUI 中的可视元素，并拥有与上述观察者类别同样的行为。当应用程序在执行时。使用者将因 view 做出相应的更新而看见 model 所产生的变更。&lt;/p&gt;
+&lt;h1 id=&#34;例子&#34;&gt;例子&lt;/h1&gt;
+&lt;p&gt;Subject（目标）
+目标知道它的观察者。可以有任意多个观察者观察同一个目标。
+提供注册和删除观察者对象的接口。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.util.ArrayList;
+import java.util.List;
+
+public abstract class Citizen {
+    List pols;
+    private String help = &amp;#34;normal&amp;#34;;
+
+    public String getHelp() {
+        return help;
+    }
+
+    public void setHelp(String help) {
+        this.help = help;
+    }
+    abstract void sendMessage(String help);
+
+    public void setPoliceman(){
+        this.pols = new ArrayList();
+    }
+    public void register(Policeman pol){
+        this.pols.add(pol);
+    }
+    public void unRegister(Policeman pol){
+        this.pols.remove(pol);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Observer（观察者）
+为那些在目标发生改变时需获得通知的对象定义一个更新接口。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>行为型模式-中介者模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/mediator-pattern/</link>
+      <pubDate>Mon, 26 Aug 2019 23:28:40 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/mediator-pattern/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;中介者模式&#34;&gt;中介者模式&lt;/h2&gt;
+&lt;p&gt;在软件工程领域，中介者模式定义了一个中介者对象，该对象封装了系统中对象间的交互方式。 由于它可以在运行时改变程序的行为，这种模式是一种行为型模式 。&lt;/p&gt;
+&lt;p&gt;通常程序由大量的类组成，这些类中包含程序的逻辑和运算。 然而，当开发者将更多的类加入到程序中之后，类间交互关系可能变得更为复杂，这会使得代码变得更加难以阅读和维护，尤其是在重构的时候。 此外，程序将会变得难以修改，因为对其所做的任何修改都有可能影响到其它几个类中的代码。&lt;/p&gt;
+&lt;p&gt;在中介者模式中，对象间的通信过程被封装在一个中介者（调解人）对象之中。 对象之间不再直接交互，而是通过调解人进行交互。 这么做可以减少可交互对象间的依赖，从而降低耦合。&lt;/p&gt;
+&lt;h2 id=&#34;概述&#34;&gt;概述&lt;/h2&gt;
+&lt;p&gt;中介者模式是23个周知模式（ 即GoF设计模式）中的一个，GoF设计模式旨在提供重复出现的设计问题的解决方案，以编写灵活和可复用的面向对象软件。也就是说，使对象更加易于实现、修改、测试和复用。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;中介者设计模式可以解决什么问题？&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;避免一组相互交互的对象之间出现紧耦合。&lt;/li&gt;
+&lt;li&gt;能够独立地改变一组对象之间的交互关系而不影响其他对象。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;使用直接逐个访问并更新彼此的方式进行对象间的交互灵活性低，因为这种方式使对象彼此间紧密耦合，导致不可能单独修改类间交互关系本身，而不影响关系中进行交互的类。并且这种方式会令对象变得无法复用，并且难以测试。&lt;/p&gt;
+&lt;p&gt;由于紧耦合的对象过多了解其他对象的内部细节，这种对象难以实现、修改、测试以及复用。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;中介者模式如何解决上述问题？&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;定义一个独立的中介者(调解员)的对象，封装一组对象之间的交互关系。&lt;/li&gt;
+&lt;li&gt;对象将自己的交互委托给中介者执行，避免直接与其他对象进行交互。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;对象利用中介者对象与其他对象进行间接交互，中介者对象负责控制和协调交互关系，这么做可使得对象间松耦合。这些对象只访问中介者，不了解其他对象的细节。&lt;/p&gt;
+&lt;h2 id=&#34;定义&#34;&gt;定义&lt;/h2&gt;
+&lt;p&gt;中介者模式是为了“定义一个封装了对象间交互关系的对象”。这种方式避免了显式调用其他类，促进了类间的松耦合，并且使得类间交互关系本身可以单独修改。客户类可以使用中介者向其他客户类发送信息，并且通过中介者引发的事件收到信息。&lt;/p&gt;
+&lt;h2 id=&#34;java&#34;&gt;Java&lt;/h2&gt;
+&lt;p&gt;在以下示例中，一个中介者对象控制了三个互相交互的按钮的状态，为此它有设置状态的三个方法：book(), view() 和 search()。 当相应的按钮被激活时，对应的方法通过execute()方法被调用。&lt;/p&gt;
+&lt;p&gt;于是这里在交互中每个交互的参与者（本例中即按钮）将自己的行为提交给中介者并且由中介者将这些行为转给对应的参与者。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+//Colleague interface
+interface Command {
+    void execute();
+}
+
+//Abstract Mediator
+interface Mediator {
+    void book();
+    void view();
+    void search();
+    void registerView(BtnView v);
+    void registerSearch(BtnSearch s);
+    void registerBook(BtnBook b);
+    void registerDisplay(LblDisplay d);
+}
+
+//Concrete mediator
+class ParticipantMediator implements Mediator {
+
+    BtnView btnView;
+    BtnSearch btnSearch;
+    BtnBook btnBook;
+    LblDisplay show;
+
+    //....
+    public void registerView(BtnView v) {
+        btnView = v;
+    }
+
+    public void registerSearch(BtnSearch s) {
+        btnSearch = s;
+    }
+
+    public void registerBook(BtnBook b) {
+        btnBook = b;
+    }
+
+    public void registerDisplay(LblDisplay d) {
+        show = d;
+    }
+
+    public void book() {
+        btnBook.setEnabled(false);
+        btnView.setEnabled(true);
+        btnSearch.setEnabled(true);
+        show.setText(&amp;#34;booking...&amp;#34;);
+    }
+
+    public void view() {
+        btnView.setEnabled(false);
+        btnSearch.setEnabled(true);
+        btnBook.setEnabled(true);
+        show.setText(&amp;#34;viewing...&amp;#34;);
+    }
+
+    public void search() {
+        btnSearch.setEnabled(false);
+        btnView.setEnabled(true);
+        btnBook.setEnabled(true);
+        show.setText(&amp;#34;searching...&amp;#34;);
+    }
+
+}
+
+//A concrete colleague
+class BtnView extends JButton implements Command {
+
+    Mediator med;
+
+    BtnView(ActionListener al, Mediator m) {
+        super(&amp;#34;View&amp;#34;);
+        addActionListener(al);
+        med = m;
+        med.registerView(this);
+    }
+
+    public void execute() {
+        med.view();
+    }
+
+}
+
+//A concrete colleague
+class BtnSearch extends JButton implements Command {
+
+    Mediator med;
+
+    BtnSearch(ActionListener al, Mediator m) {
+        super(&amp;#34;Search&amp;#34;);
+        addActionListener(al);
+        med = m;
+        med.registerSearch(this);
+    }
+
+    public void execute() {
+        med.search();
+    }
+
+}
+
+//A concrete colleague
+class BtnBook extends JButton implements Command {
+
+    Mediator med;
+
+    BtnBook(ActionListener al, Mediator m) {
+        super(&amp;#34;Book&amp;#34;);
+        addActionListener(al);
+        med = m;
+        med.registerBook(this);
+    }
+
+    public void execute() {
+        med.book();
+    }
+
+}
+
+class LblDisplay extends JLabel {
+
+    Mediator med;
+
+    LblDisplay(Mediator m) {
+        super(&amp;#34;Just start...&amp;#34;);
+        med = m;
+        med.registerDisplay(this);
+        setFont(new Font(&amp;#34;Arial&amp;#34;, Font.BOLD, 24));
+    }
+
+}
+
+class MediatorDemo extends JFrame implements ActionListener {
+
+    Mediator med = new ParticipantMediator();
+
+    MediatorDemo() {
+        JPanel p = new JPanel();
+        p.add(new BtnView(this, med));
+        p.add(new BtnBook(this, med));
+        p.add(new BtnSearch(this, med));
+        getContentPane().add(new LblDisplay(med), &amp;#34;North&amp;#34;);
+        getContentPane().add(p, &amp;#34;South&amp;#34;);
+        setSize(400, 200);
+        setVisible(true);
+    }
+
+    public void actionPerformed(ActionEvent ae) {
+        Command comd = (Command) ae.getSource();
+        comd.execute();
+    }
+
+    public static void main(String[] args) {
+        new MediatorDemo();
+    }
+
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;例子&#34;&gt;例子&lt;/h1&gt;
+&lt;p&gt;Colleagueclass&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>行为型模式-迭代器模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/iterator-pattern/</link>
+      <pubDate>Mon, 26 Aug 2019 15:47:11 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/iterator-pattern/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;迭代器模式&#34;&gt;迭代器模式&lt;/h2&gt;
+&lt;p&gt;在 面向对象编程里，迭代器模式是一种设计模式，是一种最简单也最常见的设计模式。它可以让用户透过特定的接口巡访容器中的每一个元素而不用了解底层的实现。&lt;/p&gt;
+&lt;p&gt;此外，也可以实现特定目的版本的迭代器。&lt;/p&gt;
+&lt;h2 id=&#34;接口&#34;&gt;接口&lt;/h2&gt;
+&lt;p&gt;《设计模式》建议合理的接口该要有：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public interface Iterator
+{
+    public Object First();
+    public Object Next();
+    public boolean isDone();
+    public Object CurrentItem();
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;java&#34;&gt;Java&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;interface Iterator{
+    Object First();
+    Object Next();
+    boolean IsDone();
+    Object CurrentItem();
+}
+
+abstract class Aggregate{
+    abstract Iterator CreateIterator();
+}
+
+class ConcreteIterator implements Iterator{
+    private List&amp;lt;Object&amp;gt; list = new ArrayList&amp;lt;Object&amp;gt;();
+    private int curr=0;
+    public ConcreteIterator(List&amp;lt;Object&amp;gt; list){
+        this.list = list;
+    }
+
+    public Object First(){
+        return list.get(0);
+    }
+
+    public Object Next(){
+        Object ret = null;
+        curr++;
+        if(curr &amp;lt; list.size()){
+            ret = list.get(curr);
+        }
+        return ret;
+    }
+
+    public boolean IsDone(){
+        return curr&amp;gt;=list.size()?true:false;
+    }
+
+    public Object CurrentItem(){
+        return list.get(curr);
+    }
+}
+
+class ConcreteAggregate extends Aggregate{
+    private List&amp;lt;Object&amp;gt; list = new ArrayList&amp;lt;Object&amp;gt;();
+    public ConcreteAggregate(List&amp;lt;Object&amp;gt; list){
+        this.list = list;
+    }
+    public Iterator CreateIterator(){
+        return new ConcreteIterator(list);
+    }
+}
+
+class client{
+    public static void main(String[] args){
+    List&amp;lt;Object&amp;gt; list = new ArrayList&amp;lt;Object&amp;gt;();
+    list.add(&amp;#34;miner&amp;#34;);
+    list.add(&amp;#34;any&amp;#34;);
+    Aggregate agg = new ConcreteAggregate(list);
+    Iterator iterator = agg.CreateIterator();
+    iterator.First();
+    while(!iterator.IsDone()){
+        System.out.println(iterator.CurrentItem());
+        iterator.Next();
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;例子&#34;&gt;例子&lt;/h1&gt;
+&lt;p&gt;Aggregate
+聚合定义创建相应迭代器对象的接口。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>行为型模式-命令模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/command-pattern/</link>
+      <pubDate>Mon, 26 Aug 2019 11:33:26 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/command-pattern/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;命令模式&#34;&gt;命令模式&lt;/h2&gt;
+&lt;p&gt;在面向对象编程的范畴中，命令模式（英语：Command pattern）是一种设计模式，它尝试以对象来代表实际行动。命令对象可以把行动(action) 及其参数封装起来，于是这些行动可以被：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;重复多次&lt;/li&gt;
+&lt;li&gt;取消（如果该对象有实现的话）&lt;/li&gt;
+&lt;li&gt;取消后又再重做&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这些都是现代大型应用程序所必须的功能，即“撤销”及“重复”。除此之外，可以用命令模式来实现的功能例子还有：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;交易行为&lt;/li&gt;
+&lt;li&gt;进度列&lt;/li&gt;
+&lt;li&gt;向导&lt;/li&gt;
+&lt;li&gt;用户界面按钮及功能表项目&lt;/li&gt;
+&lt;li&gt;线程 pool&lt;/li&gt;
+&lt;li&gt;宏收录&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;java&#34;&gt;Java&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.util.List;
+import java.util.ArrayList;
+
+/* The Command interface */
+public interface Command {
+   void execute();
+}
+
+/* The Invoker class */
+public class Switch {
+   private List&amp;lt;Command&amp;gt; history = new ArrayList&amp;lt;Command&amp;gt;();
+
+   public Switch() {
+   }
+
+   public void storeAndExecute(Command cmd) {
+      this.history.add(cmd); // optional
+      cmd.execute();        
+   }
+}
+
+/* The Receiver class */
+public class Light {
+   public Light() {
+   }
+
+   public void turnOn() {
+      System.out.println(&amp;#34;The light is on&amp;#34;);
+   }
+
+   public void turnOff() {
+      System.out.println(&amp;#34;The light is off&amp;#34;);
+   }
+}
+
+/* The Command for turning on the light - ConcreteCommand #1 */
+public class FlipUpCommand implements Command {
+   private Light theLight;
+
+   public FlipUpCommand(Light light) {
+      this.theLight = light;
+   }
+
+   public void execute(){
+      theLight.turnOn();
+   }
+}
+
+/* The Command for turning off the light - ConcreteCommand #2 */
+public class FlipDownCommand implements Command {
+   private Light theLight;
+
+   public FlipDownCommand(Light light) {
+      this.theLight = light;
+   }
+
+   public void execute() {
+      theLight.turnOff();
+   }
+}
+
+/* The test class or client */
+public class PressSwitch {
+   public static void main(String[] args){
+      Light lamp = new Light();
+      Command switchUp = new FlipUpCommand(lamp);
+      Command switchDown = new FlipDownCommand(lamp);
+
+      Switch mySwitch = new Switch();
+
+      try {
+         if (&amp;#34;ON&amp;#34;.equalsIgnoreCase(args[0])) {
+            mySwitch.storeAndExecute(switchUp);
+         }
+         else if (&amp;#34;OFF&amp;#34;.equalsIgnoreCase(args[0])) {
+            mySwitch.storeAndExecute(switchDown);
+         }
+         else {
+            System.out.println(&amp;#34;Argument \&amp;#34;ON\&amp;#34; or \&amp;#34;OFF\&amp;#34; is required.&amp;#34;);
+         }
+      } catch (Exception e) {
+         System.out.println(&amp;#34;Arguments required.&amp;#34;);
+      }
+   }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;例子&#34;&gt;例子&lt;/h1&gt;
+&lt;p&gt;Receiver
+知道如何实现与执行一个请求相关的操作。任何类都可能作为一个接收者。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>行为型模式-责任链模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/responsibility-chain-pattern/</link>
+      <pubDate>Mon, 26 Aug 2019 08:54:49 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/responsibility-chain-pattern/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;责任链模式&#34;&gt;责任链模式&lt;/h2&gt;
+&lt;p&gt;责任链模式在面向对象程式设计里是一种软件设计模式，它包含了一些命令对象和一系列的处理对象。每一个处理对象决定它能处理哪些命令对象，它也知道如何将它不能处理的命令对象传递给该链中的下一个处理对象。该模式还描述了往该处理链的末尾添加新的处理对象的方法。&lt;/p&gt;
+&lt;h2 id=&#34;java&#34;&gt;Java&lt;/h2&gt;
+&lt;p&gt;以下的日志类(logging)例子演示了该模式。 每一个logging handler首先决定是否需要在该层做处理，然后将控制传递到下一个logging handler。程序的输出是:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Writing to debug output: Entering function y.
+Writing to debug output: Step1 completed.
+Sending via e-mail:      Step1 completed.
+Writing to debug output: An error has occurred.
+Sending via e-mail:      An error has occurred.
+Writing to stderr:       An error has occurred.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;注意：该例子不是日志类的推荐实现方式。&lt;/p&gt;
+&lt;p&gt;同时，需要注意的是，通常在责任链模式的实现中，如果在某一层已经处理了这个logger，那么这个logger就不会传递下去。在我们这个例子中，消息会一直传递到最底层不管它是否已经被处理。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;abstract class Logger
+{
+    public static int ERR = 3;
+    public static int NOTICE = 5;
+    public static int DEBUG = 7;
+    protected int mask;
+
+    // The next element in the chain of responsibility
+    protected Logger next;
+    public Logger setNext( Logger l)
+    {
+        next = l;
+        return this;
+    }
+
+    public final void message( String msg, int priority )
+    {
+        if ( priority &amp;lt;= mask )
+        {
+            writeMessage( msg );
+            if ( next != null )
+            {
+                next.message( msg, priority );
+            }
+        }
+    }
+
+    protected abstract void writeMessage( String msg );
+
+}
+
+class StdoutLogger extends Logger
+{
+
+    public StdoutLogger( int mask ) { this.mask = mask; }
+
+    protected void writeMessage( String msg )
+    {
+        System.out.println( &amp;#34;Writting to stdout: &amp;#34; + msg );
+    }
+}
+
+
+class EmailLogger extends Logger
+{
+
+    public EmailLogger( int mask ) { this.mask = mask; }
+
+    protected void writeMessage( String msg )
+    {
+        System.out.println( &amp;#34;Sending via email: &amp;#34; + msg );
+    }
+}
+
+class StderrLogger extends Logger
+{
+
+    public StderrLogger( int mask ) { this.mask = mask; }
+
+    protected void writeMessage( String msg )
+    {
+        System.out.println( &amp;#34;Sending to stderr: &amp;#34; + msg );
+    }
+}
+
+public class ChainOfResponsibilityExample
+{
+    public static void main( String[] args )
+    {
+        // Build the chain of responsibility
+        Logger l = new StdoutLogger( Logger.DEBUG).setNext(
+                            new EmailLogger( Logger.NOTICE ).setNext(
+                            new StderrLogger( Logger.ERR ) ) );
+
+        // Handled by StdoutLogger
+        l.message( &amp;#34;Entering function y.&amp;#34;, Logger.DEBUG );
+
+        // Handled by StdoutLogger and EmailLogger
+        l.message( &amp;#34;Step1 completed.&amp;#34;, Logger.NOTICE );
+
+        // Handled by all three loggers
+        l.message( &amp;#34;An error has occurred.&amp;#34;, Logger.ERR );
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;例子&#34;&gt;例子&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public interface Request {
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class DimissionRequest implements Request {
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class AddMoneyRequest implements Request {
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class LeaveRequest implements Request {
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Handler&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>结构型模式-代理模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/proxy-pattern/</link>
+      <pubDate>Sun, 25 Aug 2019 22:46:31 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/proxy-pattern/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;代理模式&#34;&gt;代理模式&lt;/h2&gt;
+&lt;p&gt;代理模式（英语：Proxy Pattern）是程序设计中的一种设计模式。&lt;/p&gt;
+&lt;p&gt;所谓的代理者是指一个类别可以作为其它东西的接口。代理者可以作任何东西的接口：网络连接、存储器中的大对象、文件或其它昂贵或无法复制的资源。&lt;/p&gt;
+&lt;p&gt;著名的代理模式例子为引用计数（英语：reference counting）指针对象。&lt;/p&gt;
+&lt;p&gt;当一个复杂对象的多份副本须存在时，代理模式可以结合享元模式以减少存储器用量。典型作法是创建一个复杂对象及多个代理者，每个代理者会引用到原本的复杂对象。而作用在代理者的运算会转送到原本对象。一旦所有的代理者都不存在时，复杂对象会被移除。&lt;/p&gt;
+&lt;h2 id=&#34;java&#34;&gt;Java&lt;/h2&gt;
+&lt;p&gt;以下Java示例解释&amp;quot;虚拟代理&amp;quot;模式。ProxyImage 类别用来访问远程方法。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.util.*;
+
+interface Image {
+    public void displayImage();
+}
+
+//on System A
+class RealImage implements Image {
+    private String filename;
+    public RealImage(String filename) {
+        this.filename = filename;
+        loadImageFromDisk();
+    }
+
+    private void loadImageFromDisk() {
+        System.out.println(&amp;#34;Loading   &amp;#34; + filename);
+    }
+
+    public void displayImage() {
+        System.out.println(&amp;#34;Displaying &amp;#34; + filename);
+    }
+}
+
+//on System B
+class ProxyImage implements Image {
+    private String filename;
+    private Image image;
+
+    public ProxyImage(String filename) {
+        this.filename = filename;
+    }
+    public void displayImage() {
+        if(image == null)
+              image = new RealImage(filename);
+        image.displayImage();
+    }
+}
+
+class ProxyExample {
+    public static void main(String[] args) {
+        Image image1 = new ProxyImage(&amp;#34;HiRes_10MB_Photo1&amp;#34;);
+        Image image2 = new ProxyImage(&amp;#34;HiRes_10MB_Photo2&amp;#34;);     
+
+        image1.displayImage(); // loading necessary
+        image2.displayImage(); // loading necessary
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;程序的输出为：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>结构型模式-享元模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/flyweight-pattern/</link>
+      <pubDate>Sun, 25 Aug 2019 10:51:19 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/flyweight-pattern/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;享元模式&#34;&gt;享元模式&lt;/h2&gt;
+&lt;p&gt;享元模式（英语：Flyweight Pattern）是一种软件设计模式。它使用共享物件，用来尽可能减少内存使用量以及分享资讯给尽可能多的相似物件；它适合用于当大量物件只是重复因而导致无法令人接受的使用大量内存。通常物件中的部分状态是可以分享。常见做法是把它们放在外部数据结构，当需要使用时再将它们传递给享元。&lt;/p&gt;
+&lt;p&gt;典型的享元模式的例子为文书处理器中以图形结构来表示字符。一个做法是，每个字形有其字型外观, 字模 metrics, 和其它格式资讯，但这会使每个字符就耗用上千字节。取而代之的是，每个字符参照到一个共享字形物件，此物件会被其它有共同特质的字符所分享；只有每个字符（文件中或页面中）的位置才需要另外储存。&lt;/p&gt;
+&lt;h2 id=&#34;java&#34;&gt;Java&lt;/h2&gt;
+&lt;p&gt;以下程式用来解释上述的文字。这个例子用来解释享元模式利用只加载执行任务时所必需的最少资料，因而减少内存使用量。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public enum FontEffect {
+    BOLD, ITALIC, SUPERSCRIPT, SUBSCRIPT, STRIKETHROUGH
+}
+
+public final class FontData {
+    /**
+     * A weak hash map will drop unused references to FontData.
+     * Values have to be wrapped in WeakReferences,
+     * because value objects in weak hash map are held by strong references.
+     */
+    private static final WeakHashMap&amp;lt;FontData, WeakReference&amp;lt;FontData&amp;gt;&amp;gt; FLY_WEIGHT_DATA =
+        new WeakHashMap&amp;lt;FontData, WeakReference&amp;lt;FontData&amp;gt;&amp;gt;();
+    private final int pointSize;
+    private final String fontFace;
+    private final Color color;
+    private final Set&amp;lt;FontEffect&amp;gt; effects;
+
+    private FontData(int pointSize, String fontFace, Color color, EnumSet&amp;lt;FontEffect&amp;gt; effects) {
+        this.pointSize = pointSize;
+        this.fontFace = fontFace;
+        this.color = color;
+        this.effects = Collections.unmodifiableSet(effects);
+    }
+
+    public static FontData create(int pointSize, String fontFace, Color color,
+        FontEffect... effects) {
+        EnumSet&amp;lt;FontEffect&amp;gt; effectsSet = EnumSet.noneOf(FontEffect.class);
+        for (FontEffect fontEffect : effects) {
+            effectsSet.add(fontEffect);
+        }
+        // We are unconcerned with object creation cost, we are reducing overall memory consumption
+        FontData data = new FontData(pointSize, fontFace, color, effectsSet);
+
+        // Retrieve previously created instance with the given values if it (still) exists
+        WeakReference&amp;lt;FontData&amp;gt; ref = FLY_WEIGHT_DATA.get(data);
+        FontData result = (ref != null) ? ref.get() : null;
+
+        // Store new font data instance if no matching instance exists
+        if (result == null) {
+            FLY_WEIGHT_DATA.put(data, new WeakReference&amp;lt;FontData&amp;gt; (data));
+            result = data;
+        }
+        // return the single immutable copy with the given values
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof FontData) {
+            if (obj == this) {
+                return true;
+            }
+            FontData other = (FontData) obj;
+            return other.pointSize == pointSize &amp;amp;&amp;amp; other.fontFace.equals(fontFace)
+                &amp;amp;&amp;amp; other.color.equals(color) &amp;amp;&amp;amp; other.effects.equals(effects);
+        }
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return (pointSize * 37 + effects.hashCode() * 13) * fontFace.hashCode();
+    }
+
+    // Getters for the font data, but no setters. FontData is immutable.
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;例子&#34;&gt;例子&lt;/h1&gt;
+&lt;p&gt;Flyweight&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>结构型模式-外观模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/facade-pattern/</link>
+      <pubDate>Sun, 25 Aug 2019 10:20:54 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/facade-pattern/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;外观模式&#34;&gt;外观模式&lt;/h2&gt;
+&lt;p&gt;外观模式（Facade pattern），是软件工程中常用的一种软件设计模式，它为子系统中的一组接口提供一个统一的高层接口，使得子系统更容易使用。&lt;/p&gt;
+&lt;h2 id=&#34;java&#34;&gt;Java&lt;/h2&gt;
+&lt;p&gt;这是一个抽象的示例。一个客户“you”通过外观接口“computer”获取计算机内部复杂的系统信息。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/* Complex parts */
+
+class CPU {
+	public void freeze() { ... }
+	public void jump(long position) { ... }
+	public void execute() { ... }
+}
+
+class Memory {
+	public void load(long position, byte[] data) {
+		...
+	}
+}
+
+class HardDrive {
+	public byte[] read(long lba, int size) {
+		...
+	}
+}
+
+/* Façade */
+
+class Computer {
+	public void startComputer() {
+		cpu.freeze();
+		memory.load(BOOT_ADDRESS, hardDrive.read(BOOT_SECTOR, SECTOR_SIZE));
+		cpu.jump(BOOT_ADDRESS);
+		cpu.execute();
+	}
+}
+
+/* Client */
+
+class You {
+	public static void main(String[] args) {
+		Computer facade = new Computer();
+		facade.startComputer();
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;例子&#34;&gt;例子&lt;/h1&gt;
+&lt;p&gt;抽象类&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>结构型模式-装饰模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/decorator-pattern/</link>
+      <pubDate>Sun, 25 Aug 2019 09:31:07 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/decorator-pattern/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;修饰模式&#34;&gt;修饰模式&lt;/h2&gt;
+&lt;p&gt;修饰模式，是面向对象编程领域中，一种动态地往一个类中添加新的行为的设计模式。就功能而言，修饰模式相比生成子类更为灵活，这样可以给某个对象而不是整个类添加一些功能。&lt;/p&gt;
+&lt;h2 id=&#34;介绍&#34;&gt;介绍&lt;/h2&gt;
+&lt;p&gt;通过使用修饰模式，可以在运行时扩充一个类的功能。原理是：增加一个修饰类包裹原来的类，包裹的方式一般是通过在将原来的对象作为修饰类的构造函数的参数。装饰类实现新的功能，但是，在不需要用到新功能的地方，它可以直接调用原来的类中的方法。修饰类必须和原来的类有相同的接口。&lt;/p&gt;
+&lt;p&gt;修饰模式是类继承的另外一种选择。类继承在编译时候增加行为，而装饰模式是在运行时增加行为。&lt;/p&gt;
+&lt;p&gt;当有几个相互独立的功能需要扩充时，这个区别就变得很重要。在有些面向对象的编程语言中，类不能在运行时被创建，通常在设计的时候也不能预测到有哪几种功能组合。这就意味着要为每一种组合创建一个新类。相反，修饰模式是面向运行时候的对象实例的,这样就可以在运行时根据需要进行组合。一个修饰模式的示例是JAVA里的Java I/O Streams的实现。&lt;/p&gt;
+&lt;h2 id=&#34;动机&#34;&gt;动机&lt;/h2&gt;
+&lt;p&gt;例如，一个窗口系统中的窗口，允许这个窗口内容滚动，我们希望给它添加水平或垂直滚动条。假设窗口通过“Window”类实例来表示，并且假设它没有添加滚动条功能。我们可以创建一个子类“ScrollingWindow”来提供，或者我们可以创建一个ScrollingWindowDecorator来为已存在的Window对象添加这个功能。在这点上，只要是解决方案就可以了。 现在我们假设希望选择给我们的窗口添加边框，同样，我们的原始Window类不支持。ScrollingWindow子类现在会造成一个问题，因为它会有效的创建一种新的窗口。如果我们想要给所有窗口添加边框，我们必须创建WindowWithBorder和ScrollingWindowWithBorder子类。显然，这个问题由于被添加类而变得更糟了。对于修饰模式，我们简单的创建一个新类BorderedWindowDecorator，在运行时，我们能够使用ScrollingWindowDecorator或BorderedWindowDecorator或两者结合来修饰已存在的窗口。 一个修饰能够被应用的另一个好例子是当有需要根据某套规则或者几个平行的规则集（不同的用户凭据等）限制访问对象的属性或方法时。&lt;/p&gt;
+&lt;p&gt;一个对象的属性或方法按照某组规则或几个并行规则(不同用户证书等)需要限制访问时，在这种情况下，不是在原始对象中实现访问控制而是在他的使用中不变或不知道任何限制，并且他被包装在一个访问控制修饰对象中，这个对象能够对允许的原始对象的接口子集服务。&lt;/p&gt;
+&lt;h2 id=&#34;应用&#34;&gt;应用&lt;/h2&gt;
+&lt;p&gt;Java IO 流为典型的装饰模式。&lt;/p&gt;
+&lt;h2 id=&#34;java&#34;&gt;Java&lt;/h2&gt;
+&lt;p&gt;这个JAVA示例使用window/scrolling情境。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;// The Window interface class
+public interface Window {
+	public void draw(); // Draws the Window
+	public String getDescription(); // Returns a description of the Window
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;// implementation of a simple Window without any scrollbars
+public class SimpleWindow implements Window {
+	public void draw() {
+		// Draw window
+	}
+
+	public String getDescription() {
+		return &amp;#34;simple window&amp;#34;;
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;以下类包含所有Window类的decorator，以及修饰类本身。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>结构型模式-桥接模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/bridge-pattern/</link>
+      <pubDate>Sat, 24 Aug 2019 21:46:01 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/bridge-pattern/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;桥接模式&#34;&gt;桥接模式&lt;/h2&gt;
+&lt;p&gt;桥接模式是软件设计模式中最复杂的模式之一，它把事物对象和其具体行为、具体特征分离开来，使它们可以各自独立的变化。事物对象仅是一个抽象的概念。如“圆形”、“三角形”归于抽象的“形状”之下，而“画圆”、“画三角”归于实现行为的“画图”类之下，然后由“形状”调用“画图”。&lt;/p&gt;
+&lt;h2 id=&#34;java&#34;&gt;Java&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/** &amp;#34;Implementor&amp;#34; */
+interface DrawingAPI
+{
+    public void drawCircle(double x, double y, double radius);
+}
+
+/** &amp;#34;ConcreteImplementor&amp;#34; 1/2 */
+class DrawingAPI1 implements DrawingAPI
+{
+   public void drawCircle(double x, double y, double radius)
+   {
+        System.out.printf(&amp;#34;API1.circle at %f:%f radius %f\n&amp;#34;, x, y, radius);
+   }
+}
+
+/** &amp;#34;ConcreteImplementor&amp;#34; 2/2 */
+class DrawingAPI2 implements DrawingAPI
+{
+   public void drawCircle(double x, double y, double radius)
+   {
+        System.out.printf(&amp;#34;API2.circle at %f:%f radius %f\n&amp;#34;, x, y, radius);
+   }
+}
+
+/** &amp;#34;Abstraction&amp;#34; */
+interface Shape
+{
+   public void draw();                                            // low-level
+   public void resizeByPercentage(double pct);     // high-level
+}
+
+/** &amp;#34;Refined Abstraction&amp;#34; */
+class CircleShape implements Shape
+{
+   private double x, y, radius;
+   private DrawingAPI drawingAPI;
+   public CircleShape(double x, double y, double radius, DrawingAPI drawingAPI)
+   {
+       this.x = x;  this.y = y;  this.radius = radius;
+       this.drawingAPI = drawingAPI;
+   }
+
+   // low-level i.e. Implementation specific
+   public void draw()
+   {
+        drawingAPI.drawCircle(x, y, radius);
+   }   
+   // high-level i.e. Abstraction specific
+   public void resizeByPercentage(double pct)
+   {
+        radius *= pct;
+   }
+}
+
+/** &amp;#34;Client&amp;#34; */
+class BridgePattern {
+   public static void main(String[] args)
+   {
+       Shape[] shapes = new Shape[2];
+       shapes[0] = new CircleShape(1, 2, 3, new DrawingAPI1());
+       shapes[1] = new CircleShape(5, 7, 11, new DrawingAPI2());
+
+       for (Shape shape : shapes)
+       {
+           shape.resizeByPercentage(2.5);
+           shape.draw();
+       }
+   }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;运行结果：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>结构型模式-适配器模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/adapter-pattern/</link>
+      <pubDate>Sat, 24 Aug 2019 21:12:02 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/adapter-pattern/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;适配器模式&#34;&gt;适配器模式&lt;/h2&gt;
+&lt;p&gt;在设计模式中，适配器模式（英语：adapter pattern）有时候也称包装样式或者包装(wrapper)。将一个类的接口转接成用户所期待的。一个适配使得因接口不兼容而不能在一起工作的类能在一起工作，做法是将类自己的接口包裹在一个已存在的类中。&lt;/p&gt;
+&lt;h2 id=&#34;结构&#34;&gt;结构&lt;/h2&gt;
+&lt;p&gt;有两种类型的适配器模式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;对象适配器模式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在这种适配器模式中，适配器容纳一个它包裹的类的实例。在这种情况下，适配器调用被包裹对象的物理实体。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;类适配器模式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这种适配器模式下，适配器继承自已实现的类（一般多重继承）。&lt;/p&gt;
+&lt;h1 id=&#34;例子&#34;&gt;例子&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Target&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;定义Client使用的与特定领域相关的接口。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public interface Target {
+    void adapteeMethod();
+    void adapterMethod();
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Adaptee&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;定义一个已经存在的接口，这个接口需要适配。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class Adaptee {
+    public void adapteeMethod(){
+        System.out.println(&amp;#34;Adaptee method&amp;#34;);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Adapter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;对Adaptee的接口与Target接口进行适配&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class Adapter implements Target{
+
+    private Adaptee adaptee;
+
+    public Adapter(Adaptee adaptee){
+        this.adaptee=adaptee;
+    }
+
+    @Override
+    public void adapteeMethod() {
+        adaptee.adapteeMethod();
+    }
+
+    @Override
+    public void adapterMethod() {
+        System.out.println(&amp;#34;Adapter method&amp;#34;);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Client&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;与符合Target接口的对象协同。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class Test {
+    public static void main(String[] args) {
+        Target target = new Adapter(new Adaptee());
+        target.adapteeMethod();
+        target.adapterMethod();
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;运行结果：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>创建型模式-原型模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/prototype/</link>
+      <pubDate>Sat, 24 Aug 2019 18:43:05 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/prototype/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;原型模式&#34;&gt;原型模式&lt;/h2&gt;
+&lt;p&gt;原型模式是创建型模式的一种，其特点在于通过“复制”一个已经存在的实例来返回新的实例,而不是新建实例。被复制的实例就是我们所称的“原型”，这个原型是可定制的。&lt;/p&gt;
+&lt;p&gt;原型模式多用于创建复杂的或者耗时的实例，因为这种情况下，复制一个已经存在的实例使程序运行更高效；或者创建值相等，只是命名不一样的同类数据。&lt;/p&gt;
+&lt;h2 id=&#34;java&#34;&gt;Java&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/** Prototype Class **/
+public class Cookie implements Cloneable {
+
+   public Object clone() throws CloneNotSupportedException
+   {
+       //In an actual implementation of this pattern you would now attach references to
+       //the expensive to produce parts from the copies that are held inside the prototype.
+       return (Cookie) super.clone();
+   }
+}
+
+/** Concrete Prototypes to clone **/
+public class CoconutCookie extends Cookie { }
+
+/** Client Class**/
+public class CookieMachine
+{
+
+  private Cookie cookie;//cookie必须是可复制的
+
+    public CookieMachine(Cookie cookie) {
+        this.cookie = cookie;
+    }
+
+   public Cookie makeCookie()
+   {
+       try
+       {
+           return (Cookie) cookie.clone();
+       } catch (CloneNotSupportedException e)
+       {
+           e.printStackTrace();
+       }
+       return null;
+   }
+
+
+    public static void main(String args[]){
+        Cookie tempCookie =  null;
+        Cookie prot = new CoconutCookie();
+        CookieMachine cm = new CookieMachine(prot); //设置原型
+        for(int i=0; i&amp;lt;100; i++)
+            tempCookie = cm.makeCookie();//通过复制原型返回多个cookie
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;例子&#34;&gt;例子&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Prototype&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;声明一个克隆自身的接口&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>创建型模式-单例模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/single-case-pattern/</link>
+      <pubDate>Fri, 23 Aug 2019 17:53:58 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/single-case-pattern/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;单例模式&#34;&gt;单例模式&lt;/h2&gt;
+&lt;p&gt;单例模式，也叫单子模式，是一种常用的软件设计模式。在应用这个模式时，单例对象的类必须保证只有一个实例存在。许多时候整个系统只需要拥有一个的全局对象，这样有利于我们协调系统整体的行为。比如在某个服务器程序中，该服务器的配置信息存放在一个文件中，这些配置数据由一个单例对象统一读取，然后服务进程中的其他对象再通过这个单例对象获取这些配置信息。这种方式简化了在复杂环境下的配置管理。&lt;/p&gt;
+&lt;p&gt;实现单例模式的思路是：一个类能返回对象一个引用(永远是同一个)和一个获得该实例的方法（必须是静态方法，通常使用getInstance这个名称）；当我们调用这个方法时，如果类持有的引用不为空就返回这个引用，如果类保持的引用为空就创建该类的实例并将实例的引用赋予该类保持的引用；同时我们还将该类的构造函数定义为私有方法，这样其他处的代码就无法通过调用该类的构造函数来实例化该类的对象，只有通过该类提供的静态方法来得到该类的唯一实例。&lt;/p&gt;
+&lt;p&gt;单例模式在多线程的应用场合下必须小心使用。如果当唯一实例尚未创建时，有两个线程同时调用创建方法，那么它们同时没有检测到唯一实例的存在，从而同时各自创建了一个实例，这样就有两个实例被构造出来，从而违反了单例模式中实例唯一的原则。 解决这个问题的办法是为指示类是否已经实例化的变量提供一个互斥锁(虽然这样会降低效率)。&lt;/p&gt;
+&lt;h2 id=&#34;构建方式&#34;&gt;构建方式&lt;/h2&gt;
+&lt;p&gt;通常单例模式在Java语言中，有两种构建方式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;懒汉方式。指全局的单例实例在第一次被使用时构建。&lt;/li&gt;
+&lt;li&gt;饿汉方式。指全局的单例实例在类装载时构建。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;java&#34;&gt;Java&lt;/h2&gt;
+&lt;p&gt;在Java语言中，单例模式(饿汉模式)应用的例子如下述代码所示：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class Singleton {
+  private static final Singleton INSTANCE = new Singleton();
+
+  // Private constructor suppresses
+  // default public constructor
+  private Singleton() {};
+
+  public static Singleton getInstance() {
+      return INSTANCE;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;在Java编程语言中，单例模式(懒汉模式)应用的例子如下述代码所示 (此种方法只能用在JDK5及以后版本(注意 INSTANCE 被声明为 volatile)，之前的版本使用“双重检查锁”会发生非预期行为)：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class Singleton {
+    private static volatile Singleton INSTANCE = null;
+
+    // Private constructor suppresses
+    // default public constructor
+    private Singleton() {};
+
+    //Thread safe and performance  promote
+    public static  Singleton getInstance() {
+        if(INSTANCE == null){
+             synchronized(Singleton.class){
+                 // When more than two threads run into the first null check same time,
+                 // to avoid instanced more than one time, it needs to be checked again.
+                 if(INSTANCE == null){
+                     INSTANCE = new Singleton();
+                  }
+              }
+        }
+        return INSTANCE;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;例子&#34;&gt;例子&lt;/h1&gt;
+&lt;p&gt;Singleton&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>创建型模式-建造者模式</title>
+      <link>https://zhangxiaofeng05.github.io/posts/builder-pattern/</link>
+      <pubDate>Fri, 23 Aug 2019 16:48:38 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/builder-pattern/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;生成器模式&#34;&gt;生成器模式&lt;/h2&gt;
+&lt;p&gt;生成器模式（英：Builder Pattern）是一种设计模式，又名：建造模式，是一种对象构建模式。它可以将复杂对象的建造过程抽象出来（抽象类别），使这个抽象过程的不同实现方法可以构造出不同表现（属性）的对象。&lt;/p&gt;
+&lt;h2 id=&#34;适用性&#34;&gt;适用性&lt;/h2&gt;
+&lt;p&gt;在以下情况使用生成器模式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;当创建复杂对象的算法应该独立于该对象的组成部分以及它们的装配方式时；&lt;/li&gt;
+&lt;li&gt;当构造过程必须允许被构造的对象有不同的表示时。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;参与者&#34;&gt;参与者&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Builder&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;为创建一个Product对象的各个部件指定抽象接口。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ConcreteBuilder&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;实现Builder的接口以构造和装配该产品的各个部件。&lt;/p&gt;
+&lt;p&gt;定义并明确它所创建的表示。&lt;/p&gt;
+&lt;p&gt;提供一个检索产品的接口&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Director&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;构造一个使用Builder接口的对象。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Product&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;表示被构造的复杂对象。ConcreateBuilder创建该产品的内部表示并定义它的装配过程。&lt;/p&gt;
+&lt;p&gt;包含定义组成部件的类，包括将这些部件装配成最终产品的接口。&lt;/p&gt;
+&lt;h2 id=&#34;协作&#34;&gt;协作&lt;/h2&gt;
+&lt;p&gt;客户创建Director对象，并用它所想要的Builder对象进行配置。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一旦产品部件被生成，导向器就会通知生成器。&lt;/li&gt;
+&lt;li&gt;生成器处理导向器的请求，并将部件添加到该产品中。&lt;/li&gt;
+&lt;li&gt;客户从生成器中检索产品。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;范例&#34;&gt;范例&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/** &amp;#34;Product&amp;#34; */
+class Pizza {
+  private String dough = &amp;#34;&amp;#34;;
+  private String sauce = &amp;#34;&amp;#34;;
+  private String topping = &amp;#34;&amp;#34;;
+
+  public void setDough (String dough)     { this.dough = dough; }
+  public void setSauce (String sauce)     { this.sauce = sauce; }
+  public void setTopping (String topping) { this.topping = topping; }
+}
+
+
+&amp;#39;&amp;#39;/** &amp;#34;Abstract Builder&amp;#34; */&amp;#39;&amp;#39;
+abstract class PizzaBuilder {
+  protected Pizza pizza;
+
+  public Pizza getPizza() { return pizza; }
+  public void createNewPizzaProduct() { pizza = new Pizza(); }
+
+  public abstract void buildDough();
+  public abstract void buildSauce();
+  public abstract void buildTopping();
+}
+
+/** &amp;#34;ConcreteBuilder&amp;#34; */
+class HawaiianPizzaBuilder extends PizzaBuilder {
+  public void buildDough()   { pizza.setDough(&amp;#34;cross&amp;#34;); }
+  public void buildSauce()   { pizza.setSauce(&amp;#34;mild&amp;#34;); }
+  public void buildTopping() { pizza.setTopping(&amp;#34;ham+pineapple&amp;#34;); }
+}
+
+/** &amp;#34;ConcreteBuilder&amp;#34; */
+class SpicyPizzaBuilder extends PizzaBuilder {
+  public void buildDough()   { pizza.setDough(&amp;#34;pan baked&amp;#34;); }
+  public void buildSauce()   { pizza.setSauce(&amp;#34;hot&amp;#34;); }
+  public void buildTopping() { pizza.setTopping(&amp;#34;pepperoni+salami&amp;#34;); }
+}
+
+
+&amp;#39;&amp;#39;/** &amp;#34;Director&amp;#34; */&amp;#39;&amp;#39;
+class Waiter {
+  private PizzaBuilder pizzaBuilder;
+
+  public void setPizzaBuilder (PizzaBuilder pb) { pizzaBuilder = pb; }
+  public Pizza getPizza() { return pizzaBuilder.getPizza(); }
+
+  public void constructPizza() {
+    pizzaBuilder.createNewPizzaProduct();
+    pizzaBuilder.buildDough();
+    pizzaBuilder.buildSauce();
+    pizzaBuilder.buildTopping();
+  }
+}
+
+/** A customer ordering a pizza. */
+class BuilderExample {
+  public static void main(String[] args) {
+    Waiter waiter = new Waiter();
+    PizzaBuilder hawaiian_pizzabuilder = new HawaiianPizzaBuilder();
+    PizzaBuilder spicy_pizzabuilder = new SpicyPizzaBuilder();
+
+    waiter.setPizzaBuilder ( hawaiian_pizzabuilder );
+    waiter.constructPizza();
+
+    Pizza pizza = waiter.getPizza();
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;例子&#34;&gt;例子&lt;/h1&gt;
+&lt;p&gt;Product&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>创建型模式-抽象工厂</title>
+      <link>https://zhangxiaofeng05.github.io/posts/abstract-factory/</link>
+      <pubDate>Mon, 19 Aug 2019 16:02:50 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/abstract-factory/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;抽象工厂&#34;&gt;抽象工厂&lt;/h2&gt;
+&lt;p&gt;抽象工厂模式（英语：Abstract factory pattern）是一种软件开发设计模式。抽象工厂模式提供了一种方式，可以将一组具有同一主题的单独的工厂封装起来。在正常使用中，客户端程序需要创建抽象工厂的具体实现，然后使用抽象工厂作为接口来创建这一主题的具体对象。客户端程序不需要知道（或关心）它从这些内部的工厂方法中获得对象的具体类型，因为客户端程序仅使用这些对象的通用接口。抽象工厂模式将一组对象的实现细节与他们的一般使用分离开来。
+举个例子来说，比如一个抽象工厂类叫做DocumentCreator（文档创建器），此类提供创建若干种产品的接口，包括createLetter()（创建信件）和createResume()（创建简历）。其中，createLetter()返回一个Letter（信件），createResume()返回一个Resume（简历）。系统中还有一些DocumentCreator的具体实现类，包括FancyDocumentCreator和ModernDocumentCreator。这两个类对DocumentCreator的两个方法分别有不同的实现，用来创建不同的“信件”和“简历”（用FancyDocumentCreator的实例可以创建FancyLetter和FancyResume，用ModernDocumentCreator的实例可以创建ModernLetter和ModernResume）。这些具体的“信件”和“简历”类均继承自抽象类，即Letter和Resume类。客户端需要创建“信件”或“简历”时，先要得到一个合适的DocumentCreator实例，然后调用它的方法。一个工厂中创建的每个对象都是同一个主题的（“fancy”或者“modern”）。客户端程序只需要知道得到的对象是“信件”或者“简历”，而不需要知道具体的主题，因此客户端程序从抽象工厂DocumentCreator中得到了Letter或Resume类的引用，而不是具体类的对象引用。
+“工厂”是创建产品（对象）的地方，其目的是将产品的创建与产品的使用分离。抽象工厂模式的目的，是将若干抽象产品的接口与不同主题产品的具体实现分离开。这样就能在增加新的具体工厂的时候，不用修改引用抽象工厂的客户端代码。&lt;/p&gt;
+&lt;p&gt;使用抽象工厂模式，能够在具体工厂变化的时候，不用修改使用工厂的客户端代码，甚至是在运行时。然而，使用这种模式或者相似的设计模式，可能给编写代码带来不必要的复杂性和额外的工作。正确使用设计模式能够抵消这样的“额外工作”&lt;/p&gt;
+&lt;h2 id=&#34;定义&#34;&gt;定义&lt;/h2&gt;
+&lt;p&gt;抽象工厂模式的实质是“提供接口，创建一系列相关或独立的对象，而不指定这些对象的具体类。&lt;/p&gt;
+&lt;h2 id=&#34;使用&#34;&gt;使用&lt;/h2&gt;
+&lt;p&gt;具体的工厂决定了创建对象的具体类型，而且工厂就是对象实际创建的地方（比如在C++中，用“new”操作符创建对象）。然而，抽象工厂只返回一个指向创建的对象的抽象引用（或指针）。
+这样，客户端程序调用抽象工厂引用的方法，由具体工厂完成对象创建，然后客户端程序得到的是抽象产品的引用。如此使客户端代码与对象的创建分离开来。
+因为工厂仅仅返回一个抽象产品的引用（或指针），所以客户端程序不知道（也不会牵绊于）工厂创建对象的具体类型。然而，工厂知道具体对象的类型；例如，工厂可能从配置文件中读取某种类型。这时，客户端没有必要指定具体类型，因为已经在配置文件中指定了。通常，这意味着：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;客户端代码不知道任何具体类型，也就没必要引入任何相关的头文件或类定义。客户端代码仅仅处理抽象类型。工厂确实创建了具体类型的对象，但是客户端代码仅使用这些对象的抽象接口来访问它们。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果要增加一个具体类型，只需要修改客户端代码使用另一个工厂即可，而且这个修改通常只是一个文件中的一行代码。不同的工厂创建不同的具体类型的对象，但是和以前一样返回一个抽象类型的引用（或指针），因此客户端代码的其他部分不需要任何改动。这样比修改客户端代码创建新类型的对象简单多了。如果是后者的话，需要修改代码中每一个创建这种对象的地方（而且需要注意的是，这些地方都知道对象的具体类型，而且需要引入具体类型的头文件或类定义）。如果所有的工厂对象都存储在全局的单例对象中，所有的客户端代码到这个单例中访问需要的工厂，那么，更换工厂就非常简单了，仅仅需要更改这个单例对象即可。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;代码举例&#34;&gt;代码举例&lt;/h2&gt;
+&lt;p&gt;假设我们有两种产品接口 Button 和 Border ，每一种产品都支持多种系列，比如 Mac 系列和 Windows 系列。这样每个系列的产品分别是 MacButton, WinButton, MacBorder, WinBorder 。为了可以在运行时刻创建一个系列的产品族，我们可以为每个系列的产品族创建一个工厂 MacFactory 和 WinFactory 。每个工厂都有两个方法 CreateButton 和 CreateBorder 并返回对应的产品，可以将这两个方法抽象成一个接口 AbstractFactory 。这样在运行时刻我们可以选择创建需要的产品系列。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public interface Button {}
+public interface Border {}
+
+//实现抽象类
+public class MacButton implements Button {}
+public class MacBorder implements Border {}
+
+public class WinButton implements Button {}
+public class WinBorder implements Border {}
+
+//接着实现工厂
+public class MacFactory {
+	public static Button createButton() {
+	    return new MacButton();
+	}
+	public static Border createBorder() {
+	    return new MacBorder();
+	}
+}
+
+public class WinFactory {
+	public static Button createButton() {
+	    return new WinButton();
+	}
+	public static Border createBorder() {
+	    return new WinBorder();
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;适用性&#34;&gt;适用性&lt;/h2&gt;
+&lt;p&gt;在以下情况可以考虑使用抽象工厂模式：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>创建型模式-工厂方法</title>
+      <link>https://zhangxiaofeng05.github.io/posts/factory-method/</link>
+      <pubDate>Mon, 19 Aug 2019 15:56:21 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/factory-method/</guid>
+      <description>&lt;h1 id=&#34;维基百科&#34;&gt;维基百科&lt;/h1&gt;
+&lt;h2 id=&#34;工厂方法&#34;&gt;工厂方法&lt;/h2&gt;
+&lt;p&gt;工厂方法模式（英语：Factory method pattern）是一种实现了“工厂”概念的面向对象设计模式。就像其他创建型模式一样，它也是处理在不指定对象具体类型的情况下创建对象的问题。工厂方法模式的实质是“定义一个创建对象的接口，但让实现这个接口的类来决定实例化哪个类。工厂方法让类的实例化推迟到子类中进行。”
+创建一个对象常常需要复杂的过程，所以不适合包含在一个复合对象中。创建对象可能会导致大量的重复代码，可能会需要复合对象访问不到的信息，也可能提供不了足够级别的抽象，还可能并不是复合对象概念的一部分。工厂方法模式通过定义一个单独的创建对象的方法来解决这些问题。由子类实现这个方法来创建具体类型的对象。
+对象创建中的有些过程包括决定创建哪个对象、管理对象的生命周期，以及管理特定对象的创建和销毁的概念。&lt;/p&gt;
+&lt;h2 id=&#34;工厂&#34;&gt;工厂&lt;/h2&gt;
+&lt;p&gt;在面向对象程序设计中，工厂通常是一个用来创建其他对象的对象。工厂是构造方法的抽象，用来实现不同的分配方案。&lt;/p&gt;
+&lt;p&gt;工厂对象通常包含一个或多个方法，用来创建这个工厂所能创建的各种类型的对象。这些方法可能接收参数，用来指定对象创建的方式，最后返回创建的对象。
+有时，特定类型对象的控制过程比简单地创建一个对象更复杂。在这种情况下，工厂对象就派上用场了。工厂对象可能会动态地创建产品类的对象，或者从对象池中返回一个对象，或者对所创建的对象进行复杂的配置，或者应用其他的操作。
+这些类型的对象很有用。几个不同的设计模式都应用了工厂的概念，并可以使用在很多语言中。例如，在《设计模式》一书中，像工厂方法模式、抽象工厂模式、生成器模式，甚至是单例模式都应用了工厂的概念。&lt;/p&gt;
+&lt;h2 id=&#34;代码举例&#34;&gt;代码举例&lt;/h2&gt;
+&lt;p&gt;例如，有一个Button类表示按钮，另有它的两个子类WinButton和MacButton分别代表Windows和Mac风格的按钮，那么这几个类和用于创建它们的工厂类在Java中可以如下实现&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;//Button
+class Button{/* ...*/}
+class WinButton extends Button{/* ...*/}
+class MacButton extends Button{/* ...*/}
+
+//他们的工厂类
+interface ButtonFactory{
+    abstract Button createButton();
+}
+class WinButtonFactory implements ButtonFactory{
+    Button createButton(){
+        return new WinButton();
+    }
+}
+class MacButtonFactory implements ButtonFactory{
+    Button createButton(){
+        return new MacButton();
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;简单工厂&#34;&gt;简单工厂&lt;/h2&gt;
+&lt;p&gt;普通的工厂方法模式通常伴随着对象的具体类型与工厂具体类型的一一对应，客户端代码根据需要选择合适的具体类型工厂使用。然而，这种选择可能包含复杂的逻辑。这时，可以创建一个单一的工厂类，用以包含这种选择逻辑，根据参数的不同选择实现不同的具体对象。这个工厂类不需要由每个具体产品实现一个自己的具体的工厂类，所以可以将工厂方法设置为静态方法。 而且，工厂方法封装了对象的创建过程。如果创建过程非常复杂（比如依赖于配置文件或用户输入），工厂方法就非常有用了。 比如，一个程序要读取图像文件。程序支持多种图像格式，每种格式都有一个对应的ImageReader类用来读取图像。程序每次读取图像时，需要基于文件信息创建合适类型的ImageReader。这个选择逻辑可以包装在一个简单工厂中：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class ImageReaderFactory {
+    public static ImageReader imageReaderFactoryMethod(InputStream is) {
+        ImageReader product = null;
+
+        int imageType = determineImageType(is);
+        switch (imageType) {
+            case ImageReaderFactory.GIF:
+                product = new GifReader(is);
+            case ImageReaderFactory.JPEG:
+                product = new JpegReader(is);
+            //...
+        }
+        return product;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;适用性&#34;&gt;适用性&lt;/h2&gt;
+&lt;p&gt;下列情况可以考虑使用工厂方法模式：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>java接口回调</title>
+      <link>https://zhangxiaofeng05.github.io/posts/interface-callback/</link>
+      <pubDate>Sat, 17 Aug 2019 23:20:11 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/interface-callback/</guid>
+      <description>&lt;p&gt;回调一般用于层间协作，上层将本层函数安装在下层，这个函数就是回调，而下层在一定条件下触发回调。例如作为一个驱动，是一个底层，他在收到一个数据时，除了完成本层的处理工作外，还将进行回调，将这个数据交给上层应用层来做进一步处理，这在分层的数据通信中很普遍。&lt;/p&gt;
+&lt;p&gt;例如老板A对员工B说，我现在交给你一个任务，并且我把我的电话号码给你，你一旦完成任务就给我打电话。&lt;/p&gt;
+&lt;p&gt;1.创建一个回调接口&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/**
+ * 一个回调接口
+ */
+public interface CallBack {
+    public void doEvent();
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2.创建回调接口的实现类，此例中，员工干完活后还要干什么事情是老板说了算的。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/**
+ * 回调接口的实现类
+ */
+public class Boss implements CallBack{
+
+    @Override
+    public void doEvent() {
+        System.out.println(&amp;#34;打电话给老板，告知已完成工作了&amp;#34;);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3.创建控制类，也就是本例中的员工对象，他要持有老板的地址(即回调接口)&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/**
+ * 控制类，也就是本例中的员工对象，他要持有老板的地址(即回调接口)
+ */
+public class Employee {
+    CallBack callBack;
+    public Employee(CallBack callBack){
+        this.callBack=callBack;
+    }
+
+    public void doWork(){
+        System.out.println(&amp;#34;玩命干活中&amp;#34;);
+        callBack.doEvent();
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;4.测试类&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/**
+ * 测试类
+ */
+public class TestMain {
+    public static void main(String[] args) {
+        Employee employee = new Employee(new Boss());
+        employee.doWork();
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;运行结果：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>mysql高级排序</title>
+      <link>https://zhangxiaofeng05.github.io/posts/mysql-sort/</link>
+      <pubDate>Sat, 17 Aug 2019 09:31:27 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/mysql-sort/</guid>
+      <description>&lt;h2 id=&#34;表和数据&#34;&gt;表和数据&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;CREATE TABLE `sqltest` (
+  `id` int(11) NOT NULL,
+  `name` varchar(45) NOT NULL,
+  `age` int(11) NOT NULL,
+  `score` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO `sqltest` VALUES (1,&amp;#39;土豆&amp;#39;,18,100),(2,&amp;#39;地瓜&amp;#39;,18,100),(3,&amp;#39;李斯&amp;#39;,20,60),(4,&amp;#39;韩非&amp;#39;,20,60),(5,&amp;#39;荀子&amp;#39;,50,90),(6,&amp;#39;君莫笑&amp;#39;,22,80),(7,&amp;#39;寒烟柔&amp;#39;,21,80),(8,&amp;#39;包子&amp;#39;,26,30),(9,&amp;#39;剑圣&amp;#39;,30,0);
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;排名row_number&#34;&gt;排名(row_number)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;按分数排序，拿到名次(成绩相同排名不并列)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;SQL:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;use sqltest;
+select st.*,(@rownum:=@rownum+1) as rownum 
+from sqltest st,(select @rownum:=0) potato 
+order by score;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;结果：
+&lt;img loading=&#34;lazy&#34; src=&#34;https://zhangxiaofeng05.github.io/mypng/4.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;解释：设置一个伪列@rownum，从1开始计数，依次加1;&lt;code&gt;(select @rownum:=0) potato &lt;/code&gt;,一定要起别名&lt;/p&gt;
+&lt;p&gt;注意：这是从小到大排；如果需要从大到小的话，&lt;code&gt;order by score desc&lt;/code&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;排名rank&#34;&gt;排名(Rank)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;按分数排序，拿到名次(成绩相同排名并列，有跳数,比如2个100，1个99，排名就是1,1,3)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;SQL:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;use sqltest;
+select st.*,@rownum:=@rownum+1 as rownum,
+@curnum:=(case when @prescore=st.score then @curnum else @rownum end) as ScoreRank,
+@prescore:=st.score as prescore
+from sqltest st,(select @rownum:=0,@curnum:=0,@prescore:=null) potato
+order by st.score desc;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;结果：
+&lt;img loading=&#34;lazy&#34; src=&#34;https://zhangxiaofeng05.github.io/mypng/5.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TCP、UDP简单聊天</title>
+      <link>https://zhangxiaofeng05.github.io/posts/java-simple-chat/</link>
+      <pubDate>Tue, 30 Jul 2019 16:10:55 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/java-simple-chat/</guid>
+      <description>&lt;h1 id=&#34;tcp&#34;&gt;TCP&lt;/h1&gt;
+&lt;p&gt;客户端套接字：Socket
+服务端套接字：ServerSocket
+TCP（传输控制协议）一种基于连接的通信协议。可靠传输&lt;/p&gt;
+&lt;h2 id=&#34;server&#34;&gt;Server&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;package com.tcp;
+
+import java.io.*;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+/**
+ * 服务器端
+ */
+public class Server {
+    public static void main(String[] args) {
+        ServerSocket serverSocket = null;
+        try {
+            serverSocket = new ServerSocket(12345);
+            System.out.println(&amp;#34;服务启动：&amp;#34;+serverSocket.getInetAddress().getHostAddress()+&amp;#34;:&amp;#34;+serverSocket.getLocalPort());
+            Socket accept = serverSocket.accept();
+            System.out.println(&amp;#34;客户端：&amp;#34;+accept.getInetAddress().getHostAddress()+&amp;#34;:&amp;#34;+accept.getLocalPort());
+            BufferedReader sis = new BufferedReader(new InputStreamReader(System.in));
+            BufferedReader is = new BufferedReader(new InputStreamReader(accept.getInputStream()));
+            PrintWriter os = new PrintWriter(new OutputStreamWriter(accept.getOutputStream()));
+            while (true){
+                String line;
+                if ((line=is.readLine())!=null){
+                    System.out.println(&amp;#34;收到客户端：&amp;#34;+line);
+                    if (line.equals(&amp;#34;bye&amp;#34;)){
+                        break;
+                    }else {
+                        os.println(sis.readLine());
+                        os.flush();
+                    }
+                }
+            }
+            is.close();
+            os.close();
+            accept.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }finally {
+            try {
+                serverSocket.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;client&#34;&gt;Client&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;package com.tcp;
+
+import java.io.*;
+import java.net.Socket;
+
+/**
+ * 客户端
+ */
+public class Client {
+    public static void main(String[] args) {
+        try {
+            Socket socket = new Socket(&amp;#34;127.0.0.1&amp;#34;,12345);
+            BufferedReader sis = new BufferedReader(new InputStreamReader(System.in));
+            BufferedReader is = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            PrintWriter os = new PrintWriter(new OutputStreamWriter(socket.getOutputStream()));
+            String line;
+            while (true){
+                if ((line=sis.readLine())!=null){
+                    if (&amp;#34;bye&amp;#34;.equals(line)){
+                        System.exit(0);
+                    }
+                    os.println(line);
+                    os.flush();
+                }
+                String readLine = is.readLine();
+                System.out.println(&amp;#34;收到服务端：&amp;#34;+readLine);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;udp&#34;&gt;UDP&lt;/h1&gt;
+&lt;p&gt;UDP采用Datagram（数据报）传输，数据包是一种尽力而为的传送数据的方式，它只是 把数据的目的地记录在数据包中，然后就直接放在网络上，系统不保证数据是否能安全到达，或者什么时候可以送到，它并不保证传送质量。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>反射</title>
+      <link>https://zhangxiaofeng05.github.io/posts/java-relfect/</link>
+      <pubDate>Sun, 28 Jul 2019 21:36:31 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/java-relfect/</guid>
+      <description>&lt;h1 id=&#34;javalangclass&#34;&gt;java.lang.Class&lt;T&gt;&lt;/h1&gt;
+&lt;p&gt;创建一个类，通过编译(javac.exe),生成对应的.class文件。之后使用java.exe加载(JVM的类加载器完成)，  此.class文件加载到内存以后，就是一个运行时类，存在缓冲区。那么这个运行时类本身就是一个Class的实例!
+一个运行时类只加载一次。&lt;/p&gt;
+&lt;h2 id=&#34;举例&#34;&gt;举例&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
+public class RelfectTest{
+    public static void main(String[] args) throws IllegalAccessException, InstantiationException, NoSuchFieldException, NoSuchMethodException, InvocationTargetException {
+        Class&amp;lt;Person&amp;gt; personClass = Person.class;
+        //通过反射创建对象
+        Person person = personClass.newInstance();
+        System.out.println(person);
+        //通过反射赋值-------public属性
+        Field name = personClass.getField(&amp;#34;name&amp;#34;);
+        name.set(person,&amp;#34;土豆&amp;#34;);
+        System.out.println(person);
+        //通过反射赋值------private或者默认(不写)属性
+        Field age = personClass.getDeclaredField(&amp;#34;age&amp;#34;);
+        age.setAccessible(true);
+        age.set(person,18);
+        System.out.println(person);
+        //通过反射调用指定方法--没有参数
+        Method show = personClass.getMethod(&amp;#34;show&amp;#34;);
+        show.invoke(person);
+        //通过反射调用指定方法--有参数
+        Method say = personClass.getMethod(&amp;#34;say&amp;#34;, String.class);
+        say.invoke(person,&amp;#34;welcome&amp;#34;);
+    }
+}
+class Person{
+    public String name;
+    private int age;
+
+    public Person() {
+    }
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return name+&amp;#34;----&amp;#34;+age;
+    }
+
+    public void show(){
+        System.out.println(&amp;#34;Person类的show...&amp;#34;);
+    }
+
+    public void say(String word){
+        System.out.println(name+&amp;#34; &amp;#34;+word);
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;拓展&#34;&gt;拓展&lt;/h2&gt;
+&lt;p&gt;Person类&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>==和equals和hashCode</title>
+      <link>https://zhangxiaofeng05.github.io/posts/equals-hashcode/</link>
+      <pubDate>Sun, 28 Jul 2019 14:06:50 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/equals-hashcode/</guid>
+      <description>&lt;h1 id=&#34;和equals&#34;&gt;==和equals&lt;/h1&gt;
+&lt;h2 id=&#34;heading&#34;&gt;==&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;基本类型：比较的是值是否相同；&lt;/li&gt;
+&lt;li&gt;引用类型：比较的是内存地址是否相同(是否是同一对象)；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;equals&#34;&gt;equals&lt;/h2&gt;
+&lt;p&gt;Object类中的equals方法&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public boolean equals(Object obj) {
+    return (this == obj);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;String类重写了equals方法&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public boolean equals(Object anObject) {
+    if (this == anObject) {
+        return true;
+    }
+    if (anObject instanceof String) {
+        String anotherString = (String)anObject;
+        int n = value.length;
+        if (n == anotherString.value.length) {
+            char v1[] = value;
+            char v2[] = anotherString.value;
+            int i = 0;
+            while (n-- != 0) {
+                if (v1[i] != v2[i])
+                    return false;
+                i++;
+            }
+            return true;
+        }
+    }
+    return false;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;举例：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>java IO流</title>
+      <link>https://zhangxiaofeng05.github.io/posts/java-io/</link>
+      <pubDate>Thu, 25 Jul 2019 15:38:45 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/java-io/</guid>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://zhangxiaofeng05.github.io/mypng/3.png&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;从控制台输入输出&#34;&gt;从控制台输入输出&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.util.Scanner;
+
+public class IoTest {
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        System.out.println(n);
+
+        String s = sc.next();
+        System.out.println(s);
+
+        String line = sc.nextLine();
+        System.out.println(line);//从控制台输出
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;字节流&#34;&gt;字节流&lt;/h1&gt;
+&lt;h2 id=&#34;fileoutputstream&#34;&gt;FileOutputStream&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
+
+public class IoTest {
+    public static void main(String args[]){
+        File file = new File(&amp;#34;aa.txt&amp;#34;);
+        try {
+            //FileOutputStream(File,boolean) 是否把内容追加
+            OutputStream out = new FileOutputStream(file);
+            String str = &amp;#34;Hello World&amp;#34;;
+            byte[] b=str.getBytes();
+            out.write(b);
+            out.close();
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;fileinputstream&#34;&gt;FileInputStream&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+
+public class IoTest {
+    public static void main(String args[]){
+        try {
+            File file = new File(&amp;#34;E:&amp;#34;+File.separator+&amp;#34;tt.txt&amp;#34;);
+            InputStream is = new FileInputStream(file);
+//            byte[] bytes = new byte[1024];
+            //也可以这样
+            byte[] bytes = new byte[(int) file.length()];
+            is.read(bytes);
+            System.out.println(new String(bytes));
+            //关闭流
+            is.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;bufferedoutputstream&#34;&gt;BufferedOutputStream&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.io.*;
+
+public class IoTest {
+    public static void main(String args[]){
+        File file = new File(&amp;#34;aa.txt&amp;#34;);
+        try {
+            OutputStream out = new FileOutputStream(file);
+            BufferedOutputStream bos = new BufferedOutputStream(out);
+            byte[] bytes = &amp;#34;土豆，土豆，呼叫土豆&amp;#34;.getBytes();
+            bos.write(bytes);
+
+            //刷新缓存
+            bos.flush();
+
+            bos.close();
+            out.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;bufferedinputstream&#34;&gt;BufferedInputStream&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.io.*;
+
+public class IoTest {
+    public static void main(String args[]){
+        try {
+            File file = new File(&amp;#34;E:&amp;#34;+File.separator+&amp;#34;tt.txt&amp;#34;);
+            InputStream is = new FileInputStream(file);
+            BufferedInputStream bis = new BufferedInputStream(is);
+            byte[] bytes = new byte[(int) file.length()];
+            bis.read(bytes);
+
+            System.out.println(new String(bytes));
+
+            bis.close();
+            is.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;字符流&#34;&gt;字符流&lt;/h1&gt;
+&lt;h2 id=&#34;filewriter&#34;&gt;FileWriter&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Writer;
+
+public class IoTest {
+    public static void main(String args[]){
+        try {
+            File file = new File(&amp;#34;aa.txt&amp;#34;);
+            Writer writer = new FileWriter(file);
+            writer.write(&amp;#34;土豆。。。\n&amp;#34;);
+            writer.write(&amp;#34;地瓜，对不起&amp;#34;);
+
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;filereader&#34;&gt;FileReader&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.Reader;
+
+public class IoTest {
+    public static void main(String args[]){
+        try {
+            File file = new File(&amp;#34;aa.txt&amp;#34;);
+            Reader reader = new FileReader(file);
+            char[] chars = new char[1024];
+            reader.read(chars);
+            System.out.println(new String(chars));
+
+            reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;转换流字节流转字符流&#34;&gt;转换流(字节流转字符流)&lt;/h1&gt;
+&lt;h2 id=&#34;outputstreamwriter&#34;&gt;OutputStreamWriter&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.io.*;
+
+public class IoTest {
+    public static void main(String args[]){
+        File file = new File(&amp;#34;aa.txt&amp;#34;);
+        try {
+            OutputStream out = new FileOutputStream(file);
+            OutputStreamWriter osw = new OutputStreamWriter(out);
+            osw.write(&amp;#34;这是字节流转成了字符流&amp;#34;);
+            String encoding = osw.getEncoding();
+            System.out.println(&amp;#34;文件的编码：&amp;#34;+encoding); //文件的编码：UTF8
+            osw.close();
+            out.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;inputstreamreader&#34;&gt;InputStreamReader&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.io.*;
+
+public class IoTest {
+    public static void main(String args[]){
+        try {
+            File file = new File(&amp;#34;aa.txt&amp;#34;);
+            InputStream is = new FileInputStream(file);
+            InputStreamReader isr = new InputStreamReader(is,&amp;#34;utf-8&amp;#34;);//指定编码
+            char[] chars = new char[1024];
+            isr.read(chars);
+            System.out.println(chars);
+
+            System.out.println(&amp;#34;编码：&amp;#34;+isr.getEncoding());
+
+            isr.close();
+            isr.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;字符缓冲流高效流&#34;&gt;字符缓冲流(高效流)&lt;/h1&gt;
+&lt;h2 id=&#34;bufferedwriter&#34;&gt;BufferedWriter&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.io.*;
+
+public class IoTest {
+    public static void main(String args[]){
+        File file = new File(&amp;#34;aa.txt&amp;#34;);
+        try {
+            OutputStream out = new FileOutputStream(file);
+            OutputStreamWriter osw = new OutputStreamWriter(out);
+            BufferedWriter bw = new BufferedWriter(osw);
+            bw.write(&amp;#34;hello 这是字符缓冲流&amp;#34;);
+            bw.newLine();
+            bw.write(&amp;#34;下一行&amp;#34;);
+
+            bw.close();
+            osw.close();
+            out.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;bufferedreader&#34;&gt;BufferedReader&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.io.*;
+
+public class IoTest {
+    public static void main(String args[]){
+        try {
+            File file = new File(&amp;#34;aa.txt&amp;#34;);
+            InputStream is = new FileInputStream(file);
+            InputStreamReader isr = new InputStreamReader(is,&amp;#34;utf-8&amp;#34;);
+            BufferedReader br = new BufferedReader(isr);
+            String str;
+
+            while ((str=br.readLine())!=null){
+                System.out.println(str);
+            }
+
+            br.close();
+            isr.close();
+            is.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;字节流与字符流的区别&#34;&gt;字节流与字符流的区别&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;字节流在操作的时候本身是不会用到缓冲区（内存）的，是与文件本身直接操作的，而字符流在操作的时候是使用到缓冲区的&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>java异常</title>
+      <link>https://zhangxiaofeng05.github.io/posts/java-exception/</link>
+      <pubDate>Thu, 25 Jul 2019 14:34:21 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/java-exception/</guid>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://zhangxiaofeng05.github.io/mypng/2.png&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;异常类型&#34;&gt;异常类型&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;检查性异常
+最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要打开一个不存在文件时，一个异常就发生了，这些异常在编译时不能被简单地忽略。&lt;/li&gt;
+&lt;li&gt;运行时异常
+运行时异常是可能被程序员避免的异常。与检查性异常相反，运行时异常可以在编译时被忽略(Throw)。&lt;/li&gt;
+&lt;li&gt;错误
+错误不是异常，而是脱离程序员控制的问题。错误在代码中通常被忽略。例如，当栈溢出时，一个错误就发生了，它们在编译也检查不到的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;异常类exception&#34;&gt;异常类Exception&lt;/h1&gt;
+&lt;h2 id=&#34;构造方法&#34;&gt;构造方法&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;public Exception()&lt;br&gt;
+构建一个新的异常，以 null作为其详细信息。&lt;/li&gt;
+&lt;li&gt;public Exception(String message)&lt;br&gt;
+使用指定的详细消息构造新的异常。&lt;/li&gt;
+&lt;li&gt;public Exception(String message, Throwable cause)&lt;br&gt;
+构造一个新的异常与指定的详细信息和原因。&lt;/li&gt;
+&lt;li&gt;public Exception(Throwable cause)&lt;br&gt;
+构造一个新的异常与指定原因。&lt;/li&gt;
+&lt;li&gt;protected Exception(String message, Throwable cause,boolean enableSuppression,boolean writableStackTrace)&lt;br&gt;
+构造一个新的异常，其中包含指定的详细消息，启用或禁用抑制功能，启用或禁用可写栈跟踪。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;常用方法&#34;&gt;常用方法&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;public String getMessage()&lt;br&gt;
+返回关于发生的异常的详细信息。这个消息在Throwable 类的构造函数中初始化了。&lt;/li&gt;
+&lt;li&gt;public Throwable getCause()&lt;br&gt;
+返回一个Throwable 对象代表异常原因。&lt;/li&gt;
+&lt;li&gt;public String toString()&lt;br&gt;
+使用getMessage()的结果返回类的串级名字。&lt;/li&gt;
+&lt;li&gt;public void &lt;strong&gt;printStackTrace&lt;/strong&gt;()&lt;br&gt;
+打印toString()结果和栈层次到System.err，即错误输出流。&lt;/li&gt;
+&lt;li&gt;public StackTraceElement [] getStackTrace()&lt;br&gt;
+返回一个包含堆栈层次的数组。下标为0的元素代表栈顶，最后一个元素代表方法调用堆栈的栈底。&lt;/li&gt;
+&lt;li&gt;public Throwable fillInStackTrace()&lt;br&gt;
+用当前的调用栈层次填充Throwable 对象栈层次，添加到栈层次任何先前信息中。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;处理异常&#34;&gt;处理异常&lt;/h1&gt;
+&lt;h2 id=&#34;try-catch&#34;&gt;try-catch&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class MyException extends Exception{
+    public static void main(String[] args) {
+        try {
+            int i=1/0;
+        }catch (ArithmeticException e){
+            e.printStackTrace();
+        }
+        catch (Exception e){
+            e.printStackTrace();
+            System.out.println(&amp;#34;这是总异常&amp;#34;);
+        }finally {
+            System.out.println(&amp;#34;无论有没有异常，都会执行。比如用于关闭数据库的连接&amp;#34;);
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;throws&#34;&gt;throws&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class MyException extends Exception{
+    public static void main(String[] args) {
+        MyException myException = new MyException();
+        try {
+            myException.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void show() throws Exception{//抛出去，谁调用谁处理
+        int i=1/0;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;注意事项&#34;&gt;注意事项&lt;/h2&gt;
+&lt;p&gt;throws在方法名后边
+catch 不能独立于 try 存在。
+在 try/catch 后面添加 finally 块并非强制性要求的。
+try 代码后不能既没 catch 块也没 finally 块。
+try, catch, finally 块之间不能添加任何代码。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Java中Date、SimpleDateFormat、Calendar</title>
+      <link>https://zhangxiaofeng05.github.io/posts/java-date-calender/</link>
+      <pubDate>Wed, 24 Jul 2019 17:14:47 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/java-date-calender/</guid>
+      <description>&lt;h2 id=&#34;jdk18&#34;&gt;jdk1.8&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+/**
+ * Java 语言的Date(日期)，Calendar(日历)，DateFormat(日期格式)组成了Java标准的一个基本但是非常重要的部分。
+ */
+public class StringTest {
+    public static void main(String[] args) throws ParseException {
+        Date currentTime = new Date();
+        System.out.println(currentTime);
+        //设置时间格式
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(&amp;#34;yyyy-MM-dd HH:mm:ss&amp;#34;);
+        System.out.println(simpleDateFormat.format(currentTime));
+
+        SimpleDateFormat year = new SimpleDateFormat(&amp;#34;yyyy&amp;#34;);//获取年----其它类似
+        System.out.println(year.format(currentTime));
+
+        Date date = simpleDateFormat.parse(&amp;#34;2019-1-23 12:00:00&amp;#34;);//把字符串转换成日期
+        System.out.println(simpleDateFormat.format(date));
+
+        //计算时间差currentTime-date相差多少天
+        Long days = (currentTime.getTime()-date.getTime())/(1000*60*60*24);//参数--毫秒
+        System.out.println(days);
+
+        System.out.println(&amp;#34;---------------------------利用Calendar获取时间值比较方便&amp;#34;);
+//        Calendar转化为Date
+        Calendar cal=Calendar.getInstance();
+        Date date1=cal.getTime();
+
+//        Date转化为Calendar
+        Calendar cal2=Calendar.getInstance();
+        cal2.setTime(date);
+        //计算某个日期是那一年的第几天
+        int d = cal2.get(Calendar.DAY_OF_YEAR);
+        System.out.println(d);
+
+        //一年的第几周等。。
+
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>String、StringBuffer、StringBuilder的区别</title>
+      <link>https://zhangxiaofeng05.github.io/posts/string-stringbuffer-stringbuilder/</link>
+      <pubDate>Wed, 24 Jul 2019 15:38:18 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/string-stringbuffer-stringbuilder/</guid>
+      <description>&lt;h2 id=&#34;长度是否可变&#34;&gt;长度是否可变&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;String 是被 final 修饰的，他的长度是不可变的，就算调用 String 的concat 方法，那也是把字符串拼接起来并重新创建一个对象，把拼接后的 String 的值赋给新创建的对象&lt;/li&gt;
+&lt;li&gt;StringBuffer 和 StringBuilder修改本身&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;执行效率&#34;&gt;执行效率&lt;/h2&gt;
+&lt;p&gt;三者在执行速度方面的比较：StringBuilder &amp;gt; StringBuffer &amp;gt; String&lt;/p&gt;
+&lt;h2 id=&#34;应用场景&#34;&gt;应用场景&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;如果要操作少量的数据用 = String&lt;/li&gt;
+&lt;li&gt;单线程操作字符串缓冲区 下操作大量数据 = StringBuilder&lt;/li&gt;
+&lt;li&gt;多线程操作字符串缓冲区 下操作大量数据 = StringBuffer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;线程安全&#34;&gt;线程安全&lt;/h2&gt;
+&lt;p&gt;StringBuilder 类在 Java 5 中被提出，它和 StringBuffer 之间的最大不同在于 StringBuilder 的方法不是线程安全的（不能同步访问），StringBuffer是线程安全的。只是StringBuffer 中的方法大都采用了 &lt;code&gt;synchronized&lt;/code&gt; 关键字进行修饰，因此是线程安全的，而 StringBuilder 没有这个修饰，可以被认为是线程不安全的。&lt;/p&gt;
+&lt;h3 id=&#34;参考&#34;&gt;参考&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.cnblogs.com/AmyZheng/p/9415064.html&#34;&gt;https://www.cnblogs.com/AmyZheng/p/9415064.html&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Java中的线程</title>
+      <link>https://zhangxiaofeng05.github.io/posts/java-thread/</link>
+      <pubDate>Wed, 24 Jul 2019 11:40:48 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/java-thread/</guid>
+      <description>&lt;h1 id=&#34;进程和线程概念&#34;&gt;进程和线程概念&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;进程&lt;/code&gt;(Process)是计算机中的程序关于某数据集合上的一次运行活动，是系统进行资源分配和调度的基本单位，是操作系统结构的基础。进程是线程的容器。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;线程&lt;/code&gt;(thread)是操作系统能够进行运算调度的最小单位。它被包含在进程之中，是进程中的实际运作单位。一个进程中可以并发多个线程，每条线程并行执行不同的任务。&lt;/p&gt;
+&lt;p&gt;同一进程中的多条线程将共享该进程中的全部系统资源，如虚拟地址空间，文件描述符和信号处理等等。但同一进程中的多个线程有各自的调用栈（call stack），自己的寄存器环境（register context），自己的线程本地存储（thread-local storage）。
+一个进程可以有很多线程，每条线程并行执行不同的任务。&lt;/p&gt;
+&lt;h1 id=&#34;线程&#34;&gt;线程&lt;/h1&gt;
+&lt;p&gt;在 Java程序中，有两种方法创建线程：
+一继承Thread重写run方法
+二是通过实现Runnable接口，实现run方法&lt;/p&gt;
+&lt;p&gt;线程总体分两类：用户线程和守候线程。
+当所有用户线程执行完毕的时候，JVM自动关闭。但是守候线程却不独立于JVM，守候线程一般是由操作系统或者用户自己创建的。&lt;/p&gt;
+&lt;h2 id=&#34;继承thread&#34;&gt;继承Thread&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class ThreadOne extends Thread{
+
+    private String name;
+
+    public ThreadOne() {
+    }
+
+    public ThreadOne(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public void run() {
+        for(int i=1;i&amp;lt;=10;i++){
+            System.out.println(name+&amp;#34;----&amp;#34;+i);
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class ThreadTest {
+
+    public static void main(String[] args) {
+        ThreadOne threadOne1 = new ThreadOne(&amp;#34;地瓜&amp;#34;);
+        ThreadOne threadOne2 = new ThreadOne(&amp;#34;土豆&amp;#34;);
+        threadOne1.start();
+        threadOne2.start();
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;实现runnable接口&#34;&gt;实现Runnable接口&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class ThreadTwo implements Runnable {
+
+    private String name;
+
+    public ThreadTwo() {
+    }
+
+    public ThreadTwo(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public void run() {
+        for(int i=1;i&amp;lt;=10;i++){
+            System.out.println(name+&amp;#34;-------&amp;#34;+i);
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class ThreadTest {
+
+    public static void main(String[] args) {
+        Thread t1 = new Thread(new ThreadTwo(&amp;#34;地瓜&amp;#34;));
+        Thread t2 = new Thread(new ThreadTwo(&amp;#34;土豆&amp;#34;));
+        t1.start();
+        t2.start();
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;线程的转换&#34;&gt;线程的转换&lt;/h1&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://zhangxiaofeng05.github.io/mypng/1.png&#34;&gt;
+新建状态：线程对象已经创建
+就绪状态：执行了start
+运行状态：线程调度程序从可运行池中选择一个线程作为当前线程时线程所处的状态。这也是线程进入运行状态的唯一一种方式。
+阻塞：线程仍旧是活的，但是当前没有条件运行。
+死亡态：当线程的run()方法完成时就认为它死去。这个线程对象也许是活的，但是，它已经不是一个单独执行的线程。线程一旦死亡，就不能复生。如果在一个死去的线程上调用start()方法，会抛出java.lang.IllegalThreadStateException异常。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Spring Boot打印日志</title>
+      <link>https://zhangxiaofeng05.github.io/posts/spring-boot-logback/</link>
+      <pubDate>Sat, 20 Jul 2019 14:32:00 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/spring-boot-logback/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;本文环境
+jdk 1.8
+maven 3.6.1
+Spring Boot 2.1.6&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h1 id=&#34;slf4j&#34;&gt;SLF4J&lt;/h1&gt;
+&lt;h2 id=&#34;为什么要介绍slf4j&#34;&gt;为什么要介绍SLF4J？&lt;/h2&gt;
+&lt;p&gt;SLF4J是一个接口，log4j和logback是它的实现。
+SLF4J官网：https://www.slf4j.org&lt;/p&gt;
+&lt;h2 id=&#34;官网示例&#34;&gt;官网示例&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;引入jar包
+slf4j-api-1.7.26.jar
+slf4j-simple-1.7.26.jar&lt;/li&gt;
+&lt;li&gt;编写测试类(Java Project)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class HelloWorld {
+  public static void main(String[] args) {
+    Logger logger = LoggerFactory.getLogger(HelloWorld.class);
+    logger.info(&amp;#34;Hello World&amp;#34;);
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;有什么问题，去官网查看示例！&lt;/p&gt;
+&lt;h1 id=&#34;spring-boot中使用日志logback&#34;&gt;Spring Boot中使用日志(logback)&lt;/h1&gt;
+&lt;h2 id=&#34;编写测试类&#34;&gt;编写测试类&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
+
+@RunWith(SpringRunner.class)
+@SpringBootTest
+public class LogbackTest {
+	//记录器
+	Logger logger = LoggerFactory.getLogger(getClass());
+	
+	@Test
+	public void logTest() {
+		//日志的级别
+		//从上到下---由低到高
+		//日志会在设置的级别和高级别生效，Spring Boot默认info
+		logger.trace(&amp;#34;这是trace日志...&amp;#34;);
+		logger.debug(&amp;#34;这是debug日志...&amp;#34;);
+		//可以在logback-spring.xml或者在application.xml配置日志级别
+		logger.info(&amp;#34;这是info日志...&amp;#34;);
+		logger.warn(&amp;#34;这是warn日志...&amp;#34;);
+		logger.error(&amp;#34;这是error日志...&amp;#34;);
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;设置日志的格式&#34;&gt;设置日志的格式&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;resources/logback-spring.xml&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt;
+&amp;lt;configuration debug=&amp;#34;false&amp;#34; scan=&amp;#34;true&amp;#34; scanPeriod=&amp;#34;60 seconds&amp;#34;&amp;gt;
+   
+	&amp;lt;!--定义日志文件的存储地址 勿在 LogBack 的配置中使用相对路径 --&amp;gt;
+	&amp;lt;!-- 
+	&amp;lt;property name=&amp;#34;LOG_PATH&amp;#34; value=&amp;#34;/data/log/process/springboot-demo&amp;#34; /&amp;gt;
+	 --&amp;gt;
+	&amp;lt;springProperty name=&amp;#34;LOG_PATH&amp;#34; source=&amp;#34;logging.path&amp;#34;  defaultValue=&amp;#34;../logs&amp;#34; /&amp;gt;
+	&amp;lt;!-- 控制台输出 --&amp;gt;
+	&amp;lt;appender name=&amp;#34;STDOUT&amp;#34; class=&amp;#34;ch.qos.logback.core.ConsoleAppender&amp;#34;&amp;gt;
+		&amp;lt;encoder class=&amp;#34;ch.qos.logback.classic.encoder.PatternLayoutEncoder&amp;#34;&amp;gt;
+			&amp;lt;!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 --&amp;gt;
+			&amp;lt;pattern&amp;gt;%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n&amp;lt;/pattern&amp;gt;
+		&amp;lt;/encoder&amp;gt;
+	&amp;lt;/appender&amp;gt;
+	
+	&amp;lt;!-- 按照每天生成日志文件 --&amp;gt;
+	&amp;lt;appender name=&amp;#34;FILE&amp;#34; class=&amp;#34;ch.qos.logback.core.rolling.RollingFileAppender&amp;#34;&amp;gt;
+		&amp;lt;rollingPolicy class=&amp;#34;ch.qos.logback.core.rolling.TimeBasedRollingPolicy&amp;#34;&amp;gt;
+			&amp;lt;!--日志文件输出的文件名 --&amp;gt;
+			&amp;lt;FileNamePattern&amp;gt;${LOG_PATH}/log.log.%d{yyyy-MM-dd}&amp;lt;/FileNamePattern&amp;gt;
+			&amp;lt;!--日志文件保留天数 --&amp;gt;
+			&amp;lt;!-- &amp;lt;MaxHistory&amp;gt;30&amp;lt;/MaxHistory&amp;gt; --&amp;gt;
+		&amp;lt;/rollingPolicy&amp;gt;
+		&amp;lt;encoder class=&amp;#34;ch.qos.logback.classic.encoder.PatternLayoutEncoder&amp;#34;&amp;gt;
+			&amp;lt;!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 --&amp;gt;
+			&amp;lt;pattern&amp;gt;%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n&amp;lt;/pattern&amp;gt;
+		&amp;lt;/encoder&amp;gt;
+	&amp;lt;/appender&amp;gt;
+
+	&amp;lt;!-- 日志输出级别 --&amp;gt;
+	&amp;lt;root level=&amp;#34;INFO&amp;#34;&amp;gt;
+		&amp;lt;appender-ref ref=&amp;#34;FILE&amp;#34; /&amp;gt;
+		&amp;lt;appender-ref ref=&amp;#34;STDOUT&amp;#34; /&amp;gt;
+	&amp;lt;/root&amp;gt;
+&amp;lt;/configuration&amp;gt;  
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;配置文件的加载顺序&#34;&gt;配置文件的加载顺序&lt;/h2&gt;
+&lt;p&gt;application.properties或者application.yml文件作为Spring Boot的默认配置文件&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Spring Boot发送邮件</title>
+      <link>https://zhangxiaofeng05.github.io/posts/spring-boot-mail/</link>
+      <pubDate>Fri, 19 Jul 2019 14:59:20 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/spring-boot-mail/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;本文环境
+jdk 1.8
+maven 3.6.1
+Spring Boot 2.1.6&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h1 id=&#34;引入依赖&#34;&gt;引入依赖&lt;/h1&gt;
+&lt;p&gt;pom.xml&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;dependency&amp;gt;
+	&amp;lt;groupId&amp;gt;org.springframework.boot&amp;lt;/groupId&amp;gt;
+	&amp;lt;artifactId&amp;gt;spring-boot-starter-mail&amp;lt;/artifactId&amp;gt;
+&amp;lt;/dependency&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;在applicationproperties中添加邮件配置以qq邮箱为例&#34;&gt;在application.properties中添加邮件配置(以QQ邮箱为例)&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;spring.mail.host=smtp.qq.com
+spring.mail.port=587
+spring.mail.username=xxx@qq.com
+spring.mail.password=授权码
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+spring.mail.properties.mail.smtp.starttls.required=true
+spring.mail.default-encoding=UTF-8
+
+
+mail.fromMail.addr=xxx@qq.com #发送来源，和账户相同
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;QQ邮箱的服务器端口&lt;br&gt;
+接收邮件服务器：imap.qq.com，使用SSL，端口号993&lt;br&gt;
+发送邮件服务器：smtp.qq.com，使用SSL，端口号465或587&lt;br&gt;
+&lt;a href=&#34;https://service.mail.qq.com/cgi-bin/help?subtype=1&amp;amp;&amp;amp;id=28&amp;amp;&amp;amp;no=331&#34;&gt;QQ邮箱帮助中心&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;编写service接口&#34;&gt;编写Service接口&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public interface MailService {
+	public void sendSimpleMail(String to,String subject,String content);
+	
+	public void sendHtmlMail(String to, String subject, String content);
+	
+	public void sendAttachmentsMail(String to, String subject, String content, String filePath);
+}
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;编写service的实现类&#34;&gt;编写Service的实现类&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.io.File;
+
+import javax.mail.MessagingException;
+import javax.mail.internet.MimeMessage;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.io.FileSystemResource;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.MimeMessageHelper;
+import org.springframework.stereotype.Component;
+
+
+@Component
+public class MailServiceImpl implements MailService{
+	
+	private final Logger logger =  LoggerFactory.getLogger(this.getClass());
+	
+	@Autowired
+	private JavaMailSender mailSender;
+	
+	@Value(&amp;#34;${mail.fromMail.addr}&amp;#34;)
+	private String from;
+
+	@Override
+	public void sendSimpleMail(String to, String subject, String content) {
+		SimpleMailMessage message = new SimpleMailMessage();
+		message.setFrom(from);
+		message.setTo(to);
+		message.setSubject(subject);
+		message.setText(content);
+		
+		try {
+			mailSender.send(message);
+			logger.info(&amp;#34;简单邮件已经发送&amp;#34;);
+		} catch (Exception e) {
+			logger.error(&amp;#34;发送简单邮件时发生异常!&amp;#34;,e);
+		}
+	}
+	
+	@Override
+	public void sendHtmlMail(String to, String subject, String content) {
+		MimeMessage message = mailSender.createMimeMessage();
+
+	    try {
+	        //true表示需要创建一个multipart message
+	        MimeMessageHelper helper = new MimeMessageHelper(message, true);
+	        helper.setFrom(from);
+	        helper.setTo(to);
+	        helper.setSubject(subject);
+	        helper.setText(content, true);
+
+	        mailSender.send(message);
+	        logger.info(&amp;#34;html邮件发送成功&amp;#34;);
+	    } catch (MessagingException e) {
+	        logger.error(&amp;#34;发送html邮件时发生异常！&amp;#34;, e);
+	    }
+	}
+	
+	@Override
+	public void sendAttachmentsMail(String to, String subject, String content, String filePath) {
+		MimeMessage message = mailSender.createMimeMessage();
+		try {
+	        MimeMessageHelper helper = new MimeMessageHelper(message, true);
+	        helper.setFrom(from);
+	        helper.setTo(to);
+	        helper.setSubject(subject);
+	        helper.setText(content, true);
+
+	        FileSystemResource file = new FileSystemResource(new File(filePath));
+	        String fileName = filePath.substring(filePath.lastIndexOf(File.separator));
+	        helper.addAttachment(fileName, file);
+
+	        mailSender.send(message);
+	        logger.info(&amp;#34;带附件的邮件已经发送。&amp;#34;);
+	    } catch (MessagingException e) {
+	        logger.error(&amp;#34;发送带附件的邮件时发生异常！&amp;#34;, e);
+	    }
+	}
+
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;编写测试类&#34;&gt;编写测试类&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
+
+import com.boot.service.MailService;
+@RunWith(SpringRunner.class)
+@SpringBootTest
+public class MailTest {
+	
+	@Autowired
+	private MailService mailService;
+	
+	@Test
+	public void testSimple() {
+		mailService.sendSimpleMail(&amp;#34;xxx@163.com&amp;#34;, &amp;#34;test simple mail&amp;#34;, &amp;#34;hello this is simple mail&amp;#34;);
+	}
+	
+	@Test
+	public void testHtmlMail() throws Exception {
+	    String content=&amp;#34;&amp;lt;html&amp;gt;\n&amp;#34; +
+	            &amp;#34;&amp;lt;body&amp;gt;\n&amp;#34; +
+	            &amp;#34;    &amp;lt;h3&amp;gt;hello world ! 这是一封Html邮件!&amp;lt;/h3&amp;gt;\n&amp;#34; +
+	            &amp;#34;&amp;lt;/body&amp;gt;\n&amp;#34; +
+	            &amp;#34;&amp;lt;/html&amp;gt;&amp;#34;;
+	    mailService.sendHtmlMail(&amp;#34;xxx@163.com&amp;#34;,&amp;#34;test simple mail&amp;#34;,content);
+	}
+	
+	@Test
+	public void sendAttachmentsMail() {
+	    String filePath=&amp;#34;D:\\testMail.txt&amp;#34;;
+	    mailService.sendAttachmentsMail(&amp;#34;xxx@163.com&amp;#34;, &amp;#34;主题：带附件的邮件&amp;#34;, &amp;#34;有附件，请查收！&amp;#34;, filePath);
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;至此，邮件发送成功!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>request和Session</title>
+      <link>https://zhangxiaofeng05.github.io/posts/requestandsession/</link>
+      <pubDate>Fri, 19 Jul 2019 11:11:47 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/requestandsession/</guid>
+      <description>&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;区别&lt;/th&gt;
+          &lt;th&gt;request&lt;/th&gt;
+          &lt;th&gt;session&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;描述&lt;/td&gt;
+          &lt;td&gt;一次请求(访问一个url)&lt;/td&gt;
+          &lt;td&gt;一次对话(可以访问多个url)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;作用&lt;/td&gt;
+          &lt;td&gt;获取信息(表单,查询,cookie等信息)&lt;/td&gt;
+          &lt;td&gt;记录变量(跟踪记录访问者动作)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;作用端&lt;/td&gt;
+          &lt;td&gt;浏览器&lt;/td&gt;
+          &lt;td&gt;服务器&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;生命周期&lt;/td&gt;
+          &lt;td&gt;提交以后即释放&lt;/td&gt;
+          &lt;td&gt;关闭浏览器或者超出会话时间限制(&lt;code&gt;maxInactiveIntervalInSeconds&lt;/code&gt;;The session timeout in seconds. By default, it is set to 1800 seconds (30 minutes).)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;占用资源&lt;/td&gt;
+          &lt;td&gt;比较少&lt;/td&gt;
+          &lt;td&gt;相对较大&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;安全性&lt;/td&gt;
+          &lt;td&gt;比较高&lt;/td&gt;
+          &lt;td&gt;稍微低点&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</description>
+    </item>
+    <item>
+      <title>Druid数据库连接池</title>
+      <link>https://zhangxiaofeng05.github.io/posts/druid-database-connection-pool/</link>
+      <pubDate>Thu, 18 Jul 2019 15:33:15 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/druid-database-connection-pool/</guid>
+      <description>&lt;p&gt;阿里巴巴数据库事业部出品，为监控而生的数据库连接池。
+托管于GitHub,项目地址
+&lt;a href=&#34;https://github.com/alibaba/druid&#34;&gt;https://github.com/alibaba/druid&lt;/a&gt;
+Druid是一个JDBC组件库，包括数据库连接池、SQL Parser等组件。DruidDataSource是最好的数据库连接池。&lt;/p&gt;
+&lt;h1 id=&#34;springboot使用&#34;&gt;Springboot使用&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;最新信息去GitHub&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;maven&#34;&gt;Maven&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;dependency&amp;gt;
+   &amp;lt;groupId&amp;gt;com.alibaba&amp;lt;/groupId&amp;gt;
+   &amp;lt;artifactId&amp;gt;druid-spring-boot-starter&amp;lt;/artifactId&amp;gt;
+   &amp;lt;version&amp;gt;1.1.17&amp;lt;/version&amp;gt;
+&amp;lt;/dependency&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;gradle&#34;&gt;Gradle&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;compile &amp;#39;com.alibaba:druid-spring-boot-starter:1.1.17&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;配置&#34;&gt;配置&lt;/h1&gt;
+&lt;p&gt;Github上有说明，下面是一下常用配置
+application.properties&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#mysql
+spring.datasource.platform=mysql
+spring.datasource.url=jdbc:mysql://localhost:3306/database?serverTimezone=GMT%2B8&amp;amp;useUnicode=true&amp;amp;characterEncoding=utf8
+spring.datasource.username=root
+spring.datasource.password=154704
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+#druid
+spring.datasource.type=com.alibaba.druid.pool.DruidDataSource
+# Advanced configuration...
+spring.datasource.max-active=500
+spring.datasource.min-idle=2
+spring.datasource.initial-size=6
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;开启监测&#34;&gt;开启监测&lt;/h1&gt;
+&lt;p&gt;DruidConfiguration
+监测地址：http://localhost:8080/druid/index.html&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import javax.sql.DataSource;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.web.servlet.ServletRegistrationBean;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.alibaba.druid.pool.DruidDataSource;
+import com.alibaba.druid.support.http.StatViewServlet;
+
+@Configuration
+public class DruidConfiguration {
+
+	@ConfigurationProperties(&amp;#34;spring.datasource&amp;#34;)
+	@Bean
+	public DataSource druidDataSource() {
+		return new DruidDataSource();
+	}
+	
+	 @Bean
+	 public ServletRegistrationBean&amp;lt;StatViewServlet&amp;gt; druidStatViewServlet() {
+	  ServletRegistrationBean&amp;lt;StatViewServlet&amp;gt; registrationBean = new ServletRegistrationBean&amp;lt;&amp;gt;(new StatViewServlet(),  &amp;#34;/druid/*&amp;#34;);
+	  registrationBean.addInitParameter(&amp;#34;allow&amp;#34;, &amp;#34;127.0.0.1&amp;#34;);// IP白名单 (没有配置或者为空，则允许所有访问)
+	  registrationBean.addInitParameter(&amp;#34;deny&amp;#34;, &amp;#34;&amp;#34;);// IP黑名单 (存在共同时，deny优先于allow)
+	  registrationBean.addInitParameter(&amp;#34;loginUsername&amp;#34;, &amp;#34;root&amp;#34;);
+	  registrationBean.addInitParameter(&amp;#34;loginPassword&amp;#34;, &amp;#34;123456&amp;#34;);
+	  registrationBean.addInitParameter(&amp;#34;resetEnable&amp;#34;, &amp;#34;false&amp;#34;);
+	  return registrationBean;
+	 }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;测试类&#34;&gt;测试类&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.sql.Connection;
+
+import javax.sql.DataSource;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
+
+@RunWith(SpringRunner.class)
+@SpringBootTest
+public class SpringbootApplicationTests {
+
+	@Autowired
+	DataSource dataSource;
+	
+	@Test
+	public void contextLoads() {
+	}
+	
+	@Test
+	public void test1() throws Exception {
+		System.out.println(dataSource.getClass());
+		Connection connection = dataSource.getConnection();
+		System.out.println(connection.getClass());
+		connection.close();
+	}
+
+}
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>Object类</title>
+      <link>https://zhangxiaofeng05.github.io/posts/object/</link>
+      <pubDate>Thu, 18 Jul 2019 13:42:14 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/object/</guid>
+      <description>&lt;h1 id=&#34;特点&#34;&gt;特点&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;是Java中唯一一个没有父类的类&lt;/li&gt;
+&lt;li&gt;java中所有的类不是object类的直接子类，就是其间接子类&lt;/li&gt;
+&lt;li&gt;定义在object类中的所有方法，在任何类中都可以直接调用，而不需要声明object类的对象。&lt;/li&gt;
+&lt;li&gt;是java中所有类的超类（基类 ，父类）&lt;/li&gt;
+&lt;li&gt;object类中只有无参构造&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;方法&#34;&gt;方法&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;常用方法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;public boolean equals（object obj）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public boolean equals(Object obj) {
+        return (this == obj);
+    }
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;指示其他某个对象是否与此对象“相等”。
+(ps:==判断是否引用地址相同)
+2. public String tostring（)&lt;br&gt;
+返回对象的字符串表示形式。
+3. public int hashCode()&lt;br&gt;
+返回此对象的一个哈希码值。&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;不常用方法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;protected Object clone()&lt;br&gt;
+创建并返回此对象的一个副本。&lt;/li&gt;
+&lt;li&gt;protected void finalize()&lt;br&gt;
+当垃圾回收器确定不存在对该对象的更多引用时，由对象的垃圾回收器调用此方法。子类重写 finalize 方法，以配置系统资源或执行其他清除。&lt;/li&gt;
+&lt;li&gt;public final Class&lt;?&gt; getClass()&lt;br&gt;
+返回此 Object 的运行时类。&lt;/li&gt;
+&lt;li&gt;public final void notify()&lt;br&gt;
+唤醒在此对象监视器上等待的单个线程。&lt;/li&gt;
+&lt;li&gt;public final void notifyAll()&lt;br&gt;
+唤醒在此对象监视器上等待的所有线程。&lt;/li&gt;
+&lt;li&gt;public final void wait()&lt;br&gt;
+在其他线程调用此对象的 notify() 方法或 notifyAll() 方法前，导致当前线程等待。&lt;/li&gt;
+&lt;li&gt;public final void wait(long timeout)&lt;br&gt;
+在其他线程调用此对象的 notify() 方法或 notifyAll() 方法，或者超过指定的时间量前，导致当前线程等待。&lt;/li&gt;
+&lt;li&gt;public final void wait(long timeout,int nanos)&lt;br&gt;
+在其他线程调用此对象的 notify() 方法或 notifyAll() 方法，或者其他某个线程中断当前线程，或者已超过某个实际时间量前，导致当前线程等待。&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title>数据库隔离级别和传播行为</title>
+      <link>https://zhangxiaofeng05.github.io/posts/transaction-spring/</link>
+      <pubDate>Thu, 18 Jul 2019 12:56:44 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/transaction-spring/</guid>
+      <description>&lt;h1 id=&#34;事务五个隔离级别&#34;&gt;事务五个隔离级别&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;DEFAULT&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;使用数据库设置的隔离级别 ( 默认 ) ，由 DBA 默认的设置来决定隔离级别 .&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;READ_UNCOMMITTED&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;会出现脏读、不可重复读、幻读 ( 隔离级别最低，并发性能高 )&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;READ_COMMITTED&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;会出现不可重复读、幻读问题（锁定正在读取的行）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;REPEATABLE_READ&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;会出幻读（锁定所读取的所有行）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SERIALIZABLE&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;保证所有的情况不会发生（锁表）&lt;/p&gt;
+&lt;h1 id=&#34;spring中七个事务传播行为&#34;&gt;spring中七个事务传播行为&lt;/h1&gt;
+&lt;p&gt;在TransactionDefinition接口中定义了七个事务传播行为。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PROPAGATION_REQUIRED(默认的spring事务传播级别)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如果存在一个事务，则支持当前事务。如果没有事务则开启一个新的事务。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PROPAGATION_SUPPORTS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如果存在一个事务，支持当前事务。如果没有事务，则非事务的执行。但是对于事务同步的事务管理器，PROPAGATION_SUPPORTS与不使用事务有少许不同。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PROPAGATION_MANDATORY&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如果已经存在一个事务，支持当前事务。如果没有一个活动的事务，则抛出异常。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PROPAGATION_REQUIRES_NEW&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;总是开启一个新的事务。如果一个事务已经存在，则将这个存在的事务挂起。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PROPAGATION_NOT_SUPPORTED&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;总是非事务地执行，并挂起任何存在的事务。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PROPAGATION_NEVER&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;总是非事务地执行，如果存在一个活动事务，则抛出异常&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PROPAGATION_NESTED&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如果一个活动的事务存在，则运行在一个嵌套的事务中. 如果没有活动事务, 则按TransactionDefinition.PROPAGATION_REQUIRED 属性执行&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>悲观锁和乐观锁</title>
+      <link>https://zhangxiaofeng05.github.io/posts/pessimistic-lock-and-optimistic-lock/</link>
+      <pubDate>Wed, 17 Jul 2019 23:09:21 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/pessimistic-lock-and-optimistic-lock/</guid>
+      <description>&lt;p&gt;悲观锁和乐观锁：处理的是同一张表的同一行记录&lt;/p&gt;
+&lt;h1 id=&#34;悲观锁&#34;&gt;悲观锁&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;如果使用了(加了一个行锁)，如果事务没有被释放，就会造成其他事务处于等待。&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;使用数据库提供的锁机制实现悲观锁。&lt;/p&gt;
+&lt;p&gt;如果数据库不支持设置的锁机制，JPA会使用该数据库提供的合适的锁机制来完成，而不会报错。&lt;/p&gt;
+&lt;p&gt;使用entityManage.find(class,id,LockModeType);加悲观锁，相当于发送SELECT &amp;hellip; FOR UPDATE&lt;/p&gt;
+&lt;p&gt;使用entityManage.lock(object,LockModeType);加悲观锁，相当于发送SELECT id FROM &amp;hellip; FOR UPDATE&lt;/p&gt;
+&lt;h1 id=&#34;乐观锁性能好&#34;&gt;乐观锁(性能好)&lt;/h1&gt;
+&lt;p&gt;添加一个私有字段version，不由程序员维护，由JPA自己维护&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;@Version
+private long version;
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>什么是面向接口编程</title>
+      <link>https://zhangxiaofeng05.github.io/posts/interface-oriented-programming/</link>
+      <pubDate>Mon, 15 Jul 2019 21:29:10 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/interface-oriented-programming/</guid>
+      <description>&lt;h1 id=&#34;面向接口编程&#34;&gt;面向接口编程&lt;/h1&gt;
+&lt;p&gt;要正确地使用Java语言进行面向对象的编程，从而提高程序的复用性，增加程序的可维护性、可扩展性，就必须是面向接口的编程。面向接口的编程就意味着：开发系统时，主体构架使用接口，接口构成系统的骨架。这样就可以通过更换实现接口的类来更换系统的实现。&lt;/p&gt;
+&lt;h1 id=&#34;示例&#34;&gt;示例&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public interface Person {
+	public void show();
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class Man implements Person{
+
+	@Override
+	public void show() {
+		System.out.println(&amp;#34;Man...的show方法执行了。。。。&amp;#34;);
+	}
+	
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class Woman implements Person{
+
+	@Override
+	public void show() {
+		System.out.println(&amp;#34;Woman...中的show方法执行了。。。。&amp;#34;);
+	}
+	
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class MainTest {
+	
+	public void show(Person person) {
+		person.show();
+	}
+	
+	public static void main(String[] args) {
+		Person man = new Man();//选择Persion，而不是Man man = new Man();
+		Person woman = new Woman();//选择Persion，而不是Woman woman = new Woman();
+		
+		man.show();
+		woman.show();
+		
+		System.out.println(&amp;#34;-----------------&amp;#34;);
+		
+		MainTest test = new MainTest();
+		test.show(man);
+		test.show(woman);
+				
+		System.out.println(man instanceof Woman);
+		System.out.println(man instanceof Person);
+		System.out.println(woman instanceof Person);
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;执行结果：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>linux安装QQ</title>
+      <link>https://zhangxiaofeng05.github.io/posts/linux-install-qq/</link>
+      <pubDate>Tue, 30 Apr 2019 10:08:24 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/linux-install-qq/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;首先要感谢deepin,QQ很早就停止linux版的更新了,deepin团队在移植上的力度还是比较大的。以后有机会的话，还会再装deepin的。&lt;br&gt;
+也要感谢wszqkzqk，做了整理。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;解决方案&#34;&gt;解决方案&lt;/h2&gt;
+&lt;p&gt;GitHub:https://github.com/wszqkzqk/deepin-wine-ubuntu&lt;br&gt;
+你也可以看作者的README,但是我没看，作者写的比较精简，有些具体的没看懂怎么操作！！原谅我是个萌新。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;第一步：安装deepin-wine环境&lt;br&gt;
+上&lt;code&gt;https://github.com/wszqkzqk/deepin-wine-ubuntu&lt;/code&gt;页面下载zip包（或用git方式克隆），解压到本地文件夹
+在中国推荐用下面的地址，速度更快： (&lt;code&gt;git clone https://gitee.com/wszqkzqk/deepin-wine-for-ubuntu.git&lt;/code&gt;)
+在文件夹中打开终端，输入sudo sh ./install.sh一键安装。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;第2步，安装相关应用容器
+在http://mirrors.aliyun.com/deepin/pool/non-free/d/中下载想要的容器，点击deb安装即可。
+&lt;em&gt;（建议在终端下使用dpkg -i安装容器，否则容易误报依赖错误）&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;第３步，关于托盘
+安装TopIconPlus的gnome-shell扩展，命令：&lt;code&gt;sudo apt-get install gnome-shell-extension-top-icons-plus gnome-tweaks&lt;/code&gt;，然后用r命令重启gnome-shell(Alt+F2,输入r)，最后用gnome-tweaks开启这个扩展。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lulinux.com/archives/1319&#34;&gt;https://www.lulinux.com/archives/1319&lt;/a&gt;
+&lt;a href=&#34;https://github.com/wszqkzqk/deepin-wine-ubuntu&#34;&gt;https://github.com/wszqkzqk/deepin-wine-ubuntu&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>使用SwitchyOmega</title>
+      <link>https://zhangxiaofeng05.github.io/posts/use-switchyomega/</link>
+      <pubDate>Sun, 28 Apr 2019 17:36:55 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/use-switchyomega/</guid>
+      <description>&lt;p&gt;这个插件这是一个工具，常见代理有shadowsocks、Goflyway&lt;/p&gt;
+&lt;h1 id=&#34;switchyomega的获取&#34;&gt;switchyomega的获取&lt;/h1&gt;
+&lt;p&gt;代码在GitHub上维护:https://github.com/FelisCatus/SwitchyOmega&lt;/p&gt;
+&lt;h1 id=&#34;switchyomega的配置&#34;&gt;switchyomega的配置&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;配置auto switch
+规则列表地址：https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;代理设置&#34;&gt;代理设置&lt;/h1&gt;
+&lt;p&gt;参考：https://github.com/Alvin9999/new-pac&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>vim基础配置</title>
+      <link>https://zhangxiaofeng05.github.io/posts/vim-basic-configuration/</link>
+      <pubDate>Sat, 25 Aug 2018 19:07:11 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/vim-basic-configuration/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;注意：推荐参考：&lt;a href=&#34;https://github.com/zhangxiaofeng05/dotfiles&#34;&gt;https://github.com/zhangxiaofeng05/dotfiles&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;我的配置&#34;&gt;我的配置&lt;/h2&gt;
+&lt;p&gt;系统的vim的配置文件在&lt;br&gt;
+&lt;code&gt;/etc/vim/vimrc&lt;/code&gt;&lt;br&gt;
+当前用户的vim配置文件&lt;br&gt;
+&lt;code&gt;~/.vimrc&lt;/code&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;#34; --------------zhangxiaofeng----------------
+&amp;#34; 显示行号 或者 set number
+set nu
+&amp;#34; 语法高亮,自动识别代码,使用多种颜色显示
+syntax on
+&amp;#34; 不与vi兼容,采用vim自己的操作命令
+set nocompatible
+&amp;#34; 不支持鼠标,如果想支持把-去掉
+set mouse-=a
+&amp;#34; 使用utf-8编码
+set encoding=utf-8
+&amp;#34; 高亮度搜寻
+set hlsearch
+&amp;#34; 输入搜索模式时，每输入一个字符，就自动跳到第一个匹配的结果
+set incsearch
+&amp;#34; 设置主题
+&amp;#34; colorscheme molokai
+colorscheme desert
+ 
+&amp;#34; 高亮显示当前行/列
+set cursorline                                                                                                                          
+set cursorcolumn
+&amp;#34; 修改行/列线的外观
+&amp;#34; highlight CursorLine   cterm=NONE ctermbg=black ctermfg=green guibg=NONE guifg=NONE
+highlight CursorColumn cterm=NONE ctermbg=black ctermfg=green guibg=NONE guifg=NONE
+&amp;#34; 按下回车键后，下一行的缩进会自动跟上一行的缩进保持一致
+set autoindent
+&amp;#34; 按下 Tab 键时，Vim 显示的空格数
+set tabstop=4
+&amp;#34; 在文本上按下&amp;gt;&amp;gt; &amp;lt;&amp;lt;等缩进,每一级的字符数
+set shiftwidth=4
+&amp;#34; 光标遇到括号,自动高亮对应的括号
+set showmatch
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>安装jdk</title>
+      <link>https://zhangxiaofeng05.github.io/posts/install-jdk/</link>
+      <pubDate>Thu, 23 Aug 2018 14:10:41 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/install-jdk/</guid>
+      <description>&lt;h1 id=&#34;linux&#34;&gt;Linux&lt;/h1&gt;
+&lt;h2 id=&#34;下载&#34;&gt;下载&lt;/h2&gt;
+&lt;p&gt;官网：https://www.oracle.com/technetwork/java/javase/downloads/index.html&lt;/p&gt;
+&lt;h2 id=&#34;配置环境&#34;&gt;配置环境&lt;/h2&gt;
+&lt;p&gt;解压到/opt&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo tar -zxf jdk-8u211-linux-x64.tar.gz -C /opt/
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;修改/etc/profile文件&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo vi /etc/profile
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;把下面的添加到文件的末尾&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;export JAVA_HOME=/opt/jdk1.8.0_211
+export JRE_HOME=/opt/jdk1.8.0_211/jre
+export CLASSPATH=.:$JAVA_HOME/lib:$JRE_HOME/lib:$CLASSPATH
+export PATH=$JAVA_HOME/bin:$JRE_HOME/bin:$PATH
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;使修改后的文件生效&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;source&lt;/span&gt; /etc/profile
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;windows&#34;&gt;Windows&lt;/h1&gt;
+&lt;h2 id=&#34;下载-1&#34;&gt;下载&lt;/h2&gt;
+&lt;p&gt;官网：http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html&lt;/p&gt;
+&lt;h2 id=&#34;安装&#34;&gt;安装&lt;/h2&gt;
+&lt;p&gt;我选择默认安装&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;C:\Program Files\Java\jdk1.8.0_211
+C:\Program Files\Java\jre1.8.0_211
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;配置环境-1&#34;&gt;配置环境&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;新建系统变量JAVA_HOME&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;变量名：JAVA_HOME
+变量值：C:\Program Files\Java\jdk1.8.0_211
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;新建系统变量CLASSPATH&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;变量名：CLASSPATH
+变量值：.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;在系统变量Path中添加&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;%JAVA_HOME%\bin
+%JAVA_HOME%\jre\bin
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;测试是否成功&#34;&gt;测试是否成功&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;java -version
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;java
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;javac
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>终端使用socks5代理</title>
+      <link>https://zhangxiaofeng05.github.io/posts/terminal-use-socks5-proxy/</link>
+      <pubDate>Thu, 16 Aug 2018 10:07:27 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/terminal-use-socks5-proxy/</guid>
+      <description>&lt;h2 id=&#34;安装proxychains&#34;&gt;安装proxychains&lt;/h2&gt;
+&lt;p&gt;简单粗暴的方式：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ sudo apt-get install proxychains
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果想要使用最新版，也可以自己手动编译源码&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 安装&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone https://github.com/rofl0r/proxychains-ng.git
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./configure --prefix&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/usr --sysconfdir&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/etc
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;make
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo make install
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo make install-config
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;配置&#34;&gt;配置&lt;/h2&gt;
+&lt;p&gt;在安装完成之后，一般在 /etc/proxychains.conf 处会有默认配置文件，编辑该文件&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo vim /etc/proxychains.conf
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;然后在文件末修改成自己设置的shadowsocks设置的端口，如下&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;socks5 127.0.0.1 1080
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;验证&#34;&gt;验证&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ curl ip.gs
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这个显示的ip是没有被代理的&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ proxychains curl ip.gs
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这个就是你的代理了&lt;/p&gt;
+&lt;p&gt;在配置完 proxychains 之后，在终端如果任何命令无法连接成功时，在其前加上 proxychains 就可以走代理方式来执行该命令。&lt;/p&gt;
+&lt;h2 id=&#34;shell函数unixlinux&#34;&gt;shell函数(unix&amp;amp;linux)&lt;/h2&gt;
+&lt;p&gt;如果系统不支持proxychains，可以考虑设置函数。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# .zshrc&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;function&lt;/span&gt; proxy_on&lt;span class=&#34;o&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;http_proxy&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;http://127.0.0.1:1080
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;https_proxy&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$http_proxy&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; -e &lt;span class=&#34;s2&#34;&gt;&amp;#34;终端代理已开启。&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;function&lt;/span&gt; proxy_off&lt;span class=&#34;o&#34;&gt;(){&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;unset&lt;/span&gt; http_proxy https_proxy
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; -e &lt;span class=&#34;s2&#34;&gt;&amp;#34;终端代理已关闭。&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://einverne.github.io/post/2017/02/terminal-sock5-proxy.html&#34;&gt;终端使用 sock5 代理 终端 terminal socks5 shadowsocks 代理 proxy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://segmentfault.com/a/1190000039686752&#34;&gt;终端使用代理加速的正确方式(Shadowsocks)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+  </channel>
 </rss>

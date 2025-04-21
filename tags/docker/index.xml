@@ -1,16 +1,57 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Docker - 标签 - 风吹过的烟花</title>
-        <link>https://zhangxiaofeng05.github.io/tags/docker/</link>
-        <description>Docker - 标签 - 风吹过的烟花</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Sun, 08 Dec 2019 22:12:35 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/docker/" rel="self" type="application/rss+xml" /><item>
-    <title>Docker</title>
-    <link>https://zhangxiaofeng05.github.io/docker/</link>
-    <pubDate>Sun, 08 Dec 2019 22:12:35 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/docker/</guid>
-    <description><![CDATA[维基百科 https://zh.wikipedia.org/wiki/Docker Docker是一个开放源代码软件项目，让应用程序部署在软件货柜下的工作可以自动化进行，借此在Linux操作系统上，提供一个额外的软]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Docker on 风吹过的烟花</title>
+    <link>https://zhangxiaofeng05.github.io/tags/docker/</link>
+    <description>Recent content in Docker on 风吹过的烟花</description>
+    <image>
+      <title>风吹过的烟花</title>
+      <url>https://zhangxiaofeng05.github.io/images/papermod-cover.png</url>
+      <link>https://zhangxiaofeng05.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 08 Dec 2019 22:12:35 +0800</lastBuildDate>
+    <atom:link href="https://zhangxiaofeng05.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker</title>
+      <link>https://zhangxiaofeng05.github.io/posts/docker/</link>
+      <pubDate>Sun, 08 Dec 2019 22:12:35 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/docker/</guid>
+      <description>&lt;h2 id=&#34;维基百科&#34;&gt;维基百科&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://zh.wikipedia.org/wiki/Docker&#34;&gt;https://zh.wikipedia.org/wiki/Docker&lt;/a&gt;&lt;br&gt;
+Docker是一个开放源代码软件项目，让应用程序部署在软件货柜下的工作可以自动化进行，借此在Linux操作系统上，提供一个额外的软件抽象层，以及操作系统层虚拟化的自动管理机制。&lt;/p&gt;
+&lt;h2 id=&#34;docker官网&#34;&gt;docker官网&lt;/h2&gt;
+&lt;p&gt;官网：https://www.docker.com/&lt;br&gt;
+官网安装指南：https://docs.docker.com/install/&lt;br&gt;
+docker安装软件比较简单，很适合学习，避免了linux的各种版本安装软件的繁琐。&lt;/p&gt;
+&lt;h2 id=&#34;docker-hub&#34;&gt;Docker Hub&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://hub.docker.com/&#34;&gt;https://hub.docker.com/&lt;/a&gt;&lt;br&gt;
+Docker Hub是一个由Docker公司负责维护的公共注册中心，它包含了超过15,000个可用来下载和构建容器的镜像，并且还提供认证、工作组结构、工作流工具（比如webhooks）、构建触发器以及私有工具（比如私有仓库可用于存储你并不想公开分享的镜像）。&lt;/p&gt;
+&lt;h3 id=&#34;举例docker安装mysql&#34;&gt;举例：docker安装MySQL&lt;/h3&gt;
+&lt;p&gt;官网安装指南：https://hub.docker.com/_/mysql&lt;br&gt;
+举例：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;docker pull mysql:5.7.28
+docker run -p 3306:3306 --name mysql5.7 -e MYSQL_ROOT_PASSWORD=password -d mysql:5.7.28
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;具参数查看官网!!!&lt;/p&gt;
+&lt;h3 id=&#34;举例docker安装phpmyadmin&#34;&gt;举例：docker安装phpmyadmin&lt;/h3&gt;
+&lt;p&gt;官网安装指南：https://hub.docker.com/r/phpmyadmin/phpmyadmin&lt;br&gt;
+举例：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;docker pull phpmyadmin/phpmyadmin
+docker run --name myadmin -d -e PMA_ARBITRARY=1 -p 6060:80 phpmyadmin/phpmyadmin
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;此命令安装，登录任意服务器地址端口，空格为分割&lt;br&gt;
+&lt;img alt=&#34;phpmyadmin&#34; loading=&#34;lazy&#34; src=&#34;https://zhangxiaofeng05.github.io/mypng/6.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;pull代理&#34;&gt;pull代理&lt;/h2&gt;
+&lt;p&gt;使用&lt;code&gt;docker pull&lt;/code&gt;命令，下载镜像慢，设置代理&lt;/p&gt;
+&lt;h3 id=&#34;mac&#34;&gt;mac&lt;/h3&gt;
+&lt;p&gt;Dashboard -&amp;gt; Settings -&amp;gt; Resources -&amp;gt; Proxies&lt;br&gt;
+即可使用http代理&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Web Server(HTTP)
+http://127.0.0.1:1081
+
+Secure Web Server(HTTPS)
+http://127.0.0.1:1081
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
 </rss>

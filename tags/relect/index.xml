@@ -1,16 +1,97 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Relect - 标签 - 风吹过的烟花</title>
-        <link>https://zhangxiaofeng05.github.io/tags/relect/</link>
-        <description>Relect - 标签 - 风吹过的烟花</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Sun, 28 Jul 2019 21:36:31 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/relect/" rel="self" type="application/rss+xml" /><item>
-    <title>反射</title>
-    <link>https://zhangxiaofeng05.github.io/java-relfect/</link>
-    <pubDate>Sun, 28 Jul 2019 21:36:31 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/java-relfect/</guid>
-    <description><![CDATA[java.lang.Class 创建一个类，通过编译(javac.exe),生成对应的.class文件。之后使用java.exe加载(JVM的类加载器完成)， 此.clas]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Relect on 风吹过的烟花</title>
+    <link>https://zhangxiaofeng05.github.io/tags/relect/</link>
+    <description>Recent content in Relect on 风吹过的烟花</description>
+    <image>
+      <title>风吹过的烟花</title>
+      <url>https://zhangxiaofeng05.github.io/images/papermod-cover.png</url>
+      <link>https://zhangxiaofeng05.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 28 Jul 2019 21:36:31 +0800</lastBuildDate>
+    <atom:link href="https://zhangxiaofeng05.github.io/tags/relect/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>反射</title>
+      <link>https://zhangxiaofeng05.github.io/posts/java-relfect/</link>
+      <pubDate>Sun, 28 Jul 2019 21:36:31 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/java-relfect/</guid>
+      <description>&lt;h1 id=&#34;javalangclass&#34;&gt;java.lang.Class&lt;T&gt;&lt;/h1&gt;
+&lt;p&gt;创建一个类，通过编译(javac.exe),生成对应的.class文件。之后使用java.exe加载(JVM的类加载器完成)，  此.class文件加载到内存以后，就是一个运行时类，存在缓冲区。那么这个运行时类本身就是一个Class的实例!
+一个运行时类只加载一次。&lt;/p&gt;
+&lt;h2 id=&#34;举例&#34;&gt;举例&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
+public class RelfectTest{
+    public static void main(String[] args) throws IllegalAccessException, InstantiationException, NoSuchFieldException, NoSuchMethodException, InvocationTargetException {
+        Class&amp;lt;Person&amp;gt; personClass = Person.class;
+        //通过反射创建对象
+        Person person = personClass.newInstance();
+        System.out.println(person);
+        //通过反射赋值-------public属性
+        Field name = personClass.getField(&amp;#34;name&amp;#34;);
+        name.set(person,&amp;#34;土豆&amp;#34;);
+        System.out.println(person);
+        //通过反射赋值------private或者默认(不写)属性
+        Field age = personClass.getDeclaredField(&amp;#34;age&amp;#34;);
+        age.setAccessible(true);
+        age.set(person,18);
+        System.out.println(person);
+        //通过反射调用指定方法--没有参数
+        Method show = personClass.getMethod(&amp;#34;show&amp;#34;);
+        show.invoke(person);
+        //通过反射调用指定方法--有参数
+        Method say = personClass.getMethod(&amp;#34;say&amp;#34;, String.class);
+        say.invoke(person,&amp;#34;welcome&amp;#34;);
+    }
+}
+class Person{
+    public String name;
+    private int age;
+
+    public Person() {
+    }
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return name+&amp;#34;----&amp;#34;+age;
+    }
+
+    public void show(){
+        System.out.println(&amp;#34;Person类的show...&amp;#34;);
+    }
+
+    public void say(String word){
+        System.out.println(name+&amp;#34; &amp;#34;+word);
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;拓展&#34;&gt;拓展&lt;/h2&gt;
+&lt;p&gt;Person类&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

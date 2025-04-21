@@ -1,16 +1,280 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Io - 标签 - 风吹过的烟花</title>
-        <link>https://zhangxiaofeng05.github.io/tags/io/</link>
-        <description>Io - 标签 - 风吹过的烟花</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Thu, 25 Jul 2019 15:38:45 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/io/" rel="self" type="application/rss+xml" /><item>
-    <title>java IO流</title>
-    <link>https://zhangxiaofeng05.github.io/java-io/</link>
-    <pubDate>Thu, 25 Jul 2019 15:38:45 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/java-io/</guid>
-    <description><![CDATA[从控制台输入输出 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 import java.util.Scanner; public class IoTest { public static void main(String args[]){ Scanner sc = new Scanner(System.in); int n = sc.nextInt(); System.out.println(n); String s = sc.next(); System.out.println(s); String line = sc.nextLine(); System.out.printl]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Io on 风吹过的烟花</title>
+    <link>https://zhangxiaofeng05.github.io/tags/io/</link>
+    <description>Recent content in Io on 风吹过的烟花</description>
+    <image>
+      <title>风吹过的烟花</title>
+      <url>https://zhangxiaofeng05.github.io/images/papermod-cover.png</url>
+      <link>https://zhangxiaofeng05.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 25 Jul 2019 15:38:45 +0800</lastBuildDate>
+    <atom:link href="https://zhangxiaofeng05.github.io/tags/io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>java IO流</title>
+      <link>https://zhangxiaofeng05.github.io/posts/java-io/</link>
+      <pubDate>Thu, 25 Jul 2019 15:38:45 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/java-io/</guid>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://zhangxiaofeng05.github.io/mypng/3.png&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;从控制台输入输出&#34;&gt;从控制台输入输出&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.util.Scanner;
+
+public class IoTest {
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        System.out.println(n);
+
+        String s = sc.next();
+        System.out.println(s);
+
+        String line = sc.nextLine();
+        System.out.println(line);//从控制台输出
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;字节流&#34;&gt;字节流&lt;/h1&gt;
+&lt;h2 id=&#34;fileoutputstream&#34;&gt;FileOutputStream&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
+
+public class IoTest {
+    public static void main(String args[]){
+        File file = new File(&amp;#34;aa.txt&amp;#34;);
+        try {
+            //FileOutputStream(File,boolean) 是否把内容追加
+            OutputStream out = new FileOutputStream(file);
+            String str = &amp;#34;Hello World&amp;#34;;
+            byte[] b=str.getBytes();
+            out.write(b);
+            out.close();
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;fileinputstream&#34;&gt;FileInputStream&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+
+public class IoTest {
+    public static void main(String args[]){
+        try {
+            File file = new File(&amp;#34;E:&amp;#34;+File.separator+&amp;#34;tt.txt&amp;#34;);
+            InputStream is = new FileInputStream(file);
+//            byte[] bytes = new byte[1024];
+            //也可以这样
+            byte[] bytes = new byte[(int) file.length()];
+            is.read(bytes);
+            System.out.println(new String(bytes));
+            //关闭流
+            is.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;bufferedoutputstream&#34;&gt;BufferedOutputStream&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.io.*;
+
+public class IoTest {
+    public static void main(String args[]){
+        File file = new File(&amp;#34;aa.txt&amp;#34;);
+        try {
+            OutputStream out = new FileOutputStream(file);
+            BufferedOutputStream bos = new BufferedOutputStream(out);
+            byte[] bytes = &amp;#34;土豆，土豆，呼叫土豆&amp;#34;.getBytes();
+            bos.write(bytes);
+
+            //刷新缓存
+            bos.flush();
+
+            bos.close();
+            out.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;bufferedinputstream&#34;&gt;BufferedInputStream&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.io.*;
+
+public class IoTest {
+    public static void main(String args[]){
+        try {
+            File file = new File(&amp;#34;E:&amp;#34;+File.separator+&amp;#34;tt.txt&amp;#34;);
+            InputStream is = new FileInputStream(file);
+            BufferedInputStream bis = new BufferedInputStream(is);
+            byte[] bytes = new byte[(int) file.length()];
+            bis.read(bytes);
+
+            System.out.println(new String(bytes));
+
+            bis.close();
+            is.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;字符流&#34;&gt;字符流&lt;/h1&gt;
+&lt;h2 id=&#34;filewriter&#34;&gt;FileWriter&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Writer;
+
+public class IoTest {
+    public static void main(String args[]){
+        try {
+            File file = new File(&amp;#34;aa.txt&amp;#34;);
+            Writer writer = new FileWriter(file);
+            writer.write(&amp;#34;土豆。。。\n&amp;#34;);
+            writer.write(&amp;#34;地瓜，对不起&amp;#34;);
+
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;filereader&#34;&gt;FileReader&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.Reader;
+
+public class IoTest {
+    public static void main(String args[]){
+        try {
+            File file = new File(&amp;#34;aa.txt&amp;#34;);
+            Reader reader = new FileReader(file);
+            char[] chars = new char[1024];
+            reader.read(chars);
+            System.out.println(new String(chars));
+
+            reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;转换流字节流转字符流&#34;&gt;转换流(字节流转字符流)&lt;/h1&gt;
+&lt;h2 id=&#34;outputstreamwriter&#34;&gt;OutputStreamWriter&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.io.*;
+
+public class IoTest {
+    public static void main(String args[]){
+        File file = new File(&amp;#34;aa.txt&amp;#34;);
+        try {
+            OutputStream out = new FileOutputStream(file);
+            OutputStreamWriter osw = new OutputStreamWriter(out);
+            osw.write(&amp;#34;这是字节流转成了字符流&amp;#34;);
+            String encoding = osw.getEncoding();
+            System.out.println(&amp;#34;文件的编码：&amp;#34;+encoding); //文件的编码：UTF8
+            osw.close();
+            out.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;inputstreamreader&#34;&gt;InputStreamReader&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.io.*;
+
+public class IoTest {
+    public static void main(String args[]){
+        try {
+            File file = new File(&amp;#34;aa.txt&amp;#34;);
+            InputStream is = new FileInputStream(file);
+            InputStreamReader isr = new InputStreamReader(is,&amp;#34;utf-8&amp;#34;);//指定编码
+            char[] chars = new char[1024];
+            isr.read(chars);
+            System.out.println(chars);
+
+            System.out.println(&amp;#34;编码：&amp;#34;+isr.getEncoding());
+
+            isr.close();
+            isr.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;字符缓冲流高效流&#34;&gt;字符缓冲流(高效流)&lt;/h1&gt;
+&lt;h2 id=&#34;bufferedwriter&#34;&gt;BufferedWriter&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.io.*;
+
+public class IoTest {
+    public static void main(String args[]){
+        File file = new File(&amp;#34;aa.txt&amp;#34;);
+        try {
+            OutputStream out = new FileOutputStream(file);
+            OutputStreamWriter osw = new OutputStreamWriter(out);
+            BufferedWriter bw = new BufferedWriter(osw);
+            bw.write(&amp;#34;hello 这是字符缓冲流&amp;#34;);
+            bw.newLine();
+            bw.write(&amp;#34;下一行&amp;#34;);
+
+            bw.close();
+            osw.close();
+            out.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;bufferedreader&#34;&gt;BufferedReader&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import java.io.*;
+
+public class IoTest {
+    public static void main(String args[]){
+        try {
+            File file = new File(&amp;#34;aa.txt&amp;#34;);
+            InputStream is = new FileInputStream(file);
+            InputStreamReader isr = new InputStreamReader(is,&amp;#34;utf-8&amp;#34;);
+            BufferedReader br = new BufferedReader(isr);
+            String str;
+
+            while ((str=br.readLine())!=null){
+                System.out.println(str);
+            }
+
+            br.close();
+            isr.close();
+            is.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;字节流与字符流的区别&#34;&gt;字节流与字符流的区别&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;字节流在操作的时候本身是不会用到缓冲区（内存）的，是与文件本身直接操作的，而字符流在操作的时候是使用到缓冲区的&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

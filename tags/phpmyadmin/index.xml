@@ -1,16 +1,43 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Phpmyadmin - 标签 - 风吹过的烟花</title>
-        <link>https://zhangxiaofeng05.github.io/tags/phpmyadmin/</link>
-        <description>Phpmyadmin - 标签 - 风吹过的烟花</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Sun, 29 Dec 2019 11:14:39 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/phpmyadmin/" rel="self" type="application/rss+xml" /><item>
-    <title>linux安装mariadb并配置phpmyadmin</title>
-    <link>https://zhangxiaofeng05.github.io/linux_install_phpmyadmin/</link>
-    <pubDate>Sun, 29 Dec 2019 11:14:39 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/linux_install_phpmyadmin/</guid>
-    <description><![CDATA[mariadb 维基百科 MariaDB是MySQL关系数据库管理系统的一个复刻，由社区开发，有商业支持，旨在继续保持在GNU GPL下开源。MariaDB的]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Phpmyadmin on 风吹过的烟花</title>
+    <link>https://zhangxiaofeng05.github.io/tags/phpmyadmin/</link>
+    <description>Recent content in Phpmyadmin on 风吹过的烟花</description>
+    <image>
+      <title>风吹过的烟花</title>
+      <url>https://zhangxiaofeng05.github.io/images/papermod-cover.png</url>
+      <link>https://zhangxiaofeng05.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 29 Dec 2019 11:14:39 +0800</lastBuildDate>
+    <atom:link href="https://zhangxiaofeng05.github.io/tags/phpmyadmin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>linux安装mariadb并配置phpmyadmin</title>
+      <link>https://zhangxiaofeng05.github.io/posts/linux_install_phpmyadmin/</link>
+      <pubDate>Sun, 29 Dec 2019 11:14:39 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/linux_install_phpmyadmin/</guid>
+      <description>&lt;h2 id=&#34;mariadb&#34;&gt;mariadb&lt;/h2&gt;
+&lt;h3 id=&#34;维基百科&#34;&gt;维基百科&lt;/h3&gt;
+&lt;p&gt;MariaDB是MySQL关系数据库管理系统的一个复刻，由社区开发，有商业支持，旨在继续保持在GNU GPL下开源。MariaDB的开发是由MySQL的一些原始开发者领导的，他们担心甲骨文公司收购MySQL后会有一些隐患。&lt;/p&gt;
+&lt;p&gt;linux现在默认的MySQL是mariadb。&lt;/p&gt;
+&lt;h3 id=&#34;安装mariadb&#34;&gt;安装mariadb&lt;/h3&gt;
+&lt;p&gt;$ sudo apt-get install mariadb-server mariadb-client&lt;/p&gt;
+&lt;h3 id=&#34;新建用户授权&#34;&gt;新建用户授权&lt;/h3&gt;
+&lt;p&gt;以root身份输入mariadb，进入mariadb&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# mariadb
+&amp;gt; use mysql;                                                           # 进入mysql数据库
+mysql&amp;gt; CREATE USER &amp;#39;zhang&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;123456&amp;#39;;         # zhang是用户名,123456是密码
+mysql&amp;gt; GRANT ALL PRIVILEGES ON *.* TO &amp;#39;zhang&amp;#39;@&amp;#39;localhost&amp;#39; WITH GRANT OPTION;   # 授权
+mysql&amp;gt; FLUSH PRIVILEGES;
+或者(推荐下边的，可以登录，上边只能本地登录)
+mysql&amp;gt; CREATE USER &amp;#39;zhang&amp;#39;@&amp;#39;%&amp;#39; IDENTIFIED BY &amp;#39;123456&amp;#39;;
+mysql&amp;gt; GRANT ALL PRIVILEGES ON *.* TO &amp;#39;zhang&amp;#39;@&amp;#39;%&amp;#39; WITH GRANT OPTION;
+mysql&amp;gt; FLUSH PRIVILEGES;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;查看user信息&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; select user,host,password from user;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;至此，可以用新建的用户登录了。&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

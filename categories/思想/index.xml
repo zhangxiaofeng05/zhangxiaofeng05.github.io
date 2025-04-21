@@ -1,16 +1,70 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>思想 - 分类 - 风吹过的烟花</title>
-        <link>https://zhangxiaofeng05.github.io/categories/%E6%80%9D%E6%83%B3/</link>
-        <description>思想 - 分类 - 风吹过的烟花</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Mon, 15 Jul 2019 21:29:10 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/categories/%E6%80%9D%E6%83%B3/" rel="self" type="application/rss+xml" /><item>
-    <title>什么是面向接口编程</title>
-    <link>https://zhangxiaofeng05.github.io/interface-oriented-programming/</link>
-    <pubDate>Mon, 15 Jul 2019 21:29:10 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/interface-oriented-programming/</guid>
-    <description><![CDATA[面向接口编程 要正确地使用Java语言进行面向对象的编程，从而提高程序的复用性，增加程序的可维护性、可扩展性，就必须是面向接口的编程。面向接口]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>思想 on 风吹过的烟花</title>
+    <link>https://zhangxiaofeng05.github.io/categories/%E6%80%9D%E6%83%B3/</link>
+    <description>Recent content in 思想 on 风吹过的烟花</description>
+    <image>
+      <title>风吹过的烟花</title>
+      <url>https://zhangxiaofeng05.github.io/images/papermod-cover.png</url>
+      <link>https://zhangxiaofeng05.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 15 Jul 2019 21:29:10 +0800</lastBuildDate>
+    <atom:link href="https://zhangxiaofeng05.github.io/categories/%E6%80%9D%E6%83%B3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>什么是面向接口编程</title>
+      <link>https://zhangxiaofeng05.github.io/posts/interface-oriented-programming/</link>
+      <pubDate>Mon, 15 Jul 2019 21:29:10 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/interface-oriented-programming/</guid>
+      <description>&lt;h1 id=&#34;面向接口编程&#34;&gt;面向接口编程&lt;/h1&gt;
+&lt;p&gt;要正确地使用Java语言进行面向对象的编程，从而提高程序的复用性，增加程序的可维护性、可扩展性，就必须是面向接口的编程。面向接口的编程就意味着：开发系统时，主体构架使用接口，接口构成系统的骨架。这样就可以通过更换实现接口的类来更换系统的实现。&lt;/p&gt;
+&lt;h1 id=&#34;示例&#34;&gt;示例&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public interface Person {
+	public void show();
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class Man implements Person{
+
+	@Override
+	public void show() {
+		System.out.println(&amp;#34;Man...的show方法执行了。。。。&amp;#34;);
+	}
+	
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class Woman implements Person{
+
+	@Override
+	public void show() {
+		System.out.println(&amp;#34;Woman...中的show方法执行了。。。。&amp;#34;);
+	}
+	
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class MainTest {
+	
+	public void show(Person person) {
+		person.show();
+	}
+	
+	public static void main(String[] args) {
+		Person man = new Man();//选择Persion，而不是Man man = new Man();
+		Person woman = new Woman();//选择Persion，而不是Woman woman = new Woman();
+		
+		man.show();
+		woman.show();
+		
+		System.out.println(&amp;#34;-----------------&amp;#34;);
+		
+		MainTest test = new MainTest();
+		test.show(man);
+		test.show(woman);
+				
+		System.out.println(man instanceof Woman);
+		System.out.println(man instanceof Person);
+		System.out.println(woman instanceof Person);
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;执行结果：&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

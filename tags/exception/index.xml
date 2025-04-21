@@ -1,16 +1,100 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Exception - 标签 - 风吹过的烟花</title>
-        <link>https://zhangxiaofeng05.github.io/tags/exception/</link>
-        <description>Exception - 标签 - 风吹过的烟花</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Thu, 25 Jul 2019 14:34:21 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/exception/" rel="self" type="application/rss+xml" /><item>
-    <title>java异常</title>
-    <link>https://zhangxiaofeng05.github.io/java-exception/</link>
-    <pubDate>Thu, 25 Jul 2019 14:34:21 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/java-exception/</guid>
-    <description><![CDATA[异常类型 检查性异常 最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要打开一个不存在文件时，一个异常就发生了，这些异]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Exception on 风吹过的烟花</title>
+    <link>https://zhangxiaofeng05.github.io/tags/exception/</link>
+    <description>Recent content in Exception on 风吹过的烟花</description>
+    <image>
+      <title>风吹过的烟花</title>
+      <url>https://zhangxiaofeng05.github.io/images/papermod-cover.png</url>
+      <link>https://zhangxiaofeng05.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 25 Jul 2019 14:34:21 +0800</lastBuildDate>
+    <atom:link href="https://zhangxiaofeng05.github.io/tags/exception/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>java异常</title>
+      <link>https://zhangxiaofeng05.github.io/posts/java-exception/</link>
+      <pubDate>Thu, 25 Jul 2019 14:34:21 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/java-exception/</guid>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://zhangxiaofeng05.github.io/mypng/2.png&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;异常类型&#34;&gt;异常类型&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;检查性异常
+最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要打开一个不存在文件时，一个异常就发生了，这些异常在编译时不能被简单地忽略。&lt;/li&gt;
+&lt;li&gt;运行时异常
+运行时异常是可能被程序员避免的异常。与检查性异常相反，运行时异常可以在编译时被忽略(Throw)。&lt;/li&gt;
+&lt;li&gt;错误
+错误不是异常，而是脱离程序员控制的问题。错误在代码中通常被忽略。例如，当栈溢出时，一个错误就发生了，它们在编译也检查不到的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;异常类exception&#34;&gt;异常类Exception&lt;/h1&gt;
+&lt;h2 id=&#34;构造方法&#34;&gt;构造方法&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;public Exception()&lt;br&gt;
+构建一个新的异常，以 null作为其详细信息。&lt;/li&gt;
+&lt;li&gt;public Exception(String message)&lt;br&gt;
+使用指定的详细消息构造新的异常。&lt;/li&gt;
+&lt;li&gt;public Exception(String message, Throwable cause)&lt;br&gt;
+构造一个新的异常与指定的详细信息和原因。&lt;/li&gt;
+&lt;li&gt;public Exception(Throwable cause)&lt;br&gt;
+构造一个新的异常与指定原因。&lt;/li&gt;
+&lt;li&gt;protected Exception(String message, Throwable cause,boolean enableSuppression,boolean writableStackTrace)&lt;br&gt;
+构造一个新的异常，其中包含指定的详细消息，启用或禁用抑制功能，启用或禁用可写栈跟踪。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;常用方法&#34;&gt;常用方法&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;public String getMessage()&lt;br&gt;
+返回关于发生的异常的详细信息。这个消息在Throwable 类的构造函数中初始化了。&lt;/li&gt;
+&lt;li&gt;public Throwable getCause()&lt;br&gt;
+返回一个Throwable 对象代表异常原因。&lt;/li&gt;
+&lt;li&gt;public String toString()&lt;br&gt;
+使用getMessage()的结果返回类的串级名字。&lt;/li&gt;
+&lt;li&gt;public void &lt;strong&gt;printStackTrace&lt;/strong&gt;()&lt;br&gt;
+打印toString()结果和栈层次到System.err，即错误输出流。&lt;/li&gt;
+&lt;li&gt;public StackTraceElement [] getStackTrace()&lt;br&gt;
+返回一个包含堆栈层次的数组。下标为0的元素代表栈顶，最后一个元素代表方法调用堆栈的栈底。&lt;/li&gt;
+&lt;li&gt;public Throwable fillInStackTrace()&lt;br&gt;
+用当前的调用栈层次填充Throwable 对象栈层次，添加到栈层次任何先前信息中。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;处理异常&#34;&gt;处理异常&lt;/h1&gt;
+&lt;h2 id=&#34;try-catch&#34;&gt;try-catch&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class MyException extends Exception{
+    public static void main(String[] args) {
+        try {
+            int i=1/0;
+        }catch (ArithmeticException e){
+            e.printStackTrace();
+        }
+        catch (Exception e){
+            e.printStackTrace();
+            System.out.println(&amp;#34;这是总异常&amp;#34;);
+        }finally {
+            System.out.println(&amp;#34;无论有没有异常，都会执行。比如用于关闭数据库的连接&amp;#34;);
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;throws&#34;&gt;throws&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class MyException extends Exception{
+    public static void main(String[] args) {
+        MyException myException = new MyException();
+        try {
+            myException.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void show() throws Exception{//抛出去，谁调用谁处理
+        int i=1/0;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;注意事项&#34;&gt;注意事项&lt;/h2&gt;
+&lt;p&gt;throws在方法名后边
+catch 不能独立于 try 存在。
+在 try/catch 后面添加 finally 块并非强制性要求的。
+try 代码后不能既没 catch 块也没 finally 块。
+try, catch, finally 块之间不能添加任何代码。&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

@@ -1,16 +1,40 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Jetbrains - 标签 - 风吹过的烟花</title>
-        <link>https://zhangxiaofeng05.github.io/tags/jetbrains/</link>
-        <description>Jetbrains - 标签 - 风吹过的烟花</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Tue, 27 Dec 2022 23:30:00 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/jetbrains/" rel="self" type="application/rss+xml" /><item>
-    <title>Hack Jetbrains</title>
-    <link>https://zhangxiaofeng05.github.io/hack-jetbrains/</link>
-    <pubDate>Tue, 27 Dec 2022 23:30:00 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/hack-jetbrains/</guid>
-    <description><![CDATA[Jetbrains全家桶 https://3.jetbra.in jetbra.zip-readme.txt 1 2 3 4 5 1. add -javaagent:/path/to/ja-netfilter.jar=jetbrains to your vmoptions (manual or auto) 2. log out of the jb account in the &#39;Licenses&#39; window 3. use key on page https://jetbra.in/5d84466e31722979266057664941a71893322460 4. plugin &#39;mymap&#39; has been deprecated since version 2022.1 5. don&#39;t care about the activation time, it is a fallback license and will not expire]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Jetbrains on 风吹过的烟花</title>
+    <link>https://zhangxiaofeng05.github.io/tags/jetbrains/</link>
+    <description>Recent content in Jetbrains on 风吹过的烟花</description>
+    <image>
+      <title>风吹过的烟花</title>
+      <url>https://zhangxiaofeng05.github.io/images/papermod-cover.png</url>
+      <link>https://zhangxiaofeng05.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 27 Dec 2022 23:30:00 +0800</lastBuildDate>
+    <atom:link href="https://zhangxiaofeng05.github.io/tags/jetbrains/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hack Jetbrains</title>
+      <link>https://zhangxiaofeng05.github.io/posts/hack-jetbrains/</link>
+      <pubDate>Tue, 27 Dec 2022 23:30:00 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/hack-jetbrains/</guid>
+      <description>&lt;p&gt;Jetbrains全家桶 &lt;a href=&#34;https://3.jetbra.in&#34;&gt;https://3.jetbra.in&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;jetbra.zip-&lt;code&gt;readme.txt&lt;/code&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. add -javaagent:/path/to/ja-netfilter.jar=jetbrains to your vmoptions (manual or auto)
+2. log out of the jb account in the &amp;#39;Licenses&amp;#39; window
+3. use key on page https://jetbra.in/5d84466e31722979266057664941a71893322460
+4. plugin &amp;#39;mymap&amp;#39; has been deprecated since version 2022.1
+5. don&amp;#39;t care about the activation time, it is a fallback license and will not expire
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Jetbrains Toolbox&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;GoLand -&amp;gt; Settings -&amp;gt; Configuration -&amp;gt; show... -&amp;gt; GoLand.app.vmoptions
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;在vmoptions文件最后增加以下内容&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;-javaagent:/path/jetbra/ja-netfilter.jar=jetbrains
+# jdk17 need
+--add-opens=java.base/jdk.internal.org.objectweb.asm=ALL-UNNAMED
+--add-opens=java.base/jdk.internal.org.objectweb.asm.tree=ALL-UNNAMED
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;获取key，看readme.txt中的url&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;新版本区域选择的坑&lt;/code&gt;
+如果你选择 China Mainland 将会有一个比较坑的地方：激活许可验证走 account.jetbrains.com.cn 这个域名，而不是默认的 account.jetbrains.com&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

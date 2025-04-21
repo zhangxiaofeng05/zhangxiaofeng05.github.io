@@ -1,24 +1,74 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Github - 标签 - 风吹过的烟花</title>
-        <link>https://zhangxiaofeng05.github.io/tags/github/</link>
-        <description>Github - 标签 - 风吹过的烟花</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Thu, 20 Oct 2022 23:09:19 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/github/" rel="self" type="application/rss+xml" /><item>
-    <title>代码管理</title>
-    <link>https://zhangxiaofeng05.github.io/code_manage/</link>
-    <pubDate>Thu, 20 Oct 2022 23:09:19 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/code_manage/</guid>
-    <description><![CDATA[git 每个仓库设置Git用户名 1 2 git config --global user.name &#34;username&#34; git config --global user.email &#34;email address&#34; 一个仓库设置Git用户名 1 2 git config user.name &#34;username&#34; git config user.email &#34;email address&#34; https://docs.github.com/cn/get-started/getting-started-with-git/setting-your-username-in-git 1 2 3 4 # 生成ssh-key ssh-keygen -t rsa -C &#34;email address&#34;]]></description>
-</item>
-<item>
-    <title>hugo搭建博客，部署到GitHub</title>
-    <link>https://zhangxiaofeng05.github.io/hugo_blog/</link>
-    <pubDate>Mon, 21 Oct 2019 23:37:48 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/hugo_blog/</guid>
-    <description><![CDATA[hugo站点 hugo官网：https://gohugo.io/ 安装和使用，先参考官网 安装：使用命令或者从GitHub下载 https://github.com/gohugoio/hugo 检查安装：$ hugo version 生]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Github on 风吹过的烟花</title>
+    <link>https://zhangxiaofeng05.github.io/tags/github/</link>
+    <description>Recent content in Github on 风吹过的烟花</description>
+    <image>
+      <title>风吹过的烟花</title>
+      <url>https://zhangxiaofeng05.github.io/images/papermod-cover.png</url>
+      <link>https://zhangxiaofeng05.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 20 Oct 2022 23:09:19 +0800</lastBuildDate>
+    <atom:link href="https://zhangxiaofeng05.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>代码管理</title>
+      <link>https://zhangxiaofeng05.github.io/posts/code_manage/</link>
+      <pubDate>Thu, 20 Oct 2022 23:09:19 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/code_manage/</guid>
+      <description>&lt;h2 id=&#34;git&#34;&gt;git&lt;/h2&gt;
+&lt;h3 id=&#34;每个仓库设置git用户名&#34;&gt;每个仓库设置Git用户名&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git config --global user.name &lt;span class=&#34;s2&#34;&gt;&amp;#34;username&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git config --global user.email &lt;span class=&#34;s2&#34;&gt;&amp;#34;email address&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;一个仓库设置git用户名&#34;&gt;一个仓库设置Git用户名&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git config user.name &lt;span class=&#34;s2&#34;&gt;&amp;#34;username&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git config user.email &lt;span class=&#34;s2&#34;&gt;&amp;#34;email address&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://docs.github.com/cn/get-started/getting-started-with-git/setting-your-username-in-git&#34;&gt;https://docs.github.com/cn/get-started/getting-started-with-git/setting-your-username-in-git&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 生成ssh-key&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ssh-keygen -t rsa -C &lt;span class=&#34;s2&#34;&gt;&amp;#34;email address&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 测试链接GitHub&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ssh -T git@github.com
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;github&#34;&gt;GitHub&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://cli.github.com/&#34;&gt;https://cli.github.com/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>hugo搭建博客，部署到GitHub</title>
+      <link>https://zhangxiaofeng05.github.io/posts/hugo_blog/</link>
+      <pubDate>Mon, 21 Oct 2019 23:37:48 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/hugo_blog/</guid>
+      <description>&lt;h2 id=&#34;hugo站点&#34;&gt;hugo站点&lt;/h2&gt;
+&lt;p&gt;hugo官网：https://gohugo.io/&lt;br&gt;
+安装和使用，先参考官网&lt;br&gt;
+安装：使用命令或者从GitHub下载 &lt;a href=&#34;https://github.com/gohugoio/hugo&#34;&gt;https://github.com/gohugoio/hugo&lt;/a&gt;&lt;br&gt;
+检查安装：$ hugo version&lt;/p&gt;
+&lt;p&gt;生成站点 $ hugo new site blogHugo&lt;br&gt;
+进入站点 $ cd blogHugo&lt;br&gt;
+使用主题(&lt;a href=&#34;https://github.com/olOwOlo/hugo-theme-even&#34;&gt;https://github.com/olOwOlo/hugo-theme-even&lt;/a&gt;) $ &lt;code&gt;git clone https://github.com/olOwOlo/hugo-theme-even themes/even&lt;/code&gt;&lt;br&gt;
+安装主题上的说明进行配置，注意此主题生成新文件为$ hugo new post/some-content.md&lt;/p&gt;
+&lt;p&gt;本地运行预览博客 $ hugo server -D&lt;br&gt;
+浏览器 $ http://localhost:1313/&lt;/p&gt;
+&lt;h2 id=&#34;部署到github&#34;&gt;部署到GitHub&lt;/h2&gt;
+&lt;p&gt;在GitHub新建仓库 username.github.io&lt;br&gt;
+渲染md文件 $ &lt;code&gt;hugo --theme=even --baseUrl=&amp;quot;https://username.github.io&amp;quot; --buildDrafts&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;此时生成了public目录&lt;br&gt;
+执行命令&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cd public
+git init
+git commit -m &amp;#34;first commit&amp;#34;
+git remote add origin git@github.com:username/blogHugo.git
+git push origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;以后再提交，在站点执行此脚本 $ &lt;code&gt;sh gitHub.sh&lt;/code&gt;&lt;br&gt;
+gitHub.sh&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;hugo --theme=even --baseUrl=&amp;#34;https://username.github.io&amp;#34; --buildDrafts
+cd public
+git add .
+git commit -m &amp;#34;update&amp;#34;
+git push origin master 
+cd ..
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;原文件放入私有仓库&#34;&gt;原文件放入私有仓库&lt;/h2&gt;
+&lt;p&gt;第一次使用，在站点目录下&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

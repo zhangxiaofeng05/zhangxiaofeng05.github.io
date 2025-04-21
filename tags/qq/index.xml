@@ -1,16 +1,49 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>QQ - 标签 - 风吹过的烟花</title>
-        <link>https://zhangxiaofeng05.github.io/tags/qq/</link>
-        <description>QQ - 标签 - 风吹过的烟花</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Tue, 30 Apr 2019 10:08:24 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/qq/" rel="self" type="application/rss+xml" /><item>
-    <title>linux安装QQ</title>
-    <link>https://zhangxiaofeng05.github.io/linux-install-qq/</link>
-    <pubDate>Tue, 30 Apr 2019 10:08:24 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/linux-install-qq/</guid>
-    <description><![CDATA[首先要感谢deepin,QQ很早就停止linux版的更新了,deepin团队在移植上的力度还是比较大的。以后有机会的话，还会再装deepin]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>QQ on 风吹过的烟花</title>
+    <link>https://zhangxiaofeng05.github.io/tags/qq/</link>
+    <description>Recent content in QQ on 风吹过的烟花</description>
+    <image>
+      <title>风吹过的烟花</title>
+      <url>https://zhangxiaofeng05.github.io/images/papermod-cover.png</url>
+      <link>https://zhangxiaofeng05.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 30 Apr 2019 10:08:24 +0800</lastBuildDate>
+    <atom:link href="https://zhangxiaofeng05.github.io/tags/qq/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>linux安装QQ</title>
+      <link>https://zhangxiaofeng05.github.io/posts/linux-install-qq/</link>
+      <pubDate>Tue, 30 Apr 2019 10:08:24 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/linux-install-qq/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;首先要感谢deepin,QQ很早就停止linux版的更新了,deepin团队在移植上的力度还是比较大的。以后有机会的话，还会再装deepin的。&lt;br&gt;
+也要感谢wszqkzqk，做了整理。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;解决方案&#34;&gt;解决方案&lt;/h2&gt;
+&lt;p&gt;GitHub:https://github.com/wszqkzqk/deepin-wine-ubuntu&lt;br&gt;
+你也可以看作者的README,但是我没看，作者写的比较精简，有些具体的没看懂怎么操作！！原谅我是个萌新。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;第一步：安装deepin-wine环境&lt;br&gt;
+上&lt;code&gt;https://github.com/wszqkzqk/deepin-wine-ubuntu&lt;/code&gt;页面下载zip包（或用git方式克隆），解压到本地文件夹
+在中国推荐用下面的地址，速度更快： (&lt;code&gt;git clone https://gitee.com/wszqkzqk/deepin-wine-for-ubuntu.git&lt;/code&gt;)
+在文件夹中打开终端，输入sudo sh ./install.sh一键安装。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;第2步，安装相关应用容器
+在http://mirrors.aliyun.com/deepin/pool/non-free/d/中下载想要的容器，点击deb安装即可。
+&lt;em&gt;（建议在终端下使用dpkg -i安装容器，否则容易误报依赖错误）&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;第３步，关于托盘
+安装TopIconPlus的gnome-shell扩展，命令：&lt;code&gt;sudo apt-get install gnome-shell-extension-top-icons-plus gnome-tweaks&lt;/code&gt;，然后用r命令重启gnome-shell(Alt+F2,输入r)，最后用gnome-tweaks开启这个扩展。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lulinux.com/archives/1319&#34;&gt;https://www.lulinux.com/archives/1319&lt;/a&gt;
+&lt;a href=&#34;https://github.com/wszqkzqk/deepin-wine-ubuntu&#34;&gt;https://github.com/wszqkzqk/deepin-wine-ubuntu&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

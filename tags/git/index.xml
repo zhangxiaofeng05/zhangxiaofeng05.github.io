@@ -1,24 +1,79 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Git - 标签 - 风吹过的烟花</title>
-        <link>https://zhangxiaofeng05.github.io/tags/git/</link>
-        <description>Git - 标签 - 风吹过的烟花</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</managingEditor>
-            <webMaster>zhangxiaofeng05@foxmail.com (zhangxiaofeng05)</webMaster><lastBuildDate>Thu, 20 Oct 2022 23:09:19 &#43;0800</lastBuildDate><atom:link href="https://zhangxiaofeng05.github.io/tags/git/" rel="self" type="application/rss+xml" /><item>
-    <title>代码管理</title>
-    <link>https://zhangxiaofeng05.github.io/code_manage/</link>
-    <pubDate>Thu, 20 Oct 2022 23:09:19 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/code_manage/</guid>
-    <description><![CDATA[git 每个仓库设置Git用户名 1 2 git config --global user.name &#34;username&#34; git config --global user.email &#34;email address&#34; 一个仓库设置Git用户名 1 2 git config user.name &#34;username&#34; git config user.email &#34;email address&#34; https://docs.github.com/cn/get-started/getting-started-with-git/setting-your-username-in-git 1 2 3 4 # 生成ssh-key ssh-keygen -t rsa -C &#34;email address&#34;]]></description>
-</item>
-<item>
-    <title>git 配置</title>
-    <link>https://zhangxiaofeng05.github.io/git/</link>
-    <pubDate>Mon, 01 Jun 2020 21:01:18 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://zhangxiaofeng05.github.io/git/</guid>
-    <description><![CDATA[github git https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent vim ~/.ssh/config 1 2 3 4 5 6 Host github.com User git Hostname ssh.github.com PreferredAuthentications publickey IdentityFile ~/.ssh/id_ed25519 Port 443 测试连接ssh -T git@github.com https://stackoverflow.com/questions/15589682/ssh-connect-to-host-github-com-port-22-connection-timed-out ssh-socket代理 访问GitHub慢，下载慢的解决办法。 创建conf]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Git on 风吹过的烟花</title>
+    <link>https://zhangxiaofeng05.github.io/tags/git/</link>
+    <description>Recent content in Git on 风吹过的烟花</description>
+    <image>
+      <title>风吹过的烟花</title>
+      <url>https://zhangxiaofeng05.github.io/images/papermod-cover.png</url>
+      <link>https://zhangxiaofeng05.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 20 Oct 2022 23:09:19 +0800</lastBuildDate>
+    <atom:link href="https://zhangxiaofeng05.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>代码管理</title>
+      <link>https://zhangxiaofeng05.github.io/posts/code_manage/</link>
+      <pubDate>Thu, 20 Oct 2022 23:09:19 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/code_manage/</guid>
+      <description>&lt;h2 id=&#34;git&#34;&gt;git&lt;/h2&gt;
+&lt;h3 id=&#34;每个仓库设置git用户名&#34;&gt;每个仓库设置Git用户名&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git config --global user.name &lt;span class=&#34;s2&#34;&gt;&amp;#34;username&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git config --global user.email &lt;span class=&#34;s2&#34;&gt;&amp;#34;email address&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;一个仓库设置git用户名&#34;&gt;一个仓库设置Git用户名&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git config user.name &lt;span class=&#34;s2&#34;&gt;&amp;#34;username&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git config user.email &lt;span class=&#34;s2&#34;&gt;&amp;#34;email address&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://docs.github.com/cn/get-started/getting-started-with-git/setting-your-username-in-git&#34;&gt;https://docs.github.com/cn/get-started/getting-started-with-git/setting-your-username-in-git&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 生成ssh-key&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ssh-keygen -t rsa -C &lt;span class=&#34;s2&#34;&gt;&amp;#34;email address&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 测试链接GitHub&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ssh -T git@github.com
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;github&#34;&gt;GitHub&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://cli.github.com/&#34;&gt;https://cli.github.com/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>git 配置</title>
+      <link>https://zhangxiaofeng05.github.io/posts/git/</link>
+      <pubDate>Mon, 01 Jun 2020 21:01:18 +0800</pubDate>
+      <guid>https://zhangxiaofeng05.github.io/posts/git/</guid>
+      <description>&lt;h2 id=&#34;github-git&#34;&gt;github git&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent&#34;&gt;https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;vim ~/.ssh/config&lt;/code&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Host github.com
+User git
+Hostname ssh.github.com
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/id_ed25519
+Port 443
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;测试连接&lt;code&gt;ssh -T git@github.com&lt;/code&gt;&lt;br&gt;
+&lt;a href=&#34;https://stackoverflow.com/questions/15589682/ssh-connect-to-host-github-com-port-22-connection-timed-out&#34;&gt;https://stackoverflow.com/questions/15589682/ssh-connect-to-host-github-com-port-22-connection-timed-out&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ssh-socket代理&#34;&gt;ssh-socket代理&lt;/h2&gt;
+&lt;p&gt;访问GitHub慢，下载慢的解决办法。&lt;br&gt;
+创建&lt;code&gt;config&lt;/code&gt;文件&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;vi ~/.ssh/config
+# 当然你也可以手动在 C:\Users\Username\.ssh 下创建 config 文件
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;文件写入如下内容&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# 这里的 -a none 是 NO-AUTH 模式，参见 https://bitbucket.org/gotoh/connect/wiki/Home 中的 More detail 一节
+ProxyCommand connect -S 127.0.0.1:1080 -a none %h %p
+
+Host github.com
+  User git
+  Port 22
+  Hostname github.com
+  # 注意修改路径为你的路径
+  IdentityFile &amp;#34;C:\Users\zhang\.ssh\id_rsa&amp;#34;
+  TCPKeepAlive yes
+
+Host ssh.github.com
+  User git
+  Port 443
+  Hostname ssh.github.com
+  # 注意修改路径为你的路径
+  IdentityFile &amp;#34;C:\Users\zhang\.ssh\id_rsa&amp;#34;
+  TCPKeepAlive yes
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;参考文章： &lt;a href=&#34;https://upupming.site/2019/05/09/git-ssh-socks-proxy/&#34;&gt;https://upupming.site/2019/05/09/git-ssh-socks-proxy/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>
