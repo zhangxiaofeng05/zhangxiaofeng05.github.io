@@ -1,0 +1,8 @@
+# dir
+public
+resources
+
+.hugo_build.lock
+
+# mac
+.DS_Store

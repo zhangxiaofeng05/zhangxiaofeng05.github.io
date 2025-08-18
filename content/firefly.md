@@ -1,0 +1,53 @@
+---
+title: "小工具"
+date: 2019-10-10T23:46:29+08:00
+draft: false
+---
+## 工具
+ - Linux命令大全  
+https://man.niaoge.com/  
+`重点：grep awk sed`  
+ - git-tips  
+git技巧: https://github.com/jaywcjlove/git-tips
+ - you-get  
+下载媒体内容: https://github.com/soimort/you-get  
+ - gitignore  
+git忽略文件的编写: https://github.com/github/gitignore
+ - 内网穿透,端口转发工具  
+    - https://ngrok.com/
+    - https://localtunnel.github.io/www/
+
+
+## 谷歌插件
+ - Proxy SwitchyOmega 3 (ZeroOmega)  
+ 切换代理: https://chromewebstore.google.com/detail/proxy-switchyomega-3-zero/pfnededegaaopdmhkdmcofjmoldfiped  
+ - 沉浸式翻译  
+ https://chromewebstore.google.com/detail/immersive-translate-trans/bpoadfkcbjbfhfodiogcnhhhpibjhbnh  
+ - Bitwarden - 免费密码管理器
+ https://chrome.google.com/webstore/detail/bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb  
+ - Infinity 新标签页  
+ https://chrome.google.com/webstore/detail/infinity-new-tab/dbfmnekepjoapopniengjbcpnbljalfg  
+ - 篡改猴  
+ https://chromewebstore.google.com/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo  
+   - 文本选中复制  
+   https://greasyfork.org/zh-CN/scripts/405130-%E6%96%87%E6%9C%AC%E9%80%89%E4%B8%AD%E5%A4%8D%E5%88%B6  
+ - AdBlock — 最佳广告拦截工具  
+ https://chrome.google.com/webstore/detail/adblock-%E2%80%94-best-ad-blocker/gighmmpiobklfepjocnamgkkbiglidom  
+ - FeHelper(前端助手)
+ https://chrome.google.com/webstore/detail/fehelper%E5%89%8D%E7%AB%AF%E5%8A%A9%E6%89%8B/pkgccpejnmalmdinmhkkfafefagiiiad  
+ - AHA Music  
+ 识别音乐: https://chrome.google.com/webstore/detail/aha-music-music-identifie/dpacanjfikmhoddligfbehkpomnbgblf  
+ - 草料二维码-快速生码和解码工具  
+ https://chrome.google.com/webstore/detail/%E8%8D%89%E6%96%99%E4%BA%8C%E7%BB%B4%E7%A0%81/moombeodfomdpjnpocobemoiaemednkg  
+ - Video Speed Controls  
+ https://chrome.google.com/webstore/detail/video-speed-controller/iihlkfggcbggmbgdkklanmfallibkhio  
+ - Elasticvue
+ https://chrome.google.com/webstore/detail/elasticvue/hkedbapjpblbodpgbajblpnlpenaebaa   
+
+Chrome插件英雄榜: https://github.com/zhaoolee/ChromeAppHeroes  
+
+## 喜欢的句子
+ - 根本没有什么岁月静好，只是有人替你负重前行.
+ - 代码会告诉你怎么做,注释会告诉你为何如此.
+ - 知识学会了，终身都是自己的，没有学会，那些知识都是身外之物。
+ - ARTS 是 Algorithm、Review、Technique、Share 的简称，即每周至少做一个 leetcode 的算法题，阅读并点评至少一篇英文技术文章，学习至少一个技术技巧，至少分享一篇有观点和思考的技术文章
