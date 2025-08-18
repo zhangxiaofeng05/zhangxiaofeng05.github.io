@@ -1,3 +1,6 @@
+![deploy](https://github.com/zhangxiaofeng05/zhangxiaofeng05.github.io/actions/workflows/hugo.yaml/badge.svg?branch=main)
+![GitHub repo file or directory count (in path)](https://img.shields.io/github/directory-file-count/zhangxiaofeng05/zhangxiaofeng05.github.io/content%2Fposts)
+
 ## local
 ### install hugo
 ```bash
