@@ -22,6 +22,11 @@ git clone git@github.com:zhangxiaofeng05/zhangxiaofeng05.github.io.git
 git submodule update --init --recursive
 ```
 
+### Add content
+```bash
+hugo new content content/posts/my-first-post.md
+```
+
 ### run
 ```bash
 hugo server
