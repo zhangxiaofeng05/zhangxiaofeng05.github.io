@@ -1,6 +1,6 @@
 # If your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would
 # contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
-baseURL: "https://zhangxiaofeng05.github.io"
+baseURL: "https://zhangxiaofeng05.github.io/" # 必须是完整的、带有协议（HTTPS）且末尾带斜杠/的URL
 title: 风吹过的烟花
 # copyright: "© [PaperMod Contributors](https://github.com/adityatelange/hugo-PaperMod/graphs/contributors)"
 theme: [PaperMod]
@@ -181,7 +181,7 @@ params:
     #   url: "https://x.com/intent/tweet/?text=Checkout%20Hugo%20PaperMod%20%E2%9C%A8%0AA%20fast,%20clean,%20responsive%20Hugo%20theme.&url=https://github.com/adityatelange/hugo-PaperMod&hashtags=Hugo,PaperMod"
 
   editPost:
-    URL: "https://github.com/zhangxiaofeng05/hugoBlog/tree/master/content"
+    URL: "https://github.com/zhangxiaofeng05/zhangxiaofeng05.github.io/tree/main/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
