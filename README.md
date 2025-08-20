@@ -13,6 +13,9 @@ hugo new site zhangxiaofeng05.github.io --format yaml
 git init
 git remote add origin git@github.com:zhangxiaofeng05/zhangxiaofeng05.github.io.git
 git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
+
+baseURL 为 https://zhangxiaofeng05.github.io/  
+关键点: 必须是完整的、带有协议（HTTPS）且末尾带斜杠/的URL，否则影响 sitemap.xml 生成
 ```
 
 ### clone
