@@ -44,8 +44,6 @@ git忽略文件的编写: https://github.com/github/gitignore
  - Elasticvue
  https://chrome.google.com/webstore/detail/elasticvue/hkedbapjpblbodpgbajblpnlpenaebaa   
 
-Chrome插件英雄榜: https://github.com/zhaoolee/ChromeAppHeroes  
-
 ## 喜欢的句子
  - 根本没有什么岁月静好，只是有人替你负重前行.
  - 代码会告诉你怎么做,注释会告诉你为何如此.
