@@ -5,7 +5,6 @@ draft: false
 
 tags: [pattern]
 categories: [设计模式]
-draft: false
 
 comment: true
 toc: true
