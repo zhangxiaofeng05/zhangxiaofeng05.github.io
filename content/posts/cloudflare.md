@@ -16,7 +16,7 @@ HTTPS支持端口：443, 2053, 2083, 2087, 2096, 8443
 ## CloudFlare 优选域名
 推荐
 ```
-www.visa.cn
+www.visa.com.sg
 www.shopify.com
 store.ubi.com
 ```
@@ -33,10 +33,6 @@ store.ubi.com
 
 ### 优选 IP 工具(IPv4+IPv6)
 https://github.com/XIU2/CloudflareSpeedTest
-
-### API Uouin 提供的实时优质节点
-提供电信、联通、移动的优质CloudFlare节点IP，每10分钟更新一次  
-https://api.uouin.com/cloudflare.html
 
 ### HostMonit 网站 - 针对不同运营商优化
 https://stock.hostmonit.com/CloudFlareYesV6
