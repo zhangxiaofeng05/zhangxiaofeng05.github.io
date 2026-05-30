@@ -17,8 +17,18 @@ HTTPS支持端口：443, 2053, 2083, 2087, 2096, 8443
 推荐
 ```
 www.visa.com.sg
+www.visa.com.hk
+www.visa.com.tw
+www.visa.cn
+visa.com
+mfa.gov.ua
 www.shopify.com
 store.ubi.com
+gh-proxy.com
+redis.io
+spring.io
+clickhouse.com
+www.trump.com
 ```
 
 ### 优选域名网站
@@ -33,6 +43,16 @@ store.ubi.com
 
 ### 优选 IP 工具(IPv4+IPv6)
 https://github.com/XIU2/CloudflareSpeedTest
+#### CloudFlare 公开 IP 段
+ipv4
+```text
+https://www.cloudflare-cn.com/ips-v4
+```
+
+ipv6
+```text
+https://www.cloudflare-cn.com/ips-v6
+```
 
 ### HostMonit 网站 - 针对不同运营商优化
 https://stock.hostmonit.com/CloudFlareYesV6
