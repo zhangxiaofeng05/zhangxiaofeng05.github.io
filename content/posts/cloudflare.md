@@ -44,6 +44,8 @@ www.trump.com
 ### 优选 IP 工具(IPv4+IPv6)
 https://github.com/XIU2/CloudflareSpeedTest
 #### CloudFlare 公开 IP 段
+https://www.cloudflare-cn.com/ips/
+
 ipv4
 ```text
 https://www.cloudflare-cn.com/ips-v4
