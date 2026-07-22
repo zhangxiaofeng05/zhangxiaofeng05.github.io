@@ -28,7 +28,12 @@ gh-proxy.com
 redis.io
 spring.io
 clickhouse.com
-www.trump.com
+yg9.ygkkk.dpdns.org
+yg11.ygkkk.dpdns.org
+eii.at
+freeyx.cloudflare88.eu.org
+bestcf.top
+www.ntu.edu.sg
 ```
 
 ### 优选域名网站
@@ -55,6 +60,3 @@ ipv6
 ```text
 https://www.cloudflare-cn.com/ips-v6
 ```
-
-### HostMonit 网站 - 针对不同运营商优化
-https://stock.hostmonit.com/CloudFlareYesV6
