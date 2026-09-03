@@ -50,18 +50,34 @@ $ proxychains curl ip.gs
 ```bash
 # .zshrc
 
-function proxy_on() {
-    export http_proxy=http://127.0.0.1:1080
-    export https_proxy=$http_proxy
-    echo -e "终端代理已开启。"
+# proxy
+function get_ip(){
+	# curl ip.sb
+  # curl ifconfig.io
+	curl ip.gs
 }
 
-function proxy_off(){
-    unset http_proxy https_proxy
-    echo -e "终端代理已关闭。"
+# function to enable terminal proxy
+function set_proxy() {
+	# get_ip
+    export http_proxy=http://127.0.0.1:10808
+	  # export http_proxy=socks5://127.0.0.1:10808
+    export https_proxy=$http_proxy
+    export all_proxy=$http_proxy
+    echo -e "Proxy is ON"
+	# get_ip
 }
+# function to disable the terminal proxy
+function unset_proxy(){
+	# get_ip
+    unset http_proxy https_proxy ALL_PROXY
+    echo -e "Proxy is OFF"
+	# get_ip
+}
+
+export no_proxy="localhost, 127.0.0.1, ::1"
+
 ```
 
 ## 参考
  - [终端使用 sock5 代理 终端 terminal socks5 shadowsocks 代理 proxy](http://einverne.github.io/post/2017/02/terminal-sock5-proxy.html)
- - [终端使用代理加速的正确方式(Shadowsocks)](https://segmentfault.com/a/1190000039686752)
