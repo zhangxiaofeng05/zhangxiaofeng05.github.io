@@ -50,32 +50,27 @@ $ proxychains curl ip.gs
 ```bash
 # .zshrc
 
-# proxy
-function get_ip(){
-	# curl ip.sb
-  # curl ifconfig.io
-	curl ip.gs
-}
-
+# 标准代理环境变量
 # function to enable terminal proxy
 function set_proxy() {
-	# get_ip
-    export http_proxy=http://127.0.0.1:10808
-	  # export http_proxy=socks5://127.0.0.1:10808
-    export https_proxy=$http_proxy
-    export all_proxy=$http_proxy
-    echo -e "Proxy is ON"
-	# get_ip
+  # HTTPS proxy (recommended)
+  # export HTTPS_PROXY=https://proxy.example.com:8080
+  # HTTP proxy (if HTTPS not available)
+  # export HTTP_PROXY=http://proxy.example.com:8080
+
+  export HTTP_PROXY=http://127.0.0.1:10808
+	# export HTTP_PROXY=socks5://127.0.0.1:10808
+  export HTTPS_PROXY=$HTTP_PROXY
+  export ALL_PROXY=$http_proxy
+  echo -e "Proxy is ON"
 }
 # function to disable the terminal proxy
 function unset_proxy(){
-	# get_ip
-    unset http_proxy https_proxy ALL_PROXY
+    unset HTTP_PROXY HTTPS_PROXY ALL_PROXY
     echo -e "Proxy is OFF"
-	# get_ip
 }
-
-export no_proxy="localhost, 127.0.0.1, ::1"
+# Bypass proxy for local server (required)
+export NO_PROXY=localhost,127.0.0.1,::1
 
 ```
 
